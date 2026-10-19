@@ -1,0 +1,8 @@
+{
+  "pid": 11155,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0004/20261019_200414",
+  "started_at": "20261019_200414",
+  "stage": "deferred_for_quick_ab",
+  "updated_at": "2026-10-19T20:04:14+08:00",
+  "reason": "User questioned long performance evaluation; prioritize short real-serving A/B; full accuracy remains deferred"
+}

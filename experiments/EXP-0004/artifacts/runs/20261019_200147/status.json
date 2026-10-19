@@ -1,0 +1,8 @@
+{
+  "pid": 11097,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0004/20261019_200147",
+  "started_at": "20261019_200147",
+  "stage": "superseded_before_gpu",
+  "updated_at": "2026-10-19T20:01:47+08:00",
+  "reason": "User requested deferring model accuracy evaluation"
+}

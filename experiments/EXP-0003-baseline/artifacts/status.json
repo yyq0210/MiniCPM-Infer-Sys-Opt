@@ -34,7 +34,8 @@
     "FlagGems": "a7620cc191a0b42e040194622c5758b22a7a25dc"
   },
   "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
-  "stage": "throughput_running",
-  "updated_at": "2026-10-19T19:07:47+0800",
-  "server_pid": 6083
+  "stage": "failed",
+  "updated_at": "2026-10-19T20:20:34+0800",
+  "server_pid": 6083,
+  "error": "Benchmark exited -15"
 }

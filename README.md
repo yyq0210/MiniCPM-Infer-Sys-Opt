@@ -8,9 +8,10 @@ FlagOS 开放计算全球挑战赛 S2，赛题 2。记录 MiniCPM5-2B 在天数 
 | --- | --- | --- |
 | [EXP-0001](experiments/EXP-0001-environment/README.md) | 比赛分支、官方标签及源码导入修正 | 完成，镜像原有依赖约束报告已记录 |
 | [EXP-0002](experiments/EXP-0002-rope/README.md) | RoPE 按 head 分组并行原型 | 独立测试完成；未接入默认整模路径 |
-| [EXP-0003](experiments/EXP-0003-baseline/README.md) | 官方 4K / 16K 完整基线 | 以 [自动采集状态](experiments/EXP-0003-baseline/STATUS.md) 为准 |
+| [EXP-0004](experiments/EXP-0004/README.md) | RoPE 实际编译路径接入与官方端到端 A/B | 基础检查已通过；[当前快照](experiments/EXP-0004/STATUS.md)；完整精度暂缓 |
+| [EXP-0003](experiments/EXP-0003-baseline/README.md) | 官方 4K / 16K 基线（4K 完成，16K 恢复中） | 以 [自动采集状态](experiments/EXP-0003-baseline/STATUS.md) 为准 |
 
-RoPE 在 64-token 批次的独立内核测试约为 2.28× 加速。**这不是整模吞吐提升，也不是可提交比赛成绩。** 当前尚未完成优化后的端到端 A/B 和 math_500 Level 3 精度验证。
+RoPE 在 64-token 批次的独立内核测试约为 2.28× 加速。**这不是整模吞吐提升，也不是可提交比赛成绩。** 当前尚未完成优化后的官方端到端 A/B；math_500 Level 3 完整精度按用户要求暂缓。已完成基础接入、编译和 Graph 检查。
 
 ## 三仓职责
 
@@ -53,3 +54,10 @@ python scripts/collect_baseline.py
 ```
 
 只采集已有结果的命令不运行 GPU 任务。单算子复现命令和官方 benchmark 命令分别见对应实验目录。
+
+- [RoPE 优化前后的思路与接入说明](docs/rope_before_after.md)
+
+- [模型真实推理流水线：请求、调度、42 层计算、KV cache 与编译路径](docs/minicpm_real_inference_pipeline.md)
+
+- [RoPE 推理接入 PR 草稿](pr/vllm-rope-e2e.md)
+- [RoPE 算子集成 PR 草稿](pr/flaggems-rope-e2e.md)

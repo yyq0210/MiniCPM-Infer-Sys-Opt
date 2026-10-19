@@ -1,3 +1,14 @@
 {"stage": "server_starting", "server_pid": 6083}
 {"stage": "smoke_test"}
 {"stage": "throughput_running"}
+{"stage": "failed", "error": "Benchmark exited -15"}
+Traceback (most recent call last):
+  File "/workspace/experiments/codex_20261019/run_baseline.py", line 93, in main
+    raise RuntimeError(f"Benchmark exited {result.returncode}")
+RuntimeError: Benchmark exited -15
+Traceback (most recent call last):
+  File "/workspace/experiments/codex_20261019/run_baseline.py", line 120, in <module>
+    main()
+  File "/workspace/experiments/codex_20261019/run_baseline.py", line 93, in main
+    raise RuntimeError(f"Benchmark exited {result.returncode}")
+RuntimeError: Benchmark exited -15

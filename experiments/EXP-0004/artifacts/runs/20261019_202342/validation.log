@@ -1,0 +1,41 @@
+/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-19 20:23:47 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-19 20:23:47 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-19 20:23:47 [__init__.py:58] Loading plugin fl
+INFO 10-19 20:23:51 [__init__.py:237] Platform plugin fl is activated
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch] Registering vendor backends for current platform: iluvatar
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped topk_topp_sampler.compiled_random_sample
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped logprobs.batched_count_greater_than
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] OpManager initialized: 11 ops with 23 implementations
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' using 'default.flagos' (kind=flagos, vendor=None)
+WARNING 10-19 20:24:02 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-19 20:24:02 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-19 20:24:02 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-19 20:24:02 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' switched from 'default.flagos' to 'reference.torch' (kind=reference, vendor=None)
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' switched from 'reference.torch' to 'default.flagos' (kind=flagos, vendor=None)
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch] Registering vendor backends for current platform: iluvatar
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] OpManager initialized: 11 ops with 23 implementations
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' using 'default.flagos' (kind=flagos, vendor=None)
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch] Registering vendor backends for current platform: iluvatar
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] OpManager initialized: 11 ops with 23 implementations
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' using 'default.flagos' (kind=flagos, vendor=None)
+[2026-10-19 20:24:02] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' switched from 'default.flagos' to 'reference.torch' (kind=reference, vendor=None)
+INFO 10-19 20:24:04 [scheduler.py:252] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 10-19 20:24:04 [vllm.py:1006] Asynchronous scheduling is enabled.
+INFO 10-19 20:24:04 [kernel.py:276] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+[2026-10-19 20:24:10] [INFO] [vllm_fl.dispatch] Registering vendor backends for current platform: iluvatar
+[2026-10-19 20:24:10] [INFO] [vllm_fl.dispatch.manager] OpManager initialized: 11 ops with 23 implementations
+[2026-10-19 20:24:10] [INFO] [vllm_fl.dispatch.policy] Using custom config from '/workspace/LeanScale/vllm-plugin-FL/vllm_fl/dispatch/config/iluvatar.yaml'
+[2026-10-19 20:24:10] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' using 'default.flagos' (kind=flagos, vendor=None)
+{"m": 1, "compiled_native": {"median_us": 4.497692584991455, "trials_us": [4.497692584991455, 4.495046138763428, 4.511307716369629, 4.497692584991455, 4.512092590332031, 4.491522789001465, 4.492646217346191]}, "compiled_dispatch": {"median_us": 1.8671231269836426, "trials_us": [1.8739691972732544, 1.8655846118927002, 1.8645384311676025, 1.8692461252212524, 1.8681384325027466, 1.8671231269836426, 1.866692304611206]}, "native_after": {"median_us": 4.494000434875488, "trials_us": [4.49210786819458, 4.494692325592041, 4.490830898284912, 4.498092174530029, 4.494000434875488, 4.494000434875488, 4.493907928466797]}, "speedup": 2.408889119303838}
+{"m": 64, "compiled_native": {"median_us": 12.686692237854004, "trials_us": [13.527737617492676, 13.528446197509766, 13.394476890563965, 12.68323040008545, 12.686692237854004, 12.68269157409668, 12.683538436889648]}, "compiled_dispatch": {"median_us": 2.4654617309570312, "trials_us": [2.463153839111328, 2.4620771408081055, 2.4654617309570312, 2.4673845767974854, 2.4616923332214355, 2.4670000076293945, 2.467461347579956]}, "native_after": {"median_us": 12.650538444519043, "trials_us": [12.649846076965332, 12.650691986083984, 12.656000137329102, 12.649615287780762, 12.650461196899414, 12.651845932006836, 12.650538444519043]}, "speedup": 5.145767252663599}
+{"m": 257, "compiled_native": {"median_us": 37.425846099853516, "trials_us": [37.41569137573242, 37.44230651855469, 37.425846099853516, 37.42861557006836, 37.416847229003906, 37.43253707885742, 37.42332458496094]}, "compiled_dispatch": {"median_us": 4.539692401885986, "trials_us": [4.53584623336792, 4.541538238525391, 4.540923118591309, 4.539538860321045, 4.539692401885986, 4.539692401885986, 4.53623104095459]}, "native_after": {"median_us": 37.41869354248047, "trials_us": [37.432769775390625, 37.40915298461914, 37.41869354248047, 37.41630554199219, 37.42599868774414, 37.40523147583008, 37.45899963378906]}, "speedup": 8.244137000186441}
+{"m": 2048, "compiled_native": {"median_us": 244.85299682617188, "trials_us": [244.86892700195312, 244.85299682617188, 244.9313201904297, 244.8483123779297, 244.85208129882812, 244.85171508789062, 244.85391235351562]}, "compiled_dispatch": {"median_us": 32.95423126220703, "trials_us": [32.939613342285156, 33.03878402709961, 32.953460693359375, 32.941383361816406, 32.99592208862305, 32.955692291259766, 32.95423126220703]}, "native_after": {"median_us": 244.8489227294922, "trials_us": [244.84884643554688, 244.8418426513672, 244.8489227294922, 244.9390869140625, 244.8374481201172, 244.8503875732422, 244.8688507080078]}, "speedup": 7.430092811995804}
+VALIDATION_PASSED

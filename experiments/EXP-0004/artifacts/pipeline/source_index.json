@@ -1,0 +1,3063 @@
+[
+  {
+    "group": "vllm",
+    "relative_path": "model_executor/models/llama.py",
+    "sha256": "1e1003454985bf86d3868a7755bcf5324676881548b3895809edf0b76698d384",
+    "definitions": [
+      {
+        "line": 82,
+        "text": "class LlamaMLP(nn.Module):"
+      },
+      {
+        "line": 83,
+        "text": "def __init__("
+      },
+      {
+        "line": 118,
+        "text": "def forward(self, x):"
+      },
+      {
+        "line": 125,
+        "text": "class LlamaAttention(nn.Module):"
+      },
+      {
+        "line": 126,
+        "text": "def __init__("
+      },
+      {
+        "line": 224,
+        "text": "def forward("
+      },
+      {
+        "line": 236,
+        "text": "def _init_rotary_emb("
+      },
+      {
+        "line": 251,
+        "text": "class LlamaDecoderLayer(nn.Module):"
+      },
+      {
+        "line": 252,
+        "text": "def __init__("
+      },
+      {
+        "line": 313,
+        "text": "def forward("
+      },
+      {
+        "line": 332,
+        "text": "def get_quant_config(self, vllm_config: VllmConfig) -> QuantizationConfig | None:"
+      },
+      {
+        "line": 347,
+        "text": "class LlamaModel(nn.Module, EagleModelMixin):"
+      },
+      {
+        "line": 348,
+        "text": "def __init__("
+      },
+      {
+        "line": 389,
+        "text": "def embed_input_ids(self, input_ids: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 392,
+        "text": "def forward("
+      },
+      {
+        "line": 433,
+        "text": "def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:"
+      },
+      {
+        "line": 486,
+        "text": "class LlamaForCausalLM("
+      },
+      {
+        "line": 500,
+        "text": "def __init__("
+      },
+      {
+        "line": 539,
+        "text": "def _init_model("
+      },
+      {
+        "line": 547,
+        "text": "def embed_input_ids(self, input_ids: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 550,
+        "text": "def forward("
+      },
+      {
+        "line": 562,
+        "text": "def compute_logits("
+      },
+      {
+        "line": 569,
+        "text": "def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:"
+      },
+      {
+        "line": 577,
+        "text": "class LlamaBidirectionalForSequenceClassification(as_seq_cls_model(LlamaForCausalLM)):"
+      },
+      {
+        "line": 583,
+        "text": "class LlamaBidirectionalModel(as_embedding_model(LlamaForCausalLM)):"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "model_executor/layers/rotary_embedding/base.py",
+    "sha256": "c81804498f08f072356a26b41967f211475df2694dabf5da9f488c074d1fdef5",
+    "definitions": [
+      {
+        "line": 15,
+        "text": "class RotaryEmbeddingBase(CustomOp):"
+      },
+      {
+        "line": 20,
+        "text": "def __init__("
+      },
+      {
+        "line": 80,
+        "text": "def _compute_inv_freq(self, base: float) -> torch.Tensor:"
+      },
+      {
+        "line": 94,
+        "text": "def _compute_cos_sin_cache(self) -> torch.Tensor:"
+      },
+      {
+        "line": 105,
+        "text": "def _match_cos_sin_cache_dtype(self, query: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 133,
+        "text": "def get_cos_sin(self, seqlen: int) -> tuple[torch.Tensor, torch.Tensor]:"
+      },
+      {
+        "line": 139,
+        "text": "class RotaryEmbedding(RotaryEmbeddingBase):"
+      },
+      {
+        "line": 140,
+        "text": "def __init__("
+      },
+      {
+        "line": 161,
+        "text": "def forward_static("
+      },
+      {
+        "line": 203,
+        "text": "def forward_native("
+      },
+      {
+        "line": 221,
+        "text": "def forward_cuda("
+      },
+      {
+        "line": 254,
+        "text": "def forward_hip("
+      },
+      {
+        "line": 273,
+        "text": "def forward_xpu("
+      },
+      {
+        "line": 298,
+        "text": "def forward_cpu("
+      },
+      {
+        "line": 320,
+        "text": "def extra_repr(self) -> str:"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "model_executor/layers/rotary_embedding/common.py",
+    "sha256": "39bf5bb498ae45ca7a38269e85aa8b9b257a00c919e2d4d14a7ceb44ac7e9c98",
+    "definitions": [
+      {
+        "line": 19,
+        "text": "def rotate_neox(x: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 25,
+        "text": "def rotate_gptj(x: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 34,
+        "text": "def yarn_find_correction_dim("
+      },
+      {
+        "line": 46,
+        "text": "def yarn_find_correction_range("
+      },
+      {
+        "line": 62,
+        "text": "def yarn_linear_ramp_mask("
+      },
+      {
+        "line": 73,
+        "text": "def yarn_get_mscale(scale: float = 1) -> float:"
+      },
+      {
+        "line": 79,
+        "text": "def _flashinfer_rotary_embedding("
+      },
+      {
+        "line": 103,
+        "text": "def _flashinfer_rotary_embedding_fake("
+      },
+      {
+        "line": 125,
+        "text": "class ApplyRotaryEmb(CustomOp):"
+      },
+      {
+        "line": 128,
+        "text": "def __init__("
+      },
+      {
+        "line": 146,
+        "text": "def forward_static("
+      },
+      {
+        "line": 187,
+        "text": "def _pre_process("
+      },
+      {
+        "line": 206,
+        "text": "def _post_process("
+      },
+      {
+        "line": 218,
+        "text": "def forward_native("
+      },
+      {
+        "line": 229,
+        "text": "def forward_cuda("
+      },
+      {
+        "line": 252,
+        "text": "def forward_hip("
+      },
+      {
+        "line": 303,
+        "text": "def forward_cpu("
+      },
+      {
+        "line": 312,
+        "text": "def extra_repr(self) -> str:"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "model_executor/custom_op.py",
+    "sha256": "4b4ba01623005d6a93698eaec007a934dd512bf9ec7241090927de819621de2e",
+    "definitions": [
+      {
+        "line": 25,
+        "text": "def maybe_get_oot_by_class(class_type: type) -> type:"
+      },
+      {
+        "line": 32,
+        "text": "class PluggableLayer(nn.Module):"
+      },
+      {
+        "line": 47,
+        "text": "def __new__(cls, *args, **kwargs):"
+      },
+      {
+        "line": 70,
+        "text": "def register(cls, name: str):"
+      },
+      {
+        "line": 84,
+        "text": "def register_oot(cls, _decorated_layer_cls=None, name: str | None = None):"
+      },
+      {
+        "line": 103,
+        "text": "class CustomOp(nn.Module):"
+      },
+      {
+        "line": 109,
+        "text": "def __new__(cls, *args, **kwargs):"
+      },
+      {
+        "line": 130,
+        "text": "def __init__(self, *, enforce_enable: bool = False, compile_native: bool = False):"
+      },
+      {
+        "line": 135,
+        "text": "def forward(self, *args, **kwargs):"
+      },
+      {
+        "line": 138,
+        "text": "def forward_native(self, *args, **kwargs):"
+      },
+      {
+        "line": 146,
+        "text": "def forward_cuda(self, *args, **kwargs):"
+      },
+      {
+        "line": 149,
+        "text": "def forward_hip(self, *args, **kwargs):"
+      },
+      {
+        "line": 153,
+        "text": "def forward_xpu(self, *args, **kwargs):"
+      },
+      {
+        "line": 158,
+        "text": "def forward_cpu(self, *args, **kwargs):"
+      },
+      {
+        "line": 163,
+        "text": "def forward_tpu(self, *args, **kwargs):"
+      },
+      {
+        "line": 169,
+        "text": "def forward_oot(self, *args, **kwargs):"
+      },
+      {
+        "line": 174,
+        "text": "def dispatch_forward(self, compile_native: bool):"
+      },
+      {
+        "line": 209,
+        "text": "def maybe_compile(self, fn, *, enable: bool = True):"
+      },
+      {
+        "line": 272,
+        "text": "def enabled(cls) -> bool:"
+      },
+      {
+        "line": 292,
+        "text": "def default_on() -> bool:"
+      },
+      {
+        "line": 308,
+        "text": "def register("
+      },
+      {
+        "line": 332,
+        "text": "def register_oot(cls, _decorated_op_cls=None, name: str | None = None):"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "model_executor/layers/attention/attention.py",
+    "sha256": "3414faca4cc04c699dbb880ba1761230e1ed97035f2934604cad9a5490f4dba1",
+    "definitions": [
+      {
+        "line": 55,
+        "text": "def validate_kv_sharing_target("
+      },
+      {
+        "line": 88,
+        "text": "def should_load_quant_weights(quant_method: QuantizeMethodBase | None) -> bool:"
+      },
+      {
+        "line": 95,
+        "text": "def set_default_quant_scales(layer: nn.Module, register_buffer: bool = False) -> None:"
+      },
+      {
+        "line": 122,
+        "text": "def _init_kv_cache_quant("
+      },
+      {
+        "line": 192,
+        "text": "class Attention(nn.Module, AttentionLayerBase):"
+      },
+      {
+        "line": 204,
+        "text": "def __init__("
+      },
+      {
+        "line": 452,
+        "text": "def forward("
+      },
+      {
+        "line": 546,
+        "text": "def calc_kv_scales(self, query, key, value):"
+      },
+      {
+        "line": 556,
+        "text": "def extra_repr(self) -> str:"
+      },
+      {
+        "line": 564,
+        "text": "def process_weights_after_loading(self, act_dtype: torch.dtype):"
+      },
+      {
+        "line": 578,
+        "text": "def get_attn_backend(self) -> type[AttentionBackend]:"
+      },
+      {
+        "line": 581,
+        "text": "def get_kv_cache_spec(self, vllm_config: VllmConfig) -> KVCacheSpec | None:"
+      },
+      {
+        "line": 635,
+        "text": "def maybe_calc_kv_scales("
+      },
+      {
+        "line": 653,
+        "text": "def maybe_calc_kv_scales_fake("
+      },
+      {
+        "line": 670,
+        "text": "def get_attention_context("
+      },
+      {
+        "line": 713,
+        "text": "def unified_kv_cache_update("
+      },
+      {
+        "line": 739,
+        "text": "def unified_kv_cache_update_fake("
+      },
+      {
+        "line": 757,
+        "text": "def unified_attention_with_output("
+      },
+      {
+        "line": 787,
+        "text": "def unified_attention_with_output_fake("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "model_executor/layers/layernorm.py",
+    "sha256": "696615d858292fea7a2942480803cd4c7d2d1e88d818bfe5cd9d695ac464f37c",
+    "definitions": [
+      {
+        "line": 19,
+        "text": "def poly_norm("
+      },
+      {
+        "line": 37,
+        "text": "class RMSNorm(CustomOp):"
+      },
+      {
+        "line": 46,
+        "text": "def __init__("
+      },
+      {
+        "line": 74,
+        "text": "def forward_native("
+      },
+      {
+        "line": 96,
+        "text": "def forward_cuda("
+      },
+      {
+        "line": 114,
+        "text": "def forward_xpu("
+      },
+      {
+        "line": 121,
+        "text": "def extra_repr(self) -> str:"
+      },
+      {
+        "line": 129,
+        "text": "class GemmaRMSNorm(CustomOp):"
+      },
+      {
+        "line": 139,
+        "text": "def __init__("
+      },
+      {
+        "line": 148,
+        "text": "def forward_native("
+      },
+      {
+        "line": 159,
+        "text": "def forward_cuda("
+      },
+      {
+        "line": 169,
+        "text": "class RMSNormGated(CustomOp):"
+      },
+      {
+        "line": 180,
+        "text": "def __init__("
+      },
+      {
+        "line": 215,
+        "text": "def reset_parameters(self):"
+      },
+      {
+        "line": 219,
+        "text": "def forward_static("
+      },
+      {
+        "line": 268,
+        "text": "def forward_native("
+      },
+      {
+        "line": 283,
+        "text": "def forward_cuda("
+      },
+      {
+        "line": 299,
+        "text": "def forward_xpu("
+      },
+      {
+        "line": 305,
+        "text": "class LayerNorm(nn.Module):"
+      },
+      {
+        "line": 310,
+        "text": "def __init__(self, dim: int, eps: float = 1e-6):"
+      },
+      {
+        "line": 317,
+        "text": "def forward(self, x: torch.Tensor):"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "model_executor/layers/logits_processor.py",
+    "sha256": "d6dfec7287020d587f4a4d475ce113c383b2eb55afe5ae9b0e037df2e2d13310",
+    "definitions": [
+      {
+        "line": 19,
+        "text": "class LogitsProcessor(PluggableLayer):"
+      },
+      {
+        "line": 30,
+        "text": "def __init__("
+      },
+      {
+        "line": 54,
+        "text": "def forward("
+      },
+      {
+        "line": 75,
+        "text": "def _gather_logits(self, logits: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 89,
+        "text": "def _get_logits("
+      },
+      {
+        "line": 106,
+        "text": "def get_top_tokens("
+      },
+      {
+        "line": 158,
+        "text": "def extra_repr(self) -> str:"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/engine/async_llm.py",
+    "sha256": "2128cf018fe136b698c5e89dc7325bc6dced9d516cc9d772695f044716970b64",
+    "definitions": [
+      {
+        "line": 58,
+        "text": "class InputStreamError(Exception):"
+      },
+      {
+        "line": 65,
+        "text": "def __init__(self, cause: Exception):"
+      },
+      {
+        "line": 70,
+        "text": "class AsyncLLM(EngineClient):"
+      },
+      {
+        "line": 73,
+        "text": "def __init__("
+      },
+      {
+        "line": 203,
+        "text": "def from_vllm_config("
+      },
+      {
+        "line": 232,
+        "text": "def from_engine_args("
+      },
+      {
+        "line": 256,
+        "text": "def __del__(self):"
+      },
+      {
+        "line": 259,
+        "text": "def shutdown(self, timeout: float | None = None) -> None:"
+      },
+      {
+        "line": 273,
+        "text": "async def get_supported_tasks(self) -> tuple[SupportedTask, ...]:"
+      },
+      {
+        "line": 280,
+        "text": "async def add_request("
+      },
+      {
+        "line": 400,
+        "text": "async def _add_request("
+      },
+      {
+        "line": 417,
+        "text": "async def _add_streaming_input_request("
+      },
+      {
+        "line": 504,
+        "text": "def _validate_streaming_input_sampling_params("
+      },
+      {
+        "line": 524,
+        "text": "async def generate("
+      },
+      {
+        "line": 637,
+        "text": "def _run_output_handler(self):"
+      },
+      {
+        "line": 709,
+        "text": "async def abort("
+      },
+      {
+        "line": 723,
+        "text": "async def notify_kv_transfer_request_rejected("
+      },
+      {
+        "line": 750,
+        "text": "async def pause_generation("
+      },
+      {
+        "line": 795,
+        "text": "async def resume_generation(self) -> None:"
+      },
+      {
+        "line": 799,
+        "text": "async def is_paused(self) -> bool:"
+      },
+      {
+        "line": 803,
+        "text": "async def encode("
+      },
+      {
+        "line": 887,
+        "text": "def tokenizer(self) -> TokenizerLike | None:"
+      },
+      {
+        "line": 890,
+        "text": "def get_tokenizer(self) -> TokenizerLike:"
+      },
+      {
+        "line": 893,
+        "text": "async def is_tracing_enabled(self) -> bool:"
+      },
+      {
+        "line": 896,
+        "text": "async def do_log_stats(self) -> None:"
+      },
+      {
+        "line": 900,
+        "text": "async def check_health(self) -> None:"
+      },
+      {
+        "line": 905,
+        "text": "async def start_profile(self, profile_prefix: str | None = None) -> None:"
+      },
+      {
+        "line": 911,
+        "text": "async def stop_profile(self) -> None:"
+      },
+      {
+        "line": 917,
+        "text": "async def reset_mm_cache(self) -> None:"
+      },
+      {
+        "line": 921,
+        "text": "async def reset_prefix_cache("
+      },
+      {
+        "line": 928,
+        "text": "async def reset_encoder_cache(self) -> None:"
+      },
+      {
+        "line": 931,
+        "text": "async def sleep(self, level: int = 1, mode: PauseMode = \"abort\") -> None:"
+      },
+      {
+        "line": 939,
+        "text": "async def wake_up(self, tags: list[str] | None = None) -> None:"
+      },
+      {
+        "line": 945,
+        "text": "async def is_sleeping(self) -> bool:"
+      },
+      {
+        "line": 948,
+        "text": "async def add_lora(self, lora_request: LoRARequest) -> bool:"
+      },
+      {
+        "line": 952,
+        "text": "async def remove_lora(self, lora_id: int) -> bool:"
+      },
+      {
+        "line": 956,
+        "text": "async def list_loras(self) -> set[int]:"
+      },
+      {
+        "line": 960,
+        "text": "async def pin_lora(self, lora_id: int) -> bool:"
+      },
+      {
+        "line": 964,
+        "text": "async def collective_rpc("
+      },
+      {
+        "line": 978,
+        "text": "async def wait_for_requests_to_drain(self, drain_timeout: int = 300):"
+      },
+      {
+        "line": 994,
+        "text": "async def scale_elastic_ep("
+      },
+      {
+        "line": 1045,
+        "text": "def is_running(self) -> bool:"
+      },
+      {
+        "line": 1050,
+        "text": "def is_stopped(self) -> bool:"
+      },
+      {
+        "line": 1054,
+        "text": "def errored(self) -> bool:"
+      },
+      {
+        "line": 1058,
+        "text": "def dead_error(self) -> BaseException:"
+      },
+      {
+        "line": 1061,
+        "text": "async def init_weight_transfer_engine("
+      },
+      {
+        "line": 1083,
+        "text": "async def start_weight_update(self, is_checkpoint_format: bool = True) -> None:"
+      },
+      {
+        "line": 1090,
+        "text": "async def update_weights(self, request: WeightTransferUpdateRequest) -> None:"
+      },
+      {
+        "line": 1109,
+        "text": "async def finish_weight_update(self) -> None:"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/engine/core.py",
+    "sha256": "27b23827a86fd488f1f7cc9a2722fe76d284087ca7cfefef5a30c5e74f21bc71",
+    "definitions": [
+      {
+        "line": 96,
+        "text": "class EngineCore:"
+      },
+      {
+        "line": 99,
+        "text": "def __init__("
+      },
+      {
+        "line": 240,
+        "text": "def _initialize_kv_caches(self, vllm_config: VllmConfig) -> KVCacheConfig:"
+      },
+      {
+        "line": 350,
+        "text": "def get_supported_tasks(self) -> tuple[SupportedTask, ...]:"
+      },
+      {
+        "line": 353,
+        "text": "def get_kv_cache_group_metadata(self) -> list[dict[str, int | str | None]]:"
+      },
+      {
+        "line": 372,
+        "text": "def add_request(self, request: Request, request_wave: int = 0):"
+      },
+      {
+        "line": 409,
+        "text": "def abort_requests(self, request_ids: list[str]):"
+      },
+      {
+        "line": 418,
+        "text": "def log_error_detail(self, scheduler_output: SchedulerOutput):"
+      },
+      {
+        "line": 434,
+        "text": "def log_iteration_details(self, scheduler_output: SchedulerOutput | None):"
+      },
+      {
+        "line": 474,
+        "text": "def _should_throttle_prefills(self) -> bool:"
+      },
+      {
+        "line": 479,
+        "text": "def step(self) -> tuple[dict[int, EngineCoreOutputs], bool]:"
+      },
+      {
+        "line": 510,
+        "text": "def post_step(self, model_executed: bool) -> None:"
+      },
+      {
+        "line": 519,
+        "text": "def step_with_batch_queue("
+      },
+      {
+        "line": 634,
+        "text": "def _process_aborts_queue(self):"
+      },
+      {
+        "line": 644,
+        "text": "def shutdown(self):"
+      },
+      {
+        "line": 662,
+        "text": "def profile(self, is_start: bool = True, profile_prefix: str | None = None):"
+      },
+      {
+        "line": 665,
+        "text": "def reset_mm_cache(self):"
+      },
+      {
+        "line": 680,
+        "text": "def reset_prefix_cache("
+      },
+      {
+        "line": 687,
+        "text": "def reset_encoder_cache(self) -> None:"
+      },
+      {
+        "line": 707,
+        "text": "def _reset_caches("
+      },
+      {
+        "line": 722,
+        "text": "def pause_scheduler("
+      },
+      {
+        "line": 753,
+        "text": "def resume_scheduler(self) -> None:"
+      },
+      {
+        "line": 757,
+        "text": "def is_scheduler_paused(self) -> bool:"
+      },
+      {
+        "line": 761,
+        "text": "def sleep(self, level: int = 1, mode: PauseMode = \"abort\") -> None | Future:"
+      },
+      {
+        "line": 799,
+        "text": "def wake_up(self, tags: list[str] | None = None):"
+      },
+      {
+        "line": 817,
+        "text": "def is_sleeping(self) -> bool:"
+      },
+      {
+        "line": 821,
+        "text": "def execute_dummy_batch(self):"
+      },
+      {
+        "line": 824,
+        "text": "def add_lora(self, lora_request: LoRARequest) -> bool:"
+      },
+      {
+        "line": 827,
+        "text": "def remove_lora(self, lora_id: int) -> bool:"
+      },
+      {
+        "line": 830,
+        "text": "def list_loras(self) -> set[int]:"
+      },
+      {
+        "line": 833,
+        "text": "def pin_lora(self, lora_id: int) -> bool:"
+      },
+      {
+        "line": 836,
+        "text": "def save_sharded_state("
+      },
+      {
+        "line": 846,
+        "text": "def collective_rpc("
+      },
+      {
+        "line": 855,
+        "text": "def preprocess_add_request(self, request: EngineCoreRequest) -> tuple[Request, int]:"
+      },
+      {
+        "line": 879,
+        "text": "def _eep_scale_up_before_kv_init(self):"
+      },
+      {
+        "line": 882,
+        "text": "def _eep_send_engine_core_notification("
+      },
+      {
+        "line": 890,
+        "text": "class EngineShutdownState(IntEnum):"
+      },
+      {
+        "line": 896,
+        "text": "class EngineCoreProc(EngineCore):"
+      },
+      {
+        "line": 903,
+        "text": "def __init__("
+      },
+      {
+        "line": 1012,
+        "text": "def _perform_handshakes("
+      },
+      {
+        "line": 1077,
+        "text": "def _perform_handshake("
+      },
+      {
+        "line": 1116,
+        "text": "def startup_handshake("
+      },
+      {
+        "line": 1154,
+        "text": "def run_engine_core(*args, dp_rank: int = 0, local_dp_rank: int = 0, **kwargs):"
+      },
+      {
+        "line": 1244,
+        "text": "def _init_data_parallel(self, vllm_config: VllmConfig):"
+      },
+      {
+        "line": 1247,
+        "text": "def has_work(self) -> bool:"
+      },
+      {
+        "line": 1255,
+        "text": "def is_running(self) -> bool:"
+      },
+      {
+        "line": 1259,
+        "text": "def run_busy_loop(self):"
+      },
+      {
+        "line": 1269,
+        "text": "def _process_input_queue(self):"
+      },
+      {
+        "line": 1300,
+        "text": "def _process_engine_step(self) -> bool:"
+      },
+      {
+        "line": 1319,
+        "text": "def _notify_idle_state_callbacks(self) -> None:"
+      },
+      {
+        "line": 1324,
+        "text": "def _handle_shutdown(self) -> bool:"
+      },
+      {
+        "line": 1372,
+        "text": "def _handle_client_request("
+      },
+      {
+        "line": 1407,
+        "text": "def _reject_add_in_shutdown(self, request: Request) -> bool:"
+      },
+      {
+        "line": 1418,
+        "text": "def _reject_utility_in_shutdown("
+      },
+      {
+        "line": 1435,
+        "text": "def _invoke_utility_method("
+      },
+      {
+        "line": 1454,
+        "text": "def _convert_msgspec_args(method, args):"
+      },
+      {
+        "line": 1470,
+        "text": "def _send_engine_dead(self):"
+      },
+      {
+        "line": 1484,
+        "text": "def process_input_sockets("
+      },
+      {
+        "line": 1589,
+        "text": "def process_output_sockets("
+      },
+      {
+        "line": 1656,
+        "text": "def _handle_request_preproc_error(self, request: EngineCoreRequest) -> None:"
+      },
+      {
+        "line": 1665,
+        "text": "def pause_scheduler("
+      },
+      {
+        "line": 1707,
+        "text": "def _pause_complete(self) -> bool:"
+      },
+      {
+        "line": 1714,
+        "text": "def _send_finish_outputs_to_client("
+      },
+      {
+        "line": 1724,
+        "text": "def _send_abort_outputs_to_client("
+      },
+      {
+        "line": 1729,
+        "text": "def _send_error_outputs_to_client("
+      },
+      {
+        "line": 1734,
+        "text": "def _send_abort_outputs(self, aborted_reqs: list[tuple[str, int]]) -> None:"
+      },
+      {
+        "line": 1745,
+        "text": "class DPEngineCoreProc(EngineCoreProc):"
+      },
+      {
+        "line": 1749,
+        "text": "def __init__("
+      },
+      {
+        "line": 1797,
+        "text": "def _init_data_parallel(self, vllm_config: VllmConfig):"
+      },
+      {
+        "line": 1813,
+        "text": "def shutdown(self):"
+      },
+      {
+        "line": 1818,
+        "text": "def _pause_complete(self) -> bool:"
+      },
+      {
+        "line": 1836,
+        "text": "def add_request(self, request: Request, request_wave: int = 0):"
+      },
+      {
+        "line": 1852,
+        "text": "def resume_scheduler(self):"
+      },
+      {
+        "line": 1877,
+        "text": "def barrier(self):"
+      },
+      {
+        "line": 1883,
+        "text": "def _handle_client_request("
+      },
+      {
+        "line": 1903,
+        "text": "def _maybe_publish_request_counts(self):"
+      },
+      {
+        "line": 1916,
+        "text": "def _should_throttle_prefills(self) -> bool:"
+      },
+      {
+        "line": 1925,
+        "text": "def run_busy_loop(self):"
+      },
+      {
+        "line": 1985,
+        "text": "def _has_global_unfinished_reqs(self, local_unfinished: bool) -> bool:"
+      },
+      {
+        "line": 2004,
+        "text": "def reinitialize_distributed("
+      },
+      {
+        "line": 2052,
+        "text": "def _eep_send_engine_core_notification("
+      },
+      {
+        "line": 2092,
+        "text": "def eep_handle_engine_core_notification("
+      },
+      {
+        "line": 2104,
+        "text": "def _eep_scale_up_before_kv_init(self):"
+      },
+      {
+        "line": 2120,
+        "text": "class EngineCoreActorMixin:"
+      },
+      {
+        "line": 2125,
+        "text": "def __init__("
+      },
+      {
+        "line": 2165,
+        "text": "def _set_nixl_side_channel_host():"
+      },
+      {
+        "line": 2174,
+        "text": "def _set_visible_devices(self, vllm_config: VllmConfig, local_dp_rank: int):"
+      },
+      {
+        "line": 2185,
+        "text": "def _set_assigned_physical_gpu_ids("
+      },
+      {
+        "line": 2211,
+        "text": "def _perform_handshakes("
+      },
+      {
+        "line": 2226,
+        "text": "def wait_for_init(self):"
+      },
+      {
+        "line": 2236,
+        "text": "def run(self):"
+      },
+      {
+        "line": 2252,
+        "text": "class DPMoEEngineCoreActor(EngineCoreActorMixin, DPEngineCoreProc):"
+      },
+      {
+        "line": 2255,
+        "text": "def __init__("
+      },
+      {
+        "line": 2275,
+        "text": "class EngineCoreActor(EngineCoreActorMixin, EngineCoreProc):"
+      },
+      {
+        "line": 2278,
+        "text": "def __init__("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/engine/input_processor.py",
+    "sha256": "c5673988c0f7cfec268220e3f044e718702c015a4f236c020937cfd40a793f15",
+    "definitions": [
+      {
+        "line": 36,
+        "text": "class InputProcessor:"
+      },
+      {
+        "line": 37,
+        "text": "def __init__("
+      },
+      {
+        "line": 76,
+        "text": "def tokenizer(self) -> TokenizerLike | None:"
+      },
+      {
+        "line": 79,
+        "text": "def get_tokenizer(self) -> TokenizerLike:"
+      },
+      {
+        "line": 82,
+        "text": "def _validate_params("
+      },
+      {
+        "line": 146,
+        "text": "def _validate_lora(self, lora_request: LoRARequest | None) -> None:"
+      },
+      {
+        "line": 165,
+        "text": "def _get_mm_identifier("
+      },
+      {
+        "line": 183,
+        "text": "def inject_into_mm_cache("
+      },
+      {
+        "line": 223,
+        "text": "def assign_request_id(request: EngineCoreRequest):"
+      },
+      {
+        "line": 242,
+        "text": "def process_inputs("
+      },
+      {
+        "line": 387,
+        "text": "def _validate_prompt_len("
+      },
+      {
+        "line": 434,
+        "text": "def _validate_model_input("
+      },
+      {
+        "line": 486,
+        "text": "def _validate_model_inputs("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/engine/output_processor.py",
+    "sha256": "464c3cda347512cf1090f8e6471d0d3f0f65e286eb9a7b97be52efbc1ffd572a",
+    "definitions": [
+      {
+        "line": 45,
+        "text": "class RequestOutputCollector:"
+      },
+      {
+        "line": 54,
+        "text": "def __init__(self, output_kind: RequestOutputKind, request_id: str):"
+      },
+      {
+        "line": 62,
+        "text": "def put(self, output: RequestOutput | PoolingRequestOutput | Exception) -> None:"
+      },
+      {
+        "line": 78,
+        "text": "async def get(self) -> RequestOutput | PoolingRequestOutput:"
+      },
+      {
+        "line": 88,
+        "text": "def get_nowait(self) -> RequestOutput | PoolingRequestOutput | None:"
+      },
+      {
+        "line": 98,
+        "text": "def close(self):"
+      },
+      {
+        "line": 103,
+        "text": "def __del__(self):"
+      },
+      {
+        "line": 110,
+        "text": "class OutputProcessorOutput:"
+      },
+      {
+        "line": 116,
+        "text": "class StreamingUpdate:"
+      },
+      {
+        "line": 129,
+        "text": "class RequestState:"
+      },
+      {
+        "line": 130,
+        "text": "def __init__("
+      },
+      {
+        "line": 191,
+        "text": "def apply_streaming_update(self, update: StreamingUpdate) -> None:"
+      },
+      {
+        "line": 211,
+        "text": "def from_new_request("
+      },
+      {
+        "line": 272,
+        "text": "def make_request_output("
+      },
+      {
+        "line": 333,
+        "text": "def _new_request_output("
+      },
+      {
+        "line": 376,
+        "text": "def _new_completion_output("
+      },
+      {
+        "line": 413,
+        "text": "def _new_pooling_output(self, pooling_output: torch.Tensor) -> PoolingOutput:"
+      },
+      {
+        "line": 417,
+        "text": "class OutputProcessor:"
+      },
+      {
+        "line": 420,
+        "text": "def __init__("
+      },
+      {
+        "line": 437,
+        "text": "def get_num_unfinished_requests(self):"
+      },
+      {
+        "line": 440,
+        "text": "def has_unfinished_requests(self) -> bool:"
+      },
+      {
+        "line": 443,
+        "text": "def propagate_error(self, e: Exception):"
+      },
+      {
+        "line": 450,
+        "text": "def abort_requests(self, request_ids: Iterable[str], internal: bool) -> list[str]:"
+      },
+      {
+        "line": 512,
+        "text": "def add_request("
+      },
+      {
+        "line": 543,
+        "text": "def _update_streaming_request_state("
+      },
+      {
+        "line": 576,
+        "text": "def process_outputs("
+      },
+      {
+        "line": 695,
+        "text": "def _finish_request(self, req_state: RequestState) -> None:"
+      },
+      {
+        "line": 709,
+        "text": "def update_scheduler_stats(self, scheduler_stats: SchedulerStats | None):"
+      },
+      {
+        "line": 712,
+        "text": "def do_tracing("
+      },
+      {
+        "line": 774,
+        "text": "def _update_stats_from_output("
+      },
+      {
+        "line": 795,
+        "text": "def _update_stats_from_finished("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/core/sched/scheduler.py",
+    "sha256": "df78076164fe02a63876d7690cefac810f1ba4d8fb58afc15e786c1608064090",
+    "definitions": [
+      {
+        "line": 68,
+        "text": "class Scheduler(SchedulerInterface):"
+      },
+      {
+        "line": 69,
+        "text": "def __init__("
+      },
+      {
+        "line": 330,
+        "text": "def _mamba_block_aligned_split("
+      },
+      {
+        "line": 388,
+        "text": "def schedule(self, throttle_prefills: bool = False) -> SchedulerOutput:"
+      },
+      {
+        "line": 1102,
+        "text": "def _build_kv_connector_meta("
+      },
+      {
+        "line": 1107,
+        "text": "def _preempt_request(self, request: Request, timestamp: float) -> None:"
+      },
+      {
+        "line": 1130,
+        "text": "def _update_after_schedule(self, scheduler_output: SchedulerOutput) -> None:"
+      },
+      {
+        "line": 1178,
+        "text": "def _update_request_as_session("
+      },
+      {
+        "line": 1221,
+        "text": "def _make_cached_request_data("
+      },
+      {
+        "line": 1280,
+        "text": "def _try_schedule_encoder_inputs("
+      },
+      {
+        "line": 1440,
+        "text": "def get_grammar_bitmask("
+      },
+      {
+        "line": 1464,
+        "text": "def update_from_output("
+      },
+      {
+        "line": 1806,
+        "text": "def _is_blocked_waiting_status(status: RequestStatus) -> bool:"
+      },
+      {
+        "line": 1813,
+        "text": "def _enqueue_waiting_request(self, request: Request) -> None:"
+      },
+      {
+        "line": 1819,
+        "text": "def _select_waiting_queue_for_scheduling(self) -> RequestQueue | None:"
+      },
+      {
+        "line": 1831,
+        "text": "def _handle_stopped_request(self, request: Request) -> bool:"
+      },
+      {
+        "line": 1849,
+        "text": "def _update_request_with_output("
+      },
+      {
+        "line": 1867,
+        "text": "def _free_encoder_inputs(self, request: Request) -> None:"
+      },
+      {
+        "line": 1900,
+        "text": "def update_draft_token_ids(self, draft_token_ids: DraftTokenIds) -> None:"
+      },
+      {
+        "line": 1922,
+        "text": "def update_draft_token_ids_in_output("
+      },
+      {
+        "line": 1960,
+        "text": "def get_request_counts(self) -> tuple[int, int]:"
+      },
+      {
+        "line": 1964,
+        "text": "def add_request(self, request: Request) -> None:"
+      },
+      {
+        "line": 1988,
+        "text": "def finish_requests("
+      },
+      {
+        "line": 2051,
+        "text": "def _free_request("
+      },
+      {
+        "line": 2070,
+        "text": "def _free_blocks(self, request: Request):"
+      },
+      {
+        "line": 2076,
+        "text": "def pause_state(self) -> PauseState:"
+      },
+      {
+        "line": 2079,
+        "text": "def set_pause_state(self, pause_state: PauseState) -> None:"
+      },
+      {
+        "line": 2082,
+        "text": "def _free_request_blocks(self, request: Request):"
+      },
+      {
+        "line": 2097,
+        "text": "def _drain_deferred_frees(self):"
+      },
+      {
+        "line": 2111,
+        "text": "def get_num_unfinished_requests(self) -> int:"
+      },
+      {
+        "line": 2123,
+        "text": "def has_finished_requests(self) -> bool:"
+      },
+      {
+        "line": 2135,
+        "text": "def has_requests(self) -> bool:"
+      },
+      {
+        "line": 2148,
+        "text": "def reset_prefix_cache("
+      },
+      {
+        "line": 2198,
+        "text": "def reset_connector_cache(self) -> bool:"
+      },
+      {
+        "line": 2220,
+        "text": "def reset_encoder_cache(self) -> None:"
+      },
+      {
+        "line": 2228,
+        "text": "def make_stats("
+      },
+      {
+        "line": 2266,
+        "text": "def make_spec_decoding_stats("
+      },
+      {
+        "line": 2285,
+        "text": "def shutdown(self) -> None:"
+      },
+      {
+        "line": 2301,
+        "text": "def get_kv_connector(self) -> KVConnectorBase_V1 | None:"
+      },
+      {
+        "line": 2304,
+        "text": "def _connector_finished("
+      },
+      {
+        "line": 2335,
+        "text": "def _request_remaining_blocks(self, request: Request) -> int:"
+      },
+      {
+        "line": 2348,
+        "text": "def _inflight_prefill_reserved_blocks(self) -> int:"
+      },
+      {
+        "line": 2355,
+        "text": "def _update_waiting_for_remote_kv(self, request: Request) -> None:"
+      },
+      {
+        "line": 2389,
+        "text": "def _try_promote_blocked_waiting_request(self, request: Request) -> bool:"
+      },
+      {
+        "line": 2422,
+        "text": "def _update_from_kv_xfer_finished(self, kv_connector_output: KVConnectorOutput):"
+      },
+      {
+        "line": 2451,
+        "text": "def _update_requests_with_invalid_blocks("
+      },
+      {
+        "line": 2554,
+        "text": "def _handle_invalid_blocks("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/core/kv_cache_manager.py",
+    "sha256": "2e91e77f84dfd9d4bed79f50392be72559207f54e845a3d3402baf88dc529320",
+    "definitions": [
+      {
+        "line": 26,
+        "text": "class KVCacheBlocks:"
+      },
+      {
+        "line": 48,
+        "text": "def __add__(self, other: \"KVCacheBlocks\") -> \"KVCacheBlocks\":"
+      },
+      {
+        "line": 58,
+        "text": "def get_block_ids("
+      },
+      {
+        "line": 64,
+        "text": "def get_block_ids("
+      },
+      {
+        "line": 69,
+        "text": "def get_block_ids("
+      },
+      {
+        "line": 86,
+        "text": "def get_unhashed_block_ids(self) -> list[int]:"
+      },
+      {
+        "line": 91,
+        "text": "def get_unhashed_block_ids_all_groups(self) -> list[list[int]]:"
+      },
+      {
+        "line": 103,
+        "text": "def new_empty(self) -> \"KVCacheBlocks\":"
+      },
+      {
+        "line": 110,
+        "text": "class KVCacheManager:"
+      },
+      {
+        "line": 111,
+        "text": "def __init__("
+      },
+      {
+        "line": 182,
+        "text": "def usage(self) -> float:"
+      },
+      {
+        "line": 190,
+        "text": "def make_prefix_cache_stats(self) -> PrefixCacheStats | None:"
+      },
+      {
+        "line": 202,
+        "text": "def get_computed_blocks(self, request: Request) -> tuple[KVCacheBlocks, int]:"
+      },
+      {
+        "line": 244,
+        "text": "def allocate_slots("
+      },
+      {
+        "line": 460,
+        "text": "def free(self, request: Request) -> None:"
+      },
+      {
+        "line": 470,
+        "text": "def remove_skipped_blocks("
+      },
+      {
+        "line": 483,
+        "text": "def pop_blocks_for_free(self, request: Request) -> list[KVCacheBlock]:"
+      },
+      {
+        "line": 496,
+        "text": "def evict_blocks(self, block_ids: set[int]) -> None:"
+      },
+      {
+        "line": 504,
+        "text": "def reset_prefix_cache(self) -> bool:"
+      },
+      {
+        "line": 520,
+        "text": "def get_num_common_prefix_blocks(self, running_request_id: str) -> list[int]:"
+      },
+      {
+        "line": 554,
+        "text": "def take_events(self) -> list[KVCacheEvent]:"
+      },
+      {
+        "line": 580,
+        "text": "def get_blocks(self, request_id: str) -> KVCacheBlocks:"
+      },
+      {
+        "line": 584,
+        "text": "def get_block_ids(self, request_id: str) -> tuple[list[int], ...]:"
+      },
+      {
+        "line": 588,
+        "text": "def cache_blocks(self, request: Request, num_computed_tokens: int) -> None:"
+      },
+      {
+        "line": 599,
+        "text": "def create_kv_cache_blocks("
+      },
+      {
+        "line": 605,
+        "text": "def take_new_block_ids(self) -> list[int]:"
+      },
+      {
+        "line": 612,
+        "text": "def new_step_starts(self) -> None:"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/attention/backends/registry.py",
+    "sha256": "408469a9c58204d2b8b88ef3e86d5fba6be426173df5887be391f3a74a8cc6cb",
+    "definitions": [
+      {
+        "line": 18,
+        "text": "class _AttentionBackendEnumMeta(EnumMeta):"
+      },
+      {
+        "line": 21,
+        "text": "def __getitem__(cls, name: str):"
+      },
+      {
+        "line": 34,
+        "text": "class AttentionBackendEnum(Enum, metaclass=_AttentionBackendEnumMeta):"
+      },
+      {
+        "line": 113,
+        "text": "def get_path(self, include_classname: bool = True) -> str:"
+      },
+      {
+        "line": 132,
+        "text": "def get_class(self) -> \"type[AttentionBackend]\":"
+      },
+      {
+        "line": 144,
+        "text": "def is_overridden(self) -> bool:"
+      },
+      {
+        "line": 152,
+        "text": "def clear_override(self) -> None:"
+      },
+      {
+        "line": 157,
+        "text": "class MambaAttentionBackendEnum(Enum, metaclass=_AttentionBackendEnumMeta):"
+      },
+      {
+        "line": 176,
+        "text": "def get_path(self, include_classname: bool = True) -> str:"
+      },
+      {
+        "line": 195,
+        "text": "def get_class(self) -> \"type[AttentionBackend]\":"
+      },
+      {
+        "line": 207,
+        "text": "def is_overridden(self) -> bool:"
+      },
+      {
+        "line": 215,
+        "text": "def clear_override(self) -> None:"
+      },
+      {
+        "line": 224,
+        "text": "def register_backend("
+      },
+      {
+        "line": 262,
+        "text": "def decorator(cls: type) -> type:"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/attention/backends/triton_attn.py",
+    "sha256": "1219c4d1820b56e99ef6686de8a49c8c5aa57707794bcabf3322023799a03605",
+    "definitions": [
+      {
+        "line": 59,
+        "text": "class TritonAttentionMetadata:"
+      },
+      {
+        "line": 98,
+        "text": "class TritonAttentionMetadataBuilder(AttentionMetadataBuilder[TritonAttentionMetadata]):"
+      },
+      {
+        "line": 101,
+        "text": "def __init__("
+      },
+      {
+        "line": 173,
+        "text": "def build_for_cudagraph_capture("
+      },
+      {
+        "line": 183,
+        "text": "def build("
+      },
+      {
+        "line": 248,
+        "text": "class TritonAttentionBackend(AttentionBackend):"
+      },
+      {
+        "line": 266,
+        "text": "def get_supported_kernel_block_sizes() -> list[int | MultipleOf]:"
+      },
+      {
+        "line": 270,
+        "text": "def supports_block_size(cls, block_size: int | None) -> bool:"
+      },
+      {
+        "line": 278,
+        "text": "def supports_non_causal(cls) -> bool:"
+      },
+      {
+        "line": 282,
+        "text": "def get_name() -> str:"
+      },
+      {
+        "line": 286,
+        "text": "def supports_batch_invariance(cls) -> bool:"
+      },
+      {
+        "line": 290,
+        "text": "def get_impl_cls() -> type[\"TritonAttentionImpl\"]:"
+      },
+      {
+        "line": 294,
+        "text": "def get_kv_cache_shape("
+      },
+      {
+        "line": 318,
+        "text": "def get_kv_cache_stride_order("
+      },
+      {
+        "line": 339,
+        "text": "def use_cascade_attention(*args, **kwargs) -> bool:"
+      },
+      {
+        "line": 343,
+        "text": "def get_builder_cls() -> type[\"TritonAttentionMetadataBuilder\"]:"
+      },
+      {
+        "line": 347,
+        "text": "def supports_head_size(cls, head_size: int) -> bool:"
+      },
+      {
+        "line": 351,
+        "text": "def supports_mm_prefix(cls) -> bool:"
+      },
+      {
+        "line": 355,
+        "text": "def supports_sink(cls) -> bool:"
+      },
+      {
+        "line": 359,
+        "text": "def supports_attn_type(cls, attn_type: str) -> bool:"
+      },
+      {
+        "line": 369,
+        "text": "def supports_alibi_sqrt(cls) -> bool:"
+      },
+      {
+        "line": 373,
+        "text": "def supports_compute_capability(cls, capability: DeviceCapability) -> bool:"
+      },
+      {
+        "line": 377,
+        "text": "class TritonAttentionImpl(AttentionImpl):"
+      },
+      {
+        "line": 382,
+        "text": "def _ensure_scale_caches(self, kv_cache: torch.Tensor) -> None:"
+      },
+      {
+        "line": 434,
+        "text": "def fused_output_quant_supported(self, quant_key: QuantKey):"
+      },
+      {
+        "line": 437,
+        "text": "def __init__("
+      },
+      {
+        "line": 530,
+        "text": "def forward("
+      },
+      {
+        "line": 678,
+        "text": "def _forward_encoder_attention("
+      },
+      {
+        "line": 724,
+        "text": "def do_kv_cache_update("
+      },
+      {
+        "line": 769,
+        "text": "def fused_rope_kvcache_supported(self):"
+      },
+      {
+        "line": 774,
+        "text": "def do_rope_and_kv_cache_update("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/attention/ops/triton_unified_attention.py",
+    "sha256": "bab2c0b9f9a7793ca411796b48ebb4734433160e7e99eabf46ddb7f1c30cb6e0",
+    "definitions": [
+      {
+        "line": 39,
+        "text": "def _cast_kv_tile(data, Q, tensor_scale, KV_QUANT_MODE: tl.constexpr):"
+      },
+      {
+        "line": 68,
+        "text": "def _load_q_td("
+      },
+      {
+        "line": 111,
+        "text": "def _load_kv_tile_td("
+      },
+      {
+        "line": 146,
+        "text": "def _store_output_td("
+      },
+      {
+        "line": 179,
+        "text": "def kernel_unified_attention("
+      },
+      {
+        "line": 663,
+        "text": "def reduce_segments("
+      },
+      {
+        "line": 752,
+        "text": "def _is_gemma3_attention(head_size: int, sliding_window: int) -> bool:"
+      },
+      {
+        "line": 762,
+        "text": "def _get_tile_size("
+      },
+      {
+        "line": 780,
+        "text": "def unified_attention("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/attention/ops/triton_reshape_and_cache_flash.py",
+    "sha256": "f18224e51162e37c14a2e2b3045bca55baf0b207b1d203ad6ee7d8ed417139eb",
+    "definitions": [
+      {
+        "line": 19,
+        "text": "def _is_supported_kv_cache_dtype(kv_cache_dtype: str) -> bool:"
+      },
+      {
+        "line": 33,
+        "text": "def reshape_and_cache_kernel_flash("
+      },
+      {
+        "line": 154,
+        "text": "def _reshape_cache_per_token_head("
+      },
+      {
+        "line": 271,
+        "text": "def triton_reshape_and_cache_flash_per_token_head_quant("
+      },
+      {
+        "line": 344,
+        "text": "def triton_reshape_and_cache_flash("
+      },
+      {
+        "line": 445,
+        "text": "def reshape_and_cache_kernel_flash_diffkv("
+      },
+      {
+        "line": 523,
+        "text": "def triton_reshape_and_cache_flash_diffkv("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "v1/sample/sampler.py",
+    "sha256": "1a2f18ddc91c89f3744ab5a93624be056bf20b7a8b2e6e13d0236182718a2253",
+    "definitions": [
+      {
+        "line": 20,
+        "text": "class Sampler(nn.Module):"
+      },
+      {
+        "line": 61,
+        "text": "def __init__("
+      },
+      {
+        "line": 72,
+        "text": "def forward("
+      },
+      {
+        "line": 151,
+        "text": "def gather_specific_token_logprobs("
+      },
+      {
+        "line": 228,
+        "text": "def apply_temperature("
+      },
+      {
+        "line": 240,
+        "text": "def greedy_sample(logits: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 243,
+        "text": "def sample("
+      },
+      {
+        "line": 305,
+        "text": "def compute_logprobs(logits: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 309,
+        "text": "def gather_logprobs("
+      },
+      {
+        "line": 359,
+        "text": "def _combine_outputs_with_spec_tokens("
+      },
+      {
+        "line": 371,
+        "text": "def apply_logits_processors("
+      },
+      {
+        "line": 423,
+        "text": "def apply_penalties("
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "entrypoints/openai/completion/api_router.py",
+    "sha256": "9347872bbdd3f2488b35a9db59bdb85e4dd990a6559a2615145e8a1e5dd3239a",
+    "definitions": [
+      {
+        "line": 30,
+        "text": "def completion(request: Request) -> OpenAIServingCompletion | None:"
+      },
+      {
+        "line": 46,
+        "text": "async def create_completion(request: CompletionRequest, raw_request: Request):"
+      },
+      {
+        "line": 69,
+        "text": "def attach_router(app: FastAPI):"
+      }
+    ]
+  },
+  {
+    "group": "vllm",
+    "relative_path": "entrypoints/openai/completion/serving.py",
+    "sha256": "582b866dacfc74615428b89169a8fa948a4aa7326bec5a2a79455da6f50b2a90",
+    "definitions": [
+      {
+        "line": 55,
+        "text": "class OpenAIServingCompletion(OpenAIServing):"
+      },
+      {
+        "line": 56,
+        "text": "def __init__("
+      },
+      {
+        "line": 86,
+        "text": "async def render_completion_request("
+      },
+      {
+        "line": 111,
+        "text": "async def create_completion("
+      },
+      {
+        "line": 129,
+        "text": "async def _create_completion("
+      },
+      {
+        "line": 280,
+        "text": "async def completion_stream_generator("
+      },
+      {
+        "line": 477,
+        "text": "def request_output_to_completion_response("
+      },
+      {
+        "line": 606,
+        "text": "def _create_completion_logprobs("
+      }
+    ]
+  },
+  {
+    "group": "plugin",
+    "relative_path": "vllm_fl/platform.py",
+    "sha256": "a430774735447365bc662dfc5cb12d067899a730e6726d7d61d0e7641460bbb9",
+    "definitions": [
+      {
+        "line": 55,
+        "text": "class PlatformFL(Platform):"
+      },
+      {
+        "line": 81,
+        "text": "def is_cuda_alike(self) -> bool:"
+      },
+      {
+        "line": 91,
+        "text": "def is_cuda(self) -> bool:"
+      },
+      {
+        "line": 95,
+        "text": "def is_musa(self) -> bool:"
+      },
+      {
+        "line": 100,
+        "text": "def supported_dtypes(self) -> list[torch.dtype]:"
+      },
+      {
+        "line": 104,
+        "text": "def check_if_supports_dtype(cls, torch_dtype: torch.dtype):"
+      },
+      {
+        "line": 111,
+        "text": "def get_current_memory_usage("
+      },
+      {
+        "line": 119,
+        "text": "def set_device(cls, device: torch.device) -> None:"
+      },
+      {
+        "line": 126,
+        "text": "def empty_cache(cls) -> None:"
+      },
+      {
+        "line": 130,
+        "text": "def get_device_name(cls, device_id: int = 0) -> str:"
+      },
+      {
+        "line": 135,
+        "text": "def is_pin_memory_available(cls):"
+      },
+      {
+        "line": 141,
+        "text": "def import_kernels(cls) -> None:"
+      },
+      {
+        "line": 171,
+        "text": "def import_ir_kernels(cls) -> None:"
+      },
+      {
+        "line": 176,
+        "text": "def check_and_update_config(cls, vllm_config: \"VllmConfig\") -> None:"
+      },
+      {
+        "line": 264,
+        "text": "def get_attn_backend_cls("
+      },
+      {
+        "line": 292,
+        "text": "def get_supported_vit_attn_backends(cls) -> list[\"AttentionBackendEnum\"]:"
+      },
+      {
+        "line": 299,
+        "text": "def get_vit_attn_backend("
+      },
+      {
+        "line": 330,
+        "text": "def get_punica_wrapper(cls) -> str:"
+      },
+      {
+        "line": 335,
+        "text": "def get_device_communicator_cls(cls) -> str:"
+      },
+      {
+        "line": 344,
+        "text": "def get_static_graph_wrapper_cls(cls) -> str:"
+      },
+      {
+        "line": 348,
+        "text": "def support_static_graph_mode(cls) -> bool:"
+      },
+      {
+        "line": 354,
+        "text": "def insert_blocks_to_device("
+      },
+      {
+        "line": 366,
+        "text": "def swap_out_blocks_to_host("
+      },
+      {
+        "line": 378,
+        "text": "def support_hybrid_kv_cache(cls) -> bool:"
+      },
+      {
+        "line": 383,
+        "text": "def opaque_attention_op(cls) -> bool:"
+      },
+      {
+        "line": 387,
+        "text": "def use_custom_allreduce(cls) -> bool:"
+      },
+      {
+        "line": 395,
+        "text": "def pre_register_and_update(cls, parser=None) -> None:"
+      },
+      {
+        "line": 407,
+        "text": "def supports_fp8(cls) -> bool:"
+      },
+      {
+        "line": 413,
+        "text": "def get_device_uuid(cls, device_id: int = 0) -> str:"
+      },
+      {
+        "line": 435,
+        "text": "def get_device_total_memory(cls, device_id: int = 0) -> int:"
+      },
+      {
+        "line": 441,
+        "text": "def use_custom_op_collectives(cls) -> bool:"
+      },
+      {
+        "line": 445,
+        "text": "def num_compute_units(cls, device_id: int = 0) -> int:"
+      },
+      {
+        "line": 450,
+        "text": "def get_device_capability(cls, device_id: int = 0) -> DeviceCapability:"
+      },
+      {
+        "line": 467,
+        "text": "def support_deep_gemm(cls) -> bool:"
+      },
+      {
+        "line": 474,
+        "text": "def is_fully_connected(cls, physical_device_ids: list[int]) -> bool:"
+      },
+      {
+        "line": 507,
+        "text": "def manual_seed_all(cls, seed: int) -> None:"
+      },
+      {
+        "line": 522,
+        "text": "def is_integrated_gpu(cls, device_id: int = 0) -> bool:"
+      }
+    ]
+  },
+  {
+    "group": "plugin",
+    "relative_path": "vllm_fl/worker/worker.py",
+    "sha256": "a8de1780d1b41bf4889c26f3d593e6ec54e91a5f61996ce64b4d79f2a97efa24",
+    "definitions": [
+      {
+        "line": 43,
+        "text": "def kernel_warmup(worker):"
+      },
+      {
+        "line": 81,
+        "text": "class MemorySnapshot:"
+      },
+      {
+        "line": 93,
+        "text": "def __post_init__(self):"
+      },
+      {
+        "line": 97,
+        "text": "def measure(self):"
+      },
+      {
+        "line": 123,
+        "text": "def __sub__(self, other: \"MemorySnapshot\") -> \"MemorySnapshot\":"
+      },
+      {
+        "line": 136,
+        "text": "class MemoryProfilingResult:"
+      },
+      {
+        "line": 148,
+        "text": "def __post_init__(self):"
+      },
+      {
+        "line": 156,
+        "text": "def memory_profiling_fl("
+      },
+      {
+        "line": 195,
+        "text": "class WorkerFL(WorkerBase):"
+      },
+      {
+        "line": 196,
+        "text": "def __init__("
+      },
+      {
+        "line": 333,
+        "text": "def initialize_cache(self, num_gpu_blocks: int, num_cpu_blocks: int) -> None:"
+      },
+      {
+        "line": 337,
+        "text": "def init_device(self):"
+      },
+      {
+        "line": 481,
+        "text": "def load_model(self, *, load_dummy_weights: bool = False) -> None:"
+      },
+      {
+        "line": 488,
+        "text": "def update_config(self, overrides: dict[str, Any]) -> None:"
+      },
+      {
+        "line": 491,
+        "text": "def reload_weights(self) -> None:"
+      },
+      {
+        "line": 495,
+        "text": "def determine_available_memory(self) -> int:"
+      },
+      {
+        "line": 654,
+        "text": "def get_kv_connector_handshake_metadata(self) -> dict | None:"
+      },
+      {
+        "line": 669,
+        "text": "def get_kv_cache_spec(self) -> dict[str, KVCacheSpec]:"
+      },
+      {
+        "line": 672,
+        "text": "def update_max_model_len(self, max_model_len: int) -> None:"
+      },
+      {
+        "line": 677,
+        "text": "def initialize_from_config(self, kv_cache_config: KVCacheConfig) -> None:"
+      },
+      {
+        "line": 696,
+        "text": "def compile_or_warm_up_model(self) -> CompilationTimes:"
+      },
+      {
+        "line": 850,
+        "text": "def reset_mm_cache(self) -> None:"
+      },
+      {
+        "line": 853,
+        "text": "def reset_encoder_cache(self) -> None:"
+      },
+      {
+        "line": 856,
+        "text": "def get_model(self) -> nn.Module:"
+      },
+      {
+        "line": 859,
+        "text": "def get_supported_tasks(self) -> tuple[SupportedTask, ...]:"
+      },
+      {
+        "line": 862,
+        "text": "def get_compilation_match_table(self) -> dict[str, int]:"
+      },
+      {
+        "line": 866,
+        "text": "def get_encoder_timing_stats(self) -> dict[str, dict[str, float | int]]:"
+      },
+      {
+        "line": 870,
+        "text": "def annotate_profile(self, scheduler_output):"
+      },
+      {
+        "line": 886,
+        "text": "def sample_tokens("
+      },
+      {
+        "line": 892,
+        "text": "def execute_model("
+      },
+      {
+        "line": 959,
+        "text": "def take_draft_token_ids(self) -> Optional[DraftTokenIds]:"
+      },
+      {
+        "line": 962,
+        "text": "def profile(self, is_start: bool = True, profile_prefix: str | None = None):"
+      },
+      {
+        "line": 1006,
+        "text": "def execute_dummy_batch(self) -> None:"
+      },
+      {
+        "line": 1010,
+        "text": "def add_lora(self, lora_request: LoRARequest) -> bool:"
+      },
+      {
+        "line": 1013,
+        "text": "def remove_lora(self, lora_id: int) -> bool:"
+      },
+      {
+        "line": 1016,
+        "text": "def list_loras(self) -> set[int]:"
+      },
+      {
+        "line": 1019,
+        "text": "def pin_lora(self, lora_id: int) -> bool:"
+      },
+      {
+        "line": 1022,
+        "text": "def check_health(self) -> None:"
+      },
+      {
+        "line": 1026,
+        "text": "def _eplb_before_scale_down(self, old_ep_size: int, new_ep_size: int) -> None:"
+      },
+      {
+        "line": 1048,
+        "text": "def _eplb_after_scale_up("
+      },
+      {
+        "line": 1068,
+        "text": "def _reconfigure_parallel_config("
+      },
+      {
+        "line": 1095,
+        "text": "def _reconfigure_moe("
+      },
+      {
+        "line": 1199,
+        "text": "def reinitialize_distributed("
+      },
+      {
+        "line": 1244,
+        "text": "def save_sharded_state("
+      },
+      {
+        "line": 1259,
+        "text": "def save_tensorized_model("
+      },
+      {
+        "line": 1267,
+        "text": "def shutdown(self) -> None:"
+      },
+      {
+        "line": 1276,
+        "text": "def init_worker_distributed_environment("
+      }
+    ]
+  },
+  {
+    "group": "plugin",
+    "relative_path": "vllm_fl/worker/model_runner.py",
+    "sha256": "446f12c0653131c9a4f5ff7783e52e1a3882d2b20cdd50a6899d218a2dc0bd64",
+    "definitions": [
+      {
+        "line": 114,
+        "text": "def _accelerator_synchronize() -> None:"
+      },
+      {
+        "line": 125,
+        "text": "def graph_capture(device: torch.device):"
+      },
+      {
+        "line": 299,
+        "text": "class AsyncGPUModelRunnerOutput(AsyncModelRunnerOutput):"
+      },
+      {
+        "line": 300,
+        "text": "def __init__("
+      },
+      {
+        "line": 342,
+        "text": "def get_output(self) -> ModelRunnerOutput:"
+      },
+      {
+        "line": 379,
+        "text": "def _copy_pooler_output_to_cpu("
+      },
+      {
+        "line": 424,
+        "text": "class AsyncGPUPoolingModelRunnerOutput(AsyncModelRunnerOutput):"
+      },
+      {
+        "line": 425,
+        "text": "def __init__("
+      },
+      {
+        "line": 451,
+        "text": "def get_output(self) -> ModelRunnerOutput:"
+      },
+      {
+        "line": 462,
+        "text": "class ExecuteModelState(NamedTuple):"
+      },
+      {
+        "line": 478,
+        "text": "class ModelRunnerFL("
+      },
+      {
+        "line": 481,
+        "text": "def __init__("
+      },
+      {
+        "line": 970,
+        "text": "def update_max_model_len(self, max_model_len: int) -> None:"
+      },
+      {
+        "line": 977,
+        "text": "def reset_mm_cache(self) -> None:"
+      },
+      {
+        "line": 986,
+        "text": "def reset_encoder_cache(self) -> None:"
+      },
+      {
+        "line": 995,
+        "text": "def post_kv_cache_wake_up(self) -> None:"
+      },
+      {
+        "line": 999,
+        "text": "def init_fp8_kv_scales(self) -> None:"
+      },
+      {
+        "line": 1042,
+        "text": "def _get_positions(self, num_tokens: Any):"
+      },
+      {
+        "line": 1056,
+        "text": "def _make_buffer("
+      },
+      {
+        "line": 1066,
+        "text": "def _get_mamba_bufs(self) -> mamba_utils.MambaBuffers:"
+      },
+      {
+        "line": 1084,
+        "text": "def _init_model_kwargs(self):"
+      },
+      {
+        "line": 1125,
+        "text": "def _may_reorder_batch(self, scheduler_output: \"SchedulerOutput\") -> None:"
+      },
+      {
+        "line": 1150,
+        "text": "def _init_kv_zero_meta(self) -> None:"
+      },
+      {
+        "line": 1165,
+        "text": "def _zero_block_ids(self, block_ids: list[int]) -> None:"
+      },
+      {
+        "line": 1171,
+        "text": "def _init_device_properties(self) -> None:"
+      },
+      {
+        "line": 1177,
+        "text": "def _sync_device(self) -> None:"
+      },
+      {
+        "line": 1180,
+        "text": "def _get_or_create_async_output_copy_stream(self) -> current_platform.torch_device_fn.Stream:"
+      },
+      {
+        "line": 1187,
+        "text": "def _update_states(self, scheduler_output: \"SchedulerOutput\") -> Callable | None:"
+      },
+      {
+        "line": 1557,
+        "text": "def _update_states_after_model_execute("
+      },
+      {
+        "line": 1615,
+        "text": "def _update_streaming_request("
+      },
+      {
+        "line": 1650,
+        "text": "def _init_mrope_positions(self, req_state: CachedRequestState):"
+      },
+      {
+        "line": 1682,
+        "text": "def _init_xdrope_positions(self, req_state: CachedRequestState):"
+      },
+      {
+        "line": 1695,
+        "text": "def _extract_mm_kwargs("
+      },
+      {
+        "line": 1719,
+        "text": "def _dummy_mm_kwargs(self, num_seqs: int) -> BatchedTensorInputs:"
+      },
+      {
+        "line": 1732,
+        "text": "def _get_cumsum_and_arange("
+      },
+      {
+        "line": 1758,
+        "text": "def _compute_prev_positions(self, num_reqs: int) -> None:"
+      },
+      {
+        "line": 1773,
+        "text": "def _prepare_input_ids("
+      },
+      {
+        "line": 1906,
+        "text": "def _get_encoder_seq_lens("
+      },
+      {
+        "line": 1951,
+        "text": "def _prepare_inputs("
+      },
+      {
+        "line": 2279,
+        "text": "def _build_attention_metadata("
+      },
+      {
+        "line": 2581,
+        "text": "def _compute_cascade_attn_prefix_lens("
+      },
+      {
+        "line": 2617,
+        "text": "def _compute_cascade_attn_prefix_len("
+      },
+      {
+        "line": 2714,
+        "text": "def _calc_mrope_positions(self, scheduler_output: \"SchedulerOutput\"):"
+      },
+      {
+        "line": 2763,
+        "text": "def _calc_xdrope_positions(self, scheduler_output: \"SchedulerOutput\"):"
+      },
+      {
+        "line": 2810,
+        "text": "def _calc_spec_decode_metadata("
+      },
+      {
+        "line": 2890,
+        "text": "def _prepare_kv_sharing_fast_prefill("
+      },
+      {
+        "line": 2914,
+        "text": "def _batch_mm_inputs_from_scheduler("
+      },
+      {
+        "line": 2957,
+        "text": "def _execute_mm_encoder("
+      },
+      {
+        "line": 3168,
+        "text": "def _gather_mm_embeddings("
+      },
+      {
+        "line": 3278,
+        "text": "def get_model(self) -> nn.Module:"
+      },
+      {
+        "line": 3290,
+        "text": "def apply_sparse_weight_patches(self, patches: Iterable[SparseWeightPatch]) -> None:"
+      },
+      {
+        "line": 3328,
+        "text": "def get_supported_generation_tasks(self) -> list[GenerationTask]:"
+      },
+      {
+        "line": 3346,
+        "text": "def get_supported_pooling_tasks(self) -> list[PoolingTask]:"
+      },
+      {
+        "line": 3353,
+        "text": "def get_supported_tasks(self) -> tuple[SupportedTask, ...]:"
+      },
+      {
+        "line": 3363,
+        "text": "def sync_and_gather_intermediate_tensors("
+      },
+      {
+        "line": 3393,
+        "text": "def eplb_step(self, is_dummy: bool = False, is_profile: bool = False) -> None:"
+      },
+      {
+        "line": 3408,
+        "text": "def setup_eplb_from_mapping("
+      },
+      {
+        "line": 3424,
+        "text": "def _pool("
+      },
+      {
+        "line": 3489,
+        "text": "def _pad_for_sequence_parallelism(self, num_scheduled_tokens: int) -> int:"
+      },
+      {
+        "line": 3497,
+        "text": "def _prepare_mm_inputs("
+      },
+      {
+        "line": 3508,
+        "text": "def _preprocess("
+      },
+      {
+        "line": 3651,
+        "text": "def _sample("
+      },
+      {
+        "line": 3682,
+        "text": "def _bookkeeping_sync("
+      },
+      {
+        "line": 3824,
+        "text": "def synchronize_input_prep(self):"
+      },
+      {
+        "line": 3838,
+        "text": "def _model_forward("
+      },
+      {
+        "line": 3871,
+        "text": "def _is_uniform_decode("
+      },
+      {
+        "line": 3891,
+        "text": "def _determine_batch_execution_and_padding("
+      },
+      {
+        "line": 4005,
+        "text": "def _register_layerwise_nvtx_hooks(self) -> None:"
+      },
+      {
+        "line": 4041,
+        "text": "def _get_slot_mappings("
+      },
+      {
+        "line": 4115,
+        "text": "def _is_all_reqs_chunked_prefill(self) -> bool:"
+      },
+      {
+        "line": 4125,
+        "text": "def execute_model("
+      },
+      {
+        "line": 4488,
+        "text": "def _input_fits_in_drafter("
+      },
+      {
+        "line": 4504,
+        "text": "def sample_tokens("
+      },
+      {
+        "line": 4769,
+        "text": "def _pp_broadcast_prev_sampled_token_ids("
+      },
+      {
+        "line": 4786,
+        "text": "def _pp_receive_prev_sampled_token_ids_to_input_batch(self) -> None:"
+      },
+      {
+        "line": 4816,
+        "text": "def take_draft_token_ids(self) -> DraftTokenIds | None:"
+      },
+      {
+        "line": 4822,
+        "text": "def _copy_draft_token_ids_to_cpu("
+      },
+      {
+        "line": 4859,
+        "text": "def _get_draft_token_ids_cpu(self) -> tuple[list[list[int]], list[str]]:"
+      },
+      {
+        "line": 4874,
+        "text": "def _copy_valid_sampled_token_count("
+      },
+      {
+        "line": 4896,
+        "text": "def _get_valid_sampled_token_count(self) -> list[int]:"
+      },
+      {
+        "line": 4908,
+        "text": "def _get_spec_decode_draft_probs("
+      },
+      {
+        "line": 4937,
+        "text": "def propose_draft_token_ids("
+      },
+      {
+        "line": 5214,
+        "text": "def update_config(self, overrides: dict[str, Any]) -> None:"
+      },
+      {
+        "line": 5226,
+        "text": "def load_model(self, load_dummy_weights: bool = False) -> None:"
+      },
+      {
+        "line": 5415,
+        "text": "def _setup_eagle3_aux_hidden_state_outputs(self) -> None:"
+      },
+      {
+        "line": 5436,
+        "text": "def _get_eagle3_aux_layers_from_config(self) -> tuple[int, ...] | None:"
+      },
+      {
+        "line": 5471,
+        "text": "def reload_weights("
+      },
+      {
+        "line": 5554,
+        "text": "def _get_prompt_logprobs_dict("
+      },
+      {
+        "line": 5658,
+        "text": "def _get_nans_in_logits("
+      },
+      {
+        "line": 5680,
+        "text": "def maybe_randomize_inputs("
+      },
+      {
+        "line": 5724,
+        "text": "def _get_mm_dummy_batch("
+      },
+      {
+        "line": 5754,
+        "text": "def _dummy_run("
+      },
+      {
+        "line": 6129,
+        "text": "def _dummy_sampler_run("
+      },
+      {
+        "line": 6236,
+        "text": "def _dummy_pooler_run_task("
+      },
+      {
+        "line": 6293,
+        "text": "def _dummy_pooler_run("
+      },
+      {
+        "line": 6323,
+        "text": "def profile_run(self) -> None:"
+      },
+      {
+        "line": 6398,
+        "text": "def _init_minimal_kv_cache_for_profiling(self) -> None:"
+      },
+      {
+        "line": 6424,
+        "text": "def _freeze_gc():"
+      },
+      {
+        "line": 6436,
+        "text": "def shutdown(self) -> None:"
+      },
+      {
+        "line": 6459,
+        "text": "def _cleanup_profiling_kv_cache(self) -> None:"
+      },
+      {
+        "line": 6501,
+        "text": "def _create_encoder_cudagraph_manager(self) -> \"EncoderCudaGraphManager | None\":"
+      },
+      {
+        "line": 6530,
+        "text": "def _maybe_init_encoder_cudagraph_manager(self) -> None:"
+      },
+      {
+        "line": 6537,
+        "text": "def profile_cudagraph_memory(self) -> int:"
+      },
+      {
+        "line": 6674,
+        "text": "def capture_model(self) -> int:"
+      },
+      {
+        "line": 6742,
+        "text": "def _warmup_and_capture("
+      },
+      {
+        "line": 6777,
+        "text": "def _capture_cudagraphs("
+      },
+      {
+        "line": 6827,
+        "text": "def initialize_attn_backend("
+      },
+      {
+        "line": 6934,
+        "text": "def initialize_metadata_builders("
+      },
+      {
+        "line": 6968,
+        "text": "def _check_and_update_cudagraph_mode("
+      },
+      {
+        "line": 7025,
+        "text": "def calculate_reorder_batch_threshold(self) -> None:"
+      },
+      {
+        "line": 7045,
+        "text": "def may_reinitialize_input_batch("
+      },
+      {
+        "line": 7109,
+        "text": "def _allocate_kv_cache_tensors("
+      },
+      {
+        "line": 7152,
+        "text": "def _attn_group_iterator(self) -> Iterator[AttentionGroup]:"
+      },
+      {
+        "line": 7155,
+        "text": "def _kv_cache_spec_attn_group_iterator(self) -> Iterator[AttentionGroup]:"
+      },
+      {
+        "line": 7161,
+        "text": "def _reshape_kv_cache_tensors("
+      },
+      {
+        "line": 7272,
+        "text": "def _update_hybrid_attention_mamba_layout("
+      },
+      {
+        "line": 7306,
+        "text": "def initialize_kv_cache_tensors("
+      },
+      {
+        "line": 7361,
+        "text": "def maybe_add_kv_sharing_layers_to_kv_cache_groups("
+      },
+      {
+        "line": 7389,
+        "text": "def initialize_kv_cache("
+      },
+      {
+        "line": 7448,
+        "text": "def _get_attention_kv_cache_gid(self) -> int:"
+      },
+      {
+        "line": 7462,
+        "text": "def init_routed_experts_capturer(self):"
+      },
+      {
+        "line": 7504,
+        "text": "def _bind_routed_experts_capturer(self, capturer: RoutedExpertsCapturer) -> None:"
+      },
+      {
+        "line": 7519,
+        "text": "def may_add_encoder_only_layers_to_kv_cache_config(self) -> None:"
+      },
+      {
+        "line": 7545,
+        "text": "def get_kv_cache_spec(self) -> dict[str, KVCacheSpec]:"
+      },
+      {
+        "line": 7584,
+        "text": "def _to_list(self, sampled_token_ids: torch.Tensor) -> list[list[int]]:"
+      },
+      {
+        "line": 7599,
+        "text": "def get_encoder_timing_stats(self) -> dict[str, dict[str, float | int]]:"
+      },
+      {
+        "line": 7615,
+        "text": "def timed_encoder_operation("
+      },
+      {
+        "line": 7660,
+        "text": "class EncoderTimingStats:"
+      },
+      {
+        "line": 7669,
+        "text": "def to_dict(self) -> dict[str, float | int]:"
+      }
+    ]
+  },
+  {
+    "group": "plugin",
+    "relative_path": "vllm_fl/ops/rotary_embedding.py",
+    "sha256": "52b54b1494acc08188d8b6f9fd66547382ab5cafb789f7c9befb29e173a7f6fe",
+    "definitions": [
+      {
+        "line": 11,
+        "text": "class RotaryEmbeddingFL(RotaryEmbedding):"
+      },
+      {
+        "line": 12,
+        "text": "def __init__("
+      },
+      {
+        "line": 26,
+        "text": "def forward_oot("
+      }
+    ]
+  },
+  {
+    "group": "plugin",
+    "relative_path": "vllm_fl/dispatch/backends/flaggems/flaggems.py",
+    "sha256": "2da56c92c7e5bf2e1ad4fd33ea803eb3072fc4d43d10c2c0d5d2d8680ea2171d",
+    "definitions": [
+      {
+        "line": 19,
+        "text": "class FlagGemsBackend(Backend):"
+      },
+      {
+        "line": 30,
+        "text": "def name(self) -> str:"
+      },
+      {
+        "line": 33,
+        "text": "def is_available(self) -> bool:"
+      },
+      {
+        "line": 46,
+        "text": "def dynamic_per_token_quant_int8("
+      },
+      {
+        "line": 54,
+        "text": "def dynamic_per_token_quant_int8_triton("
+      },
+      {
+        "line": 62,
+        "text": "def silu_and_mul(self, obj, x: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 77,
+        "text": "def gelu_and_mul(self, obj, x: torch.Tensor) -> torch.Tensor:"
+      },
+      {
+        "line": 92,
+        "text": "def rms_norm("
+      },
+      {
+        "line": 113,
+        "text": "def rotary_embedding("
+      },
+      {
+        "line": 153,
+        "text": "def attention_backend(self, use_mla: bool = False, use_sparse: bool = False) -> str:"
+      },
+      {
+        "line": 189,
+        "text": "def moe_align_block_size("
+      },
+      {
+        "line": 209,
+        "text": "def moe_sum(self, inp, out):"
+      },
+      {
+        "line": 214,
+        "text": "def topk_softmax("
+      },
+      {
+        "line": 228,
+        "text": "def invoke_fused_moe_triton_kernel("
+      },
+      {
+        "line": 276,
+        "text": "def grouped_topk("
+      }
+    ]
+  },
+  {
+    "group": "plugin",
+    "relative_path": "vllm_fl/dispatch/backends/flaggems/impl/custom_attention.py",
+    "sha256": "09fbd0636f502d9fbca9a3ac34039c81a4b25445ec40f5adade6b6b7b47fca07",
+    "definitions": [
+      {
+        "line": 6,
+        "text": "def register_attention():"
+      }
+    ]
+  },
+  {
+    "group": "plugin",
+    "relative_path": "benchmarks/benchmark_throughput_serve.py",
+    "sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+    "definitions": [
+      {
+        "line": 73,
+        "text": "def parse_test_cases(value):"
+      },
+      {
+        "line": 99,
+        "text": "def existing_path(value):"
+      },
+      {
+        "line": 106,
+        "text": "def valid_port(value):"
+      },
+      {
+        "line": 117,
+        "text": "def parse_args(argv=None):"
+      },
+      {
+        "line": 157,
+        "text": "def build_common_args(model, port, served_model_name=None):"
+      },
+      {
+        "line": 249,
+        "text": "def extract_metrics(output_text):"
+      },
+      {
+        "line": 264,
+        "text": "def format_result(case, metrics, include_successful_requests=True):"
+      },
+      {
+        "line": 296,
+        "text": "def append_csv(row, filename, columns):"
+      },
+      {
+        "line": 311,
+        "text": "def run_once(case, run_id, common_args):"
+      },
+      {
+        "line": 356,
+        "text": "def average_metrics(results):"
+      },
+      {
+        "line": 370,
+        "text": "def run_test_case(case, raw_csv, common_args):"
+      },
+      {
+        "line": 407,
+        "text": "def print_summary(results):"
+      },
+      {
+        "line": 425,
+        "text": "def main():"
+      }
+    ]
+  }
+]

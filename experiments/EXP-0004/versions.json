@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-19T19:52:29+08:00",
+  "candidate": {
+    "vllm-plugin-FL": "0ad2b82abdd8563e6a27d20b67341a109f2c2e7c",
+    "FlagGems": "646668a82b64c9ddb2c79e50ecf25a5c229b8560"
+  },
+  "validation": "pending_gpu",
+  "baseline": {
+    "vllm-plugin-FL": "13eb9be69ecc5b5ca4f79c44e9ee40081eaa1bf0",
+    "FlagGems": "a7620cc191a0b42e040194622c5758b22a7a25dc"
+  },
+  "basic_validation_status": "passed",
+  "official_e2e_status": "candidate_preflight_starting",
+  "accuracy_status": "deferred_by_user"
+}

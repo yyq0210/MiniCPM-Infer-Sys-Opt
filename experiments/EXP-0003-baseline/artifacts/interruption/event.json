@@ -1,0 +1,9 @@
+{
+  "reason": "Stop incomplete full evaluation to prioritize quick real-serving A/B; completed 4K rounds retained; 16K incomplete",
+  "benchmark_pid": 7149,
+  "client_pids": [
+    10752
+  ],
+  "time": "2026-10-19T20:20:34+0800",
+  "adoption_applied": false
+}

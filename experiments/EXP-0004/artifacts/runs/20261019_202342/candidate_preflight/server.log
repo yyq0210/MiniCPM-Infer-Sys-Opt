@@ -1,0 +1,135 @@
+INFO 10-19 20:24:34 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-19 20:24:34 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-19 20:24:34 [__init__.py:58] Loading plugin fl
+/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-19 20:24:41 [__init__.py:237] Platform plugin fl is activated
+WARNING 10-19 20:24:47 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING 10-19 20:24:47 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-19 20:24:47 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-19 20:24:47 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+[2026-10-19 20:24:47] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped topk_topp_sampler.compiled_random_sample
+[2026-10-19 20:24:47] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped logprobs.batched_count_greater_than
+[2026-10-19 20:24:47] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+(APIServer pid=12761) INFO 10-19 20:24:47 [api_utils.py:339] 
+(APIServer pid=12761) INFO 10-19 20:24:47 [api_utils.py:339]        █     █     █▄   ▄█
+(APIServer pid=12761) INFO 10-19 20:24:47 [api_utils.py:339]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.24.0
+(APIServer pid=12761) INFO 10-19 20:24:47 [api_utils.py:339]   █▄█▀ █     █     █     █  model   /workspace/MiniCPM5-2B
+(APIServer pid=12761) INFO 10-19 20:24:47 [api_utils.py:339]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=12761) INFO 10-19 20:24:47 [api_utils.py:339] 
+(APIServer pid=12761) INFO 10-19 20:24:47 [api_utils.py:273] non-default args: {'model_tag': '/workspace/MiniCPM5-2B', 'port': 9031, 'model': '/workspace/MiniCPM5-2B', 'max_model_len': 131072, 'served_model_name': ['minicpm'], 'gpu_memory_utilization': 0.85, 'compilation_config': {'mode': None, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_DECODE_ONLY: (2, 0)>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': None, 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}}
+(APIServer pid=12761) INFO 10-19 20:25:06 [model.py:598] Resolved architecture: LlamaForCausalLM
+(APIServer pid=12761) INFO 10-19 20:25:06 [model.py:1725] Using max model len 131072
+(APIServer pid=12761) INFO 10-19 20:25:06 [vllm.py:1006] Asynchronous scheduling is enabled.
+(APIServer pid=12761) INFO 10-19 20:25:06 [kernel.py:276] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+INFO 10-19 20:25:10 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-19 20:25:10 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-19 20:25:10 [__init__.py:58] Loading plugin fl
+/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-19 20:25:17 [__init__.py:237] Platform plugin fl is activated
+(EngineCore pid=13050) WARNING 10-19 20:25:22 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=13050) /usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+(EngineCore pid=13050)   warnings.warn(
+(EngineCore pid=13050) WARNING 10-19 20:25:22 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=13050) WARNING 10-19 20:25:22 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=13050) WARNING 10-19 20:25:22 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=13050) INFO 10-19 20:25:23 [core.py:114] Initializing a V1 LLM engine (v0.24.0) with config: model='/workspace/MiniCPM5-2B', speculative_config=None, tokenizer='/workspace/MiniCPM5-2B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_verbose=False), seed=0, served_model_name=minicpm, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [2048], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_DECODE_ONLY: (2, 0)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, moe_backend='auto', linear_backend='auto')
+(EngineCore pid=13050) /workspace/LeanScale/FlagGems/src/flag_gems/config.py:171: UserWarning: resolve_user_setting: no exclude ops found; returning empty list
+(EngineCore pid=13050)   warnings.warn(
+(EngineCore pid=13050) /usr/local/lib/python3.12/site-packages/torch/library.py:357: UserWarning: Warning only once for all operators,  other operators may also be overridden.
+(EngineCore pid=13050)   Overriding a previously registered kernel for the same operator and the same dispatch key
+(EngineCore pid=13050)   operator: aten::__ilshift__.Tensor(Tensor(a!) self, Tensor other) -> Tensor(a!)
+(EngineCore pid=13050)     registered at /home/corex/sw_home/apps/pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+(EngineCore pid=13050)   dispatch key: CUDA
+(EngineCore pid=13050)   previous kernel: registered at /home/corex/sw_home/apps/pytorch/build/aten/src/ATen/RegisterCPU_3.cpp:7148
+(EngineCore pid=13050)        new kernel: registered at /workspace/LeanScale/FlagGems/src/flag_gems/__init__.py:62 (Triggered internally at /home/corex/sw_home/apps/pytorch/aten/src/ATen/core/dispatch/OperatorEntry.cpp:208.)
+(EngineCore pid=13050)   self.m.impl(
+(EngineCore pid=13050) WARNING:root:Skipped registering operator: This is not allowed since there's already a kernel registered from python overriding ne_.Scalar's behavior for CUDA dispatch key and aten namespace.
+(EngineCore pid=13050) WARNING:root:Skipped registering operator: This is not allowed since there's already a kernel registered from python overriding ne_.Tensor's behavior for CUDA dispatch key and aten namespace.
+(EngineCore pid=13050) [2026-10-19 20:25:23] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped topk_topp_sampler.compiled_random_sample
+(EngineCore pid=13050) [2026-10-19 20:25:23] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped logprobs.batched_count_greater_than
+(EngineCore pid=13050) [2026-10-19 20:25:23] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+(EngineCore pid=13050) [2026-10-19 20:25:23] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+(EngineCore pid=13050) INFO 10-19 20:25:23 [parallel_state.py:1588] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://[IP_REDACTED]:52745 backend=nccl
+(EngineCore pid=13050) INFO 10-19 20:25:23 [parallel_state.py:1923] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=13050) [2026-10-19 20:25:27] [INFO] [vllm_fl.dispatch.policy] Using custom config from '/workspace/LeanScale/vllm-plugin-FL/vllm_fl/dispatch/config/iluvatar.yaml'
+(EngineCore pid=13050) [2026-10-19 20:25:27] [INFO] [vllm_fl.dispatch] Registering vendor backends for current platform: iluvatar
+(EngineCore pid=13050) [2026-10-19 20:25:27] [INFO] [vllm_fl.dispatch.manager] OpManager initialized: 11 ops with 23 implementations
+(EngineCore pid=13050) [2026-10-19 20:25:27] [INFO] [vllm_fl.dispatch.manager] Op 'attention_backend' using 'default.flagos' (kind=flagos, vendor=None)
+(EngineCore pid=13050) INFO 10-19 20:25:28 [weight_utils.py:849] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 4.69 GiB. Available RAM: 441.93 GiB.
+(EngineCore pid=13050) INFO 10-19 20:25:28 [weight_utils.py:872] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=13050) 
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=13050) 
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.33s/it]
+(EngineCore pid=13050) 
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.33s/it]
+(EngineCore pid=13050) 
+(EngineCore pid=13050) INFO 10-19 20:25:29 [default_loader.py:430] Loading weights took 1.45 seconds
+(EngineCore pid=13050) INFO 10-19 20:25:37 [backends.py:1089] Using cache directory: /workspace/LeanScale/artifacts/EXP-0004/20261019_202342/candidate_cache/torch_compile_cache/597b36d9c7/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=13050) INFO 10-19 20:25:37 [backends.py:1148] Dynamo bytecode transform time: 6.44 s
+(EngineCore pid=13050) INFO 10-19 20:25:39 [backends.py:378] Cache the graph of compile range (1, 2048) for later use
+(EngineCore pid=13050) INFO 10-19 20:25:45 [backends.py:393] Compiling a graph for compile range (1, 2048) takes 7.49 s
+(EngineCore pid=13050) INFO 10-19 20:25:47 [decorators.py:708] saved AOT compiled function to /workspace/LeanScale/artifacts/EXP-0004/20261019_202342/candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/rank_0_0/model
+(EngineCore pid=13050) INFO 10-19 20:25:47 [monitor.py:53] torch.compile took 16.36 s in total
+(EngineCore pid=13050) [2026-10-19 20:25:50] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' using 'default.flagos' (kind=flagos, vendor=None)
+(EngineCore pid=13050) INFO 10-19 20:25:51 [monitor.py:81] Initial profiling/warmup run took 4.56 s
+(EngineCore pid=13050) /workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) INFO 10-19 20:26:17 [kv_cache_utils.py:2146] GPU KV cache size: 522,352 tokens
+(EngineCore pid=13050) INFO 10-19 20:26:17 [kv_cache_utils.py:2147] Maximum concurrency for 131,072 tokens per request: 3.99x
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):   0%|          | 0/35 [00:00<?, ?it/s]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):   3%|▎         | 1/35 [00:05<02:54,  5.13s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):   6%|▌         | 2/35 [00:07<01:55,  3.51s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):   9%|▊         | 3/35 [00:10<01:41,  3.16s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  11%|█▏        | 4/35 [00:12<01:29,  2.89s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  14%|█▍        | 5/35 [00:15<01:28,  2.97s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  17%|█▋        | 6/35 [00:17<01:15,  2.60s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  20%|██        | 7/35 [00:20<01:10,  2.52s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  23%|██▎       | 8/35 [00:22<01:07,  2.50s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  26%|██▌       | 9/35 [00:24<00:59,  2.30s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  29%|██▊       | 10/35 [00:26<00:59,  2.38s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  31%|███▏      | 11/35 [00:28<00:53,  2.23s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  34%|███▍      | 12/35 [00:31<00:54,  2.37s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  37%|███▋      | 13/35 [00:33<00:48,  2.22s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  40%|████      | 14/35 [00:35<00:44,  2.12s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) 
+Capturing CUDA graphs (decode, FULL):  43%|████▎     | 15/35 [00:38<00:50,  2.53s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(

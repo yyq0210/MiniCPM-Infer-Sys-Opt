@@ -1,2 +1,5 @@
 {"captured_at": "2026-10-19T19:24:07+08:00", "source_stage": "throughput_running", "summary_rows": 0, "raw_rows": 1, "all_expected_results_present": false, "accuracy": "not_run", "optimized_end_to_end": "not_run"}
 {"captured_at": "2026-10-19T19:33:35+08:00", "source_stage": "throughput_running", "summary_rows": 0, "raw_rows": 2, "all_expected_results_present": false, "accuracy": "not_run", "optimized_end_to_end": "not_run"}
+{"captured_at": "2026-10-19T19:44:45+08:00", "source_stage": "throughput_running", "summary_rows": 0, "raw_rows": 3, "all_expected_results_present": false, "accuracy": "not_run", "optimized_end_to_end": "not_run"}
+{"captured_at": "2026-10-19T19:56:16+08:00", "source_stage": "throughput_running", "summary_rows": 1, "raw_rows": 4, "all_expected_results_present": false, "accuracy": "not_run", "optimized_end_to_end": "not_run"}
+{"captured_at": "2026-10-19T20:20:48+08:00", "source_stage": "failed", "summary_rows": 1, "raw_rows": 4, "all_expected_results_present": false, "accuracy": "not_run", "optimized_end_to_end": "not_run"}

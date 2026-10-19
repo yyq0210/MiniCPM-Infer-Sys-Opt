@@ -1,0 +1,8 @@
+{
+  "pid": 10701,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0004/20261019_195229",
+  "started_at": "20261019_195229",
+  "stage": "superseded_before_gpu",
+  "updated_at": "2026-10-19T19:52:29+08:00",
+  "reason": "Added process-group timeout cleanup and extra dtype/layer fallback checks before GPU work"
+}

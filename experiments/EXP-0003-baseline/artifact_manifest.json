@@ -1,10 +1,14 @@
 {
-  "artifacts/baseline_official/benchmark.log": "8179622666db7ce2c825692bdaea7d092cd64d306ca6369c137ac527d5f82950",
-  "artifacts/baseline_official/benchmark_results/raw_runs_20261019_190747.csv": "79d65232c9afd75076e47f789c7f7f23329429c008af5a3fd312b0727c43eb24",
+  "artifacts/baseline_official/benchmark.log": "ef9579eb6629f00267fca02af6dd1001a9aba64ea2a325d8e2e79c32ec1a06f9",
+  "artifacts/baseline_official/benchmark_results/raw_runs_20261019_190747.csv": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463",
+  "artifacts/baseline_official/benchmark_results/summary_20261019_190747.csv": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e",
   "artifacts/baseline_official/commands.json": "5d59944c1de4e02cf4df48186bb8a3c1d1783c3337dc74a28abb7143f187431c",
-  "artifacts/baseline_official/server.log": "ea7260576b988bae230e88ce5ab23c139788674199f38c128623a78aa88ca707",
+  "artifacts/baseline_official/server.log": "03c2da3b90465593f6a92730b6dc938217530dcfedb5a34333918a91f9526249",
   "artifacts/baseline_official/smoke.json": "3bfe694686c5b8d7bcdfdef651a5903f3cde152a445d398a18942a67442f0b41",
-  "artifacts/runner.log": "7da389beed081f4e546dd1deb079df59bcc726e224a307c2150df528644d1d94",
-  "artifacts/status.json": "9a10645cc4f8bce550e145213d16a15287fa6bd60c88bd5a6258ad6b99ff4885",
-  "artifacts/validation.json": "ea85149a85af5506bf55efcc015dd861e495bf9a7739d55919fee964bd501b8c"
+  "artifacts/interruption/event.json": "2a51de6cb1a8479b1bb4f1c4707fbed8b05fca28488702b076edb675b8b8473f",
+  "artifacts/interruption/pre_stop_metrics.txt": "319198b9405d7d2882b2584d841b76306895990c8887baa74a1c3fb0049dd059",
+  "artifacts/interruption/pre_stop_status.json": "9a10645cc4f8bce550e145213d16a15287fa6bd60c88bd5a6258ad6b99ff4885",
+  "artifacts/runner.log": "d48ba05acaba6891418a44b5ff366d601cb90a484540629664318ae7f648a1a6",
+  "artifacts/status.json": "77fddab73cd7f16abcc738ae99c1d86dc971270cdff7ca4a8f79c080179e6bba",
+  "artifacts/validation.json": "7d1a54d89a114c05b9b331ad15f38b979ef049eda52c96bda52633199b303ecf"
 }

@@ -1,0 +1,14 @@
+{
+  "sha256": "ab75722cd9edd5cbd33a2bb72d3f17f090eb2796ec86386d777a852f8e9cd69c",
+  "call_expression_counts": {
+    "torch._C._nn.linear(": 168,
+    "torch.nn.functional.silu(": 42,
+    "torch.ops.vllm_ir.rms_norm.default(": 1,
+    "torch.ops.vllm_ir.fused_add_rms_norm.maybe_inplace(": 84,
+    "torch.ops.vllm.unified_kv_cache_update(": 42,
+    "torch.ops.vllm.unified_attention_with_output(": 42,
+    "torch.ops.vllm.fl_rotary_embedding_dispatch(": 0,
+    ".index_select(0, flatten": 42
+  },
+  "note": "FX call expressions are not GPU kernel launch counts; Inductor can fuse or lower them."
+}
