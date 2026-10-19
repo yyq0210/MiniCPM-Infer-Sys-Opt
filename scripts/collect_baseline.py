@@ -1,6 +1,7 @@
 """Archive the already-running baseline; never launches GPU work or pushes Git."""
 import argparse
 import csv
+from collections import Counter
 from datetime import datetime
 import fcntl
 import hashlib
@@ -50,18 +51,23 @@ def collect(source):
     raw = sorted(result_dir.glob("raw_runs_*.csv"))
     summary_rows = read_rows(summaries[-1]) if summaries else []
     raw_rows = read_rows(raw[-1]) if raw else []
+    expected_cases={(4096,1024,64,256),(16384,1024,64,128)}
     valid_cases = set()
     try:
-        valid_cases = {int(float(row["Prefill"])) for row in summary_rows}
-        raw_ok = len(raw_rows) == 8 and all(
+        def case(row):
+            return tuple(int(float(row[k])) for k in ["Prefill","Decode","Conc","Num Prompts"])
+        valid_cases = {case(row) for row in summary_rows}
+        raw_cases=Counter(case(row) for row in raw_rows)
+        raw_ok = raw_cases == Counter({key:4 for key in expected_cases}) and all(
             int(float(row["Successful Requests"])) == int(float(row["Num Prompts"]))
-            and float(row["Total Input Tokens"]) > 0
-            and float(row["Total Output Tokens"]) > 0
+            and row["Run Status"] == "SUCCESS"
+            and int(float(row["Total Input Tokens"])) == int(float(row["Prefill"]))*int(float(row["Num Prompts"]))
+            and int(float(row["Total Output Tokens"])) == int(float(row["Decode"]))*int(float(row["Num Prompts"]))
             for row in raw_rows
         )
     except (KeyError, TypeError, ValueError):
         raw_ok = False
-    complete = stage == "throughput_complete" and len(summary_rows) == 2 and valid_cases == {4096,16384} and raw_ok
+    complete = stage == "throughput_complete" and len(summary_rows) == 2 and valid_cases == expected_cases and raw_ok
     validation = {"captured_at":now, "source_stage":stage,
                   "summary_rows":len(summary_rows), "raw_rows":len(raw_rows),
                   "all_expected_results_present":complete,

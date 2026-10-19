@@ -11,3 +11,14 @@
 认证检查：当前 GitHub connector 账户为 YuYanJ02，对三个目标仓库仅有读取权限。本机和服务器现有 SSH 均未获得 GitHub 公钥认证；本机现有 HTTPS credential 的 push --dry-run 也认证失败。
 
 在认证恢复前，不能声称远端已推送、PR 已创建。服务器保存本地提交和 Git bundle；后续成功推送后在此追加远端 SHA 和 PR 链接。
+
+## 已准备的本地提交
+
+| 仓库 | 提交 | 内容 |
+| --- | --- | --- |
+| vllm-plugin-FL | 13eb9be69ecc5b5ca4f79c44e9ee40081eaa1bf0 | 官方推理基线 |
+| FlagGems | 3cee7d462b76aefa4e19961b20884044b6389a35 | 独立 RoPE 原型 |
+
+文档根提交：b85533cc0ce9e5fde7aedabf5fb0a82ed1861204，之后继续追加采集与发布记录。
+
+服务器 artifacts 目录保存可校验的 Git bundle；算子 bundle 是相对官方 a7620cc 的增量，需要目标仓库已有该基线。scripts/publish.sh 可在具备有效 GitHub 凭据后一次性推送。
