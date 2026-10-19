@@ -65,12 +65,9 @@ INFO 10-19 20:25:17 [__init__.py:237] Platform plugin fl is activated
 (EngineCore pid=13050) [2026-10-19 20:25:27] [INFO] [vllm_fl.dispatch.manager] Op 'attention_backend' using 'default.flagos' (kind=flagos, vendor=None)
 (EngineCore pid=13050) INFO 10-19 20:25:28 [weight_utils.py:849] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 4.69 GiB. Available RAM: 441.93 GiB.
 (EngineCore pid=13050) INFO 10-19 20:25:28 [weight_utils.py:872] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
-(EngineCore pid=13050) 
-Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
-(EngineCore pid=13050) 
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.33s/it]
-(EngineCore pid=13050) 
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.33s/it]
+(EngineCore pid=13050) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=13050) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.33s/it]
+(EngineCore pid=13050) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.33s/it]
 (EngineCore pid=13050) 
 (EngineCore pid=13050) INFO 10-19 20:25:29 [default_loader.py:430] Loading weights took 1.45 seconds
 (EngineCore pid=13050) INFO 10-19 20:25:37 [backends.py:1089] Using cache directory: /workspace/LeanScale/artifacts/EXP-0004/20261019_202342/candidate_cache/torch_compile_cache/597b36d9c7/rank_0_0/backbone for vLLM's torch.compile
@@ -85,51 +82,122 @@ Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.33s
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
 (EngineCore pid=13050) INFO 10-19 20:26:17 [kv_cache_utils.py:2146] GPU KV cache size: 522,352 tokens
 (EngineCore pid=13050) INFO 10-19 20:26:17 [kv_cache_utils.py:2147] Maximum concurrency for 131,072 tokens per request: 3.99x
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):   0%|          | 0/35 [00:00<?, ?it/s]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):   0%|          | 0/35 [00:00<?, ?it/s]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):   3%|▎         | 1/35 [00:05<02:54,  5.13s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):   3%|▎         | 1/35 [00:05<02:54,  5.13s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):   6%|▌         | 2/35 [00:07<01:55,  3.51s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):   6%|▌         | 2/35 [00:07<01:55,  3.51s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):   9%|▊         | 3/35 [00:10<01:41,  3.16s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):   9%|▊         | 3/35 [00:10<01:41,  3.16s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  11%|█▏        | 4/35 [00:12<01:29,  2.89s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  11%|█▏        | 4/35 [00:12<01:29,  2.89s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  14%|█▍        | 5/35 [00:15<01:28,  2.97s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  14%|█▍        | 5/35 [00:15<01:28,  2.97s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  17%|█▋        | 6/35 [00:17<01:15,  2.60s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  17%|█▋        | 6/35 [00:17<01:15,  2.60s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  20%|██        | 7/35 [00:20<01:10,  2.52s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  20%|██        | 7/35 [00:20<01:10,  2.52s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  23%|██▎       | 8/35 [00:22<01:07,  2.50s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  23%|██▎       | 8/35 [00:22<01:07,  2.50s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  26%|██▌       | 9/35 [00:24<00:59,  2.30s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  26%|██▌       | 9/35 [00:24<00:59,  2.30s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  29%|██▊       | 10/35 [00:26<00:59,  2.38s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  29%|██▊       | 10/35 [00:26<00:59,  2.38s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  31%|███▏      | 11/35 [00:28<00:53,  2.23s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  31%|███▏      | 11/35 [00:28<00:53,  2.23s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  34%|███▍      | 12/35 [00:31<00:54,  2.37s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  34%|███▍      | 12/35 [00:31<00:54,  2.37s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  37%|███▋      | 13/35 [00:33<00:48,  2.22s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  37%|███▋      | 13/35 [00:33<00:48,  2.22s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  40%|████      | 14/35 [00:35<00:44,  2.12s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  40%|████      | 14/35 [00:35<00:44,  2.12s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
-(EngineCore pid=13050) 
-Capturing CUDA graphs (decode, FULL):  43%|████▎     | 15/35 [00:38<00:50,  2.53s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  43%|████▎     | 15/35 [00:38<00:50,  2.53s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
 (EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  46%|████▌     | 16/35 [00:40<00:44,  2.33s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  49%|████▊     | 17/35 [00:43<00:43,  2.42s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  51%|█████▏    | 18/35 [00:47<00:49,  2.88s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  54%|█████▍    | 19/35 [00:49<00:41,  2.58s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  57%|█████▋    | 20/35 [00:51<00:36,  2.45s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  60%|██████    | 21/35 [00:53<00:32,  2.35s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  63%|██████▎   | 22/35 [00:56<00:34,  2.68s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  66%|██████▌   | 23/35 [00:58<00:29,  2.44s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  69%|██████▊   | 24/35 [01:00<00:24,  2.27s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  71%|███████▏  | 25/35 [01:04<00:27,  2.74s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  74%|███████▍  | 26/35 [01:06<00:22,  2.48s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  77%|███████▋  | 27/35 [01:10<00:23,  2.92s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  80%|████████  | 28/35 [01:12<00:18,  2.61s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  83%|████████▎ | 29/35 [01:14<00:15,  2.65s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  86%|████████▌ | 30/35 [01:16<00:12,  2.43s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  89%|████████▊ | 31/35 [01:19<00:10,  2.51s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  91%|█████████▏| 32/35 [01:22<00:08,  2.75s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  94%|█████████▍| 33/35 [01:23<00:04,  2.18s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL):  97%|█████████▋| 34/35 [01:25<00:02,  2.18s/it]/workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) Capturing CUDA graphs (decode, FULL): 100%|██████████| 35/35 [01:28<00:00,  2.44s/it]Capturing CUDA graphs (decode, FULL): 100%|██████████| 35/35 [01:28<00:00,  2.54s/it]
+(EngineCore pid=13050) INFO 10-19 20:27:52 [core.py:337] init engine (profile, create kv cache, warmup model) took 141.48 s (compilation: 16.36 s)
+(EngineCore pid=13050) INFO 10-19 20:27:56 [vllm.py:1006] Asynchronous scheduling is enabled.
+(EngineCore pid=13050) INFO 10-19 20:27:56 [kernel.py:276] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=13050) /usr/local/lib/python3.12/contextlib.py:144: ResourceWarning: Unclosed context <zmq.Context() at 0x7d1d4d65bf50>
+(EngineCore pid=13050)   next(self.gen)
+(EngineCore pid=13050) ResourceWarning: Enable tracemalloc to get the object allocation traceback
+(APIServer pid=12761) INFO 10-19 20:27:56 [api_server.py:577] Supported tasks: ['generate']
+(APIServer pid=12761) WARNING 10-19 20:27:57 [model.py:1477] Default vLLM sampling parameters have been overridden by the model's `generation_config.json`: `{'temperature': 1.0, 'top_p': 0.95}`. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+(APIServer pid=12761) INFO 10-19 20:27:58 [hf.py:548] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(APIServer pid=12761) INFO 10-19 20:27:58 [api_server.py:581] Starting vLLM server on http://[IP_REDACTED]:9031
+(APIServer pid=12761) INFO 10-19 20:27:58 [launcher.py:37] Available routes are:
+(APIServer pid=12761) INFO 10-19 20:27:58 [launcher.py:46] Route: /openapi.json, Methods: GET, HEAD
+(APIServer pid=12761) INFO 10-19 20:27:58 [launcher.py:46] Route: /docs, Methods: GET, HEAD
+(APIServer pid=12761) INFO 10-19 20:27:58 [launcher.py:46] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+(APIServer pid=12761) INFO 10-19 20:27:58 [launcher.py:46] Route: /redoc, Methods: GET, HEAD
+(APIServer pid=12761) INFO 10-19 20:27:58 [launcher.py:46] Route: /metrics, Methods: GET
+(APIServer pid=12761) INFO:     Started server process [12761]
+(APIServer pid=12761) INFO:     Waiting for application startup.
+(APIServer pid=12761) INFO:     Application startup complete.
+(APIServer pid=12761) INFO:     [IP_REDACTED]:37158 - "GET /health HTTP/1.1" 200 OK
+(EngineCore pid=13050) /workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=13050) /workspace/LeanScale/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=13050)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=12761) INFO:     [IP_REDACTED]:37166 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=13050) INFO 10-19 20:28:09 [core.py:1214] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=13050) INFO 10-19 20:28:09 [core.py:1333] [shutdown] EngineCore: start mode=abort timeout=0s
+(APIServer pid=12761) (EngineCore pid=13050) INFO 10-19 20:28:09 [core.py:1364] [shutdown] EngineCore: request processing complete; starting resource teardown
+INFO 10-19 20:28:09 [launcher.py:100] [shutdown] API server: shutdown triggered
+(EngineCore pid=13050) INFO 10-19 20:28:09 [core.py:1227] [shutdown] EngineCore: exiting busy loop
+(APIServer pid=12761) INFO 10-19 20:28:09 [launcher.py:116] [shutdown] API server: stopping engine client mode=abort timeout=0s
+(APIServer pid=12761) INFO 10-19 20:28:09 [core_client.py:655] [shutdown] MPClient: start timeout=0s
+(APIServer pid=12761) INFO 10-19 20:28:09 [core_client.py:657] [shutdown] MPClient: stopping engine manager
+(APIServer pid=12761) WARNING 10-19 20:28:09 [utils.py:620] [shutdown] Process manager: force killing remaining processes count=1
+(APIServer pid=12761) INFO 10-19 20:28:09 [core_client.py:659] [shutdown] MPClient: engine manager stopped
+(APIServer pid=12761) INFO 10-19 20:28:09 [core_client.py:660] [shutdown] MPClient: cleaning up background resources
+(APIServer pid=12761) INFO 10-19 20:28:09 [core_client.py:662] [shutdown] MPClient: complete
+(APIServer pid=12761) INFO 10-19 20:28:09 [launcher.py:125] [shutdown] API server: engine client stopped
+(APIServer pid=12761) INFO 10-19 20:28:09 [launcher.py:128] [shutdown] API server: signalling HTTP server shutdown
+(APIServer pid=12761) INFO 10-19 20:28:09 [launcher.py:149] [shutdown] API server: shutting down FastAPI HTTP server
+(APIServer pid=12761) INFO:     Shutting down
+(APIServer pid=12761) INFO:     Waiting for application shutdown.
+(APIServer pid=12761) INFO:     Application shutdown complete.
+(APIServer pid=12761) /usr/local/lib/python3.12/asyncio/runners.py:118: ResourceWarning: Unclosed context <zmq.Context() at 0x7ddc142b7a70>
+(APIServer pid=12761)   return self._loop.run_until_complete(task)
+(APIServer pid=12761) ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/local/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 55 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

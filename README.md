@@ -61,3 +61,5 @@ python scripts/collect_baseline.py
 
 - [RoPE 推理接入 PR 草稿](pr/vllm-rope-e2e.md)
 - [RoPE 算子集成 PR 草稿](pr/flaggems-rope-e2e.md)
+
+- [本次实验自动归档与推送](docs/automatic_result_archiving.md)
