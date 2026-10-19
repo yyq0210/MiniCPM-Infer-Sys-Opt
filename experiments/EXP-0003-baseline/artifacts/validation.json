@@ -1,8 +1,8 @@
 {
-  "captured_at": "2026-10-19T19:28:04+08:00",
+  "captured_at": "2026-10-19T19:35:15+08:00",
   "source_stage": "throughput_running",
   "summary_rows": 0,
-  "raw_rows": 1,
+  "raw_rows": 2,
   "all_expected_results_present": false,
   "accuracy": "not_run",
   "optimized_end_to_end": "not_run"
