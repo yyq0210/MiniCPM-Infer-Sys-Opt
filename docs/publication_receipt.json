@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-10-19T19:37:45+08:00",
+  "refs": [
+    {
+      "repository": "yyq0210/vllm-plugin-FL",
+      "branch": "leanscale/flagos-s2-baseline",
+      "commit": "13eb9be69ecc5b5ca4f79c44e9ee40081eaa1bf0"
+    },
+    {
+      "repository": "yyq0210/FlagGems",
+      "branch": "leanscale/flagos-s2-baseline",
+      "commit": "a7620cc191a0b42e040194622c5758b22a7a25dc"
+    },
+    {
+      "repository": "yyq0210/FlagGems",
+      "branch": "leanscale/iluvatar-rope-v1",
+      "commit": "3cee7d462b76aefa4e19961b20884044b6389a35"
+    },
+    {
+      "repository": "yyq0210/MiniCPM-Infer-Sys-Opt",
+      "branch": "main",
+      "commit": "156d8fafe2233d42ad5360fa473aaed79d38c95f"
+    }
+  ],
+  "pr_status": "prepared_not_created"
+}

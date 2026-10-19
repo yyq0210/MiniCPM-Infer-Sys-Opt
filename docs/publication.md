@@ -38,3 +38,9 @@
 本次文档提交包含采集时的 EXP-0003 快照。基线尚未完成，采集器继续等待当前任务，不自动推送。
 
 PR 尚未创建。算子原型的比赛格式标题和正文见 [PR 草稿](../pr/flaggems-rope-v1.md)，[分支对比](https://github.com/yyq0210/FlagGems/compare/leanscale/flagos-s2-baseline...leanscale/iluvatar-rope-v1)。推理分支当前只有固定官方基线，没有优化差异，不创建空 PR。
+
+## 2026-10-19T19:37:45+08:00 三仓推送完成
+
+实验仓库 main 已推送至 156d8fafe2233d42ad5360fa473aaed79d38c95f，并与另外三个分支一同通过 git ls-remote 核对。原始核验信息见 [publication_receipt.json](publication_receipt.json)。此后的发布记录追加提交通过 Git 历史追踪。
+
+本轮完整性检查覆盖所有归档文件哈希、算子源文件哈希、提交差异格式及凭据特征扫描；均通过。官方 GPU 基线继续运行，2/8 轮快照已公开；数学精度和优化后整模 A/B 尚未执行。
