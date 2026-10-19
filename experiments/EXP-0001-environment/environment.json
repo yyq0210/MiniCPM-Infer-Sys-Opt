@@ -1,0 +1,18 @@
+{
+  "torch": "2.10.0",
+  "triton": "3.6.0",
+  "gpu": "_CudaDeviceProperties(name='Iluvatar BI-V150', major=7, minor=1, total_memory=32768MB, multi_processor_count=16, uuid=[REDACTED], pci_bus_id=42, pci_device_id=0, pci_domain_id=0, L2_cache_size=16MB)",
+  "imports": {
+    "vllm": "/usr/local/lib/python3.12/site-packages/vllm/__init__.py",
+    "vllm_fl": "/workspace/vllm-plugin-FL/vllm_fl/__init__.py",
+    "flag_gems": "/workspace/FlagGems/src/flag_gems/__init__.py"
+  },
+  "vllm-plugin-FL": {
+    "head": "13eb9be69ecc5b5ca4f79c44e9ee40081eaa1bf0",
+    "status": ""
+  },
+  "FlagGems": {
+    "head": "a7620cc191a0b42e040194622c5758b22a7a25dc",
+    "status": ""
+  }
+}

@@ -1,0 +1,3 @@
+{"stage": "server_starting", "server_pid": 6083}
+{"stage": "smoke_test"}
+{"stage": "throughput_running"}

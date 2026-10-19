@@ -1,0 +1,2 @@
+# Preserve archived log/CSV formatting; whitespace checks still apply to code/docs.
+experiments/**/artifacts/** -whitespace

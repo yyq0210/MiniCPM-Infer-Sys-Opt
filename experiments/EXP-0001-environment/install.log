@@ -1,0 +1,36 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple
+Obtaining file:///workspace/vllm-plugin-FL
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///workspace/FlagGems
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: vllm-plugin-fl, flag_gems
+  Building editable for vllm-plugin-fl (pyproject.toml): started
+  Building editable for vllm-plugin-fl (pyproject.toml): finished with status 'done'
+  Created wheel for vllm-plugin-fl: filename=vllm_plugin_fl-0.3.0rc0+g13eb9be69-0.editable-py3-none-any.whl size=10747 sha256=50ce23fdc9b51c5fdd5e03fe21941a0acef55fe6a091dee5ecf378a51ab815cc
+  Stored in directory: /tmp/pip-ephem-wheel-cache-prg6hae8/wheels/ac/50/fc/f51ce227827571f49b29cc1b467964b1d08a080b4a762577a5
+  Building editable for flag_gems (pyproject.toml): started
+  Building editable for flag_gems (pyproject.toml): finished with status 'done'
+  Created wheel for flag_gems: filename=flag_gems-5.3.5.post20261019-0.editable-py3-none-any.whl size=10981 sha256=c792cc418bfcd8c934c886692bbef263a43da04cbb18aa19e0ca881f91f902af
+  Stored in directory: /tmp/pip-ephem-wheel-cache-prg6hae8/wheels/36/e2/50/ef4ff3898961097fe91e4b2d99f4c4cf8cbf64d7334add6adf
+Successfully built vllm-plugin-fl flag_gems
+Installing collected packages: vllm-plugin-fl, flag_gems
+  Attempting uninstall: vllm-plugin-fl
+    Found existing installation: vllm-plugin-fl 0.3.0rc0+g13eb9be69
+    Uninstalling vllm-plugin-fl-0.3.0rc0+g13eb9be69:
+      Successfully uninstalled vllm-plugin-fl-0.3.0rc0+g13eb9be69
+  Attempting uninstall: flag_gems
+    Found existing installation: flag_gems 5.3.5
+    Uninstalling flag_gems-5.3.5:
+      Successfully uninstalled flag_gems-5.3.5
+
+Successfully installed flag_gems-5.3.5.post20261019 vllm-plugin-fl-0.3.0rc0+g13eb9be69
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip

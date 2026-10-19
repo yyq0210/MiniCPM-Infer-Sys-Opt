@@ -1,0 +1,10 @@
+{
+  "artifacts/baseline_official/benchmark.log": "0bf54a63eebe0757428d4ea30b361a42a1e37c2f97277ac409048579bcbaa9c9",
+  "artifacts/baseline_official/benchmark_results/raw_runs_20261019_190747.csv": "8034ffb999feab497b5014cecaa2967903a2d05230a2f4973fb77902ae41eee2",
+  "artifacts/baseline_official/commands.json": "5d59944c1de4e02cf4df48186bb8a3c1d1783c3337dc74a28abb7143f187431c",
+  "artifacts/baseline_official/server.log": "b0de03124c1f871097601cfd6edb109287043be78af84cd6c541e656ac0ab86a",
+  "artifacts/baseline_official/smoke.json": "3bfe694686c5b8d7bcdfdef651a5903f3cde152a445d398a18942a67442f0b41",
+  "artifacts/runner.log": "7da389beed081f4e546dd1deb079df59bcc726e224a307c2150df528644d1d94",
+  "artifacts/status.json": "9a10645cc4f8bce550e145213d16a15287fa6bd60c88bd5a6258ad6b99ff4885",
+  "artifacts/validation.json": "44ffa5de368f16a96e2b458e80eddded141973c71f3a96f206d78d6322b8c50b"
+}

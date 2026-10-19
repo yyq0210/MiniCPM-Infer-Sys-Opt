@@ -1,0 +1,9 @@
+{
+  "bench_rope_original.py": "de9a7b01b4af99720a9fa80735b6c4ed55a3df075d3167166b184fcfb72abbbb",
+  "fp32_comparison_failure.log": "a4fe89451892ae80c6f8c203fc39c9ccac292d1f8cbfb83257aa3bb86bdd3282",
+  "initial_failure.log": "c93b0cacec96c1279a9e264fd91f9aa4408b357cff026c369ba3e2950f5da3a0",
+  "rope_candidate_original.py": "eebdab5b87beff7c5c26ef2b878e5393f4725efba16c4a1056bfd3ec16fde923",
+  "rope_results.json": "957883fa234096dd986aade5a92841c61bd959cf6c923967772f780584844ebb",
+  "successful_run.log": "ddef592c243e0d691692f95c94203bf27dc073129a5fd9fac94a5a023c086321",
+  "published_kernel_sha256": "0bfcd09a1336b96f43dd875ce41757c3fb56c55218e92d7caea31277b8149013"
+}

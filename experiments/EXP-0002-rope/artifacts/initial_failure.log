@@ -1,0 +1,16 @@
+/workspace/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+Traceback (most recent call last):
+  File "/workspace/experiments/codex_20261019/rope_microbench/bench_rope.py", line 78, in <module>
+    main()
+  File "/workspace/experiments/codex_20261019/rope_microbench/bench_rope.py", line 56, in main
+    torch.testing.assert_close(actual, expected, rtol=0, atol=0)
+  File "/usr/local/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1608, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not equal!
+
+Mismatched elements: 25595 / 92160 (27.8%)
+Greatest absolute difference: 2.5126328468322754 at index (45, 0, 29)
+Greatest relative difference: 3.113675355911255 at index (22, 0, 36)

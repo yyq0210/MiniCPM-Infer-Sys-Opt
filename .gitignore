@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+._*
+.DS_Store
+*.pid
+*.lock
+*.tmp
+*.bundle
+*.safetensors
+*.bin
+.cache/
+.venv/
+local/

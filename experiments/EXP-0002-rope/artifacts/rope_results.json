@@ -1,0 +1,836 @@
+{
+  "correctness": [
+    {
+      "dtype": "torch.bfloat16",
+      "m": 1,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 1,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 7,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 7,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 64,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 64,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 257,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 257,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 64,
+      "hq": 12,
+      "hk": 3,
+      "dim": 80,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 64,
+      "hq": 12,
+      "hk": 3,
+      "dim": 80,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 64,
+      "hq": 8,
+      "hk": 1,
+      "dim": 64,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "m": 64,
+      "hq": 8,
+      "hk": 1,
+      "dim": 64,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 1,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 1,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 7,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 7,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 64,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 64,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 257,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 257,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 64,
+      "hq": 12,
+      "hk": 3,
+      "dim": 80,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 64,
+      "hq": 12,
+      "hk": 3,
+      "dim": 80,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 64,
+      "hq": 8,
+      "hk": 1,
+      "dim": 64,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float16",
+      "m": 64,
+      "hq": 8,
+      "hk": 1,
+      "dim": 64,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 0.0
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 1,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 1,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 7,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 7,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 64,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 4.76837158203125e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 64,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 4.76837158203125e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 257,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 4.76837158203125e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 257,
+      "hq": 16,
+      "hk": 2,
+      "dim": 128,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 4.76837158203125e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 64,
+      "hq": 12,
+      "hk": 3,
+      "dim": 80,
+      "interleaved": false,
+      "exact_vs_existing": false,
+      "existing_error_vs_reference": 2.6999688148498535
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 64,
+      "hq": 12,
+      "hk": 3,
+      "dim": 80,
+      "interleaved": true,
+      "exact_vs_existing": false,
+      "existing_error_vs_reference": 4.76837158203125e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 64,
+      "hq": 8,
+      "hk": 1,
+      "dim": 64,
+      "interleaved": false,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.float32",
+      "m": 64,
+      "hq": 8,
+      "hk": 1,
+      "dim": 64,
+      "interleaved": true,
+      "exact_vs_existing": true,
+      "existing_error_vs_reference": 4.76837158203125e-07
+    }
+  ],
+  "timings": [
+    {
+      "m": 1,
+      "baseline_us": 5.188307762145996,
+      "baseline_after_us": 5.355284690856934,
+      "candidates": [
+        {
+          "bh": 1,
+          "warps": 4,
+          "us": 1.7078845500946045,
+          "speedup": 3.0378562543109844
+        },
+        {
+          "bh": 1,
+          "warps": 8,
+          "us": 1.7130769491195679,
+          "speedup": 3.028648400652706
+        },
+        {
+          "bh": 2,
+          "warps": 4,
+          "us": 1.7013076543807983,
+          "speedup": 3.049599964348784
+        },
+        {
+          "bh": 2,
+          "warps": 8,
+          "us": 1.7614384889602661,
+          "speedup": 2.9454947162012606
+        },
+        {
+          "bh": 4,
+          "warps": 4,
+          "us": 1.7213231325149536,
+          "speedup": 3.0141393351087866
+        },
+        {
+          "bh": 4,
+          "warps": 8,
+          "us": 1.7560384273529053,
+          "speedup": 2.9545525207936234
+        },
+        {
+          "bh": 8,
+          "warps": 4,
+          "us": 1.7905999422073364,
+          "speedup": 2.8975248126894186
+        },
+        {
+          "bh": 8,
+          "warps": 8,
+          "us": 1.7303153276443481,
+          "speedup": 2.9984752947945967
+        },
+        {
+          "bh": 16,
+          "warps": 4,
+          "us": 2.198638439178467,
+          "speedup": 2.3597821586729992
+        },
+        {
+          "bh": 16,
+          "warps": 8,
+          "us": 1.8206385374069214,
+          "speedup": 2.849718741829743
+        }
+      ]
+    },
+    {
+      "m": 8,
+      "baseline_us": 5.293576717376709,
+      "baseline_after_us": 5.305077075958252,
+      "candidates": [
+        {
+          "bh": 1,
+          "warps": 4,
+          "us": 2.0010385513305664,
+          "speedup": 2.6454146592312324
+        },
+        {
+          "bh": 1,
+          "warps": 8,
+          "us": 2.346461534500122,
+          "speedup": 2.2559827380696547
+        },
+        {
+          "bh": 2,
+          "warps": 4,
+          "us": 1.7795385122299194,
+          "speedup": 2.97469073076895
+        },
+        {
+          "bh": 2,
+          "warps": 8,
+          "us": 1.966692328453064,
+          "speedup": 2.6916140571618863
+        },
+        {
+          "bh": 4,
+          "warps": 4,
+          "us": 1.731076955795288,
+          "speedup": 3.0579672958240867
+        },
+        {
+          "bh": 4,
+          "warps": 8,
+          "us": 1.7850769758224487,
+          "speedup": 2.9654613157159617
+        },
+        {
+          "bh": 8,
+          "warps": 4,
+          "us": 1.7956923246383667,
+          "speedup": 2.9479308034814813
+        },
+        {
+          "bh": 8,
+          "warps": 8,
+          "us": 1.7708076238632202,
+          "speedup": 2.989357311342586
+        },
+        {
+          "bh": 16,
+          "warps": 4,
+          "us": 2.1935768127441406,
+          "speedup": 2.4132169371149135
+        },
+        {
+          "bh": 16,
+          "warps": 8,
+          "us": 1.8481922149658203,
+          "speedup": 2.864191654153573
+        }
+      ]
+    },
+    {
+      "m": 32,
+      "baseline_us": 5.415231227874756,
+      "baseline_after_us": 5.3951921463012695,
+      "candidates": [
+        {
+          "bh": 1,
+          "warps": 4,
+          "us": 3.3763461112976074,
+          "speedup": 1.6038732551010768
+        },
+        {
+          "bh": 1,
+          "warps": 8,
+          "us": 4.831615447998047,
+          "speedup": 1.1207910244840629
+        },
+        {
+          "bh": 2,
+          "warps": 4,
+          "us": 2.5007307529449463,
+          "speedup": 2.165459524779944
+        },
+        {
+          "bh": 2,
+          "warps": 8,
+          "us": 3.2079615592956543,
+          "speedup": 1.688059887183852
+        },
+        {
+          "bh": 4,
+          "warps": 4,
+          "us": 2.08353853225708,
+          "speedup": 2.59905499420185
+        },
+        {
+          "bh": 4,
+          "warps": 8,
+          "us": 2.4839999675750732,
+          "speedup": 2.180044806184601
+        },
+        {
+          "bh": 8,
+          "warps": 4,
+          "us": 2.0028462409973145,
+          "speedup": 2.7037678265198477
+        },
+        {
+          "bh": 8,
+          "warps": 8,
+          "us": 2.135923147201538,
+          "speedup": 2.5353118322490813
+        },
+        {
+          "bh": 16,
+          "warps": 4,
+          "us": 2.273422956466675,
+          "speedup": 2.381972616433433
+        },
+        {
+          "bh": 16,
+          "warps": 8,
+          "us": 2.014730930328369,
+          "speedup": 2.6878185798200653
+        }
+      ]
+    },
+    {
+      "m": 64,
+      "baseline_us": 5.449692726135254,
+      "baseline_after_us": 5.4449615478515625,
+      "candidates": [
+        {
+          "bh": 1,
+          "warps": 4,
+          "us": 5.2526535987854,
+          "speedup": 1.0375123018573729
+        },
+        {
+          "bh": 1,
+          "warps": 8,
+          "us": 8.106423377990723,
+          "speedup": 0.6722684557694577
+        },
+        {
+          "bh": 2,
+          "warps": 4,
+          "us": 3.4445385932922363,
+          "speedup": 1.5821256108866883
+        },
+        {
+          "bh": 2,
+          "warps": 8,
+          "us": 4.879769325256348,
+          "speedup": 1.1167931028889293
+        },
+        {
+          "bh": 4,
+          "warps": 4,
+          "us": 2.62811541557312,
+          "speedup": 2.073612404479133
+        },
+        {
+          "bh": 4,
+          "warps": 8,
+          "us": 3.4308459758758545,
+          "speedup": 1.5884399254455053
+        },
+        {
+          "bh": 8,
+          "warps": 4,
+          "us": 2.3938846588134766,
+          "speedup": 2.2765059736989923
+        },
+        {
+          "bh": 8,
+          "warps": 8,
+          "us": 2.7025768756866455,
+          "speedup": 2.016480187913488
+        },
+        {
+          "bh": 16,
+          "warps": 4,
+          "us": 2.4818460941314697,
+          "speedup": 2.195822190192012
+        },
+        {
+          "bh": 16,
+          "warps": 8,
+          "us": 2.515538454055786,
+          "speedup": 2.16641201304188
+        }
+      ]
+    },
+    {
+      "m": 128,
+      "baseline_us": 5.9026923179626465,
+      "baseline_after_us": 5.881345748901367,
+      "candidates": [
+        {
+          "bh": 1,
+          "warps": 4,
+          "us": 8.898538589477539,
+          "speedup": 0.6633327774678125
+        },
+        {
+          "bh": 1,
+          "warps": 8,
+          "us": 14.63084602355957,
+          "speedup": 0.4034416265783766
+        },
+        {
+          "bh": 2,
+          "warps": 4,
+          "us": 5.334000110626221,
+          "speedup": 1.106616459606646
+        },
+        {
+          "bh": 2,
+          "warps": 8,
+          "us": 8.186192512512207,
+          "speedup": 0.7210546672266333
+        },
+        {
+          "bh": 4,
+          "warps": 4,
+          "us": 3.705846071243286,
+          "speedup": 1.5928055846049574
+        },
+        {
+          "bh": 4,
+          "warps": 8,
+          "us": 5.289615154266357,
+          "speedup": 1.1159020355576925
+        },
+        {
+          "bh": 8,
+          "warps": 4,
+          "us": 3.0066537857055664,
+          "speedup": 1.9632098467823662
+        },
+        {
+          "bh": 8,
+          "warps": 8,
+          "us": 3.8516154289245605,
+          "speedup": 1.5325238012172941
+        },
+        {
+          "bh": 16,
+          "warps": 4,
+          "us": 3.105154037475586,
+          "speedup": 1.900933817364304
+        },
+        {
+          "bh": 16,
+          "warps": 8,
+          "us": 3.2830770015716553,
+          "speedup": 1.7979146742939458
+        }
+      ]
+    },
+    {
+      "m": 512,
+      "baseline_us": 10.821308135986328,
+      "baseline_after_us": 10.828961372375488,
+      "candidates": [
+        {
+          "bh": 1,
+          "warps": 4,
+          "us": 30.514616012573242,
+          "speedup": 0.35462704598765116
+        },
+        {
+          "bh": 1,
+          "warps": 8,
+          "us": 53.51942443847656,
+          "speedup": 0.20219403047628062
+        },
+        {
+          "bh": 2,
+          "warps": 4,
+          "us": 16.156038284301758,
+          "speedup": 0.6697996096296086
+        },
+        {
+          "bh": 2,
+          "warps": 8,
+          "us": 27.60896110534668,
+          "speedup": 0.3919491245866076
+        },
+        {
+          "bh": 4,
+          "warps": 4,
+          "us": 9.721000671386719,
+          "speedup": 1.1131887036936752
+        },
+        {
+          "bh": 4,
+          "warps": 8,
+          "us": 16.097578048706055,
+          "speedup": 0.6722320651743111
+        },
+        {
+          "bh": 8,
+          "warps": 4,
+          "us": 6.6641926765441895,
+          "speedup": 1.6237988097303737
+        },
+        {
+          "bh": 8,
+          "warps": 8,
+          "us": 10.362808227539062,
+          "speedup": 1.044244754740207
+        },
+        {
+          "bh": 16,
+          "warps": 4,
+          "us": 6.349923133850098,
+          "speedup": 1.7041636422809943
+        },
+        {
+          "bh": 16,
+          "warps": 8,
+          "us": 7.636538505554199,
+          "speedup": 1.41704361578427
+        }
+      ]
+    },
+    {
+      "m": 2048,
+      "baseline_us": 31.256038665771484,
+      "baseline_after_us": 31.255807876586914,
+      "candidates": [
+        {
+          "bh": 1,
+          "warps": 4,
+          "us": 116.95903778076172,
+          "speedup": 0.2672391912488246
+        },
+        {
+          "bh": 1,
+          "warps": 8,
+          "us": 209.13230895996094,
+          "speedup": 0.14945581015774828
+        },
+        {
+          "bh": 2,
+          "warps": 4,
+          "us": 59.37873077392578,
+          "speedup": 0.5263844184338232
+        },
+        {
+          "bh": 2,
+          "warps": 8,
+          "us": 105.46834564208984,
+          "speedup": 0.296354687991787
+        },
+        {
+          "bh": 4,
+          "warps": 4,
+          "us": 33.77050018310547,
+          "speedup": 0.9255426628655057
+        },
+        {
+          "bh": 4,
+          "warps": 8,
+          "us": 59.37180709838867,
+          "speedup": 0.5264458030387248
+        },
+        {
+          "bh": 8,
+          "warps": 4,
+          "us": 21.086538314819336,
+          "speedup": 1.4822745298029862
+        },
+        {
+          "bh": 8,
+          "warps": 8,
+          "us": 36.34319305419922,
+          "speedup": 0.8600245613850942
+        },
+        {
+          "bh": 16,
+          "warps": 4,
+          "us": 17.856653213500977,
+          "speedup": 1.7503861609486575
+        },
+        {
+          "bh": 16,
+          "warps": 8,
+          "us": 24.95865249633789,
+          "speedup": 1.252312746866346
+        }
+      ]
+    }
+  ],
+  "note": "isolated kernel microbenchmark; not end-to-end speedup"
+}

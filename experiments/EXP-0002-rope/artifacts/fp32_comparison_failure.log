@@ -1,0 +1,46 @@
+/workspace/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+{"dtype": "torch.bfloat16", "m": 1, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 1, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 7, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 7, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 64, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 64, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 257, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 257, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 64, "hq": 12, "hk": 3, "dim": 80, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 64, "hq": 12, "hk": 3, "dim": 80, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 64, "hq": 8, "hk": 1, "dim": 64, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.bfloat16", "m": 64, "hq": 8, "hk": 1, "dim": 64, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 1, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 1, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 7, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 7, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 64, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 64, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 257, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 257, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 64, "hq": 12, "hk": 3, "dim": 80, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 64, "hq": 12, "hk": 3, "dim": 80, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 64, "hq": 8, "hk": 1, "dim": 64, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float16", "m": 64, "hq": 8, "hk": 1, "dim": 64, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 0.0}
+{"dtype": "torch.float32", "m": 1, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 2.384185791015625e-07}
+{"dtype": "torch.float32", "m": 1, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 2.384185791015625e-07}
+{"dtype": "torch.float32", "m": 7, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 2.384185791015625e-07}
+{"dtype": "torch.float32", "m": 7, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 2.384185791015625e-07}
+{"dtype": "torch.float32", "m": 64, "hq": 16, "hk": 2, "dim": 128, "interleaved": false, "exact_vs_existing": true, "existing_error_vs_reference": 4.76837158203125e-07}
+{"dtype": "torch.float32", "m": 64, "hq": 16, "hk": 2, "dim": 128, "interleaved": true, "exact_vs_existing": true, "existing_error_vs_reference": 4.76837158203125e-07}
+Traceback (most recent call last):
+  File "/workspace/experiments/codex_20261019/rope_microbench/bench_rope.py", line 97, in <module>
+    main()
+  File "/workspace/experiments/codex_20261019/rope_microbench/bench_rope.py", line 73, in main
+    torch.testing.assert_close(actual, expected, rtol=0, atol=0)
+  File "/usr/local/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1608, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not equal!
+
+Mismatched elements: 64 / 657920 (0.0%)
+Greatest absolute difference: 2.6385326385498047 at index (212, 8, 2)
+Greatest relative difference: 28.06983184814453 at index (212, 8, 40)
