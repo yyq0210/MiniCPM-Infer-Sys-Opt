@@ -1,0 +1,14 @@
+{
+  "pid": 27035,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics",
+  "stage": "diagnostics_complete_with_failures",
+  "kind": "isolated_diagnostics_not_official_benchmark",
+  "updated_at": "2026-10-20T15:43:04.180547+08:00",
+  "source_manifest_sha256": "42e57d11ea67494b8828053979171c38cb5c962fa0625ccf4f0d55adef3171f0",
+  "outcomes": {
+    "rope": 1,
+    "mlp": 0,
+    "norm": 0
+  },
+  "child_pid": 28461
+}

@@ -1,0 +1,139 @@
+{
+  "status": "failed",
+  "kind": "rope",
+  "scope": "diagnostic_not_official_e2e",
+  "started_at": "2026-10-20T15:41:42+0800",
+  "checks": [
+    {
+      "n": 1,
+      "dtype": "torch.bfloat16",
+      "hnd": false,
+      "page": 16,
+      "interleaved": false,
+      "short_slots": false,
+      "config": {
+        "head_tile": 2,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "reference": "independent_fp32_and_exact_previous_rope_cache",
+      "graph_changed_inputs": true,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "dtype": "torch.bfloat16",
+      "hnd": false,
+      "page": 16,
+      "interleaved": false,
+      "short_slots": false,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "reference": "independent_fp32_and_exact_previous_rope_cache",
+      "graph_changed_inputs": true,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "dtype": "torch.bfloat16",
+      "hnd": false,
+      "page": 16,
+      "interleaved": false,
+      "short_slots": false,
+      "config": {
+        "head_tile": 8,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "reference": "independent_fp32_and_exact_previous_rope_cache",
+      "graph_changed_inputs": true,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "dtype": "torch.bfloat16",
+      "hnd": false,
+      "page": 16,
+      "interleaved": false,
+      "short_slots": false,
+      "config": {
+        "head_tile": 16,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "reference": "independent_fp32_and_exact_previous_rope_cache",
+      "graph_changed_inputs": true,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "dtype": "torch.bfloat16",
+      "hnd": false,
+      "page": 16,
+      "interleaved": false,
+      "short_slots": false,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "reference": "independent_fp32_and_exact_previous_rope_cache",
+      "graph_changed_inputs": true,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "dtype": "torch.bfloat16",
+      "hnd": false,
+      "page": 16,
+      "interleaved": false,
+      "short_slots": false,
+      "config": {
+        "head_tile": 8,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "reference": "independent_fp32_and_exact_previous_rope_cache",
+      "graph_changed_inputs": true,
+      "passed": true
+    }
+  ],
+  "timings": [],
+  "configs": [
+    {
+      "head_tile": 2,
+      "token_tile": 1,
+      "num_warps": 4
+    },
+    {
+      "head_tile": 4,
+      "token_tile": 1,
+      "num_warps": 4
+    },
+    {
+      "head_tile": 8,
+      "token_tile": 1,
+      "num_warps": 4
+    },
+    {
+      "head_tile": 16,
+      "token_tile": 1,
+      "num_warps": 4
+    },
+    {
+      "head_tile": 4,
+      "token_tile": 4,
+      "num_warps": 4
+    },
+    {
+      "head_tile": 8,
+      "token_tile": 4,
+      "num_warps": 4
+    }
+  ],
+  "error": "AssertionError('Tensor-likes are not equal!\\n\\nMismatched elements: 4091 / 131072 (3.1%)\\nGreatest absolute difference: 4.46875 at index (6, 0, 1, 0, 33)\\nGreatest relative difference: 1696.0 at index (6, 0, 1, 0, 104)')",
+  "finished_at": "2026-10-20T15:41:45+0800"
+}

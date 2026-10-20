@@ -1,0 +1,22 @@
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-20 15:41:37 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-20 15:41:37 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-20 15:41:37 [__init__.py:58] Loading plugin fl
+INFO 10-20 15:41:40 [__init__.py:237] Platform plugin fl is activated
+Traceback (most recent call last):
+  File "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics/validate_fusion.py", line 286, in <module>
+    main()
+  File "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics/validate_fusion.py", line 275, in main
+    {"rope": run_rope, "mlp": run_mlp, "norm": run_norm}[args.kind](result, save)
+  File "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics/validate_fusion.py", line 101, in run_rope
+    torch.testing.assert_close(cache, old_cache, atol=0, rtol=0)
+  File "/usr/local/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1608, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not equal!
+
+Mismatched elements: 4091 / 131072 (3.1%)
+Greatest absolute difference: 4.46875 at index (6, 0, 1, 0, 33)
+Greatest relative difference: 1696.0 at index (6, 0, 1, 0, 104)
