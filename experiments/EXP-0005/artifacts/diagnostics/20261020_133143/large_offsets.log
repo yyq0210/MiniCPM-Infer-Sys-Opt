@@ -1,0 +1,8 @@
+/workspace/LeanScale/worktrees/EXP-0005/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0005/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-20 13:31:48 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-20 13:31:48 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-20 13:31:48 [__init__.py:58] Loading plugin fl
+INFO 10-20 13:31:52 [__init__.py:237] Platform plugin fl is activated

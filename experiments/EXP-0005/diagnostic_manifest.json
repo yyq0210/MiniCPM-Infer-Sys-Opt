@@ -20,5 +20,9 @@
   "artifacts/diagnostics/20261020_132456/selected_validation.json": "d8f63206106a8ad94d3b622831c5c2df3d33fea734ce7fa3f705995eb3d27097",
   "artifacts/diagnostics/20261020_132456/source_hashes.json": "50a8dee1cc77d40c3d1636e7dba6a23b63ce85a0fc3e944d185abdccb9fbfec8",
   "artifacts/diagnostics/20261020_132456/validate_gqa_snapshot.py": "d366f0884acf3965d8dca791dc0fb824a38c7c0b273ac23f9c53a6855c80474d",
-  "artifacts/diagnostics/20261020_132456/validate_integration_snapshot.py": "fe8d4b658c81496027595fa99900209174e8a74a98ecf9898eabe8448a7ca6af"
+  "artifacts/diagnostics/20261020_132456/validate_integration_snapshot.py": "fe8d4b658c81496027595fa99900209174e8a74a98ecf9898eabe8448a7ca6af",
+  "artifacts/diagnostics/20261020_133143/large_offsets.json": "dbf765f2276e44df9b4b940eb0cbc65dc72c00552b2d84b3b3c4b88271cf5a97",
+  "artifacts/diagnostics/20261020_133143/large_offsets.log": "9e3f9e2684c8160d374b0b520aca3cc08e4bd336767632cb7af1669f3b8bbb41",
+  "artifacts/diagnostics/20261020_133143/paged_gqa_snapshot.py": "2dc651805f60dab29c17a610441d15723621c8cbcd5e085673c174e2a8361cc9",
+  "artifacts/diagnostics/20261020_133143/validate_large_offsets_snapshot.py": "e523ff6743b5ce4b962d1a720bcd7875732795bfa50b88c17465b845339e3e2f"
 }

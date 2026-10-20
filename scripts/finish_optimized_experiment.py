@@ -63,7 +63,7 @@ def selected_files(run):
                  'validation/results.json','comparison.json','baseline_combined.json',
                  'resume_provenance.json','environment_check.json','stage_history.jsonl',
                  'progress.json','integration.json','integration.log','integration.command.json',
-                 'candidate_validation.json']:
+                 'candidate_validation.json','coordinator.log']:
         path = run/name
         if path.is_file():
             yield path
