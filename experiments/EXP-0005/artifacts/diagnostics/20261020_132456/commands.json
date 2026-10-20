@@ -1,0 +1,17 @@
+[
+  [
+    "python3",
+    "-u",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0005/validate_gqa.py",
+    "--output",
+    "/workspace/LeanScale/artifacts/EXP-0005/20261020_132456/selected_validation.json",
+    "--correctness-only",
+    "--selected-only"
+  ],
+  [
+    "python3",
+    "-u",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0005/validate_integration.py",
+    "/workspace/LeanScale/artifacts/EXP-0005/20261020_132456/integration.json"
+  ]
+]

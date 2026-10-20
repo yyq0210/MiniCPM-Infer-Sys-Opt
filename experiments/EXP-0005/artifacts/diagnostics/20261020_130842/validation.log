@@ -1,0 +1,20 @@
+/workspace/LeanScale/worktrees/EXP-0005/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0005/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-20 13:08:49 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-20 13:08:49 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-20 13:08:49 [__init__.py:58] Loading plugin fl
+INFO 10-20 13:08:52 [__init__.py:237] Platform plugin fl is activated
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0005/validate_gqa.py", line 186, in <module>
+    main()
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0005/validate_gqa.py", line 119, in main
+    torch.testing.assert_close(x["out"], expected, atol=3e-3, rtol=3e-2)
+  File "/usr/local/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1608, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 27659 / 94208 (29.4%)
+Greatest absolute difference: 0.16015625 at index (41, 5, 10) (up to 0.003 allowed)
+Greatest relative difference: 0.263671875 at index (41, 5, 6) (up to 0.03 allowed)

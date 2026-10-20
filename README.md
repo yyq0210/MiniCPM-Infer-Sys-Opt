@@ -77,3 +77,8 @@ python scripts/collect_baseline.py
 按用户要求在新服务会话重跑候选官方 4K/16K，各四轮排除首轮；复用已验证的完整基线。运行编号 20261020_125406。中断前数据继续保留，最终以 [EXP-0004/RESULTS.md](experiments/EXP-0004/RESULTS.md) 为准，完整任务精度仍暂缓。
 
 本次候选性能测试已启动。服务器每分钟更新本地状态；GitHub 结果页面在本次结束后自动同步，期间可能仍显示上次中断快照。两份实际候选源码均已发布到个人 fork 的 leanscale/iluvatar-rope-e2e 分支，详见[发布记录](docs/publication.md)。
+
+## EXP-0005：GQA 与混合批次优化
+
+[方案与接入](experiments/EXP-0005/README.md) · [全部诊断与淘汰配置](experiments/EXP-0005/DIAGNOSTICS.md) · [当前状态](experiments/EXP-0005/STATUS.md) · [官方性能结果](experiments/EXP-0005/RESULTS.md)。
+旧 RoPE 单项长测按用户要求主动中止；本轮先完成实现与验证，再统一测评。

@@ -1,0 +1,9 @@
+{
+  "stage": "ready_for_model_preflight",
+  "updated_at": "2026-10-20T13:30:19+08:00",
+  "commits": {
+    "vllm-plugin-FL": "b4c932d9d6c3a1fe0af71444caac2e83d97d1d06",
+    "FlagGems": "74c04bc46bea57508fe4c8cd86ab465ecc4f8454"
+  },
+  "full_model_accuracy": "deferred_by_user"
+}

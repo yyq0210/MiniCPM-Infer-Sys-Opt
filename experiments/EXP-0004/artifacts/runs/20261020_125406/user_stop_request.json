@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-20T13:03:28.914161+08:00",
+  "reason": "User explicitly stopped RoPE benchmark to implement and wire all selected optimizations before joint performance testing. Preserve partial data; do not claim completed E2E gain.",
+  "pid": 1134,
+  "previous_status": {
+    "pid": 1134,
+    "process_start_ticks": "281962461",
+    "run_directory": "/workspace/LeanScale/artifacts/EXP-0004/20261020_125406",
+    "started_at": "20261020_125414",
+    "stage": "candidate_throughput",
+    "updated_at": "2026-10-20T12:58:27+08:00",
+    "commits": {
+      "vllm-plugin-FL": "0ad2b82abdd8563e6a27d20b67341a109f2c2e7c",
+      "FlagGems": "646668a82b64c9ddb2c79e50ecf25a5c229b8560"
+    },
+    "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+    "accuracy_status": "deferred_by_user; math_500_not_run",
+    "protocol": "Retain both complete baseline cases; rerun both official candidate cases in a fresh service.",
+    "server_pid": 1507
+  }
+}

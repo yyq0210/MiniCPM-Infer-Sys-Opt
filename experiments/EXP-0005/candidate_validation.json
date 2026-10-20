@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "candidate_commits": {
+    "vllm-plugin-FL": "b4c932d9d6c3a1fe0af71444caac2e83d97d1d06",
+    "FlagGems": "74c04bc46bea57508fe4c8cd86ab465ecc4f8454"
+  },
+  "code_hashes": {
+    "vllm-plugin-FL": {
+      "vllm_fl/dispatch/backends/flaggems/flaggems.py": "cef14998b08b5b5f1114d4741aa64fde89dd0393f31f215d7c1f2d0a214bce6b",
+      "vllm_fl/dispatch/backends/flaggems/impl/iluvatar_gqa.py": "d8e4525814cd23829e8d9326bf679930859b9c46189fc9a14320a73dddaf7b7a"
+    },
+    "FlagGems": {
+      "src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py": "997601ba354e0c79dd6b3d05ae827415fd33c84b9b2139c394b9823da8d7c74d"
+    }
+  },
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0005/20261020_131536/diagnostic.json": "ca88cbb2d90a0cb98498b8981c29bcdbed56e816554a2580f060f1215499ec71",
+    "/workspace/LeanScale/artifacts/EXP-0005/20261020_132029/refine.json": "adb45a782267e323afce9c9441d25731b6d8d65ab7067ef62080da9f945caf3a",
+    "/workspace/LeanScale/artifacts/EXP-0005/20261020_132456/selected_validation.json": "d8f63206106a8ad94d3b622831c5c2df3d33fea734ce7fa3f705995eb3d27097",
+    "/workspace/LeanScale/artifacts/EXP-0005/20261020_132456/integration.json": "d360f9de2589951c1166d525fc17f6d0b3941b98c1af923e4034a5c0324bdca6"
+  },
+  "configuration": {
+    "segments": 16,
+    "decode_tile": 32,
+    "prefill_tile": 32,
+    "prefill_rows": 64
+  },
+  "scope": "Operator numerical/Graph/integration checks; full model startup and official performance still pending.",
+  "full_model_accuracy": "deferred_by_user"
+}
