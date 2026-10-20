@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "test_chunked_prefill_reserves_unallocated_input",
+      "passed": true,
+      "seconds": 0.001538171898573637
+    },
+    {
+      "name": "test_config_and_async_inheritance",
+      "passed": true,
+      "seconds": 4.508998245000839e-05
+    },
+    {
+      "name": "test_exact_boundary_and_async_placeholders",
+      "passed": true,
+      "seconds": 0.0002826298587024212
+    },
+    {
+      "name": "test_free_cached_prefix_costs_capacity",
+      "passed": true,
+      "seconds": 0.0004226802848279476
+    },
+    {
+      "name": "test_growth_rejection_is_read_only",
+      "passed": true,
+      "seconds": 0.00022026896476745605
+    },
+    {
+      "name": "test_manager_restored_on_schedule_failure",
+      "passed": true,
+      "seconds": 0.0003430703654885292
+    },
+    {
+      "name": "test_release_and_resume",
+      "passed": true,
+      "seconds": 0.00023753289133310318
+    },
+    {
+      "name": "test_running_allocation_unchanged",
+      "passed": true,
+      "seconds": 0.00015022698789834976
+    },
+    {
+      "name": "test_shared_prefix_counts_physical_blocks",
+      "passed": true,
+      "seconds": 0.00026270002126693726
+    },
+    {
+      "name": "test_supported_cache_guard",
+      "passed": true,
+      "seconds": 0.00011451775208115578
+    },
+    {
+      "name": "test_unsupported_request_falls_back",
+      "passed": true,
+      "seconds": 0.000519556924700737
+    },
+    {
+      "name": "test_varied_request_lifetimes_never_preempt_running",
+      "passed": true,
+      "seconds": 0.2502843481488526
+    },
+    {
+      "name": "test_watermark_and_first_request_progress",
+      "passed": true,
+      "seconds": 0.00032836711034178734
+    }
+  ],
+  "cuda_initialized": false
+}
