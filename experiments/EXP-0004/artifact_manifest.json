@@ -87,5 +87,12 @@
   "artifacts/runs/20261019_202342/status.json": "b827b0914c754d0d15fac83b925e539f817f83f817682b6a60ef6018054feb8d",
   "artifacts/runs/20261019_202342/validation/results.json": "a350cb6048c76056464e1a634810e0080d17850a778c7bf71b44be3c8860d963",
   "artifacts/runs/20261019_202342/validation.command.json": "2f910864b41c10be4a422c535f929142d14bc3e0235432cd844ff5d0080d4353",
-  "artifacts/runs/20261019_202342/validation.log": "1009a2e970a6e8db22618ba6ca1f3c413faf31ba10de7e73c07645ce07fcdd5a"
+  "artifacts/runs/20261019_202342/validation.log": "1009a2e970a6e8db22618ba6ca1f3c413faf31ba10de7e73c07645ce07fcdd5a",
+  "artifacts/runs/20261020_125059/completion_validation.json": "d1922e9882a5b809fb8b21471ed9a9454c899e992d98896e01868c0fc3039af6",
+  "artifacts/runs/20261020_125059/progress.json": "462c502acf80d79026438b75792ab6815d06feb099ce7f39ffebbb8c2af916d6",
+  "artifacts/runs/20261020_125059/retained_baseline_4k/raw_runs_20261019_190747.csv": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463",
+  "artifacts/runs/20261020_125059/retained_baseline_4k/summary_20261019_190747.csv": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e",
+  "artifacts/runs/20261020_125059/source_hashes.json": "d1a3a51769156173b937d6e7dcfea2447d0d0896a515ae2459c249049d25f856",
+  "artifacts/runs/20261020_125059/stage_history.jsonl": "f30df6bff778cb7c04f044aa28c9fc7745ab302cff1f15cb75732120efc350e5",
+  "artifacts/runs/20261020_125059/status.json": "4a2512a3c07e60dd3c669ba2ecd6c1afb5e8135922208e5ac62bc1fd921a6fdf"
 }
