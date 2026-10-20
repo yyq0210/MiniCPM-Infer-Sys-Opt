@@ -1,0 +1,258 @@
+{
+  "status": "passed",
+  "source_sha256": "a1127ed7025f8a541b5864ac6dfc2e06a8396a27933976fa9755a30dce7d3d4b",
+  "checks": [
+    {
+      "n": 0,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 1,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 7,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 31,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 32,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 33,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 63,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 64,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 127,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 128,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 129,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "n": 257,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "n": 2048,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "n": 4096,
+      "dtype": "torch.bfloat16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "n": 0,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 1,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 7,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 31,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 32,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 33,
+      "dtype": "torch.float16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 63,
+      "dtype": "torch.float16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 64,
+      "dtype": "torch.float16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 127,
+      "dtype": "torch.float16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 128,
+      "dtype": "torch.float16",
+      "selected_config": [
+        16,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "n": 129,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "n": 257,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "n": 2048,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "n": 4096,
+      "dtype": "torch.float16",
+      "selected_config": [
+        4,
+        4
+      ],
+      "passed": true
+    }
+  ]
+}

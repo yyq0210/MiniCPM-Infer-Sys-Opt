@@ -1,0 +1,183 @@
+{
+  "status": "microbenchmark_confirmed_engine_gate_pending",
+  "original_confirmation": "/workspace/LeanScale/artifacts/EXP-0006/20261020_161133_confirmation",
+  "drift_rechecks": {
+    "32": "/workspace/LeanScale/artifacts/EXP-0006/20261020_162921_confirmation_recheck"
+  },
+  "rule": [
+    {
+      "max_tokens": 32,
+      "head_tile": 4,
+      "token_tile": 1
+    },
+    {
+      "max_tokens": 128,
+      "head_tile": 16,
+      "token_tile": 1
+    },
+    {
+      "max_tokens": null,
+      "head_tile": 4,
+      "token_tile": 4
+    }
+  ],
+  "num_warps": 4,
+  "rows": [
+    {
+      "n": 1,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "baseline_us": 4.165024030953646,
+      "fused_us": 2.8122595977038145,
+      "speedup": 1.4810240257884981,
+      "max_baseline_drift": 0.00894578805926129
+    },
+    {
+      "n": 8,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "baseline_us": 4.262980772182345,
+      "fused_us": 2.840624889358878,
+      "speedup": 1.5007193621909332,
+      "max_baseline_drift": 0.0066696594766232345
+    },
+    {
+      "n": 30,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "baseline_us": 4.611178068444133,
+      "fused_us": 3.2250001095235348,
+      "speedup": 1.429822608324002,
+      "max_baseline_drift": 0.004014065437173776
+    },
+    {
+      "n": 32,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "baseline_us": 4.577043233439326,
+      "fused_us": 3.1473557464778423,
+      "speedup": 1.4542503619304634,
+      "max_baseline_drift": 0.0035749859749805977
+    },
+    {
+      "n": 64,
+      "config": {
+        "head_tile": 16,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "baseline_us": 5.349879851564765,
+      "fused_us": 3.5127403680235147,
+      "speedup": 1.5229932448935697,
+      "max_baseline_drift": 0.005218899279566696
+    },
+    {
+      "n": 128,
+      "config": {
+        "head_tile": 16,
+        "token_tile": 1,
+        "num_warps": 4
+      },
+      "baseline_us": 6.891947239637375,
+      "fused_us": 4.424999933689833,
+      "speedup": 1.557502224387708,
+      "max_baseline_drift": 0.007352243344796196
+    },
+    {
+      "n": 129,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "baseline_us": 7.248317124322057,
+      "fused_us": 4.603125154972076,
+      "speedup": 1.5746513249792415,
+      "max_baseline_drift": 0.0035164841944253316
+    },
+    {
+      "n": 256,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "baseline_us": 9.930768981575966,
+      "fused_us": 5.3853364661335945,
+      "speedup": 1.844038723304835,
+      "max_baseline_drift": 0.0029531799530379678
+    },
+    {
+      "n": 512,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "baseline_us": 15.711778774857521,
+      "fused_us": 7.536057848483324,
+      "speedup": 2.0848803301078176,
+      "max_baseline_drift": 0.00018354825799491006
+    },
+    {
+      "n": 1024,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "baseline_us": 26.561418548226357,
+      "fused_us": 11.656009592115879,
+      "speedup": 2.278774595912523,
+      "max_baseline_drift": 0.000941609941133594
+    },
+    {
+      "n": 2048,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "baseline_us": 65.23257121443748,
+      "fused_us": 39.17187824845314,
+      "speedup": 1.665290870166877,
+      "max_baseline_drift": 0.0008652948454234252
+    },
+    {
+      "n": 4096,
+      "config": {
+        "head_tile": 4,
+        "token_tile": 4,
+        "num_warps": 4
+      },
+      "baseline_us": 128.40324640274048,
+      "fused_us": 79.38942313194275,
+      "speedup": 1.6173848018688621,
+      "max_baseline_drift": 0.0009548170298644646
+    }
+  ],
+  "rejected": [
+    {
+      "kind": "mlp",
+      "reason": "all_measured_configurations_slower",
+      "source_run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics"
+    },
+    {
+      "kind": "norm",
+      "reason": "all_measured_configurations_slower",
+      "source_run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics"
+    }
+  ]
+}
