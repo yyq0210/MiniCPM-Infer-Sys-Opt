@@ -48,3 +48,12 @@ PR 尚未创建。算子原型的比赛格式标题和正文见 [PR 草稿](../p
 ## 2026-10-19T20:26:58+08:00：文档优先发布
 
 本次提交包含真实模型流水线、RoPE 前后对比、基础验证与中止/恢复记录，以及两仓 PR 正文草稿。完整端到端 A/B 尚未完成，完整精度暂缓。候选 leanscale/iluvatar-rope-e2e 源码分支尚未在本步骤推送；PR 尚未创建。文档 SHA 以 Git 历史和推送后核验为准。
+
+## 2026-10-20：RoPE 实际接入分支
+
+本次在两个个人 fork 发布并通过 SSH 远端引用核验：
+
+- yyq0210/vllm-plugin-FL：分支 leanscale/iluvatar-rope-e2e，commit 0ad2b82abdd8563e6a27d20b67341a109f2c2e7c。
+- yyq0210/FlagGems：分支 leanscale/iluvatar-rope-e2e，commit 646668a82b64c9ddb2c79e50ecf25a5c229b8560。
+
+未创建上游 PR；完整任务精度仍暂缓。新运行 20261020_125406 已进入官方候选性能测试；不把已验证的单算子速度写成完整端到端结果。
