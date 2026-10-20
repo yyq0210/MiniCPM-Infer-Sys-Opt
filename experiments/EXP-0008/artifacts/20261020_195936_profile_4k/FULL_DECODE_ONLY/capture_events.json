@@ -1,0 +1,42 @@
+[
+  {
+    "window": "steady",
+    "elapsed_s": 100.05475605931133,
+    "batch": {
+      "phase": "mixed",
+      "B": 29,
+      "M_unpadded": 2048,
+      "prefill_requests": 1,
+      "decode_requests": 28,
+      "q_min": 1,
+      "q_max": 2020,
+      "L_min_cpu_upper_bound": 3311,
+      "L_max_cpu_upper_bound": 4152,
+      "new_requests": 0,
+      "step": 58,
+      "epoch": 1792499601.3365982,
+      "new_requests_total": 29,
+      "profiling": false
+    }
+  },
+  {
+    "window": "late",
+    "elapsed_s": 240.46546735893935,
+    "batch": {
+      "phase": "decode",
+      "B": 64,
+      "M_unpadded": 64,
+      "prefill_requests": 0,
+      "decode_requests": 64,
+      "q_min": 1,
+      "q_max": 1,
+      "L_min_cpu_upper_bound": 4654,
+      "L_max_cpu_upper_bound": 4782,
+      "new_requests": 0,
+      "step": 688,
+      "epoch": 1792499743.2079277,
+      "new_requests_total": 64,
+      "profiling": false
+    }
+  }
+]

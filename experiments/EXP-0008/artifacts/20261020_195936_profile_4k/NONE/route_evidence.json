@@ -1,0 +1,7 @@
+{
+  "gqa_layers": 0,
+  "fused_runtime_layers": 42,
+  "fusion_pass_42": true,
+  "graph_mode": "NONE",
+  "graph_capture_35": false
+}

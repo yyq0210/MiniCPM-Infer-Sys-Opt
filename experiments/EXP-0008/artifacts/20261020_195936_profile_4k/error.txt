@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0008/run_profile.py", line 373, in main
+    one_pass(mode)
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0008/run_profile.py", line 226, in one_pass
+    verify_route(folder, mode)
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0008/run_profile.py", line 190, in verify_route
+    assert evidence["gqa_layers"] == 42 and evidence["fused_runtime_layers"] == 42, evidence
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'gqa_layers': 0, 'fused_runtime_layers': 42, 'fusion_pass_42': True, 'graph_mode': 'NONE', 'graph_capture_35': False}
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0008/run_profile.py", line 401, in main
+    report = analyze_profile.main(RUN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0008/analyze_profile.py", line 196, in main
+    result = analyze_trace(trace, out)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0008/analyze_profile.py", line 69, in analyze_trace
+    events = [e for e in read_trace(path) if e.get("ph") == "X" and e.get("dur", 0) >= 0]
+                         ^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0008/analyze_profile.py", line 16, in read_trace
+    return json.load(f)["traceEvents"]
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 822 column 61 (char 47255)
