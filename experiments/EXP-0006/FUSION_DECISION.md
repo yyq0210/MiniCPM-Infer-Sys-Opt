@@ -61,3 +61,5 @@
 ## 实际图接入发现的副作用缺陷
 
 首次完整模型启动触发接入门槛失败，没有进行 benchmark。预分区的 FX 图仍是 functionalization 之前的图；通用 eliminate_dead_code 不能可靠识别 OpOverloadPacket 形式注意力的 output 缓冲区写入，导致注意力及其 RoPE/GQA 输入链被删除。修复仅保留显式匹配节点替换，不做全局 DCE；后续标准编译流程负责清理视图。新增 packet + model-output-only 图能让原版失败、修复版通过，最终 10 项 CPU 检查通过；仍需重新完成真实 42 层接入验证。
+
+修复后于 2026-10-20T16:56:15.127244+08:00 完成真实模型门槛：42 层 fused RoPE+KV 与 GQA，图内旧 KV update 为 0，35 个 FULL decode 图和 API smoke 通过。4K 官方计时已开始，结果尚未完成；16K 将在 18:30 重启后独立完成四轮。证据见 ENGINE_INTEGRATION.md。

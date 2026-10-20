@@ -1,5 +1,5 @@
 {
-  "status": "microbenchmark_confirmed_engine_gate_pending",
+  "status": "engine_route_passed_official_4k_running",
   "original_confirmation": "/workspace/LeanScale/artifacts/EXP-0006/20261020_161133_confirmation",
   "drift_rechecks": {
     "32": "/workspace/LeanScale/artifacts/EXP-0006/20261020_162921_confirmation_recheck"
@@ -179,5 +179,27 @@
       "reason": "all_measured_configurations_slower",
       "source_run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics"
     }
-  ]
+  ],
+  "candidate_commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "engine_run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_165011_official_4k",
+  "route_evidence": {
+    "status": "passed",
+    "fused_runtime_layers": 42,
+    "gqa_layers": 42,
+    "old_cache_updates_in_fused_graph": 0,
+    "graphs": [
+      {
+        "path": "candidate_cache/torch_compile_cache/c8fa2c774a/rank_0_0/backbone/computation_graph.py",
+        "counts": {
+          "fl_rope_kv_dispatch": 42,
+          "fl_rotary_embedding_dispatch": 0,
+          "unified_kv_cache_update": 0
+        },
+        "sha256": "e09ae7cd48aaaaaa7ce1b028aadf6b2d880e35ac6dfb029d307620eb17c86983"
+      }
+    ]
+  }
 }
