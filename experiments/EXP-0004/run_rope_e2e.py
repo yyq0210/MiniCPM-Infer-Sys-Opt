@@ -205,10 +205,16 @@ def verify_installed_environment():
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
         assert digest == metadata['sha256'], 'Installed source changed: '+name
         checked[name] = digest
-    versions = {name: importlib.metadata.version(name) for name in ('torch','triton','vllm')}
+    # The vendor image installs Triton's module without a standard triton
+    # distribution metadata record. Check the actual import used by kernels.
+    import triton
+    versions = {name: importlib.metadata.version(name) for name in ('torch','vllm')}
+    versions['triton'] = triton.__version__
     assert versions == {'torch':'2.10.0+corex.4.5.0','triton':'3.6.0','vllm':'0.24.0+empty'}, versions
     (RUN/'environment_check.json').write_text(json.dumps({
         'versions': versions, 'installed_source_hashes': checked,
+        'triton_module': triton.__file__,
+        'triton_init_sha256': hashlib.sha256(Path(triton.__file__).read_bytes()).hexdigest(),
         'candidate_commits': CANDIDATE_COMMITS,
         'benchmark_sha256': BENCH_SHA,
     }, indent=2)+'\n')
