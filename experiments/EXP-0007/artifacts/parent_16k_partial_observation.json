@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-10-20T19:16:10.261231+08:00",
+  "source_run": "EXP-0006/20261020_185748_official_16k",
+  "scope": "Partial ongoing official 16K run; not final performance or full-case counts",
+  "metrics": [
+    "vllm:num_requests_running{engine=\"0\",model_name=\"minicpm\"} 30.0",
+    "vllm:num_requests_waiting{engine=\"0\",model_name=\"minicpm\"} 34.0",
+    "vllm:kv_cache_usage_perc{engine=\"0\",model_name=\"minicpm\"} 0.9440870098039216",
+    "vllm:num_preemptions_total{engine=\"0\",model_name=\"minicpm\"} 2.0"
+  ]
+}
