@@ -33,7 +33,7 @@
 
 ## 真实接入路径
 
-原有 `CachedOp("attention_backend")` 的策略、严格模式、fallback 和 IO 路径保持。
+原有 `call_op("attention_backend")` / `OpManager` 的策略、严格模式、fallback 和 IO 路径保持。
 当它选中 FlagOS，且平台为 Iluvatar 时，FlagOS 实现返回继承 `TritonAttentionBackend`
 的 `IluvatarGQABackend`。其他平台与原有显式 backend 选项保留原路径。
 
@@ -105,3 +105,6 @@ Graph 测试在固定地址修改 Q 后重放，和 eager 输出逐元素对照�
 ## 本轮最终选定与接入门槛
 
 固定配置为 segments=16、decode_tile=32、prefill_tile=32、prefill_rows=64。两轮诊断全部完成，固定配置的额外 20 项数值/Graph 检查、实际 backend forward、回退和常量 V 不变量检查通过。性能和淘汰方案见 [DIAGNOSTICS.md](DIAGNOSTICS.md)。随后冻结两个代码提交，启动完整模型编译/Graph 和 smoke；只有观察到 42 层实际进入 GQA 实现后，才执行官方 4K/16K benchmark。最终状态见 [STATUS.md](STATUS.md)，整模结果见 [RESULTS.md](RESULTS.md)。
+
+
+完整模型接入门槛已通过，官方测评已开始，见 [启动证据](LAUNCH.md)。

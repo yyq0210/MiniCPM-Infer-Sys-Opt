@@ -82,3 +82,5 @@ python scripts/collect_baseline.py
 
 [方案与接入](experiments/EXP-0005/README.md) · [全部诊断与淘汰配置](experiments/EXP-0005/DIAGNOSTICS.md) · [当前状态](experiments/EXP-0005/STATUS.md) · [官方性能结果](experiments/EXP-0005/RESULTS.md)。
 旧 RoPE 单项长测按用户要求主动中止；本轮先完成实现与验证，再统一测评。
+
+[EXP-0005 已通过实际模型接入并开始官方测评](experiments/EXP-0005/LAUNCH.md)。

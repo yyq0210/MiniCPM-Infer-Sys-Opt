@@ -14,7 +14,7 @@ Performance
 
 MiniCPM5-2B 的 Q16/KV2/D128 attention 在 prefill/decode 混合批次中原本整体退到 2D kernel。为 Iluvatar 接入 FlagGems paged GQA 内核：GPU 内分流两类请求，decode 保留分段 softmax，prefill 每块复用 8 个 query token 的 KV 读取。继承原 Triton metadata、KV layout/update 和 Graph 支持；特性不支持时调用原 forward。
 
-分支同时包含此前 functional RoPE 接入。保留原 attention_backend 的 CachedOp 策略/选择顺序；不通过调参或切换环境变量代替算子优化。
+分支同时包含此前 functional RoPE 接入。保留原 attention_backend 的 call_op / OpManager 策略和选择顺序；不通过调参或切换环境变量代替算子优化。
 
 ### Related Issues
 

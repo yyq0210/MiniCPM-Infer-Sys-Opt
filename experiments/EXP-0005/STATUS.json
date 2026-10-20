@@ -1,9 +1,16 @@
 {
-  "stage": "ready_for_model_preflight",
-  "updated_at": "2026-10-20T13:35:13+08:00",
+  "pid": 12519,
+  "process_start_ticks": "282209187",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0005/20261020_133521_official",
+  "started_at": "2026-10-20T13:35:21.854546+08:00",
+  "stage": "candidate_throughput",
+  "updated_at": "2026-10-20T13:39:04+08:00",
   "commits": {
     "vllm-plugin-FL": "b4c932d9d6c3a1fe0af71444caac2e83d97d1d06",
     "FlagGems": "25a16284ba3a4cfeb01133e1665260050ca5e22a"
   },
-  "full_model_accuracy": "deferred_by_user"
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "Combined functional RoPE + GQA candidate; full official cases, historical complete baseline, no single-op attribution.",
+  "server_pid": 12546
 }
