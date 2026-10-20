@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-20T12:33:06.084605+08:00",
+  "coordinator_alive": false,
+  "handler_alive": false,
+  "server_alive": false,
+  "container_pid1_started": "Tue Oct 20 12:20:34 2026",
+  "last_server_log_time": "2026-10-20 00:00:55 +08:00",
+  "conclusion": "Execution environment restarted; exact cause/time of earlier interruption unknown. No completed candidate A/B."
+}

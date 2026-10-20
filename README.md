@@ -8,8 +8,8 @@ FlagOS 开放计算全球挑战赛 S2，赛题 2。记录 MiniCPM5-2B 在天数 
 | --- | --- | --- |
 | [EXP-0001](experiments/EXP-0001-environment/README.md) | 比赛分支、官方标签及源码导入修正 | 完成，镜像原有依赖约束报告已记录 |
 | [EXP-0002](experiments/EXP-0002-rope/README.md) | RoPE 按 head 分组并行原型 | 独立测试完成；未接入默认整模路径 |
-| [EXP-0004](experiments/EXP-0004/README.md) | RoPE 实际编译路径接入与官方端到端 A/B | 基础检查已通过；[当前快照](experiments/EXP-0004/STATUS.md)；完整精度暂缓 |
-| [EXP-0003](experiments/EXP-0003-baseline/README.md) | 官方 4K / 16K 基线（4K 完成，16K 恢复中） | 以 [自动采集状态](experiments/EXP-0003-baseline/STATUS.md) 为准 |
+| [EXP-0004](experiments/EXP-0004/README.md) | RoPE 实际编译路径接入与官方端到端 A/B | 基础检查通过；候选 4K 第 4 轮中断，16K 未运行；[核查结果](experiments/EXP-0004/RESULTS.md)；精度暂缓 |
+| [EXP-0003](experiments/EXP-0003-baseline/README.md) | 官方 4K / 16K 基线（均完整完成） | 4K 原始会话 + EXP-0004 恢复的 16K 会话；[核验结果](docs/baseline_fusion_gqa_analysis.md) |
 
 RoPE 在 64-token 批次的独立内核测试约为 2.28× 加速。**这不是整模吞吐提升，也不是可提交比赛成绩。** 当前尚未完成优化后的官方端到端 A/B；math_500 Level 3 完整精度按用户要求暂缓。已完成基础接入、编译和 Graph 检查。
 
@@ -63,3 +63,11 @@ python scripts/collect_baseline.py
 - [RoPE 算子集成 PR 草稿](pr/flaggems-rope-e2e.md)
 
 - [本次实验自动归档与推送](docs/automatic_result_archiving.md)
+
+## 2026-10-20 结果与分析
+
+基线官方后三轮均值：4K 2008.97 total tok/s、16K 917.27 total tok/s。16K Mean TTFT 为 597.81 s。RoPE 候选在第 4 轮 4K 中断，不能宣称端到端加速。执行环境已重启，已恢复本地归档；准确中断原因未知。
+
+- [文档一：基线复现、真实函数实现、融合边界与 GQA 优化](docs/baseline_fusion_gqa_analysis.md)
+- [文档二：16K 排队、调度优化与 H2O 等 KV 压缩适用性](docs/16k_scheduling_kv_compression_analysis.md)
+- [原始 CSV、日志统计与源码摘录](experiments/EXP-0004/artifacts/analysis_20261020/)

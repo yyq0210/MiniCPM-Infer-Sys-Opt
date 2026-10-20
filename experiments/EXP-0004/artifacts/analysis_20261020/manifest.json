@@ -1,0 +1,16 @@
+{
+  "README.md": "b85f37cf79943fb57473c16677c87199bce79ed2f136f75330c3247afc96a7c0",
+  "analysis_statistics.json": "3ac297efccd3e8e3c72f1a9a41947b828b9ede0ab942751e59dca522c672088d",
+  "interruption_check.json": "875bb5c7b502cfbb8a5a0fe6372c27a2de5184fc038d532a47329dc93a65a7cb",
+  "results/baseline_16k/benchmark_results/raw_runs_20261019_203029.csv": "648fa5d8e4184b7f0700abf5d5e3006c95dd0870a1a9900d2c7a44994a0ffa2c",
+  "results/baseline_16k/benchmark_results/summary_20261019_203029.csv": "e1439442528a6ce7de3729e59e28dc620891d9be578e8b6c2a4ab75cf0b210e8",
+  "results/baseline_combined.json": "c7f7ef97288dc764f5017ffd02cc2ecc4d488a1efade95542e36ed0891c0d00f",
+  "results/candidate_benchmark/benchmark_results/raw_runs_20261019_231826.csv": "c50128b74bbe55b93efb3328a85493c547445b7cee1aa4eef724aafe83005553",
+  "results/completion_handler_status.json": "c474f9fb880673f8f87940698112dfe15a78286d4d489dfd6644c07d4987f0c7",
+  "results/original_4k/raw_runs_20261019_190747.csv": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463",
+  "results/original_4k/summary_20261019_190747.csv": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e",
+  "results/status.json": "8327a77b9b0fc1f9be9eba2072afb89bd023b620c29b50de14421eb325eca962",
+  "runtime_log_evidence.json": "4a6a547d7e8e868ffceb72d9e74247199cff772caf302115726a14ba0670631b",
+  "source_excerpts.md": "739ef5fb000420734098bc24cdfa6c51790bae9e4cf62e05b07fb60434033350",
+  "source_index.json": "f68d0c66d94c7f0704b6203497a30dfd08e7e21bc7081c7f0d4cc341ec5fbb9b"
+}

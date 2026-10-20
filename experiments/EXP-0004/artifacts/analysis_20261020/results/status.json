@@ -1,0 +1,15 @@
+{
+  "pid": 11651,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0004/20261019_202342",
+  "started_at": "20261019_202342",
+  "stage": "candidate_throughput",
+  "updated_at": "2026-10-19T23:18:26+08:00",
+  "commits": {
+    "vllm-plugin-FL": "0ad2b82abdd8563e6a27d20b67341a109f2c2e7c",
+    "FlagGems": "646668a82b64c9ddb2c79e50ecf25a5c229b8560"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "official cases only; retain completed baseline 4K, rerun interrupted baseline 16K",
+  "server_pid": 17900
+}
