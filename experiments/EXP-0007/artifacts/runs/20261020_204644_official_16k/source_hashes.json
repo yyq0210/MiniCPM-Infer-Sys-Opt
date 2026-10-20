@@ -1,0 +1,17 @@
+{
+  "status.json": "ec1a260747eed763d86ed650250dd21f691bc1d759668c935d1f306b23b7aa83",
+  "baseline_combined.json": "c7f7ef97288dc764f5017ffd02cc2ecc4d488a1efade95542e36ed0891c0d00f",
+  "resume_provenance.json": "de01271f3bc608cbe944b58f9ff4de05b977d9d3bc8ad9ed5e5031c027bea6fa",
+  "environment_check.json": "2d5b682c783f8698516c4e4c76f5a5ebe4b37884de4073f00bab89feb5942919",
+  "stage_history.jsonl": "242fa56267e723ff96229a4c8aba0f98d91290e6bb3eabc4b63330675be88f46",
+  "progress.json": "1cb25dee4c893cf99affa6478555317f63180395db8f16992284fa6df6d36d72",
+  "exp6_reference.json": "c65a417b92f26a7f399c33863a7b771bec5965ddb486dd9f5c9a388b2f04ed70",
+  "candidate_validation.json": "e2593639bfb7f4b749a386660b07e9c7cf7b10e11bf43a0aed52c7a13a878cbc",
+  "coordinator.log": "ece8f6cf15a1c685890e68ebb06504495eb2e2d48a233e16be25a5fd0e3f8b97",
+  "candidate_benchmark/server.log": "f9327c454e925ab611553bb0e1b8336a27e1f12e70dfc27be982b1b72850b6bc",
+  "candidate_benchmark/server.command.json": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+  "retained_baseline/16k/raw_runs_20261019_203029.csv": "648fa5d8e4184b7f0700abf5d5e3006c95dd0870a1a9900d2c7a44994a0ffa2c",
+  "retained_baseline/16k/summary_20261019_203029.csv": "e1439442528a6ce7de3729e59e28dc620891d9be578e8b6c2a4ab75cf0b210e8",
+  "retained_baseline/4k/raw_runs_20261019_190747.csv": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463",
+  "retained_baseline/4k/summary_20261019_190747.csv": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e"
+}

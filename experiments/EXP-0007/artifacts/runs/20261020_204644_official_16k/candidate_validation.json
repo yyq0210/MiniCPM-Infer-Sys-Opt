@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "scope": "CPU allocator/lifecycle; actual service gate pending",
+  "candidate_commits": {
+    "vllm-plugin-FL": "ef63a19a8309c3b3ba686802220883ac2f8836ab",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "parent_commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0007/20261020_190653_cpu/results.json": "83ff3267068e262a6c11253d465656b1040f15b9bb36635a1f235284e85ab9f9",
+    "/workspace/LeanScale/artifacts/EXP-0007/20261020_190948_cpu_lifecycle/results.json": "edee004b0ef27cccdbcdaa66afe8247d8022c6ae801f95cdb0bcbd740fa818ec"
+  },
+  "code_hashes": {
+    "vllm-plugin-FL": {
+      "vllm_fl/platform.py": "03e521ce439a4c98537585c2959f526f130e71e0dca5c9ae55cdbf0a001e9be9",
+      "vllm_fl/worker/kv_reservation_config.py": "3bb630e8f740d35e857236214d5169a806380e32cd322885db6ba2d69f7005a0",
+      "vllm_fl/worker/kv_reservation_scheduler.py": "8c5ccaba0be6231d8c34d2ee4ba39fd536bdc40ccb24f64c2244826ecb6329dd",
+      "tests/standalone/validate_kv_reservation_cpu.py": "2542e6b227efab7855565f0f5280f07539a4892940ac90b851179bc377ad5590"
+    },
+    "FlagGems": {}
+  },
+  "cuda_initialized": false,
+  "full_model_accuracy": "deferred_by_user",
+  "parent_numerics": "EXP-0006 candidate_validation.json; kernels unchanged",
+  "source_index": {
+    "vllm/v1/core/sched/scheduler.py": "df78076164fe02a63876d7690cefac810f1ba4d8fb58afc15e786c1608064090",
+    "vllm/v1/core/kv_cache_manager.py": "2e91e77f84dfd9d4bed79f50392be72559207f54e845a3d3402baf88dc529320",
+    "vllm/v1/core/single_type_kv_cache_manager.py": "22e3677acf0e769461bdbf278df031d6e362c97aa1ba7b862c071b76d47d8914",
+    "vllm/config/scheduler.py": "4102ccd3d73188200b25f47a0cba837853662647850f283012d8cc1f9e8c47c2"
+  }
+}

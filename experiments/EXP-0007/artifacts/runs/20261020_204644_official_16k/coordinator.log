@@ -1,0 +1,53 @@
+{"stage": "environment_verifying", "commits": {"vllm-plugin-FL": "ef63a19a8309c3b3ba686802220883ac2f8836ab", "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"}, "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565", "accuracy_status": "deferred_by_user; math_500_not_run", "protocol": "Full max_tokens KV growth admission on EXP-0006 fusion; one complete official case; historical original and EXP-0006 references; no full-model accuracy claim."}
+{"stage": "candidate_official_starting"}
+{"stage": "failed", "error": "<HTTPError 500: 'Internal Server Error'>"}
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0007/run_split_e2e.py", line 360, in main
+    smoke(RUN/'candidate_benchmark')
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0007/run_split_e2e.py", line 265, in smoke
+    with urllib.request.urlopen(req, timeout=180) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0007/run_split_e2e.py", line 387, in <module>
+    main()
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0007/run_split_e2e.py", line 360, in main
+    smoke(RUN/'candidate_benchmark')
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0007/run_split_e2e.py", line 265, in smoke
+    with urllib.request.urlopen(req, timeout=180) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
