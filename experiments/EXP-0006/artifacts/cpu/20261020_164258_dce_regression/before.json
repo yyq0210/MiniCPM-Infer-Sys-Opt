@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "checks": [
+    {
+      "options": {},
+      "matches": 1,
+      "passed": true
+    },
+    {
+      "options": {
+        "aten": true
+      },
+      "matches": 1,
+      "passed": true
+    }
+  ],
+  "error": "AssertionError()"
+}

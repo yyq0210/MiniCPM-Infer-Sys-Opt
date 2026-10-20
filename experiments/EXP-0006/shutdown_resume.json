@@ -1,0 +1,14 @@
+{
+  "shutdown_at": "2026-10-20T18:00:00+08:00",
+  "restart_expected_at": "2026-10-20T18:30:00+08:00",
+  "gpu_finish_deadline": "2026-10-20T17:50:00+08:00",
+  "candidate_commits": {
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13",
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908"
+  },
+  "before_shutdown_case": "4k",
+  "after_restart_case": "16k",
+  "partial_case_policy": "discard_from_official_summary_and_rerun_all_four",
+  "server_data_persistence": "verify_on_reconnect",
+  "completed_cases": []
+}

@@ -18,11 +18,14 @@ with patch("torch.cuda.get_device_capability", return_value=(7, 0)):
 
 
 def make_graph(double_writer=False, nonlinear_v=False, tuple_user=False, aten=False,
-               duplicate_getitem=False):
+               duplicate_getitem=False, packet=False, model_output_only=False):
     g = fx.Graph()
+    def op(name):
+        value = getattr(torch.ops.vllm, name)
+        return value if packet else value.default
     args = [g.placeholder(n) for n in ["q", "k", "v", "cos", "sin", "positions", "out"]]
     q, k, v, cos, sin, positions, out = args
-    rope = g.call_function(torch.ops.vllm.fl_rotary_embedding_dispatch.default,
+    rope = g.call_function(op("fl_rotary_embedding_dispatch"),
                            (q, k, cos, sin, positions, False))
     qo = g.call_function(operator.getitem, (rope, 0))
     ko = g.call_function(operator.getitem, (rope, 1))
@@ -34,8 +37,8 @@ def make_graph(double_writer=False, nonlinear_v=False, tuple_user=False, aten=Fa
         kk = g.call_method("reshape", (ko, -1, 2, 128))
     if nonlinear_v:
         vv = g.call_function(torch.sin, (vv,))
-    dep = g.call_function(torch.ops.vllm.unified_kv_cache_update.default, (kk, vv, "layer0"))
-    g.call_function(torch.ops.vllm.unified_attention_with_output.default,
+    dep = g.call_function(op("unified_kv_cache_update"), (kk, vv, "layer0"))
+    g.call_function(op("unified_attention_with_output"),
                     (qo, kk, vv, out, "layer0"), {"kv_cache_dummy_dep": dep})
     extras = []
     if double_writer:
@@ -45,7 +48,7 @@ def make_graph(double_writer=False, nonlinear_v=False, tuple_user=False, aten=Fa
                                       (second_k, vv, "layer1")))
     if tuple_user:
         extras.append(rope)
-    g.output((qo, ko, out, dep, *extras))
+    g.output(out if model_output_only else (qo, ko, out, dep, *extras))
     return fx.GraphModule({}, g)
 
 
@@ -54,7 +57,9 @@ def main():
     path = Path(sys.argv[1])
     try:
         for options, expected in [
-            ({}, 1), ({"aten": True}, 1), ({"double_writer": True}, 0),
+            ({}, 1), ({"aten": True}, 1),
+            ({"packet": True, "model_output_only": True}, 1),
+            ({"model_output_only": True}, 1), ({"double_writer": True}, 0),
             ({"double_writer": True, "duplicate_getitem": True}, 0),
             ({"nonlinear_v": True}, 0), ({"tuple_user": True}, 0),
         ]:

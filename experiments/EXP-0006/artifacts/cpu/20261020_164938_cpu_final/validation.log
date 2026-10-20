@@ -1,0 +1,19 @@
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-20 16:49:43 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-20 16:49:43 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-20 16:49:43 [__init__.py:58] Loading plugin fl
+INFO 10-20 16:49:47 [__init__.py:237] Platform plugin fl is activated
+WARNING 10-20 16:49:50 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING 10-20 16:49:51 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-20 16:49:51 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-20 16:49:51 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+INFO 10-20 16:49:51 [rope_kv_fusion.py:117] LeanScale RoPE+KV graph fusion: replaced=1
+INFO 10-20 16:49:51 [rope_kv_fusion.py:117] LeanScale RoPE+KV graph fusion: replaced=1
+INFO 10-20 16:49:51 [rope_kv_fusion.py:117] LeanScale RoPE+KV graph fusion: replaced=1
+INFO 10-20 16:49:51 [rope_kv_fusion.py:117] LeanScale RoPE+KV graph fusion: replaced=1
+{"status": "passed", "checks": [{"options": {}, "matches": 1, "passed": true}, {"options": {"aten": true}, "matches": 1, "passed": true}, {"options": {"packet": true, "model_output_only": true}, "matches": 1, "passed": true}, {"options": {"model_output_only": true}, "matches": 1, "passed": true}, {"options": {"double_writer": true}, "matches": 0, "passed": true}, {"options": {"double_writer": true, "duplicate_getitem": true}, "matches": 0, "passed": true}, {"options": {"nonlinear_v": true}, "matches": 0, "passed": true}, {"options": {"tuple_user": true}, "matches": 0, "passed": true}, {"fallback": "slots", "single_cache_write": true, "passed": true}, {"fallback": "profile", "single_cache_write": true, "passed": true}]}
