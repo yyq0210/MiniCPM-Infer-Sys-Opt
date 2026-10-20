@@ -1,0 +1,27 @@
+[
+  {
+    "status": "passed",
+    "checks": [
+      "overlap_union",
+      "shape_QKV",
+      "ambiguous_GEMM_retained",
+      "rope_mapping",
+      "GPU_CPU_correlation",
+      "unlinked_GPU_retained",
+      "CPU_nested_self_time",
+      "GPU_not_CPU_timing"
+    ]
+  },
+  {
+    "status": "passed",
+    "checks": [
+      "hook_no_CUDA_access",
+      "prepare_output_identity",
+      "padding_output_identity",
+      "mixed_phase_from_prompt_boundary",
+      "decode_phase_from_prompt_boundary",
+      "sample_output_identity",
+      "profile_scope_cleanup"
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "pid": 59356,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0008/20261020_195936_profile_4k",
+  "safe_to_resume_scheduler": false,
+  "process_start_ticks": "284514640",
+  "started_at": "2026-10-20T19:59:36.356835+08:00",
+  "commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "stage": "waiting_for_EXP0006_16k",
+  "updated_at": "2026-10-20T19:59:36.357498+08:00"
+}

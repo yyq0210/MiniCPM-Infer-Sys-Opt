@@ -262,3 +262,10 @@ KV 压缩另立实验：真实物理块回收、搬移和 metadata 成本必须�
 复查本次源码清单：在实验仓库执行 `python3 scripts/collect_operator_inventory.py`。
 它只读取源码、配置和已有实验文件，不导入 PyTorch、不加载模型、不占用 GPU；
 重新执行会更新该日期目录的快照，应通过 Git 保存每次更新。
+
+
+## 4K 全模型采集任务：EXP-0008
+
+2026-10-20 已按用户要求安排独立 profiling，等待当前 EXP-0006 16K 完成归档后执行，再恢复 EXP-0007。使用官方 4096/1024/64/256 请求集，分别采集 FULL_DECODE_ONLY 和用于算子归属的 NONE 模式，保留实际 batch/phase/padding、GPU kernel 时间和 worker CPU self time。当前没有新耗时结论。
+
+[采集方案与脚本](../experiments/EXP-0008/README.md) · [队列状态快照](../experiments/EXP-0008/STATUS.json)。结果将保存到 experiments/EXP-0008/RESULTS.md；原始 trace 留在服务器，摘要与哈希自动推送。内核名称或相关性不足时保留未归属，不强行将 GEMM 分配到某个线性层。该采集仅覆盖 worker 的 CPU 活动，不能当作整个调度器进程的 CPU profile。

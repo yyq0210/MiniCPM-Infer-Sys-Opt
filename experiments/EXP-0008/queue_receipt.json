@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-20T19:59:38.466271+08:00",
+  "old_idle_queue_pid": 56748,
+  "profile_controller_pid": 59356,
+  "new_scheduler_queue_pid": 59357,
+  "order": [
+    "EXP-0006 official 16K completion + archive",
+    "EXP-0008 4K diagnostic profiling",
+    "EXP-0007 official scheduler 16K and 4K"
+  ],
+  "current_GPU_experiment_interrupted": false
+}

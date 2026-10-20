@@ -87,6 +87,22 @@ def main():
                     state("needs_review", reason="Fusion 16K regression exceeds predeclared 3% gate",
                           fusion_change_percent=gain)
                     return
+        # User-requested 4K operator profiling has priority in the idle slot
+        # following EXP-0006. It owns the same GPU lock; never race its launch.
+        while time.monotonic() < deadline:
+            profile = read(ROOT / "artifacts/EXP-0008-request.json")
+            if profile is None:
+                break
+            if profile.get("stage") in ("complete", "failed"):
+                if profile.get("safe_to_resume_scheduler"):
+                    break
+                raise RuntimeError("EXP-0008 did not confirm safe GPU release")
+            state("waiting_for_operator_profile",
+                  profiling_stage=profile.get("stage"),
+                  profiling_run=profile.get("run_directory"))
+            time.sleep(30)
+        else:
+            raise TimeoutError("Waiting for EXP-0008 profiling exceeded deadline")
         # Long-context policy first; 4K is the regression check.
         for case in ("16k", "4k"):
             prior = inspect("EXP-0007", case)
