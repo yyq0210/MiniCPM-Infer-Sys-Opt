@@ -24,10 +24,13 @@ for kind, title in [("rope", "RoPE + KV cache 写入"),
                     ("norm", "residual + RMSNorm + QKV GEMM")]:
     p = run / (kind + ".json")
     if not p.exists():
-        lines += [f"## {title}", "", "尚无结果。", ""]
-        continue
+        previous = sorted((exp/"artifacts/diagnostics").glob("*/"+kind+".json"))
+        if not previous:
+            lines += [f"## {title}", "", "尚无结果。", ""]
+            continue
+        p = previous[-1]
     result = json.loads(p.read_text())
-    lines += [f"## {title}", "", f"脚本状态：{result['status']}。"]
+    lines += [f"## {title}", "", f"脚本状态：{result['status']}。数据来源：`{p.parent.name}`。"]
     if "error" in result:
         lines += ["", f"失败记录：`{result['error']}`。"]
     lines += ["", "| tokens | 基线前/后 µs | 配置 | 候选 µs | 局部比值 | 数值 |",

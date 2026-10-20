@@ -4,16 +4,56 @@
 
 ## RoPE + KV cache 写入
 
-脚本状态：failed。
-
-失败记录：`AssertionError('Tensor-likes are not equal!\n\nMismatched elements: 4091 / 131072 (3.1%)\nGreatest absolute difference: 4.46875 at index (6, 0, 1, 0, 33)\nGreatest relative difference: 1696.0 at index (6, 0, 1, 0, 104)')`。
+脚本状态：passed。数据来源：`20261020_160859_diagnostics`。
 
 | tokens | 基线前/后 µs | 配置 | 候选 µs | 局部比值 | 数值 |
 | --- | --- | --- | --- | --- | --- |
+| 1 | 4.18/4.15 | `{'head_tile': 2, 'token_tile': 1, 'num_warps': 4}` | 2.92 | 1.427× | 通过 |
+| 1 | 4.18/4.15 | `{'head_tile': 4, 'token_tile': 1, 'num_warps': 4}` | 2.80 | 1.487× | 通过 |
+| 1 | 4.18/4.15 | `{'head_tile': 8, 'token_tile': 1, 'num_warps': 4}` | 3.00 | 1.387× | 通过 |
+| 1 | 4.18/4.15 | `{'head_tile': 16, 'token_tile': 1, 'num_warps': 4}` | 3.18 | 1.307× | 通过 |
+| 1 | 4.18/4.15 | `{'head_tile': 4, 'token_tile': 4, 'num_warps': 4}` | 3.38 | 1.231× | 通过 |
+| 1 | 4.18/4.15 | `{'head_tile': 8, 'token_tile': 4, 'num_warps': 4}` | 4.06 | 1.026× | 通过 |
+| 8 | 4.31/4.31 | `{'head_tile': 2, 'token_tile': 1, 'num_warps': 4}` | 3.06 | 1.411× | 通过 |
+| 8 | 4.31/4.31 | `{'head_tile': 4, 'token_tile': 1, 'num_warps': 4}` | 2.84 | 1.518× | 通过 |
+| 8 | 4.31/4.31 | `{'head_tile': 8, 'token_tile': 1, 'num_warps': 4}` | 3.05 | 1.416× | 通过 |
+| 8 | 4.31/4.31 | `{'head_tile': 16, 'token_tile': 1, 'num_warps': 4}` | 3.24 | 1.330× | 通过 |
+| 8 | 4.31/4.31 | `{'head_tile': 4, 'token_tile': 4, 'num_warps': 4}` | 3.66 | 1.177× | 通过 |
+| 8 | 4.31/4.31 | `{'head_tile': 8, 'token_tile': 4, 'num_warps': 4}` | 5.22 | 0.826× | 通过 |
+| 30 | 4.60/4.60 | `{'head_tile': 2, 'token_tile': 1, 'num_warps': 4}` | 3.65 | 1.262× | 通过 |
+| 30 | 4.60/4.60 | `{'head_tile': 4, 'token_tile': 1, 'num_warps': 4}` | 3.23 | 1.426× | 通过 |
+| 30 | 4.60/4.60 | `{'head_tile': 8, 'token_tile': 1, 'num_warps': 4}` | 3.27 | 1.406× | 通过 |
+| 30 | 4.60/4.60 | `{'head_tile': 16, 'token_tile': 1, 'num_warps': 4}` | 3.27 | 1.409× | 通过 |
+| 30 | 4.60/4.60 | `{'head_tile': 4, 'token_tile': 4, 'num_warps': 4}` | 3.77 | 1.221× | 通过 |
+| 30 | 4.60/4.60 | `{'head_tile': 8, 'token_tile': 4, 'num_warps': 4}` | 5.31 | 0.867× | 通过 |
+| 64 | 5.36/5.33 | `{'head_tile': 2, 'token_tile': 1, 'num_warps': 4}` | 4.63 | 1.155× | 通过 |
+| 64 | 5.36/5.33 | `{'head_tile': 4, 'token_tile': 1, 'num_warps': 4}` | 3.64 | 1.467× | 通过 |
+| 64 | 5.36/5.33 | `{'head_tile': 8, 'token_tile': 1, 'num_warps': 4}` | 3.62 | 1.477× | 通过 |
+| 64 | 5.36/5.33 | `{'head_tile': 16, 'token_tile': 1, 'num_warps': 4}` | 3.54 | 1.510× | 通过 |
+| 64 | 5.36/5.33 | `{'head_tile': 4, 'token_tile': 4, 'num_warps': 4}` | 4.05 | 1.319× | 通过 |
+| 64 | 5.36/5.33 | `{'head_tile': 8, 'token_tile': 4, 'num_warps': 4}` | 5.39 | 0.992× | 通过 |
+| 128 | 6.88/6.88 | `{'head_tile': 2, 'token_tile': 1, 'num_warps': 4}` | 6.67 | 1.032× | 通过 |
+| 128 | 6.88/6.88 | `{'head_tile': 4, 'token_tile': 1, 'num_warps': 4}` | 4.81 | 1.430× | 通过 |
+| 128 | 6.88/6.88 | `{'head_tile': 8, 'token_tile': 1, 'num_warps': 4}` | 4.47 | 1.539× | 通过 |
+| 128 | 6.88/6.88 | `{'head_tile': 16, 'token_tile': 1, 'num_warps': 4}` | 4.41 | 1.562× | 通过 |
+| 128 | 6.88/6.88 | `{'head_tile': 4, 'token_tile': 4, 'num_warps': 4}` | 4.59 | 1.499× | 通过 |
+| 128 | 6.88/6.88 | `{'head_tile': 8, 'token_tile': 4, 'num_warps': 4}` | 6.04 | 1.139× | 通过 |
+| 512 | 15.70/15.71 | `{'head_tile': 2, 'token_tile': 1, 'num_warps': 4}` | 18.68 | 0.841× | 通过 |
+| 512 | 15.70/15.71 | `{'head_tile': 4, 'token_tile': 1, 'num_warps': 4}` | 11.67 | 1.346× | 通过 |
+| 512 | 15.70/15.71 | `{'head_tile': 8, 'token_tile': 1, 'num_warps': 4}` | 9.32 | 1.686× | 通过 |
+| 512 | 15.70/15.71 | `{'head_tile': 16, 'token_tile': 1, 'num_warps': 4}` | 9.41 | 1.668× | 通过 |
+| 512 | 15.70/15.71 | `{'head_tile': 4, 'token_tile': 4, 'num_warps': 4}` | 7.53 | 2.085× | 通过 |
+| 512 | 15.70/15.71 | `{'head_tile': 8, 'token_tile': 4, 'num_warps': 4}` | 9.56 | 1.643× | 通过 |
+| 2048 | 65.15/65.25 | `{'head_tile': 2, 'token_tile': 1, 'num_warps': 4}` | 63.59 | 1.025× | 通过 |
+| 2048 | 65.15/65.25 | `{'head_tile': 4, 'token_tile': 1, 'num_warps': 4}` | 41.59 | 1.568× | 通过 |
+| 2048 | 65.15/65.25 | `{'head_tile': 8, 'token_tile': 1, 'num_warps': 4}` | 41.36 | 1.576× | 通过 |
+| 2048 | 65.15/65.25 | `{'head_tile': 16, 'token_tile': 1, 'num_warps': 4}` | 45.67 | 1.428× | 通过 |
+| 2048 | 65.15/65.25 | `{'head_tile': 4, 'token_tile': 4, 'num_warps': 4}` | 39.09 | 1.668× | 通过 |
+| 2048 | 65.15/65.25 | `{'head_tile': 8, 'token_tile': 4, 'num_warps': 4}` | 41.75 | 1.562× | 通过 |
 
 ## gate/up GEMM + SwiGLU
 
-脚本状态：passed。
+脚本状态：passed。数据来源：`20261020_145132_diagnostics`。
 
 | tokens | 基线前/后 µs | 配置 | 候选 µs | 局部比值 | 数值 |
 | --- | --- | --- | --- | --- | --- |
@@ -44,7 +84,7 @@
 
 ## residual + RMSNorm + QKV GEMM
 
-脚本状态：passed。
+脚本状态：passed。数据来源：`20261020_145132_diagnostics`。
 
 | tokens | 基线前/后 µs | 配置 | 候选 µs | 局部比值 | 数值 |
 | --- | --- | --- | --- | --- | --- |

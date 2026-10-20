@@ -1,0 +1,12 @@
+{
+  "pid": 29073,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0006/20261020_160859_diagnostics",
+  "stage": "diagnostics_complete",
+  "kind": "isolated_diagnostics_not_official_benchmark",
+  "updated_at": "2026-10-20T16:09:35.528015+08:00",
+  "source_manifest_sha256": "9c87cebadfe5b5ef3250fd7dcb49e6366cc3054aba0d5b9ba162642ff0df2d03",
+  "outcomes": {
+    "rope": 0
+  },
+  "child_pid": 29074
+}

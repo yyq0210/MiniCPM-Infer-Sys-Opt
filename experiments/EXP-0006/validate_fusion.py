@@ -58,8 +58,10 @@ def old_rope(x, interleaved=False):
     q, k = rope_parallel(x["q"], x["k"], x["cos"], x["sin"], x["positions"],
                          interleaved=interleaved, inplace=False)
     scale = torch.ones((), device="cuda")
+    # vLLM's existing cache kernel reads SLOT + token_idx, with no stride
+    # argument. Normalize the oracle input outside all timed regions.
     triton_reshape_and_cache_flash(k, x["v"], x["k_cache"], x["v_cache"],
-                                   x["slots"], "auto", scale, scale)
+                                   x["slots"].contiguous(), "auto", scale, scale)
     return q, k
 
 
@@ -89,6 +91,16 @@ def run_rope(result, save):
             qr, kr = reference_rope(x, x["q"], interleaved), reference_rope(x, x["k"], interleaved)
             old_q, old_k = old_rope(x, interleaved)
             old_cache = cache.clone()
+            # Independently validate the cache oracle, including all untouched
+            # slots. The original diagnostic incorrectly gave vLLM stride-2
+            # slot mappings although its kernel assumes contiguous mappings.
+            cache.fill_(0.125)
+            for token, slot in enumerate(x["slots"].tolist()):
+                if slot >= 0:
+                    block, offset = divmod(slot, page)
+                    x["k_cache"][block, offset].copy_(old_k[token])
+                    x["v_cache"][block, offset].copy_(x["v"][token])
+            torch.testing.assert_close(cache, old_cache, atol=0, rtol=0)
             for config in configs:
                 cache.fill_(0.125)
                 q, k = rope_kv_cache(**x, interleaved=interleaved, **config)
@@ -118,6 +130,7 @@ def run_rope(result, save):
                 result["checks"].append(dict(n=n, dtype=str(dtype), hnd=hnd, page=page,
                     interleaved=interleaved, short_slots=short, config=config,
                     reference="independent_fp32_and_exact_previous_rope_cache",
+                    cache_oracle="torch_indexed_stores_checked_against_contiguous_vllm",
                     graph_changed_inputs=True, passed=True))
                 qkv.copy_(original)
                 x["positions"].copy_(x["positions"].roll(-1))
@@ -158,6 +171,8 @@ def run_rope(result, save):
         # Timed cases use all-valid unique slots; negative/padded slots belong
         # to the correctness matrix, not a reduced-work performance shortcut.
         x["slots"].copy_(torch.randperm(x["k_cache"].shape[0] * 16, device="cuda")[:n])
+        # Match real engine slot mappings for both timed implementations.
+        x["slots"] = x["slots"].contiguous()
         # Baseline scale is preallocated; exclude allocation kernels in timings.
         scale = torch.ones((), device="cuda")
         def baseline():

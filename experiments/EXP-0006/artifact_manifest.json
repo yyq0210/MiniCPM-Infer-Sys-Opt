@@ -23,5 +23,19 @@
   "artifacts/diagnostics/20261020_145132_diagnostics/rotary_embedding_parallel.py": "6b95e1f959027d28f2203056dafecedf615f869a2692f30879ea51b115efeab9",
   "artifacts/diagnostics/20261020_145132_diagnostics/source_manifest.json": "42e57d11ea67494b8828053979171c38cb5c962fa0625ccf4f0d55adef3171f0",
   "artifacts/diagnostics/20261020_145132_diagnostics/status.json": "0acaa05096f7e6d3eebb484423b59bc3081f41991f36916761aeedbd5867d8bf",
-  "artifacts/diagnostics/20261020_145132_diagnostics/validate_fusion.py": "9332b053cca177ea022fd3052e8e521f1f45c425fbc33f1deb827e3d4166c0cc"
+  "artifacts/diagnostics/20261020_145132_diagnostics/validate_fusion.py": "9332b053cca177ea022fd3052e8e521f1f45c425fbc33f1deb827e3d4166c0cc",
+  "artifacts/diagnostics/20261020_160859_diagnostics/__init__.py": "8237299c1d868988ead302b6ecd1bd37a94d61c5de8c3d45e5aa5187451963ed",
+  "artifacts/diagnostics/20261020_160859_diagnostics/completion_handler_status.json": "b3ac1110e6fbfb7395ef3583d87aab07243cafb6b717ad9aacabb2d9267ae8ec",
+  "artifacts/diagnostics/20261020_160859_diagnostics/gate_up_swiglu.py": "57f00161058459bd154ad3bc1bd202990cb79752567a893ce0285340b08a5f6d",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rms_qkv.py": "4fb49da31abad5fc63f7ee43b39946d1e3f0c9a0cb7daec93b2336635a9d8c2c",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rope.command.json": "66f6eb45d2b8c8430bac36e20df37fea185d0b9a2a6b2c9732ba3387212cce96",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rope.json": "796b05d911124dbd3c8489177c41718adf7ece8b4f859037c9689a277393abbc",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rope.log": "e1efff1859e0235e1c4bfa1ca024fbe333f09c209323bdc12c1d049a5c0f9a80",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rope_kv_cache.py": "365ec39909228188f2874ff2be8c4402f1798416df2007323b92bbb8377d9cba",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rope_kv_dispatch.py": "1b2f8af455ba32dbab52535c897512274326fce2140ff0915802f1b8685e0cca",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rope_kv_fusion.py": "0b26b4ded21c30806897e59ac9cdee4514e639b50dd15cad3c1416808f9899db",
+  "artifacts/diagnostics/20261020_160859_diagnostics/rotary_embedding_parallel.py": "6b95e1f959027d28f2203056dafecedf615f869a2692f30879ea51b115efeab9",
+  "artifacts/diagnostics/20261020_160859_diagnostics/source_manifest.json": "9c87cebadfe5b5ef3250fd7dcb49e6366cc3054aba0d5b9ba162642ff0df2d03",
+  "artifacts/diagnostics/20261020_160859_diagnostics/status.json": "369bdac69b5d93c0e189e8266ffc7001451658e1fe0537ec047f05d2967d89ef",
+  "artifacts/diagnostics/20261020_160859_diagnostics/validate_fusion.py": "1c215d232710bc68efbb0608e8048dec33ccad2f8f2dce620059c75f6038a1c6"
 }

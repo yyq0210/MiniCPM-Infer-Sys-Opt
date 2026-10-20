@@ -10,6 +10,12 @@ import shutil
 import subprocess
 import time
 import traceback
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--kinds", nargs="+", choices=("rope", "mlp", "norm"),
+                    default=["rope", "mlp", "norm"])
+args = parser.parse_args()
 
 root = Path("/workspace/LeanScale")
 exp = root / "MiniCPM-Infer-Sys-Opt/experiments/EXP-0006"
@@ -60,7 +66,7 @@ try:
                PYTHONPATH=str(wt/"vllm-plugin-FL")+":"+str(wt/"FlagGems/src"),
                TORCHINDUCTOR_CACHE_DIR=str(run/"inductor_cache"))
     outcomes = {}
-    for kind in ("rope", "mlp", "norm"):
+    for kind in args.kinds:
         update(kind+"_diagnostics", outcomes=outcomes)
         command = ["python3", str(run/"validate_fusion.py"), kind, str(run/(kind+".json"))]
         (run/(kind+".command.json")).write_text(json.dumps(command, indent=2))

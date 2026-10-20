@@ -1,5 +1,132 @@
 {
   "status": "requires_confirmation_not_final",
-  "run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics",
-  "proposals": {}
+  "run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_160859_diagnostics",
+  "proposals": {
+    "rope": {
+      "decode": [
+        {
+          "config": {
+            "head_tile": 4,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.4653449477074147,
+          "minimum_speedup": 1.4263797494067862,
+          "max_baseline_drift": 0.007043463658678934
+        },
+        {
+          "config": {
+            "head_tile": 8,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.4436399648396168,
+          "minimum_speedup": 1.3865673807003347,
+          "max_baseline_drift": 0.007043463658678934
+        },
+        {
+          "config": {
+            "head_tile": 16,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.4203294543577023,
+          "minimum_speedup": 1.3073439428501707,
+          "max_baseline_drift": 0.007043463658678934
+        },
+        {
+          "config": {
+            "head_tile": 4,
+            "token_tile": 4,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.2844429551095018,
+          "minimum_speedup": 1.176848827797398,
+          "max_baseline_drift": 0.007043463658678934
+        },
+        {
+          "config": {
+            "head_tile": 2,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.24798268149007,
+          "minimum_speedup": 1.0319394575376717,
+          "max_baseline_drift": 0.007043463658678934
+        },
+        {
+          "config": {
+            "head_tile": 8,
+            "token_tile": 4,
+            "num_warps": 4
+          },
+          "geometric_speedup": 0.9633023962803399,
+          "minimum_speedup": 0.8255765550066431,
+          "max_baseline_drift": 0.007043463658678934
+        }
+      ],
+      "prefill": [
+        {
+          "config": {
+            "head_tile": 4,
+            "token_tile": 4,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.86472997983444,
+          "minimum_speedup": 1.6679426381761642,
+          "max_baseline_drift": 0.0015301087462798587
+        },
+        {
+          "config": {
+            "head_tile": 8,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.6301779356883053,
+          "minimum_speedup": 1.576383285244192,
+          "max_baseline_drift": 0.0015301087462798587
+        },
+        {
+          "config": {
+            "head_tile": 8,
+            "token_tile": 4,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.6019800940723412,
+          "minimum_speedup": 1.5616795661352811,
+          "max_baseline_drift": 0.0015301087462798587
+        },
+        {
+          "config": {
+            "head_tile": 16,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.5432662400608568,
+          "minimum_speedup": 1.4275769943941865,
+          "max_baseline_drift": 0.0015301087462798587
+        },
+        {
+          "config": {
+            "head_tile": 4,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 1.4523371123448878,
+          "minimum_speedup": 1.345556621222446,
+          "max_baseline_drift": 0.0015301087462798587
+        },
+        {
+          "config": {
+            "head_tile": 2,
+            "token_tile": 1,
+            "num_warps": 4
+          },
+          "geometric_speedup": 0.9285398383492817,
+          "minimum_speedup": 0.8408646148460885,
+          "max_baseline_drift": 0.0015301087462798587
+        }
+      ]
+    }
+  }
 }
