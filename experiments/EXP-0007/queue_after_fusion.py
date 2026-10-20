@@ -42,6 +42,29 @@ def inspect(exp, case):
     return run, read(run / "status.json"), read(run / "completion_handler_status.json")
 
 
+def launch_window(case):
+    """Respect the user's dated shutdown window without changing the benchmark."""
+    policy = read(ROOT / "artifacts/run_window.json")
+    if not policy:
+        return [], None
+    finish = datetime.datetime.fromisoformat(policy["compute_stop_at"])
+    remaining = (finish - datetime.datetime.now().astimezone()).total_seconds()
+    required = 55 * 60 if case == "4k" else 90 * 60
+    parent = inspect("EXP-0006", case)
+    if parent and parent[1] and parent[1].get("stage") == "performance_case_complete":
+        status = parent[1]
+        duration = (datetime.datetime.fromisoformat(status["updated_at"]) -
+                    datetime.datetime.fromisoformat(status["started_at"])).total_seconds()
+        required = max(required, duration * 1.15 + 5 * 60)
+    budget = dict(case=case, remaining_seconds=remaining,
+                  estimated_required_seconds=required,
+                  compute_stop_at=policy["compute_stop_at"],
+                  machine_shutdown_at=policy["machine_shutdown_at"])
+    if remaining < required:
+        return None, budget
+    return ["--finish-before", finish.isoformat()], budget
+
+
 def wait_complete(exp, case, deadline):
     last_update = 0
     while time.monotonic() < deadline:
@@ -110,9 +133,14 @@ def main():
                 assert prior[1]["commits"] == candidate
                 run, status, handler = wait_complete("EXP-0007", case, deadline)
             else:
-                state("launching", launching_case=case)
+                deadline_args, budget = launch_window(case)
+                if deadline_args is None:
+                    state("deferred_for_shutdown", reason="Insufficient time for a complete official case",
+                          launch_budget=budget, deferred_case=case)
+                    return
+                state("launching", launching_case=case, launch_budget=budget)
                 result = subprocess.check_output(
-                    ["python3", str(EXP / "launch_split.py"), "--case", case],
+                    ["python3", str(EXP / "launch_split.py"), "--case", case] + deadline_args,
                     text=True, timeout=120)
                 receipt = json.loads(result)
                 run = Path(receipt["run_directory"])

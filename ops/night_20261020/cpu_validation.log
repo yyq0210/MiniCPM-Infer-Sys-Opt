@@ -1,0 +1,1 @@
+{"status": "passed", "checks": ["exact_PID_start_tick_script_match", "PID_reuse_not_signaled", "wrong_script_not_signaled", "SIGINT_runs_finally", "dead_process_not_signaled", "deadline_passed_to_launcher", "observed_duration_plus_margin", "insufficient_time_deferred", "expired_window_deferred"]}

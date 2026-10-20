@@ -1,0 +1,11 @@
+{
+  "pid": 59357,
+  "process_start_ticks": "284514660",
+  "started_at": "2026-10-20T19:59:36.525049+08:00",
+  "completed_cases": [],
+  "stage": "waiting_for_case",
+  "updated_at": "2026-10-20T20:10:36.569580+08:00",
+  "waiting_experiment": "EXP-0006",
+  "waiting_case": "16k",
+  "observed_stage": "candidate_throughput"
+}

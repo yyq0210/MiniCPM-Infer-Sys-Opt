@@ -1,0 +1,17 @@
+{
+  "deployed_at": "2026-10-20T20:11:31.651547+08:00",
+  "guard_pid": 59677,
+  "scheduler_queue_pid": 59676,
+  "previous_idle_queue_pid": 59357,
+  "active_benchmark_interrupted": false,
+  "profile_controller_restarted": false,
+  "policy": {
+    "timezone": "Asia/Shanghai",
+    "user_notice": "2026-10-20: machine shuts down at midnight; review results tomorrow",
+    "compute_stop_at": "2026-10-20T23:35:00+08:00",
+    "archive_target_at": "2026-10-20T23:50:00+08:00",
+    "machine_shutdown_at": "2026-10-21T00:00:00+08:00",
+    "profile_latest_start_at": "2026-10-20T22:35:00+08:00",
+    "resume_policy": "Wait for user confirmation of restart and update this dated window before launching new GPU work."
+  }
+}
