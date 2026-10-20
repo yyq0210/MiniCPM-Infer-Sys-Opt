@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "qlens": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_abs_error": 0.00028029829263687134
+    },
+    {
+      "fallbacks": [
+        "noncausal",
+        "cascade"
+      ],
+      "passed": true
+    },
+    {
+      "qlens": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        127
+      ],
+      "max_abs_error": 0.000592350959777832
+    },
+    {
+      "fallbacks": [
+        "noncausal",
+        "cascade"
+      ],
+      "passed": true
+    }
+  ],
+  "selected_backend": "vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa.IluvatarGQABackend",
+  "constant_value_invariant": [
+    {
+      "qlens": [
+        7
+      ],
+      "lengths": [
+        71
+      ],
+      "baseline_max_abs_error": 0.015625,
+      "candidate_max_abs_error": 0.0
+    },
+    {
+      "qlens": [
+        37
+      ],
+      "lengths": [
+        201
+      ],
+      "baseline_max_abs_error": 0.0078125,
+      "candidate_max_abs_error": 0.0
+    },
+    {
+      "qlens": [
+        2048
+      ],
+      "lengths": [
+        2048
+      ],
+      "baseline_max_abs_error": 0.5,
+      "candidate_max_abs_error": 0.0
+    },
+    {
+      "qlens": [
+        2048
+      ],
+      "lengths": [
+        16384
+      ],
+      "baseline_max_abs_error": 0.0,
+      "candidate_max_abs_error": 0.0
+    },
+    {
+      "qlens": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        127
+      ],
+      "lengths": [
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384
+      ],
+      "baseline_max_abs_error": 0.0,
+      "candidate_max_abs_error": 0.0
+    }
+  ]
+}

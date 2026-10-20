@@ -1,0 +1,8 @@
+[
+  {
+    "path": "candidate_cache/torch_compile_cache/7526829572/rank_0_0/backbone/computation_graph.py",
+    "calls": 42,
+    "sha256": "e64dfec3603c154f8e5cb56d747579af874657c76cc1ab0176d112ad60aee7c3",
+    "example": "fl_rotary_embedding_dispatch = torch.ops.vllm.fl_rotary_embedding_dispatch(view, view_1, getitem_3, getitem_4, flatten, False);  view = view_1 = getitem_3 = getitem_4 = flatten = None"
+  }
+]
