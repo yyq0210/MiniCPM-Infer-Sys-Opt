@@ -48,18 +48,21 @@ def sanitize(text):
     return text
 
 
-def running(pid):
+def running(pid, process_start_ticks=None):
     try:
         fields = Path(f'/proc/{pid}/stat').read_text().rsplit(') ',1)[1].split()
         cmd = Path(f'/proc/{pid}/cmdline').read_bytes()
-        return fields[0] != 'Z' and b'run_rope_e2e.py' in cmd
+        return (fields[0] != 'Z' and b'run_rope_e2e.py' in cmd
+                and (process_start_ticks is None or fields[19] == str(process_start_ticks)))
     except FileNotFoundError:
         return False
 
 
 def selected_files(run):
     for name in ['status.json','validation.log','validation.command.json',
-                 'validation/results.json','comparison.json','baseline_combined.json']:
+                 'validation/results.json','comparison.json','baseline_combined.json',
+                 'resume_provenance.json','environment_check.json','stage_history.jsonl',
+                 'progress.json']:
         path = run/name
         if path.is_file():
             yield path
@@ -70,6 +73,7 @@ def selected_files(run):
             if path.is_file():
                 yield path
         yield from sorted((run/folder/'benchmark_results').glob('*.csv'))
+    yield from sorted((run/'retained_baseline').rglob('*.csv'))
 
 
 def csv_rows(path):
@@ -97,6 +101,17 @@ def verify_rows(raw, summary):
 
 def archive(run, state):
     dest = EXP/'artifacts/runs'/run.name
+    counts = {}
+    for path in sorted((run/'candidate_benchmark/benchmark_results').glob('raw_runs_*.csv')):
+        for row in csv_rows(path):
+            if row.get('Run Status') == 'SUCCESS':
+                case = row['Prefill']
+                counts[case] = counts.get(case, 0)+1
+    write_json(run/'progress.json', {
+        'updated_at': datetime.now().astimezone().isoformat(timespec='seconds'),
+        'completed_candidate_rounds': counts, 'required_rounds_per_case': 4,
+        'stage': state.get('stage'),
+    })
     source_hashes = {}
     for source in selected_files(run):
         rel = source.relative_to(run)
@@ -154,6 +169,8 @@ def archive(run, state):
                   '', '状态/错误：'+sanitize(str(state.get('error') or integrity.get('error') or '运行尚未结束'))]
     (EXP/'RESULTS.md').write_text('\n'.join(lines)+'\n')
     (EXP/'STATUS.md').write_text(f"# EXP-0004 状态\n\n更新：{stamp}。阶段：{state.get('stage')}。\n\n[结果与完整性检查](RESULTS.md)。完整精度暂缓。\n")
+    if state.get('stage') in TERMINAL:
+        write_json(EXP/'STATUS.json', state)
     hashes = {str(p.relative_to(EXP)): hashlib.sha256(p.read_bytes()).hexdigest()
               for p in sorted((EXP/'artifacts').rglob('*')) if p.is_file()}
     write_json(EXP/'artifact_manifest.json', hashes)
@@ -180,7 +197,11 @@ def publish(run):
     git('add','--',*paths)
     git('diff','--cached','--check')
     if git('diff','--cached','--name-only'):
-        git('commit','-m','experiments: archive completed official RoPE performance run')
+        stage = read_json(ROOT/'experiments/EXP-0004/STATUS.json').get('stage')
+        message = ('experiments: archive completed official RoPE performance run'
+                   if stage == 'performance_complete'
+                   else 'experiments: archive interrupted official RoPE performance run')
+        git('commit','-m',message)
     head = git('rev-parse','HEAD')
     push_url = git('remote','get-url','--push','origin')
     failures = []
@@ -215,7 +236,7 @@ def main():
     try:
         while True:
             state = read_json(run/'status.json')
-            alive = running(state['pid'])
+            alive = running(state['pid'], state.get('process_start_ticks'))
             terminal = state.get('stage') in TERMINAL
             if not alive and not terminal:
                 state.update(stage='failed',error='Coordinator exited without a terminal status; original status retained')

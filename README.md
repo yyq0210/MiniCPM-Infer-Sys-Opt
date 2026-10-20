@@ -8,7 +8,7 @@ FlagOS 开放计算全球挑战赛 S2，赛题 2。记录 MiniCPM5-2B 在天数 
 | --- | --- | --- |
 | [EXP-0001](experiments/EXP-0001-environment/README.md) | 比赛分支、官方标签及源码导入修正 | 完成，镜像原有依赖约束报告已记录 |
 | [EXP-0002](experiments/EXP-0002-rope/README.md) | RoPE 按 head 分组并行原型 | 独立测试完成；未接入默认整模路径 |
-| [EXP-0004](experiments/EXP-0004/README.md) | RoPE 实际编译路径接入与官方端到端 A/B | 基础检查通过；候选 4K 第 4 轮中断，16K 未运行；[核查结果](experiments/EXP-0004/RESULTS.md)；精度暂缓 |
+| [EXP-0004](experiments/EXP-0004/README.md) | RoPE 实际编译路径接入与官方端到端 A/B | 旧候选中断；2026-10-20 已安排新会话完整续跑；[实时状态](experiments/EXP-0004/STATUS.md)；精度暂缓 |
 | [EXP-0003](experiments/EXP-0003-baseline/README.md) | 官方 4K / 16K 基线（均完整完成） | 4K 原始会话 + EXP-0004 恢复的 16K 会话；[核验结果](docs/baseline_fusion_gqa_analysis.md) |
 
 RoPE 在 64-token 批次的独立内核测试约为 2.28× 加速。**这不是整模吞吐提升，也不是可提交比赛成绩。** 当前尚未完成优化后的官方端到端 A/B；math_500 Level 3 完整精度按用户要求暂缓。已完成基础接入、编译和 Graph 检查。
@@ -71,3 +71,7 @@ python scripts/collect_baseline.py
 - [文档一：基线复现、真实函数实现、融合边界与 GQA 优化](docs/baseline_fusion_gqa_analysis.md)
 - [文档二：16K 排队、调度优化与 H2O 等 KV 压缩适用性](docs/16k_scheduling_kv_compression_analysis.md)
 - [原始 CSV、日志统计与源码摘录](experiments/EXP-0004/artifacts/analysis_20261020/)
+
+### 2026-10-20 续跑
+
+按用户要求在新服务会话重跑候选官方 4K/16K，各四轮排除首轮；复用已验证的完整基线。运行编号 20261020_125059。中断前数据继续保留，最终以 [EXP-0004/RESULTS.md](experiments/EXP-0004/RESULTS.md) 为准，完整任务精度仍暂缓。
