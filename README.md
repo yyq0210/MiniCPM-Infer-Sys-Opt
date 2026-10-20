@@ -8,10 +8,17 @@ FlagOS 开放计算全球挑战赛 S2，赛题 2。记录 MiniCPM5-2B 在天数 
 | --- | --- | --- |
 | [EXP-0001](experiments/EXP-0001-environment/README.md) | 比赛分支、官方标签及源码导入修正 | 完成，镜像原有依赖约束报告已记录 |
 | [EXP-0002](experiments/EXP-0002-rope/README.md) | RoPE 按 head 分组并行原型 | 独立测试完成；未接入默认整模路径 |
-| [EXP-0004](experiments/EXP-0004/README.md) | RoPE 实际编译路径接入与官方端到端 A/B | 旧候选中断；2026-10-20 已安排新会话完整续跑；[归档状态](experiments/EXP-0004/STATUS.md)；精度暂缓 |
+| [EXP-0004](experiments/EXP-0004/README.md) | RoPE 单项接入与端到端尝试 | 按用户要求中止，未形成完整候选成绩；保留归档 |
 | [EXP-0003](experiments/EXP-0003-baseline/README.md) | 官方 4K / 16K 基线（均完整完成） | 4K 原始会话 + EXP-0004 恢复的 16K 会话；[核验结果](docs/baseline_fusion_gqa_analysis.md) |
+| [EXP-0005](experiments/EXP-0005/RESULTS.md) | RoPE＋GQA / mixed 优化 | 官方两组完整完成；4K/16K 吞吐较原始基线约 +22.75%/+107.13% |
+| [EXP-0006](experiments/EXP-0006/README.md) | RoPE＋KV 写入融合 | 42 层接入通过；4K 完整完成，16K 正在测评；以各组结果完整性检查为准 |
+| [EXP-0007](experiments/EXP-0007/README.md) | KV 增长预留调度 | 13 项 CPU 检查通过；已排队等待融合测评完成后串行验证 |
 
-RoPE 在 64-token 批次的独立内核测试约为 2.28× 加速。**这不是整模吞吐提升，也不是可提交比赛成绩。** 当前尚未完成优化后的官方端到端 A/B；math_500 Level 3 完整精度按用户要求暂缓。已完成基础接入、编译和 Graph 检查。
+2026-10-20 晚状态：EXP-0006 4K 为 2686.33 total tok/s，较原始基线约 +33.72%。
+组合收益不等于单算子贡献；跨会话比较需结合逐轮波动。完整 MATH500 精度按用户要求暂缓，不能据此声明赛事精度达标。
+
+**后续逐项优化入口：[天数热点算子清单、源码位置、优先级与验收模板](docs/iluvatar_operator_optimization_backlog.md)。**
+该清单区分已有实测证据与待 profiler 确认的热点候选。
 
 ## 三仓职责
 
@@ -21,7 +28,7 @@ RoPE 在 64-token 批次的独立内核测试约为 2.28× 加速。**这不是�
 | [FlagGems](https://github.com/yyq0210/FlagGems) | 算子代码 | `leanscale/iluvatar-rope-v1`，基于官方 `v5.3.5` |
 | [MiniCPM-Infer-Sys-Opt](https://github.com/yyq0210/MiniCPM-Infer-Sys-Opt) | 实验、日志、文档及复现脚本 | `main` |
 
-以上为目标仓库与分支；发布是否成功以 [发布记录](docs/publication.md) 为准。
+以上列出早期基线/原型分支；当前融合使用 `leanscale/iluvatar-fusion`，调度使用插件分支 `leanscale/iluvatar-kv-reservation`。最新 SHA 与验证结果见各实验的 `candidate_commits.json`；早期发布过程见 [发布记录](docs/publication.md)。
 
 ## 服务器目录
 
@@ -64,7 +71,7 @@ python scripts/collect_baseline.py
 
 - [本次实验自动归档与推送](docs/automatic_result_archiving.md)
 
-## 2026-10-20 结果与分析
+## 2026-10-20 早期基线与中断分析（12:42 快照）
 
 基线官方后三轮均值：4K 2008.97 total tok/s、16K 917.27 total tok/s。16K Mean TTFT 为 597.81 s。RoPE 候选在第 4 轮 4K 中断，不能宣称端到端加速。执行环境已重启，已恢复本地归档；准确中断原因未知。
 
@@ -83,4 +90,4 @@ python scripts/collect_baseline.py
 [方案与接入](experiments/EXP-0005/README.md) · [全部诊断与淘汰配置](experiments/EXP-0005/DIAGNOSTICS.md) · [当前状态](experiments/EXP-0005/STATUS.md) · [官方性能结果](experiments/EXP-0005/RESULTS.md)。
 旧 RoPE 单项长测按用户要求主动中止；本轮先完成实现与验证，再统一测评。
 
-[EXP-0005 已通过实际模型接入并开始官方测评](experiments/EXP-0005/LAUNCH.md)。
+[EXP-0005 接入及启动记录（性能现已完成，见上述结果页）](experiments/EXP-0005/LAUNCH.md)。

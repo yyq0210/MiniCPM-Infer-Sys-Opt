@@ -1,5 +1,7 @@
 # MiniCPM5-2B 在天数 GPU 上的真实推理流水线
 
+> 本文主体还原固定原始基线与早期 RoPE 候选。后续 EXP-0005 已接入 GQA/mixed 优化，EXP-0006 已接入 RoPE＋KV 写入融合；最新算子实现、源码行号和逐项优化任务见 [天数热点算子清单](iluvatar_operator_optimization_backlog.md)。
+
 本文解析 LeanScale 当前赛事环境中，一条请求从 HTTP 入口到生成 token 返回的实际执行过程。依据是模型配置、safetensors 权重头、已安装源码、EXP-0003 启动日志和实际生成的编译图。这里的“实际”限定于本次固定版本和启动参数；换模型配置、插件版本或编译选项后，需要重新核查。
 
 最关键的结论是：模型目录名为 `MiniCPM5-2B`，但配置和运行日志均指定 **`LlamaForCausalLM`**，实际执行 `vllm/model_executor/models/llama.py`。它是 42 层、BF16、GQA 的稠密 decoder-only 模型。不能直接用 `minicpm.py` 中的 embedding/depth 缩放逻辑解释当前执行过程。

@@ -1,5 +1,7 @@
 # MiniCPM5-2B：基线复现、函数实现与融合/GQA 优化分析
 
+> 本文保留 2026-10-20 中午的基线与候选中断分析。后续 GQA、融合和调度进展，以及面向天数的逐项算子优化入口，见 [热点算子清单](iluvatar_operator_optimization_backlog.md)；不要把本文的历史“尚未完成”当作最新状态。
+
 核查日期：2026-10-20。环境为单卡天数 BI-V150 32 GiB；分析对象是赛事固定版本的实际运行代码。本文与[真实推理流水线](minicpm_real_inference_pipeline.md)、[16K 调度与 KV 压缩分析](16k_scheduling_kv_compression_analysis.md)配套。
 
 **已完成的结论：官方两组基线完整，4K 总吞吐 2008.97 tok/s，16K 为 917.27 tok/s。RoPE 候选没有完整端到端结果，不能宣称加速。融合方面，先考虑 RoPE + KV 写入和 GEMM 的局部收尾融合；把两条长链各塞进一个 kernel，不能直接推导出性能收益。GQA 已经按共享 K/V 分组计算，优化重点是实际 tile、并行度和混合批次路径。**
