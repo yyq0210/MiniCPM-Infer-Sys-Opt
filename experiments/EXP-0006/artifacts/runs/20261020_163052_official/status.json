@@ -1,0 +1,17 @@
+{
+  "pid": 31996,
+  "process_start_ticks": "283262239",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0006/20261020_163052_official",
+  "started_at": "2026-10-20T16:30:52.385314+08:00",
+  "stage": "failed",
+  "updated_at": "2026-10-20T16:34:33+08:00",
+  "commits": {
+    "vllm-plugin-FL": "9b40805eaab1ec220f1a5a541d6544591e587b93",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "RoPE+KV fusion on EXP-0005 GQA; full official cases; historical original and EXP-0005 references; no full-model accuracy claim.",
+  "server_pid": 32023,
+  "error": "AssertionError()"
+}
