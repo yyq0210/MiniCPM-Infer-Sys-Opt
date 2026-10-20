@@ -1,0 +1,71 @@
+{
+  "pid": 35792,
+  "process_start_ticks": "283378171",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0006/20261020_165011_official_4k",
+  "started_at": "2026-10-20T16:50:11.699264+08:00",
+  "selected_cases": [
+    [
+      4096,
+      1024,
+      64,
+      256
+    ]
+  ],
+  "planned_finish_before": "2026-10-20T17:50:00+08:00",
+  "stage": "performance_case_complete",
+  "updated_at": "2026-10-20T17:32:56+08:00",
+  "commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "RoPE+KV fusion on EXP-0005 GQA; one complete official case; planned split around shutdown; historical original and EXP-0005 references; no full-model accuracy claim.",
+  "server_pid": 35819,
+  "performance": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 2008.97,
+      "candidate_total_tokens_s": 2686.33,
+      "throughput_change_percent": 33.716780240620814,
+      "baseline_ttft_ms": 11658.33,
+      "candidate_ttft_ms": 5920.51,
+      "ttft_change_percent": -49.21648297826532,
+      "baseline_retained_runs": [
+        1976.47,
+        2021.41,
+        2029.02
+      ],
+      "baseline_cv_percent": 1.4136121578930112,
+      "candidate_retained_runs": [
+        2663.79,
+        2601.86,
+        2793.34
+      ],
+      "candidate_cv_percent": 3.6372934161605586
+    }
+  ],
+  "incremental_vs_exp5": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 2466.05,
+      "candidate_total_tokens_s": 2686.33,
+      "throughput_change_percent": 8.932503396119284,
+      "baseline_ttft_ms": 6267.12,
+      "candidate_ttft_ms": 5920.51,
+      "ttft_change_percent": -5.530610551577119,
+      "baseline_retained_runs": [
+        2671.72,
+        2430.95,
+        2295.47
+      ],
+      "baseline_cv_percent": 7.727532181653392,
+      "candidate_retained_runs": [
+        2663.79,
+        2601.86,
+        2793.34
+      ],
+      "candidate_cv_percent": 3.6372934161605586
+    }
+  ]
+}

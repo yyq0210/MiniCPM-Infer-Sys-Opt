@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "candidate_commits": {
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13",
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908"
+  },
+  "scope": "kernel and graph-transform diagnostics; actual model route checked before benchmark",
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0006/20261020_160859_diagnostics/rope.json": "796b05d911124dbd3c8489177c41718adf7ece8b4f859037c9689a277393abbc",
+    "/workspace/LeanScale/artifacts/EXP-0006/20261020_161133_confirmation/confirmation.json": "fdda97e6eb87a6090b1b7c34d7bdd124245148510a295294b646d91bb3bfd0ba",
+    "/workspace/LeanScale/artifacts/EXP-0006/20261020_162346_selected/selected.json": "1ad9399844415826d26278f9c3b90f74a9f71a1e144f3c8d45dbaa952b8ed7c1",
+    "/workspace/LeanScale/artifacts/EXP-0006/20261020_162921_confirmation_recheck/confirmation.json": "3c5aedb191591bc841b1c55bca2566ff9d43da69d551f12f502fd90f06b3615e",
+    "/workspace/LeanScale/artifacts/EXP-0006/20261020_164938_cpu_final/validation.json": "9c0baa56ecac0a9def489b41a40cb4f3b557d1368e583286170d239ae0e52510"
+  },
+  "code_hashes": {
+    "FlagGems": {
+      "src/flag_gems/runtime/backend/_iluvatar/fused/rope_kv_cache.py": "a1127ed7025f8a541b5864ac6dfc2e06a8396a27933976fa9755a30dce7d3d4b",
+      "src/flag_gems/runtime/backend/_iluvatar/fused/rotary_embedding_parallel.py": "6b95e1f959027d28f2203056dafecedf615f869a2692f30879ea51b115efeab9",
+      "src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py": "2dc651805f60dab29c17a610441d15723621c8cbcd5e085673c174e2a8361cc9"
+    },
+    "vllm-plugin-FL": {
+      "vllm_fl/__init__.py": "8237299c1d868988ead302b6ecd1bd37a94d61c5de8c3d45e5aa5187451963ed",
+      "vllm_fl/compilation/rope_kv_fusion.py": "c7c9fa719cd6b0ab342fcb6475df47fbbd02e17018612fd8309e999b88a9ec4b",
+      "vllm_fl/ops/rope_kv_dispatch.py": "17defedbbd78bfc54ea852c56b57f8af976b14f436429ddd9cb588f89e40aefe",
+      "vllm_fl/dispatch/backends/flaggems/impl/iluvatar_gqa.py": "d8e4525814cd23829e8d9326bf679930859b9c46189fc9a14320a73dddaf7b7a"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "fused_runtime_layers": 42,
+  "gqa_layers": 42,
+  "old_cache_updates_in_fused_graph": 0,
+  "graphs": [
+    {
+      "path": "candidate_cache/torch_compile_cache/c8fa2c774a/rank_0_0/backbone/computation_graph.py",
+      "counts": {
+        "fl_rope_kv_dispatch": 42,
+        "fl_rotary_embedding_dispatch": 0,
+        "unified_kv_cache_update": 0
+      },
+      "sha256": "e09ae7cd48aaaaaa7ce1b028aadf6b2d880e35ac6dfb029d307620eb17c86983"
+    }
+  ]
+}
