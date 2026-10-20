@@ -1,0 +1,42 @@
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/device_info.py:46: UserWarning: [device_info] Failed to get device properties for device_id=0, fallback to None.
+  warnings.warn(
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+/workspace/LeanScale/worktrees/EXP-0006/FlagGems/src/flag_gems/utils/device_info.py:65: UserWarning: [device_info] Failed to get device capability for device_id=0 using torch_device_fn, fallback to (0, 0).
+  warnings.warn(
+INFO 10-20 14:38:07 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-20 14:38:07 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-20 14:38:07 [__init__.py:58] Loading plugin fl
+INFO 10-20 14:38:10 [__init__.py:237] Platform plugin fl is activated
+WARNING 10-20 14:38:14 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING 10-20 14:38:14 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0006/validate_graph_cpu.py", line 12, in <module>
+    from vllm_fl.ops import rope_kv_dispatch as dispatch
+  File "/workspace/LeanScale/worktrees/EXP-0006/vllm-plugin-FL/vllm_fl/ops/rope_kv_dispatch.py", line 6, in <module>
+    from vllm.model_executor.layers.attention.attention import get_attention_context
+  File "/usr/local/lib/python3.12/site-packages/vllm/model_executor/layers/attention/__init__.py", line 13, in <module>
+    from vllm.model_executor.layers.attention.mm_encoder_attention import MMEncoderAttention
+  File "/usr/local/lib/python3.12/site-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py", line 11, in <module>
+    from vllm.kernels.triton.qkv_padded_fp8_quant import (
+  File "/usr/local/lib/python3.12/site-packages/vllm/kernels/__init__.py", line 5, in <module>
+    from . import aiter_ops, oink_ops, vllm_c, xpu_ops
+  File "/usr/local/lib/python3.12/site-packages/vllm/kernels/oink_ops.py", line 18, in <module>
+    OINK_AVAILABLE = current_platform.has_device_capability(100) and hasattr(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/vllm/platforms/interface.py", line 432, in has_device_capability
+    current_capability = cls.get_device_capability(device_id=device_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/worktrees/EXP-0006/vllm-plugin-FL/vllm_fl/platform.py", line 463, in get_device_capability
+    major, minor = torch.cuda.get_device_capability(device_id)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/cuda/__init__.py", line 627, in get_device_capability
+    prop = get_device_properties(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/cuda/__init__.py", line 647, in get_device_properties
+    raise AssertionError("Invalid device id")
+AssertionError: Invalid device id

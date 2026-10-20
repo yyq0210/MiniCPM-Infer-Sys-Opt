@@ -1,0 +1,21 @@
+{
+  "status": "planned_after_fusion_and_scheduling",
+  "dataset_sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+  "dataset_count": 500,
+  "level_counts": {
+    "2": 90,
+    "5": 134,
+    "3": 105,
+    "4": 128,
+    "1": 43
+  },
+  "subset": "Level 3",
+  "eval_batch_size": 8,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "max_tokens": 32768,
+  "timeout": 3600,
+  "required_score_from_server_competition_notes": 0.95,
+  "additional_gate": "Long-context tasks where compression actually activates; paired full-cache baseline; no missing or timed-out samples hidden",
+  "source": "/workspace/推理引擎与方案.md"
+}

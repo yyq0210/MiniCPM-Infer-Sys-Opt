@@ -1,0 +1,8 @@
+{
+  "pid": 27035,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0006/20261020_145132_diagnostics",
+  "stage": "waiting_for_gpu",
+  "kind": "isolated_diagnostics_not_official_benchmark",
+  "updated_at": "2026-10-20T14:51:32.439995+08:00",
+  "source_manifest_sha256": "42e57d11ea67494b8828053979171c38cb5c962fa0625ccf4f0d55adef3171f0"
+}

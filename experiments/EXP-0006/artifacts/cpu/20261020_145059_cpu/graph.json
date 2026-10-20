@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "options": {},
+      "matches": 1,
+      "passed": true
+    },
+    {
+      "options": {
+        "aten": true
+      },
+      "matches": 1,
+      "passed": true
+    },
+    {
+      "options": {
+        "double_writer": true
+      },
+      "matches": 0,
+      "passed": true
+    },
+    {
+      "options": {
+        "double_writer": true,
+        "duplicate_getitem": true
+      },
+      "matches": 0,
+      "passed": true
+    },
+    {
+      "options": {
+        "nonlinear_v": true
+      },
+      "matches": 0,
+      "passed": true
+    },
+    {
+      "options": {
+        "tuple_user": true
+      },
+      "matches": 0,
+      "passed": true
+    },
+    {
+      "fallback": "slots",
+      "single_cache_write": true,
+      "passed": true
+    },
+    {
+      "fallback": "profile",
+      "single_cache_write": true,
+      "passed": true
+    }
+  ]
+}

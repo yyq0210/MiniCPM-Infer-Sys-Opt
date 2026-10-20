@@ -1,0 +1,6 @@
+{
+  "automation_id": "leanscale-kv",
+  "interval_minutes": 30,
+  "purpose": "Continue authorized fusion, scheduling and accuracy-gated KV compression experiments",
+  "current_phase": "fusion_diagnostics_waiting_for_gpu"
+}
