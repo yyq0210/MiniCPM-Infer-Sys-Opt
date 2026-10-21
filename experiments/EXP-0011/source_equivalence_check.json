@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "check": "Reversing the two decode-parameter substitutions exactly restores frozen source bytes; scheduler class absent from plugin",
+  "parent_sha256": "2dc651805f60dab29c17a610441d15723621c8cbcd5e085673c174e2a8361cc9",
+  "candidate_sha256": "d58e472b65e09c771448dbb461ced39dc4a6cc9cfab03d2a6ac7ab25f2d7c459",
+  "scope": "CPU source/compile checks, not a numerical or performance result"
+}
