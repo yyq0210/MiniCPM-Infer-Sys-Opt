@@ -1,0 +1,18 @@
+{
+  "status.json": "21f75fa0de6d41d6907e204d4a67bbf8bd4374ca2e46809f37e4829eb8912123",
+  "baseline_combined.json": "c7f7ef97288dc764f5017ffd02cc2ecc4d488a1efade95542e36ed0891c0d00f",
+  "resume_provenance.json": "de01271f3bc608cbe944b58f9ff4de05b977d9d3bc8ad9ed5e5031c027bea6fa",
+  "environment_check.json": "d611dadfe451760d6c07c89bfb991f946f1a3fc19329a99bf44aa9986e655514",
+  "stage_history.jsonl": "bc67ebfd9b2c9008fae66dafcf4854f70d10e8d14fb85d4fcd30b8aaf1d53015",
+  "progress.json": "8c79b203c128e7f6e4862ca9ef36ec2ae3b395a438d1208cb14514fcd943f95c",
+  "exp6_reference.json": "c65a417b92f26a7f399c33863a7b771bec5965ddb486dd9f5c9a388b2f04ed70",
+  "candidate_validation.json": "a9bf51c8b3cfa39731d11da1b178d9b581dccdd48b665cdcc439fc46ae3bb189",
+  "coordinator.log": "99872f4893ee8ca6d6ae142b148d8e8dea1d7a10854268d30cd6a6dfaa886811",
+  "candidate_benchmark/server.log": "7b3bfde1d4b208ee539ade2825f55b2916797ad9b6c03d25e0941c6e76f2fca7",
+  "candidate_benchmark/server.command.json": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+  "candidate_benchmark/smoke.json": "ed1ba63b645d8575db09c4a84e155954e901f620c2ffe88189eda75c6d38190e",
+  "retained_baseline/16k/raw_runs_20261019_203029.csv": "648fa5d8e4184b7f0700abf5d5e3006c95dd0870a1a9900d2c7a44994a0ffa2c",
+  "retained_baseline/16k/summary_20261019_203029.csv": "e1439442528a6ce7de3729e59e28dc620891d9be578e8b6c2a4ab75cf0b210e8",
+  "retained_baseline/4k/raw_runs_20261019_190747.csv": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463",
+  "retained_baseline/4k/summary_20261019_190747.csv": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e"
+}

@@ -1,0 +1,19 @@
+{"stage": "environment_verifying", "commits": {"vllm-plugin-FL": "4534fcd69e7d22295240b3e6fed0c1395d120672", "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"}, "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565", "accuracy_status": "deferred_by_user; math_500_not_run", "protocol": "Full max_tokens KV growth admission on EXP-0006 fusion; one complete official case; historical original and EXP-0006 references; no full-model accuracy claim."}
+{"stage": "candidate_official_starting"}
+{"stage": "failed", "error": "AssertionError()"}
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 361, in main
+    verify_route(RUN/'candidate_benchmark')
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 91, in verify_route
+    assert 'Selecting LeanScale async scheduler with KV growth admission.' in log
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 387, in <module>
+    main()
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 361, in main
+    verify_route(RUN/'candidate_benchmark')
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 91, in verify_route
+    assert 'Selecting LeanScale async scheduler with KV growth admission.' in log
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
