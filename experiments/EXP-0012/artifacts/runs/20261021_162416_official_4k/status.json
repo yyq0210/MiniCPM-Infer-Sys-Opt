@@ -1,0 +1,28 @@
+{
+  "pid": 48320,
+  "process_start_ticks": "291862674",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0012/20261021_162416_official_4k",
+  "started_at": "2026-10-21T16:24:16.729575+08:00",
+  "runner_sha256": "e655d53827c32d24554dca8863d98b793a78f4301f03d36a8983f56c4693b59d",
+  "route_gate_version": 3,
+  "selected_cases": [
+    [
+      4096,
+      1024,
+      64,
+      256
+    ]
+  ],
+  "planned_finish_before": "2026-10-21T23:35:00+08:00",
+  "stage": "failed",
+  "updated_at": "2026-10-21T17:06:47+08:00",
+  "commits": {
+    "vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6",
+    "FlagGems": "19aa059af4ce456ef2e34e3bb83eb949d7e7b702"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "GQA decode stage1 on EXP-0006 fusion with original scheduling; one complete official case; historical original and EXP-0006 references; no full-model accuracy claim.",
+  "server_pid": 48347,
+  "error": "ValueError('No scheduler admission telemetry')"
+}

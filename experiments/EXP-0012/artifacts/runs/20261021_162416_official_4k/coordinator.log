@@ -1,0 +1,20 @@
+{"stage": "environment_verifying", "commits": {"vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6", "FlagGems": "19aa059af4ce456ef2e34e3bb83eb949d7e7b702"}, "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565", "accuracy_status": "deferred_by_user; math_500_not_run", "protocol": "GQA decode stage1 on EXP-0006 fusion with original scheduling; one complete official case; historical original and EXP-0006 references; no full-model accuracy claim."}
+{"stage": "candidate_official_starting"}
+{"stage": "candidate_throughput"}
+{"stage": "failed", "error": "ValueError('No scheduler admission telemetry')"}
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0012/run_split_e2e.py", line 386, in main
+    accounting = compare_schedule(
+                 ^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0012/analyze_schedule.py", line 70, in compare
+    raise ValueError("No scheduler admission telemetry")
+ValueError: No scheduler admission telemetry
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0012/run_split_e2e.py", line 401, in <module>
+    main()
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0012/run_split_e2e.py", line 386, in main
+    accounting = compare_schedule(
+                 ^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0012/analyze_schedule.py", line 70, in compare
+    raise ValueError("No scheduler admission telemetry")
+ValueError: No scheduler admission telemetry

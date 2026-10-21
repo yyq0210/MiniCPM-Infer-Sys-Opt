@@ -1,0 +1,472 @@
+{
+  "status": "passed",
+  "gqa_launch": {
+    "warps": 4,
+    "stages": 1,
+    "segments": 16
+  },
+  "kernels": [
+    {
+      "path": "triton_cache/YDX2OVRSIG4O6ANAX2OA25NBM2XDUNFEO6TXABNPV5TPCIKOISRQ/_attention.json",
+      "sha256": "f0350355c4d066490657de5f7fa6cf9484b1b430af5f7ba633a297ac6a69b1ae",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/ARQSA4MCSILXXPWOMDC4KUBI6WPNXZPPYZ5ISLJ4277AW5CYLF7Q/_attention.json",
+      "sha256": "2042f3632455b4c3082aa8a1aaad298b58dde991adaecdbb864239f0cac017a4",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/4CKBD5A4VSAR6WNAYV62SJA7XRORVQT6RHH2OB4QVY5R3KO6Z2JA/_attention.json",
+      "sha256": "a028a9b48ad6310d3cfbe58f2339873d8cba5c797e1ea1efddfd870ce1adf8b0",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/NPVEVPA24RHGBHAVTUJK5M3ZQR7YYZ4DY66TDHYTEPWBKBLWQLGQ/_attention.json",
+      "sha256": "df11e75e87cf2b66102a7e01bd8fd999ad5486fc5cbc3ec833dfa41a6fc8a3bd",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/BUEUHU5Y27DCR4QEZM4WS6G5WZ2L3H4KTEG42HFYBRQNO4EH4L2Q/_attention.json",
+      "sha256": "be7a6012e812943e05c3214cd7367020d91f71e4808d7670b1b5292bf532bc5a",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/6FRZTWZWNPVGPNQF5VTOHYBFHSNVNDOSZXL37ZM6LSWA2AB5OXSQ/_attention.json",
+      "sha256": "6b0d6a78f3f0a93730665e790be8268002bf6fa03b387df46c3562ed4199bc9f",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/6WS43KED6FWEXPGLHPAVSXFFKI4J4OVX75WOTTLWGVGVNRWOXI4Q/_attention.json",
+      "sha256": "6ee18b543e7b7de9fd900cc18fe768e89228a7a278fdb68b9c82ef999bb13496",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/AU2AXLILXSUU3YMMBULTFSRQ674CP4YPJHQX6LDDX7KZZ472E6JA/_attention.json",
+      "sha256": "9f00ef0eb07aeab952276143cff43239ee881466e87a839fabd6a94fc49f86ed",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/QCI5A4I2CBH46APBXKUH3ZHZVY4MRKEK45BTNQ53MXIRNVOEKMIA/_attention.json",
+      "sha256": "51cf9d9b84ab8efdfb7af769b296eea98b2559188f71865e7f0e2c67c95083f5",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/7XY2477GLUJG6UMYKMXVCGSIEDEC7UGXMOVLPCLYTPXCZHOZELEA/_attention.json",
+      "sha256": "77cccd7e2f33b9f99a6347f0a522b87bcb0e8b590b4110fb50c7258870c84d01",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/N4STLHQFLMP5HKQ4GFJLOXN66M46HXNOSXZEB52LTBTIUQD66S4Q/_attention.json",
+      "sha256": "219725376d420f3be938955f675e7c493edb86e931e817649b787955e62a0abd",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/3SRUJ3UGML4QQXWGMT5I3FJOTKTJ5R72IJJALX4V5ZYQLEYYCSLQ/_attention.json",
+      "sha256": "fe928f56f5b721e12763cfea185b797e1fbd40207aaf42b2101355ea91f2e997",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/22YAFX7Q4ULGTRKM222XC4274TXRD6WLZLPSVA3C45QFFON4VMIA/_attention.json",
+      "sha256": "546565f3066aa17db320c726c045058e15ad339338599e170c66cb58a79c3aa0",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/QXXZPIN5XTJS2CZXCJRJVJW5GHSZ7IKWEWEQEJPNHQIRJTTTS6BQ/_attention.json",
+      "sha256": "5ecd80f3d0c01a989f8b563451d89db4c275d10d12dfbf63bd590009ef507cee",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/424AHIQ3XJDTVZH7TM2VZ4XPP6SBRF3SSD62P7VRKRVNLMCXONVA/_attention.json",
+      "sha256": "11ab9cd6a7f416d4890731907ff2153671b5f941182a728513d4b1de7012fcc3",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/6AL7GPOQKPFM4CSMNHY7TRFU6RM45JD6NTH6BWOUP2WOS5IQJG3A/_attention.json",
+      "sha256": "b1ee2eacbd5bed3c2a11df84768cc33b45a02f8aeb838275aff50e0ea0b45375",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/OV4BIR4BM37SFINZJDWYF3VTBRLDG3MTGOJQXLCF63OXUKMB4QJA/_attention.json",
+      "sha256": "36b55a1e197c6638fcd79708f31af1b33432806db9c929d95370a2484aee4c6b",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/W26DYBR3R4IIYYRZFACPWW3DSLBN676YL4V5VEMK36TN3V2IT6LA/_attention.json",
+      "sha256": "656392818b074cc8561093b586b319dc2f8614d9bbf4e7f6eaba8dcb2599fddd",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/3Q6KXFIHSHTZLRXRGCPR5GPEL3HPCE7C6IUEESWO7ETVASKVQ5HQ/_attention.json",
+      "sha256": "2caccfe2f1b1f73bb4e32474a2a34792db78c66782b763fdc5f8de78fcb69a17",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/HX2UEYHIGBS43HM2JYMJ5GF724X2AWBSLMU7LZJA5ZWMF2RLEMAQ/_attention.json",
+      "sha256": "6868bcf1d94951b0e39780a648545d938ddb980c9d959a04ad556facd615ac27",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/3DXJY6H4LOWVA4BTW5NP3SOTL5HNT6HHE4JTQHMRVRHNQE5F3BSA/_attention.json",
+      "sha256": "6bdbc1594237f4c1db4466e69930d178b5394c6c3fc0a8ffee500a529b78d074",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/4LVQQ5XBXKKIBXQGGXH3VZZQY3SL4IRVMTGY45QFAZOPPDB6QEVQ/_attention.json",
+      "sha256": "c306dce9331a591d224f1405c9208c95169290537d8fe8e4860b87541d6c5a4d",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/R6A32TJIYNHB2ZV7CHNYC2PLEPXL3CUJSQ73E2N4KX3GMUGKR6GA/_attention.json",
+      "sha256": "a689391832c9127b5a59c0a8924e963cf23a2fd7aad6245906852d8ca020f9b3",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/7GBKBDYEECI7T5M7U57JIZAHUWAQXK2IEGFCKS5INA2QF73YJFDQ/_attention.json",
+      "sha256": "2af104c184cb2c64dbce84dae89bbffa4bd9a00bd8835057fa97952635e387ef",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/WDOCOKVETHK4LLDPVKRO52MIRB3JM2C74EJYV2QA7G7X77G3ZYVA/_attention.json",
+      "sha256": "e18d6bcd915c59e8439e93a69ac18faec1564261143d537aca8f1e3d72473007",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/7SD4U7UCL63GD6OU5W3KD5L2J6CQMVHHAD7IWSBTRLQPN6HLWLPQ/_attention.json",
+      "sha256": "a85521e0bd611aed2c4e8318c801b34ce15c950631128a55af6af1d945706bc2",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/OLFZF4KSRCW4CMNQJJH3MNPIEIP2LD46Q2LWKNSXNHRZOBJHBU3Q/_attention.json",
+      "sha256": "3f7196f4901db2f9628d052a300dbd3952ab758cc3ad17e19b00b1150a8497b3",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/SUWNIZL33GMN7YMBK3VXUMQVVF3N42A7SI4J2THNNPXHU5IIKWGQ/_attention.json",
+      "sha256": "9f35aedc02666f6ad2ebd7a251e7fa1140a8603832e66c9915d02a9ae8499d27",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/EECMDOTSELNUNWOWSKQZBLHM5577MVPOS4QOZSGUH7IFA6RNRRPQ/_attention.json",
+      "sha256": "09b7231cb4cdbbbaa4d69efeed049a2a03eeeac56084fc8ee4867e550ea539e2",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/TXOJLOQELN5XER7HFGK6INBL3FTG5YPNMDMG6CZ54B5U2QWOTKFQ/_attention.json",
+      "sha256": "18ff95e2187d287cb02bccd8d488d4fdd768c0682f4ac12f1986cc587646e2eb",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/AKEOYILVWEGWENZVYIEZYFPOQUWWJQ3Y2WSX5W535O7DYTMVPNEQ/_attention.json",
+      "sha256": "0180cb635194e09b2a032850b99407550c6fd713417121cd80c09d7cb4670014",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/MXW3NJOIMMBI3XQCC7BMFB6UTMXHP5VGOR3WXJ5WB4AWURQSPKPQ/_attention.json",
+      "sha256": "4d550b6ce6da58ab6a1e9503297865239f4597fbeb615fe01b0d8f43d8cda9ba",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/KA56P66VAXHSLRCABRNABYWNYWWYPJ34ISEGVYPPJKJSGYNR56FA/_attention.json",
+      "sha256": "26f798f493638a10669dc1ec21ad3a167ce954084d4139ba19d66188633e3293",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/SAEFE6LXQWWMCHWBW6ZEDDR6IVU4KWLAG5JEZXKS4TCWHCX7LTVQ/_attention.json",
+      "sha256": "04f3793c0b219716fb288a61d66259fb8e3b02a43a931b313ad2b20ebbb0b134",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/VDMSLGEWBBLZJIKFIB3EO34VIGMAAEGXQX7N6FUUYYCSJZTVWDSA/_attention.json",
+      "sha256": "179521990f1b7049c36da5bc9498de5b8654538dce99fe4cc88eca633edf662b",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/SF6V2LDSDDGMMIRVCUNQISZCH3BMJDIMX3XEGYDIENLTY3UCIE5Q/_attention.json",
+      "sha256": "bebd2c02b4c9e543dc995d3cb0a4c01a997bdf3647ffc6997860d06df1d8661f",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/H4UXUYCXFERB5DCWUCND2H2G3YEUII22A6BKEJXHGXJGLQZDSBBA/_attention.json",
+      "sha256": "62ae6f723c62d8c82b0474d099aac88b116daeda2a51760341b66c66c4607d5d",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/4NB3BLAVP7RNB6OEWKSKHJBDYSRKJI5KMC5N6ZFIQAJJ3E7WHV4A/_attention.json",
+      "sha256": "b73c282c71f897a688526992cd947607b23d1d1cef34dc81096d3603f9bfe8e7",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/35P3GY6KCM3IYHUAWI7H52SZT5AAP655LPFQBOBJNJG7EHWFRYGQ/_attention.json",
+      "sha256": "f2281a148ceefe92c71e66311cd1c3d6a7cca53e92af0607abe4cbf8932eb19c",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/RM4Q2M4K7KAEVR7JYZCNRMJ42ZAVTMGINOQDJPRXFO4K3V27JCVA/_attention.json",
+      "sha256": "1c820803d3bd472f3752cb9526ecf27a2a11d31a76ba2538c1ed057f20fa2eb0",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/GIUZAL4FYETLCTSFPC654EAAYZ6AOWW52M4KYB23KTFXRZIZZXTQ/_attention.json",
+      "sha256": "68bb40cd62701e5515c54103e03b45dcae87621f25b412e400e5a9c119011eb8",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/UJINBO4C75GI5RVVXIGMOEBWGTSZIU5CIUDWT2EW7BLBXF4KOYIA/_attention.json",
+      "sha256": "6742994c1d2543b3e507686f511a27b25753878273d32490ec36955b220391d9",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/KZAWXOANOFL3L7ZXSUK65TOVURQ3TDS4OC6YMHBCDNFBUEMOX5VA/_attention.json",
+      "sha256": "871d55abdb88cd5c361b44ccae1eceb2d1eea00f3c72d5905d5bbb5c26f69d83",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/SX6LZCGH6ZWJNN24KK3SZI7Q4CMNICZF3VLCZX27MFIOFJNZHMVA/_attention.json",
+      "sha256": "7fc27367cd98c8c7bf8f242ccf22eb38b9e671ed133d9555e3f64ea1027ace62",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/Q555J6UYDXO5HBCHCY4VZUU3BBRW7MYMVUG5BXNB4AZ3Z5MATJFA/_attention.json",
+      "sha256": "657be4a6139dd48aea5941740094e37936e5170d72b8d2d40e1764df2f142a11",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/3GWV4Z5DIFYAYZY7CJA2GD6JIY3WC77HUKZUUN5L6Y26RRC2BZVA/_attention.json",
+      "sha256": "80827d53103a944c1b0015be735f6f8f6cdedc073736524a9efbf33c664657b1",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/NEY34HRWQ53NRPTNS6B3LJDXCUQH3G3OGLGNVHMR3CGGTUQGY6ZA/_attention.json",
+      "sha256": "d3fc83647a603c7ba5d900144d545523e115d8c5b88320c78830357ebccd4a03",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/T7KZLGZSWACVWPGZUTT2VWPM6ETQWPOFG3DYHS7KO4UEITKTSHLA/_attention.json",
+      "sha256": "f3e2032037276653d54dc0219db13d88b440c307b6c934506f5545a2c6ea2c8d",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/MONOBUWFGMKI4SUJ2Q4V2G5L2PN4Y435ESJYEC6ZXHBMOUQHIGUQ/_attention.json",
+      "sha256": "2c252e7626a573e48bbe287b8108acea9c08101bbe416bf19d4cdbd3acc72a31",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/SAMHJJUJP7354XCRLHSQ5NEJLRUFV746M2LYCN2AXZVZRREGULLA/_attention.json",
+      "sha256": "81e2842a5baf87eb49ac77c9b63ea632ed19a105ad42c5f9e3bc36c6fbac765e",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/CCWO5LOCTDXIUOAIWAVLOWL4BOHTKZMZCDSSMLCBBDIFWNLRAYKQ/_attention.json",
+      "sha256": "5c4be97d908767342d8982d8fc0450753ecd6b613b3674e33ab4c6d0b60a1149",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/VXKNGFFZXKTBEI326WUI3PXGYUWXVXEYIA2FHZZJB2IVKIAS4CSA/_attention.json",
+      "sha256": "b1ff7e62b3ce2cc7061cb3b779566ee686e7fe48899462e21b1a4c97a3436e80",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/WAT4YA5BZWPX4Y3XB3KGY47F2TZ2ESAIIFBTXMDT3SV5O2VSFMNA/_attention.json",
+      "sha256": "c2be35074ee92c997ad25d43082d7f07c711595b03401687eb23e2859686efd0",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/LG7UWESY66X5RBSQSJ3RWCV34Z7MVIOPHRAOZFLZ7V3SLX3SMPGA/_attention.json",
+      "sha256": "bc98e7fca00751426006d1516d6140cc0e40af52a5f3ff7841f5f7bb7a3ee173",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/MW6GOLG4FIB4BIPBSD77VRQOLFSVZY2CZPWP6NGDOYIPBF6WQLZA/_attention.json",
+      "sha256": "44d8b291eb0c5c3b3a871362e1575a290551833007ef9b80ec6f0a839f389aaf",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/PC7JLA7RSKHTG3HWQT55DK775BWJD6LS7DAMBSGJLIUYKXSZVO2Q/_attention.json",
+      "sha256": "76560786cf9aebdbd250f1b3b71038a281580bc793e0c488632b74fec00ed700",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/7NB7CEQQ32OPTGERBGJSR5J7IW6YER2OX6VHDHBYYQB5FQFZ6XAQ/_attention.json",
+      "sha256": "fa27b71598ce5c45dfa7140c64bf24b9b8fe68e503eeec0c5451a6d1c542dcd2",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/JAZ6HDZA6KFHJWQ6VYA6IYDR7KZGKBN4THR2QDV7K7ZXTDHA4IGA/_attention.json",
+      "sha256": "70bd6ba000fe988641ca89e1b60132dd90f3f30f57c3ecbe96c7f4d40d623ac0",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/RO27ZEDJOK3J4XQ4ENEB2KSIHXGXAIBGQDUXFADRD4AMBY7JFZEA/_attention.json",
+      "sha256": "fb3a3d5b31c06c891fbb94cd4216edbb8986b0c52890542a777ca16f3f56f210",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/PQMKWGBTW56XL6R2KAARPWBA5765WSGKNZZMFSETY2X6ZCS6PJGA/_attention.json",
+      "sha256": "676bc69fb757f5e2e5927cc804f28b1e463286abda3e4304c8b7ee0ccb5a535a",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/I4JGG47IE6CKEBVXTRJLTVBEYFCAJH7336JVIWW5WWO74IHCR5ZQ/_attention.json",
+      "sha256": "217f176c91a2fd48b231f7235083fe627a4590e37b634a10cf4c1e68b065a4be",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/7XQDIQE2KNCX4HDU6SLYUKPNUJJTZWUX4LHL62UH27L5HAVZ36XA/_attention.json",
+      "sha256": "081b9375baf79fcc520b6da2ff035ae16e309c0141186a0254fc1e0fb488a112",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/4GVGWB5MUHGNCVUIVJMLIHMZZX32CVZHO6NFITZGXYOW45YPVHNQ/_attention.json",
+      "sha256": "968618fb208ccfb50e0d37f30e93ae66482e5865674ea9d4405eaff29957c5cc",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    },
+    {
+      "path": "triton_cache/UDFDP2UB67WIHQPZYE6MISVHUS5IL7YHK422NI24PDJ6LHPDO75A/_attention.json",
+      "sha256": "90d00d212e710b187672cbd77242b1b23716a2c62c64350fca2a0c55198407b9",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 20480
+    }
+  ],
+  "fused_runtime_layers": 42,
+  "gqa_layers": 42,
+  "old_cache_updates_in_fused_graph": 0,
+  "graphs": [
+    {
+      "path": "candidate_cache/torch_compile_cache/1c6017fe13/rank_0_0/backbone/computation_graph.py",
+      "counts": {
+        "fl_rope_kv_dispatch": 42,
+        "fl_rotary_embedding_dispatch": 0,
+        "unified_kv_cache_update": 0
+      },
+      "sha256": "265fb51879291c2d305c00e1c2a3e7f98e58c0ba67def496db577b5490dae506"
+    }
+  ]
+}
