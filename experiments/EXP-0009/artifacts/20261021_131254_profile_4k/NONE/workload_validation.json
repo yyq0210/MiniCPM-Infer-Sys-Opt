@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "requests": 256,
+  "input_tokens": 1048576,
+  "output_tokens": 262144,
+  "windows_requested": [
+    "initial",
+    "late",
+    "steady"
+  ],
+  "performance_comparison_allowed": false
+}

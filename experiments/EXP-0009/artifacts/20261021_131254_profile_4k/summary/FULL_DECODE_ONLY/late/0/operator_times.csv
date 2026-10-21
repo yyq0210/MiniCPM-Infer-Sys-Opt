@@ -1,0 +1,3 @@
+phase,operator,mapping,calls,total_us,mean_us,median_us,p95_us,percent_kernel_sum
+decode,sampling_candidate,kernel_name_requires_path_confirmation,48,86197.952,1795.7906666666668,173.8515,5175.257,73.93993709346061
+decode,unattributed,no_reliable_semantic_mapping,288,30380.389,105.48746180555555,4.03,1114.057,26.06006290653939

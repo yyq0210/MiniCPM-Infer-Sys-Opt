@@ -1,0 +1,30 @@
+{
+  "commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "script_hashes": {
+    "probe_profiler.py": "7729287ede94a218182fc0209150807dfe2d01b6096aa1d4fc5a07157120dd50",
+    "profile_hooks.py": "567b3f4199643a615a41dce4989f1c990aec8db0995d0a0109ecf484c582adc6",
+    "run_profile.py": "8684016e7f73ffdbd2ce4e7309dc64fb793c6604f6f3008805aaef2c9966ae1f",
+    "validate_analysis_cpu.py": "ecfb2e43705ba2400ad8420a924a8137c1412d9538f4a6660b2c87ad1f537da3",
+    "analyze_profile.py": "9833ea8a70889ca6ba508944dd2776f9fd0660cba52f4fb3112f80d467b47460",
+    "recover_legacy_trace.py": "c45c3a221acdf4de50276096dd7d82da69de566fc15a0d00baf861e2c146ad6d",
+    "vllm/profiler/wrapper.py": "31f8a33afd23e67a2ade5a95d0d837a03b0a9164d5b18acf561d948c9ae6c06c",
+    "vllm/config/profiler.py": "981161215276d72564567d368d05d086621c831b2d1da79c8a8cff6963b5a305",
+    "vllm/benchmarks/serve.py": "b09e85eed6f5f7a9075b40a19fc1dd8e94a1c449665c2c6510f349e0409e77b7"
+  },
+  "case": [
+    4096,
+    1024,
+    64,
+    256
+  ],
+  "passes": [
+    "FULL_DECODE_ONLY",
+    "NONE"
+  ],
+  "accuracy": "No model accuracy evaluation in this diagnostic.",
+  "protocol": "One complete official-shaped request set per diagnostic pass; not official performance."
+}

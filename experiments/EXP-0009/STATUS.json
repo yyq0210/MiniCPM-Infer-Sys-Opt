@@ -1,0 +1,39 @@
+{
+  "pid": 1088,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0009/20261021_131254_profile_4k",
+  "safe_to_resume_scheduler": true,
+  "process_start_ticks": "290714410",
+  "started_at": "2026-10-21T13:12:54.064215+08:00",
+  "commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "stage": "complete",
+  "updated_at": "2026-10-21T13:59:52.462192+08:00",
+  "previous_run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_185748_official_16k",
+  "previous_terminal_stage": "performance_case_complete",
+  "mode": "NONE",
+  "server_pid": 11763,
+  "client_pid": 14085,
+  "capture_window": "late",
+  "batch": {
+    "phase": "decode",
+    "B": 64,
+    "M_unpadded": 64,
+    "prefill_requests": 0,
+    "decode_requests": 64,
+    "q_min": 1,
+    "q_max": 1,
+    "L_min_cpu_upper_bound": 4612,
+    "L_max_cpu_upper_bound": 4740,
+    "new_requests": 0,
+    "step": 664,
+    "epoch": 1792561072.027103,
+    "new_requests_total": 65,
+    "profiling": false
+  },
+  "owned_children_reaped": true,
+  "full_graph_operator_coverage": false,
+  "graph_visibility_limitation": true,
+  "raw_data_saved": true
+}

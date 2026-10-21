@@ -1,0 +1,19 @@
+[
+  "vllm",
+  "serve",
+  "/workspace/MiniCPM5-2B",
+  "--port",
+  "9032",
+  "--compilation-config",
+  "{\"cudagraph_mode\": \"NONE\"}",
+  "--served-model-name",
+  "minicpm",
+  "--gpu-memory-utilization",
+  "0.85",
+  "--max-model-len",
+  "131072",
+  "--profiler-config",
+  "{\"profiler\": \"torch\", \"torch_profiler_dir\": \"/workspace/LeanScale/artifacts/EXP-0009/20261021_131254_profile_4k/NONE/traces\", \"torch_profiler_with_stack\": false, \"torch_profiler_record_shapes\": true, \"torch_profiler_with_memory\": false, \"torch_profiler_use_gzip\": true, \"torch_profiler_dump_cuda_time_total\": false, \"ignore_frontend\": true, \"max_iterations\": 16}",
+  "--worker-extension-cls",
+  "profile_hooks.ProfileExtension"
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "memory_used_mib": 68,
+    "memory_total_mib": 32768,
+    "gpu_util_percent": 0,
+    "checked_at": "2026-10-21T13:12:54.364098+08:00"
+  },
+  {
+    "memory_used_mib": 68,
+    "memory_total_mib": 32768,
+    "gpu_util_percent": 0,
+    "checked_at": "2026-10-21T13:12:59.396716+08:00"
+  }
+]
