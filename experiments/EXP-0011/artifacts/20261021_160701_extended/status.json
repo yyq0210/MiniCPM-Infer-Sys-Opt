@@ -1,0 +1,32 @@
+{
+  "pid": 45350,
+  "process_start_ticks": "291759196",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0011/20261021_160701_extended",
+  "screening_source": "/workspace/LeanScale/artifacts/EXP-0011/20261021_160003_screen",
+  "started_at": "2026-10-21T16:07:01.898286+08:00",
+  "compute_stop_at": "2026-10-21T23:35:00+08:00",
+  "stage": "validation_complete",
+  "config": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16
+  },
+  "commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "19aa059af4ce456ef2e34e3bb83eb949d7e7b702"
+  },
+  "selected_for_serving": false,
+  "kind": "expanded_operator_validation_not_official_e2e",
+  "validation_sha256": "395271d96cf3d61a5195f183eed28ff3e7892a6d4137dbf670d7657dffaa05f9",
+  "updated_at": "2026-10-21T16:09:33.984827+08:00",
+  "child_pid": 45364,
+  "checks": 26,
+  "timing_points": 34,
+  "regression_names": [],
+  "drift_names": [
+    "B8_L17408"
+  ],
+  "requires_review_before_integration": true,
+  "owned_children_reaped": true,
+  "safe_to_resume_gpu": true
+}
