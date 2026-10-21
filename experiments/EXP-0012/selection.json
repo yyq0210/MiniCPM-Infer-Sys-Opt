@@ -1,0 +1,241 @@
+{
+  "selected_experiment": "EXP-0012",
+  "selected_serving_commits": {
+    "vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6",
+    "FlagGems": "19aa059af4ce456ef2e34e3bb83eb949d7e7b702"
+  },
+  "previous_selection": {
+    "selected_serving_commits": {
+      "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+      "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+    },
+    "scheduler_candidate": "rejected_by_user",
+    "current_experiment": "EXP-0012",
+    "candidate_commits": {
+      "vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6",
+      "FlagGems": "19aa059af4ce456ef2e34e3bb83eb949d7e7b702"
+    },
+    "status": "GQA stage1 E2E candidate under validation; original fusion remains selected"
+  },
+  "selected_at": "2026-10-21T20:12:47.100896+08:00",
+  "basis": "Both complete official cases improve throughput and mean latency against EXP-0006 historical sessions.",
+  "scope": "Performance experiment baseline; full task accuracy deferred; not a claim of contest readiness.",
+  "case_results": [
+    {
+      "case": "4k",
+      "run_name": "20261021_162416_official_4k",
+      "metrics": {
+        "Total tok/s": {
+          "exp6": 2686.33,
+          "gqa_stage1": 2936.01,
+          "change_percent": 9.294464939154912
+        },
+        "Output tok/s": {
+          "exp6": 537.27,
+          "gqa_stage1": 587.2,
+          "change_percent": 9.2932789844957
+        },
+        "Mean TTFT (ms)": {
+          "exp6": 5920.51,
+          "gqa_stage1": 5874.6,
+          "change_percent": -0.7754399536526346
+        },
+        "Mean TPOT (ms)": {
+          "exp6": 111.6,
+          "gqa_stage1": 101.45,
+          "change_percent": -9.094982078853043
+        },
+        "Mean ITL (ms)": {
+          "exp6": 111.6,
+          "gqa_stage1": 101.45,
+          "change_percent": -9.094982078853043
+        }
+      },
+      "comparison_exp6": {
+        "prefill": 4096,
+        "baseline_total_tokens_s": 2686.33,
+        "candidate_total_tokens_s": 2936.01,
+        "throughput_change_percent": 9.294464939154912,
+        "baseline_ttft_ms": 5920.51,
+        "candidate_ttft_ms": 5874.6,
+        "ttft_change_percent": -0.7754399536526346,
+        "baseline_retained_runs": [
+          2663.79,
+          2601.86,
+          2793.34
+        ],
+        "baseline_cv_percent": 3.6372934161605586,
+        "candidate_retained_runs": [
+          2908.21,
+          2844.26,
+          3055.57
+        ],
+        "candidate_cv_percent": 3.690853843281303
+      },
+      "comparison_original": {
+        "prefill": 4096,
+        "baseline_total_tokens_s": 2008.97,
+        "candidate_total_tokens_s": 2936.01,
+        "throughput_change_percent": 46.14503949785214,
+        "baseline_ttft_ms": 11658.33,
+        "candidate_ttft_ms": 5874.6,
+        "ttft_change_percent": -49.610278659121846,
+        "baseline_retained_runs": [
+          1976.47,
+          2021.41,
+          2029.02
+        ],
+        "baseline_cv_percent": 1.4136121578930112,
+        "candidate_retained_runs": [
+          2908.21,
+          2844.26,
+          3055.57
+        ],
+        "candidate_cv_percent": 3.690853843281303
+      },
+      "accounting": {
+        "reference": {
+          "counter_delta": {
+            "num_preemptions_total": 0.0,
+            "request_queue_time_seconds_count": 1024.0,
+            "request_queue_time_seconds_sum": 8930.98446171498
+          },
+          "mean_queue_seconds_all_four_rounds": 8.721664513393534,
+          "server_log_samples": 224,
+          "peak_running_sampled": 64,
+          "peak_waiting_sampled": 60,
+          "peak_cache_usage_percent_sampled": 62.0,
+          "admission_last_snapshot": null,
+          "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+        },
+        "candidate": {
+          "counter_delta": {
+            "num_preemptions_total": 0.0,
+            "request_queue_time_seconds_count": 1024.0,
+            "request_queue_time_seconds_sum": 8606.149779213592
+          },
+          "mean_queue_seconds_all_four_rounds": 8.404443143763274,
+          "server_log_samples": 218,
+          "peak_running_sampled": 64,
+          "peak_waiting_sampled": 61,
+          "peak_cache_usage_percent_sampled": 62.0,
+          "admission_last_snapshot": null,
+          "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+        },
+        "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+        "scheduler_policy": "original; admission telemetry must be absent"
+      },
+      "raw_sha256": "0c672962348c732c5dc95894b41cb5b9356d948770fbf7e7f5b655467d4c8831",
+      "summary_sha256": "7531fccd6055c207e3c9cb6568f8dbe6f4369286191ee1d0cca6762cedbf9b8a"
+    },
+    {
+      "case": "16k",
+      "run_name": "20261021_184434_official_16k",
+      "metrics": {
+        "Total tok/s": {
+          "exp6": 1911.35,
+          "gqa_stage1": 1973.96,
+          "change_percent": 3.2756951892641384
+        },
+        "Output tok/s": {
+          "exp6": 112.43,
+          "gqa_stage1": 116.12,
+          "change_percent": 3.2820421595659566
+        },
+        "Mean TTFT (ms)": {
+          "exp6": 267408.36,
+          "gqa_stage1": 262412.54,
+          "change_percent": -1.8682362810197861
+        },
+        "Mean TPOT (ms)": {
+          "exp6": 238.89,
+          "gqa_stage1": 229.76,
+          "change_percent": -3.8218426891037716
+        },
+        "Mean ITL (ms)": {
+          "exp6": 238.89,
+          "gqa_stage1": 229.76,
+          "change_percent": -3.8218426891037716
+        }
+      },
+      "comparison_exp6": {
+        "prefill": 16384,
+        "baseline_total_tokens_s": 1911.35,
+        "candidate_total_tokens_s": 1973.96,
+        "throughput_change_percent": 3.2756951892641384,
+        "baseline_ttft_ms": 267408.36,
+        "candidate_ttft_ms": 262412.54,
+        "ttft_change_percent": -1.8682362810197861,
+        "baseline_retained_runs": [
+          1912.89,
+          1911.62,
+          1909.54
+        ],
+        "baseline_cv_percent": 0.0884841681043444,
+        "candidate_retained_runs": [
+          1975.19,
+          1973.3,
+          1973.4
+        ],
+        "candidate_cv_percent": 0.053876406484642085
+      },
+      "comparison_original": {
+        "prefill": 16384,
+        "baseline_total_tokens_s": 917.27,
+        "candidate_total_tokens_s": 1973.96,
+        "throughput_change_percent": 115.1994505434605,
+        "baseline_ttft_ms": 597805.89,
+        "candidate_ttft_ms": 262412.54,
+        "ttft_change_percent": -56.10405578305695,
+        "baseline_retained_runs": [
+          917.56,
+          917.39,
+          916.87
+        ],
+        "baseline_cv_percent": 0.039191194921421604,
+        "candidate_retained_runs": [
+          1975.19,
+          1973.3,
+          1973.4
+        ],
+        "candidate_cv_percent": 0.053876406484642085
+      },
+      "accounting": {
+        "reference": {
+          "counter_delta": {
+            "num_preemptions_total": 16.0,
+            "request_queue_time_seconds_count": 512.0,
+            "request_queue_time_seconds_sum": 139085.59769784985
+          },
+          "mean_queue_seconds_all_four_rounds": 271.651558003613,
+          "server_log_samples": 491,
+          "peak_running_sampled": 31,
+          "peak_waiting_sampled": 62,
+          "peak_cache_usage_percent_sampled": 100.0,
+          "admission_last_snapshot": null,
+          "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+        },
+        "candidate": {
+          "counter_delta": {
+            "num_preemptions_total": 16.0,
+            "request_queue_time_seconds_count": 512.0,
+            "request_queue_time_seconds_sum": 134004.46684281575
+          },
+          "mean_queue_seconds_all_four_rounds": 261.7274743023745,
+          "server_log_samples": 471,
+          "peak_running_sampled": 31,
+          "peak_waiting_sampled": 62,
+          "peak_cache_usage_percent_sampled": 99.9,
+          "admission_last_snapshot": null,
+          "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+        },
+        "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+        "scheduler_policy": "original; admission telemetry must be absent"
+      },
+      "raw_sha256": "b8449361efe87951b82828d65edbdffafe089848fdc7584cfb5f86a85fdbcb35",
+      "summary_sha256": "0bffa788e89f5b781f028278795c5b758d9598d8b2dc0ff11524411f2c8991b8"
+    }
+  ],
+  "scheduler_candidate": "rejected_by_user",
+  "next_direction": "GQA paged KV access/head layout, then prefill tuning"
+}
