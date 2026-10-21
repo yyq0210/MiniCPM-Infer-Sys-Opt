@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": [
+    "original_failure_reproduced",
+    "complete_four_rounds_and_counts",
+    "official_summary_discard_first",
+    "reject_partial_rounds",
+    "reject_failed_request",
+    "all_original_route_evidence_revalidated",
+    "original_scheduler_ordinary_counters_pass",
+    "reject_withdrawn_class",
+    "reject_withdrawn_enabled",
+    "reject_withdrawn_telemetry",
+    "reject_missing_counter",
+    "reject_counter_reset"
+  ],
+  "original_files_unchanged": true,
+  "new_hashes": {
+    "analyze_schedule.py": "574042b1d7d97454691b3608f2fe0073cc760a6c0314a1cd1315bc95a769ea9f",
+    "run_split_e2e.py": "ef8943f22b68bcfb3575f54dc8f468e18218203f0b09135456313806e0d8cfb5",
+    "finish_split.py": "dabde737f28487d220606843d98c18c9556c00e482ec52ecdce60aac98a2b569"
+  }
+}

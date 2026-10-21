@@ -1,0 +1,86 @@
+{
+  "status": "complete_case_revalidated_offline",
+  "time": "2026-10-21T18:43:52.805540+08:00",
+  "measurement_completed_at": "2026-10-21T17:06:47+08:00",
+  "raw_stage_preserved": "failed",
+  "raw_error_preserved": "ValueError('No scheduler admission telemetry')",
+  "original_failure_archive_commit": "e097a1b6162321423f90c193722990aa16abf74f",
+  "case": [
+    4096,
+    1024,
+    64,
+    256
+  ],
+  "all_four_rounds_successful": true,
+  "discard_first": true,
+  "partial_runs_combined": false,
+  "checks_passed": [
+    "original_failure_reproduced",
+    "complete_four_rounds_and_counts",
+    "official_summary_discard_first",
+    "reject_partial_rounds",
+    "reject_failed_request",
+    "all_original_route_evidence_revalidated",
+    "original_scheduler_ordinary_counters_pass",
+    "reject_withdrawn_class",
+    "reject_withdrawn_enabled",
+    "reject_withdrawn_telemetry",
+    "reject_missing_counter",
+    "reject_counter_reset"
+  ],
+  "source_hashes_before_and_after": {
+    "status.json": "54d92a2d644f75ada7aaa3a326e47edccdfd223ac8176fde1ed4c22f28e8135e",
+    "stage_history.jsonl": "c3f50c4401b63a8f3ac57a1e1d34772c4c9734c7e34550b887aabe4debcf1248",
+    "candidate_validation.json": "a9a850b5b9e365b7302037fc2180e4ceb35f5a2ec7b7c47772c9c459e93026d4",
+    "environment_check.json": "d368acca6820a7e234cee3c5d0fe02803fdf2586c989eab4004160057aaaf2b4",
+    "baseline_combined.json": "c7f7ef97288dc764f5017ffd02cc2ecc4d488a1efade95542e36ed0891c0d00f",
+    "resume_provenance.json": "de01271f3bc608cbe944b58f9ff4de05b977d9d3bc8ad9ed5e5031c027bea6fa",
+    "exp6_reference.json": "e795c3e0f4e88b44879c32451e0e573aa1d73234d2f876415b712acb839c4aa0",
+    "coordinator.log": "a4a00e302edfe07ec4fa05dc235fe2076a306c6c94e7fe4992749041caa6dd02",
+    "completion_handler_status.json": "6370d52acead9acf3a34789b6d89b70699bb2b8fdb5dfebc656beaa04d8379f7",
+    "progress.json": "c8f71df9829f66df687d499fc887081ff5f8fc56e59b3848aa4931d0512586df",
+    "comparison_exp6.json": "2331ff41e4825d328fbf2e1499a850d0dd56b4c7349327e7576983ed054ba548",
+    "comparison.json": "672f8937330e7654697dc4999204e7bfbc9b7047954c2c98037a31225150c5fe",
+    "candidate_benchmark/server.command.json": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+    "candidate_benchmark/server.log": "f0e82612148906b3d35b0af2b7a3622c63f79bbfe4a00794f07004f1b1d24630",
+    "candidate_benchmark/smoke.json": "e7826f40b06c8777a4938db16cbb52c82739b8b92c92a30a7d7bb632c0146986",
+    "candidate_benchmark/route_evidence.json": "b1e6bb113dc6b2fe9691e4bf7d559f4fe4e367481a40464c8fd80fc3c2925f68",
+    "candidate_benchmark/metrics_before.prom": "fc4f8ee9629e1fa554505c521b4409e99b968d1fac61fde22c5b1f338f69b92d",
+    "candidate_benchmark/benchmark.command.json": "7ee0690c42460bb245c043ff8cfed3868cf2c0154f125f185084f5117befd68c",
+    "candidate_benchmark/benchmark.log": "c93aefbb8b520d2ace38d315471bb42e52456311ea7f38c07f1bdfd0cf2eecbf",
+    "candidate_benchmark/metrics_after.prom": "539019b99f47c33d0e9efb9951ae0603ba1a0d197d2c9226bd81407257f222af",
+    "candidate_benchmark/benchmark_results/raw_runs_20261021_162914.csv": "0c672962348c732c5dc95894b41cb5b9356d948770fbf7e7f5b655467d4c8831",
+    "candidate_benchmark/benchmark_results/summary_20261021_162914.csv": "7531fccd6055c207e3c9cb6568f8dbe6f4369286191ee1d0cca6762cedbf9b8a"
+  },
+  "helper_sha256": "574042b1d7d97454691b3608f2fe0073cc760a6c0314a1cd1315bc95a769ea9f",
+  "future_runner_sha256": "ef8943f22b68bcfb3575f54dc8f468e18218203f0b09135456313806e0d8cfb5",
+  "metrics_vs_exp6": {
+    "Total tok/s": {
+      "reference": 2686.33,
+      "candidate": 2936.01,
+      "change_percent": 9.294464939154912
+    },
+    "Output tok/s": {
+      "reference": 537.27,
+      "candidate": 587.2,
+      "change_percent": 9.2932789844957
+    },
+    "Mean TTFT (ms)": {
+      "reference": 5920.51,
+      "candidate": 5874.6,
+      "change_percent": -0.7754399536526346
+    },
+    "Mean TPOT (ms)": {
+      "reference": 111.6,
+      "candidate": 101.45,
+      "change_percent": -9.094982078853043
+    },
+    "Mean ITL (ms)": {
+      "reference": 111.6,
+      "candidate": 101.45,
+      "change_percent": -9.094982078853043
+    }
+  },
+  "selected_best_unchanged": true,
+  "accuracy_status": "deferred_by_user; math_500_not_run"
+}

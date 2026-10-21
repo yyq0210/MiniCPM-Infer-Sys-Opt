@@ -66,9 +66,15 @@ def compare(parent, candidate, output):
             "does not establish an optimization; assess throughput and latency together."
         ),
     }
-    if report["candidate"]["admission_last_snapshot"] is None:
-        raise ValueError("No scheduler admission telemetry")
-    if report["candidate"]["admission_last_snapshot"]["checked"] == 0:
-        raise ValueError("No observed multi-request admission checks")
+    # EXP-0012 uses the original scheduler. The withdrawn EXP-0010 admission
+    # telemetry must be absent; ordinary vLLM counters remain mandatory.
+    log = (Path(candidate) / "server.log").read_text(errors="replace")
+    if (report["candidate"]["admission_last_snapshot"] is not None
+            or "KVReservationAsyncScheduler" in log
+            or "KV growth admission enabled=True" in log):
+        raise ValueError("Withdrawn scheduler unexpectedly present")
+    if not report["candidate"]["server_log_samples"]:
+        raise ValueError("No ordinary scheduler samples")
+    report["scheduler_policy"] = "original; admission telemetry must be absent"
     Path(output).write_text(json.dumps(report, indent=2) + "\n")
     return report

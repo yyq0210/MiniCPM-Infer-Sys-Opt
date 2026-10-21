@@ -17,6 +17,8 @@
   "artifacts/runs/20261021_162416_official_4k/coordinator.log": "a4a00e302edfe07ec4fa05dc235fe2076a306c6c94e7fe4992749041caa6dd02",
   "artifacts/runs/20261021_162416_official_4k/environment_check.json": "d368acca6820a7e234cee3c5d0fe02803fdf2586c989eab4004160057aaaf2b4",
   "artifacts/runs/20261021_162416_official_4k/exp6_reference.json": "e795c3e0f4e88b44879c32451e0e573aa1d73234d2f876415b712acb839c4aa0",
+  "artifacts/runs/20261021_162416_official_4k/postprocessing_recovery.json": "f82b7abeb95bdff947a2d511c4f91adfb127dca7d85307fcdd3029e66a082b2e",
+  "artifacts/runs/20261021_162416_official_4k/postprocessing_recovery_schedule.json": "12dd17c1db0dad204033fc0a850b6436516a8b36235b6c77eb224bd94ada6870",
   "artifacts/runs/20261021_162416_official_4k/progress.json": "c8f71df9829f66df687d499fc887081ff5f8fc56e59b3848aa4931d0512586df",
   "artifacts/runs/20261021_162416_official_4k/resume_provenance.json": "de01271f3bc608cbe944b58f9ff4de05b977d9d3bc8ad9ed5e5031c027bea6fa",
   "artifacts/runs/20261021_162416_official_4k/retained_baseline/16k/raw_runs_20261019_203029.csv": "f3274f6fc1106fc2321c0a9a9e2a8919913ba8d04c464c1a8b7cb02628ccb0f4",

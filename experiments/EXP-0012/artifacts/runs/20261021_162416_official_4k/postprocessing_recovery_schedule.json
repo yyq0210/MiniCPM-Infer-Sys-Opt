@@ -1,0 +1,32 @@
+{
+  "reference": {
+    "counter_delta": {
+      "num_preemptions_total": 0.0,
+      "request_queue_time_seconds_count": 1024.0,
+      "request_queue_time_seconds_sum": 8930.98446171498
+    },
+    "mean_queue_seconds_all_four_rounds": 8.721664513393534,
+    "server_log_samples": 224,
+    "peak_running_sampled": 64,
+    "peak_waiting_sampled": 60,
+    "peak_cache_usage_percent_sampled": 62.0,
+    "admission_last_snapshot": null,
+    "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+  },
+  "candidate": {
+    "counter_delta": {
+      "num_preemptions_total": 0.0,
+      "request_queue_time_seconds_count": 1024.0,
+      "request_queue_time_seconds_sum": 8606.149779213592
+    },
+    "mean_queue_seconds_all_four_rounds": 8.404443143763274,
+    "server_log_samples": 218,
+    "peak_running_sampled": 64,
+    "peak_waiting_sampled": 61,
+    "peak_cache_usage_percent_sampled": 62.0,
+    "admission_last_snapshot": null,
+    "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+  },
+  "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+  "scheduler_policy": "original; admission telemetry must be absent"
+}

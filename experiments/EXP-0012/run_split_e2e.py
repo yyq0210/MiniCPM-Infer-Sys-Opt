@@ -334,6 +334,8 @@ def main():
     STATE.update(pid=os.getpid(), process_start_ticks=start_ticks,
                  run_directory=str(RUN), started_at=datetime.now().astimezone().isoformat(),
                  runner_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                 analysis_sha256=hashlib.sha256((EXP/'analyze_schedule.py').read_bytes()).hexdigest(),
+                 postprocessing_version=2,
                  route_gate_version=3,
                  selected_cases=[list(c) for c in selected_cases],
                  planned_finish_before=args.finish_before.isoformat() if args.finish_before else None)

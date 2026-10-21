@@ -158,7 +158,7 @@ def archive(run, state):
              f"- 完整性检查：{'通过' if integrity['complete'] else '尚未通过/未完成'}。",
              f"- 本次完整负载组：{state.get('selected_cases')}；四轮，舍弃第一轮。整体两组需分别完成并校验版本后汇总。",
              '- 原始基线 4K 使用中止前已完整完成的四轮；16K 使用恢复后的四轮，两个服务会话的来源均保留。',
-             '- 本次候选在 EXP-0006 融合版本上增加完整输出上界的 GQA decode 单级流水；下表对照原始基线，增量收益另见 comparison_exp6.json。',
+             '- 本次候选在 EXP-0006 融合版本上显式选择 GQA decode 单级流水，保持原调度；下表对照原始基线，增量收益另见 comparison_exp6.json。',
              '- 完整 MATH500 精度按用户要求暂缓，不声明赛事精度达标。',
              f'- 原始结果、日志、命令及哈希：[本次归档](artifacts/runs/{run.name}/)。', '']
     if integrity['complete']:
@@ -190,7 +190,7 @@ def archive(run, state):
             f"| 抢占计数增量 | {before['counter_delta']['num_preemptions_total']} "
             f"| {after['counter_delta']['num_preemptions_total']} |")
         lines += ['', '计数器增量包含首轮；吞吐汇总丢弃首轮，两者口径不同。'
-                  '采样峰值不是连续观测的精确峰值。准入累计统计与原始数据见 scheduler_comparison.json。']
+                  '采样峰值不是连续观测的精确峰值。保持原调度，劣化调度的准入日志必须不存在；原始数据见 scheduler_comparison.json。']
     else:
         lines += ['未得到可报告的完整官方 A/B。保留失败现场，不把不完整数据写成成功。',
                   '', '状态/错误：'+sanitize(str(state.get('error') or integrity.get('error') or '运行尚未结束'))]
