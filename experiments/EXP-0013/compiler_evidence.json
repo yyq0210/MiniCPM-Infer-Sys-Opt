@@ -1,0 +1,4 @@
+{
+  "compiler_sha256": "a0d2bbda2f779b528147a238ff6fc558d026478f72d3d12d51d27f48f1aa570a",
+  "min_dot_size_source": "def min_dot_size(target: GPUTarget):\n\n    def check_dot_compatibility(lhs_type, rhs_type) -> Tuple[int, int, int]:  # [m, n, k]\n        lhs_bitwidth = lhs_type.scalar.primitive_bitwidth\n        rhs_bitwidth = rhs_type.scalar.primitive_bitwidth\n        assert lhs_bitwidth == rhs_bitwidth, \"lhs and rhs bitwidth must be the same\"\n        # For small M/N the input we can still use tensorcores with padding.\n        if lhs_bitwidth == 8:\n            return (1, 1, 32)\n        else:\n            return (1, 1, 16)\n\n    return check_dot_compatibility"
+}

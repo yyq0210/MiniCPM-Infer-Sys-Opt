@@ -1,0 +1,2 @@
+{"time": "2026-10-21T20:19:17.641462+08:00", "action": "record_hypothesis", "parents": {"vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6", "FlagGems": "19aa059af4ce456ef2e34e3bb83eb949d7e7b702"}, "variants": 8, "selected_for_serving": false}
+{"time": "2026-10-21T20:19:29.065477+08:00", "action": "freeze_candidate_and_scripts", "commits": {"vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6", "FlagGems": "1c526ca99d412e203ed3caa8b1663566976ea38c"}, "fork_verified": true}

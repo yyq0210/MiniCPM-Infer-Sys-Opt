@@ -1,0 +1,6 @@
+{
+  "parent_source_sha256": "d58e472b65e09c771448dbb461ced39dc4a6cc9cfab03d2a6ac7ab25f2d7c459",
+  "candidate_source_sha256": "6b8259f322657e4f6036c33327887a1a21386ad368460a4459288aa3bcadef4b",
+  "defaults_unchanged": true,
+  "timing_reference": "EXP-0012 with explicit decode_warps=4, decode_stages=1, segments=16"
+}
