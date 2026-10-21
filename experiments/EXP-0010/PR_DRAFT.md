@@ -32,6 +32,7 @@ FlagOS S2 赛题 2；队名 LeanScale。
 - 使用实例级分配器代理，不修改共享 vLLM 安装或全局类。
 - 保留原分配与释放实现，正确计算共享和可驱逐前缀块；准入失败不改变缓存状态。
 - 首请求和不支持的请求/配置回退原逻辑；保留 FCFS/priority 行为。
+- 遵循实际 `schedule(self, throttle_prefills=False)` 接口，启用/禁用路径均透传限流参数，异常时恢复原 manager。
 - 增加准入计数日志、独立 CPU 分配器测试与完整官方测评的串行续跑脚本。
 - 本分支建立在 EXP-0006 RoPE＋KV 融合候选之上；父分支算子代码保持不变。
 
@@ -39,7 +40,8 @@ FlagOS S2 赛题 2；队名 LeanScale。
 
 - Iluvatar 服务器，vLLM `0.24.0+empty`，PyTorch `2.10.0+corex.4.5.0`。
 - `python3 tests/standalone/validate_kv_reservation_cpu.py /tmp/kv-admission.json`：
-  13 项 CPU 检查通过；使用真实 KVCacheManager，未初始化 CUDA。
+  14 项 CPU 检查通过；使用真实 KVCacheManager，未初始化 CUDA。
+- 新增 EngineCore 调用契约检查：位置/关键字参数、True/False、启用/禁用路径与异常恢复。
 - 生命周期检查包含启用/关闭 prefix cache 各 96 条不同长度请求，分块 prefill、
   decode、取消、释放和后续准入，运行请求未出现容量分配失败。
 - 官方 16K 优先，4K 作回归检查；均四轮、弃首轮。尚无本调度候选的性能结论。
