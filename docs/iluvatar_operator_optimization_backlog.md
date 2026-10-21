@@ -269,3 +269,8 @@ KV 压缩另立实验：真实物理块回收、搬移和 metadata 成本必须�
 2026-10-20 已按用户要求安排独立 profiling，等待当前 EXP-0006 16K 完成归档后执行，再恢复 EXP-0007。使用官方 4096/1024/64/256 请求集，分别采集 FULL_DECODE_ONLY 和用于算子归属的 NONE 模式，保留实际 batch/phase/padding、GPU kernel 时间和 worker CPU self time。当前没有新耗时结论。
 
 [采集方案与脚本](../experiments/EXP-0008/README.md) · [队列状态快照](../experiments/EXP-0008/STATUS.json)。结果将保存到 experiments/EXP-0008/RESULTS.md；原始 trace 留在服务器，摘要与哈希自动推送。内核名称或相关性不足时保留未归属，不强行将 GEMM 分配到某个线性层。该采集仅覆盖 worker 的 CPU 活动，不能当作整个调度器进程的 CPU profile。
+
+
+## 2026-10-21：首次恢复的 4K 实测热点
+
+EXP-0009 恢复了昨晚 EXP-0008 的三个原始 trace。FULL_DECODE_ONLY 的 steady 窗口实际为 16 个 mixed 迭代：GQA 54.58%、gate/up 20.33%、down 10.54%、QKV 4.40%、O 3.52%、SwiGLU 1.99%、norm 1.95%、RoPE+KV 0.49%。百分比是该窗口可见 kernel 总工作量占比，不是整轮或请求时延占比。纯 decode 的 Graph 内部 kernel 未被当前 profiler 捕获，不能按外围算子占比排名。后续优先细分 prefill/decode GQA 内核，再看 gate/up 与 down GEMM；完整记录和 CSV 见 [恢复与补测记录](restart_20261021.md) 及 [逐窗口数据](../experiments/EXP-0009/artifacts/recovered_20261020/RESULTS.md)。

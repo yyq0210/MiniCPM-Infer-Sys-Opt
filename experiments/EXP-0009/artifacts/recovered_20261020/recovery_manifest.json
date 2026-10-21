@@ -1,0 +1,512 @@
+[
+  {
+    "source": "/workspace/LeanScale/artifacts/EXP-0008/20261020_195936_profile_4k/FULL_DECODE_ONLY/traces/initial/rank0.1792499545054932987.pt.trace.json.gz",
+    "source_sha256": "70e2c949078c408c3f370d2651c11602739c295b07ff613f0e0340f6c05da45c",
+    "derived": "/workspace/LeanScale/artifacts/EXP-0009/recovered_20261020/FULL_DECODE_ONLY/traces/initial/rank0.1792499545054932987.pt.trace.json.gz",
+    "derived_sha256": "1006c8ed736aa1a7d47929195683964db5cfc9d5c5edb0355bc284e5aee0108f",
+    "changes": [
+      {
+        "line": 822,
+        "step": 1,
+        "kind": "batch"
+      },
+      {
+        "line": 829,
+        "step": 1,
+        "kind": "padding"
+      },
+      {
+        "line": 10272,
+        "step": 2,
+        "kind": "batch"
+      },
+      {
+        "line": 10279,
+        "step": 2,
+        "kind": "padding"
+      },
+      {
+        "line": 19281,
+        "step": 3,
+        "kind": "batch"
+      },
+      {
+        "line": 19288,
+        "step": 3,
+        "kind": "padding"
+      },
+      {
+        "line": 28563,
+        "step": 4,
+        "kind": "batch"
+      },
+      {
+        "line": 28570,
+        "step": 4,
+        "kind": "padding"
+      },
+      {
+        "line": 37621,
+        "step": 5,
+        "kind": "batch"
+      },
+      {
+        "line": 37628,
+        "step": 5,
+        "kind": "padding"
+      },
+      {
+        "line": 46805,
+        "step": 6,
+        "kind": "batch"
+      },
+      {
+        "line": 46812,
+        "step": 6,
+        "kind": "padding"
+      },
+      {
+        "line": 55863,
+        "step": 7,
+        "kind": "batch"
+      },
+      {
+        "line": 55870,
+        "step": 7,
+        "kind": "padding"
+      },
+      {
+        "line": 65103,
+        "step": 8,
+        "kind": "batch"
+      },
+      {
+        "line": 65110,
+        "step": 8,
+        "kind": "padding"
+      },
+      {
+        "line": 74161,
+        "step": 9,
+        "kind": "batch"
+      },
+      {
+        "line": 74168,
+        "step": 9,
+        "kind": "padding"
+      },
+      {
+        "line": 83345,
+        "step": 10,
+        "kind": "batch"
+      },
+      {
+        "line": 83352,
+        "step": 10,
+        "kind": "padding"
+      },
+      {
+        "line": 92403,
+        "step": 11,
+        "kind": "batch"
+      },
+      {
+        "line": 92410,
+        "step": 11,
+        "kind": "padding"
+      },
+      {
+        "line": 101531,
+        "step": 12,
+        "kind": "batch"
+      },
+      {
+        "line": 101538,
+        "step": 12,
+        "kind": "padding"
+      },
+      {
+        "line": 110589,
+        "step": 13,
+        "kind": "batch"
+      },
+      {
+        "line": 110596,
+        "step": 13,
+        "kind": "padding"
+      },
+      {
+        "line": 119717,
+        "step": 14,
+        "kind": "batch"
+      },
+      {
+        "line": 119724,
+        "step": 14,
+        "kind": "padding"
+      },
+      {
+        "line": 128775,
+        "step": 15,
+        "kind": "batch"
+      },
+      {
+        "line": 128782,
+        "step": 15,
+        "kind": "padding"
+      },
+      {
+        "line": 137462,
+        "step": 16,
+        "kind": "batch"
+      },
+      {
+        "line": 137469,
+        "step": 16,
+        "kind": "padding"
+      }
+    ],
+    "event_count": 54579,
+    "changed_fields": "Only JSON escaping of LS_META annotation names; no timestamps/durations changed"
+  },
+  {
+    "source": "/workspace/LeanScale/artifacts/EXP-0008/20261020_195936_profile_4k/FULL_DECODE_ONLY/traces/late/rank0.1792499745012062748.pt.trace.json.gz",
+    "source_sha256": "22ef7846c44ccfd2d0521a7aa79d34c9d5e686eb242a72efe30b3d9020f39b38",
+    "derived": "/workspace/LeanScale/artifacts/EXP-0009/recovered_20261020/FULL_DECODE_ONLY/traces/late/rank0.1792499745012062748.pt.trace.json.gz",
+    "derived_sha256": "6cdd46d0ebb6247bacb9d9a0b8da02047b12245943097a68b83b80d808d6755d",
+    "changes": [
+      {
+        "line": 710,
+        "step": 691,
+        "kind": "batch"
+      },
+      {
+        "line": 717,
+        "step": 691,
+        "kind": "padding"
+      },
+      {
+        "line": 2068,
+        "step": 692,
+        "kind": "batch"
+      },
+      {
+        "line": 2075,
+        "step": 692,
+        "kind": "padding"
+      },
+      {
+        "line": 3426,
+        "step": 693,
+        "kind": "batch"
+      },
+      {
+        "line": 3433,
+        "step": 693,
+        "kind": "padding"
+      },
+      {
+        "line": 4784,
+        "step": 694,
+        "kind": "batch"
+      },
+      {
+        "line": 4791,
+        "step": 694,
+        "kind": "padding"
+      },
+      {
+        "line": 6142,
+        "step": 695,
+        "kind": "batch"
+      },
+      {
+        "line": 6149,
+        "step": 695,
+        "kind": "padding"
+      },
+      {
+        "line": 7500,
+        "step": 696,
+        "kind": "batch"
+      },
+      {
+        "line": 7507,
+        "step": 696,
+        "kind": "padding"
+      },
+      {
+        "line": 8858,
+        "step": 697,
+        "kind": "batch"
+      },
+      {
+        "line": 8865,
+        "step": 697,
+        "kind": "padding"
+      },
+      {
+        "line": 10216,
+        "step": 698,
+        "kind": "batch"
+      },
+      {
+        "line": 10223,
+        "step": 698,
+        "kind": "padding"
+      },
+      {
+        "line": 11574,
+        "step": 699,
+        "kind": "batch"
+      },
+      {
+        "line": 11581,
+        "step": 699,
+        "kind": "padding"
+      },
+      {
+        "line": 12932,
+        "step": 700,
+        "kind": "batch"
+      },
+      {
+        "line": 12939,
+        "step": 700,
+        "kind": "padding"
+      },
+      {
+        "line": 14290,
+        "step": 701,
+        "kind": "batch"
+      },
+      {
+        "line": 14297,
+        "step": 701,
+        "kind": "padding"
+      },
+      {
+        "line": 15648,
+        "step": 702,
+        "kind": "batch"
+      },
+      {
+        "line": 15655,
+        "step": 702,
+        "kind": "padding"
+      },
+      {
+        "line": 17006,
+        "step": 703,
+        "kind": "batch"
+      },
+      {
+        "line": 17013,
+        "step": 703,
+        "kind": "padding"
+      },
+      {
+        "line": 18364,
+        "step": 704,
+        "kind": "batch"
+      },
+      {
+        "line": 18371,
+        "step": 704,
+        "kind": "padding"
+      },
+      {
+        "line": 19722,
+        "step": 705,
+        "kind": "batch"
+      },
+      {
+        "line": 19729,
+        "step": 705,
+        "kind": "padding"
+      },
+      {
+        "line": 21080,
+        "step": 706,
+        "kind": "batch"
+      },
+      {
+        "line": 21087,
+        "step": 706,
+        "kind": "padding"
+      }
+    ],
+    "event_count": 5505,
+    "changed_fields": "Only JSON escaping of LS_META annotation names; no timestamps/durations changed"
+  },
+  {
+    "source": "/workspace/LeanScale/artifacts/EXP-0008/20261020_195936_profile_4k/FULL_DECODE_ONLY/traces/steady/rank0.1792499625236106591.pt.trace.json.gz",
+    "source_sha256": "550e6347d262d670aad2df42302250b00065e446d4cd4857de658d7d92e2a683",
+    "derived": "/workspace/LeanScale/artifacts/EXP-0009/recovered_20261020/FULL_DECODE_ONLY/traces/steady/rank0.1792499625236106591.pt.trace.json.gz",
+    "derived_sha256": "6d55c41f1fa733a6131d47e57b00ebffa6b18d94c6e249a7ec56bc1810c11b4f",
+    "changes": [
+      {
+        "line": 871,
+        "step": 61,
+        "kind": "batch"
+      },
+      {
+        "line": 878,
+        "step": 61,
+        "kind": "padding"
+      },
+      {
+        "line": 9544,
+        "step": 62,
+        "kind": "batch"
+      },
+      {
+        "line": 9551,
+        "step": 62,
+        "kind": "padding"
+      },
+      {
+        "line": 18147,
+        "step": 63,
+        "kind": "batch"
+      },
+      {
+        "line": 18154,
+        "step": 63,
+        "kind": "padding"
+      },
+      {
+        "line": 26722,
+        "step": 64,
+        "kind": "batch"
+      },
+      {
+        "line": 26729,
+        "step": 64,
+        "kind": "padding"
+      },
+      {
+        "line": 35325,
+        "step": 65,
+        "kind": "batch"
+      },
+      {
+        "line": 35332,
+        "step": 65,
+        "kind": "padding"
+      },
+      {
+        "line": 44082,
+        "step": 66,
+        "kind": "batch"
+      },
+      {
+        "line": 44089,
+        "step": 66,
+        "kind": "padding"
+      },
+      {
+        "line": 52685,
+        "step": 67,
+        "kind": "batch"
+      },
+      {
+        "line": 52692,
+        "step": 67,
+        "kind": "padding"
+      },
+      {
+        "line": 61358,
+        "step": 68,
+        "kind": "batch"
+      },
+      {
+        "line": 61365,
+        "step": 68,
+        "kind": "padding"
+      },
+      {
+        "line": 69961,
+        "step": 69,
+        "kind": "batch"
+      },
+      {
+        "line": 69968,
+        "step": 69,
+        "kind": "padding"
+      },
+      {
+        "line": 78634,
+        "step": 70,
+        "kind": "batch"
+      },
+      {
+        "line": 78641,
+        "step": 70,
+        "kind": "padding"
+      },
+      {
+        "line": 87237,
+        "step": 71,
+        "kind": "batch"
+      },
+      {
+        "line": 87244,
+        "step": 71,
+        "kind": "padding"
+      },
+      {
+        "line": 95994,
+        "step": 72,
+        "kind": "batch"
+      },
+      {
+        "line": 96001,
+        "step": 72,
+        "kind": "padding"
+      },
+      {
+        "line": 104597,
+        "step": 73,
+        "kind": "batch"
+      },
+      {
+        "line": 104604,
+        "step": 73,
+        "kind": "padding"
+      },
+      {
+        "line": 113270,
+        "step": 74,
+        "kind": "batch"
+      },
+      {
+        "line": 113277,
+        "step": 74,
+        "kind": "padding"
+      },
+      {
+        "line": 121873,
+        "step": 75,
+        "kind": "batch"
+      },
+      {
+        "line": 121880,
+        "step": 75,
+        "kind": "padding"
+      },
+      {
+        "line": 130546,
+        "step": 76,
+        "kind": "batch"
+      },
+      {
+        "line": 130553,
+        "step": 76,
+        "kind": "padding"
+      }
+    ],
+    "event_count": 51823,
+    "changed_fields": "Only JSON escaping of LS_META annotation names; no timestamps/durations changed"
+  }
+]
