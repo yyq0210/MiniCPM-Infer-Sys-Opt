@@ -43,3 +43,16 @@ s=replace(s,"'experiments: archive EXP-0013 GQA parameter screening'","'experime
 s=replace(s,"paths=[str(dest.relative_to(REPO))]", "paths=[str(dest.relative_to(REPO))]\n        assert not git('diff','--cached','--name-only'),'Existing staged changes'")
 ast.parse(s);(HERE/'run_screen.py').write_text(s)
 print('Built trial.py and run_screen.py')
+
+s=(OLD/'validate_extended.py').read_text()
+s=replace(s,'w4/stage1/split16','paged-index broadcast / 8 query rows at stage1')
+s=replace(s,'CFG=dict(decode_warps=4,decode_stages=1,segments=16)',
+            'CFG=dict(decode_warps=4,decode_stages=1,segments=16,decode_layout=1,decode_rows=8)')
+s=replace(s,'baseline.paged_gqa(**x)','baseline.paged_gqa(**x,decode_warps=4,decode_stages=1,segments=16)')
+ast.parse(s);(HERE/'validate_extended.py').write_text(s)
+s=(OLD/'run_extended.py').read_text().replace('EXP-0011','EXP-0013')
+s=replace(s,"'w4_t1_s16'","'layout1_rows8'")
+s=replace(s,"'config':{'decode_warps':4,'decode_stages':1,'segments':16}",
+            "'config':{'decode_warps':4,'decode_stages':1,'segments':16,'decode_layout':1,'decode_rows':8}")
+ast.parse(s);(HERE/'run_extended.py').write_text(s)
+print('Built extended validation scripts')

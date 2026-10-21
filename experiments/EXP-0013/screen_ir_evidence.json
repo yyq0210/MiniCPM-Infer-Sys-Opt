@@ -1,0 +1,56 @@
+{
+  "layout0_rows16": {
+    "ttgir_sha256": "151d0994c44390f5dc562731330c2758d966ad7f9a7527c40308ea4e8fd3182b",
+    "mma_layout": [
+      "#mma = #ttg.iluvatar_mma<{versionMajor = 1, versionMinor = 0, warpsPerCTA = [4, 1], instrShape = [16, 16, 16]}>"
+    ],
+    "page_related_loads": [
+      "%blocks_106 = tt.load %blocks_102, %blocks_104, %cst_5 {boundaryCheck = array<i32>, cache = 1 : i32, evict = 1 : i32, isVolatile = false} : tensor<32x!tt.ptr<i32>, #ttg.slice<{dim = 0, parent = #blocked1}>> loc(#loc168)",
+      "%blocks_107 = tt.load %blocks_103, %blocks_105, %cst_6 {boundaryCheck = array<i32>, cache = 1 : i32, evict = 1 : i32, isVolatile = false} : tensor<32x!tt.ptr<i32>, #ttg.slice<{dim = 1, parent = #blocked}>> loc(#loc168)"
+    ],
+    "query_and_accumulator_shapes": [
+      "%cst_14 = arith.constant dense<0.000000e+00> : tensor<16x128xbf16, #blocked> loc(#loc1)",
+      "%cst_21 = arith.constant dense<0.000000e+00> : tensor<16x128xf32, #mma> loc(#loc1)"
+    ]
+  },
+  "layout1_rows16": {
+    "ttgir_sha256": "748ee69f14cf9c03ff5c0965ce6284b239c8347f88db642491d65705b41d8823",
+    "mma_layout": [
+      "#mma = #ttg.iluvatar_mma<{versionMajor = 1, versionMinor = 0, warpsPerCTA = [4, 1], instrShape = [16, 16, 16]}>"
+    ],
+    "page_related_loads": [
+      "%page_blocks_104 = tt.load %page_blocks_101, %page_blocks_103, %cst_4 {boundaryCheck = array<i32>, cache = 1 : i32, evict = 1 : i32, isVolatile = false} : tensor<2x!tt.ptr<i32>, #ttg.slice<{dim = 1, parent = #linear}>> loc(#loc177)"
+    ],
+    "query_and_accumulator_shapes": [
+      "%cst_14 = arith.constant dense<0.000000e+00> : tensor<16x128xbf16, #blocked> loc(#loc1)",
+      "%cst_21 = arith.constant dense<0.000000e+00> : tensor<16x128xf32, #mma> loc(#loc1)"
+    ]
+  },
+  "layout0_rows8": {
+    "ttgir_sha256": "0f396eb386d2e35a08049850027907dc99229f6beb31ea570812818adf830c1c",
+    "mma_layout": [
+      "#mma = #ttg.iluvatar_mma<{versionMajor = 1, versionMinor = 0, warpsPerCTA = [4, 1], instrShape = [16, 16, 16]}>"
+    ],
+    "page_related_loads": [
+      "%blocks_106 = tt.load %blocks_102, %blocks_104, %cst_5 {boundaryCheck = array<i32>, cache = 1 : i32, evict = 1 : i32, isVolatile = false} : tensor<32x!tt.ptr<i32>, #ttg.slice<{dim = 0, parent = #blocked1}>> loc(#loc168)",
+      "%blocks_107 = tt.load %blocks_103, %blocks_105, %cst_6 {boundaryCheck = array<i32>, cache = 1 : i32, evict = 1 : i32, isVolatile = false} : tensor<32x!tt.ptr<i32>, #ttg.slice<{dim = 1, parent = #blocked}>> loc(#loc168)"
+    ],
+    "query_and_accumulator_shapes": [
+      "%cst_14 = arith.constant dense<0.000000e+00> : tensor<8x128xbf16, #blocked> loc(#loc1)",
+      "%cst_21 = arith.constant dense<0.000000e+00> : tensor<8x128xf32, #mma> loc(#loc1)"
+    ]
+  },
+  "layout1_rows8": {
+    "ttgir_sha256": "a027d80883f266b4b8f93e408ecd68a5da66dce27e975b3056fea7d12bb46b80",
+    "mma_layout": [
+      "#mma = #ttg.iluvatar_mma<{versionMajor = 1, versionMinor = 0, warpsPerCTA = [4, 1], instrShape = [16, 16, 16]}>"
+    ],
+    "page_related_loads": [
+      "%page_blocks_104 = tt.load %page_blocks_101, %page_blocks_103, %cst_4 {boundaryCheck = array<i32>, cache = 1 : i32, evict = 1 : i32, isVolatile = false} : tensor<2x!tt.ptr<i32>, #ttg.slice<{dim = 1, parent = #linear}>> loc(#loc177)"
+    ],
+    "query_and_accumulator_shapes": [
+      "%cst_14 = arith.constant dense<0.000000e+00> : tensor<8x128xbf16, #blocked> loc(#loc1)",
+      "%cst_21 = arith.constant dense<0.000000e+00> : tensor<8x128xf32, #mma> loc(#loc1)"
+    ]
+  }
+}
