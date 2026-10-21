@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "actual_class_enabled_admitted_and_complete_graphs",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_actual_class",
+      "passed": true
+    },
+    {
+      "name": "reject_disabled_controller",
+      "passed": true
+    },
+    {
+      "name": "reject_no_runtime_admission",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_GQA_layer",
+      "passed": true
+    },
+    {
+      "name": "reject_unexercised_capacity_gate_after_benchmark",
+      "passed": true
+    },
+    {
+      "name": "capacity_postcondition_accepts_observed_check",
+      "passed": true
+    }
+  ],
+  "scope": "CPU log/compiled-graph route validation; synthetic mutations are negative fixtures, not new GPU results",
+  "old_run": "/workspace/LeanScale/artifacts/EXP-0010/20261021_140011_official_16k",
+  "old_server_log_sha256": "7b3bfde1d4b208ee539ade2825f55b2916797ad9b6c03d25e0941c6e76f2fca7",
+  "old_runner_sha256": "d222ae64489ba01f7fc13af791faa04afc66f8fe86727f0dcc75c641c96174d2",
+  "new_runner_sha256": "408ff0e2286841d3cd83f88d0964fcc24ee25f6122c3e1833087bf0aeaefe6fa"
+}

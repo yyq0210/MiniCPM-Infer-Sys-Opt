@@ -1,0 +1,448 @@
+{
+  "trace_sha256": "6842444fa6dbf41d7c072e84a6852744ec0ebcb21bf7632feeb36bb6850f510f",
+  "trace_bytes": 1007239,
+  "kernel_events": 8188,
+  "kernel_sum_us": 4139823.744,
+  "kernel_interval_union_us": 4139823.662109375,
+  "copy_events": 160,
+  "copy_sum_us": 620.041,
+  "correlations": {
+    "linked_to_step": 8188
+  },
+  "profiled_step_phases": {
+    "prefill": 2,
+    "mixed": 14
+  },
+  "model_kernel_visibility": true,
+  "top_kernels": [
+    {
+      "phase": "mixed",
+      "kernel": "_attention",
+      "calls": 1176,
+      "total_us": 1833394.449,
+      "mean_us": 1559.0088852040817,
+      "median_us": 879.9745,
+      "p95_us": 4345.361,
+      "percent_kernel_sum": 44.28677553379432
+    },
+    {
+      "phase": "mixed",
+      "kernel": "mm_kernel",
+      "calls": 2352,
+      "total_us": 1572081.216,
+      "mean_us": 668.4018775510204,
+      "median_us": 510.569,
+      "p95_us": 1413.007,
+      "percent_kernel_sum": 37.974592958902555
+    },
+    {
+      "phase": "prefill",
+      "kernel": "_attention",
+      "calls": 168,
+      "total_us": 249686.326,
+      "mean_us": 1486.228130952381,
+      "median_us": 774.9245000000001,
+      "p95_us": 4381.85,
+      "percent_kernel_sum": 6.031327453539046
+    },
+    {
+      "phase": "prefill",
+      "kernel": "mm_kernel",
+      "calls": 336,
+      "total_us": 224753.633,
+      "mean_us": 668.9096220238096,
+      "median_us": 512.8305,
+      "p95_us": 1411.584,
+      "percent_kernel_sum": 5.42906285142559
+    },
+    {
+      "phase": "mixed",
+      "kernel": "triton_poi_fused_mul_silu_slice_1",
+      "calls": 588,
+      "total_us": 81062.555,
+      "mean_us": 137.8614880952381,
+      "median_us": 137.892,
+      "p95_us": 140.334,
+      "percent_kernel_sum": 1.9581160941329196
+    },
+    {
+      "phase": "mixed",
+      "kernel": "triton_red_fused_fused_add_rms_norm_2",
+      "calls": 588,
+      "total_us": 48786.973,
+      "mean_us": 82.97104251700681,
+      "median_us": 83.40950000000001,
+      "p95_us": 85.8,
+      "percent_kernel_sum": 1.1784794719994727
+    },
+    {
+      "phase": "mixed",
+      "kernel": "triton_red_fused_fused_add_rms_norm_0",
+      "calls": 588,
+      "total_us": 29481.395,
+      "mean_us": 50.1384268707483,
+      "median_us": 50.0455,
+      "p95_us": 51.534,
+      "percent_kernel_sum": 0.7121413089803275
+    },
+    {
+      "phase": "mixed",
+      "kernel": "_rope_kv",
+      "calls": 588,
+      "total_us": 19886.481,
+      "mean_us": 33.820545918367344,
+      "median_us": 33.792,
+      "p95_us": 35.203,
+      "percent_kernel_sum": 0.4803702338492602
+    },
+    {
+      "phase": "mixed",
+      "kernel": "sweep",
+      "calls": 96,
+      "total_us": 17669.085,
+      "mean_us": 184.05296875,
+      "median_us": 184.9475,
+      "p95_us": 277.476,
+      "percent_kernel_sum": 0.4268076636259807
+    },
+    {
+      "phase": "mixed",
+      "kernel": "linear_kernel",
+      "calls": 14,
+      "total_us": 11954.968,
+      "mean_us": 853.9262857142858,
+      "median_us": 853.517,
+      "p95_us": 862.434,
+      "percent_kernel_sum": 0.28877963747434365
+    },
+    {
+      "phase": "prefill",
+      "kernel": "triton_poi_fused_mul_silu_slice_1",
+      "calls": 84,
+      "total_us": 11585.617,
+      "mean_us": 137.9240119047619,
+      "median_us": 137.892,
+      "p95_us": 140.123,
+      "percent_kernel_sum": 0.2798577358949512
+    },
+    {
+      "phase": "prefill",
+      "kernel": "triton_red_fused_fused_add_rms_norm_2",
+      "calls": 84,
+      "total_us": 6972.517,
+      "mean_us": 83.00615476190477,
+      "median_us": 83.1725,
+      "p95_us": 85.65,
+      "percent_kernel_sum": 0.1684254555548537
+    },
+    {
+      "phase": "mixed",
+      "kernel": "compute_global_hist_kernel",
+      "calls": 12,
+      "total_us": 6280.005,
+      "mean_us": 523.33375,
+      "median_us": 521.734,
+      "p95_us": 721.903,
+      "percent_kernel_sum": 0.15169740038091825
+    },
+    {
+      "phase": "mixed",
+      "kernel": "_reduce",
+      "calls": 588,
+      "total_us": 4332.024,
+      "mean_us": 7.367387755102041,
+      "median_us": 7.35,
+      "p95_us": 8.23,
+      "percent_kernel_sum": 0.10464271591945343
+    },
+    {
+      "phase": "prefill",
+      "kernel": "triton_red_fused_fused_add_rms_norm_0",
+      "calls": 84,
+      "total_us": 4297.97,
+      "mean_us": 51.166309523809524,
+      "median_us": 51.107,
+      "p95_us": 52.861,
+      "percent_kernel_sum": 0.10382012051187463
+    },
+    {
+      "phase": "mixed",
+      "kernel": "_topk_topp_kernel",
+      "calls": 2,
+      "total_us": 3411.126,
+      "mean_us": 1705.563,
+      "median_us": 1705.563,
+      "p95_us": 1644.769,
+      "percent_kernel_sum": 0.08239785582523583
+    },
+    {
+      "phase": "prefill",
+      "kernel": "_rope_kv",
+      "calls": 84,
+      "total_us": 2854.807,
+      "mean_us": 33.98579761904762,
+      "median_us": 33.919,
+      "p95_us": 35.465,
+      "percent_kernel_sum": 0.06895962670240677
+    },
+    {
+      "phase": "prefill",
+      "kernel": "linear_kernel",
+      "calls": 2,
+      "total_us": 1671.499,
+      "mean_us": 835.7495,
+      "median_us": 835.7495,
+      "p95_us": 833.938,
+      "percent_kernel_sum": 0.04037609094886142
+    },
+    {
+      "phase": "prefill",
+      "kernel": "sweep",
+      "calls": 16,
+      "total_us": 974.27,
+      "mean_us": 60.891875,
+      "median_us": 60.719,
+      "p95_us": 62.661,
+      "percent_kernel_sum": 0.023534093725899458
+    },
+    {
+      "phase": "mixed",
+      "kernel": "softmax_kernel_inner",
+      "calls": 26,
+      "total_us": 951.097,
+      "mean_us": 36.580653846153844,
+      "median_us": 36.461,
+      "p95_us": 42.942,
+      "percent_kernel_sum": 0.02297433559528857
+    }
+  ],
+  "top_operators": [
+    {
+      "phase": "mixed",
+      "operator": "OP05_GQA_prefill_branch",
+      "mapping": "verified_fixed_S16_grid",
+      "calls": 588,
+      "total_us": 1752648.998,
+      "mean_us": 2980.695574829932,
+      "median_us": 3016.6940000000004,
+      "p95_us": 4349.861,
+      "percent_kernel_sum": 42.3363192826791
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP09_gate_up",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 588,
+      "total_us": 824110.823,
+      "mean_us": 1401.549018707483,
+      "median_us": 1401.6745,
+      "p95_us": 1423.738,
+      "percent_kernel_sum": 19.90690604145682
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP11_down",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 588,
+      "total_us": 426491.317,
+      "mean_us": 725.325369047619,
+      "median_us": 725.1034999999999,
+      "p95_us": 734.173,
+      "percent_kernel_sum": 10.302161236166869
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP05_GQA_prefill_branch",
+      "mapping": "verified_fixed_S16_grid",
+      "calls": 84,
+      "total_us": 249216.346,
+      "mean_us": 2966.8612619047617,
+      "median_us": 2957.8244999999997,
+      "p95_us": 4384.35,
+      "percent_kernel_sum": 6.0199747962989605
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP03_QKV",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 588,
+      "total_us": 178021.881,
+      "mean_us": 302.75830102040817,
+      "median_us": 302.7,
+      "p95_us": 306.526,
+      "percent_kernel_sum": 4.30022851233736
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP08_O",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 588,
+      "total_us": 143457.195,
+      "mean_us": 243.97482142857143,
+      "median_us": 244.115,
+      "p95_us": 246.376,
+      "percent_kernel_sum": 3.4652971689415004
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP09_gate_up",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 84,
+      "total_us": 117790.362,
+      "mean_us": 1402.2662142857143,
+      "median_us": 1402.703,
+      "p95_us": 1427.242,
+      "percent_kernel_sum": 2.84529896159753
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP10_SwiGLU_or_compiler_fusion",
+      "mapping": "kernel_name",
+      "calls": 588,
+      "total_us": 81062.555,
+      "mean_us": 137.8614880952381,
+      "median_us": 137.892,
+      "p95_us": 140.334,
+      "percent_kernel_sum": 1.9581160941329196
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP06_GQA_decode_branch",
+      "mapping": "verified_fixed_S16_grid",
+      "calls": 588,
+      "total_us": 80745.451,
+      "mean_us": 137.3221955782313,
+      "median_us": 141.686,
+      "p95_us": 220.753,
+      "percent_kernel_sum": 1.9504562511152166
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP02_norm_or_fused_norm",
+      "mapping": "kernel_name",
+      "calls": 1190,
+      "total_us": 78949.583,
+      "mean_us": 66.34418739495798,
+      "median_us": 52.2705,
+      "p95_us": 85.242,
+      "percent_kernel_sum": 1.907075950139775
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP11_down",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 84,
+      "total_us": 60936.459,
+      "mean_us": 725.4340357142858,
+      "median_us": 725.261,
+      "p95_us": 733.515,
+      "percent_kernel_sum": 1.4719578119314252
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP13_sampling",
+      "mapping": "linked_worker_sample_tokens_scope",
+      "calls": 496,
+      "total_us": 32796.553,
+      "mean_us": 66.12208266129032,
+      "median_us": 13.2305,
+      "p95_us": 274.93,
+      "percent_kernel_sum": 0.7922209984793014
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP03_QKV",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 84,
+      "total_us": 25408.602,
+      "mean_us": 302.48335714285713,
+      "median_us": 302.4955,
+      "p95_us": 306.215,
+      "percent_kernel_sum": 0.6137604780113073
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP08_O",
+      "mapping": "linked_aten_mm_shape",
+      "calls": 84,
+      "total_us": 20618.21,
+      "mean_us": 245.45488095238096,
+      "median_us": 245.3095,
+      "p95_us": 247.242,
+      "percent_kernel_sum": 0.49804559988532693
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP04_RoPE_KV",
+      "mapping": "kernel_name",
+      "calls": 588,
+      "total_us": 19886.481,
+      "mean_us": 33.820545918367344,
+      "median_us": 33.792,
+      "p95_us": 35.203,
+      "percent_kernel_sum": 0.4803702338492602
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP12_LM_head",
+      "mapping": "linked_aten_linear_shape_transposed_weight",
+      "calls": 14,
+      "total_us": 11954.968,
+      "mean_us": 853.9262857142858,
+      "median_us": 853.517,
+      "p95_us": 862.434,
+      "percent_kernel_sum": 0.28877963747434365
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP10_SwiGLU_or_compiler_fusion",
+      "mapping": "kernel_name",
+      "calls": 84,
+      "total_us": 11585.617,
+      "mean_us": 137.9240119047619,
+      "median_us": 137.892,
+      "p95_us": 140.123,
+      "percent_kernel_sum": 0.2798577358949512
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP02_norm_or_fused_norm",
+      "mapping": "kernel_name",
+      "calls": 170,
+      "total_us": 11345.805,
+      "mean_us": 66.74002941176471,
+      "median_us": 53.294,
+      "p95_us": 84.9,
+      "percent_kernel_sum": 0.27406492888601586
+    },
+    {
+      "phase": "mixed",
+      "operator": "OP07_GQA_reduce",
+      "mapping": "kernel_name_verify_against_source",
+      "calls": 588,
+      "total_us": 4332.024,
+      "mean_us": 7.367387755102041,
+      "median_us": 7.35,
+      "p95_us": 8.23,
+      "percent_kernel_sum": 0.10464271591945343
+    },
+    {
+      "phase": "prefill",
+      "operator": "OP04_RoPE_KV",
+      "mapping": "kernel_name",
+      "calls": 84,
+      "total_us": 2854.807,
+      "mean_us": 33.98579761904762,
+      "median_us": 33.919,
+      "p95_us": 35.465,
+      "percent_kernel_sum": 0.06895962670240677
+    }
+  ],
+  "notes": [
+    "Kernel sum is aggregate GPU work; concurrent streams can overlap. It is not wall latency.",
+    "CPU inclusive times overlap; use self_cpu_us and do not sum inclusive_cpu_us.",
+    "Unlinked kernels are retained, never assigned a phase by GPU/CPU timestamp proximity.",
+    "Graph replay may hide individual CPU operator shapes; unresolved GEMMs remain grouped.",
+    "NONE pass helps attribution only and must not replace FULL_DECODE_ONLY timings."
+  ]
+}

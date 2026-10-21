@@ -1,0 +1,22 @@
+{
+  "pid": 3712,
+  "process_start_ticks": "290737180",
+  "started_at": "2026-10-21T13:16:41.730378+08:00",
+  "completed_cases": [],
+  "stage": "failed",
+  "updated_at": "2026-10-21T14:05:12.348090+08:00",
+  "profiling_stage": "profiling_4k",
+  "profiling_run": "/workspace/LeanScale/artifacts/EXP-0009/20261021_131254_profile_4k",
+  "launching_case": "16k",
+  "launch_budget": {
+    "case": "16k",
+    "remaining_seconds": 34488.159776,
+    "estimated_required_seconds": 6395.809486149999,
+    "compute_stop_at": "2026-10-21T23:35:00+08:00",
+    "machine_shutdown_at": "2026-10-22T00:00:00+08:00"
+  },
+  "waiting_experiment": "EXP-0010",
+  "waiting_case": "16k",
+  "observed_stage": "candidate_official_starting",
+  "error": "RuntimeError('EXP-0010 16k failed; inspect /workspace/LeanScale/artifacts/EXP-0010/20261021_140011_official_16k/status.json')"
+}

@@ -139,3 +139,8 @@
 ### 2026-10-21 GQA 源码与编译证据分析
 
 按用户要求分析当前paged_gqa及IluvatarGQAImpl接入、逐kernel trace、实际launch资源和历史参数扫描。证实主kernel远重于reduce，warp_size=64、4warps=256线程，BM16只有8行有效；记录111寄存器/线程与20KiB shared，以及相关编译样本的布局转换、已融合dot accumulator与exp2 lowering。形成候选优先级、负面历史数据与数值/Graph/官方评测方案；没有改动运行中的代码或新增GPU占用。报告与可复查证据见 [GQA分析](gqa_optimization_analysis_20261021.md)。
+
+
+### 2026-10-21 14时：profiling 完成与调度接入门槛复核
+
+EXP-0009于13:59:52完成两个官方形状请求集，各256成功；6个trace自动归档推送。独立CPU复核新增LM head、采样范围和两类GQA归属，全部原始kernel计数和时间总和未变。EXP-0010于14:05真实smoke成功输出32tokens，但缺少配置阶段Selecting日志导致校验断言，未进入benchmark。已保留并推送失败现场；修复仅改为校验实际EngineCore调度器类、enabled=True与admitted计数，同时要求正式负载结束后checked>0。7项实际日志/负向fixture检查通过后重新跑完整case，候选代码SHA不变。

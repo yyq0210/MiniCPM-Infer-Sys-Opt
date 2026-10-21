@@ -64,7 +64,7 @@ def env(candidate):
     return result
 
 
-def verify_route(folder):
+def verify_route(folder, require_capacity_checks=False):
     log = (folder/'server.log').read_text(errors='replace')
     assert "Op 'rotary_embedding' using 'default.flagos'" in log
     assert "Op 'rotary_embedding' switched" not in log
@@ -88,9 +88,21 @@ def verify_route(folder):
     assert ('Capturing CUDA graphs (decode, FULL)' in log and '35/35' in log), (
         'Complete FULL_DECODE_ONLY graph capture not observed')
     assert 'LeanScale KV growth admission enabled=True policy=full_max_tokens' in log
-    assert 'Selecting LeanScale async scheduler with KV growth admission.' in log
+    # Configuration intent may be logged before logging is initialized. Require
+    # the actual engine class, enabled controller and observed schedule activity.
+    assert ('Using custom scheduler class '
+            'vllm_fl.worker.kv_reservation_scheduler.KVReservationAsyncScheduler.') in log
+    admission_stats = [json.loads(line.split('LeanScale KV admission stats ', 1)[1])
+                       for line in log.splitlines() if 'LeanScale KV admission stats ' in line]
+    assert admission_stats and any(x.get('admitted', 0) > 0 for x in admission_stats), (
+        'No observed request admission through the real scheduler')
+    if require_capacity_checks:
+        assert any(x.get('checked', 0) > 0 for x in admission_stats), (
+            'Official workload did not exercise the capacity gate')
     (folder/'route_evidence.json').write_text(json.dumps(
-        dict(status='passed', scheduler='KVReservationAsyncScheduler', kv_growth_admission=True, fused_runtime_layers=42, gqa_layers=42,
+        dict(status='passed', route_gate_version=2, scheduler='KVReservationAsyncScheduler',
+             kv_growth_admission=True, scheduler_runtime_evidence=admission_stats,
+             capacity_checks_required=require_capacity_checks, fused_runtime_layers=42, gqa_layers=42,
              old_cache_updates_in_fused_graph=0, graphs=graphs), indent=2)+'\n')
 
 
@@ -321,6 +333,8 @@ def main():
     start_ticks = Path('/proc/self/stat').read_text().rsplit(') ',1)[1].split()[19]
     STATE.update(pid=os.getpid(), process_start_ticks=start_ticks,
                  run_directory=str(RUN), started_at=datetime.now().astimezone().isoformat(),
+                 runner_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                 route_gate_version=2,
                  selected_cases=[list(c) for c in selected_cases],
                  planned_finish_before=args.finish_before.isoformat() if args.finish_before else None)
     proc = None
@@ -364,7 +378,7 @@ def main():
         run_command(bench_command, RUN/'candidate_benchmark', 'benchmark', timeout=remaining_seconds())
         metrics(RUN/'candidate_benchmark', 'metrics_after.prom')
         assert hashlib.sha256(BENCH_FILE.read_bytes()).hexdigest() == BENCH_SHA
-        verify_route(RUN/'candidate_benchmark')
+        verify_route(RUN/'candidate_benchmark', require_capacity_checks=True)
         optimized = validate_benchmark(RUN/'candidate_benchmark', selected_cases)
         incremental = comparison(previous, optimized)
         (RUN/'comparison.json').rename(RUN/'comparison_exp6.json')

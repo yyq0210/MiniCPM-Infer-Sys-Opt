@@ -279,3 +279,8 @@ EXP-0009 恢复了昨晚 EXP-0008 的三个原始 trace。FULL_DECODE_ONLY 的 s
 ## 2026-10-21：GQA 实现专项分析
 
 NONE/late 的 16 个纯 decode 迭代已逐步核验：每步42次主 attention 和42次 reduce。B64、CPU上下文上界4618–4761；主 kernel 平均1672.156 μs，占全部可见kernel时间78.340%，reduce平均20.395 μs，占0.955%。实际 launch 256线程、111 registers/thread、20 KiB shared memory。此结果来自诊断窗口，不是生产Graph或官方吞吐口径。优先测试warp/stage布局、分段选择和分页访存；已有编译IR排除了单纯改写dot累加/exp拼写的新增收益。详见 [GQA实现与优化分析](gqa_optimization_analysis_20261021.md)。
+
+
+## 2026-10-21：4K profiling 完整收尾与归属复核
+
+两种模式均256/256成功，6个trace已归档。新增按aten::linear权重shape识别LM head、按sample_tokens调用范围统计采样、按固定S16网格拆分GQA prefill/decode分支；所有原始duration保持不变。纯decode诊断：GQA主kernel78.340%，采样7.487%，gate/up4.446%，down2.797%，LM head1.270%。生产配置mixed窗口：GQA prefill42.357%，gate/up20.088%，GQA decode12.444%，down10.411%。Graph内部decode仍不可见。完整调用数、均值、总时间、CSV和口径见 [4K算子耗时报告](operator_profile_4k_20261021.md)。
