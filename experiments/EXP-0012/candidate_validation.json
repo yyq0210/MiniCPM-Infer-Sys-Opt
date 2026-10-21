@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "candidate_commits": {
+    "vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6",
+    "FlagGems": "19aa059af4ce456ef2e34e3bb83eb949d7e7b702"
+  },
+  "launch": {
+    "warps": 4,
+    "stages": 1,
+    "segments": 16
+  },
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0011/20261021_160003_screen/w4_t1_s16.json": "39d7180569926f7b0fd453a52bb5557b21b9352574945e28fe20c3a65078730e",
+    "/workspace/LeanScale/artifacts/EXP-0011/20261021_160701_extended/validation.json": "54c855f22d39d0c4f2833d3bd6b87c4afb1c6cc01206077d72f259f2ffc654f4",
+    "/workspace/LeanScale/artifacts/EXP-0011/20261021_161322_drift_repeat/validation.json": "5dcea89b267ea86e7cf434bf637845fdca6684a8c449555cff35ddc1672fdd8c"
+  },
+  "code_hashes": {
+    "vllm-plugin-FL": {
+      "vllm_fl/dispatch/backends/flaggems/impl/iluvatar_gqa.py": "c7dc048f0c5522a2b81036e692782f84a5a08fae7e9577450106660811192c6f"
+    },
+    "FlagGems": {
+      "src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py": "d58e472b65e09c771448dbb461ced39dc4a6cc9cfab03d2a6ac7ab25f2d7c459"
+    }
+  },
+  "validation_scope": "26 numerical/Graph cases,34 shape timings,3 drift repeats; complete task accuracy deferred",
+  "integration_cpu_check": "Only explicit validated launch kwargs and runtime log changed; reversing substitutions gives exact original source; scheduler class absent"
+}

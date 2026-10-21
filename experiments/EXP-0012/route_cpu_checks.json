@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "positive_fixture",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_stage1_log",
+      "passed": true
+    },
+    {
+      "name": "reject_scheduler",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_layer",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_service_compile_evidence",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic log mutations for harness validation; not actual new engine execution"
+}

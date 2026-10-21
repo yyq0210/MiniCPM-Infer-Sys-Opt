@@ -1,0 +1,5 @@
+{
+  "status": "failed_before_measurement",
+  "reason": "Backend import created TRITON_CACHE_DIR run parent before mkdir(exist_ok=False); no timing or accuracy data produced",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0011/20261021_161144_drift_repeat"
+}
