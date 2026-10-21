@@ -1,0 +1,771 @@
+{
+  "status": "passed",
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "config": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16,
+    "decode_layout": 1,
+    "decode_rows": 16
+  },
+  "checks": [
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.0033200979232788086,
+      "mutated_fp32_error": 0.004130959510803223,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.0020521879196166992,
+      "mutated_fp32_error": 0.0029789209365844727,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.003275632858276367,
+      "mutated_fp32_error": 0.004705667495727539,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.0035963058471679688,
+      "mutated_fp32_error": 0.0033861398696899414,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.0005193948745727539,
+      "mutated_fp32_error": 0.0005759000778198242,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.0002633333206176758,
+      "mutated_fp32_error": 0.0003064274787902832,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.0005807876586914062,
+      "mutated_fp32_error": 0.0005425214767456055,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.0003725290298461914,
+      "mutated_fp32_error": 0.0004646778106689453,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.003669142723083496,
+      "mutated_fp32_error": 0.0042504072189331055,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.0025727152824401855,
+      "mutated_fp32_error": 0.0032652616500854492,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.0038750171661376953,
+      "mutated_fp32_error": 0.004389643669128418,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.00421142578125,
+      "mutated_fp32_error": 0.004481077194213867,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.004628419876098633,
+      "mutated_fp32_error": 0.0054711103439331055,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.002177894115447998,
+      "mutated_fp32_error": 0.001963198184967041,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.00394749641418457,
+      "mutated_fp32_error": 0.004977703094482422,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.0028522610664367676,
+      "mutated_fp32_error": 0.003359973430633545,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "B": 64,
+      "L": 4700,
+      "baseline_before": {
+        "median_us": 1363.620638847351,
+        "samples_us": [
+          1363.4408712387085,
+          1363.620638847351,
+          1362.4582290649414,
+          1364.6408319473267,
+          1365.055799484253,
+          1363.7356758117676,
+          1361.4773750305176
+        ]
+      },
+      "candidate_total": {
+        "median_us": 1193.6620473861694,
+        "samples_us": [
+          1193.6620473861694,
+          1193.6355829238892,
+          1194.8730945587158,
+          1196.50137424469,
+          1192.9712295532227,
+          1192.2749280929565,
+          1195.7437992095947
+        ]
+      },
+      "baseline_after": {
+        "median_us": 1364.2226457595825,
+        "samples_us": [
+          1366.4461374282837,
+          1363.3311986923218,
+          1363.8696670532227,
+          1366.4567470550537,
+          1366.2375211715698,
+          1362.3346090316772,
+          1364.2226457595825
+        ]
+      },
+      "speedup": 1.1426363477754231,
+      "time_change_percent": -12.483092110024263,
+      "baseline_drift_percent": 0.044147682653172815,
+      "main_only": {
+        "median_us": 1184.3571662902832,
+        "samples_us": [
+          1181.1317205429077,
+          1177.0230531692505,
+          1186.2047910690308,
+          1186.1302852630615,
+          1187.2715950012207,
+          1184.3571662902832,
+          1180.2375316619873
+        ]
+      },
+      "reduce_only": {
+        "median_us": 11.970192193984985,
+        "samples_us": [
+          11.970192193984985,
+          11.962980963289738,
+          12.039903551340103,
+          11.922115460038185,
+          11.94903813302517,
+          11.994711123406887,
+          12.066827155649662
+        ]
+      },
+      "resources": {
+        "n_regs": 96,
+        "n_spills": 0,
+        "shared": 20480,
+        "ir_sha256": {
+          "ttir": "18bebf5bc9ec1ca694b5c57bff6a2f440bf2f1e2e6819fea876d638e9089240a",
+          "ttgir": "748ee69f14cf9c03ff5c0965ce6284b239c8347f88db642491d65705b41d8823",
+          "llir": "016c214ae02a4b2b90630a5e430cf0d9c33939b5eba5eb4e3929eb611d3ee13f",
+          "asm": "b16902adc736c77da1b9e7fb68690b12983860cadb990c72647c03c651ca1713"
+        }
+      },
+      "fp32_error": 0.0002789497375488281
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "baseline_before": {
+        "median_us": 2176.1302947998047,
+        "samples_us": [
+          2159.07883644104,
+          2176.1302947998047,
+          2171.0219383239746,
+          2181.5731525421143,
+          2173.6741065979004,
+          2179.668664932251,
+          2177.1373748779297
+        ]
+      },
+      "candidate_total": {
+        "median_us": 1877.3168325424194,
+        "samples_us": [
+          1875.2648830413818,
+          1875.6433725357056,
+          1877.3168325424194,
+          1880.4802894592285,
+          1876.457691192627,
+          1879.381775856018,
+          1887.7952098846436
+        ]
+      },
+      "baseline_after": {
+        "median_us": 2179.955244064331,
+        "samples_us": [
+          2179.194927215576,
+          2175.827980041504,
+          2195.6331729888916,
+          2179.532289505005,
+          2180.295705795288,
+          2179.955244064331,
+          2180.8183193206787
+        ]
+      },
+      "speedup": 1.1601892294772536,
+      "time_change_percent": -13.80716398732903,
+      "baseline_drift_percent": 0.17576839372470676,
+      "main_only": {
+        "median_us": 1872.45774269104,
+        "samples_us": [
+          1872.779369354248,
+          1872.45774269104,
+          1869.406819343567,
+          1869.0451383590698,
+          1872.7821111679077,
+          1870.0956106185913,
+          1874.5476007461548
+        ]
+      },
+      "reduce_only": {
+        "median_us": 7.058172952383757,
+        "samples_us": [
+          7.058172952383757,
+          7.090384606271982,
+          7.146154064685106,
+          7.060576695948839,
+          7.006730884313583,
+          7.0552886463701725,
+          7.031249813735485
+        ]
+      },
+      "resources": {
+        "n_regs": 96,
+        "n_spills": 0,
+        "shared": 20480,
+        "ir_sha256": {
+          "ttir": "8325f1eaa8b2cb291dd91911f9953f93054c62905f06b9beb04214ea7a72ab02",
+          "ttgir": "affe47de6835e34468e2055668f662efa51eb7fff9b5c0c80e48b2ac90b4a945",
+          "llir": "69896d0edfa5d98b99973819c17fccda34d30164070625c453f8b700c423db48",
+          "asm": "7c177cf8b03d408c648832d424e641114338e2ba1efaf8c9c43cae9b8651106b"
+        }
+      },
+      "fp32_error": 0.00015283748507499695
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "baseline_before": {
+        "median_us": 41.59567132592201,
+        "samples_us": [
+          41.555289179086685,
+          41.734617203474045,
+          41.56586527824402,
+          41.63028672337532,
+          41.59567132592201,
+          41.55240207910538,
+          41.66249930858612
+        ]
+      },
+      "candidate_total": {
+        "median_us": 34.245193004608154,
+        "samples_us": [
+          34.25624966621399,
+          34.245673567056656,
+          34.242790192365646,
+          34.1004803776741,
+          34.245193004608154,
+          34.11922976374626,
+          34.259133040905
+        ]
+      },
+      "baseline_after": {
+        "median_us": 41.571635752916336,
+        "samples_us": [
+          41.58173128962517,
+          41.77499935030937,
+          41.491344571113586,
+          41.459135711193085,
+          41.73221066594124,
+          41.558172553777695,
+          41.571635752916336
+        ]
+      },
+      "speedup": 1.2142916973434354,
+      "time_change_percent": -17.647464592918794,
+      "baseline_drift_percent": -0.057783832402524826,
+      "main_only": {
+        "median_us": 31.338941305875778,
+        "samples_us": [
+          31.29134699702263,
+          31.275000423192978,
+          31.37163445353508,
+          31.40336647629738,
+          31.32307529449463,
+          31.427402049303055,
+          31.338941305875778
+        ]
+      },
+      "reduce_only": {
+        "median_us": 3.608172992244363,
+        "samples_us": [
+          3.642788389697671,
+          3.69134615175426,
+          3.71009623631835,
+          3.608172992244363,
+          3.5951922181993723,
+          3.5783653147518635,
+          3.5894231405109167
+        ]
+      },
+      "resources": {
+        "n_regs": 96,
+        "n_spills": 0,
+        "shared": 20480,
+        "ir_sha256": {
+          "ttir": "05028a294c4a6e994261f6c5a3bbe3a69df278b87dc811b2f4f94ccb71c38b7c",
+          "ttgir": "98450a1e8cabc521cfa887bfbdf0f819d7834737f00d89816a1e51eef28f6ee3",
+          "llir": "2e84117826ff62814e49354159237f49ad463a8eb44831c25c009292ef246720",
+          "asm": "7115f8adb9ada77f2d09d70956f710d72a022140a88eb28b2d3dc1ea850a2283"
+        }
+      },
+      "fp32_error": 0.00023927539587020874
+    }
+  ],
+  "started_at": "2026-10-21T20:20:36+0800",
+  "correctness_passed": true,
+  "finished_at": "2026-10-21T20:20:52+0800"
+}

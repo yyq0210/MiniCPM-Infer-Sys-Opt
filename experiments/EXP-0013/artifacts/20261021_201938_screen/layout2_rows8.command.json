@@ -1,0 +1,10 @@
+[
+  "python3",
+  "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0013/trial.py",
+  "--layout",
+  "2",
+  "--rows",
+  "8",
+  "--output",
+  "/workspace/LeanScale/artifacts/EXP-0013/20261021_201938_screen/layout2_rows8.json"
+]

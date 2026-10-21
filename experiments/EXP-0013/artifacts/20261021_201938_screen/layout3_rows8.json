@@ -1,0 +1,771 @@
+{
+  "status": "passed",
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "config": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16,
+    "decode_layout": 3,
+    "decode_rows": 8
+  },
+  "checks": [
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.0033200979232788086,
+      "mutated_fp32_error": 0.004130959510803223,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.0020521879196166992,
+      "mutated_fp32_error": 0.0029789209365844727,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.003275632858276367,
+      "mutated_fp32_error": 0.004705667495727539,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 16,
+      "hnd": false,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.0035963058471679688,
+      "mutated_fp32_error": 0.0033861398696899414,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.0005193948745727539,
+      "mutated_fp32_error": 0.0005759000778198242,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.0002633333206176758,
+      "mutated_fp32_error": 0.0003064274787902832,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.0005807876586914062,
+      "mutated_fp32_error": 0.0005425214767456055,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.float16",
+      "page": 32,
+      "hnd": true,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.0003725290298461914,
+      "mutated_fp32_error": 0.0004646778106689453,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.003669142723083496,
+      "mutated_fp32_error": 0.0042504072189331055,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.0025727152824401855,
+      "mutated_fp32_error": 0.0032652616500854492,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.0038750171661376953,
+      "mutated_fp32_error": 0.004389643669128418,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 8,
+      "hnd": false,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.00421142578125,
+      "mutated_fp32_error": 0.004481077194213867,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        17,
+        0,
+        33,
+        4097
+      ],
+      "fp32_error": 0.004628419876098633,
+      "mutated_fp32_error": 0.0054711103439331055,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        37,
+        0,
+        1,
+        7
+      ],
+      "lengths": [
+        16385,
+        201,
+        0,
+        4096,
+        71
+      ],
+      "fp32_error": 0.002177894115447998,
+      "mutated_fp32_error": 0.001963198184967041,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        0
+      ],
+      "lengths": [
+        0
+      ],
+      "fp32_error": 0.0,
+      "mutated_fp32_error": 0.0,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "lengths": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "fp32_error": 0.00394749641418457,
+      "mutated_fp32_error": 0.004977703094482422,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "page": 64,
+      "hnd": true,
+      "qlens": [
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        31,
+        32,
+        33
+      ],
+      "fp32_error": 0.0028522610664367676,
+      "mutated_fp32_error": 0.003359973430633545,
+      "graph_replay_passed": true,
+      "mutations": [
+        "Q",
+        "K",
+        "V",
+        "lengths",
+        "block_table"
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "B": 64,
+      "L": 4700,
+      "baseline_before": {
+        "median_us": 1361.3572120666504,
+        "samples_us": [
+          1361.3572120666504,
+          1365.7177686691284,
+          1358.8606119155884,
+          1364.402413368225,
+          1359.3692779541016,
+          1360.1245880126953,
+          1364.9919033050537
+        ]
+      },
+      "candidate_total": {
+        "median_us": 1137.0720863342285,
+        "samples_us": [
+          1141.4062976837158,
+          1137.0720863342285,
+          1136.76917552948,
+          1137.2653245925903,
+          1136.0706090927124,
+          1139.8115158081055,
+          1134.2971324920654
+        ]
+      },
+      "baseline_after": {
+        "median_us": 1364.2042875289917,
+        "samples_us": [
+          1364.1586303710938,
+          1367.458701133728,
+          1366.623044013977,
+          1362.8370761871338,
+          1365.3696775436401,
+          1364.2042875289917,
+          1360.531210899353
+        ]
+      },
+      "speedup": 1.1984998718869686,
+      "time_change_percent": -16.56236070967968,
+      "baseline_drift_percent": 0.2091350776347145,
+      "main_only": {
+        "median_us": 1123.4519481658936,
+        "samples_us": [
+          1121.0120916366577,
+          1123.4519481658936,
+          1123.6042976379395,
+          1124.0543127059937,
+          1126.0181665420532,
+          1122.326374053955,
+          1122.5465536117554
+        ]
+      },
+      "reduce_only": {
+        "median_us": 11.954807676374912,
+        "samples_us": [
+          11.962500400841236,
+          11.954807676374912,
+          11.957211419939995,
+          11.95432711392641,
+          11.935576796531677,
+          12.010577134788036,
+          11.919711716473103
+        ]
+      },
+      "resources": {
+        "n_regs": 112,
+        "n_spills": 0,
+        "shared": 10240,
+        "ir_sha256": {
+          "ttir": "4265231efd3b6fae1ba0947f781180365996154d099920777612f9c62fec6f57",
+          "ttgir": "5283a1a9ab8950803f882ed3192067dfb30a0daa6c74f2cf34bb401a8c13c430",
+          "llir": "c0df39fc91c8b221e4f445a3484e76ddc860fd29c71e60b32ca23986b3df0f08",
+          "asm": "ae93fd22c23a0c04892265f8958c8b7640245ad01a5a70d077538e4306ad4c11"
+        }
+      },
+      "fp32_error": 0.0002789497375488281
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "baseline_before": {
+        "median_us": 2184.3860149383545,
+        "samples_us": [
+          2175.4956245422363,
+          2182.342290878296,
+          2186.5174770355225,
+          2188.8937950134277,
+          2186.2845420837402,
+          2183.3114624023438,
+          2184.3860149383545
+        ]
+      },
+      "candidate_total": {
+        "median_us": 1832.651972770691,
+        "samples_us": [
+          1832.651972770691,
+          1834.0283632278442,
+          1829.1692733764648,
+          1834.4495296478271,
+          1846.5110063552856,
+          1831.543207168579,
+          1831.7145109176636
+        ]
+      },
+      "baseline_after": {
+        "median_us": 2181.7259788513184,
+        "samples_us": [
+          2179.9254417419434,
+          2180.6325912475586,
+          2182.8322410583496,
+          2182.992696762085,
+          2181.7259788513184,
+          2181.9727420806885,
+          2180.1669597625732
+        ]
+      },
+      "speedup": 1.1912005276126638,
+      "time_change_percent": -16.051078150196684,
+      "baseline_drift_percent": -0.12177500079404435,
+      "main_only": {
+        "median_us": 1825.5667686462402,
+        "samples_us": [
+          1824.15771484375,
+          1822.0897912979126,
+          1825.5667686462402,
+          1826.1644840240479,
+          1829.4322490692139,
+          1828.77779006958,
+          1815.2576684951782
+        ]
+      },
+      "reduce_only": {
+        "median_us": 7.052884437143803,
+        "samples_us": [
+          7.0149037055671215,
+          7.111538667231798,
+          7.052884437143803,
+          7.074038498103619,
+          7.047115359455347,
+          7.0552886463701725,
+          7.041826844215393
+        ]
+      },
+      "resources": {
+        "n_regs": 112,
+        "n_spills": 0,
+        "shared": 10240,
+        "ir_sha256": {
+          "ttir": "6fda0764832f6c7463ed79da01f803275eee35c466766daff4f8685a27783a31",
+          "ttgir": "472d090694142f988b644e0fdac16831659a0bf035a2c6e2c6891ace7c446de0",
+          "llir": "735ccc2a7361c3c028fad028f9e29e5c558f3866408ad421707bbc83aff76290",
+          "asm": "755861b757ec0a4dd123b90eafbf26444f2ef77daedf648febc414336ab1e5c8"
+        }
+      },
+      "fp32_error": 0.00015283748507499695
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "baseline_before": {
+        "median_us": 41.718751192092896,
+        "samples_us": [
+          41.74855723977089,
+          41.5923073887825,
+          41.718751192092896,
+          41.73269122838974,
+          41.67836531996727,
+          41.648559272289276,
+          41.721634566783905
+        ]
+      },
+      "candidate_total": {
+        "median_us": 37.70384564995766,
+        "samples_us": [
+          37.53461688756943,
+          37.786539644002914,
+          37.8774031996727,
+          37.68173232674599,
+          37.51346096396446,
+          37.90432587265968,
+          37.70384564995766
+        ]
+      },
+      "baseline_after": {
+        "median_us": 41.70000180602074,
+        "samples_us": [
+          41.65961593389511,
+          41.76442325115204,
+          41.63317382335663,
+          41.740864515304565,
+          41.6250005364418,
+          41.70000180602074,
+          41.78605601191521
+        ]
+      },
+      "speedup": 1.106236665784347,
+      "time_change_percent": -9.603430176401073,
+      "baseline_drift_percent": -0.04494234735318292,
+      "main_only": {
+        "median_us": 34.80000048875809,
+        "samples_us": [
+          35.131730139255524,
+          34.62596237659454,
+          34.75961461663246,
+          35.05432605743408,
+          34.55384448170662,
+          34.88028794527054,
+          34.80000048875809
+        ]
+      },
+      "reduce_only": {
+        "median_us": 3.6298076156526804,
+        "samples_us": [
+          3.6668269895017147,
+          3.704807721078396,
+          3.6298076156526804,
+          3.599999938160181,
+          3.7072114646434784,
+          3.6110577639192343,
+          3.5865383688360453
+        ]
+      },
+      "resources": {
+        "n_regs": 112,
+        "n_spills": 0,
+        "shared": 10240,
+        "ir_sha256": {
+          "ttir": "fd611fed585834b6ecbeb319ec3f6ef217c3cdd8acd51adfe313f69f9cf1b703",
+          "ttgir": "89a8100b2a781802f2a80e0cbd059803c3d22cd9b7824919c8f08570f61367c3",
+          "llir": "c4d5e498b9e39fadb4fc01276dbb1f471476a2d6e42b94c3872d05d3fab9a0a5",
+          "asm": "d809ba6dd26e4b5cfd6db6b18b8fe1805a3b36ca678a0b8c00d07c582a22575b"
+        }
+      },
+      "fp32_error": 0.00023927539587020874
+    }
+  ],
+  "started_at": "2026-10-21T20:22:56+0800",
+  "correctness_passed": true,
+  "finished_at": "2026-10-21T20:23:09+0800"
+}

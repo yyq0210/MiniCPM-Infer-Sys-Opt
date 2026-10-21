@@ -1,0 +1,100 @@
+{
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "order": [
+    "B64/L4700",
+    "B30/L16384",
+    "B1/L4096"
+  ],
+  "rows": [
+    {
+      "configuration": "layout0_rows16",
+      "time_change_percent": [
+        -0.08112363001715472,
+        0.2108787621619035,
+        -0.22149531168926817
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "layout1_rows16",
+      "time_change_percent": [
+        -12.483092110024263,
+        -13.80716398732903,
+        -17.647464592918794
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout2_rows16",
+      "time_change_percent": [
+        -7.184073759550169,
+        -6.1706848741496785,
+        -1.3521371365816104
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout3_rows16",
+      "time_change_percent": [
+        -11.622450694174201,
+        -10.157573304636724,
+        -10.380562709894214
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout0_rows8",
+      "time_change_percent": [
+        -13.604589913119502,
+        -13.957186612561756,
+        -5.986030820572985
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout1_rows8",
+      "time_change_percent": [
+        -23.423203318782214,
+        -24.94872689115394,
+        -23.10643879433797
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout2_rows8",
+      "time_change_percent": [
+        -11.644443636491397,
+        -11.06165489799672,
+        -0.7397403898931953
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout3_rows8",
+      "time_change_percent": [
+        -16.56236070967968,
+        -16.051078150196684,
+        -9.603430176401073
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    }
+  ],
+  "selected_for_serving": false,
+  "next_gate": "Expanded numerical/Graph/shape validation before engine integration"
+}

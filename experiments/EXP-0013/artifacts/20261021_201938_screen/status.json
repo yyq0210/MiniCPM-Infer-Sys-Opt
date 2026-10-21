@@ -1,0 +1,80 @@
+{
+  "pid": 71992,
+  "process_start_ticks": "293274828",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0013/20261021_201938_screen",
+  "started_at": "2026-10-21T20:19:38.222410+08:00",
+  "compute_stop_at": "2026-10-21T23:35:00+08:00",
+  "stage": "screen_complete",
+  "trials": [
+    {
+      "configuration": "layout0_rows16",
+      "returncode": 0,
+      "elapsed_seconds": 53.09542322298512,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout1_rows16",
+      "returncode": 0,
+      "elapsed_seconds": 24.802481902763247,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout2_rows16",
+      "returncode": 0,
+      "elapsed_seconds": 22.39949069870636,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout3_rows16",
+      "returncode": 0,
+      "elapsed_seconds": 22.0995779260993,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout0_rows8",
+      "returncode": 0,
+      "elapsed_seconds": 24.45693239523098,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout1_rows8",
+      "returncode": 0,
+      "elapsed_seconds": 24.71657345816493,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout2_rows8",
+      "returncode": 0,
+      "elapsed_seconds": 21.391101226210594,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout3_rows8",
+      "returncode": 0,
+      "elapsed_seconds": 21.594481298234314,
+      "status": "passed",
+      "checks": 20
+    }
+  ],
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "selected_for_serving": false,
+  "commits": {
+    "vllm-plugin-FL": "08d1711e58fdd0f4cd4f746f9e21cb59800ec1d6",
+    "FlagGems": "1c526ca99d412e203ed3caa8b1663566976ea38c"
+  },
+  "trial.py_sha256": "6c1b4029644159aafd0578864c8372705e0bb38a3ab32baca326d4ddd0a6ce1f",
+  "run_screen.py_sha256": "a027d5c3144428f9ab481ab1076aa18ad7989d662d7b81c1a768d3418b3e4f4f",
+  "updated_at": "2026-10-21T20:23:12.961116+08:00",
+  "current_configuration": "layout3_rows8",
+  "completed_configurations": 7,
+  "child_pid": 75330,
+  "owned_children_reaped": true,
+  "safe_to_resume_gpu": true
+}
