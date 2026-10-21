@@ -1,0 +1,1261 @@
+{
+  "at": "2026-10-21T13:55:17.089404+08:00",
+  "source_index": {
+    "FlagGems": {
+      "commit": "484413ea0db18221dd9e63e742361d837df9ff13",
+      "path": "src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py",
+      "sha256": "2dc651805f60dab29c17a610441d15723621c8cbcd5e085673c174e2a8361cc9",
+      "definitions": {
+        "_attention": 14,
+        "_reduce": 110,
+        "paged_gqa": 131
+      }
+    },
+    "vllm-plugin-FL": {
+      "commit": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+      "path": "vllm_fl/dispatch/backends/flaggems/impl/iluvatar_gqa.py",
+      "sha256": "d8e4525814cd23829e8d9326bf679930859b9c46189fc9a14320a73dddaf7b7a",
+      "definitions": {
+        "IluvatarGQABackend": 15,
+        "IluvatarGQAImpl": 21,
+        "get_impl_cls": 17,
+        "_supports_gqa": 22,
+        "forward": 58
+      }
+    }
+  },
+  "profile_run": "/workspace/LeanScale/artifacts/EXP-0009/20261021_131254_profile_4k",
+  "profile_status_at_review": {
+    "pid": 1088,
+    "run_directory": "/workspace/LeanScale/artifacts/EXP-0009/20261021_131254_profile_4k",
+    "safe_to_resume_scheduler": false,
+    "process_start_ticks": "290714410",
+    "started_at": "2026-10-21T13:12:54.064215+08:00",
+    "commits": {
+      "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+      "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+    },
+    "stage": "profiling_4k",
+    "updated_at": "2026-10-21T13:37:52.568265+08:00",
+    "previous_run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_185748_official_16k",
+    "previous_terminal_stage": "performance_case_complete",
+    "mode": "NONE",
+    "server_pid": 11763,
+    "client_pid": 14085,
+    "capture_window": "late",
+    "batch": {
+      "phase": "decode",
+      "B": 64,
+      "M_unpadded": 64,
+      "prefill_requests": 0,
+      "decode_requests": 64,
+      "q_min": 1,
+      "q_max": 1,
+      "L_min_cpu_upper_bound": 4612,
+      "L_max_cpu_upper_bound": 4740,
+      "new_requests": 0,
+      "step": 664,
+      "epoch": 1792561072.027103,
+      "new_requests_total": 65,
+      "profiling": false
+    }
+  },
+  "benchmark_class": "diagnostic NONE/late, not official throughput or production Graph latency",
+  "per_step_gqa_kernel_calls": [
+    {
+      "step": 670,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 670,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 671,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 671,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 672,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 672,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 673,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 673,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 674,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 674,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 675,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 675,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 676,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 676,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 677,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 677,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 678,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 678,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 679,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 679,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 680,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 680,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 681,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 681,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 682,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 682,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 683,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 683,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 684,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 684,
+      "kernel": "_reduce",
+      "calls": 42
+    },
+    {
+      "step": 685,
+      "kernel": "_attention",
+      "calls": 42
+    },
+    {
+      "step": 685,
+      "kernel": "_reduce",
+      "calls": 42
+    }
+  ],
+  "launch_shapes": [
+    {
+      "kernel": "_attention",
+      "grid": [
+        64,
+        2,
+        16
+      ],
+      "block": [
+        256,
+        1,
+        1
+      ]
+    },
+    {
+      "kernel": "_reduce",
+      "grid": [
+        64,
+        16,
+        1
+      ],
+      "block": [
+        256,
+        1,
+        1
+      ]
+    }
+  ],
+  "runtime_kernel_resource_metadata": [
+    {
+      "registers_per_thread": 111,
+      "shared_bytes": 20480,
+      "block": [
+        256,
+        1,
+        1
+      ],
+      "calls": 672
+    }
+  ],
+  "context_bounds": {
+    "min_cpu_upper_bound": 4618,
+    "max_cpu_upper_bound": 4761,
+    "note": "CPU metadata upper bounds, not direct device sequence-length readings"
+  },
+  "compiler_cache_samples": [
+    {
+      "cache_key": "OA5DGT6NS7MN5UDZZOLMFJOYTJU4ZW4HMSZL7X423WHSZ7NWKEAQ",
+      "metadata_sha256": "4feb3a8a6020b121af4bfa3a2cced83752774b535ca14e1c03f9707f3dcdb90b",
+      "target": {
+        "backend": "corex",
+        "arch": 71,
+        "warp_size": 64
+      },
+      "config": {
+        "num_warps": 4,
+        "num_stages": 2,
+        "shared": 20480
+      },
+      "ir_sha256": {
+        ".ttir": "64398dcace76669f179f14a424b75526f123ef11777e9e65e21adea0ade569ab",
+        ".ttgir": "c16465211757b12731f4d587ea71763fe1596e42e73d979b03bdbe84abb2f250",
+        ".llir": "b2af533e48b407dcfbe7329f2692217a9883585605d01712c1bf008e0b146286"
+      },
+      "source_location": "#loc = loc(\"/workspace/LeanScale/worktrees/EXP-0005/FlagGems/src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py\":14:0)",
+      "dot_ir": [
+        "%scores = tt.dot %q_39, %k_73, %cst_7, inputPrecision = tf32 : tensor<16x128xbf16> * tensor<128x32xbf16> -> tensor<16x32xf32> loc(#loc187)",
+        "%acc_107 = tt.dot %acc_106, %v_89, %acc_105, inputPrecision = tf32 : tensor<16x32xbf16> * tensor<32x128xbf16> -> tensor<16x128xf32> loc(#loc206)"
+      ],
+      "llvm_exp2_call_count": 10,
+      "layout_conversion_count": 5,
+      "assembly_resource_lines": [
+        "; ScratchSize: 0",
+        ".sgpr_count:     99",
+        ".sgpr_spill_count: 16",
+        ".vgpr_count:     111",
+        ".vgpr_spill_count: 0"
+      ],
+      "limitation": "Historical compile-cache sample for the same source family; trace provides no cache-key identity. No claim of exact per-layer register or occupancy values."
+    },
+    {
+      "cache_key": "WMDHRNRC7RKEYWYFFVELVUYQY3TAPSGGOFRBHGTHDTPQWN44MWXQ",
+      "metadata_sha256": "24a0bcdd388af6e6e95770781f8ecb13c559c0a1f627c26dfffea31568364b55",
+      "target": {
+        "backend": "corex",
+        "arch": 71,
+        "warp_size": 64
+      },
+      "config": {
+        "num_warps": 4,
+        "num_stages": 2,
+        "shared": 32768
+      },
+      "ir_sha256": {
+        ".ttir": "a4b2ffd86addef8b6429369ff1b1ef041e2e3774a73d1d1487c5ea8a1f1e6feb",
+        ".ttgir": "166c26db278d328d47ac3372c1901fd0d96a7ffa29f68511a8c26cbf3b7b57f9",
+        ".llir": "a97ae6793f609b3028782587955d5e37c7cb4f5a73d0b7353bbd3e37c8d31346"
+      },
+      "source_location": "#loc = loc(\"/workspace/LeanScale/worktrees/EXP-0005/FlagGems/src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py\":14:0)",
+      "dot_ir": [
+        "%scores = tt.dot %q_51, %k_84, %cst_8, inputPrecision = tf32 : tensor<64x128xbf16> * tensor<128x32xbf16> -> tensor<64x32xf32> loc(#loc225)",
+        "%acc_124 = tt.dot %acc_123, %v_100, %acc_122, inputPrecision = tf32 : tensor<64x32xbf16> * tensor<32x128xbf16> -> tensor<64x128xf32> loc(#loc247)"
+      ],
+      "llvm_exp2_call_count": 12,
+      "layout_conversion_count": 5,
+      "assembly_resource_lines": [
+        "; ScratchSize: 0",
+        ".sgpr_count:     99",
+        ".sgpr_spill_count: 25",
+        ".vgpr_count:     114",
+        ".vgpr_spill_count: 0"
+      ],
+      "limitation": "Historical compile-cache sample for the same source family; trace provides no cache-key identity. No claim of exact per-layer register or occupancy values."
+    },
+    {
+      "cache_key": "MANRINY3MZDJNS4G777VVZSM4VEXPFNGJOD45Z22IZB27IVSC3NA",
+      "metadata_sha256": "e0c11e404affef293a323d34781cb1aca0a1150b7d92a347f7d4b3fd565dbab2",
+      "target": {
+        "backend": "corex",
+        "arch": 71,
+        "warp_size": 64
+      },
+      "config": {
+        "num_warps": 4,
+        "num_stages": 2,
+        "shared": 20480
+      },
+      "ir_sha256": {
+        ".ttir": "c3ad9b52526e6ac2128ec3c2a390963ee0cc30601adc33f22f60ea2ff9204927",
+        ".ttgir": "54933e374b0d8136ddfba540cf4ee3e03949b6c8ed0e2a36c68732dc1619d0c1",
+        ".llir": "7e3ac0dd5405c0d87f91b430fc53158d81dcc4dd912c099e9692db223fe2b01c"
+      },
+      "source_location": "#loc = loc(\"/workspace/LeanScale/worktrees/EXP-0005/FlagGems/src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py\":14:0)",
+      "dot_ir": [
+        "%scores = tt.dot %q_39, %k_73, %cst_7, inputPrecision = tf32 : tensor<16x128xbf16> * tensor<128x32xbf16> -> tensor<16x32xf32> loc(#loc187)",
+        "%acc_107 = tt.dot %acc_106, %v_89, %acc_105, inputPrecision = tf32 : tensor<16x32xbf16> * tensor<32x128xbf16> -> tensor<16x128xf32> loc(#loc206)"
+      ],
+      "llvm_exp2_call_count": 10,
+      "layout_conversion_count": 5,
+      "assembly_resource_lines": [
+        "; ScratchSize: 0",
+        ".sgpr_count:     99",
+        ".sgpr_spill_count: 16",
+        ".vgpr_count:     111",
+        ".vgpr_spill_count: 0"
+      ],
+      "limitation": "Historical compile-cache sample for the same source family; trace provides no cache-key identity. No claim of exact per-layer register or occupancy values."
+    }
+  ],
+  "prior_decode_sweeps": [
+    {
+      "name": "decode_b1_k4096",
+      "baseline": {
+        "median_us": 71.25288248062134,
+        "trials_us": [
+          71.63316756486893,
+          70.91490924358368,
+          71.25817239284515,
+          71.25288248062134,
+          71.2394267320633
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 87.14760094881058,
+          "trials_us": [
+            88.1490409374237,
+            87.14760094881058,
+            87.13893592357635,
+            87.13893592357635,
+            87.21442520618439
+          ],
+          "speedup": 0.8176115200517614
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 48.500481992959976,
+          "trials_us": [
+            49.52932521700859,
+            48.49807545542717,
+            48.51682856678963,
+            48.48173260688782,
+            48.500481992959976
+          ],
+          "speedup": 1.469116997455076
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 85.32596379518509,
+          "trials_us": [
+            85.41154116392136,
+            85.3605791926384,
+            85.25384962558746,
+            85.32596379518509,
+            85.31009405851364
+          ],
+          "speedup": 0.8350668344239917
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 48.557210713624954,
+          "trials_us": [
+            49.470674246549606,
+            48.64855855703354,
+            48.51394146680832,
+            48.557210713624954,
+            48.471152782440186
+          ],
+          "speedup": 1.4674006482960535
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 100.22404044866562,
+          "trials_us": [
+            101.20721906423569,
+            100.18942505121231,
+            100.22692382335663,
+            100.20577162504196,
+            100.22404044866562
+          ],
+          "speedup": 0.7109360405113262
+        }
+      ],
+      "baseline_after": {
+        "median_us": 70.9504783153534,
+        "trials_us": [
+          71.06538116931915,
+          70.96586376428604,
+          70.9504783153534,
+          70.94760239124298,
+          70.94711810350418
+        ]
+      }
+    },
+    {
+      "name": "decode_b1_k16384",
+      "baseline": {
+        "median_us": 262.27787137031555,
+        "trials_us": [
+          262.6442313194275,
+          262.1730864048004,
+          262.2399032115936,
+          262.27787137031555,
+          262.2990608215332
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 334.63653922080994,
+          "trials_us": [
+            335.5846107006073,
+            334.63653922080994,
+            334.5831632614136,
+            334.37982201576233,
+            334.65576171875
+          ],
+          "speedup": 0.7837693755171532
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 178.0499964952469,
+          "trials_us": [
+            177.96970903873444,
+            178.0499964952469,
+            178.09568345546722,
+            178.19230258464813,
+            177.90000140666962
+          ],
+          "speedup": 1.4730574362988946
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 319.59664821624756,
+          "trials_us": [
+            320.3812539577484,
+            319.6153938770294,
+            319.4730877876282,
+            319.59664821624756,
+            319.47067379951477
+          ],
+          "speedup": 0.8206527597650254
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 169.821634888649,
+          "trials_us": [
+            170.68366706371307,
+            169.77067291736603,
+            169.821634888649,
+            169.68221962451935,
+            169.96586322784424
+          ],
+          "speedup": 1.5444314356194342
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 344.8336720466614,
+          "trials_us": [
+            346.16488218307495,
+            344.7774052619934,
+            344.94325518608093,
+            344.82598304748535,
+            344.8336720466614
+          ],
+          "speedup": 0.7605924033277854
+        }
+      ],
+      "baseline_after": {
+        "median_us": 262.0793282985687,
+        "trials_us": [
+          262.4548077583313,
+          261.99087500572205,
+          262.0124816894531,
+          262.0793282985687,
+          262.3235583305359
+        ]
+      }
+    },
+    {
+      "name": "decode_b8_k4096",
+      "baseline": {
+        "median_us": 214.76490795612335,
+        "trials_us": [
+          215.6788408756256,
+          214.76490795612335,
+          214.09231424331665,
+          220.27212381362915,
+          213.45576643943787
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 235.21633446216583,
+          "trials_us": [
+            236.14807426929474,
+            234.94519293308258,
+            235.34470796585083,
+            235.140860080719,
+            235.21633446216583
+          ],
+          "speedup": 0.9130526944363548
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 204.93750274181366,
+          "trials_us": [
+            205.86538314819336,
+            203.30768823623657,
+            205.490380525589,
+            203.9855718612671,
+            204.93750274181366
+          ],
+          "speedup": 1.0479531812519964
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 313.02404403686523,
+          "trials_us": [
+            314.6995007991791,
+            313.02404403686523,
+            313.0480647087097,
+            312.99281120300293,
+            312.6946985721588
+          ],
+          "speedup": 0.6860971610565169
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 328.31010222435,
+          "trials_us": [
+            330.6201994419098,
+            328.2836675643921,
+            329.04326915740967,
+            328.31010222435,
+            327.4831771850586
+          ],
+          "speedup": 0.6541526029843706
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 946.4831948280334,
+          "trials_us": [
+            969.3264365196228,
+            969.3158864974976,
+            946.4831948280334,
+            916.2692427635193,
+            915.6321883201599
+          ],
+          "speedup": 0.22690831610078824
+        }
+      ],
+      "baseline_after": {
+        "median_us": 202.50961184501648,
+        "trials_us": [
+          202.50961184501648,
+          203.11778783798218,
+          202.61777937412262,
+          202.43029296398163,
+          202.25480198860168
+        ]
+      }
+    },
+    {
+      "name": "decode_b8_k16384",
+      "baseline": {
+        "median_us": 742.9879903793335,
+        "trials_us": [
+          743.6730861663818,
+          743.3870434761047,
+          741.8245077133179,
+          742.9879903793335,
+          741.6778802871704
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 856.5937280654907,
+          "trials_us": [
+            856.7355871200562,
+            857.5096130371094,
+            856.5937280654907,
+            855.7668328285217,
+            855.5601239204407
+          ],
+          "speedup": 0.8673750064190623
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 754.1682720184326,
+          "trials_us": [
+            753.8774013519287,
+            752.5480389595032,
+            754.1682720184326,
+            761.6803050041199,
+            756.288468837738
+          ],
+          "speedup": 0.985175348720019
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 1222.6749658584595,
+          "trials_us": [
+            1228.0572652816772,
+            1225.6797552108765,
+            1222.6749658584595,
+            1216.20774269104,
+            1216.8678045272827
+          ],
+          "speedup": 0.6076741661735667
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 1181.901454925537,
+          "trials_us": [
+            1246.3874816894531,
+            1224.532127380371,
+            1181.901454925537,
+            1181.3653707504272,
+            1181.6394329071045
+          ],
+          "speedup": 0.6286378507133183
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 3316.9302940368652,
+          "trials_us": [
+            3318.650007247925,
+            3316.9302940368652,
+            3318.2551860809326,
+            3231.747627258301,
+            3231.774091720581
+          ],
+          "speedup": 0.22399867483349523
+        }
+      ],
+      "baseline_after": {
+        "median_us": 742.057740688324,
+        "trials_us": [
+          744.0745234489441,
+          742.057740688324,
+          740.4038310050964,
+          740.1297688484192,
+          743.3077096939087
+        ]
+      }
+    },
+    {
+      "name": "decode_b30_k4096",
+      "baseline": {
+        "median_us": 755.0840973854065,
+        "trials_us": [
+          755.0840973854065,
+          753.4326910972595,
+          753.9639472961426,
+          755.4374933242798,
+          756.6850781440735
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 675.9302616119385,
+          "trials_us": [
+            674.7668385505676,
+            678.3173084259033,
+            675.9302616119385,
+            675.5697131156921,
+            676.5697002410889
+          ],
+          "speedup": 1.1171035538262546
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 675.9398579597473,
+          "trials_us": [
+            675.8581399917603,
+            673.9374995231628,
+            676.0793328285217,
+            675.9398579597473,
+            678.0288815498352
+          ],
+          "speedup": 1.117087694258107
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 1068.2399272918701,
+          "trials_us": [
+            1069.5375204086304,
+            1068.2024955749512,
+            1068.2399272918701,
+            1072.1904039382935,
+            1068.2322978973389
+          ],
+          "speedup": 0.7068487875187786
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 1152.5466442108154,
+          "trials_us": [
+            1154.1990041732788,
+            1152.7658700942993,
+            1152.3298025131226,
+            1152.5466442108154,
+            1152.2938013076782
+          ],
+          "speedup": 0.6551440682927293
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 3505.5153369903564,
+          "trials_us": [
+            3575.270652770996,
+            3573.3563899993896,
+            3505.5153369903564,
+            3380.000114440918,
+            3381.2644481658936
+          ],
+          "speedup": 0.21539888569812402
+        }
+      ],
+      "baseline_after": {
+        "median_us": 755.7235956192017,
+        "trials_us": [
+          756.0408711433411,
+          755.0023794174194,
+          756.4423680305481,
+          754.8629641532898,
+          755.7235956192017
+        ]
+      }
+    },
+    {
+      "name": "decode_b30_k16384",
+      "baseline": {
+        "median_us": 2849.0169048309326,
+        "trials_us": [
+          2844.7954654693604,
+          2845.5870151519775,
+          2851.7956733703613,
+          2849.0169048309326,
+          2852.6346683502197
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 2642.5864696502686,
+          "trials_us": [
+            2645.1010704040527,
+            2639.4734382629395,
+            2640.8772468566895,
+            2644.2956924438477,
+            2642.5864696502686
+          ],
+          "speedup": 1.0781168137926567
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 2611.39178276062,
+          "trials_us": [
+            2599.060297012329,
+            2591.930389404297,
+            2611.39178276062,
+            2613.170623779297,
+            2624.0432262420654
+          ],
+          "speedup": 1.090995584668306
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 3964.2066955566406,
+          "trials_us": [
+            4002.2788047790527,
+            3999.3340969085693,
+            3962.459087371826,
+            3963.1807804107666,
+            3964.2066955566406
+          ],
+          "speedup": 0.7186852562517261
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 4054.7261238098145,
+          "trials_us": [
+            4046.231269836426,
+            4061.9373321533203,
+            4078.8702964782715,
+            4054.7261238098145,
+            4043.442726135254
+          ],
+          "speedup": 0.7026410213259979
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 12122.312545776367,
+          "trials_us": [
+            12138.71955871582,
+            12122.225761413574,
+            12123.187065124512,
+            12122.312545776367,
+            12120.543479919434
+          ],
+          "speedup": 0.23502255811937314
+        }
+      ],
+      "baseline_after": {
+        "median_us": 2853.27410697937,
+        "trials_us": [
+          2853.27410697937,
+          2853.5938262939453,
+          2852.0121574401855,
+          2853.062391281128,
+          2853.343725204468
+        ]
+      }
+    },
+    {
+      "name": "decode_b64_k4096",
+      "baseline": {
+        "median_us": 1584.3173265457153,
+        "trials_us": [
+          1587.6201391220093,
+          1583.3317041397095,
+          1584.3173265457153,
+          1581.5311670303345,
+          1586.343765258789
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 1399.1563320159912,
+          "trials_us": [
+            1401.896595954895,
+            1398.9182710647583,
+            1399.1563320159912,
+            1401.930332183838,
+            1396.7788219451904
+          ],
+          "speedup": 1.1323376025200362
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 1426.5216588974,
+          "trials_us": [
+            1428.935170173645,
+            1427.0672798156738,
+            1426.5216588974,
+            1421.980857849121,
+            1426.3707399368286
+          ],
+          "speedup": 1.110615683024596
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 2293.2090759277344,
+          "trials_us": [
+            2293.2090759277344,
+            2294.358253479004,
+            2288.3005142211914,
+            2297.661066055298,
+            2290.9064292907715
+          ],
+          "speedup": 0.690873476464316
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 2377.9735565185547,
+          "trials_us": [
+            2378.2644271850586,
+            2377.9735565185547,
+            2379.223585128784,
+            2374.8245239257812,
+            2377.8653144836426
+          ],
+          "speedup": 0.6662468227212826
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 7402.759552001953,
+          "trials_us": [
+            7553.955554962158,
+            7402.101039886475,
+            7398.1781005859375,
+            7402.759552001953,
+            7416.13245010376
+          ],
+          "speedup": 0.214017126372457
+        }
+      ],
+      "baseline_after": {
+        "median_us": 1584.9157571792603,
+        "trials_us": [
+          1584.9157571792603,
+          1585.0913524627686,
+          1583.3919048309326,
+          1588.4759426116943,
+          1584.4495296478271
+        ]
+      }
+    },
+    {
+      "name": "decode_b64_k16384",
+      "baseline": {
+        "median_us": 5897.526741027832,
+        "trials_us": [
+          5897.526741027832,
+          5894.492626190186,
+          5891.942501068115,
+          5898.858547210693,
+          5899.7039794921875
+        ]
+      },
+      "candidates": [
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 5435.995101928711,
+          "trials_us": [
+            5440.478324890137,
+            5441.012382507324,
+            5435.78577041626,
+            5435.995101928711,
+            5434.901714324951
+          ],
+          "speedup": 1.0849028798674538
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 32,
+            "prefill_tile": 32,
+            "prefill_rows": 16
+          },
+          "median_us": 5407.346248626709,
+          "trials_us": [
+            5408.658504486084,
+            5403.256893157959,
+            5424.295902252197,
+            5405.639171600342,
+            5407.346248626709
+          ],
+          "speedup": 1.0906508423657193
+        },
+        {
+          "config": {
+            "segments": 8,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 8722.399711608887,
+          "trials_us": [
+            8722.399711608887,
+            8706.786155700684,
+            8774.615287780762,
+            8706.765174865723,
+            8752.04849243164
+          ],
+          "speedup": 0.6761358039094044
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 64,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 8753.93009185791,
+          "trials_us": [
+            8759.42325592041,
+            8747.540473937988,
+            8767.992973327637,
+            8753.93009185791,
+            8750.249862670898
+          ],
+          "speedup": 0.673700461294883
+        },
+        {
+          "config": {
+            "segments": 16,
+            "decode_tile": 128,
+            "prefill_tile": 64,
+            "prefill_rows": 32
+          },
+          "median_us": 25973.541259765625,
+          "trials_us": [
+            26018.24951171875,
+            26053.987503051758,
+            25973.541259765625,
+            25924.556732177734,
+            25956.67266845703
+          ],
+          "speedup": 0.22705901679119164
+        }
+      ],
+      "baseline_after": {
+        "median_us": 5890.017032623291,
+        "trials_us": [
+          5879.735469818115,
+          5888.401508331299,
+          5900.723457336426,
+          5890.017032623291,
+          5904.31547164917
+        ]
+      }
+    }
+  ],
+  "prior_decode_source": {
+    "path": "/workspace/LeanScale/artifacts/EXP-0005/20261020_131536/diagnostic.json",
+    "sha256": "ca88cbb2d90a0cb98498b8981c29bcdbed56e816554a2580f060f1215499ec71"
+  }
+}

@@ -134,3 +134,8 @@
 ### 2026-10-21 重启接续
 
 已确认 GPU 空闲，建立 EXP-0009/EXP-0010 独立工作树，先记录假设再修复。profiling JSON 引号错误已精确定位并生成可审计恢复副本；新的 base64 标注进入实际设备探针验证。调度 throttle_prefills 参数透传已修复，14 项 CPU 检查通过；真实 smoke/官方性能待执行。今晚运行窗口及独立守护已更新为 23:35 停止计算、23:50 归档。详见 [接续记录](restart_20261021.md)。
+
+
+### 2026-10-21 GQA 源码与编译证据分析
+
+按用户要求分析当前paged_gqa及IluvatarGQAImpl接入、逐kernel trace、实际launch资源和历史参数扫描。证实主kernel远重于reduce，warp_size=64、4warps=256线程，BM16只有8行有效；记录111寄存器/线程与20KiB shared，以及相关编译样本的布局转换、已融合dot accumulator与exp2 lowering。形成候选优先级、负面历史数据与数值/Graph/官方评测方案；没有改动运行中的代码或新增GPU占用。报告与可复查证据见 [GQA分析](gqa_optimization_analysis_20261021.md)。
