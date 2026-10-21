@@ -1,0 +1,144 @@
+{
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "order": [
+    "B64/L4700",
+    "B30/L16384",
+    "B1/L4096"
+  ],
+  "rows": [
+    {
+      "configuration": "w4_t2_s16",
+      "time_change_percent": [
+        -0.1024704012990485,
+        0.46401408083547313,
+        -0.0776109384817425
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w2_t1_s8",
+      "time_change_percent": [
+        -11.207266067608778,
+        -13.44595654117241,
+        107.71700835802203
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w2_t1_s16",
+      "time_change_percent": [
+        -10.330812148513902,
+        -12.655150882977374,
+        21.956951643456367
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w2_t2_s8",
+      "time_change_percent": [
+        41.53980259269914,
+        38.790175870872105,
+        177.9700869644109
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w2_t2_s16",
+      "time_change_percent": [
+        43.394707145910246,
+        40.52547824136772,
+        59.81016111703619
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w2_t3_s8",
+      "time_change_percent": [
+        76.8138479015362,
+        65.01681006918898,
+        275.2836182120708
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w2_t3_s16",
+      "time_change_percent": [
+        89.23420991210016,
+        70.52819806660943,
+        127.60348633769306
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w4_t1_s8",
+      "time_change_percent": [
+        -21.634993935972258,
+        -18.501179940323254,
+        52.067836058096084
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w4_t1_s16",
+      "time_change_percent": [
+        -20.252716560735696,
+        -20.762140472289094,
+        -13.80550732450001
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "w4_t2_s8",
+      "time_change_percent": [
+        -2.2304248999456155,
+        1.6062741588327434,
+        79.21927754334888
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w4_t3_s8",
+      "time_change_percent": [
+        12.022072583888477,
+        5.174303000482339,
+        112.42774013895355
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "w4_t3_s16",
+      "time_change_percent": [
+        23.871430279739904,
+        9.527118018474813,
+        30.802379814107294
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    }
+  ],
+  "selected_for_serving": false,
+  "next_gate": "Expanded numerical/Graph/shape validation before engine integration"
+}

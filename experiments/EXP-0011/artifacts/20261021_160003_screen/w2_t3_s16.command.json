@@ -1,0 +1,12 @@
+[
+  "python3",
+  "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0011/trial.py",
+  "--warps",
+  "2",
+  "--stages",
+  "3",
+  "--segments",
+  "16",
+  "--output",
+  "/workspace/LeanScale/artifacts/EXP-0011/20261021_160003_screen/w2_t3_s16.json"
+]
