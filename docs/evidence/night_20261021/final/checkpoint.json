@@ -1,0 +1,338 @@
+{
+  "at": "2026-10-21T23:50:09.759823+08:00",
+  "policy": {
+    "timezone": "Asia/Shanghai",
+    "user_notice": "2026-10-21: user confirmed restart and midnight shutdown",
+    "compute_stop_at": "2026-10-21T23:35:00+08:00",
+    "archive_target_at": "2026-10-21T23:50:00+08:00",
+    "machine_shutdown_at": "2026-10-22T00:00:00+08:00",
+    "profile_latest_start_at": "2026-10-21T22:35:00+08:00",
+    "resume_policy": "This window expires at the compute cutoff; require a fresh dated window after restart."
+  },
+  "guard": {
+    "pid": 823,
+    "process_start_ticks": "290703939",
+    "policy": {
+      "timezone": "Asia/Shanghai",
+      "user_notice": "2026-10-21: user confirmed restart and midnight shutdown",
+      "compute_stop_at": "2026-10-21T23:35:00+08:00",
+      "archive_target_at": "2026-10-21T23:50:00+08:00",
+      "machine_shutdown_at": "2026-10-22T00:00:00+08:00",
+      "profile_latest_start_at": "2026-10-21T22:35:00+08:00",
+      "resume_policy": "This window expires at the compute cutoff; require a fresh dated window after restart."
+    },
+    "signal_requests": [],
+    "stage": "awaiting_archive",
+    "updated_at": "2026-10-21T23:35:09.751562+08:00",
+    "controllers_still_alive": []
+  },
+  "experiments": {
+    "EXP-0006": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0006/20261020_185748_official_16k",
+      "status.json": {
+        "pid": 47929,
+        "process_start_ticks": "284143831",
+        "run_directory": "/workspace/LeanScale/artifacts/EXP-0006/20261020_185748_official_16k",
+        "started_at": "2026-10-20T18:57:48.296099+08:00",
+        "selected_cases": [
+          [
+            16384,
+            1024,
+            64,
+            128
+          ]
+        ],
+        "planned_finish_before": null,
+        "stage": "performance_case_complete",
+        "updated_at": "2026-10-20T20:26:09+08:00",
+        "commits": {
+          "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+          "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+        },
+        "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+        "accuracy_status": "deferred_by_user; math_500_not_run",
+        "protocol": "RoPE+KV fusion on EXP-0005 GQA; one complete official case; planned split around shutdown; historical original and EXP-0005 references; no full-model accuracy claim.",
+        "server_pid": 47956,
+        "performance": [
+          {
+            "prefill": 16384,
+            "baseline_total_tokens_s": 917.27,
+            "candidate_total_tokens_s": 1911.35,
+            "throughput_change_percent": 108.37376126985512,
+            "baseline_ttft_ms": 597805.89,
+            "candidate_ttft_ms": 267408.36,
+            "ttft_change_percent": -55.268363113652164,
+            "baseline_retained_runs": [
+              917.56,
+              917.39,
+              916.87
+            ],
+            "baseline_cv_percent": 0.039191194921421604,
+            "candidate_retained_runs": [
+              1912.89,
+              1911.62,
+              1909.54
+            ],
+            "candidate_cv_percent": 0.0884841681043444
+          }
+        ],
+        "incremental_vs_exp5": [
+          {
+            "prefill": 16384,
+            "baseline_total_tokens_s": 1899.98,
+            "candidate_total_tokens_s": 1911.35,
+            "throughput_change_percent": 0.5984273518668592,
+            "baseline_ttft_ms": 269071.74,
+            "candidate_ttft_ms": 267408.36,
+            "ttft_change_percent": -0.6181920107998007,
+            "baseline_retained_runs": [
+              1900.96,
+              1899.11,
+              1899.87
+            ],
+            "baseline_cv_percent": 0.04894222396559374,
+            "candidate_retained_runs": [
+              1912.89,
+              1911.62,
+              1909.54
+            ],
+            "candidate_cv_percent": 0.0884841681043444
+          }
+        ]
+      },
+      "progress.json": {
+        "updated_at": "2026-10-20T20:26:23+08:00",
+        "completed_candidate_rounds": {
+          "16384": 4
+        },
+        "required_rounds_per_case": 4,
+        "stage": "performance_case_complete"
+      },
+      "completion_handler_status.json": {
+        "status": "pushed",
+        "experiment_stage": "performance_case_complete",
+        "complete_results": true,
+        "local_archive": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0006/artifacts/runs/20261020_185748_official_16k",
+        "commit": "ef082e038f28aa808abb00b7039d4438cfdd1180",
+        "remote_verified": true
+      },
+      "saved_files": [
+        {
+          "path": "retained_baseline/4k/raw_runs_20261019_190747.csv",
+          "bytes": 906,
+          "sha256": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463"
+        },
+        {
+          "path": "retained_baseline/16k/raw_runs_20261019_203029.csv",
+          "bytes": 939,
+          "sha256": "648fa5d8e4184b7f0700abf5d5e3006c95dd0870a1a9900d2c7a44994a0ffa2c"
+        },
+        {
+          "path": "candidate_benchmark/benchmark_results/raw_runs_20261020_190221.csv",
+          "bytes": 943,
+          "sha256": "f76f30eb930d2d4ed34e70c13da001558e0f6c0c7fa81d2088678741036b04a4"
+        },
+        {
+          "path": "retained_baseline/4k/summary_20261019_190747.csv",
+          "bytes": 416,
+          "sha256": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e"
+        },
+        {
+          "path": "retained_baseline/16k/summary_20261019_203029.csv",
+          "bytes": 422,
+          "sha256": "e1439442528a6ce7de3729e59e28dc620891d9be578e8b6c2a4ab75cf0b210e8"
+        },
+        {
+          "path": "candidate_benchmark/benchmark_results/summary_20261020_190221.csv",
+          "bytes": 423,
+          "sha256": "9a9fecc459d224aa08d99b89bf1813b88470eb2a71196b8b89e3ae88e0cb15a1"
+        }
+      ]
+    },
+    "EXP-0010": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0010/20261021_141650_official_16k",
+      "status.json": {
+        "pid": 31354,
+        "process_start_ticks": "291098081",
+        "run_directory": "/workspace/LeanScale/artifacts/EXP-0010/20261021_141650_official_16k",
+        "started_at": "2026-10-21T14:16:50.793014+08:00",
+        "runner_sha256": "408ff0e2286841d3cd83f88d0964fcc24ee25f6122c3e1833087bf0aeaefe6fa",
+        "route_gate_version": 2,
+        "selected_cases": [
+          [
+            16384,
+            1024,
+            64,
+            128
+          ]
+        ],
+        "planned_finish_before": "2026-10-21T23:35:00+08:00",
+        "stage": "failed",
+        "updated_at": "2026-10-21T15:45:19+08:00",
+        "commits": {
+          "vllm-plugin-FL": "4534fcd69e7d22295240b3e6fed0c1395d120672",
+          "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+        },
+        "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+        "accuracy_status": "deferred_by_user; math_500_not_run",
+        "protocol": "Full max_tokens KV growth admission on EXP-0006 fusion; one complete official case; historical original and EXP-0006 references; no full-model accuracy claim.",
+        "server_pid": 31381,
+        "error": "KeyboardInterrupt()"
+      },
+      "progress.json": {
+        "updated_at": "2026-10-21T15:45:25+08:00",
+        "completed_candidate_rounds": {
+          "16384": 3
+        },
+        "required_rounds_per_case": 4,
+        "stage": "failed"
+      },
+      "completion_handler_status.json": {
+        "status": "pushed",
+        "experiment_stage": "failed",
+        "complete_results": false,
+        "local_archive": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/artifacts/runs/20261021_141650_official_16k",
+        "commit": "313ca6853736b7c7746319f3afb6e79125a10fc4",
+        "remote_verified": true
+      },
+      "saved_files": [
+        {
+          "path": "retained_baseline/4k/raw_runs_20261019_190747.csv",
+          "bytes": 906,
+          "sha256": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463"
+        },
+        {
+          "path": "retained_baseline/16k/raw_runs_20261019_203029.csv",
+          "bytes": 939,
+          "sha256": "648fa5d8e4184b7f0700abf5d5e3006c95dd0870a1a9900d2c7a44994a0ffa2c"
+        },
+        {
+          "path": "candidate_benchmark/benchmark_results/raw_runs_20261021_142143.csv",
+          "bytes": 781,
+          "sha256": "415781a63ff0e411b306c54e8e09fb2599bc27c08ab0e596bae624abf96153e9"
+        },
+        {
+          "path": "retained_baseline/4k/summary_20261019_190747.csv",
+          "bytes": 416,
+          "sha256": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e"
+        },
+        {
+          "path": "retained_baseline/16k/summary_20261019_203029.csv",
+          "bytes": 422,
+          "sha256": "e1439442528a6ce7de3729e59e28dc620891d9be578e8b6c2a4ab75cf0b210e8"
+        }
+      ]
+    },
+    "EXP-0009": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0009/20261021_131254_profile_4k",
+      "status.json": {
+        "pid": 1088,
+        "run_directory": "/workspace/LeanScale/artifacts/EXP-0009/20261021_131254_profile_4k",
+        "safe_to_resume_scheduler": true,
+        "process_start_ticks": "290714410",
+        "started_at": "2026-10-21T13:12:54.064215+08:00",
+        "commits": {
+          "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+          "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+        },
+        "stage": "complete",
+        "updated_at": "2026-10-21T13:59:52.462192+08:00",
+        "previous_run": "/workspace/LeanScale/artifacts/EXP-0006/20261020_185748_official_16k",
+        "previous_terminal_stage": "performance_case_complete",
+        "mode": "NONE",
+        "server_pid": 11763,
+        "client_pid": 14085,
+        "capture_window": "late",
+        "batch": {
+          "phase": "decode",
+          "B": 64,
+          "M_unpadded": 64,
+          "prefill_requests": 0,
+          "decode_requests": 64,
+          "q_min": 1,
+          "q_max": 1,
+          "L_min_cpu_upper_bound": 4612,
+          "L_max_cpu_upper_bound": 4740,
+          "new_requests": 0,
+          "step": 664,
+          "epoch": 1792561072.027103,
+          "new_requests_total": 65,
+          "profiling": false
+        },
+        "owned_children_reaped": true,
+        "full_graph_operator_coverage": false,
+        "graph_visibility_limitation": true,
+        "raw_data_saved": true
+      },
+      "publication.json": {
+        "status": "pushed",
+        "commit": "084085ec7390de888c09f38a776ba532273b9b70",
+        "verified": true
+      },
+      "saved_files": [
+        {
+          "path": "FULL_DECODE_ONLY/traces/initial/rank0.1792559926677711196.pt.trace.json.gz",
+          "bytes": 1007239,
+          "sha256": "6842444fa6dbf41d7c072e84a6852744ec0ebcb21bf7632feeb36bb6850f510f"
+        },
+        {
+          "path": "FULL_DECODE_ONLY/traces/steady/rank0.1792560016333678455.pt.trace.json.gz",
+          "bytes": 953598,
+          "sha256": "aad417cfa603e08ad5722d7852afabdc3afc717952f2e3aca11e81eebd0eb6bc"
+        },
+        {
+          "path": "FULL_DECODE_ONLY/traces/late/rank0.1792560136570680354.pt.trace.json.gz",
+          "bytes": 119711,
+          "sha256": "282b4e343bc270512e9d75d394a54cc45bf7cd6743623ffbd732939e68aa5a4b"
+        },
+        {
+          "path": "NONE/traces/initial/rank0.1792560865706470150.pt.trace.json.gz",
+          "bytes": 1007630,
+          "sha256": "1ce6a26f9acea37f761db390cd87c78a02354e76d29bef35ee97a0e77b9afe0e"
+        },
+        {
+          "path": "NONE/traces/steady/rank0.1792560954300651963.pt.trace.json.gz",
+          "bytes": 952820,
+          "sha256": "46c7d79f5a5ac2a55a6d238c52ce665b8de3da276780e2cf1638f3aaedab64e1"
+        },
+        {
+          "path": "NONE/traces/late/rank0.1792561074718140409.pt.trace.json.gz",
+          "bytes": 896845,
+          "sha256": "9ae8571d71e9dac3590844e6f6890f1ba3421c14cc3b20af950b8e6c8c646222"
+        },
+        {
+          "path": "FULL_DECODE_ONLY/workload_validation.json",
+          "bytes": 209,
+          "sha256": "df1ef71e374cb116037b42eaf73319b0551f0dc481952de8b788850835b0dbfb"
+        },
+        {
+          "path": "NONE/workload_validation.json",
+          "bytes": 209,
+          "sha256": "df1ef71e374cb116037b42eaf73319b0551f0dc481952de8b788850835b0dbfb"
+        },
+        {
+          "path": "RESULTS.md",
+          "bytes": 8076,
+          "sha256": "0cdf8b2a5a6723303a32fd5fb82dfec46e39c1071bd6c2c37f871f378c00dbcb"
+        },
+        {
+          "path": "analysis.json",
+          "bytes": 68661,
+          "sha256": "f2e6767d1a320954e08d2bb6cd1f92cdb8f6833d811c6fa0bdb0fdb93b51418b"
+        }
+      ]
+    }
+  },
+  "scheduler_queue": {
+    "pid": 31665,
+    "process_start_ticks": "291101083",
+    "started_at": "2026-10-21T14:17:20.763372+08:00",
+    "completed_cases": [],
+    "stage": "failed",
+    "updated_at": "2026-10-21T15:45:19.500496+08:00",
+    "waiting_experiment": "EXP-0010",
+    "waiting_case": "16k",
+    "observed_stage": "candidate_throughput",
+    "error": "KeyboardInterrupt()"
+  }
+}
