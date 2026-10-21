@@ -1,0 +1,313 @@
+{
+  "kind": "CoreX_driver_theoretical_occupancy_not_achieved_occupancy",
+  "measured_at": "2026-10-21T20:35:32.258823+08:00",
+  "properties": {
+    "warp_size": 64,
+    "multiprocessor_count": 16,
+    "max_threads_per_multiprocessor": 8192,
+    "max_shared_memory_per_multiprocessor": 131072,
+    "max_registers_per_multiprocessor": 262144
+  },
+  "kernels": [
+    {
+      "B": 64,
+      "L": 4700,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 0,
+        "decode_rows": 16
+      },
+      "block_threads": 256,
+      "registers_per_thread": 96,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 20480,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 6,
+      "theoretical_active_warps_per_sm": 24,
+      "theoretical_occupancy_percent": 18.75,
+      "ir_sha256": {
+        "ttir": "11642bad8cf2b4f099d00a73c1c4c1a03da2a210f1f574e8c382273ab49adc1b",
+        "ttgir": "151d0994c44390f5dc562731330c2758d966ad7f9a7527c40308ea4e8fd3182b",
+        "llir": "0b8a99c5ba1beaddf12ba92e175d1c37d5d6e27174c61968c547f87c491da792",
+        "asm": "307d36d367d5e755f250d7fd44c890b694d8c0a7794063cbcbac4cfe2e530a2d"
+      }
+    },
+    {
+      "B": 64,
+      "L": 4700,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 1,
+        "decode_rows": 16
+      },
+      "block_threads": 256,
+      "registers_per_thread": 96,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 20480,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 6,
+      "theoretical_active_warps_per_sm": 24,
+      "theoretical_occupancy_percent": 18.75,
+      "ir_sha256": {
+        "ttir": "18bebf5bc9ec1ca694b5c57bff6a2f440bf2f1e2e6819fea876d638e9089240a",
+        "ttgir": "748ee69f14cf9c03ff5c0965ce6284b239c8347f88db642491d65705b41d8823",
+        "llir": "016c214ae02a4b2b90630a5e430cf0d9c33939b5eba5eb4e3929eb611d3ee13f",
+        "asm": "b16902adc736c77da1b9e7fb68690b12983860cadb990c72647c03c651ca1713"
+      }
+    },
+    {
+      "B": 64,
+      "L": 4700,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 0,
+        "decode_rows": 8
+      },
+      "block_threads": 256,
+      "registers_per_thread": 83,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 18432,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 7,
+      "theoretical_active_warps_per_sm": 28,
+      "theoretical_occupancy_percent": 21.875,
+      "ir_sha256": {
+        "ttir": "61716deade4d20934fa08ca4775112c7a8f8761e58f61088abc8ebbeb23572bb",
+        "ttgir": "0f396eb386d2e35a08049850027907dc99229f6beb31ea570812818adf830c1c",
+        "llir": "83bdf200c8a7106eb8841f58bf78d3aee337fca8f311c08458c505163105cff6",
+        "asm": "ac71667beac05ce344a2282d8c0ecf39e5977416ffcddc8dd983e4b2f2dbe4cf"
+      }
+    },
+    {
+      "B": 64,
+      "L": 4700,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 1,
+        "decode_rows": 8
+      },
+      "block_threads": 256,
+      "registers_per_thread": 83,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 18432,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 7,
+      "theoretical_active_warps_per_sm": 28,
+      "theoretical_occupancy_percent": 21.875,
+      "ir_sha256": {
+        "ttir": "65ef43e480958eff257dca9caac25a78698633387bb00c82e4c8d74f66c42c16",
+        "ttgir": "a027d80883f266b4b8f93e408ecd68a5da66dce27e975b3056fea7d12bb46b80",
+        "llir": "eecb20250d8dbba1db65e2c60e60f9f9d56496ef22cbe0c4ca2b62883cabdbe7",
+        "asm": "a2d6bc9cefa9e03bc30594d2c378bc11a21e638592d406c9d92601daf8cb51aa"
+      }
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 0,
+        "decode_rows": 16
+      },
+      "block_threads": 256,
+      "registers_per_thread": 96,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 20480,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 6,
+      "theoretical_active_warps_per_sm": 24,
+      "theoretical_occupancy_percent": 18.75,
+      "ir_sha256": {
+        "ttir": "6a47499fe261da46a959028a9cb81b14355739a1a78d9a9f4d6ead35e042b415",
+        "ttgir": "362431fdda1972e655fa22bfb299d78f9dc2ea835d5417cb39d3ff9fe11a70e7",
+        "llir": "fc74000bdfb01b6152a63cf26b9dff8ca54299d860af73ffbe89078bef625838",
+        "asm": "e84b21eadeb50caf15dcc31361310467a52a1452d0fa43d496e976afd2fb6933"
+      }
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 1,
+        "decode_rows": 16
+      },
+      "block_threads": 256,
+      "registers_per_thread": 96,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 20480,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 6,
+      "theoretical_active_warps_per_sm": 24,
+      "theoretical_occupancy_percent": 18.75,
+      "ir_sha256": {
+        "ttir": "8325f1eaa8b2cb291dd91911f9953f93054c62905f06b9beb04214ea7a72ab02",
+        "ttgir": "affe47de6835e34468e2055668f662efa51eb7fff9b5c0c80e48b2ac90b4a945",
+        "llir": "69896d0edfa5d98b99973819c17fccda34d30164070625c453f8b700c423db48",
+        "asm": "7c177cf8b03d408c648832d424e641114338e2ba1efaf8c9c43cae9b8651106b"
+      }
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 0,
+        "decode_rows": 8
+      },
+      "block_threads": 256,
+      "registers_per_thread": 83,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 18432,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 7,
+      "theoretical_active_warps_per_sm": 28,
+      "theoretical_occupancy_percent": 21.875,
+      "ir_sha256": {
+        "ttir": "01b282132f1e0289417f096f9ba17a1cb056208cfbf2751d3f4f7abe4cc406fa",
+        "ttgir": "d5a7eea024a5c239ba724edc26c3e2cecd3de327e6740b5d118817aa9af7adec",
+        "llir": "827f64f1f8c907242d4c42cb11f6e154030769b319d48315dcd3505e40e6c3ef",
+        "asm": "080fa8ade3bacd0e3ca7b01ee01df9dc1e8a34a92725c86af7e62be538cf21f3"
+      }
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 1,
+        "decode_rows": 8
+      },
+      "block_threads": 256,
+      "registers_per_thread": 83,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 18432,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 7,
+      "theoretical_active_warps_per_sm": 28,
+      "theoretical_occupancy_percent": 21.875,
+      "ir_sha256": {
+        "ttir": "3a6e04ffe5a41eaf9ad17733541542ef879a77f2c27440ca77aaabd09e56b510",
+        "ttgir": "9773a1f2cc9dac3f6157511ce55bc05c166992c15e1428427a82624ec4b7f78a",
+        "llir": "4b58a6517497997b303671e7675d248bfb2e3ddb1ffd13904deda280b13218cc",
+        "asm": "08bd3679b0c32488ca23fd3cff2d5cb6290c501632531034ed338d0b27df5885"
+      }
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 0,
+        "decode_rows": 16
+      },
+      "block_threads": 256,
+      "registers_per_thread": 96,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 20480,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 6,
+      "theoretical_active_warps_per_sm": 24,
+      "theoretical_occupancy_percent": 18.75,
+      "ir_sha256": {
+        "ttir": "d8932b75be8b474b49fa42f8cd8989faaf3e945f6c706012fc592098e7620a96",
+        "ttgir": "06e3e080bdbba09bde176eafed525434dd9507d71333a7c24ca0041fad8e7ec8",
+        "llir": "b3ecb889f26d138180f317af53e55cd464253e98858dd3b1d15666f32fd418d6",
+        "asm": "5e35fd8d92331171ff297c77ceee52c7befa67e7b56726507eea65bb7f3ebba1"
+      }
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 1,
+        "decode_rows": 16
+      },
+      "block_threads": 256,
+      "registers_per_thread": 96,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 20480,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 6,
+      "theoretical_active_warps_per_sm": 24,
+      "theoretical_occupancy_percent": 18.75,
+      "ir_sha256": {
+        "ttir": "05028a294c4a6e994261f6c5a3bbe3a69df278b87dc811b2f4f94ccb71c38b7c",
+        "ttgir": "98450a1e8cabc521cfa887bfbdf0f819d7834737f00d89816a1e51eef28f6ee3",
+        "llir": "2e84117826ff62814e49354159237f49ad463a8eb44831c25c009292ef246720",
+        "asm": "7115f8adb9ada77f2d09d70956f710d72a022140a88eb28b2d3dc1ea850a2283"
+      }
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 0,
+        "decode_rows": 8
+      },
+      "block_threads": 256,
+      "registers_per_thread": 83,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 18432,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 7,
+      "theoretical_active_warps_per_sm": 28,
+      "theoretical_occupancy_percent": 21.875,
+      "ir_sha256": {
+        "ttir": "338847108e95690094dc8f9013eb278fc483ba1fca8dbb01270b3261b8212a39",
+        "ttgir": "a24ddebde934b800ad466136e8f463fb16a68853f43ec58774073eb0fc208583",
+        "llir": "4294e3ea54ef9f53a652851c3fdd108897536833ae8879fd12d59650051eb4c6",
+        "asm": "9f2a8dae8edf8f5a9349551e59c16772d2c65b3c2db988cd411e3392cee0f144"
+      }
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "config": {
+        "decode_warps": 4,
+        "decode_stages": 1,
+        "segments": 16,
+        "decode_layout": 1,
+        "decode_rows": 8
+      },
+      "block_threads": 256,
+      "registers_per_thread": 83,
+      "static_shared_bytes": 0,
+      "dynamic_shared_bytes": 18432,
+      "local_bytes_per_thread": 0,
+      "theoretical_active_blocks_per_sm": 7,
+      "theoretical_active_warps_per_sm": 28,
+      "theoretical_occupancy_percent": 21.875,
+      "ir_sha256": {
+        "ttir": "5ca4744b0606a7224a0f075b6e885700ad839f24015b9e76719d4010f606f505",
+        "ttgir": "2d6e89553961fe3b393da1d8e1793b5b754f6df215319a61b501a753e40c4f72",
+        "llir": "cbba9593bf90db85487e7ed2bab0bf6c8c1906689bcdb9edaa044973ed5ffe55",
+        "asm": "78e15812f0b11cceffce4c318eb182d8fe0983416f4152fb642304e6c945c6ea"
+      }
+    }
+  ]
+}

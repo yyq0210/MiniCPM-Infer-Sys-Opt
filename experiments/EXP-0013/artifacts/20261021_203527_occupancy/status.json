@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "kind": "CoreX_driver_theoretical_occupancy_not_achieved_occupancy",
+  "screen_ir_matches": 12,
+  "script_sha256": "860611b562af33564ea120cfc95177bc627b2a5ac9d1015aafe18caf24da5e1c",
+  "gpu_lock_held": true,
+  "exit_code": 0,
+  "compute_child_timeout_seconds": 180,
+  "safe_to_resume_gpu": true
+}

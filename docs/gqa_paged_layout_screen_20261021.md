@@ -24,3 +24,9 @@ layout1是page16/tile32时按页加载两个页号并广播到32个token；layou
 
 [全部原始筛选结果](../experiments/EXP-0013/artifacts/20261021_201938_screen/RESULTS.md)。
 [IR证据与哈希](../experiments/EXP-0013/screen_ir_evidence.json)。原始IR完整保留服务器；不上传二进制缓存。
+
+## 扩大验证与 occupancy 后续证据
+
+扩大验证已于20:30:05完成：26项数值/Graph检查通过，34个计时点无超过3%回退，全部基线漂移低于0.5%。归档提交03a4a87d9a02f1e61807f17881fa231846cc48b1。
+
+20:35对真实编译内核查询CoreX occupancy API，预测每SM驻留块数6→7，理论occupancy 18.75%→21.875%；12个内核IR哈希与原筛选完全一致。这补充了此前“单凭资源字段不能推断”的证据，但仍未测得运行时achieved occupancy。代码逐步示例、资源门槛计算和适用边界见[专门说明](gqa_paged_layout_code_occupancy_20261021.md)。

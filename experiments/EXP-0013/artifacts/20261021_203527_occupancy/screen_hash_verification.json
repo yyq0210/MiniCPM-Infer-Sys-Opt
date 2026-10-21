@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "B": 64,
+      "L": 4700,
+      "configuration": "layout0_rows16",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 64,
+      "L": 4700,
+      "configuration": "layout1_rows16",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 64,
+      "L": 4700,
+      "configuration": "layout0_rows8",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 64,
+      "L": 4700,
+      "configuration": "layout1_rows8",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "configuration": "layout0_rows16",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "configuration": "layout1_rows16",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "configuration": "layout0_rows8",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 30,
+      "L": 16384,
+      "configuration": "layout1_rows8",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "configuration": "layout0_rows16",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "configuration": "layout1_rows16",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "configuration": "layout0_rows8",
+      "all_ir_hashes_match_screen": true
+    },
+    {
+      "B": 1,
+      "L": 4096,
+      "configuration": "layout1_rows8",
+      "all_ir_hashes_match_screen": true
+    }
+  ]
+}
