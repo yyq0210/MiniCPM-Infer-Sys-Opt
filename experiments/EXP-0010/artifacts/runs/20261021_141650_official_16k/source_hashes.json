@@ -1,0 +1,23 @@
+{
+  "status.json": "113b1ead4b009263afdef7ccaefe06cc3edb00375f508e1816d98762ce039054",
+  "baseline_combined.json": "c7f7ef97288dc764f5017ffd02cc2ecc4d488a1efade95542e36ed0891c0d00f",
+  "resume_provenance.json": "de01271f3bc608cbe944b58f9ff4de05b977d9d3bc8ad9ed5e5031c027bea6fa",
+  "environment_check.json": "d611dadfe451760d6c07c89bfb991f946f1a3fc19329a99bf44aa9986e655514",
+  "stage_history.jsonl": "502b5d96cdc0b3e910d45ecb11d90e5e1b04b7320b332fa64f3808e1bfa18b88",
+  "progress.json": "ccf8885eec91bedd2c277632517a59d9a108db29cc66f1b1601795f962dfed24",
+  "exp6_reference.json": "c65a417b92f26a7f399c33863a7b771bec5965ddb486dd9f5c9a388b2f04ed70",
+  "candidate_validation.json": "a9bf51c8b3cfa39731d11da1b178d9b581dccdd48b665cdcc439fc46ae3bb189",
+  "coordinator.log": "da73ec2f73790df95a71f2dd913894ba42a10a93a584bad05121931f2e484c2d",
+  "candidate_benchmark/server.log": "58bbdf30dadd97f0a32d43e9d015b9125871c28fcb3be301b2e3113bc611d468",
+  "candidate_benchmark/server.command.json": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+  "candidate_benchmark/smoke.json": "b73340990b4585638504e301264b9c30deab314d5df5336c7463ec972cdb8527",
+  "candidate_benchmark/route_evidence.json": "61dd9edfd01407da3788d1471dcdf5cf89c3a944fcba5e11957df3b087961fb1",
+  "candidate_benchmark/benchmark.log": "59258a35741b0b949c4c60a6d52143ff44dff26e73643c8c87acd0ae5ce1693f",
+  "candidate_benchmark/benchmark.command.json": "65a52fca01e7f7e5b43ffced4e9a27a26ed4e3cb0cd2d1c450465568271223c1",
+  "candidate_benchmark/metrics_before.prom": "32f591146a558b934404063bfab9734eb7f55cab2ebddef0166c43c6c8469789",
+  "candidate_benchmark/benchmark_results/raw_runs_20261021_142143.csv": "415781a63ff0e411b306c54e8e09fb2599bc27c08ab0e596bae624abf96153e9",
+  "retained_baseline/16k/raw_runs_20261019_203029.csv": "648fa5d8e4184b7f0700abf5d5e3006c95dd0870a1a9900d2c7a44994a0ffa2c",
+  "retained_baseline/16k/summary_20261019_203029.csv": "e1439442528a6ce7de3729e59e28dc620891d9be578e8b6c2a4ab75cf0b210e8",
+  "retained_baseline/4k/raw_runs_20261019_190747.csv": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463",
+  "retained_baseline/4k/summary_20261019_190747.csv": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e"
+}

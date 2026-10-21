@@ -1,0 +1,28 @@
+{
+  "pid": 31354,
+  "process_start_ticks": "291098081",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0010/20261021_141650_official_16k",
+  "started_at": "2026-10-21T14:16:50.793014+08:00",
+  "runner_sha256": "408ff0e2286841d3cd83f88d0964fcc24ee25f6122c3e1833087bf0aeaefe6fa",
+  "route_gate_version": 2,
+  "selected_cases": [
+    [
+      16384,
+      1024,
+      64,
+      128
+    ]
+  ],
+  "planned_finish_before": "2026-10-21T23:35:00+08:00",
+  "stage": "failed",
+  "updated_at": "2026-10-21T15:45:19+08:00",
+  "commits": {
+    "vllm-plugin-FL": "4534fcd69e7d22295240b3e6fed0c1395d120672",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "Full max_tokens KV growth admission on EXP-0006 fusion; one complete official case; historical original and EXP-0006 references; no full-model accuracy claim.",
+  "server_pid": 31381,
+  "error": "KeyboardInterrupt()"
+}

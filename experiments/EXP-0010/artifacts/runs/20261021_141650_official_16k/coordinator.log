@@ -1,0 +1,30 @@
+{"stage": "environment_verifying", "commits": {"vllm-plugin-FL": "4534fcd69e7d22295240b3e6fed0c1395d120672", "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"}, "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565", "accuracy_status": "deferred_by_user; math_500_not_run", "protocol": "Full max_tokens KV growth admission on EXP-0006 fusion; one complete official case; historical original and EXP-0006 references; no full-model accuracy claim."}
+{"stage": "candidate_official_starting"}
+{"stage": "candidate_throughput"}
+{"stage": "failed", "error": "KeyboardInterrupt()"}
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 378, in main
+    run_command(bench_command, RUN/'candidate_benchmark', 'benchmark', timeout=remaining_seconds())
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 116, in run_command
+    returncode = proc.wait(timeout=timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 2047, in _wait
+    time.sleep(delay)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 401, in <module>
+    main()
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 378, in main
+    run_command(bench_command, RUN/'candidate_benchmark', 'benchmark', timeout=remaining_seconds())
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0010/run_split_e2e.py", line 116, in run_command
+    returncode = proc.wait(timeout=timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 2047, in _wait
+    time.sleep(delay)
+KeyboardInterrupt

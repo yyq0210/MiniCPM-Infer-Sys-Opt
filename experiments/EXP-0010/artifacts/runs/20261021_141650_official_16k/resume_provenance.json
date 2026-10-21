@@ -1,0 +1,13 @@
+{
+  "source_run": "/workspace/LeanScale/artifacts/EXP-0004/20261019_202342",
+  "retained_baseline_hashes": {
+    "baseline_combined.json": "c7f7ef97288dc764f5017ffd02cc2ecc4d488a1efade95542e36ed0891c0d00f",
+    "retained_baseline/4k/raw_runs_20261019_190747.csv": "033c8a65364537c3ebdf7e9c7ffcd5395cb18f24e2f2e59534ce13601fe8d463",
+    "retained_baseline/4k/summary_20261019_190747.csv": "a76b25c608cf769ca9762dae25103296e0adf51c807b5dacdf3fee67edfadd9e",
+    "retained_baseline/16k/raw_runs_20261019_203029.csv": "648fa5d8e4184b7f0700abf5d5e3006c95dd0870a1a9900d2c7a44994a0ffa2c",
+    "retained_baseline/16k/summary_20261019_203029.csv": "e1439442528a6ce7de3729e59e28dc620891d9be578e8b6c2a4ab75cf0b210e8"
+  },
+  "candidate_policy": "Fresh service, one complete official case, four rounds, no reuse of partial candidate rounds.",
+  "baseline_sessions": 2,
+  "candidate_is_new_session": true
+}

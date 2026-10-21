@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "scope": "14 CPU checks including actual parent API contract and allocator lifecycle; service smoke pending",
+  "candidate_commits": {
+    "vllm-plugin-FL": "4534fcd69e7d22295240b3e6fed0c1395d120672",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "parent_commits": {
+    "vllm-plugin-FL": "07d9fa0cfdc5f09db178e29508e3c0bcb5c1e908",
+    "FlagGems": "484413ea0db18221dd9e63e742361d837df9ff13"
+  },
+  "failed_scheduler_parent": "ef63a19a8309c3b3ba686802220883ac2f8836ab",
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0010/20261021_cpu/results.json": "24eb78503ca0556cb9fda24cf8fa1c97752a070f8f6a049b172fd2168a067900"
+  },
+  "code_hashes": {
+    "vllm-plugin-FL": {
+      "vllm_fl/worker/kv_reservation_scheduler.py": "1122411fcb7277992c89bf199df16e0f0ace74460ca48dd98f3fd53cb5f256cb",
+      "tests/standalone/validate_kv_reservation_cpu.py": "7d1470a8e4b174f40deb3c1eae6476267c8a8026055cbf2599c7afba83ce6f1a"
+    },
+    "FlagGems": {}
+  },
+  "cuda_initialized": false,
+  "full_model_accuracy": "deferred_by_user"
+}

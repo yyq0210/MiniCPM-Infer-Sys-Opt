@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "route_gate_version": 2,
+  "scheduler": "KVReservationAsyncScheduler",
+  "kv_growth_admission": true,
+  "scheduler_runtime_evidence": [
+    {
+      "admitted": 1,
+      "checked": 0,
+      "deferred": 0,
+      "first_request": 1,
+      "free_blocks": 32639,
+      "peak_required_blocks": 0,
+      "peak_running": 1,
+      "running": 1,
+      "unsupported": 0
+    }
+  ],
+  "capacity_checks_required": false,
+  "fused_runtime_layers": 42,
+  "gqa_layers": 42,
+  "old_cache_updates_in_fused_graph": 0,
+  "graphs": [
+    {
+      "path": "candidate_cache/torch_compile_cache/0728d151a3/rank_0_0/backbone/computation_graph.py",
+      "counts": {
+        "fl_rope_kv_dispatch": 42,
+        "fl_rotary_embedding_dispatch": 0,
+        "unified_kv_cache_update": 0
+      },
+      "sha256": "5235e99c702dafa56229aa342a30663314ed7e97a02bd8719de2e4a1430ff6ea"
+    }
+  ]
+}
