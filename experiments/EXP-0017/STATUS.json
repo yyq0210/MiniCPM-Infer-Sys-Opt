@@ -88,18 +88,58 @@
       "status": "complete_case_validated",
       "full_task_accuracy": "deferred_by_user",
       "partial_runs_combined": false
+    },
+    {
+      "index": 3,
+      "arm": "B",
+      "run_name": "20261022_200108_3_B_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+        "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "381.48",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.67",
+        "Output tok/s": "688.29",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3441.44",
+        "Mean TTFT (ms)": "5597.41",
+        "Median TTFT (ms)": "1751.06",
+        "P99 TTFT (ms)": "32685.03",
+        "Mean TPOT (ms)": "86.58",
+        "Median TPOT (ms)": "88.37",
+        "P99 TPOT (ms)": "94.24",
+        "Mean ITL (ms)": "86.58",
+        "Median ITL (ms)": "60.68",
+        "P99 ITL (ms)": "359.2"
+      },
+      "retained_total_tokens_s": [
+        3250.21,
+        3515.92,
+        3558.2
+      ],
+      "cv_percent": 4.851357006354231,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
     }
   ],
   "deadline": "2026-10-22T23:35:00+08:00",
   "stage": "candidate_throughput",
-  "updated_at": "2026-10-22T20:06:10.942861+08:00",
-  "session_index": 3,
-  "arm": "B",
-  "run_directory": "/workspace/LeanScale/artifacts/EXP-0017/20261022_200108_3_B_official_4k",
-  "server_pid": 81860,
+  "updated_at": "2026-10-22T20:43:07.716385+08:00",
+  "session_index": 4,
+  "arm": "A",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0017/20261022_203810_4_A_official_4k",
+  "server_pid": 93982,
   "publication": {
     "status": "pushed",
-    "commit": "0eb9f87e10e18097e713dc84e4b4d20abcaac223",
+    "commit": "1c2a91b8c84c8bb36b8af49c4e77eb62bfeb1686",
     "remote_verified": true
   }
 }
