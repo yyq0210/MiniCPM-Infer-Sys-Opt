@@ -25,3 +25,16 @@
 所有采样、失败和资源记录保留；完整任务精度仍暂缓，当前已选服务版本仍EXP-0014。
 
 [完整初筛结果](../experiments/EXP-0015/artifacts/20261022_141326_screen/RESULTS.md)。
+
+## 邻域复核已完成，进入扩大验证
+
+14:31三组全部完成，新增60项数值/Graph检查、27个计时点；所有原始数据已自动推送。
+rows64/warps4/stage1/tile32再次降低pure/mixed耗时9.25%–11.52%；decode变化在0.14%内。
+tile64使pure/mixed耗时增加39.38%–52.85%，stage3增加36.56%–47.32%，两者淘汰。
+因此固定stage1/tile32进入扩大验证，保持decode分页布局和8行配置不变。
+
+扩大检查包含BF16/FP16×page8/16/32/64与NHD/HND、query边界/尾部/混合批次、2048-query长文的每个query FP32因果对照、Graph重放时Q/K/V/length/block-table变化，以及固定地址下CU/query分布变化。另以BF16和FP16实际访问超过2^31元素偏移的prefill KV页。共42项。
+36个计时点覆盖query2/8/17/64/128/512/2048、4K/16K context、多prefill、mixed两顺序及decode批次1/8/16/30/32/64；7×8次Graph调用、前后基线夹测，报告完整GQA耗时。
+先完整保存并复核每个>3%回归或漂移，再决定接入引擎；不自动改变已选EXP-0014。完整任务精度仍暂缓。
+
+[邻域完整数据](../experiments/EXP-0015/artifacts/20261022_142759_refine/RESULTS.md)。
