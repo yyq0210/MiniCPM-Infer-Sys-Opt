@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "positive_fixture",
+      "passed": true
+    },
+    {
+      "name": "reject_parent_logs",
+      "passed": true
+    },
+    {
+      "name": "reject_withdrawn_scheduler",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_layer",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_row_argument",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_compiled_rows",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_compiled_page_load",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_compiled_resources",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_service_compile_evidence",
+      "passed": true
+    },
+    {
+      "name": "verify_complete_parent_4k",
+      "passed": true
+    },
+    {
+      "name": "verify_complete_parent_16k",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic route mutations and real audited parent references; actual new service route pending"
+}

@@ -1,0 +1,8 @@
+{"time": "2026-10-22T12:05:15.530086+08:00", "action": "Record hypothesis, validated input evidence and unchanged official protocol before source edit"}
+{"time": "2026-10-22T12:05:16.146832+08:00", "action": "Freeze engine-only explicit parameters; inverse substitution matches parent exactly", "commits": {"vllm-plugin-FL": "82c6a143f6984f946df42125f1a8699799e8045f", "FlagGems": "1c526ca99d412e203ed3caa8b1663566976ea38c"}}
+{"time": "2026-10-22T12:05:16.219565+08:00", "action": "Integration setup failed; preserve files and diagnose before resuming", "error": "AssertionError()"}
+{"time": "2026-10-22T12:06:33.981013+08:00", "action": "Resume CPU checks after correcting fixture substitution: runtime log has expanded layer names, not literal %s; inference source unchanged"}
+{"time": "2026-10-22T12:06:34.303577+08:00", "action": "Pass CPU route rejection checks, both complete parent references, and unchanged workload/analyzer verification", "checks": 11}
+{"time": "2026-10-22T12:06:45.774120+08:00", "action": "Verify both forks match frozen candidate commits"}
+{"time": "2026-10-22T12:06:45.783011+08:00", "action": "Resumed integration validation failed; preserve evidence", "error": "AssertionError('/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0014/finish_split.py')"}
+{"time": "2026-10-22T12:07:47.804623+08:00", "action": "Fix publication scanner double escaping that matched its own regex source; all 11 CPU checks already passed; source commits unchanged"}
