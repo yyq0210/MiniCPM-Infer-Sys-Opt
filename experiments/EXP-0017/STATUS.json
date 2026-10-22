@@ -48,18 +48,58 @@
       "status": "complete_case_validated",
       "full_task_accuracy": "deferred_by_user",
       "partial_runs_combined": false
+    },
+    {
+      "index": 2,
+      "arm": "B",
+      "run_name": "20261022_192417_2_B_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+        "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "378.38",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.68",
+        "Output tok/s": "693.26",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3466.3",
+        "Mean TTFT (ms)": "5563.29",
+        "Median TTFT (ms)": "1734.2",
+        "P99 TTFT (ms)": "32684.34",
+        "Mean TPOT (ms)": "85.58",
+        "Median TPOT (ms)": "88.46",
+        "P99 TPOT (ms)": "91.18",
+        "Mean ITL (ms)": "85.58",
+        "Median ITL (ms)": "60.83",
+        "P99 ITL (ms)": "356.03"
+      },
+      "retained_total_tokens_s": [
+        3350.49,
+        3481.09,
+        3567.32
+      ],
+      "cv_percent": 3.149438848472604,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
     }
   ],
   "deadline": "2026-10-22T23:35:00+08:00",
   "stage": "candidate_throughput",
-  "updated_at": "2026-10-22T19:29:19.801663+08:00",
-  "session_index": 2,
+  "updated_at": "2026-10-22T20:06:10.942861+08:00",
+  "session_index": 3,
   "arm": "B",
-  "run_directory": "/workspace/LeanScale/artifacts/EXP-0017/20261022_192417_2_B_official_4k",
-  "server_pid": 69829,
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0017/20261022_200108_3_B_official_4k",
+  "server_pid": 81860,
   "publication": {
     "status": "pushed",
-    "commit": "733720f4816415bf8058b6044710084a28101f15",
+    "commit": "0eb9f87e10e18097e713dc84e4b4d20abcaac223",
     "remote_verified": true
   }
 }

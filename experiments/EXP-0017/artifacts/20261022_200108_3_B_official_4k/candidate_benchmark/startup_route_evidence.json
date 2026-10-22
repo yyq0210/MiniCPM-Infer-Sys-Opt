@@ -1,0 +1,178 @@
+{
+  "status": "passed",
+  "gqa_launch": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16,
+    "decode_layout": 1,
+    "decode_rows": 8,
+    "prefill_rows": 64,
+    "prefill_warps": 4,
+    "prefill_stages": 1,
+    "prefill_tile": 32
+  },
+  "kernels": [
+    {
+      "path": "triton_cache/YQECY3DR2SB6FAAUNR6AWH5BKMKPBEZWPFGT32AERAW3MSIUNT6A/_attention.json",
+      "kind": "decode",
+      "sha256": "4b117bef3536ee5cc69274ce19af9ae8e95fccb522c63bb5ac670763b8d96a58",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/P2WU24DMUJ37SFIAKRVLCEHEQLZK7KJUXUSHPAZTW6XEUDOA5FKQ/_attention.json",
+      "kind": "decode",
+      "sha256": "3d025f3d3a3d7d71a8d970aa83480f4e2d5df2f97e5549b4541c35ba4347174c",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/G7M6IKBI7T6E4KCUOEQBD6KRTQFAWS5HUWKHRODFYYVFC2XTT57A/_attention.json",
+      "kind": "decode",
+      "sha256": "7f680b99ab6a3aab8ad88c215584a8bd3e91100f1cfc0f27bc89989772d044e3",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/BNHP4RJSVEZCORFUNQXRFE6A3LKZ2SCUDZGKILKEL5K3OJGFFWUQ/_attention.json",
+      "kind": "decode",
+      "sha256": "a2e40b66aeeb4a0ba058ccd03ef10cf5351bda13904cb2b4ac8a645f042ab94f",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/NJG6WG2SYHCSIST75GOWA3LT75PV4XC2IC5G32SHURQ22XQNELVQ/_attention.json",
+      "kind": "decode",
+      "sha256": "5f14ed8000dcdbc712721d36185c22c3d31644685ea9605d371c66c2def81859",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/MS7AXRKJ6FNM3X3RKPWZMDOX4ZE7RWKKOVUH2BKGORIWZN52JMCQ/_attention.json",
+      "kind": "decode",
+      "sha256": "0d1b6a3be50e8d03a46d856623a03acdda9b2475dbcb4a1158a9344a044295d4",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/L56ADWL3XJYNXPW253Y2X3ZDC6K5TGRD2SUWON6QFCHPWII5YGGA/_attention.json",
+      "kind": "decode",
+      "sha256": "24d8c8f3181e7491262bf0bd02d58916699a88be781084528c45687bd5064019",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/PB6EO6YDGWAGBNIQFRV6Q7FZAG22WNIFM3PTQHVOEBJKZDOHVCIQ/_attention.json",
+      "kind": "decode",
+      "sha256": "cca757016390ea42eb9fa66f2aa5244f5f08647dbb59508b23c9ab0a1651b0ea",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/L3U3K3OLT4NW5CTLIDHVKZNRXLHKNFUPF5FBI7F5DIKUUCLVXMEQ/_attention.json",
+      "kind": "decode",
+      "sha256": "62db18d29ee7ef44e90f0002334bd206a882705de573df2fc93226f93ba8be0f",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/XK5AG2BGW2CCHIVGZ7HQTJVYNDEK7RJ4IQ6WAGZJMTK2ZTUOYNGA/_attention.json",
+      "kind": "decode",
+      "sha256": "970b6e5bf2f3af47b42febb7f36d39527211bf201feefca6d193831c245d121c",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/PZ3YGDJ65YK5VWKKI42GENWIRY46JTYP4JZ6MTAEVNJO5ZZ73THA/_attention.json",
+      "kind": "decode",
+      "sha256": "ae2b9c2e71970dee1ff96fb5dd68b9d05a40532c6213a1c17b0a96b8b1b7ae76",
+      "ttir_sha256": "89b65533d39cc06a12a600db0667f1635d96b5c46a6586df06fd0c4ecbe53f06",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "tile": 32,
+      "page_table_load_elements": 2
+    },
+    {
+      "path": "triton_cache/KHADBMSPSKXPHLLTG3PAQW2335NGUVRPVVLSTWCDGRQ7URIAYJNQ/_attention.json",
+      "kind": "prefill",
+      "sha256": "e914dcf5dc4cfcdd277803ae7f551301fcdabec49755d4668142dfeb93e76801",
+      "ttir_sha256": "b89a3e31d9d146053915bfd4df3ffbb6b429600145a44bd528934a6f22a1490a",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 32768,
+      "logical_query_rows": 64,
+      "tile": 32,
+      "page_table_load_elements": 32
+    }
+  ],
+  "kernel_counts": {
+    "decode": 11,
+    "prefill": 1
+  },
+  "fused_runtime_layers": 42,
+  "gqa_layers": 42,
+  "old_cache_updates_in_fused_graph": 0,
+  "graphs": [
+    {
+      "path": "candidate_cache/torch_compile_cache/602964dd62/rank_0_0/backbone/computation_graph.py",
+      "counts": {
+        "fl_rope_kv_dispatch": 42,
+        "fl_rotary_embedding_dispatch": 0,
+        "unified_kv_cache_update": 0
+      },
+      "sha256": "62d100da1e3579361c97347d492b194b05e497063f5212c98519588f2275aa4d"
+    }
+  ]
+}
