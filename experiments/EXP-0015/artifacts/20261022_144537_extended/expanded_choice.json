@@ -1,0 +1,39 @@
+{
+  "config": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16,
+    "decode_layout": 1,
+    "decode_rows": 8,
+    "prefill_rows": 64,
+    "prefill_warps": 4,
+    "prefill_stages": 1,
+    "prefill_tile": 32
+  },
+  "refinement_run": "20261022_142759_refine",
+  "refinement_publication": {
+    "status": "pushed",
+    "commit": "aa4573b0b99c04ce0f558e6678c72ea2761bcf00",
+    "remote_verified": true
+  },
+  "refinement_source_hashes": {
+    "rows64_w4_s1_tile32.json": "08b9a618a4719a7b8d01a41cdb93bec35cff9b3ce5baa49cc15e7514311293dc",
+    "rows64_w4_s1_tile64.json": "5ced7891dfcfde0f5803d7f524f61d4f59fdbded50daf0ab3c580553732db58c",
+    "rows64_w4_s3_tile32.json": "268c8ddeb915affccb332a09233f9c61d55ac4b93ecb0a5e8891e9ca02c175c0"
+  },
+  "refinement_summary_sha256": "05cd373babe685c3bad5d1b91850be10fab20c5582f161ba49cd84ceb78d4cf0",
+  "coarse_winner_sha256": "abe759c18be76007decb906f575fb60b3b648849d327c504e5eacb830b5f07b3",
+  "selected_for_serving": false,
+  "validation_script_hashes": {
+    "validate_extended.py": "c9b956cd73b12f810ec18ece4cae86b7ba58d3ac7de4e910559257da3f524e4e",
+    "run_extended.py": "ead9691d0dcd693839ff88fa6dc2edf1326b80a8b9b12d3af3ea132a91e92188",
+    "launch_extended.py": "4a5e7229b911fcb949371ea1307f776f10f46be5315a6eaa761f496449bbe294",
+    "trial.py": "1d8f01bce546e1a6ebdefd9ad41aa353842336b15bfc0b1c47eb0c9f9e238bb0",
+    "run_screen.py": "5d067b4631c0716d0b20970fd7287d82ac039d2b26347a2f5737a2d3fc44b391"
+  },
+  "hypothesis": "Reproduced stage1/tile32 prefill gain remains correct over every query, dynamic graph metadata, large addresses and wider shapes without decode regression.",
+  "validation_checks": 42,
+  "timing_points": 36,
+  "serving_selection_unchanged": "EXP-0014",
+  "integration_gate": "All numerical/Graph checks pass; review every timing regression and baseline drift >3% before engine integration."
+}
