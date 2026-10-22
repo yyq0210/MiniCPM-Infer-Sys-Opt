@@ -1,0 +1,108 @@
+{
+  "pid": 24168,
+  "process_start_ticks": "299717684",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0015/20261022_141326_screen",
+  "started_at": "2026-10-22T14:13:26.779556+08:00",
+  "compute_stop_at": "2026-10-22T23:35:00+08:00",
+  "stage": "screen_complete",
+  "trials": [
+    {
+      "configuration": "rows64_w4_s2",
+      "returncode": 0,
+      "elapsed_seconds": 67.7146950759925,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows32_w2_s1",
+      "returncode": 0,
+      "elapsed_seconds": 57.097460865043104,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows32_w2_s2",
+      "returncode": 0,
+      "elapsed_seconds": 70.26479478506371,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows32_w4_s1",
+      "returncode": 0,
+      "elapsed_seconds": 52.45050225267187,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows32_w4_s2",
+      "returncode": 0,
+      "elapsed_seconds": 56.946234094910324,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows64_w2_s1",
+      "returncode": 0,
+      "elapsed_seconds": 57.10004361672327,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows64_w2_s2",
+      "returncode": 0,
+      "elapsed_seconds": 71.66546185221523,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows64_w4_s1",
+      "returncode": 0,
+      "elapsed_seconds": 45.96349936723709,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows128_w2_s1",
+      "returncode": 0,
+      "elapsed_seconds": 80.29164803214371,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows128_w2_s2",
+      "returncode": 0,
+      "elapsed_seconds": 94.6130780489184,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows128_w4_s1",
+      "returncode": 0,
+      "elapsed_seconds": 54.30658788001165,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "rows128_w4_s2",
+      "returncode": 0,
+      "elapsed_seconds": 58.70631520822644,
+      "status": "passed",
+      "checks": 20
+    }
+  ],
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "selected_for_serving": false,
+  "commits": {
+    "vllm-plugin-FL": "82c6a143f6984f946df42125f1a8699799e8045f",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "trial.py_sha256": "1d8f01bce546e1a6ebdefd9ad41aa353842336b15bfc0b1c47eb0c9f9e238bb0",
+  "run_screen.py_sha256": "5d067b4631c0716d0b20970fd7287d82ac039d2b26347a2f5737a2d3fc44b391",
+  "updated_at": "2026-10-22T14:26:14.040514+08:00",
+  "current_configuration": "rows128_w4_s2",
+  "completed_configurations": 11,
+  "child_pid": 28403,
+  "owned_children_reaped": true,
+  "safe_to_resume_gpu": true
+}

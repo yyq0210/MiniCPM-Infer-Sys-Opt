@@ -1,0 +1,222 @@
+{
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "order": [
+    "prefill4k",
+    "prefill16k",
+    "mixed4k_decode_first",
+    "mixed4k_prefill_first",
+    "mixed16k_decode_first",
+    "mixed16k_prefill_first",
+    "decode64_4k",
+    "decode30_16k",
+    "decode1_4k"
+  ],
+  "rows": [
+    {
+      "configuration": "rows64_w4_s2",
+      "time_change_percent": [
+        -0.12720172415512376,
+        -0.017673910055582276,
+        -0.02555199791994811,
+        0.032924831636993446,
+        0.01786207785516858,
+        0.08623909377771799,
+        0.07980478530535962,
+        0.02295073949341031,
+        0.02939824353378473
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows32_w2_s1",
+      "time_change_percent": [
+        101.95597527286341,
+        102.32213652406772,
+        76.40323549840144,
+        76.49495418493105,
+        93.18924335629193,
+        93.88463995138908,
+        -0.17952731527351995,
+        0.0008938002258762623,
+        -0.023270653053641954
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows32_w2_s2",
+      "time_change_percent": [
+        186.91203862291908,
+        190.25582926298972,
+        119.95100616947947,
+        120.62085532130125,
+        150.17815656497274,
+        150.56252262778509,
+        -0.09970411568916981,
+        0.022441188948674196,
+        -0.0782249857352868
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows32_w4_s1",
+      "time_change_percent": [
+        57.99917190301254,
+        60.11581560466934,
+        42.030053054853234,
+        42.49934880691,
+        52.95273287570552,
+        54.08075190476465,
+        -0.031415706057846826,
+        -0.04221442443765877,
+        -0.15423520714603622
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows32_w4_s2",
+      "time_change_percent": [
+        69.0250765395831,
+        72.84019159831236,
+        54.422483160390755,
+        54.29014394176252,
+        69.79974491784458,
+        70.21436852387603,
+        -0.05514742930706751,
+        0.036361264154849415,
+        0.12106337914639109
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows64_w2_s1",
+      "time_change_percent": [
+        51.28942409126891,
+        49.02203731187702,
+        38.70850807597177,
+        38.85231441042658,
+        44.011079715476484,
+        44.99599561992822,
+        0.12215085319153829,
+        -0.03091956493950221,
+        -0.19719393474101343
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows64_w2_s2",
+      "time_change_percent": [
+        115.55768264279709,
+        113.07946905039232,
+        86.63705704756902,
+        86.80448882643415,
+        98.05488910177931,
+        97.82681847912333,
+        0.08794814306734011,
+        0.022776845138117174,
+        0.15455847608392137
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows64_w4_s1",
+      "time_change_percent": [
+        -9.335872976280967,
+        -10.941273917837147,
+        -10.146030316707167,
+        -10.195556835759923,
+        -11.299681478230095,
+        -10.75897116078417,
+        -0.09788411035162037,
+        0.01681572331897474,
+        -0.23471137693734656
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "rows128_w2_s1",
+      "time_change_percent": [
+        146.9834669782875,
+        138.15916373719276,
+        117.34076234577921,
+        117.07053198482096,
+        130.95715834066527,
+        131.39142347902992,
+        0.14910661288685123,
+        0.09766316386128349,
+        -0.02261377115587715
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows128_w2_s2",
+      "time_change_percent": [
+        196.03932596461155,
+        189.41716704535213,
+        156.10137863630894,
+        157.89642284728066,
+        177.86311968351322,
+        178.86635619752096,
+        -0.16759108574083692,
+        0.03559044318530713,
+        0.08599076927449101
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows128_w4_s1",
+      "time_change_percent": [
+        10.334841179777165,
+        6.176943840380034,
+        6.782176170612164,
+        6.47348380614845,
+        6.147137750358778,
+        5.909393305673816,
+        -0.050139206474597575,
+        -0.07275556997485833,
+        -0.28281541151081724
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows128_w4_s2",
+      "time_change_percent": [
+        21.67190091770175,
+        19.236616158302056,
+        18.366547884772878,
+        18.121271002400263,
+        19.983986486947146,
+        19.786666507282025,
+        -0.13174962693592862,
+        0.029321588515784924,
+        -0.006780691997043675
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    }
+  ],
+  "selected_for_serving": false,
+  "next_gate": "Expanded numerical/Graph/shape validation before engine integration"
+}
