@@ -1,0 +1,107 @@
+{
+  "pid": 33927,
+  "process_start_ticks": "299990371",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0016/20261022_145853_official_4k",
+  "started_at": "2026-10-22T14:58:53.700922+08:00",
+  "runner_sha256": "0c28df633c175694967f390325f0d34be304de52c95244e064c9077556f2c466",
+  "analysis_sha256": "574042b1d7d97454691b3608f2fe0073cc760a6c0314a1cd1315bc95a769ea9f",
+  "postprocessing_version": 2,
+  "route_gate_version": 5,
+  "selected_cases": [
+    [
+      4096,
+      1024,
+      64,
+      256
+    ]
+  ],
+  "planned_finish_before": "2026-10-22T23:35:00+08:00",
+  "stage": "performance_case_complete",
+  "updated_at": "2026-10-22T15:35:16+08:00",
+  "commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "GQA prefill stage1 on EXP-0014 fusion with original scheduling; one complete official case; historical original and EXP-0014 references; no full-model accuracy claim.",
+  "server_pid": 33955,
+  "performance": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 2008.97,
+      "candidate_total_tokens_s": 3476.54,
+      "throughput_change_percent": 73.05086686212337,
+      "baseline_ttft_ms": 11658.33,
+      "candidate_ttft_ms": 5559.13,
+      "ttft_change_percent": -52.316240833807235,
+      "baseline_retained_runs": [
+        1976.47,
+        2021.41,
+        2029.02
+      ],
+      "baseline_cv_percent": 1.4136121578930112,
+      "candidate_retained_runs": [
+        3358.63,
+        3495.2,
+        3575.8
+      ],
+      "candidate_cv_percent": 3.1577483113003466
+    }
+  ],
+  "incremental_vs_exp14": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 3332.27,
+      "candidate_total_tokens_s": 3476.54,
+      "throughput_change_percent": 4.3294811044723325,
+      "baseline_ttft_ms": 5901.08,
+      "candidate_ttft_ms": 5559.13,
+      "ttft_change_percent": -5.794701986754969,
+      "baseline_retained_runs": [
+        3190.65,
+        3321.02,
+        3485.14
+      ],
+      "baseline_cv_percent": 4.428421895172182,
+      "candidate_retained_runs": [
+        3358.63,
+        3495.2,
+        3575.8
+      ],
+      "candidate_cv_percent": 3.1577483113003466
+    }
+  ],
+  "scheduler_accounting": {
+    "reference": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 8539.15278114751
+      },
+      "mean_queue_seconds_all_four_rounds": 8.339016387839365,
+      "server_log_samples": 195,
+      "peak_running_sampled": 64,
+      "peak_waiting_sampled": 60,
+      "peak_cache_usage_percent_sampled": 62.0,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "candidate": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7923.904740267433
+      },
+      "mean_queue_seconds_all_four_rounds": 7.738188222917415,
+      "server_log_samples": 183,
+      "peak_running_sampled": 64,
+      "peak_waiting_sampled": 59,
+      "peak_cache_usage_percent_sampled": 61.9,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+    "scheduler_policy": "original; admission telemetry must be absent"
+  }
+}

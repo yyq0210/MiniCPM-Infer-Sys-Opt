@@ -1,0 +1,23 @@
+[
+  {
+    "prefill": 4096,
+    "baseline_total_tokens_s": 3332.27,
+    "candidate_total_tokens_s": 3476.54,
+    "throughput_change_percent": 4.3294811044723325,
+    "baseline_ttft_ms": 5901.08,
+    "candidate_ttft_ms": 5559.13,
+    "ttft_change_percent": -5.794701986754969,
+    "baseline_retained_runs": [
+      3190.65,
+      3321.02,
+      3485.14
+    ],
+    "baseline_cv_percent": 4.428421895172182,
+    "candidate_retained_runs": [
+      3358.63,
+      3495.2,
+      3575.8
+    ],
+    "candidate_cv_percent": 3.1577483113003466
+  }
+]
