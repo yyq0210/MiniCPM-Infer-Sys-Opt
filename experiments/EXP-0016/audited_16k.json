@@ -1,0 +1,128 @@
+{
+  "checked_at": "2026-10-22T18:36:32.446141+08:00",
+  "case": "16k",
+  "run_name": "20261022_153554_official_16k",
+  "status": "complete_case_audited",
+  "metrics": {
+    "Total tok/s": {
+      "exp14": 2181.74,
+      "prefill_stage1": 2314.37,
+      "change_percent": 6.079092834159905
+    },
+    "Output tok/s": {
+      "exp14": 128.34,
+      "prefill_stage1": 136.14,
+      "change_percent": 6.077606358111254
+    },
+    "Mean TTFT (ms)": {
+      "exp14": 241283.65,
+      "prefill_stage1": 225984.31,
+      "change_percent": -6.340810908654603
+    },
+    "Mean TPOT (ms)": {
+      "exp14": 206.35,
+      "prefill_stage1": 194.88,
+      "change_percent": -5.558517082626602
+    },
+    "Mean ITL (ms)": {
+      "exp14": 206.35,
+      "prefill_stage1": 194.88,
+      "change_percent": -5.558517082626602
+    }
+  },
+  "comparison_exp14": {
+    "prefill": 16384,
+    "baseline_total_tokens_s": 2181.74,
+    "candidate_total_tokens_s": 2314.37,
+    "throughput_change_percent": 6.079092834159905,
+    "baseline_ttft_ms": 241283.65,
+    "candidate_ttft_ms": 225984.31,
+    "ttft_change_percent": -6.340810908654603,
+    "baseline_retained_runs": [
+      2183.6,
+      2182.35,
+      2179.27
+    ],
+    "baseline_cv_percent": 0.10214414586724455,
+    "candidate_retained_runs": [
+      2316.11,
+      2313.51,
+      2313.49
+    ],
+    "candidate_cv_percent": 0.06511134275287193
+  },
+  "comparison_original": {
+    "prefill": 16384,
+    "baseline_total_tokens_s": 917.27,
+    "candidate_total_tokens_s": 2314.37,
+    "throughput_change_percent": 152.31066098313474,
+    "baseline_ttft_ms": 597805.89,
+    "candidate_ttft_ms": 225984.31,
+    "ttft_change_percent": -62.19771103292408,
+    "baseline_retained_runs": [
+      917.56,
+      917.39,
+      916.87
+    ],
+    "baseline_cv_percent": 0.039191194921421604,
+    "candidate_retained_runs": [
+      2316.11,
+      2313.51,
+      2313.49
+    ],
+    "candidate_cv_percent": 0.06511134275287193
+  },
+  "accounting": {
+    "reference": {
+      "counter_delta": {
+        "num_preemptions_total": 16.0,
+        "request_queue_time_seconds_count": 512.0,
+        "request_queue_time_seconds_sum": 123176.32432751078
+      },
+      "mean_queue_seconds_all_four_rounds": 240.5787584521695,
+      "server_log_samples": 428,
+      "peak_running_sampled": 31,
+      "peak_waiting_sampled": 62,
+      "peak_cache_usage_percent_sampled": 99.9,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "candidate": {
+      "counter_delta": {
+        "num_preemptions_total": 16.0,
+        "request_queue_time_seconds_count": 512.0,
+        "request_queue_time_seconds_sum": 115397.07170039508
+      },
+      "mean_queue_seconds_all_four_rounds": 225.38490566483415,
+      "server_log_samples": 402,
+      "peak_running_sampled": 31,
+      "peak_waiting_sampled": 62,
+      "peak_cache_usage_percent_sampled": 99.8,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+    "scheduler_policy": "original; admission telemetry must be absent"
+  },
+  "candidate_commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "archive_commit": "99cbee8091b8bb48049f9450127039edc6c40721",
+  "raw_sha256": "4134379a246f2f01ccdee9a11f49ecb28f492ea642b75f3572e834c5f9bd628c",
+  "summary_sha256": "2bd337e74f01afc2cb5f3183fd39de43716a67e7c3aaf4760586df780b13b37f",
+  "route_sha256": "3fb2ea7c1d01d1f3c9c0e3ff3ce1ff8d0376b56d26c8bd75ad14acc64c7517a2",
+  "kernel_counts": {
+    "decode": 36,
+    "prefill": 31
+  },
+  "selected_for_serving": false,
+  "checks": {
+    "four_successful_rounds": true,
+    "discard_first": true,
+    "partial_runs_combined": false,
+    "route_hashes_revalidated": true
+  },
+  "interpretation": "Historical sessions; CV describes three retained rounds, not confidence intervals. Assess both official cases before selection; 4K attribution needs a bounded paired recheck when gains are similar to observed run variation.",
+  "full_task_accuracy": "deferred_by_user"
+}
