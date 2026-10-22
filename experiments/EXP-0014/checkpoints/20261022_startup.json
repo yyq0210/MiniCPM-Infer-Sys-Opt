@@ -1,0 +1,211 @@
+{
+  "observed_at": "2026-10-22T12:15:00.113328+08:00",
+  "status": "official_4k_running_after_route_gate",
+  "run": "20261022_120817_official_4k",
+  "candidate_commits": {
+    "vllm-plugin-FL": "82c6a143f6984f946df42125f1a8699799e8045f",
+    "FlagGems": "1c526ca99d412e203ed3caa8b1663566976ea38c"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "route_evidence": {
+    "status": "passed",
+    "gqa_launch": {
+      "warps": 4,
+      "stages": 1,
+      "segments": 16,
+      "decode_layout": 1,
+      "decode_rows": 8
+    },
+    "kernels": [
+      {
+        "path": "triton_cache/YQECY3DR2SB6FAAUNR6AWH5BKMKPBEZWPFGT32AERAW3MSIUNT6A/_attention.json",
+        "sha256": "4b117bef3536ee5cc69274ce19af9ae8e95fccb522c63bb5ac670763b8d96a58",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/P2WU24DMUJ37SFIAKRVLCEHEQLZK7KJUXUSHPAZTW6XEUDOA5FKQ/_attention.json",
+        "sha256": "3d025f3d3a3d7d71a8d970aa83480f4e2d5df2f97e5549b4541c35ba4347174c",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/G7M6IKBI7T6E4KCUOEQBD6KRTQFAWS5HUWKHRODFYYVFC2XTT57A/_attention.json",
+        "sha256": "7f680b99ab6a3aab8ad88c215584a8bd3e91100f1cfc0f27bc89989772d044e3",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/BNHP4RJSVEZCORFUNQXRFE6A3LKZ2SCUDZGKILKEL5K3OJGFFWUQ/_attention.json",
+        "sha256": "a2e40b66aeeb4a0ba058ccd03ef10cf5351bda13904cb2b4ac8a645f042ab94f",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/NJG6WG2SYHCSIST75GOWA3LT75PV4XC2IC5G32SHURQ22XQNELVQ/_attention.json",
+        "sha256": "5f14ed8000dcdbc712721d36185c22c3d31644685ea9605d371c66c2def81859",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/MS7AXRKJ6FNM3X3RKPWZMDOX4ZE7RWKKOVUH2BKGORIWZN52JMCQ/_attention.json",
+        "sha256": "0d1b6a3be50e8d03a46d856623a03acdda9b2475dbcb4a1158a9344a044295d4",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/L56ADWL3XJYNXPW253Y2X3ZDC6K5TGRD2SUWON6QFCHPWII5YGGA/_attention.json",
+        "sha256": "24d8c8f3181e7491262bf0bd02d58916699a88be781084528c45687bd5064019",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/PB6EO6YDGWAGBNIQFRV6Q7FZAG22WNIFM3PTQHVOEBJKZDOHVCIQ/_attention.json",
+        "sha256": "cca757016390ea42eb9fa66f2aa5244f5f08647dbb59508b23c9ab0a1651b0ea",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/L3U3K3OLT4NW5CTLIDHVKZNRXLHKNFUPF5FBI7F5DIKUUCLVXMEQ/_attention.json",
+        "sha256": "62db18d29ee7ef44e90f0002334bd206a882705de573df2fc93226f93ba8be0f",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/XK5AG2BGW2CCHIVGZ7HQTJVYNDEK7RJ4IQ6WAGZJMTK2ZTUOYNGA/_attention.json",
+        "sha256": "970b6e5bf2f3af47b42febb7f36d39527211bf201feefca6d193831c245d121c",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      },
+      {
+        "path": "triton_cache/PZ3YGDJ65YK5VWKKI42GENWIRY46JTYP4JZ6MTAEVNJO5ZZ73THA/_attention.json",
+        "sha256": "ae2b9c2e71970dee1ff96fb5dd68b9d05a40532c6213a1c17b0a96b8b1b7ae76",
+        "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+        "num_warps": 4,
+        "num_stages": 1,
+        "shared": 18432,
+        "logical_query_rows": 8,
+        "page_table_load_elements": 2,
+        "page_id_broadcast_shape": [
+          2,
+          16
+        ]
+      }
+    ],
+    "fused_runtime_layers": 42,
+    "gqa_layers": 42,
+    "old_cache_updates_in_fused_graph": 0,
+    "graphs": [
+      {
+        "path": "candidate_cache/torch_compile_cache/028f203f3d/rank_0_0/backbone/computation_graph.py",
+        "counts": {
+          "fl_rope_kv_dispatch": 42,
+          "fl_rotary_embedding_dispatch": 0,
+          "unified_kv_cache_update": 0
+        },
+        "sha256": "4ba661eccde6ace4ab6dd2d94d337c1aa9376adc1fcb223e2e07896524bb8bc6"
+      }
+    ]
+  },
+  "route_sha256": "e7f0e0f790c8e931664a4ae2cf8b6ca4785eae5d60d7924666f8803ca7c2cecb",
+  "case": [
+    4096,
+    1024,
+    64,
+    256
+  ],
+  "runs": 4,
+  "skip_first": 1,
+  "planned_next_case": "16k after complete 4k and publisher; pause on regression >3%",
+  "run_window": {
+    "timezone": "Asia/Shanghai",
+    "user_notice": "2026-10-22: user confirmed restart and midnight shutdown",
+    "compute_stop_at": "2026-10-22T23:35:00+08:00",
+    "archive_target_at": "2026-10-22T23:50:00+08:00",
+    "machine_shutdown_at": "2026-10-23T00:00:00+08:00",
+    "profile_latest_start_at": "2026-10-22T22:35:00+08:00",
+    "resume_policy": "This window expires at the compute cutoff; require a fresh dated window after restart."
+  },
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "note": "Startup checkpoint only. No completed end-to-end score yet."
+}

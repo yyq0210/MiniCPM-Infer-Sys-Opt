@@ -6,3 +6,5 @@
 {"time": "2026-10-22T12:06:45.774120+08:00", "action": "Verify both forks match frozen candidate commits"}
 {"time": "2026-10-22T12:06:45.783011+08:00", "action": "Resumed integration validation failed; preserve evidence", "error": "AssertionError('/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0014/finish_split.py')"}
 {"time": "2026-10-22T12:07:47.804623+08:00", "action": "Fix publication scanner double escaping that matched its own regex source; all 11 CPU checks already passed; source commits unchanged"}
+{"time": "2026-10-22T12:08:17.937016+08:00", "action": "Launch serialized official 4K then16K queue; publishers save locally and push; strict service IR gate before benchmarking", "queue_pid": 1077}
+{"at": "2026-10-22T12:15:00.113328+08:00", "step": "actual_service_route_verified", "run": "20261022_120817_official_4k", "status": "official_4k_running_after_route_gate", "kernels": 11, "evidence": "experiments/EXP-0014/checkpoints/20261022_startup.json"}
