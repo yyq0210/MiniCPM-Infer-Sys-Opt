@@ -1,0 +1,14 @@
+[
+  "python3",
+  "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0015/trial_refine.py",
+  "--rows",
+  "64",
+  "--warps",
+  "4",
+  "--stages",
+  "1",
+  "--tile",
+  "32",
+  "--output",
+  "/workspace/LeanScale/artifacts/EXP-0015/20261022_142759_refine/rows64_w4_s1_tile32.json"
+]

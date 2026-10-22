@@ -1,0 +1,69 @@
+{
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "order": [
+    "prefill4k",
+    "prefill16k",
+    "mixed4k_decode_first",
+    "mixed4k_prefill_first",
+    "mixed16k_decode_first",
+    "mixed16k_prefill_first",
+    "decode64_4k",
+    "decode30_16k",
+    "decode1_4k"
+  ],
+  "rows": [
+    {
+      "configuration": "rows64_w4_s1_tile32",
+      "time_change_percent": [
+        -9.250968774054103,
+        -10.993930947559416,
+        -10.222864477981108,
+        -9.917489428299998,
+        -11.518802159102215,
+        -10.91643134667246,
+        0.0322113521437295,
+        0.007433305318316208,
+        0.13868902259090987
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "rows64_w4_s1_tile64",
+      "time_change_percent": [
+        52.851348828752286,
+        51.31559404715907,
+        40.421850225670774,
+        39.37697996451903,
+        48.96850716122534,
+        48.696982219860494,
+        0.08740411381420454,
+        -0.0426635642867379,
+        0.155539555878903
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "rows64_w4_s3_tile32",
+      "time_change_percent": [
+        45.48794924296673,
+        46.07248494844847,
+        36.66284085307434,
+        36.55690649116232,
+        47.32430460810484,
+        46.634589797812694,
+        -0.04289133954366031,
+        0.0870915038700737,
+        0.09418839975363635
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    }
+  ],
+  "selected_for_serving": false,
+  "next_gate": "Expanded numerical/Graph/shape validation before engine integration"
+}
