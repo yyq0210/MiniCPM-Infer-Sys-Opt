@@ -1,0 +1,37 @@
+{
+  "source_run": "20261022_141326_screen",
+  "screen_publication": {
+    "status": "pushed",
+    "commit": "9f29447db84336dd7511ad3c38b17032b957e226",
+    "remote_verified": true
+  },
+  "source_summary_sha256": "07662974cd4bc27755c5d41538d4c30f14326e9f0543203f0eeb1e2f5f632e32",
+  "complete_configurations": 12,
+  "checks": 240,
+  "timing_points": 108,
+  "winner": {
+    "configuration": "rows64_w4_s1",
+    "time_change_percent": [
+      -9.335872976280967,
+      -10.941273917837147,
+      -10.146030316707167,
+      -10.195556835759923,
+      -11.299681478230095,
+      -10.75897116078417,
+      -0.09788411035162037,
+      0.01681572331897474,
+      -0.23471137693734656
+    ],
+    "stable_baseline": true,
+    "primary_gate_passed": true,
+    "global_candidate_gate_passed": true
+  },
+  "next_hypothesis": "At fixed rows64/warps4, compare winner stage1/tile32 against stage1/tile64 and stage3/tile32; one factor at a time.",
+  "selected_for_serving": false,
+  "script_hashes": {
+    "build_refine.py": "e0e673be133b9cd6241169d6e31756f97ccbb4769c020e0ef15bfb115f9a3083",
+    "trial_refine.py": "3bbf498e85e3842d49e08162659c6599aad79f6cb677518093a951b3693ec0df",
+    "run_refine.py": "98ac163f3480c6d5bce8054b03853659e5921b4a3448f316756054e65cf38971",
+    "launch_refine.py": "92d6e9890c54229039fe679814f1b0f92fb4ac7db00eed803a19cda71464bd8c"
+  }
+}
