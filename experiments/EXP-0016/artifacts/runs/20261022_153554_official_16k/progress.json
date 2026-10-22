@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-10-22T16:49:58+08:00",
+  "completed_candidate_rounds": {
+    "16384": 4
+  },
+  "required_rounds_per_case": 4,
+  "stage": "performance_case_complete"
+}
