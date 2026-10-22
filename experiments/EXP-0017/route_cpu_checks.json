@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "A_all_actual_service_kernels",
+      "passed": true
+    },
+    {
+      "name": "A_fixture_positive",
+      "passed": true
+    },
+    {
+      "name": "A_decode_reject_wrong_stages",
+      "passed": true
+    },
+    {
+      "name": "A_decode_reject_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "A_decode_reject_missing",
+      "passed": true
+    },
+    {
+      "name": "A_decode_reject_wrong_rows",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_reject_wrong_stages",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_reject_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_reject_missing",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_reject_wrong_rows",
+      "passed": true
+    },
+    {
+      "name": "A_wrong_decode_log",
+      "passed": true
+    },
+    {
+      "name": "A_withdrawn_scheduler",
+      "passed": true
+    },
+    {
+      "name": "A_missing_layer",
+      "passed": true
+    },
+    {
+      "name": "B_all_actual_service_kernels",
+      "passed": true
+    },
+    {
+      "name": "B_fixture_positive",
+      "passed": true
+    },
+    {
+      "name": "B_decode_reject_wrong_stages",
+      "passed": true
+    },
+    {
+      "name": "B_decode_reject_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "B_decode_reject_missing",
+      "passed": true
+    },
+    {
+      "name": "B_decode_reject_wrong_rows",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_reject_wrong_stages",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_reject_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_reject_missing",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_reject_wrong_rows",
+      "passed": true
+    },
+    {
+      "name": "B_wrong_decode_log",
+      "passed": true
+    },
+    {
+      "name": "B_withdrawn_scheduler",
+      "passed": true
+    },
+    {
+      "name": "B_missing_layer",
+      "passed": true
+    }
+  ]
+}
