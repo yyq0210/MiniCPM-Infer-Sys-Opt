@@ -1,0 +1,7 @@
+{
+  "parent_source_sha256": "6b8259f322657e4f6036c33327887a1a21386ad368460a4459288aa3bcadef4b",
+  "candidate_source_sha256": "3e75e1c7e383da88ef3f1a1fba68ed6e9bda0bc2f0c4ff945068ee849c163e6f",
+  "inverse_patch_exact": true,
+  "jit_kernel_ast_unchanged": true,
+  "original_defaults_unchanged": true
+}
