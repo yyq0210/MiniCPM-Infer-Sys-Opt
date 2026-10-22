@@ -1,0 +1,922 @@
+{
+  "status": "passed",
+  "gqa_launch": {
+    "warps": 4,
+    "stages": 1,
+    "segments": 16,
+    "decode_layout": 1,
+    "decode_rows": 8
+  },
+  "kernels": [
+    {
+      "path": "triton_cache/YQECY3DR2SB6FAAUNR6AWH5BKMKPBEZWPFGT32AERAW3MSIUNT6A/_attention.json",
+      "sha256": "4b117bef3536ee5cc69274ce19af9ae8e95fccb522c63bb5ac670763b8d96a58",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/P2WU24DMUJ37SFIAKRVLCEHEQLZK7KJUXUSHPAZTW6XEUDOA5FKQ/_attention.json",
+      "sha256": "3d025f3d3a3d7d71a8d970aa83480f4e2d5df2f97e5549b4541c35ba4347174c",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/G7M6IKBI7T6E4KCUOEQBD6KRTQFAWS5HUWKHRODFYYVFC2XTT57A/_attention.json",
+      "sha256": "7f680b99ab6a3aab8ad88c215584a8bd3e91100f1cfc0f27bc89989772d044e3",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/BNHP4RJSVEZCORFUNQXRFE6A3LKZ2SCUDZGKILKEL5K3OJGFFWUQ/_attention.json",
+      "sha256": "a2e40b66aeeb4a0ba058ccd03ef10cf5351bda13904cb2b4ac8a645f042ab94f",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/NJG6WG2SYHCSIST75GOWA3LT75PV4XC2IC5G32SHURQ22XQNELVQ/_attention.json",
+      "sha256": "5f14ed8000dcdbc712721d36185c22c3d31644685ea9605d371c66c2def81859",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/MS7AXRKJ6FNM3X3RKPWZMDOX4ZE7RWKKOVUH2BKGORIWZN52JMCQ/_attention.json",
+      "sha256": "0d1b6a3be50e8d03a46d856623a03acdda9b2475dbcb4a1158a9344a044295d4",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/L56ADWL3XJYNXPW253Y2X3ZDC6K5TGRD2SUWON6QFCHPWII5YGGA/_attention.json",
+      "sha256": "24d8c8f3181e7491262bf0bd02d58916699a88be781084528c45687bd5064019",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/PB6EO6YDGWAGBNIQFRV6Q7FZAG22WNIFM3PTQHVOEBJKZDOHVCIQ/_attention.json",
+      "sha256": "cca757016390ea42eb9fa66f2aa5244f5f08647dbb59508b23c9ab0a1651b0ea",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/L3U3K3OLT4NW5CTLIDHVKZNRXLHKNFUPF5FBI7F5DIKUUCLVXMEQ/_attention.json",
+      "sha256": "62db18d29ee7ef44e90f0002334bd206a882705de573df2fc93226f93ba8be0f",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/XK5AG2BGW2CCHIVGZ7HQTJVYNDEK7RJ4IQ6WAGZJMTK2ZTUOYNGA/_attention.json",
+      "sha256": "970b6e5bf2f3af47b42febb7f36d39527211bf201feefca6d193831c245d121c",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/PZ3YGDJ65YK5VWKKI42GENWIRY46JTYP4JZ6MTAEVNJO5ZZ73THA/_attention.json",
+      "sha256": "ae2b9c2e71970dee1ff96fb5dd68b9d05a40532c6213a1c17b0a96b8b1b7ae76",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/JEWN7VLZCWI76MWHZW6DCL3NXBGD6ZGXY63XSDAMQK6NBZMMGN4Q/_attention.json",
+      "sha256": "6e22cc25640cd6f04fbef1570782b330dfc720b0358261507e11e603a7fc9e85",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/URJLQN7YQTZBP2ARTYGLK77BS7RVH2M73GVBREVMOLONO7AFWU5A/_attention.json",
+      "sha256": "7ea988c814a0e75239648afa8781309caf2c79d8e368f8f5de81b171a878968b",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/TBVHGXSBLVZBG7BEP4BPFI23IMVIQRNXSNPSZIBWMAJNRHUVMIDA/_attention.json",
+      "sha256": "f29e62ad16d7910e96147f9f34492668758cd5bb5a897ade29f12a3c4ddc4f4e",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/FFHLIOU4JCZYSP7YAVMN5RJYRSPJBS3LSKPKKNNY67YQJFN25Q2A/_attention.json",
+      "sha256": "3ad0a407ab0290c9a6be3b67e5d0715652c3439f1667ed3cc3d60b96d481245a",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/CIJQU4G6U2ZCPGDK2SF46TNSNR5OCRN56QA3SIEJKZH2BOGPNM2Q/_attention.json",
+      "sha256": "0456b16e01a2752fbad75e545e385262207267ff0572efeb2e3abbba2f6ac90b",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/MA4DGYPBOUTLHCZNUCYU7RAYS7P23I4LZ2WKZMBVJ55KFZIWYGJA/_attention.json",
+      "sha256": "fd07cbf99f64a62ff0f6a8b7f17491d51498b7c1bc3a7863cc072b3f0dc38930",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/U5P53NIFMGGD6W3RATRJ5CGY7XWJCWXPWDKBU3QGRFQAOYZFGVGA/_attention.json",
+      "sha256": "dbd30c9ada77217060d8d3c70e0d0de3fa7b12cca30da188a8a755b286af4f5d",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/ITTPHSMINZ2VN4VGXWFV3WOXZC44MUDIWYAPQKKAUX4KCL6IV6ZQ/_attention.json",
+      "sha256": "69dc2621704b04632d07d5789735d16fb6cc1160fab720886a7482ecc855c1d7",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/GGFQJA6RM5I7W3WURWQQGUXBVCA7B3PNH3OUBI436U76KRZL7VUQ/_attention.json",
+      "sha256": "c6851cc86650185f9bce23dcce66e688c6b76a5d1438471331fc46ab0eda731d",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/OGBLNWDW7XEOEA5AX4474TKIKVPXLMZYUXPLQPRPTZITYSRRCD4Q/_attention.json",
+      "sha256": "ed96fd87ce937c3d723296733d8d925877f1297a2f5bbee0f2a883b014f53300",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/2JRTHDNB6MTIO32PX762DVKAM43TNBVWLOR4HR2SBMSOI74XR74A/_attention.json",
+      "sha256": "b2e371f0ee21456e08a8c353e2361f08e1e8bbe9e4b4a81a5d120733ae9b028e",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/GZU5YEOMEHYPKDTGRILXEJ4AORGHW3W7K45XQQPBZYL252OR2PSA/_attention.json",
+      "sha256": "ecb59e16dd3a98f00a5129de49da3fa32ad57491a08895cba06a5503133c3b37",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/FYP3MRBIZ76HNK3KR3B6VOUA2TJJRNXIOFRNUD7LKJTO7MNPXYXA/_attention.json",
+      "sha256": "ee99e48ced5126c9ce1755b6b8af47289e6b5dc21d92481885fadab618c8ef23",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/FDJA4KD6DVNM6GKN6WPSZUP4FBZPRLCGPFGD4REXUYNFQLWQ62TQ/_attention.json",
+      "sha256": "22da10b7f1c70d7543effd3a5dae765810f410fe5a7c61a06936da3e85bbbae0",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/TKW6WZCVAX6327LIKXFA3SPL3MIZXQDYE66TJ6ZFMSU3SMGXJLDQ/_attention.json",
+      "sha256": "4f210b04439a4dbdc48c92bcf83b1cc89d846a4205f104c841146fcb076dbe30",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/KL6TOEPY4CUEDQ424YBDPCDT4KE6HGHLZTGGHUH7SUEWVKXNYS5Q/_attention.json",
+      "sha256": "96266c677411842cbbade35763e0f89aa94292b9a8907b82596941e20619cdf7",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/OW3DYDZGNZKJCQLMIZIRUFHFMRMTDZWC7T3FM7V5XQEL7QYYQ4IQ/_attention.json",
+      "sha256": "233c5ff1402552e7e59d551f2770e80726c06c8f16aadf53a2ba6017424ca084",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/4ZWMJGVZ4VRR7WZPYV2B32CIYM7RB6OPPS5ZPL7IYAWU2TDUQHIA/_attention.json",
+      "sha256": "d61eebced7a6c4da14b134c8a485db99b2648131435845563157101982027c45",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/4GKAOHA6SGNOVI6VZEG6UEZSNCHG2SNBLLT7H4NX2EYSAWQLPEYA/_attention.json",
+      "sha256": "6b8d5f2403df155b2110f69b9194b94d5f4c50640e7a9f274697aeabbc21645b",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/LPHDKY6TCC73J3L4CRPLSSXSRWTX4R4YBUA4TK5S5BUR2YCKXXAQ/_attention.json",
+      "sha256": "a629a36263bb2ca77203df26b790e8b94d1437d23bb067abec203c61a2e53d83",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/VHL2HEE64YY5LGSKSZPN6Y2E7OPJHQRVARHMFVKYL3PST56YHAXA/_attention.json",
+      "sha256": "b4b28414812ef389cac7f13959677a3899f9418344ce7dd91190b2902015d67d",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/RL4FRGCLURDDIARALYPPHJ76ARVP46GYFR7FVJKNDC2CUT4CLYWA/_attention.json",
+      "sha256": "d8d6511449c88f9cc1916a50a700f56a3b067747d1396b6b5ab62a43375b341e",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/Y7GVC4RHMSHD3FEFTUZW5O36DBKVOTQVRXV24SFPXGEOUZF3HPNA/_attention.json",
+      "sha256": "dd2898c3d002138aefd622220f5c7805f7f28a8112bbfdcc3e4da47203ba439e",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/RBDUOI7HYWJX6L73UB6KHNPLFGF3TVXCDLWYGRMTIEVS3HQHJA2A/_attention.json",
+      "sha256": "391243cee82ce820a1df2418cafc1e4e39775ac78fdc0fe82262b246f70410fa",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/PRJ65UVUHSYHHEZN3EBGYDVBSUU4CU2NPPEFPOBO6WT5AOVCOSMQ/_attention.json",
+      "sha256": "49cf3e920382aaaf3325960c6c29e9ffe2b57a7cd02d09261fcb5b4dc868f759",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/R3O6PFXXMNIR3RH6GDSJLAGHUP3CQKPOZ7WKWXZGYQT2A55WRFEA/_attention.json",
+      "sha256": "5208989b8930bf4acca58bddaa1401c7f267b21f6e123321db14b1815fb165ce",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/R46XXYWZXBX6LVSGIEVNYMWTDENQSC2JWKD6YXO4ZMCJBYP3DRWA/_attention.json",
+      "sha256": "e1c702dcf11f38a191d45eab8cebe38a537f8b5aec72e88b2bfdcfa74960d677",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/H3M5ZM4VYGVL2G2GJ32P4QU6ETFB2KBKQZ5SC6RW6G55JEAK4CEQ/_attention.json",
+      "sha256": "cbd6ea8bc26150b385581493099df478eb76a98f42cbd367d61968a1e80a6d38",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/JKFWCBNDJOOEHBTVWWHQF6JEPSLHTAUU7NF6GFKURDEAR2KXTFWQ/_attention.json",
+      "sha256": "42e06f06b1c84021fe01aaac8b6a4b2aa30150cb660e026a5a81bda041e140a4",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/PCTXU5GJKZS36KWMZQECKZJEYRI5PXBZKPY6KW6XUGE2BRKV7D5Q/_attention.json",
+      "sha256": "39df4d08746f74b7893ecc0cf2cc70e4ac6d45a0b72117a57e8b3de495362bba",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/N5SFPGO4NXF6NX36Y3WVSWFQSEULT2GWCMZ65ZWGIVOJBIYYO4WQ/_attention.json",
+      "sha256": "2d0840cabd6e54c589dcf0d62d1001cf9a934c6c331eb99cbec41523b9033065",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/QG2VBKKIIJH6FM5M7FLKJMGW44SANQMVRX3XXGGM67WLTSN5EHPQ/_attention.json",
+      "sha256": "1df82caf1102d52bbccae3f9d888cd7587f5a4c868a3854dd0deae66837df638",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/WTMVFGQ7HMTESFFMZPPHLKBOEHYTC4M6CFF6C4H2OAIKFSV5DDYA/_attention.json",
+      "sha256": "084ca779a0e63f055650e8b193268f17797c2566400599fe4b24887f3457cb90",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/UMNCROAKMEF3RMYH2BEUH6BOVOJH5GHD4F5DBIGEPL5L6RLWMEMA/_attention.json",
+      "sha256": "eb33c2f066c92b1de5fd27f9d9113f6ad6b7d612ca4564f714ba6d0a792db033",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/PUUM3ZBMGQMV5ZDXSP4RHVTM2WN7IQ2NBENAN2KZBT4K3VZ7YIHQ/_attention.json",
+      "sha256": "25c3be64f32b6a53c4bd57c68e0df4de63d1cd2e9c9ea41290364e694e0bb4c0",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/XV6X2FOU2RCIPTTO46FXTN66RVPJX7K3SP6N7JA2SD6BDKU4LMHA/_attention.json",
+      "sha256": "83177a09733e6e243108055b89d80ac375eb72a40b4d5fbe5ed23ac590abb6d1",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/K3CO6LEJKZF76WKHNQCTLR7E5V4L2Q73NBK2SJJTOUZXNLWKEYSQ/_attention.json",
+      "sha256": "b6437ee99fcc2df8cd931521ef1313f32a97b6b86d459139f1f009963143341e",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/HQE7KQIF7HWA4HXKUQZPFCFUOVODFZ5KSN4ONFRBGSXXPMREOLHQ/_attention.json",
+      "sha256": "b89962f674670933bd12143fbbe13caf98931c5777e2adc5505ee2c4c038357a",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/NY7H5PQD6XYZ677FLHDVL5NXQZWIBOVBAMFKEQ42GGNZWEZXGXQQ/_attention.json",
+      "sha256": "c7c8b4664f6a80fd11200b0d9010b0f1214ebc40c9aff712fbfb553cc80433dc",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/Q5UTANQUWUNLGNU3YUDG62QG6WQTKJCYDUMH4CZXHGVA5RTG7MIQ/_attention.json",
+      "sha256": "c3476804c8f355092d13071bc4f900745c60c154893f2f83be432248fde960a5",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/4QFGGWO2RRHRDE3TM4F5BTCDDD4PS25Q45CYVIDE7ILDFNS6U6UA/_attention.json",
+      "sha256": "52e2da401fb348a3884929b0a3a41bd81e2d07517b230fe128f55bb6666ea6ac",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/5DUIVBKPW5OTBGHMYB443R25PO6M6VQUIUFW425ZLBCATENWIKQA/_attention.json",
+      "sha256": "b48e6a75a77ec68f412d6a96a1b54727d23c078e3e53f62920a18a89cd7e7d81",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/3ZBMHYH4ZEOP3LU36MS2TQ55GQ4SSYBN6CGFCBONJAT44EH2SYVA/_attention.json",
+      "sha256": "568eacccdf0d6a35070b094c6b89f00c9f061e6f4e39cf5b82e545deeb03b7f6",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/6Y4NZXBUQKRPTJJSGXQNC66KKCNLZC5JEKBHKH7CBI7XEUKMV3CQ/_attention.json",
+      "sha256": "7bff3b71f8cad464bd9b740dffb591c5228260e4799115576b988876e53d2296",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/EQ7HPBTNIV7APXL2S5IC6YXSVAWOUOF7UJFA3GO2IEJCW4PU7GUA/_attention.json",
+      "sha256": "2231b31ab0c5b5be1bdfe5879e42b27b05216b8b6fcf678f326b20e222b17e49",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/WOPA3EEKE7RTAOMMVM72Z5QGOUC5ZTH2CGQL6MSGTZ7ECL2K5NSA/_attention.json",
+      "sha256": "9962d870463976be959fc71243cf1a67c0dc53b7f62127106ae42c986d007aef",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/YOROGLECP6Y6AO5GPGMMBQMQ7WVSLSSS744ZEIGWOXDTTDBKNTCA/_attention.json",
+      "sha256": "70d10ce395cb3a3f54130b9bf11c27636532ded2c32fed7118e5e55422ac5a9c",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/DIQRAPHIT5AOHZJ3I63WH5FQGSKIFPJMP3IQLLBZ3UBZF2XVUA7Q/_attention.json",
+      "sha256": "9cd735c596d1ddc54414a475728d4ae696c7ab6899f112ea3525d061434672bb",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/FYDGTNO45QJ4PGUKHWHPBEBWBQHDU4N3D7MBSJROYQGDRXWC6OHQ/_attention.json",
+      "sha256": "818b9b212920061fa7a290e23c8798797f724b261cb8d0c1e3aba9bdf966b2db",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/DDBXW3A564DEEQM6SEKASQHBAW2EBHNMWHXOCMTFWWCL2GPFQDPQ/_attention.json",
+      "sha256": "971b0de9e60c26410aa20ff4c5f4536ca7b0e8e4d1e7b55d4028c621c73827fe",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/DBOHV7NRT6QKU42S3UFQRZNUWCD64MOSI7SC3HE5YGWJ2GPYLHNQ/_attention.json",
+      "sha256": "463f44d962ad3f9b0e4f46d79e43ef1a84a6a61ceda86cca5a5ca3695604d6d6",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/NPHCWZVLZX3EJZDW3N4FOLBAAYNCHLRWZA5TH37EWNJL62FMAFDA/_attention.json",
+      "sha256": "9755b81c1d8229ea77dcec940bb6437b25f00b8859daaf8ce3307f9e65436514",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    },
+    {
+      "path": "triton_cache/37TNPJL4QJRTJQHPLMHFKTQ232OMS3346PLDWIYAJKMCXD4ZZBPQ/_attention.json",
+      "sha256": "e50c6a87c13a7c2a065afb99a5e313a6b18ad44833efa8f4dcc48950724a0a4e",
+      "ttir_sha256": "afdb8f30ab88ee2b2791faff762345d428e45ee6125ebf35f000d1333afe6736",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 18432,
+      "logical_query_rows": 8,
+      "page_table_load_elements": 2,
+      "page_id_broadcast_shape": [
+        2,
+        16
+      ]
+    }
+  ],
+  "fused_runtime_layers": 42,
+  "gqa_layers": 42,
+  "old_cache_updates_in_fused_graph": 0,
+  "graphs": [
+    {
+      "path": "candidate_cache/torch_compile_cache/028f203f3d/rank_0_0/backbone/computation_graph.py",
+      "counts": {
+        "fl_rope_kv_dispatch": 42,
+        "fl_rotary_embedding_dispatch": 0,
+        "unified_kv_cache_update": 0
+      },
+      "sha256": "4ba661eccde6ace4ab6dd2d94d337c1aa9376adc1fcb223e2e07896524bb8bc6"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "pid": 1079,
+  "process_start_ticks": "298966799",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0014/20261022_120817_official_4k",
+  "started_at": "2026-10-22T12:08:17.980171+08:00",
+  "runner_sha256": "6916fac422c2d7138d7cbb48e6e145c0b8c582992c10cc554a3a2cab152f20bb",
+  "analysis_sha256": "574042b1d7d97454691b3608f2fe0073cc760a6c0314a1cd1315bc95a769ea9f",
+  "postprocessing_version": 2,
+  "route_gate_version": 4,
+  "selected_cases": [
+    [
+      4096,
+      1024,
+      64,
+      256
+    ]
+  ],
+  "planned_finish_before": "2026-10-22T23:35:00+08:00",
+  "stage": "performance_case_complete",
+  "updated_at": "2026-10-22T12:47:03+08:00",
+  "commits": {
+    "vllm-plugin-FL": "82c6a143f6984f946df42125f1a8699799e8045f",
+    "FlagGems": "1c526ca99d412e203ed3caa8b1663566976ea38c"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "accuracy_status": "deferred_by_user; math_500_not_run",
+  "protocol": "GQA paged KV broadcast and eight-row decode on EXP-0012 fusion with original scheduling; one complete official case; historical original and EXP-0012 references; no full-model accuracy claim.",
+  "server_pid": 1106,
+  "performance": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 2008.97,
+      "candidate_total_tokens_s": 3332.27,
+      "throughput_change_percent": 65.86957495632089,
+      "baseline_ttft_ms": 11658.33,
+      "candidate_ttft_ms": 5901.08,
+      "ttft_change_percent": -49.38314492727518,
+      "baseline_retained_runs": [
+        1976.47,
+        2021.41,
+        2029.02
+      ],
+      "baseline_cv_percent": 1.4136121578930112,
+      "candidate_retained_runs": [
+        3190.65,
+        3321.02,
+        3485.14
+      ],
+      "candidate_cv_percent": 4.428421895172182
+    }
+  ],
+  "incremental_vs_exp12": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 2936.01,
+      "candidate_total_tokens_s": 3332.27,
+      "throughput_change_percent": 13.496548036280531,
+      "baseline_ttft_ms": 5874.6,
+      "candidate_ttft_ms": 5901.08,
+      "ttft_change_percent": 0.4507540938957444,
+      "baseline_retained_runs": [
+        2908.21,
+        2844.26,
+        3055.57
+      ],
+      "baseline_cv_percent": 3.690853843281303,
+      "candidate_retained_runs": [
+        3190.65,
+        3321.02,
+        3485.14
+      ],
+      "candidate_cv_percent": 4.428421895172182
+    }
+  ],
+  "scheduler_accounting": {
+    "reference": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 8606.149779213592
+      },
+      "mean_queue_seconds_all_four_rounds": 8.404443143763274,
+      "server_log_samples": 218,
+      "peak_running_sampled": 64,
+      "peak_waiting_sampled": 61,
+      "peak_cache_usage_percent_sampled": 62.0,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "candidate": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 8539.15278114751
+      },
+      "mean_queue_seconds_all_four_rounds": 8.339016387839365,
+      "server_log_samples": 195,
+      "peak_running_sampled": 64,
+      "peak_waiting_sampled": 60,
+      "peak_cache_usage_percent_sampled": 62.0,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+    "scheduler_policy": "original; admission telemetry must be absent"
+  }
+}

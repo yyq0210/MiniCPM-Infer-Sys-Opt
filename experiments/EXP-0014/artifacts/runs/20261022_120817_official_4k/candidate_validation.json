@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "candidate_commits": {
+    "vllm-plugin-FL": "82c6a143f6984f946df42125f1a8699799e8045f",
+    "FlagGems": "1c526ca99d412e203ed3caa8b1663566976ea38c"
+  },
+  "launch": {
+    "segments": 16,
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "decode_layout": 1,
+    "decode_rows": 8
+  },
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0013/20261021_201938_screen/layout1_rows8.json": "74479b5da6d501bfb9dcd0c759411bf9e20dc6d49579f1f154d301b31b27e9f9",
+    "/workspace/LeanScale/artifacts/EXP-0013/20261021_202733_extended/validation.json": "742da403ae1742a80261301296a1e6906442ebb686a52b73114a0ebd64d84492"
+  },
+  "code_hashes": {
+    "vllm-plugin-FL": {
+      "vllm_fl/dispatch/backends/flaggems/impl/iluvatar_gqa.py": "e7c20a305a3023dad5b157e30bff49dd8618fc928dc6d09b5186fdb9238384d5"
+    },
+    "FlagGems": {
+      "src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py": "6b8259f322657e4f6036c33327887a1a21386ad368460a4459288aa3bcadef4b"
+    }
+  },
+  "validation_scope": "EXP13 26 numerical/Graph checks and 34 timings; full task accuracy deferred",
+  "integration_cpu_check": "Only explicit layout/row kwargs and runtime log changed; reverse substitutions match parent exactly"
+}
