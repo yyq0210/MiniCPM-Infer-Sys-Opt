@@ -3,3 +3,4 @@
 {"time": "2026-10-22T14:56:22.953485+08:00", "action": "Pass distinct decode/prefill route rejection checks, complete parent data and candidate hashes", "checks": 19}
 {"time": "2026-10-22T14:56:34.604218+08:00", "action": "Verify plugin and kernel forks at frozen candidate commits"}
 {"time": "2026-10-22T14:58:45.696401+08:00", "action": "Start serialized official 4K then 16K queue with fixed candidates after 19 CPU gate checks", "candidate_commits": {"vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287", "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"}, "compute_stop_at": "2026-10-22T23:35:00+08:00"}
+{"time": "2026-10-22T15:12:11.781892+08:00", "action": "Actual service route passed before official benchmark; frozen script and compile evidence hashes verified", "gqa_layers": 42, "rope_kv_layers": 42, "full_decode_graphs": 35, "kernel_counts": {"decode": 11, "prefill": 1}, "run_name": "20261022_145853_official_4k"}
