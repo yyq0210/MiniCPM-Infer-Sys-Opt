@@ -1,0 +1,19 @@
+{
+  "pid": 56370,
+  "process_start_ticks": "301348964",
+  "started_at": "2026-10-22T18:45:19.621384+08:00",
+  "order": [
+    "A",
+    "B",
+    "B",
+    "A"
+  ],
+  "completed_sessions": [],
+  "deadline": "2026-10-22T23:35:00+08:00",
+  "stage": "candidate_throughput",
+  "updated_at": "2026-10-22T18:50:22.291350+08:00",
+  "session_index": 1,
+  "arm": "A",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0017/20261022_184519_1_A_official_4k",
+  "server_pid": 56384
+}
