@@ -8,3 +8,4 @@
 {"time": "2026-10-22T12:07:47.804623+08:00", "action": "Fix publication scanner double escaping that matched its own regex source; all 11 CPU checks already passed; source commits unchanged"}
 {"time": "2026-10-22T12:08:17.937016+08:00", "action": "Launch serialized official 4K then16K queue; publishers save locally and push; strict service IR gate before benchmarking", "queue_pid": 1077}
 {"at": "2026-10-22T12:15:00.113328+08:00", "step": "actual_service_route_verified", "run": "20261022_120817_official_4k", "status": "official_4k_running_after_route_gate", "kernels": 11, "evidence": "experiments/EXP-0014/checkpoints/20261022_startup.json"}
+{"time": "2026-10-22T14:09:48.417214+08:00", "action": "select_completed_performance_baseline", "commits": {"vllm-plugin-FL": "82c6a143f6984f946df42125f1a8699799e8045f", "FlagGems": "1c526ca99d412e203ed3caa8b1663566976ea38c"}, "official_cases": ["4k", "16k"], "gpu_work": false}
