@@ -1,0 +1,17 @@
+{
+  "status.json": "b7b81075929e53497a2825b35d15948d3da03a31cef625c6575b0bc36571454c",
+  "environment_check.json": "4ec749f34bc119937baac18d2af34888219d55155abeecacac272357e8ea099c",
+  "result.json": "cca3277b9a47ff9289257ec9d5aafbee5f33193b5fece4b680b7b2f471e39fc7",
+  "stage_history.jsonl": "18c0a1343f78d66fe5877e99ad2c0082d8932086cc88a986db535e7c0e18683d",
+  "candidate_benchmark/server.log": "5923cc8b3c57f9b7fd809c9cfe918af3fb68fbc251d1b3ff3f18c16d0cc8a5ef",
+  "candidate_benchmark/server.command.json": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+  "candidate_benchmark/benchmark.log": "92d958ffaf026ba21fcfe2f3a4e3f79c477c854452e332ab93e2976131a12cb4",
+  "candidate_benchmark/benchmark.command.json": "7ee0690c42460bb245c043ff8cfed3868cf2c0154f125f185084f5117befd68c",
+  "candidate_benchmark/smoke.json": "65f18b0a5db2b0edd8e3c9a85b6f768ef6d2c1d0170269062eae3c3305b048c6",
+  "candidate_benchmark/route_evidence.json": "30debfb3c86b179fc518fcf56ad4160e36d45eabc2a4903bdb7fe96ee250ea14",
+  "candidate_benchmark/startup_route_evidence.json": "bc99bb38bda2c9f1b257212fc268c7bf85a2e06797cc2cdb20ecd438b16a9adc",
+  "candidate_benchmark/metrics_before.prom": "0638998305da0be5ed06c3db3fddd594935b7fb8e320acfb4e7d3a80f2db47f9",
+  "candidate_benchmark/metrics_after.prom": "127f1e376c1c6e432057669a7e725af875e14e4d348387eaed110dcc8197ab14",
+  "candidate_benchmark/benchmark_results/raw_runs_20261022_192919.csv": "f71463b37e777e44df3d4fd7c296ed7cb635c901974835b5e0c7151b9cc2d4d4",
+  "candidate_benchmark/benchmark_results/summary_20261022_192919.csv": "ba748aae5cdf6168c404983130d158ff04cbf542925450cbf83a7c3734b1f86c"
+}
