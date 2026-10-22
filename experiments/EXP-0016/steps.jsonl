@@ -1,0 +1,4 @@
+{"time": "2026-10-22T14:56:21.944462+08:00", "action": "Record prefill hypothesis, all expanded results, and official protocol before source edit"}
+{"time": "2026-10-22T14:56:22.667968+08:00", "action": "Freeze explicit prefill parameters; preserve decode, fallback and scheduling exactly", "commits": {"vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287", "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"}}
+{"time": "2026-10-22T14:56:22.953485+08:00", "action": "Pass distinct decode/prefill route rejection checks, complete parent data and candidate hashes", "checks": 19}
+{"time": "2026-10-22T14:56:34.604218+08:00", "action": "Verify plugin and kernel forks at frozen candidate commits"}

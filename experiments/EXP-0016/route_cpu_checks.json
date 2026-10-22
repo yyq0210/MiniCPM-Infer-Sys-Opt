@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "positive_distinct_decode_prefill",
+      "passed": true
+    },
+    {
+      "name": "reject_old_prefill_log",
+      "passed": true
+    },
+    {
+      "name": "reject_withdrawn_scheduler",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_layer",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_prefill_argument",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_decode_argument",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_decode_compile",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_stage2",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_prefill_compile",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_stage2",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_IR_8x128x!tt.ptr<bf16>",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_IR_2x!tt.ptr<i32>",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_IR_64x128x!tt.ptr<bf16>",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_IR_128x32x!tt.ptr<bf16>",
+      "passed": true
+    },
+    {
+      "name": "complete_parent_4k",
+      "passed": true
+    },
+    {
+      "name": "complete_parent_16k",
+      "passed": true
+    },
+    {
+      "name": "candidate_commit_code_and_diagnostic_hashes",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic mutations using actual parent decode and candidate prefill IR; actual new service route still pending"
+}

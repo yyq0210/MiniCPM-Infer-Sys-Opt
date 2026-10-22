@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "candidate_commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "launch": {
+    "segments": 16,
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "decode_layout": 1,
+    "decode_rows": 8,
+    "prefill_rows": 64,
+    "prefill_warps": 4,
+    "prefill_stages": 1,
+    "prefill_tile": 32
+  },
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0015/20261022_142759_refine/rows64_w4_s1_tile32.json": "08b9a618a4719a7b8d01a41cdb93bec35cff9b3ce5baa49cc15e7514311293dc",
+    "/workspace/LeanScale/artifacts/EXP-0015/20261022_144537_extended/validation.json": "08a6cb632d87174f013f8b4bc5660d8eae8b5dd529ed46fbf66e157a869c24ca"
+  },
+  "code_hashes": {
+    "vllm-plugin-FL": {
+      "vllm_fl/dispatch/backends/flaggems/impl/iluvatar_gqa.py": "89cb35bd8052d71de7e64fe80e918c7195593fc0302cc070ac5408022650c1dd"
+    },
+    "FlagGems": {
+      "src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py": "3e75e1c7e383da88ef3f1a1fba68ed6e9bda0bc2f0c4ff945068ee849c163e6f"
+    }
+  },
+  "validation_scope": "42 numerical/Graph checks, 39444 query checks and 36 timings; full model accuracy deferred",
+  "integration_cpu_check": "Inverse explicit kwargs and runtime log replacement restores parent exactly",
+  "script_hashes": {
+    "run_split_e2e.py": "0c28df633c175694967f390325f0d34be304de52c95244e064c9077556f2c466",
+    "launch_split.py": "3654a50588861caf4e873fc0dda083e588ceaacec8a0b58fbd4d6a74067ab26d",
+    "finish_split.py": "3006f4b1815200038fb957c6371f15b912dbb0d6afda873819787acc7cfab227",
+    "queue_official.py": "009d2e073be2e2988e14b8d81e6f0c8fa040b20df4bd6f6f74ee981d6848d8ae",
+    "analyze_schedule.py": "574042b1d7d97454691b3608f2fe0073cc760a6c0314a1cd1315bc95a769ea9f",
+    "build_scripts.py": "163e91aad88b573f5dd5fbf1795763d32a202a1c9a3b4fe457d874a5703ed6ee",
+    "prepare_integration.py": "b28f15d2fe9dc7298724f69d91565a369d1712c8045656a38bae997ca950c24f"
+  }
+}
