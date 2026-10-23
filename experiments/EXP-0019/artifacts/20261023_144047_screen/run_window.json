@@ -1,0 +1,12 @@
+{
+  "experiment": "EXP-0019",
+  "timezone": "Asia/Shanghai",
+  "created_at": "2026-10-23T14:40:47.000959+08:00",
+  "compute_stop_at": "2026-10-23T15:20:47.000959+08:00",
+  "archive_target_at": "2026-10-23T15:30:47.000959+08:00",
+  "machine_shutdown_at": null,
+  "user_confirmed_shutdown": false,
+  "user_notice": "Today noon startup confirmed; actual shutdown time remains unknown",
+  "scope": "New independent budget: four prefill-memory microbenchmark configurations only, at most40minutes and before16:25",
+  "resume_policy": "No automatic restart, extension or subsequent GPU experiment"
+}

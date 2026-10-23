@@ -1,0 +1,111 @@
+{
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "order": [
+    "exp18_initial_step19",
+    "exp18_initial_step20",
+    "exp18_mixed_step37",
+    "exp18_mixed_step38",
+    "exp18_mixed_step51",
+    "exp18_mixed_step52",
+    "prefill16k",
+    "mixed4k_decode_first",
+    "mixed4k_prefill_first",
+    "mixed16k_decode_first",
+    "mixed16k_prefill_first",
+    "decode64_4k",
+    "decode30_16k",
+    "decode1_4k"
+  ],
+  "rows": [
+    {
+      "configuration": "layout0",
+      "time_change_percent": [
+        0.02418547237297286,
+        0.0010583501572680731,
+        0.15631753472726828,
+        0.04144013317513018,
+        0.29217747948369066,
+        0.18104331751196412,
+        -0.016147164428537142,
+        -0.1843095829734076,
+        -0.10878273965552188,
+        0.013972445067667039,
+        -0.19691719372184613,
+        0.10811479335766094,
+        -0.040534287675497715,
+        -0.08042290420328113
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": false,
+      "global_candidate_gate_passed": false
+    },
+    {
+      "configuration": "layout1",
+      "time_change_percent": [
+        -20.1406098151621,
+        -20.713003511927862,
+        -16.539282791156406,
+        -18.946472566780017,
+        -15.534030877316308,
+        -18.544573398381093,
+        -19.55472114938226,
+        -15.575470056754048,
+        -15.646757437494664,
+        -17.89931789316983,
+        -17.72126170945154,
+        0.046614565172786726,
+        -0.007937816858027968,
+        -0.10632221936897057
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout2",
+      "time_change_percent": [
+        -6.422626543050159,
+        -5.580604529762379,
+        -10.234585246223304,
+        -6.0054423045458165,
+        -6.735165880125882,
+        -4.534724783045374,
+        -4.263236810691207,
+        -4.002611551797419,
+        -4.215815994589578,
+        -2.561835352197339,
+        -3.0269822784841804,
+        0.029674890524633568,
+        -0.005442363724494914,
+        0.0294301839333988
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    },
+    {
+      "configuration": "layout3",
+      "time_change_percent": [
+        -14.497307724170948,
+        -12.475209282993038,
+        -16.420202351656656,
+        -12.599602596074376,
+        -11.963682746123416,
+        -11.571580515806268,
+        -11.975214033711035,
+        -9.942798916870688,
+        -9.8286982463202,
+        -9.912613074855814,
+        -9.254545484267485,
+        0.06995876193045536,
+        -0.050539653234915605,
+        0.07063026743325818
+      ],
+      "stable_baseline": true,
+      "primary_gate_passed": true,
+      "global_candidate_gate_passed": true
+    }
+  ],
+  "selected_for_serving": false,
+  "next_gate": "Expanded all-query/int64/Graph checks, then actual engine integration and official4K/16K"
+}

@@ -1,0 +1,52 @@
+{
+  "pid": 24326,
+  "process_start_ticks": "308521713",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0019/20261023_144047_screen",
+  "started_at": "2026-10-23T14:40:47.072775+08:00",
+  "compute_stop_at": "2026-10-23T15:20:47.000959+08:00",
+  "stage": "screen_complete",
+  "trials": [
+    {
+      "configuration": "layout0",
+      "returncode": 0,
+      "elapsed_seconds": 106.9779642522335,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout1",
+      "returncode": 0,
+      "elapsed_seconds": 48.09139762399718,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout2",
+      "returncode": 0,
+      "elapsed_seconds": 47.63275527115911,
+      "status": "passed",
+      "checks": 20
+    },
+    {
+      "configuration": "layout3",
+      "returncode": 0,
+      "elapsed_seconds": 46.5335808377713,
+      "status": "passed",
+      "checks": 20
+    }
+  ],
+  "kind": "single_operator_diagnostic_not_official_e2e",
+  "selected_for_serving": false,
+  "commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "updated_at": "2026-10-23T14:45:02.518545+08:00",
+  "trial.py_sha256": "82da2375ad294dd642771b0e402f35ae017bee958b5a0260b8151d2b51f8291e",
+  "run_screen.py_sha256": "425273c57d983baab984f20b2acf22fa4ca15506a4b766786fcc077af1b60eeb",
+  "current_configuration": "layout3",
+  "completed_configurations": 3,
+  "child_pid": 26752,
+  "owned_children_reaped": true,
+  "safe_to_resume_gpu": true
+}
