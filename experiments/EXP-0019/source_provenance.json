@@ -1,0 +1,7 @@
+{
+  "parent_source_sha256": "3e75e1c7e383da88ef3f1a1fba68ed6e9bda0bc2f0c4ff945068ee849c163e6f",
+  "candidate_source_sha256": "1a00cb697965c15ffe601b4606f8011424f30dbb9f47316ffb0bc7ca5c939fd7",
+  "inverse_patch_exact": true,
+  "old_defaults_preserved": true,
+  "observed_workloads_sha256": "91b7fa1b7497e9b754ad8a84fbdd2a4064ea0f105d8b75aea2ec541353306703"
+}

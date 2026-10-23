@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "default_dispatch_exact_maxquery1",
+    "layout0_preserves_decode_maxquery1",
+    "layout1_preserves_decode_maxquery1",
+    "layout2_preserves_decode_maxquery1",
+    "layout3_preserves_decode_maxquery1",
+    "default_dispatch_exact_maxquery2048",
+    "layout0_preserves_decode_maxquery2048",
+    "layout1_preserves_decode_maxquery2048",
+    "layout2_preserves_decode_maxquery2048",
+    "layout3_preserves_decode_maxquery2048",
+    "effective_page_broadcast_addresses_partial_pages_int64_CPU_model",
+    "inverse_patch_exact",
+    "reduce_AST_unchanged",
+    "old_defaults_unchanged_new_default_zero",
+    "deployed_microbenchmark_regeneration_exact"
+  ],
+  "limitation": "CPU address model and dispatch tests are not GPU numeric/Graph/int64 validation"
+}

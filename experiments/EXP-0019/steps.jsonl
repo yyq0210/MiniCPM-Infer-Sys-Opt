@@ -1,1 +1,3 @@
 {"time": "2026-10-23T14:28:46.262154+08:00", "step": "Register prefill memory-layout hypothesis and fixed profile-derived cases before modifying code"}
+{"time": "2026-10-23T14:37:13.878747+08:00", "action": "Begin isolated CPU implementation after published hypothesis", "parents": {"vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287", "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"}}
+{"time": "2026-10-23T14:37:23.315254+08:00", "action": "Freeze optional candidate and derived diagnostic scripts; CPU tests passed; no GPU work yet", "checks": 15, "commits": {"vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287", "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"}}

@@ -1,0 +1,169 @@
+"""Serialized, deadline-bounded GQA sweep. Publish every outcome, including failures."""
+from pathlib import Path
+import argparse
+import datetime
+import fcntl
+import hashlib
+import itertools
+import json
+import os
+import re
+import shutil
+import signal
+import subprocess
+import time
+import traceback
+
+ROOT=Path('/workspace/LeanScale');REPO=ROOT/'MiniCPM-Infer-Sys-Opt'
+EXP=REPO/'experiments/EXP-0019';WT=ROOT/'worktrees/EXP-0019'
+REQUEST=ROOT/'artifacts/EXP-0019-request.json'
+
+def write(p,x):
+    p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix('.tmp')
+    tmp.write_text(json.dumps(x,indent=2,ensure_ascii=False)+'\n');tmp.replace(p)
+
+def stop(p):
+    if p and p.poll() is None:
+        os.killpg(p.pid,signal.SIGTERM)
+        try:p.wait(timeout=20)
+        except subprocess.TimeoutExpired:os.killpg(p.pid,signal.SIGKILL);p.wait()
+
+def git(*args):
+    return subprocess.check_output(['git','-C',str(REPO),*args],text=True,timeout=120).strip()
+
+def publish(run,state):
+    dest=EXP/'artifacts'/run.name;dest.mkdir(parents=True,exist_ok=True)
+    for p in run.iterdir():
+        if p.is_file() and p.suffix in ('.json','.log','.md','.csv'):
+            text=p.read_text(errors='replace').replace('\r\n','\n')
+            text=re.sub(r'\b(?:\d{1,3}\.){3}\d{1,3}\b','[IP_REDACTED]',text)
+            text=re.sub(r'uuid=[^,)]+','uuid=[REDACTED]',text)
+            (dest/p.name).write_text(text)
+    with (ROOT/'artifacts/docs-publish.lock').open('a') as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX)
+        paths=[str(dest.relative_to(REPO))]
+        assert not git('diff','--cached','--name-only'),'Existing staged changes'
+        forbidden=re.compile(rb'-----BEGIN (?:OPENSSH |RSA |EC )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|lab_inst_[A-Za-z0-9]+|ssh\.flagos\.io')
+        for item in dest.rglob('*'):
+            if item.is_file():assert not forbidden.search(item.read_bytes()),str(item)
+        git('add','--',*paths);git('diff','--cached','--check')
+        git('commit','--only','-m','experiments: archive EXP-0019 prefill memory-layout screening','--',*paths)
+        git('push','origin','main')
+        head=git('rev-parse','HEAD');url=git('remote','get-url','--push','origin')
+        remote=subprocess.check_output(['git','-C',str(REPO),'ls-remote',url,'refs/heads/main'],text=True,timeout=60).split()[0]
+        assert head==remote
+        write(run/'publication.json',{'status':'pushed','commit':head,'remote_verified':True})
+
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--run-dir',type=Path,required=True);a=ap.parse_args()
+    assert not REQUEST.exists(), 'Inspect existing run; do not silently restart'
+    run=a.run_dir.resolve();assert run.parent==ROOT/'artifacts/EXP-0019';run.mkdir(parents=True,exist_ok=False)
+    policy=json.loads((ROOT/'artifacts/EXP-0019/run_window.json').read_text())
+    deadline=datetime.datetime.fromisoformat(policy['compute_stop_at'])
+    assert policy['experiment']=='EXP-0019' and deadline.date()==datetime.datetime.now().astimezone().date()
+    write(run/'run_window.json',policy)
+    def remaining():return (deadline-datetime.datetime.now().astimezone()).total_seconds()
+    state={'pid':os.getpid(),'process_start_ticks':Path('/proc/self/stat').read_text().rsplit(') ',1)[1].split()[19],
+      'run_directory':str(run),'started_at':datetime.datetime.now().astimezone().isoformat(),
+      'compute_stop_at':deadline.isoformat(),'stage':'preparing','trials':[],
+      'kind':'single_operator_diagnostic_not_official_e2e','selected_for_serving':False,
+      'commits':json.loads((EXP/'candidate_commits.json').read_text())}
+    def update(stage,**kw):
+        state.update(stage=stage,updated_at=datetime.datetime.now().astimezone().isoformat(),**kw)
+        write(run/'status.json',state);write(REQUEST,state)
+    child=None;locked=False
+    singleton=(ROOT/'artifacts/EXP-0019-controller.lock').open('a');fcntl.flock(singleton,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    update('preparing')
+    lock=(Path('/workspace/experiments/codex_20261019/runner.lock')).open('a')
+    try:
+        fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);locked=True
+        assert remaining()>35*60,'Insufficient independent budget for four configurations'
+        import socket
+        observations=[]
+        for _ in range(2):
+            output=subprocess.check_output(['/usr/local/corex/bin/ixsmi'],text=True,timeout=20)
+            match=re.search(r'(\d+)MiB\s*/\s*(\d+)MiB\s*\|\s*(\d+)%',output)
+            assert match and int(match[1])<=1024 and int(match[3])<=5,'GPU is not idle'
+            observations.append(dict(memory_mib=int(match[1]),util_percent=int(match[3])))
+            time.sleep(3)
+        for port in (9031,9032):
+            with socket.socket() as sock:assert sock.connect_ex(('127.0.0.1',port))!=0,'Service port occupied'
+        write(run/'idle_evidence.json',observations)
+        manifest=json.loads((EXP/'script_manifest.json').read_text())
+        assert {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in EXP.glob('*.py')}==manifest
+        assert hashlib.sha256((EXP/'observed_workloads.json').read_bytes()).hexdigest()==json.loads((EXP/'source_provenance.json').read_text())['observed_workloads_sha256']
+        for name,sha in state['commits'].items():
+            actual=subprocess.check_output(['git','-C',str(WT/name),'rev-parse','HEAD'],text=True).strip()
+            assert actual==sha
+            assert not subprocess.check_output(['git','-C',str(WT/name),'status','--porcelain'],text=True)
+        for n in ('trial.py','run_screen.py'):
+            state[n+'_sha256']=hashlib.sha256((EXP/n).read_bytes()).hexdigest()
+        env=dict(os.environ,PYTHONPATH=f'{WT}/vllm-plugin-FL:{WT}/FlagGems/src',
+                 PYTHONUNBUFFERED='1',VLLM_PLUGINS='fl',TRITON_CACHE_DIR=str(run/'triton_cache'))
+        configs=[0,1,2,3]
+        for layout in configs:
+            if remaining()<120:
+                update('deferred_for_shutdown');break
+            name=f'layout{layout}'
+            update('screening',current_configuration=name,completed_configurations=len(state['trials']))
+            command=['python3',str(EXP/'trial.py'),'--layout',str(layout),'--output',str(run/(name+'.json'))]
+            write(run/(name+'.command.json'),command)
+            start=time.monotonic()
+            with (run/(name+'.log')).open('w') as log:
+                child=subprocess.Popen(command,env=env,cwd=run,stdin=subprocess.DEVNULL,
+                       stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+                update('screening',child_pid=child.pid)
+                try:code=child.wait(timeout=min(480,remaining()))
+                except subprocess.TimeoutExpired:
+                    stop(child);code='timeout'
+                finally:stop(child)
+            record={'configuration':name,'returncode':code,'elapsed_seconds':time.monotonic()-start}
+            p=run/(name+'.json')
+            if p.exists():
+                data=json.loads(p.read_text());record['status']=data['status'];record['checks']=len(data.get('checks',[]))
+            else:record['status']='failed_before_result'
+            if code!=0:record['status']='failed'
+            state['trials'].append(record);update('screening')
+            if name=='layout0' and record['status']!='passed':
+                raise RuntimeError('Baseline-equivalent configuration failed; stop sweep for diagnosis')
+        else:update('screen_complete')
+        assert {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in EXP.glob('*.py')}==manifest
+        for name,sha in state['commits'].items():
+            assert subprocess.check_output(['git','-C',str(WT/name),'rev-parse','HEAD'],text=True).strip()==sha
+            assert not subprocess.check_output(['git','-C',str(WT/name),'status','--porcelain'],text=True)
+        rows=[]
+        for rec in state['trials']:
+            if rec['status']!='passed':continue
+            data=json.loads((run/(rec['configuration']+'.json')).read_text())
+            changes=[v['time_change_percent'] for v in data['timings']]
+            stable=all(abs(v['baseline_drift_percent'])<=3 for v in data['timings'])
+            assert len(changes)==14
+            primary=stable and max(changes[:11])<=3 and min(changes[:11])<=-5
+            rows.append({'configuration':rec['configuration'],'time_change_percent':changes,
+                         'stable_baseline':stable,'primary_gate_passed':primary,
+                         'global_candidate_gate_passed':primary and max(changes[11:])<=5})
+        observed=json.loads((EXP/'observed_workloads.json').read_text())['cases']
+        order=[c['name'] for c in observed]+['prefill16k','mixed4k_decode_first','mixed4k_prefill_first','mixed16k_decode_first','mixed16k_prefill_first','decode64_4k','decode30_16k','decode1_4k']
+        write(run/'screen_summary.json',dict(kind=state['kind'],order=order,rows=rows,selected_for_serving=False,
+              next_gate='Expanded all-query/int64/Graph checks, then actual engine integration and official4K/16K'))
+        lines=['# EXP-0019 GQA prefill 访存筛选','','单算子诊断；服务仍选EXP16。前6点由EXP18 CPU形状导出，随机Q/K/V；其余8点为声明的合成回归。',
+               '固定64rows/4warps/stage1/tile32，仅改变prefill读取布局。完整GQA夹测为筛选依据，prefill-only与资源另列。','',
+               '| 配置 | 11个prefill/mixed点耗时变化范围 | 3个decode回归点变化范围 | 基线稳定 | 候选门槛 |',
+               '|---|---|---|---|---|']
+        for row in rows:
+            c=row['time_change_percent'];span=lambda x:f'{min(x):+.3f}% .. {max(x):+.3f}%'
+            lines.append(f"| {row['configuration']} | {span(c[:11])} | {span(c[11:])} | {row['stable_baseline']} | {row['global_candidate_gate_passed']} |")
+        lines+=['','负数为耗时减少。保留全部失败、原始采样和夹测漂移；不自动更改服务版本，不当作官方整模收益。']
+        (run/'RESULTS.md').write_text('\n'.join(lines)+'\n')
+    except BaseException as e:
+        update('failed',error=repr(e));traceback.print_exc()
+    finally:
+        stop(child)
+        update(state['stage'],owned_children_reaped=True,safe_to_resume_gpu=locked)
+        lock.close()
+        singleton.close()
+        try:publish(run,state)
+        except BaseException as e:
+            write(run/'publication.json',{'status':'local_saved_push_failed','error':repr(e)});traceback.print_exc()
+
+if __name__=='__main__':main()
