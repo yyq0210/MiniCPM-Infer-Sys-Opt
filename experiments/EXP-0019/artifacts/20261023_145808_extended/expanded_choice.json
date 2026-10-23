@@ -1,0 +1,38 @@
+{
+  "config": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16,
+    "decode_layout": 1,
+    "decode_rows": 8,
+    "prefill_rows": 64,
+    "prefill_warps": 4,
+    "prefill_stages": 1,
+    "prefill_tile": 32,
+    "prefill_layout": 1
+  },
+  "screen_run": "20261023_144047_screen",
+  "screen_publication": {
+    "status": "pushed",
+    "commit": "15a61b358b065991e8601e08dfb1541e96d5278a",
+    "remote_verified": true
+  },
+  "screen_source_hashes": {
+    "layout0.json": "6296c58d59c87e70ff43e75c01b2c78a674bfa6b17096fd5d2f06957eb1a3062",
+    "layout1.json": "dc245cba64ff96890bd4d14c901c8f68682e70a8493424d1774d0d426bf14f7c",
+    "layout2.json": "bdd97b157002f02699b95f6c2d2de45206953715ab3befb76b6a70394c3a7581",
+    "layout3.json": "af7b414eb2200ef45340d482d1c75f09c967bfcfdcef1ac8ed057d75e6135f5f"
+  },
+  "selected_for_serving": false,
+  "validation_checks": 42,
+  "timing_points": 42,
+  "validation_script_hashes": {
+    "trial.py": "82da2375ad294dd642771b0e402f35ae017bee958b5a0260b8151d2b51f8291e",
+    "run_screen.py": "425273c57d983baab984f20b2acf22fa4ca15506a4b766786fcc077af1b60eeb",
+    "expanded/validate_extended.py": "84f19903c89bfab864cd77cae3e42b1a4df701dd7983997795a0662f9ebef23a",
+    "expanded/run_extended.py": "a2c75c0c7704d1555065a67bd4ae84e3f72c8bda64c128b4ae1dfb04c54cdecd",
+    "expanded/prepare_extended.py": "11ad563bde8bbd6922d0a1d1e12139838b24bd1343a64e3dc2ae74d5e97888de"
+  },
+  "hypothesis": "Prefill page-id broadcast remains numerically correct for all queries and mutable Graph metadata, including actual int64 offsets, with wider shape benefits",
+  "gate": "Review every regression or drift over3percent before integrating; no full-model performance claim"
+}
