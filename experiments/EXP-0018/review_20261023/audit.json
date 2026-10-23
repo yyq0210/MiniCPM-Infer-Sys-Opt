@@ -1,0 +1,269 @@
+{
+  "status": "passed",
+  "audited_at": "2026-10-23T14:17:26.921218+08:00",
+  "run": "20261023_132558_profile_4k",
+  "publication": {
+    "status": "pushed",
+    "commit": "a4fa36f3df04ca2db6447bd6999f4a17d0bcbfc4",
+    "remote_verified": true
+  },
+  "commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "workloads": [
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "successful": 256,
+      "failed": 0,
+      "input_tokens": 1048576,
+      "output_tokens": 262144,
+      "client_log_sha256": "548e47646892089c042567b2a4ef6982ebb18dfe02f2029fcb673637b77b2e77",
+      "server_log_sha256": "3df6a6afbb4d0c0043cf24a69aa2267a0fd1e2fc1b8945b39d6ffa563d548b45"
+    },
+    {
+      "mode": "NONE",
+      "successful": 256,
+      "failed": 0,
+      "input_tokens": 1048576,
+      "output_tokens": 262144,
+      "client_log_sha256": "8fcc65499b2bc539da577aab48b1eca59ca4e440b53f4b74d3371f25efb3cdce",
+      "server_log_sha256": "c2e95589bb9b957ddc82e487fe64419573d2f9ba927a3de2ab5b7821fefb1427"
+    }
+  ],
+  "routes": [
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "kernel_counts": {
+        "decode": 64,
+        "prefill": 64
+      },
+      "graph_sources": 1,
+      "route_evidence_sha256": "1c97563ac7b1e23a67a3fac56125034f0e04e7ad301687ffbb181929945d0a2b"
+    },
+    {
+      "mode": "NONE",
+      "kernel_counts": {
+        "prefill": 64,
+        "decode": 64
+      },
+      "graph_sources": 1,
+      "route_evidence_sha256": "90dd539338bcf291841f74455f9f5918d8393cef0e573c6873260d1439e83e4c"
+    }
+  ],
+  "traces": [
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "initial",
+      "sha256": "a770970c25a95fb35db0f6da7216d5dd34d50e605da7be4a085f6d236bfce2ef",
+      "steps": 16,
+      "phase_counts": {
+        "prefill": 2,
+        "mixed": 14
+      },
+      "batch_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "padded_tokens": [
+        2048
+      ],
+      "kernel_events": 8188,
+      "kernel_sum_us": 3897269.398,
+      "model_visible": true,
+      "unlinked_kernels": 0
+    },
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "mixed",
+      "sha256": "e6ce0cce4a537467cdadba461960e1efa719850d6eca747668edfe62bfbf05eb",
+      "steps": 16,
+      "phase_counts": {
+        "mixed": 16
+      },
+      "batch_sizes": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "padded_tokens": [
+        2048
+      ],
+      "kernel_events": 7744,
+      "kernel_sum_us": 3982714.569,
+      "model_visible": true,
+      "unlinked_kernels": 0
+    },
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "large_decode",
+      "sha256": "f554b2ff3b36f85af0a6b5d2f6425498456dec3de52a3fca9ca35c0f8a408710",
+      "steps": 16,
+      "phase_counts": {
+        "decode": 16
+      },
+      "batch_sizes": [
+        64
+      ],
+      "padded_tokens": [
+        64
+      ],
+      "kernel_events": 336,
+      "kernel_sum_us": 136946.203,
+      "model_visible": false,
+      "unlinked_kernels": 0
+    },
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "tail",
+      "sha256": "98ae274afb222d730e79a4fb6fc3deb292d712672bcdcd7c0e3825150279a972",
+      "steps": 16,
+      "phase_counts": {
+        "decode": 16
+      },
+      "batch_sizes": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "padded_tokens": [
+        8,
+        16
+      ],
+      "kernel_events": 513,
+      "kernel_sum_us": 49550.096,
+      "model_visible": false,
+      "unlinked_kernels": 0
+    },
+    {
+      "mode": "NONE",
+      "window": "initial",
+      "sha256": "593abc1fd43322421919bf005a95c26deeffa284d15c49f5eeec89737d420afa",
+      "steps": 16,
+      "phase_counts": {
+        "prefill": 2,
+        "mixed": 14
+      },
+      "batch_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "padded_tokens": [
+        2048
+      ],
+      "kernel_events": 8188,
+      "kernel_sum_us": 3897967.701,
+      "model_visible": true,
+      "unlinked_kernels": 0
+    },
+    {
+      "mode": "NONE",
+      "window": "mixed",
+      "sha256": "1812f8ec66fbad721744c9e0e02add0fda1f84058e6aff4bb85925905eceefca",
+      "steps": 16,
+      "phase_counts": {
+        "mixed": 16
+      },
+      "batch_sizes": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "padded_tokens": [
+        2048
+      ],
+      "kernel_events": 7744,
+      "kernel_sum_us": 3981992.111,
+      "model_visible": true,
+      "unlinked_kernels": 0
+    },
+    {
+      "mode": "NONE",
+      "window": "large_decode",
+      "sha256": "50fa831a6da514e75ee0d6d8457aa567b106147ae9e9dc83e0874ef70d68efff",
+      "steps": 16,
+      "phase_counts": {
+        "decode": 16
+      },
+      "batch_sizes": [
+        64
+      ],
+      "padded_tokens": [
+        64
+      ],
+      "kernel_events": 7072,
+      "kernel_sum_us": 921468.17,
+      "model_visible": true,
+      "unlinked_kernels": 0
+    },
+    {
+      "mode": "NONE",
+      "window": "tail",
+      "sha256": "45d9d134cc5cdd6881757c23ba6ccdd604661e183b747ca944bc1f85826b1f91",
+      "steps": 16,
+      "phase_counts": {
+        "decode": 16
+      },
+      "batch_sizes": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "padded_tokens": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "kernel_events": 7080,
+      "kernel_sum_us": 388931.877,
+      "model_visible": true,
+      "unlinked_kernels": 0
+    }
+  ],
+  "raw_evidence_files": 16,
+  "diagnostic_only": true,
+  "performance_comparison_allowed": false,
+  "accuracy": "Full task accuracy deferred",
+  "coverage_note": "128 recorded steps across 8 targeted windows; not whole-run attribution",
+  "graph_note": "FULL decode Graph internals invisible; NONE is attribution-only",
+  "next_hypothesis": "Prefill page-table broadcast and K-load layout; fixed selected launch parameters. Small-M projection is secondary."
+}

@@ -4,7 +4,7 @@
 `LlamaForCausalLM` 推理路径。本文作为后续逐项优化的工作清单，算子编号保持稳定；
 每个新实验把编号、方案、代码提交、原始结果和结论回填到本文及对应 `EXP-xxxx`。
 
-**当前还没有完整 GPU profiler 的算子时间占比排名。** 下文区分“已有实测依据”
+**2026-10-23更新：已完成当前选定版本EXP18的分阶段GPU profiling；最新结论见本文末尾及[新报告](operator_profile_4k_20261023.md)。以下2026-10-20建档内容保留为历史快照，不代表当前实验状态。** 下文区分“已有实测依据”
 与“依据形状和调用路径列出的热点候选”，优先级表示下一步排查顺序，不冒充耗时排名。
 这次只核查源码、已有日志和实验结果，没有改动运行中的代码或插入 GPU profiling。
 
@@ -284,3 +284,10 @@ NONE/late 的 16 个纯 decode 迭代已逐步核验：每步42次主 attention 
 ## 2026-10-21：4K profiling 完整收尾与归属复核
 
 两种模式均256/256成功，6个trace已归档。新增按aten::linear权重shape识别LM head、按sample_tokens调用范围统计采样、按固定S16网格拆分GQA prefill/decode分支；所有原始duration保持不变。纯decode诊断：GQA主kernel78.340%，采样7.487%，gate/up4.446%，down2.797%，LM head1.270%。生产配置mixed窗口：GQA prefill42.357%，gate/up20.088%，GQA decode12.444%，down10.411%。Graph内部decode仍不可见。完整调用数、均值、总时间、CSV和口径见 [4K算子耗时报告](operator_profile_4k_20261021.md)。
+
+
+## 2026-10-23：当前选定版本的4K热点与后续顺序
+
+EXP18两组各256请求全部成功，8个窗口各16步，原始trace/metadata/实际编译缓存已独立复核。FULL配置mixed（实际NONE执行）中prefill45.20%、gate/up23.61%、down12.23%；NONE/B64 decode主核65.78%、采样12.70%；NONE尾部B8–16的四类层内投影约44.54%。这些是各窗口可见kernel总工作量占比，不能合为整程占比。FULL decode Graph内部不可见，不能用外围采样占比给整模排名。
+
+OP05优先开展EXP19的prefill页号广播与K加载布局，固定已选参数；OP03/08/09/11后续针对小M及生产Graph padding研究真实GEMM路径。先前GEMM融合慢原型不直接恢复。当前选择仍EXP16；官方4K/16K、EXP17 ABBA均完成，调度EXP10已由用户拒绝并回退，KV压缩精度工作保持独立。详见[最新报告](operator_profile_4k_20261023.md)与[EXP19假设](../experiments/EXP-0019/README.md)。

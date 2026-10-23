@@ -1,0 +1,197 @@
+{
+  "source_run": "20261023_132558_profile_4k",
+  "source_commit": "a4fa36f3df04ca2db6447bd6999f4a17d0bcbfc4",
+  "interpretation": "Observed CPU shape vectors; future random tensor diagnostic is not replay of original request tensors or GPU lengths",
+  "cases": [
+    {
+      "name": "exp18_initial_step19",
+      "source_mode": "FULL_DECODE_ONLY",
+      "source_window": "initial",
+      "source_step": 19,
+      "query_lengths": [
+        2048
+      ],
+      "context_lengths_cpu_upper_bound": [
+        2048
+      ],
+      "phase": "prefill",
+      "B": 1,
+      "M": 2048
+    },
+    {
+      "name": "exp18_initial_step20",
+      "source_mode": "FULL_DECODE_ONLY",
+      "source_window": "initial",
+      "source_step": 20,
+      "query_lengths": [
+        2048
+      ],
+      "context_lengths_cpu_upper_bound": [
+        4096
+      ],
+      "phase": "prefill",
+      "B": 1,
+      "M": 2048
+    },
+    {
+      "name": "exp18_mixed_step37",
+      "source_mode": "FULL_DECODE_ONLY",
+      "source_window": "mixed",
+      "source_step": 37,
+      "query_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        65,
+        1975
+      ],
+      "context_lengths_cpu_upper_bound": [
+        4113,
+        4110,
+        4108,
+        4106,
+        4104,
+        4102,
+        4100,
+        4098,
+        4096,
+        1975
+      ],
+      "phase": "mixed",
+      "B": 10,
+      "M": 2048
+    },
+    {
+      "name": "exp18_mixed_step38",
+      "source_mode": "FULL_DECODE_ONLY",
+      "source_window": "mixed",
+      "source_step": 38,
+      "query_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2039
+      ],
+      "context_lengths_cpu_upper_bound": [
+        4114,
+        4111,
+        4109,
+        4107,
+        4105,
+        4103,
+        4101,
+        4099,
+        4097,
+        4014
+      ],
+      "phase": "mixed",
+      "B": 10,
+      "M": 2048
+    },
+    {
+      "name": "exp18_mixed_step51",
+      "source_mode": "FULL_DECODE_ONLY",
+      "source_window": "mixed",
+      "source_step": 51,
+      "query_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        226,
+        1807
+      ],
+      "context_lengths_cpu_upper_bound": [
+        4127,
+        4124,
+        4122,
+        4120,
+        4118,
+        4116,
+        4114,
+        4112,
+        4110,
+        4108,
+        4106,
+        4104,
+        4102,
+        4100,
+        4098,
+        4096,
+        1807
+      ],
+      "phase": "mixed",
+      "B": 17,
+      "M": 2048
+    },
+    {
+      "name": "exp18_mixed_step52",
+      "source_mode": "FULL_DECODE_ONLY",
+      "source_window": "mixed",
+      "source_step": 52,
+      "query_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2032
+      ],
+      "context_lengths_cpu_upper_bound": [
+        4128,
+        4125,
+        4123,
+        4121,
+        4119,
+        4117,
+        4115,
+        4113,
+        4111,
+        4109,
+        4107,
+        4105,
+        4103,
+        4101,
+        4099,
+        4097,
+        3839
+      ],
+      "phase": "mixed",
+      "B": 17,
+      "M": 2048
+    }
+  ]
+}
