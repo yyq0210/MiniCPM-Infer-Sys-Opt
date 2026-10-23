@@ -1,0 +1,4 @@
+phase,operator,mapping,calls,total_us,mean_us,median_us,p95_us,percent_kernel_sum
+decode,OP13_sampling,linked_worker_sample_tokens_scope,256,34344.319,134.15749609375,23.076,707.465,69.31231576221367
+decode,OP12_LM_head,linked_aten_linear_shape_transposed_weight,16,14210.682,888.167625,902.5765,931.784,28.67942374924965
+decode,unattributed,no_reliable_semantic_mapping,241,995.095,4.12902489626556,3.9,6.384,2.0082604885366924

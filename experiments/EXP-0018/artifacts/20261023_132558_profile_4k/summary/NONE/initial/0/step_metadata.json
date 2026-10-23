@@ -1,0 +1,722 @@
+{
+  "19": {
+    "kind": "padding",
+    "step": 19,
+    "phase": "prefill",
+    "B": 1,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 0,
+    "q_min": 2048,
+    "q_max": 2048,
+    "L_min_cpu_upper_bound": 2048,
+    "L_max_cpu_upper_bound": 2048,
+    "new_requests": 1,
+    "query_lengths": [
+      2048
+    ],
+    "context_lengths_cpu_upper_bound": [
+      2048
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      0
+    ],
+    "request_phases": [
+      "prefill"
+    ],
+    "main_requests_entered": 1,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "20": {
+    "kind": "padding",
+    "step": 20,
+    "phase": "prefill",
+    "B": 1,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 0,
+    "q_min": 2048,
+    "q_max": 2048,
+    "L_min_cpu_upper_bound": 4096,
+    "L_max_cpu_upper_bound": 4096,
+    "new_requests": 0,
+    "query_lengths": [
+      2048
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4096
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      2048
+    ],
+    "request_phases": [
+      "prefill"
+    ],
+    "main_requests_entered": 1,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "21": {
+    "kind": "padding",
+    "step": 21,
+    "phase": "mixed",
+    "B": 2,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 1,
+    "q_min": 1,
+    "q_max": 2047,
+    "L_min_cpu_upper_bound": 2047,
+    "L_max_cpu_upper_bound": 4097,
+    "new_requests": 1,
+    "query_lengths": [
+      1,
+      2047
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4097,
+      2047
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4096,
+      0
+    ],
+    "request_phases": [
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 2,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "22": {
+    "kind": "padding",
+    "step": 22,
+    "phase": "mixed",
+    "B": 2,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 1,
+    "q_min": 1,
+    "q_max": 2047,
+    "L_min_cpu_upper_bound": 4094,
+    "L_max_cpu_upper_bound": 4098,
+    "new_requests": 0,
+    "query_lengths": [
+      1,
+      2047
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4098,
+      4094
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4097,
+      2047
+    ],
+    "request_phases": [
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 2,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "23": {
+    "kind": "padding",
+    "step": 23,
+    "phase": "mixed",
+    "B": 3,
+    "M_unpadded": 2048,
+    "prefill_requests": 2,
+    "decode_requests": 1,
+    "q_min": 1,
+    "q_max": 2045,
+    "L_min_cpu_upper_bound": 2045,
+    "L_max_cpu_upper_bound": 4099,
+    "new_requests": 1,
+    "query_lengths": [
+      1,
+      2,
+      2045
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4099,
+      4096,
+      2045
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4098,
+      4094,
+      0
+    ],
+    "request_phases": [
+      "decode",
+      "prefill",
+      "prefill"
+    ],
+    "main_requests_entered": 3,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "24": {
+    "kind": "padding",
+    "step": 24,
+    "phase": "mixed",
+    "B": 3,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 2,
+    "q_min": 1,
+    "q_max": 2046,
+    "L_min_cpu_upper_bound": 4091,
+    "L_max_cpu_upper_bound": 4100,
+    "new_requests": 0,
+    "query_lengths": [
+      1,
+      1,
+      2046
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4100,
+      4097,
+      4091
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4099,
+      4096,
+      2045
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 3,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "25": {
+    "kind": "padding",
+    "step": 25,
+    "phase": "mixed",
+    "B": 4,
+    "M_unpadded": 2048,
+    "prefill_requests": 2,
+    "decode_requests": 2,
+    "q_min": 1,
+    "q_max": 2041,
+    "L_min_cpu_upper_bound": 2041,
+    "L_max_cpu_upper_bound": 4101,
+    "new_requests": 1,
+    "query_lengths": [
+      1,
+      1,
+      5,
+      2041
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4101,
+      4098,
+      4096,
+      2041
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4100,
+      4097,
+      4091,
+      0
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "prefill",
+      "prefill"
+    ],
+    "main_requests_entered": 4,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "26": {
+    "kind": "padding",
+    "step": 26,
+    "phase": "mixed",
+    "B": 4,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 3,
+    "q_min": 1,
+    "q_max": 2045,
+    "L_min_cpu_upper_bound": 4086,
+    "L_max_cpu_upper_bound": 4102,
+    "new_requests": 0,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      2045
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4102,
+      4099,
+      4097,
+      4086
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4101,
+      4098,
+      4096,
+      2041
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 4,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "27": {
+    "kind": "padding",
+    "step": 27,
+    "phase": "mixed",
+    "B": 5,
+    "M_unpadded": 2048,
+    "prefill_requests": 2,
+    "decode_requests": 3,
+    "q_min": 1,
+    "q_max": 2035,
+    "L_min_cpu_upper_bound": 2035,
+    "L_max_cpu_upper_bound": 4103,
+    "new_requests": 1,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      10,
+      2035
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4103,
+      4100,
+      4098,
+      4096,
+      2035
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4102,
+      4099,
+      4097,
+      4086,
+      0
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "prefill",
+      "prefill"
+    ],
+    "main_requests_entered": 5,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "28": {
+    "kind": "padding",
+    "step": 28,
+    "phase": "mixed",
+    "B": 5,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 4,
+    "q_min": 1,
+    "q_max": 2044,
+    "L_min_cpu_upper_bound": 4079,
+    "L_max_cpu_upper_bound": 4104,
+    "new_requests": 0,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      1,
+      2044
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4104,
+      4101,
+      4099,
+      4097,
+      4079
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4103,
+      4100,
+      4098,
+      4096,
+      2035
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 5,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "29": {
+    "kind": "padding",
+    "step": 29,
+    "phase": "mixed",
+    "B": 6,
+    "M_unpadded": 2048,
+    "prefill_requests": 2,
+    "decode_requests": 4,
+    "q_min": 1,
+    "q_max": 2027,
+    "L_min_cpu_upper_bound": 2027,
+    "L_max_cpu_upper_bound": 4105,
+    "new_requests": 1,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      1,
+      17,
+      2027
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4105,
+      4102,
+      4100,
+      4098,
+      4096,
+      2027
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4104,
+      4101,
+      4099,
+      4097,
+      4079,
+      0
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "prefill",
+      "prefill"
+    ],
+    "main_requests_entered": 6,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "30": {
+    "kind": "padding",
+    "step": 30,
+    "phase": "mixed",
+    "B": 6,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 5,
+    "q_min": 1,
+    "q_max": 2043,
+    "L_min_cpu_upper_bound": 4070,
+    "L_max_cpu_upper_bound": 4106,
+    "new_requests": 0,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      2043
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4106,
+      4103,
+      4101,
+      4099,
+      4097,
+      4070
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4105,
+      4102,
+      4100,
+      4098,
+      4096,
+      2027
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 6,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "31": {
+    "kind": "padding",
+    "step": 31,
+    "phase": "mixed",
+    "B": 7,
+    "M_unpadded": 2048,
+    "prefill_requests": 2,
+    "decode_requests": 5,
+    "q_min": 1,
+    "q_max": 2017,
+    "L_min_cpu_upper_bound": 2017,
+    "L_max_cpu_upper_bound": 4107,
+    "new_requests": 1,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      26,
+      2017
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4107,
+      4104,
+      4102,
+      4100,
+      4098,
+      4096,
+      2017
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4106,
+      4103,
+      4101,
+      4099,
+      4097,
+      4070,
+      0
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "prefill",
+      "prefill"
+    ],
+    "main_requests_entered": 7,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "32": {
+    "kind": "padding",
+    "step": 32,
+    "phase": "mixed",
+    "B": 7,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 6,
+    "q_min": 1,
+    "q_max": 2042,
+    "L_min_cpu_upper_bound": 4059,
+    "L_max_cpu_upper_bound": 4108,
+    "new_requests": 0,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2042
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4108,
+      4105,
+      4103,
+      4101,
+      4099,
+      4097,
+      4059
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4107,
+      4104,
+      4102,
+      4100,
+      4098,
+      4096,
+      2017
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 7,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "33": {
+    "kind": "padding",
+    "step": 33,
+    "phase": "mixed",
+    "B": 8,
+    "M_unpadded": 2048,
+    "prefill_requests": 2,
+    "decode_requests": 6,
+    "q_min": 1,
+    "q_max": 2005,
+    "L_min_cpu_upper_bound": 2005,
+    "L_max_cpu_upper_bound": 4109,
+    "new_requests": 1,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      37,
+      2005
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4109,
+      4106,
+      4104,
+      4102,
+      4100,
+      4098,
+      4096,
+      2005
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4108,
+      4105,
+      4103,
+      4101,
+      4099,
+      4097,
+      4059,
+      0
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "prefill",
+      "prefill"
+    ],
+    "main_requests_entered": 8,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  },
+  "34": {
+    "kind": "padding",
+    "step": 34,
+    "phase": "mixed",
+    "B": 8,
+    "M_unpadded": 2048,
+    "prefill_requests": 1,
+    "decode_requests": 7,
+    "q_min": 1,
+    "q_max": 2041,
+    "L_min_cpu_upper_bound": 4046,
+    "L_max_cpu_upper_bound": 4110,
+    "new_requests": 0,
+    "query_lengths": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2041
+    ],
+    "context_lengths_cpu_upper_bound": [
+      4110,
+      4107,
+      4105,
+      4103,
+      4101,
+      4099,
+      4097,
+      4046
+    ],
+    "computed_tokens_cpu_upper_bound": [
+      4109,
+      4106,
+      4104,
+      4102,
+      4100,
+      4098,
+      4096,
+      2005
+    ],
+    "request_phases": [
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "decode",
+      "prefill"
+    ],
+    "main_requests_entered": 8,
+    "window": "initial",
+    "graph_mode": "NONE",
+    "M_padded": 2048,
+    "B_padded": null
+  }
+}

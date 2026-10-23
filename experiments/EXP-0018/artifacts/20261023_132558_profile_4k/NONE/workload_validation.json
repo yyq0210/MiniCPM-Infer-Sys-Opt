@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "requests": 256,
+  "input_tokens": 1048576,
+  "output_tokens": 262144,
+  "windows_requested": [
+    "initial",
+    "large_decode",
+    "mixed",
+    "tail"
+  ],
+  "missing_windows": [],
+  "performance_comparison_allowed": false,
+  "actual_profiled_batch_steps": 64
+}

@@ -1,0 +1,10 @@
+{
+  "safe_metadata_real_export_passed": true,
+  "torch": "2.10.0",
+  "device_kernel_events": 3,
+  "device_kernel_us": 23.294999999999998,
+  "device_kernel_names": [
+    "void Gemm_tcu_mr_kernel::gemm_tcu_h<64u, 64u, 64u, 16u, 16u, 2u, (ixblasTrans_t)1, (ixblasTrans_t)1, (ixblasTCUGEMMCategory_t)0, (ixmma::MMEdgeCheckMode)0, (ixblasGEMMBoundary_t)2, (ixblasLtEpilogue_t)1, false, float, (ixblasLtMatmulMatrixScale_t)1002, (ixblasLtMatmulMatrixScale_t)1002, (ixblasLtMatmulMatrixScale_t)1002, false, false, 4u, 4u, false, float, float, float, float, float>(float*, float*, float const*, float const*, int, int, int, int, int, int, int, int, float, float, long, long, long, long, long, long, ixblasGEMMBatchMode_t, int, void*, void*, void*, unsigned int)"
+  ],
+  "graph_device_kernel_events": 0
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "batch_timeline.jsonl",
+    "window": null,
+    "sha256": "c9f8d4160b3dc95a7f20e2e02640c1baab74277444a24f65e48867cb7139b47c",
+    "bytes": 265912
+  },
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "client.log",
+    "window": null,
+    "sha256": "548e47646892089c042567b2a4ef6982ebb18dfe02f2029fcb673637b77b2e77",
+    "bytes": 22183
+  },
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "server.log",
+    "window": null,
+    "sha256": "3df6a6afbb4d0c0043cf24a69aa2267a0fd1e2fc1b8945b39d6ffa563d548b45",
+    "bytes": 117142
+  },
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "step_metadata.jsonl",
+    "window": null,
+    "sha256": "ee274451c9f99100f899174730664b4a2d906c69df4fd8b5610c834166410629",
+    "bytes": 67467
+  },
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "trace",
+    "window": "initial",
+    "sha256": "a770970c25a95fb35db0f6da7216d5dd34d50e605da7be4a085f6d236bfce2ef",
+    "bytes": 1009257
+  },
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "trace",
+    "window": "large_decode",
+    "sha256": "f554b2ff3b36f85af0a6b5d2f6425498456dec3de52a3fca9ca35c0f8a408710",
+    "bytes": 128917
+  },
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "trace",
+    "window": "mixed",
+    "sha256": "e6ce0cce4a537467cdadba461960e1efa719850d6eca747668edfe62bfbf05eb",
+    "bytes": 958756
+  },
+  {
+    "mode": "FULL_DECODE_ONLY",
+    "kind": "trace",
+    "window": "tail",
+    "sha256": "98ae274afb222d730e79a4fb6fc3deb292d712672bcdcd7c0e3825150279a972",
+    "bytes": 159394
+  },
+  {
+    "mode": "NONE",
+    "kind": "batch_timeline.jsonl",
+    "window": null,
+    "sha256": "9c558916d166739d20055e7f855d84ba436687b671a10ec02008da75333841e3",
+    "bytes": 305018
+  },
+  {
+    "mode": "NONE",
+    "kind": "client.log",
+    "window": null,
+    "sha256": "8fcc65499b2bc539da577aab48b1eca59ca4e440b53f4b74d3371f25efb3cdce",
+    "bytes": 22329
+  },
+  {
+    "mode": "NONE",
+    "kind": "server.log",
+    "window": null,
+    "sha256": "c2e95589bb9b957ddc82e487fe64419573d2f9ba927a3de2ab5b7821fefb1427",
+    "bytes": 126915
+  },
+  {
+    "mode": "NONE",
+    "kind": "step_metadata.jsonl",
+    "window": null,
+    "sha256": "0cd7e0cb8440c1bf0280645b9df8df6a9cc03ae7f047e6b7fd4c71d9f5750c86",
+    "bytes": 68555
+  },
+  {
+    "mode": "NONE",
+    "kind": "trace",
+    "window": "initial",
+    "sha256": "593abc1fd43322421919bf005a95c26deeffa284d15c49f5eeec89737d420afa",
+    "bytes": 1010238
+  },
+  {
+    "mode": "NONE",
+    "kind": "trace",
+    "window": "large_decode",
+    "sha256": "50fa831a6da514e75ee0d6d8457aa567b106147ae9e9dc83e0874ef70d68efff",
+    "bytes": 908704
+  },
+  {
+    "mode": "NONE",
+    "kind": "trace",
+    "window": "mixed",
+    "sha256": "1812f8ec66fbad721744c9e0e02add0fda1f84058e6aff4bb85925905eceefca",
+    "bytes": 959870
+  },
+  {
+    "mode": "NONE",
+    "kind": "trace",
+    "window": "tail",
+    "sha256": "45d9d134cc5cdd6881757c23ba6ccdd604661e183b747ca944bc1f85826b1f91",
+    "bytes": 917841
+  }
+]

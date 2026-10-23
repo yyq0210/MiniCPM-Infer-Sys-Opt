@@ -1,0 +1,96 @@
+{
+  "pid": 1164,
+  "process_start_ticks": "308072852",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0018/20261023_132558_profile_4k",
+  "started_at": "2026-10-23T13:25:58.479249+08:00",
+  "commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "stage": "complete",
+  "updated_at": "2026-10-23T14:01:28.288428+08:00",
+  "mode": "NONE",
+  "server_pid": 12278,
+  "client_pid": 15036,
+  "capture_window": "tail",
+  "batch": {
+    "phase": "decode",
+    "B": 16,
+    "M_unpadded": 16,
+    "prefill_requests": 0,
+    "decode_requests": 16,
+    "q_min": 1,
+    "q_max": 1,
+    "L_min_cpu_upper_bound": 5087,
+    "L_max_cpu_upper_bound": 5117,
+    "new_requests": 0,
+    "step": 4225,
+    "epoch": 1792735217.6304257,
+    "new_requests_total": 256,
+    "profiling": false,
+    "window": "large_decode",
+    "window_profiled_steps": 16,
+    "main_workload_started": true
+  },
+  "owned_children_reaped": true,
+  "coverage": [
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "initial",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    },
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "mixed",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    },
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "large_decode",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    },
+    {
+      "mode": "FULL_DECODE_ONLY",
+      "window": "tail",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    },
+    {
+      "mode": "NONE",
+      "window": "initial",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    },
+    {
+      "mode": "NONE",
+      "window": "mixed",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    },
+    {
+      "mode": "NONE",
+      "window": "large_decode",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    },
+    {
+      "mode": "NONE",
+      "window": "tail",
+      "trace_count": 1,
+      "qualifying_steps": 16,
+      "coverage": "at_least_16_steps"
+    }
+  ],
+  "graph_visibility_limitation": true,
+  "raw_data_saved": true
+}

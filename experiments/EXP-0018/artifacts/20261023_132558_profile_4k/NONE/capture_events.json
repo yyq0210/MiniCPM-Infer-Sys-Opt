@@ -1,0 +1,71 @@
+[
+  {
+    "window": "mixed",
+    "epoch": 1792734389.7582107,
+    "trigger_batch": {
+      "phase": "mixed",
+      "B": 9,
+      "M_unpadded": 2048,
+      "prefill_requests": 2,
+      "decode_requests": 7,
+      "q_min": 1,
+      "q_max": 1991,
+      "L_min_cpu_upper_bound": 1991,
+      "L_max_cpu_upper_bound": 4111,
+      "new_requests": 1,
+      "step": 35,
+      "epoch": 1792734384.0648675,
+      "new_requests_total": 9,
+      "profiling": false,
+      "window": "initial",
+      "window_profiled_steps": 16,
+      "main_workload_started": true
+    }
+  },
+  {
+    "window": "large_decode",
+    "epoch": 1792734517.6550462,
+    "trigger_batch": {
+      "phase": "decode",
+      "B": 64,
+      "M_unpadded": 64,
+      "prefill_requests": 0,
+      "decode_requests": 64,
+      "q_min": 1,
+      "q_max": 1,
+      "L_min_cpu_upper_bound": 4097,
+      "L_max_cpu_upper_bound": 4225,
+      "new_requests": 0,
+      "step": 149,
+      "epoch": 1792734513.6704712,
+      "new_requests_total": 64,
+      "profiling": false,
+      "window": "mixed",
+      "window_profiled_steps": 16,
+      "main_workload_started": true
+    }
+  },
+  {
+    "window": "tail",
+    "epoch": 1792735221.0980418,
+    "trigger_batch": {
+      "phase": "decode",
+      "B": 16,
+      "M_unpadded": 16,
+      "prefill_requests": 0,
+      "decode_requests": 16,
+      "q_min": 1,
+      "q_max": 1,
+      "L_min_cpu_upper_bound": 5087,
+      "L_max_cpu_upper_bound": 5117,
+      "new_requests": 0,
+      "step": 4225,
+      "epoch": 1792735217.6304257,
+      "new_requests_total": 256,
+      "profiling": false,
+      "window": "large_decode",
+      "window_profiled_steps": 16,
+      "main_workload_started": true
+    }
+  }
+]
