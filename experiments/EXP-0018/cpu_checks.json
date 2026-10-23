@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checks": [
+    "overlap_union_and_conservative_shape_mapping",
+    "GPU_correlation_without_timestamp_guessing",
+    "CPU_nested_self_time_not_inclusive_sum",
+    "linear_weight_orientation_sampling_scope_and_S16_grid",
+    "derived_csv_LF",
+    "window_gates_reject_warmup_stale_overlap_incomplete_and_false_tail",
+    "expired_wrong_date_cutoffs_rejected",
+    "CPU_only_hook_output_identity_and_mixed_decode_metadata",
+    "warmup_counter_reset_once_before_main_workload",
+    "per_request_context_query_and_phase_metadata"
+  ],
+  "route_checks": [
+    "all_actual_EXP16_4K_decode_prefill_IR_and_graphs",
+    "positive_frozen_kernel_fixture",
+    "NONE_rejects_FULL_capture",
+    "NONE_gate_without_capture_fixture_only",
+    "FULL_rejects_missing_capture",
+    "decode_reject_wrong_stages",
+    "decode_reject_wrong_shared",
+    "decode_reject_wrong_rows",
+    "prefill_reject_wrong_stages",
+    "prefill_reject_wrong_shared",
+    "prefill_reject_wrong_rows",
+    "reject_missing_GQA_layer",
+    "reject_wrong_prefill_stage_log",
+    "reject_rejected_scheduler"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0018/prepare.py\", line 95, in main\n    route=route_checks()\n          ^^^^^^^^^^^^^^\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0018/prepare.py\", line 60, in route_checks\n    test('NONE_gate_without_capture_fixture_only','NONE',True)\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0018/prepare.py\", line 54, in test\n    assert ok==expected,(name,mode)\n           ^^^^^^^^^^^^\nAssertionError: ('NONE_gate_without_capture_fixture_only', 'NONE')\n"
+}

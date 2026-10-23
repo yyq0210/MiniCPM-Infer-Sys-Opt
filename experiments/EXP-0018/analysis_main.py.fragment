@@ -1,0 +1,66 @@
+
+def main(run):
+    provenance = json.loads((run / "provenance.json").read_text())
+    assert provenance["commits"] == {
+        "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+        "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"}
+    results, coverage = [], []
+    for mode in ("FULL_DECODE_ONLY", "NONE"):
+        for window in ("initial", "mixed", "large_decode", "tail"):
+            folder = run / mode / "traces" / window
+            traces = sorted(folder.glob("*.pt.trace.json*"))
+            count = 0
+            for i, trace in enumerate(traces):
+                out = run / "summary" / mode / window / str(i)
+                out.mkdir(parents=True, exist_ok=True)
+                result = analyze_trace(trace, out)
+                meta = json.loads((out / "step_metadata.json").read_text())
+                qualifying = 0
+                for step in meta.values():
+                    if window == "initial": ok = "phase" in step
+                    elif window == "mixed": ok = step.get("phase") == "mixed"
+                    elif window == "large_decode": ok = step.get("phase") == "decode" and step.get("B", 0) >= 48
+                    else: ok = step.get("main_requests_entered") == 256 and 0 < step.get("B", 0) <= 16
+                    qualifying += bool(ok)
+                count += qualifying
+                result.update(mode=mode, window=window, index=i,
+                              captured_steps=len(meta), qualifying_steps=qualifying,
+                              batch_sizes=sorted({m["B"] for m in meta.values() if "B" in m}),
+                              trace_slot=f"{mode}/{window}/{i}")
+                (out / "summary.json").write_text(json.dumps(result, indent=2)+"\n")
+                results.append(result)
+            coverage.append(dict(mode=mode, window=window, trace_count=len(traces),
+                                 qualifying_steps=count,
+                                 coverage="absent" if not traces else "no_qualifying_steps" if count == 0 else "partial" if count < 16 else "at_least_16_steps"))
+    report = dict(diagnostic_only=True, performance_comparison_allowed=False,
+                  rules=["aten::linear transposed weight", "sampling RPC ancestry", "fixed S16 GQA branch grid"],
+                  traces=results, coverage=coverage,
+                  device_trace_count=sum(x["kernel_events"] > 0 for x in results))
+    probe = run / "probe" / "probe_result.json"
+    report["profiler_capability"] = json.loads(probe.read_text()) if probe.exists() else None
+    (run / "analysis.json").write_text(json.dumps(report, indent=2)+"\n")
+    lines = ["# EXP-0018：选定版本 4K 分阶段热点诊断", "",
+             "每个 pass 使用 4096 / 1024 / 64 / 256 一次完整请求集；带 profiler，不能作为官方吞吐成绩。",
+             "窗口名仅表示触发目标，实际阶段和 batch size 来自逐步 metadata。缺失或不足 16 步的覆盖如实保留。",
+             "CPU context 长度是异步 CPU 上界。GPU kernel 总时间可能跨 stream 重叠，不等于墙钟延迟。",
+             "FULL Graph 内部可能不可见；NONE 仅辅助归属。不同窗口/模式不合并成整程占比。", "",
+             "| 模式 | 窗口 | trace 数 | 满足目标的步数 | 覆盖 |",
+             "|---|---|---:|---:|---|"]
+    for c in coverage:
+        lines.append(f"| {c['mode']} | {c['window']} | {c['trace_count']} | {c['qualifying_steps']} | {c['coverage']} |")
+    for r in results:
+        lines += ["", f"## {r['mode']} / {r['window']} / {r['index']}", "",
+                  f"实际阶段 {r['profiled_step_phases']}；batch sizes {r['batch_sizes']}；满足目标 {r['qualifying_steps']}/{r['captured_steps']} 步。",
+                  f"GPU 事件 {r['kernel_events']}，kernel 总和 {r['kernel_sum_us']/1000:.3f} ms，区间并集 {r['kernel_interval_union_us']/1000:.3f} ms。",
+                  f"关联情况 {r['correlations']}；可见 RoPEKV 模型 kernel：{r['model_kernel_visibility']}。", "",
+                  "| 实际阶段 | 算子 | 调用数 | GPU 总 ms | 此窗口可见 kernel 时间占比 |",
+                  "|---|---|---:|---:|---:|"]
+        for row in r['top_operators']:
+            lines.append(f"| {row['phase']} | {row['operator']} | {row['calls']} | {row['total_us']/1000:.3f} | {row['percent_kernel_sum']:.2f}% |")
+    if not results:
+        lines += ["", "尚无可解析 trace，不能报告算子耗时。检查 status 和失败日志。"]
+    (run / "RESULTS.md").write_text("\n".join(lines)+"\n")
+    return report
+
+if __name__ == "__main__":
+    main(Path(sys.argv[1]))

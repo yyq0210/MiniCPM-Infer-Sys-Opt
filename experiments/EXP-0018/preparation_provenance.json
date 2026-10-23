@@ -1,0 +1,37 @@
+{
+  "commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "script_hashes": {
+    "analyze_profile.py": "ce74725b55504fe922166986851ce714c68078d443d8c0b620d00734c0921163",
+    "build_local.py": "1e16b56c2159e919d44f54dd5c1554d2fe52958c7174461e988efb81c1a2a9d6",
+    "prepare.py": "39617a461d5f12b1bdeee9c22c5975ff59a1b85a4f6d750c9003ef3bda00c2e4",
+    "probe_profiler.py": "7729287ede94a218182fc0209150807dfe2d01b6096aa1d4fc5a07157120dd50",
+    "profile_hooks.py": "2b282279982a5a455dbeb49ed77ecf280eb46ed556a927d662a5c6f7ebf3ffaf",
+    "route_checks.py": "54fe8d09490015bd09921a5c12182aba948ad8eb8fc6272df9e6b82d684cdb09",
+    "run_profile.py": "e3f9ac82a2b5e0cdeb12ddc7c63a37127f6f90da9833c1a5edf6fd7d657276c0",
+    "validate_cpu.py": "cf39894a33b65c151aa07e501c7bd89ea6a2b506d1668f600993317ae7b702e6",
+    "start.py": "89d7e1e7ee65f3c78696ea523abac687efde7fd0ccc79bdddf9e9e6ed69a0383"
+  },
+  "installed_hashes": {
+    "profiler/wrapper.py": "31f8a33afd23e67a2ade5a95d0d837a03b0a9164d5b18acf561d948c9ae6c06c",
+    "config/profiler.py": "981161215276d72564567d368d05d086621c831b2d1da79c8a8cff6963b5a305",
+    "benchmarks/serve.py": "b09e85eed6f5f7a9075b40a19fc1dd8e94a1c449665c2c6510f349e0409e77b7"
+  },
+  "case": [
+    4096,
+    1024,
+    64,
+    256
+  ],
+  "passes": [
+    "FULL_DECODE_ONLY",
+    "NONE"
+  ],
+  "diagnostic_only": true,
+  "performance_comparison_allowed": false,
+  "protocol": "One full official-shaped request set per diagnostic pass, not official four-round performance",
+  "accuracy": "No full model accuracy evaluation; inference implementation unchanged"
+}

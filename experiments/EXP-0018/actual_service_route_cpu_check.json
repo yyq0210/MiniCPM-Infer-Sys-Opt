@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "source_experiment": "EXP-0016",
+  "source_run": "20261022_145853_official_4k",
+  "kernel_counts": {
+    "decode": 64,
+    "prefill": 64
+  },
+  "gqa_launch": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16,
+    "decode_layout": 1,
+    "decode_rows": 8,
+    "prefill_rows": 64,
+    "prefill_warps": 4,
+    "prefill_stages": 1,
+    "prefill_tile": 32
+  }
+}
