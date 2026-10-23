@@ -1,9 +1,16 @@
 {
-  "stage": "cpu_prepared_gpu_unvalidated",
-  "checks": 15,
+  "stage": "screen_audited_expanded_prepared",
   "selected_for_serving": false,
-  "candidate_commits": {
-    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
-    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  "choice": {
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "segments": 16,
+    "decode_layout": 1,
+    "decode_rows": 8,
+    "prefill_rows": 64,
+    "prefill_warps": 4,
+    "prefill_stages": 1,
+    "prefill_tile": 32,
+    "prefill_layout": 1
   }
 }
