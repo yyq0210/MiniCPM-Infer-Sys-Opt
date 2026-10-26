@@ -1,0 +1,63 @@
+{
+  "pid": 23195,
+  "process_start_ticks": "334771569",
+  "started_at": "2026-10-26T15:35:45.624703+08:00",
+  "waiting_deadline": "2026-10-26T16:35:00+08:00",
+  "script_sha256": "1ab89ace427acfe574311109d97612f1ea2cfd637fc2b16c691f55379ea28a4a",
+  "scope": "CPU wait/audit, then one new235min ABBA allocation only after all gates; no repeat benchmarks",
+  "stage": "abba_started",
+  "updated_at": "2026-10-26T15:43:33.193712+08:00",
+  "source_run": "20261026_143417_official_16k",
+  "official_publication": {
+    "status": "pushed",
+    "experiment_stage": "performance_case_complete",
+    "complete_results": true,
+    "local_archive": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0020/artifacts/runs/20261026_143417_official_16k",
+    "commit": "83ca2d3508de865246524d5b057b35546d314528",
+    "remote_verified": true
+  },
+  "metrics": {
+    "Total tok/s": {
+      "exp16": 2314.37,
+      "prefill_page_broadcast": 2541.43,
+      "change_percent": 9.810877258173933
+    },
+    "Output tok/s": {
+      "exp16": 136.14,
+      "prefill_page_broadcast": 149.5,
+      "change_percent": 9.813427354194214
+    },
+    "Mean TTFT (ms)": {
+      "exp16": 225984.31,
+      "prefill_page_broadcast": 203307.46,
+      "change_percent": -10.034701081681296
+    },
+    "Mean TPOT (ms)": {
+      "exp16": 194.88,
+      "prefill_page_broadcast": 178.12,
+      "change_percent": -8.60016420361247
+    },
+    "Mean ITL (ms)": {
+      "exp16": 194.88,
+      "prefill_page_broadcast": 178.12,
+      "change_percent": -8.60016420361247
+    }
+  },
+  "launch": {
+    "pid": 23370,
+    "process_start_ticks": "334818310",
+    "started_at": "2026-10-26T15:43:32.970622+08:00",
+    "deadline": "2026-10-26T19:38:24.766619+08:00",
+    "order": [
+      "A",
+      "B",
+      "B",
+      "A"
+    ],
+    "launch_publication": {
+      "status": "pushed",
+      "commit": "00ddc2914d8946cce5c4dc53838769ffb66a3d95",
+      "remote_verified": true
+    }
+  }
+}
