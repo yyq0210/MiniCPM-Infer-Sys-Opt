@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "reviewed_at": "2026-10-26T20:15:37.304146+08:00",
+  "result_sha256": "2790a46acb19ed79cadada1025cc4b4530e85565d80ee02d66a5dc49c278dc6c",
+  "counts": {
+    "checks": 72,
+    "curves": 64,
+    "timings": 112
+  },
+  "candidates": [],
+  "primary_M8_M16": {
+    "qkv": {
+      "min_time_change_percent": 14.514462115445625,
+      "max_time_change_percent": 75.06054172099337,
+      "max_abs_drift_percent": 1.074043874090147
+    },
+    "o": {
+      "min_time_change_percent": 13.557969634970512,
+      "max_time_change_percent": 55.85696861577618,
+      "max_abs_drift_percent": 0.4353903998502773
+    },
+    "gate_up": {
+      "min_time_change_percent": 4.70753349325661,
+      "max_time_change_percent": 12.814680938624434,
+      "max_abs_drift_percent": 1.1221096844540757
+    },
+    "down": {
+      "min_time_change_percent": 10.05193079857798,
+      "max_time_change_percent": 28.409754366961803,
+      "max_abs_drift_percent": 0.7702118685444237
+    }
+  },
+  "decision": "reject padding path; retain selected EXP20"
+}

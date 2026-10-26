@@ -1,4 +1,13 @@
 {
-  "stage": "prepared",
-  "GPU_started": false
+  "stage": "audited_complete",
+  "outcome": "rejected_padding",
+  "selected_for_serving": false,
+  "artifact_publication": {
+    "status": "pushed",
+    "commit": "443402240173ec77063eb7207931078a42f971eb",
+    "remote_verified": true
+  },
+  "checks": 72,
+  "curve_points": 64,
+  "timing_points": 112
 }
