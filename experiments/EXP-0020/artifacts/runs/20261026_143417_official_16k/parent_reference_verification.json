@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "selection_sha256": "913132dfc6fd57d02bef6907aa56d1190984ee35919f34fc25fb14b11d406b77",
+  "parent_commits": {
+    "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+    "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+  },
+  "source": "/workspace/LeanScale/artifacts/EXP-0016/20261022_153554_official_16k/candidate_benchmark",
+  "raw_stage_preserved": "performance_case_complete",
+  "raw_sha256": "4134379a246f2f01ccdee9a11f49ecb28f492ea642b75f3572e834c5f9bd628c",
+  "summary_sha256": "2bd337e74f01afc2cb5f3183fd39de43716a67e7c3aaf4760586df780b13b37f",
+  "route_sha256": "3fb2ea7c1d01d1f3c9c0e3ff3ce1ff8d0376b56d26c8bd75ad14acc64c7517a2"
+}
