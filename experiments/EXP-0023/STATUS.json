@@ -1,4 +1,14 @@
 {
-  "stage": "prepared",
-  "GPU_started": false
+  "stage": "screen_audited",
+  "candidates": [
+    "gate_up",
+    "down"
+  ],
+  "selected_for_serving": false,
+  "next": "independent MLP subgraph refinement",
+  "publication": {
+    "status": "pushed",
+    "commit": "b979d4c7fb03bdf770c99c788651c79e62965b9c",
+    "remote_verified": true
+  }
 }

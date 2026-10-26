@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "reviewed_at": "2026-10-26T20:26:20.181745+08:00",
+  "result_sha256": "22f79b640ec0eb44057158abdeb56174868a5b26d8c2d70f9e62cda7df39486b",
+  "counts": {
+    "checks": 56,
+    "timings": 80,
+    "packing": 4,
+    "events": 16
+  },
+  "candidates": [
+    "gate_up",
+    "down"
+  ],
+  "summary": {
+    "qkv": {
+      "primary_min_time_change_percent": -17.986245080419117,
+      "primary_max_time_change_percent": -17.672309225326444,
+      "worst_other_time_change_percent": 74.34787959640057,
+      "max_abs_drift_percent": 1.037362720275592,
+      "candidate": false
+    },
+    "o": {
+      "primary_min_time_change_percent": -20.460913446786023,
+      "primary_max_time_change_percent": -6.247803427368792,
+      "worst_other_time_change_percent": 40.275836722010716,
+      "max_abs_drift_percent": 1.6089808436229758,
+      "candidate": false
+    },
+    "gate_up": {
+      "primary_min_time_change_percent": -7.649680706813921,
+      "primary_max_time_change_percent": -6.5811925873046295,
+      "worst_other_time_change_percent": -2.822417781854758,
+      "max_abs_drift_percent": 1.1907274546250068,
+      "candidate": true
+    },
+    "down": {
+      "primary_min_time_change_percent": -23.14630835427536,
+      "primary_max_time_change_percent": -21.31136040668894,
+      "worst_other_time_change_percent": 1.2892633114919505,
+      "max_abs_drift_percent": 1.6485817854433593,
+      "candidate": true
+    }
+  },
+  "decision": "independent complete MLP subgraph refinement required; serving EXP20 retained"
+}
