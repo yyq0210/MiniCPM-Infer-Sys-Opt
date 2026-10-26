@@ -1,0 +1,219 @@
+{
+  "status": "complete_ABBA",
+  "order": [
+    "A",
+    "B",
+    "B",
+    "A"
+  ],
+  "metrics": {
+    "Total tok/s": {
+      "A": 3268.2650000000003,
+      "B": 3562.68,
+      "change_percent": 9.00829645086918,
+      "pair1_change_percent": 14.718189167340334,
+      "pair2_change_percent": 3.881208932558655,
+      "A_endpoint_change_percent": 11.367178658043663,
+      "B_repeat_change_percent": 0.8467553260459004
+    },
+    "Output tok/s": {
+      "A": 653.65,
+      "B": 712.535,
+      "change_percent": 9.008643769601466,
+      "pair1_change_percent": 14.717865804365404,
+      "pair2_change_percent": 3.882113821138211,
+      "A_endpoint_change_percent": 11.366208569118829,
+      "B_repeat_change_percent": 0.8470395895874727
+    },
+    "Mean TTFT (ms)": {
+      "A": 5698.9,
+      "B": 5117.32,
+      "change_percent": -10.205127305269436,
+      "pair1_change_percent": -11.428950721259545,
+      "pair2_change_percent": -8.936977559745108,
+      "A_endpoint_change_percent": -3.4953545265996366,
+      "B_repeat_change_percent": -0.7801672454334496
+    },
+    "Mean TPOT (ms)": {
+      "A": 91.935,
+      "B": 83.69999999999999,
+      "change_percent": -8.957415565345094,
+      "pair1_change_percent": -13.47576006573542,
+      "pair2_change_percent": -3.8723846954109464,
+      "A_endpoint_change_percent": -11.1442070665571,
+      "B_repeat_change_percent": -1.2820512820512775
+    },
+    "Mean ITL (ms)": {
+      "A": 91.935,
+      "B": 83.69999999999999,
+      "change_percent": -8.957415565345094,
+      "pair1_change_percent": -13.47576006573542,
+      "pair2_change_percent": -3.8723846954109464,
+      "A_endpoint_change_percent": -11.1442070665571,
+      "B_repeat_change_percent": -1.2820512820512775
+    }
+  },
+  "sessions": [
+    {
+      "index": 1,
+      "arm": "A",
+      "run_name": "20261026_154333_1_A_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+        "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "430.12",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.6",
+        "Output tok/s": "618.5",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3092.5",
+        "Mean TTFT (ms)": "5800.27",
+        "Median TTFT (ms)": "1815.1",
+        "P99 TTFT (ms)": "32846.27",
+        "Mean TPOT (ms)": "97.36",
+        "Median TPOT (ms)": "97.46",
+        "P99 TPOT (ms)": "112.38",
+        "Mean ITL (ms)": "97.36",
+        "Median ITL (ms)": "60.34",
+        "P99 ITL (ms)": "353.17"
+      },
+      "retained_total_tokens_s": [
+        3163.8,
+        3500.97,
+        2612.74
+      ],
+      "cv_percent": 14.499146903928493,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    },
+    {
+      "index": 2,
+      "arm": "B",
+      "run_name": "20261026_162246_2_B_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+        "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "370.12",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.69",
+        "Output tok/s": "709.53",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3547.66",
+        "Mean TTFT (ms)": "5137.36",
+        "Median TTFT (ms)": "1613.02",
+        "P99 TTFT (ms)": "29925.72",
+        "Mean TPOT (ms)": "84.24",
+        "Median TPOT (ms)": "85.66",
+        "P99 TPOT (ms)": "91.72",
+        "Mean ITL (ms)": "84.24",
+        "Median ITL (ms)": "60.53",
+        "P99 ITL (ms)": "332.98"
+      },
+      "retained_total_tokens_s": [
+        3339.91,
+        3629.99,
+        3673.08
+      ],
+      "cv_percent": 5.107653796024617,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    },
+    {
+      "index": 3,
+      "arm": "B",
+      "run_name": "20261026_165903_3_B_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+        "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "366.61",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.7",
+        "Output tok/s": "715.54",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3577.7",
+        "Mean TTFT (ms)": "5097.28",
+        "Median TTFT (ms)": "1607.2",
+        "P99 TTFT (ms)": "29933.57",
+        "Mean TPOT (ms)": "83.16",
+        "Median TPOT (ms)": "85.77",
+        "P99 TPOT (ms)": "88.39",
+        "Mean ITL (ms)": "83.16",
+        "Median ITL (ms)": "60.71",
+        "P99 ITL (ms)": "326.28"
+      },
+      "retained_total_tokens_s": [
+        3452.32,
+        3600.94,
+        3679.83
+      ],
+      "cv_percent": 3.228955868814038,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    },
+    {
+      "index": 4,
+      "arm": "A",
+      "run_name": "20261026_173506_4_A_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+        "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "381.27",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.67",
+        "Output tok/s": "688.8",
+        "Peak Output tok/s": "1173.0",
+        "Total tok/s": "3444.03",
+        "Mean TTFT (ms)": "5597.53",
+        "Median TTFT (ms)": "1742.3",
+        "P99 TTFT (ms)": "32652.58",
+        "Mean TPOT (ms)": "86.51",
+        "Median TPOT (ms)": "88.18",
+        "P99 TPOT (ms)": "94.41",
+        "Mean ITL (ms)": "86.51",
+        "Median ITL (ms)": "60.44",
+        "P99 ITL (ms)": "358.74"
+      },
+      "retained_total_tokens_s": [
+        3241.52,
+        3523.67,
+        3566.91
+      ],
+      "cv_percent": 5.130881190141761,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    }
+  ],
+  "interpretation": "Two fresh sessions per arm; full official case each, discard first separately. ABBA balances linear time drift, not nonlinear drift; rounds are correlated, no significance claim. No combination with EXP20 official result; no automatic serving selection."
+}

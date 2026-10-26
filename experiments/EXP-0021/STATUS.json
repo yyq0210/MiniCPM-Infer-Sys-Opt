@@ -128,18 +128,105 @@
       "status": "complete_case_validated",
       "full_task_accuracy": "deferred_by_user",
       "partial_runs_combined": false
+    },
+    {
+      "index": 4,
+      "arm": "A",
+      "run_name": "20261026_173506_4_A_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "588a6147cd291e272324ab6c812024cd587c6287",
+        "FlagGems": "fd209df717648002ebf5ba4ec351424dcc997a53"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "381.27",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.67",
+        "Output tok/s": "688.8",
+        "Peak Output tok/s": "1173.0",
+        "Total tok/s": "3444.03",
+        "Mean TTFT (ms)": "5597.53",
+        "Median TTFT (ms)": "1742.3",
+        "P99 TTFT (ms)": "32652.58",
+        "Mean TPOT (ms)": "86.51",
+        "Median TPOT (ms)": "88.18",
+        "P99 TPOT (ms)": "94.41",
+        "Mean ITL (ms)": "86.51",
+        "Median ITL (ms)": "60.44",
+        "P99 ITL (ms)": "358.74"
+      },
+      "retained_total_tokens_s": [
+        3241.52,
+        3523.67,
+        3566.91
+      ],
+      "cv_percent": 5.130881190141761,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
     }
   ],
   "deadline": "2026-10-26T19:38:24.766619+08:00",
-  "stage": "candidate_throughput",
-  "updated_at": "2026-10-26T17:40:14.966430+08:00",
+  "stage": "complete",
+  "updated_at": "2026-10-26T18:12:08.458760+08:00",
   "session_index": 4,
   "arm": "A",
   "run_directory": "/workspace/LeanScale/artifacts/EXP-0021/20261026_173506_4_A_official_4k",
   "server_pid": 61192,
   "publication": {
     "status": "pushed",
-    "commit": "37a57f293bfdb79c808cb375b2a6485cb031fada",
+    "commit": "0b15ec5ca0446c216879455234c471ce9cc4090a",
     "remote_verified": true
+  },
+  "metrics": {
+    "Total tok/s": {
+      "A": 3268.2650000000003,
+      "B": 3562.68,
+      "change_percent": 9.00829645086918,
+      "pair1_change_percent": 14.718189167340334,
+      "pair2_change_percent": 3.881208932558655,
+      "A_endpoint_change_percent": 11.367178658043663,
+      "B_repeat_change_percent": 0.8467553260459004
+    },
+    "Output tok/s": {
+      "A": 653.65,
+      "B": 712.535,
+      "change_percent": 9.008643769601466,
+      "pair1_change_percent": 14.717865804365404,
+      "pair2_change_percent": 3.882113821138211,
+      "A_endpoint_change_percent": 11.366208569118829,
+      "B_repeat_change_percent": 0.8470395895874727
+    },
+    "Mean TTFT (ms)": {
+      "A": 5698.9,
+      "B": 5117.32,
+      "change_percent": -10.205127305269436,
+      "pair1_change_percent": -11.428950721259545,
+      "pair2_change_percent": -8.936977559745108,
+      "A_endpoint_change_percent": -3.4953545265996366,
+      "B_repeat_change_percent": -0.7801672454334496
+    },
+    "Mean TPOT (ms)": {
+      "A": 91.935,
+      "B": 83.69999999999999,
+      "change_percent": -8.957415565345094,
+      "pair1_change_percent": -13.47576006573542,
+      "pair2_change_percent": -3.8723846954109464,
+      "A_endpoint_change_percent": -11.1442070665571,
+      "B_repeat_change_percent": -1.2820512820512775
+    },
+    "Mean ITL (ms)": {
+      "A": 91.935,
+      "B": 83.69999999999999,
+      "change_percent": -8.957415565345094,
+      "pair1_change_percent": -13.47576006573542,
+      "pair2_change_percent": -3.8723846954109464,
+      "A_endpoint_change_percent": -11.1442070665571,
+      "B_repeat_change_percent": -1.2820512820512775
+    }
   }
 }
