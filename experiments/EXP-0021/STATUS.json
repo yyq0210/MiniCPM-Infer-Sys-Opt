@@ -1,5 +1,19 @@
 {
-  "stage": "cpu_prepared_waiting_for_16k_review",
-  "GPU_started": false,
-  "checks": 43
+  "pid": 23370,
+  "process_start_ticks": "334818310",
+  "started_at": "2026-10-26T15:43:33.085442+08:00",
+  "order": [
+    "A",
+    "B",
+    "B",
+    "A"
+  ],
+  "completed_sessions": [],
+  "deadline": "2026-10-26T19:38:24.766619+08:00",
+  "stage": "candidate_throughput",
+  "updated_at": "2026-10-26T15:48:41.531746+08:00",
+  "session_index": 1,
+  "arm": "A",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0021/20261026_154333_1_A_official_4k",
+  "server_pid": 23416
 }
