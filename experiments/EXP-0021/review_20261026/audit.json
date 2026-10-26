@@ -1,0 +1,147 @@
+{
+  "status": "complete_paired_audit",
+  "checked_at": "2026-10-26T19:04:26.277146+08:00",
+  "publication": {
+    "status": "pushed",
+    "commit": "28de89ef95f3d5f82865693ca4a65fbd90b37d1d",
+    "remote_verified": true
+  },
+  "session_count": 4,
+  "raw_rounds": 16,
+  "successful_requests": 4096,
+  "sessions": [
+    {
+      "index": 1,
+      "arm": "A",
+      "run_name": "20261026_154333_1_A_official_4k",
+      "raw_rounds": 4,
+      "successes": 1024,
+      "retained_total_tokens_s": [
+        3163.8,
+        3500.97,
+        2612.74
+      ],
+      "cv_percent": 14.499146903928493,
+      "kernel_counts": {
+        "decode": 64,
+        "prefill": 64
+      },
+      "route_sha256": "2ce1819e10c77cd64ef36ba46d35ad0e7af00a9bd17a9d7205beded992156f24",
+      "archive_files": 16,
+      "raw_sha256": "dc70be1ea7105353b59657d85445082917dc69110440ae49dcd8df5063cdd301",
+      "summary_sha256": "82700fddf524be9bb29d9a020f2ec46adce0e8fa7df67dadcb60b169a7775c48"
+    },
+    {
+      "index": 2,
+      "arm": "B",
+      "run_name": "20261026_162246_2_B_official_4k",
+      "raw_rounds": 4,
+      "successes": 1024,
+      "retained_total_tokens_s": [
+        3339.91,
+        3629.99,
+        3673.08
+      ],
+      "cv_percent": 5.107653796024617,
+      "kernel_counts": {
+        "decode": 64,
+        "prefill": 64
+      },
+      "route_sha256": "0e39718ade4ea55ad783e41f9fc384375dd7b62b22eef15da8375358a29531c2",
+      "archive_files": 16,
+      "raw_sha256": "02a5abe71d935fdadd2f0fd34f030c4ebf4c0f970de59ad856aabe3c43fcd232",
+      "summary_sha256": "ab04168ad0b135bc3dae6841d312844fbc7633f0a7494236fd19f4433dd700e0"
+    },
+    {
+      "index": 3,
+      "arm": "B",
+      "run_name": "20261026_165903_3_B_official_4k",
+      "raw_rounds": 4,
+      "successes": 1024,
+      "retained_total_tokens_s": [
+        3452.32,
+        3600.94,
+        3679.83
+      ],
+      "cv_percent": 3.228955868814038,
+      "kernel_counts": {
+        "decode": 64,
+        "prefill": 64
+      },
+      "route_sha256": "0e39718ade4ea55ad783e41f9fc384375dd7b62b22eef15da8375358a29531c2",
+      "archive_files": 16,
+      "raw_sha256": "e9a39876ea913bc4b346d903f0e30fe425eea1b94c4eeb267aff45ed47f53a89",
+      "summary_sha256": "50914a7fbf0171c821aba216140b70d3a2bb7af15ea12db09e20ad7a8efd0086"
+    },
+    {
+      "index": 4,
+      "arm": "A",
+      "run_name": "20261026_173506_4_A_official_4k",
+      "raw_rounds": 4,
+      "successes": 1024,
+      "retained_total_tokens_s": [
+        3241.52,
+        3523.67,
+        3566.91
+      ],
+      "cv_percent": 5.130881190141761,
+      "kernel_counts": {
+        "decode": 64,
+        "prefill": 64
+      },
+      "route_sha256": "2ce1819e10c77cd64ef36ba46d35ad0e7af00a9bd17a9d7205beded992156f24",
+      "archive_files": 16,
+      "raw_sha256": "aacd190b3da5e08e70caa579601d8ee496a8d081b1f5f380bb3e3e945355d41e",
+      "summary_sha256": "1463bef97b3f2ba1e221a067731992b6a306af9761af89c25c5be65983cb9f12"
+    }
+  ],
+  "metrics": {
+    "Total tok/s": {
+      "A": 3268.2650000000003,
+      "B": 3562.68,
+      "change_percent": 9.00829645086918,
+      "pair1_change_percent": 14.718189167340334,
+      "pair2_change_percent": 3.881208932558655,
+      "A_endpoint_change_percent": 11.367178658043663,
+      "B_repeat_change_percent": 0.8467553260459004
+    },
+    "Output tok/s": {
+      "A": 653.65,
+      "B": 712.535,
+      "change_percent": 9.008643769601466,
+      "pair1_change_percent": 14.717865804365404,
+      "pair2_change_percent": 3.882113821138211,
+      "A_endpoint_change_percent": 11.366208569118829,
+      "B_repeat_change_percent": 0.8470395895874727
+    },
+    "Mean TTFT (ms)": {
+      "A": 5698.9,
+      "B": 5117.32,
+      "change_percent": -10.205127305269436,
+      "pair1_change_percent": -11.428950721259545,
+      "pair2_change_percent": -8.936977559745108,
+      "A_endpoint_change_percent": -3.4953545265996366,
+      "B_repeat_change_percent": -0.7801672454334496
+    },
+    "Mean TPOT (ms)": {
+      "A": 91.935,
+      "B": 83.69999999999999,
+      "change_percent": -8.957415565345094,
+      "pair1_change_percent": -13.47576006573542,
+      "pair2_change_percent": -3.8723846954109464,
+      "A_endpoint_change_percent": -11.1442070665571,
+      "B_repeat_change_percent": -1.2820512820512775
+    },
+    "Mean ITL (ms)": {
+      "A": 91.935,
+      "B": 83.69999999999999,
+      "change_percent": -8.957415565345094,
+      "pair1_change_percent": -13.47576006573542,
+      "pair2_change_percent": -3.8723846954109464,
+      "A_endpoint_change_percent": -11.1442070665571,
+      "B_repeat_change_percent": -1.2820512820512775
+    }
+  },
+  "limitations": "A1 retained CV14.499%, A endpoint+11.367%; retain all slow rounds. Mean+9.008% is drift-sensitive, not stable causal gain. Two sessions per arm, no significance claim.",
+  "decision": "Select EXP20 as working performance baseline from positive formal4K/16K and both paired throughput/latency directions; full task accuracy deferred"
+}
