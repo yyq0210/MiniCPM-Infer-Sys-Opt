@@ -1,0 +1,21 @@
+{
+  "pid": 73872,
+  "process_start_ticks": "336471984",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0023/20261026_201909_screen",
+  "started_at": "2026-10-26T20:19:09.775388+08:00",
+  "compute_stop_at": "2026-10-26T20:59:09.706796+08:00",
+  "selected_for_serving": false,
+  "stage": "screen_complete",
+  "updated_at": "2026-10-26T20:19:37.034454+08:00",
+  "child_pid": 73888,
+  "checks": 56,
+  "timing_points": 80,
+  "packing_records": 4,
+  "event_records": 16,
+  "candidates": [
+    "gate_up",
+    "down"
+  ],
+  "owned_children_reaped": true,
+  "safe_to_resume_gpu": true
+}

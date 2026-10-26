@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "candidates": [
+    "gate_up",
+    "down"
+  ],
+  "selection_rule": "per projection: both M8/16 modes <=-5percent, other points<=+3percent, all drift<=3percent, no observed candidate aten copy; independent refinement required"
+}
