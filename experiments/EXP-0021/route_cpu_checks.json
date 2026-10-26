@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "A_all128_actual_service_kernels",
+      "passed": true,
+      "sha256": "7df8f4f6761be535ab2d73ff8dbb73b398c89ae353700be4dea65cc7faa230b2"
+    },
+    {
+      "name": "A_positive_fixture",
+      "passed": true
+    },
+    {
+      "name": "A_decode_wrong_num_stages",
+      "passed": true
+    },
+    {
+      "name": "A_decode_wrong_num_warps",
+      "passed": true
+    },
+    {
+      "name": "A_decode_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "A_decode_missing_compile",
+      "passed": true
+    },
+    {
+      "name": "A_decode_wrong_Q_rows",
+      "passed": true
+    },
+    {
+      "name": "A_decode_wrong_page_loads",
+      "passed": true
+    },
+    {
+      "name": "A_decode_non_int64_broadcast",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_wrong_num_stages",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_wrong_num_warps",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_missing_compile",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_wrong_Q_rows",
+      "passed": true
+    },
+    {
+      "name": "A_prefill_wrong_page_loads",
+      "passed": true
+    },
+    {
+      "name": "A_wrong_decode_log",
+      "passed": true
+    },
+    {
+      "name": "A_wrong_prefill_stage_log",
+      "passed": true
+    },
+    {
+      "name": "A_withdrawn_scheduler",
+      "passed": true
+    },
+    {
+      "name": "A_missing_layer",
+      "passed": true
+    },
+    {
+      "name": "A_wrong_prefill_layout_log",
+      "passed": true
+    },
+    {
+      "name": "A_reject_other_arm",
+      "passed": true
+    },
+    {
+      "name": "B_all128_actual_service_kernels",
+      "passed": true,
+      "sha256": "5038a1a69faf860701c498de9818ecc0c3b99ecc062e07cc944bbf1c86103b95"
+    },
+    {
+      "name": "B_positive_fixture",
+      "passed": true
+    },
+    {
+      "name": "B_decode_wrong_num_stages",
+      "passed": true
+    },
+    {
+      "name": "B_decode_wrong_num_warps",
+      "passed": true
+    },
+    {
+      "name": "B_decode_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "B_decode_missing_compile",
+      "passed": true
+    },
+    {
+      "name": "B_decode_wrong_Q_rows",
+      "passed": true
+    },
+    {
+      "name": "B_decode_wrong_page_loads",
+      "passed": true
+    },
+    {
+      "name": "B_decode_non_int64_broadcast",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_wrong_num_stages",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_wrong_num_warps",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_wrong_shared",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_missing_compile",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_wrong_Q_rows",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_wrong_page_loads",
+      "passed": true
+    },
+    {
+      "name": "B_prefill_non_int64_broadcast",
+      "passed": true
+    },
+    {
+      "name": "B_wrong_decode_log",
+      "passed": true
+    },
+    {
+      "name": "B_wrong_prefill_stage_log",
+      "passed": true
+    },
+    {
+      "name": "B_withdrawn_scheduler",
+      "passed": true
+    },
+    {
+      "name": "B_missing_layer",
+      "passed": true
+    },
+    {
+      "name": "B_wrong_prefill_layout_log",
+      "passed": true
+    },
+    {
+      "name": "B_reject_other_arm",
+      "passed": true
+    }
+  ]
+}
