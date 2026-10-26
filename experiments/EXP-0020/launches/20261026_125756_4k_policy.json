@@ -1,0 +1,18 @@
+{
+  "experiment": "EXP-0020",
+  "case": "4k",
+  "created_at": "2026-10-26T12:57:56.531850+08:00",
+  "compute_stop_at": "2026-10-26T14:07:56.531850+08:00",
+  "archive_target_at": "2026-10-26T14:17:56.531850+08:00",
+  "machine_shutdown_at": "2026-10-27T00:00:00+08:00",
+  "user_confirmed_shutdown": true,
+  "daily_window": {
+    "date": "2026-10-26",
+    "machine_shutdown_at": "2026-10-27T00:00:00+08:00",
+    "compute_stop_at": "2026-10-26T23:35:00+08:00",
+    "archive_target_at": "2026-10-26T23:50:00+08:00",
+    "user_confirmed_shutdown": true,
+    "user_reply": "今晚 00:00 关闭"
+  },
+  "scope": "One complete official case only; new stage requires review and a new finite budget"
+}
