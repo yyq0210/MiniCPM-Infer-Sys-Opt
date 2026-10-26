@@ -1,1 +1,2 @@
 {"time": "2026-10-26T20:15:37.307043+08:00", "action": "Record weight layout hypothesis before implementing experiment code"}
+{"time": "2026-10-26T20:18:59.556245+08:00", "action": "Install new experimental code after published hypothesis; freeze sources and coverage", "hypothesis_commit": "30e2f7f292b9a7d4ebbfc519a716edb14341426c"}
