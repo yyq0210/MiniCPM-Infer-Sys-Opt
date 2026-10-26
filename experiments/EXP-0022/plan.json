@@ -1,0 +1,20 @@
+{
+  "selected_commits": {
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "script_hashes": {
+    "trial.py": "b4e0667a54817eee9ce7ef4d38e400136f370fe7573cac71487332b236c1102f",
+    "run_screen.py": "a2d9780fad11855ff0d2a71eec8a405a497b34f8465707712cac254f02cfe2fb",
+    "prepare_and_start.py": "b243f932c8bfa213ef55366d3a6bce21cd6ca81f811f5a5da7e5f91720e03e46"
+  },
+  "source_hashes": {
+    "/usr/local/lib/python3.12/site-packages/vllm/model_executor/layers/utils.py": "061adffc6af55ef3b001557c0fad738e474c5e4134fa3dc35cb967bdbc90a121",
+    "/usr/local/lib/python3.12/site-packages/vllm/model_executor/layers/linear.py": "0bd60103d85d7183791077c46e0770d0a2adc8e8811b162b9084c3cbe92ba662",
+    "/workspace/MiniCPM5-2B/config.json": "59613157e5357d62bcb121e04cb90f2170b43d789b142380c12c3d4277d95180"
+  },
+  "expected_checks": 72,
+  "baseline_curve_points": 64,
+  "timing_points": 112,
+  "candidate_gate": "M8/16,>=5percent time decrease and drift<=3percent in both hot and weights8; no automatic integration"
+}
