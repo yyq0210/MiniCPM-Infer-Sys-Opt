@@ -15,3 +15,19 @@ layout1仅页号广播在11个prefill/mixed点全部优于其他已测配置，�
 现在固定layout1进入扩大验证：42项all-query FP32/Graph检查，含两dtype、page8/16/32/64、NHD/HND、CU变化和真实超过2^31元素的KV地址；42个完整GQA计时点，包括6个EXP18形状导出点。初筛的CPU地址模型不代替这些GPU检查。
 扩大验证前后均固定EXP16为直接对照，服务选择仍是EXP16；通过后才接入引擎和正式4K/16K测试。
 [初筛全部结果](../experiments/EXP-0019/artifacts/20261023_144047_screen/RESULTS.md) · [独立初筛审核](../experiments/EXP-0019/expanded/screen_audit.json)。
+
+
+## 扩大验证完成与引擎接入
+
+42项全query数值/Graph检查全部通过，变动前后39444个query独立FP32对照；含8项CU变化、两个dtype真实超过2^31元素KV地址。42个完整GQA夹测点全部保留，最大基线漂移2.4494%，无>3%退化。
+
+| 分组 | 点数 | 耗时变化 |
+|---|---:|---:|
+| pure_prefill | 17 | -24.099% .. -16.764% |
+| mixed | 7 | -18.804% .. -15.523% |
+| decode | 12 | -0.069% .. +0.424% |
+| exp18_shape_derived | 6 | -20.787% .. -15.384% |
+
+EXP18形状导出点使用CPU上下文上界与随机QKV，不是原请求重放。完整数据见[扩大验证](../experiments/EXP-0019/artifacts/20261023_145808_extended/RESULTS.md)。
+
+EXP20仅把prefill_layout=1显式接入插件，逆向移除参数与日志可恢复EXP16父文件。CPU路由拒绝检查通过；真实服务42层与官方4K/16K尚待测，服务选择仍EXP16。

@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "positive_distinct_decode_prefill",
+      "passed": true
+    },
+    {
+      "name": "reject_parent_log",
+      "passed": true
+    },
+    {
+      "name": "reject_withdrawn_scheduler",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_layer",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_prefill_layout",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_prefill_stage",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_decode_layout",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_decode",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_num_stages",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_num_warps",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_shared",
+      "passed": true
+    },
+    {
+      "name": "reject_missing_prefill",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_num_stages",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_num_warps",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_shared",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_8x128x!tt.ptr<bf16>",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_64x128x!tt.ptr<bf16>",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_128x32x!tt.ptr<bf16>",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_2x!tt.ptr<i32>",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_2x!tt.ptr<i32>",
+      "passed": true
+    },
+    {
+      "name": "reject_decode_tensor<2x1xi64> -> tensor<2x16xi64>",
+      "passed": true
+    },
+    {
+      "name": "reject_prefill_tensor<2x1xi64> -> tensor<2x16xi64>",
+      "passed": true
+    },
+    {
+      "name": "parent_complete_4k",
+      "passed": true
+    },
+    {
+      "name": "parent_complete_16k",
+      "passed": true
+    },
+    {
+      "name": "frozen_candidate_and_diagnostics",
+      "passed": true
+    }
+  ],
+  "scope": "CPU mutations of real decode/prefill IR; new actual service evidence remains pending"
+}

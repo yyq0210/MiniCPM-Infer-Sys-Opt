@@ -1,0 +1,6 @@
+{
+  "status": "prepared",
+  "documentation_commit": "1d37a2c18672cb3126c2871c793be4cd2a24b229",
+  "remote_verified": true,
+  "verification_repair": "Use configured SSH push URL; original HTTPS fetch verification failure retained"
+}

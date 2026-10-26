@@ -1,0 +1,9 @@
+{
+  "experiment": "EXP-0019-expanded",
+  "created_at": "2026-10-23T14:58:08.742630+08:00",
+  "compute_stop_at": "2026-10-23T15:33:08.742630+08:00",
+  "archive_target_at": "2026-10-23T15:43:08.742630+08:00",
+  "machine_shutdown_at": null,
+  "user_confirmed_shutdown": false,
+  "scope": "Fresh finite budget for layout1 all-query/Graph/int64 validation only; no automatic subsequent GPU work"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "candidate_commits": {
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "launch": {
+    "segments": 16,
+    "decode_warps": 4,
+    "decode_stages": 1,
+    "decode_layout": 1,
+    "decode_rows": 8,
+    "prefill_rows": 64,
+    "prefill_warps": 4,
+    "prefill_stages": 1,
+    "prefill_tile": 32,
+    "prefill_layout": 1
+  },
+  "diagnostic_hashes": {
+    "/workspace/LeanScale/artifacts/EXP-0019/20261023_145808_extended/validation.json": "2f8705d165d3a73c54fe9e29dd78366a616a179ea2fd8e7e545f7891f1739186"
+  },
+  "code_hashes": {
+    "vllm-plugin-FL": {
+      "vllm_fl/dispatch/backends/flaggems/impl/iluvatar_gqa.py": "9f167019543059796f8717c34d0ed27e8db7ec27033d4140ea2b166607b353de"
+    },
+    "FlagGems": {
+      "src/flag_gems/runtime/backend/_iluvatar/fused/paged_gqa.py": "1a00cb697965c15ffe601b4606f8011424f30dbb9f47316ffb0bc7ca5c939fd7"
+    }
+  },
+  "validation_scope": "42 all-query/Graph checks, 39444 queries, 42 timings; full-model task accuracy deferred",
+  "integration_cpu_check": "Inverse one kwarg and log field restores parent exactly",
+  "script_hashes": {
+    "run_split_e2e.py": "2e599679dfe365de907b5071cee469b08489b66ff371588bf78c0f1782281ab1",
+    "launch_split.py": "de52c1371cde82e7dea5df4b35dbe7dcaa67ac077ba9386c748ee7b3976b9650",
+    "finish_split.py": "794e305266ecdb4387071981305932b0fffa74366226a0d3ee0f6d5461601943",
+    "analyze_schedule.py": "574042b1d7d97454691b3608f2fe0073cc760a6c0314a1cd1315bc95a769ea9f",
+    "build_scripts.py": "d2f7e959e674f2e3144ac9e66fd57643d44d1c96c6a98709e21910eaaf4668a4",
+    "route_checks.py": "a6fa9093f8dd6ffb3e24bc303c85a759f1909d1c30d352d3572609bebb928524",
+    "prepare_integration.py": "7b66343c9e32118e3d41463d9835cd81a4aa15d1b09cd089889de5ed420f0486"
+  }
+}
