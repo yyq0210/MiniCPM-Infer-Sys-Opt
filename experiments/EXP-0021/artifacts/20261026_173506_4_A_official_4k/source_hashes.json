@@ -1,0 +1,18 @@
+{
+  "status.json": "570ff8e34d5d65ed9517ef3c412f63901e646c779efe499ddf168ce24151ecb1",
+  "environment_check.json": "4ec749f34bc119937baac18d2af34888219d55155abeecacac272357e8ea099c",
+  "result.json": "f34b6248dcf148da1f35cac6052b9a7efe505e8f931e7b7d9050258ceae8df69",
+  "stage_history.jsonl": "d861c9e503cb1278f2e2a033bb431b56e89be5626b1dd25b53e00597385a1910",
+  "idle_evidence.json": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc",
+  "candidate_benchmark/server.log": "a55fb3f6f11911f5b5caa1a6ffddcf2aafdac91cef87088aaa2c4d8918c7d072",
+  "candidate_benchmark/server.command.json": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+  "candidate_benchmark/benchmark.log": "cb20da10595d7847bc43f83038f6d89b5d7ec454531e1d430487fd1a273fdff3",
+  "candidate_benchmark/benchmark.command.json": "7ee0690c42460bb245c043ff8cfed3868cf2c0154f125f185084f5117befd68c",
+  "candidate_benchmark/smoke.json": "eee9ff05f25b3e477d108619c3e7f6261691180e3b2a205bc1f70a9bd3865b9a",
+  "candidate_benchmark/route_evidence.json": "2ce1819e10c77cd64ef36ba46d35ad0e7af00a9bd17a9d7205beded992156f24",
+  "candidate_benchmark/startup_route_evidence.json": "a37054631c4c5a73a7c81ba4a2d793e144c82360e425bd18ad332af9db358ecc",
+  "candidate_benchmark/metrics_before.prom": "dd6e6de67ba69c802bda648f548039de96b750ef0434347b2016c8e844c494a4",
+  "candidate_benchmark/metrics_after.prom": "38bebd786e9de2a2262ad921567fc17b24baf25ef6bcd68dbee8b588f3864b72",
+  "candidate_benchmark/benchmark_results/raw_runs_20261026_174015.csv": "aacd190b3da5e08e70caa579601d8ee496a8d081b1f5f380bb3e3e945355d41e",
+  "candidate_benchmark/benchmark_results/summary_20261026_174015.csv": "1463bef97b3f2ba1e221a067731992b6a306af9761af89c25c5be65983cb9f12"
+}
