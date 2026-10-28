@@ -1,0 +1,5 @@
+{
+  "vllm_fl/__init__.py": "4f75986615eafad53934076814c3f7173d11eb34b2f0b00a837a504497df2a00",
+  "vllm_fl/patches/mlp_weight_layout.py": "78b31b09bcb9a6561430816e5da4baddd11ed1529ff97235ec7cfab0d1c7b201",
+  "tests/test_mlp_weight_layout.py": "96b1184b0be9c1b915289a5781dd5f6cb86b55efe9a49d3d35e9960f84b6a2f9"
+}
