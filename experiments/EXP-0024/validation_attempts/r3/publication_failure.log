@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/workspace/LeanScale/staging/flagos-exp24-dev/run_validation.py", line 106, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/LeanScale/staging/flagos-exp24-dev/run_validation.py", line 76, in main
+    git(PLUGIN,'push','-u','origin',branch)
+  File "/workspace/LeanScale/staging/flagos-exp24-dev/run_validation.py", line 13, in git
+    def git(repo,*a):return subprocess.check_output(['git','-C',str(repo),*a],text=True,stderr=subprocess.STDOUT,timeout=120).strip()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/LeanScale/worktrees/EXP-0024/vllm-plugin-FL', 'push', '-u', 'origin', 'leanscale/iluvatar-mlp-weight-layout']' returned non-zero exit status 128.
+Traceback (most recent call last):
+  File "/workspace/LeanScale/artifacts/EXP-0024/workflow_r3.py", line 9, in <module>
+    subprocess.run(['python3',str(src/'run_validation.py')],check=True)
+  File "/usr/local/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', '/workspace/LeanScale/staging/flagos-exp24-dev/run_validation.py']' returned non-zero exit status 1.

@@ -1,5 +1,6 @@
 {
-  "stage": "load_hook_validation_failed",
-  "serving_selected": "EXP-0020",
-  "attempt": "r2"
+  "stage": "load_hook_validation_passed",
+  "cpu_checks": 24,
+  "gpu_projection_checks": 2,
+  "serving_selected": "EXP-0020"
 }

@@ -1,0 +1,9 @@
+{
+  "commits": {
+    "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "remote_verified": true,
+  "branch": "leanscale/iluvatar-mlp-weight-layout",
+  "remote": "leanscale"
+}

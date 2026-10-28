@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-28T19:11:21.564282+08:00",
+  "compute_stop_at": "2026-10-28T19:26:21.564282+08:00",
+  "pid": 3839,
+  "process_start_ticks": "353345162",
+  "exit_codes": {
+    "cpu": 0,
+    "gpu": 0
+  },
+  "finished_at": "2026-10-28T19:12:04.874765+08:00",
+  "owned_children_reaped": true
+}

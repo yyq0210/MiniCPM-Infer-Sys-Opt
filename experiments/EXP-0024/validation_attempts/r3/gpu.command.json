@@ -1,0 +1,12 @@
+[
+  "python3",
+  "-m",
+  "pytest",
+  "-q",
+  "-s",
+  "-p",
+  "no:cacheprovider",
+  "/workspace/LeanScale/artifacts/EXP-0024/validation_r3/source/tests/test_mlp_weight_layout.py",
+  "-k",
+  "real_gpu"
+]

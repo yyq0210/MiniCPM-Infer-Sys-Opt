@@ -1,0 +1,14 @@
+{
+  "status.json": "eef050b35d5bfcdd4d1e14d5c690aaa97fe353962393fe2bc3af5eef5d11112c",
+  "source_hashes.json": "5f92cfe83a1711d2d5961c11b10c1087274152d5f19258eda063c7a417cfc7ac",
+  "run_validation.py": "8027f76a64a821d56c73c278ee2460370d3b600796598b8b8e2ac5b1f7d7887f",
+  "idle_evidence.json": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc",
+  "cpu.command.json": "f9e4fb78dcf89a790b5b77c6505606ebd7c8e740fea352a1e9dfc822d07ddeb2",
+  "cpu.log": "239665551fc71c64d3349c009c6da3787d076145e057fff43296150087ff0625",
+  "gpu.command.json": "cc5d77fe31044efa647a224049dbeea4558a97522d2aa7674e345ffdc19c70db",
+  "gpu.log": "b035079e7b390c08045859187b7fda4c1c1e4cb90da5386fa6cbe0746a46dc58",
+  "code_publication.json": "a19e19fd27d43d409bf8ef5868d571c1156bd8b01b5018f966851188c517d1b5",
+  "source/vllm_fl/__init__.py": "4f75986615eafad53934076814c3f7173d11eb34b2f0b00a837a504497df2a00",
+  "source/tests/test_mlp_weight_layout.py": "33790e3319031e15522b4507dcc8d802feec1a2da549f3aa11f2e62443ca6ad9",
+  "source/vllm_fl/patches/mlp_weight_layout.py": "78b31b09bcb9a6561430816e5da4baddd11ed1529ff97235ec7cfab0d1c7b201"
+}
