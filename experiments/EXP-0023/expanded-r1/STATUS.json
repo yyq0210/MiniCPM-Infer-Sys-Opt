@@ -1,4 +1,10 @@
 {
-  "stage": "prepared",
-  "GPU_started": false
+  "stage": "audited_complete",
+  "selected_for_integration": "both",
+  "selected_for_serving": false,
+  "publication": {
+    "status": "pushed",
+    "commit": "b465bac87d3ed37df00ff2f477a63ffa5c54e216",
+    "remote_verified": true
+  }
 }

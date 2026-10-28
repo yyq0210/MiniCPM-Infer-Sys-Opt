@@ -1,0 +1,325 @@
+{
+  "status": "complete",
+  "reviewed_at": "2026-10-28T16:38:00.498772+08:00",
+  "result_sha256": "ad6a3eee37543f69a16e98a367a230f9153e3769ad152bd41e3456c37131ea7b",
+  "counts": {
+    "checks": 117,
+    "timings": 180
+  },
+  "candidates": [
+    "down",
+    "both"
+  ],
+  "selected_for_integration": "both",
+  "stats": {
+    "gate_up": {
+      "primary_min": -5.091767127397584,
+      "primary_max": -4.255911690981707,
+      "primary_mean": -4.7670263876284285,
+      "other_worst": -1.71948215563964,
+      "max_abs_drift": 0.5782411884478478,
+      "passed": false
+    },
+    "down": {
+      "primary_min": -8.250913839500218,
+      "primary_max": -7.2564769473706825,
+      "primary_mean": -7.844142938433383,
+      "other_worst": 0.8916132732090798,
+      "max_abs_drift": 1.430356937536148,
+      "passed": true
+    },
+    "both": {
+      "primary_min": -13.136532736514873,
+      "primary_max": -12.229782640149445,
+      "primary_mean": -12.63261262837256,
+      "other_worst": -1.83974754368591,
+      "max_abs_drift": 0.9100856728018081,
+      "passed": true
+    }
+  },
+  "by_M": [
+    {
+      "variant": "gate_up",
+      "M": 1,
+      "min": -5.259886029439709,
+      "max": -4.451950277462712,
+      "mean": -4.866207982573719
+    },
+    {
+      "variant": "gate_up",
+      "M": 4,
+      "min": -5.255265630504569,
+      "max": -4.661515204252053,
+      "mean": -4.988432058812573
+    },
+    {
+      "variant": "gate_up",
+      "M": 8,
+      "min": -5.091767127397584,
+      "max": -4.80289233382738,
+      "mean": -4.911681425876765
+    },
+    {
+      "variant": "gate_up",
+      "M": 16,
+      "min": -4.908616296010848,
+      "max": -4.255911690981707,
+      "mean": -4.622371349380093
+    },
+    {
+      "variant": "gate_up",
+      "M": 30,
+      "min": -3.9304939165501263,
+      "max": -3.392673554845005,
+      "mean": -3.7359023015794617
+    },
+    {
+      "variant": "gate_up",
+      "M": 32,
+      "min": -3.6105993285496907,
+      "max": -2.5482206542497443,
+      "mean": -3.258238214175881
+    },
+    {
+      "variant": "gate_up",
+      "M": 64,
+      "min": -6.868926262669072,
+      "max": -3.3385591767330913,
+      "mean": -5.421404038716843
+    },
+    {
+      "variant": "gate_up",
+      "M": 128,
+      "min": -5.421698035528133,
+      "max": -3.5903943305775288,
+      "mean": -4.284728455786945
+    },
+    {
+      "variant": "gate_up",
+      "M": 512,
+      "min": -3.0175876455080797,
+      "max": -2.1828779799736964,
+      "mean": -2.501419022278987
+    },
+    {
+      "variant": "gate_up",
+      "M": 2048,
+      "min": -1.8091623706934512,
+      "max": -1.71948215563964,
+      "mean": -1.7697643059302899
+    },
+    {
+      "variant": "down",
+      "M": 1,
+      "min": -0.5502137464243995,
+      "max": 0.052617703183699405,
+      "mean": -0.2570858411337769
+    },
+    {
+      "variant": "down",
+      "M": 4,
+      "min": -8.285381506077416,
+      "max": -7.390674405863429,
+      "mean": -7.811446368112148
+    },
+    {
+      "variant": "down",
+      "M": 8,
+      "min": -8.250913839500218,
+      "max": -7.2564769473706825,
+      "mean": -7.653435020929759
+    },
+    {
+      "variant": "down",
+      "M": 16,
+      "min": -8.238014670679306,
+      "max": -7.8214646615268,
+      "mean": -8.034850855937007
+    },
+    {
+      "variant": "down",
+      "M": 30,
+      "min": -7.517307462119039,
+      "max": -6.877101285988574,
+      "mean": -7.080932978342064
+    },
+    {
+      "variant": "down",
+      "M": 32,
+      "min": -7.757557252185054,
+      "max": -6.791460965352969,
+      "mean": -7.2729965906957625
+    },
+    {
+      "variant": "down",
+      "M": 64,
+      "min": -6.556080072256187,
+      "max": -5.877261280319434,
+      "mean": -6.207737040305139
+    },
+    {
+      "variant": "down",
+      "M": 128,
+      "min": -7.642308975295686,
+      "max": -6.823042986095274,
+      "mean": -7.164456026903193
+    },
+    {
+      "variant": "down",
+      "M": 512,
+      "min": -0.07425629718342819,
+      "max": 0.8916132732090798,
+      "mean": 0.43741096602081253
+    },
+    {
+      "variant": "down",
+      "M": 2048,
+      "min": -0.2482744311307239,
+      "max": -0.028157867570122175,
+      "mean": -0.12241700006206575
+    },
+    {
+      "variant": "both",
+      "M": 1,
+      "min": -5.4664814560628106,
+      "max": -4.616257262485979,
+      "mean": -5.128293298698261
+    },
+    {
+      "variant": "both",
+      "M": 4,
+      "min": -13.293579163678814,
+      "max": -12.553239193817712,
+      "mean": -12.952985369118725
+    },
+    {
+      "variant": "both",
+      "M": 8,
+      "min": -13.136532736514873,
+      "max": -12.510939484291317,
+      "mean": -12.81718815562732
+    },
+    {
+      "variant": "both",
+      "M": 16,
+      "min": -12.66881112023035,
+      "max": -12.229782640149445,
+      "mean": -12.448037101117798
+    },
+    {
+      "variant": "both",
+      "M": 30,
+      "min": -11.181649073877853,
+      "max": -10.677210359150614,
+      "mean": -10.922268206082233
+    },
+    {
+      "variant": "both",
+      "M": 32,
+      "min": -10.979686567036728,
+      "max": -10.42484202088384,
+      "mean": -10.699149801151995
+    },
+    {
+      "variant": "both",
+      "M": 64,
+      "min": -12.559732905428278,
+      "max": -9.394225670036105,
+      "mean": -11.27984435445709
+    },
+    {
+      "variant": "both",
+      "M": 128,
+      "min": -11.068981094373099,
+      "max": -10.360593592304902,
+      "mean": -10.716027128741759
+    },
+    {
+      "variant": "both",
+      "M": 512,
+      "min": -2.2233638511425124,
+      "max": -1.83974754368591,
+      "mean": -2.0578511203996417
+    },
+    {
+      "variant": "both",
+      "M": 2048,
+      "min": -1.9991389735726006,
+      "max": -1.8852609452153501,
+      "mean": -1.9437257623136954
+    }
+  ],
+  "error_maxima": {
+    "candidate_baseline_max_abs": 0.001953125,
+    "candidate_baseline_max_scaled": 0.001953125,
+    "candidate_reference_max_abs": 0.03125,
+    "mutated_reference_max_abs": 0.25
+  },
+  "actual_compilation": [
+    {
+      "path": "triton_cache/CEISJNQZ4MH3LUO2F7EZ63S54L434HNNFNJYQVRA5MQZ4PZ763QA/triton_poi_fused_mul_silu_slice_1.json",
+      "name": "triton_poi_fused_mul_silu_slice_1",
+      "num_warps": 8,
+      "num_stages": 1,
+      "shared": 0,
+      "dtype": "bf16",
+      "hashes": {
+        "triton_poi_fused_mul_silu_slice_1.ttir": "09b3bd5b266e622cbd7e79e711c1094546ccc4f9bfc9c6076979e013cdc7dc3c",
+        "triton_poi_fused_mul_silu_slice_1.ttgir": "cc0c6ad02e90b1bbae39c0b0459654cd0cd624ca05cac1b3578c42d164aac7f6",
+        "triton_poi_fused_mul_silu_slice_1.llir": "66241d6b13d3bb9ba5a87bc527f4841bdda2fe97f6f3b9348573e9e179c9ef3d",
+        "triton_poi_fused_mul_silu_slice_1.cubin": "300029bad6e0aed8ac537f2d8ba4227c6ce9f7177e28dd096c859389801c2f55",
+        "triton_poi_fused_mul_silu_slice_1.json": "71e6fa2582bda3b7b89ecc250d7e0a416fbdf466366f883fd22bbcb235269309",
+        "__grp__triton_poi_fused_mul_silu_slice_1.json": "da32679d8e1074acd60222c99d0609e3da70489dfd204fc453fd5c8c25bd6e58"
+      }
+    },
+    {
+      "path": "triton_cache/VJC7NWHEPTMYSKJGBBGDWSF4LZBJUS4PWZDKXB4YGUQTCEIL6PYA/triton_poi_fused_mul_silu_slice_1.json",
+      "name": "triton_poi_fused_mul_silu_slice_1",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 0,
+      "dtype": "bf16",
+      "hashes": {
+        "triton_poi_fused_mul_silu_slice_1.ttir": "b8ac4f2617d71406ef0bc312265bacda8ef8b6f6973c8d9042a4c7e6b4c5d59a",
+        "triton_poi_fused_mul_silu_slice_1.ttgir": "b50ee49e6e3636e2484f6306c4316d9d3b91c61ad3a2c0a8de6374da44685ab7",
+        "triton_poi_fused_mul_silu_slice_1.llir": "cc484ad6810d26115982fd95f3b50cecba0a5316d80e0e3a4176967925f0862f",
+        "triton_poi_fused_mul_silu_slice_1.cubin": "93a802de6e4d6423b0e6fbae654a9c77ff14c36b2955c5cc95310c63aa801bfd",
+        "triton_poi_fused_mul_silu_slice_1.json": "a23211efebc356a1b7964e3bc2b341d1848193cb46ca6488d2aff893bccf830f",
+        "__grp__triton_poi_fused_mul_silu_slice_1.json": "d956636d9e0aa2997dbe7777249ff8ade8ccce1960312acaa0cb01880509a5ba"
+      }
+    },
+    {
+      "path": "triton_cache/AOOQY5KGO4AZ5FQP3FS6ROLXV4ZU2LXO72HQKULBU3EMQ7M435AQ/triton_poi_fused_mul_silu_slice_1_fp16.json",
+      "name": "triton_poi_fused_mul_silu_slice_1_fp16",
+      "num_warps": 8,
+      "num_stages": 1,
+      "shared": 0,
+      "dtype": "f16",
+      "hashes": {
+        "triton_poi_fused_mul_silu_slice_1_fp16.ttir": "0f8ee9cb1723e7250b0143eed935fef211c1fe12c5446593422f1c710f68a3bb",
+        "triton_poi_fused_mul_silu_slice_1_fp16.ttgir": "5bcfd3bd5eacb8d3fc8d6b0aba767947e1853f411ec9e0c0fd9b855c0d3f490f",
+        "triton_poi_fused_mul_silu_slice_1_fp16.llir": "29b5a0d31cb538e0cfea8505a7e2db7940dfad3290e4ace125182e0ff5951846",
+        "triton_poi_fused_mul_silu_slice_1_fp16.cubin": "47aadaa09ddf53fb89969c14b30fed096b7327a9276fd197b2213442b3a2583f",
+        "triton_poi_fused_mul_silu_slice_1_fp16.json": "c01d73db9a3e31a76b47a09512d8c1dc80fe1fd7ba037dd7095bbfcd42ffa8b5",
+        "__grp__triton_poi_fused_mul_silu_slice_1_fp16.json": "0de27ace61393b3a49e46f25910b2716d40b81bacb949f271c14dfb58b7adfcf"
+      }
+    },
+    {
+      "path": "triton_cache/5NKCKTV5WMRGL6YAKUWG7A3KQB4HBGHO7VCUF353VQF65WQIMZUQ/triton_poi_fused_mul_silu_slice_1_fp16.json",
+      "name": "triton_poi_fused_mul_silu_slice_1_fp16",
+      "num_warps": 4,
+      "num_stages": 1,
+      "shared": 0,
+      "dtype": "f16",
+      "hashes": {
+        "triton_poi_fused_mul_silu_slice_1_fp16.ttir": "cb6660413dbc98f45be35d11ca4f999592c367f14c1864addee217611ef91a8c",
+        "triton_poi_fused_mul_silu_slice_1_fp16.ttgir": "61f8a2114a51a3b92c0a6109748f3a9244023e209818c000f629c3c7782a2394",
+        "triton_poi_fused_mul_silu_slice_1_fp16.llir": "f456d24866c56972876d732becb2394d380f86f47b84d03bbd848778f2b2c2dc",
+        "triton_poi_fused_mul_silu_slice_1_fp16.cubin": "de8f4ae68cd5d7d3d43913e59d2dbeaee2c7dac802e92e9de0d47ac03e35f94c",
+        "triton_poi_fused_mul_silu_slice_1_fp16.json": "bd6cd7b69b69e477234959e8211b10fa8b81e3db13af43f1cd38aa538dc03735",
+        "__grp__triton_poi_fused_mul_silu_slice_1_fp16.json": "8d549e7bac7057a4e634797fc0c33dda770253201dec18b87c9794a931935059"
+      }
+    }
+  ],
+  "serving_selection_unchanged": true
+}
