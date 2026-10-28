@@ -1,0 +1,35 @@
+INFO 10-28 18:33:30 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 18:33:30 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-28 18:33:30 [__init__.py:58] Loading plugin fl
+.....................FWARNING 10-28 18:33:37 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+..ss
+=================================== FAILURES ===================================
+_____________________ test_parameter_and_reload_semantics ______________________
+
+    def test_parameter_and_reload_semantics():
+        from vllm.model_executor.parameter import ModelWeightParameter
+        loader = lambda *args: None
+>       parameter = ModelWeightParameter(
+            torch.arange(35, dtype=torch.float32).reshape(7, 5),
+            input_dim=1, output_dim=0, weight_loader=loader,
+        )
+E       TypeError: _ColumnvLLMParameter.__init__() got multiple values for argument 'output_dim'
+
+source/tests/test_mlp_weight_layout.py:69: TypeError
+=============================== warnings summary ===============================
+../../../worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:728
+  /workspace/LeanScale/worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+    super().__init__(*args, **kwargs)
+
+../../../worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:411
+  /workspace/LeanScale/worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+    resolved_benchmark = resolve_benchmarker(
+
+source/tests/test_mlp_weight_layout.py: 14 warnings
+  /usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED source/tests/test_mlp_weight_layout.py::test_parameter_and_reload_semantics
+1 failed, 23 passed, 2 skipped, 16 warnings in 14.37s

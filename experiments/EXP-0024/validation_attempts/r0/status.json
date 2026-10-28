@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "started_at": "2026-10-28T18:33:17.279954+08:00",
+  "compute_stop_at": "2026-10-28T18:48:17.279954+08:00",
+  "pid": 2993,
+  "process_start_ticks": "353116734",
+  "exit_codes": {
+    "cpu": 1
+  },
+  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/staging/flagos-exp24-dev/run_validation.py\", line 61, in main\n    assert codes[label]==0, label+' checks failed'\n           ^^^^^^^^^^^^^^^\nAssertionError: cpu checks failed\n",
+  "finished_at": "2026-10-28T18:33:44.037374+08:00",
+  "owned_children_reaped": true
+}
