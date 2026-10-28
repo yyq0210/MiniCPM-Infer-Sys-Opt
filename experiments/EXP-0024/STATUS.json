@@ -1,6 +1,25 @@
 {
-  "stage": "load_hook_validation_passed",
-  "cpu_checks": 24,
-  "gpu_projection_checks": 2,
-  "serving_selected": "EXP-0020"
+  "pid": 4288,
+  "process_start_ticks": "353368611",
+  "started_at": "2026-10-28T19:15:16.100619+08:00",
+  "selected_cases": [
+    [
+      4096,
+      1024,
+      64,
+      256
+    ]
+  ],
+  "commits": {
+    "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "planned_finish_before": "2026-10-28T21:05:15.980867+08:00",
+  "accuracy_status": "full-model task accuracy deferred by user",
+  "stage": "failed",
+  "updated_at": "2026-10-28T19:20:33+08:00",
+  "server_pid": 4304,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0024/run_e2e.py\", line 202, in main\n    core.verify_route(folder);layout_route(run,folder,reference)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0024/run_e2e.py\", line 99, in layout_route\n    assert any(m['direct_weight_mm_counts']=={'gate_up_proj':42,'down_proj':42} for m in modules), 'No complete 42-layer generated MLP layout proof'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: No complete 42-layer generated MLP layout proof\n",
+  "owned_children_reaped": true,
+  "finished_at": "2026-10-28T19:20:33.095594+08:00"
 }

@@ -1,0 +1,42 @@
+{
+  "status.json": {
+    "raw_sha256": "b7266640892d9c116bf9cbf02c8c4ef31ec579d5b7eb2098deffb687e32c84bb",
+    "archived_sha256": "2fdd93eff3c14329878db836a050212d68f107fefdf736ea0d99abdffec1efea"
+  },
+  "stage_history.jsonl": {
+    "raw_sha256": "6cb60a98edc64e4917a4488fc5b9b7e9b8f39bd7a59af936686e8ee810ea4daa",
+    "archived_sha256": "6cb60a98edc64e4917a4488fc5b9b7e9b8f39bd7a59af936686e8ee810ea4daa"
+  },
+  "idle_evidence.json": {
+    "raw_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc",
+    "archived_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc"
+  },
+  "candidate_validation.json": {
+    "raw_sha256": "61eb911f159f8f708f21829cad8e010a57e9dff0b8e4d2ddfd619984449cec49",
+    "archived_sha256": "61eb911f159f8f708f21829cad8e010a57e9dff0b8e4d2ddfd619984449cec49"
+  },
+  "environment_check.json": {
+    "raw_sha256": "4d17ed95db890bbe70b0c6dd7da67ede57035049e8aea7eb1ba86e31c2910aef",
+    "archived_sha256": "4d17ed95db890bbe70b0c6dd7da67ede57035049e8aea7eb1ba86e31c2910aef"
+  },
+  "parent_reference.json": {
+    "raw_sha256": "b06c615379fba9cff3998d8e2a97006b56284588686787c17069c4a1b8780f3d",
+    "archived_sha256": "b06c615379fba9cff3998d8e2a97006b56284588686787c17069c4a1b8780f3d"
+  },
+  "candidate_benchmark/server.log": {
+    "raw_sha256": "ea222bddfe5d6e54f3b75c7924ed39fe44f379d028c7e1085e9dcdfd21e4bf0b",
+    "archived_sha256": "998b556b6f1c3ddb046a249055d3eb63cb550e673f7c05166dee8e8cb7664780"
+  },
+  "candidate_benchmark/server.command.json": {
+    "raw_sha256": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+    "archived_sha256": "f8122ce07a5594d9474e026e93a27439ba19e0a14f7f11fe67a87f55c56c1131"
+  },
+  "candidate_benchmark/smoke.json": {
+    "raw_sha256": "00183779d9b229d8c4050227200ad34fdadb7dbc7afbb98442bdb18af641ba90",
+    "archived_sha256": "b135d19e064c2db909a584e82091436b6e193f27c5c0659b883775102f202b6d"
+  },
+  "candidate_benchmark/route_evidence.json": {
+    "raw_sha256": "dfbb8452854e1ae332438ad3d167e25b710196a332f861843e122eac285f53e1",
+    "archived_sha256": "dfbb8452854e1ae332438ad3d167e25b710196a332f861843e122eac285f53e1"
+  }
+}
