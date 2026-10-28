@@ -1,0 +1,27 @@
+{
+  "selected_commits": {
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "source_hashes": {
+    "/usr/local/lib/python3.12/site-packages/vllm/model_executor/layers/utils.py": "061adffc6af55ef3b001557c0fad738e474c5e4134fa3dc35cb967bdbc90a121",
+    "/usr/local/lib/python3.12/site-packages/vllm/model_executor/layers/linear.py": "0bd60103d85d7183791077c46e0770d0a2adc8e8811b162b9084c3cbe92ba662",
+    "/workspace/MiniCPM5-2B/config.json": "59613157e5357d62bcb121e04cb90f2170b43d789b142380c12c3d4277d95180",
+    "/workspace/LeanScale/artifacts/EXP-0020/20261026_125756_official_4k/candidate_cache/torch_compile_cache/631f219398/rank_0_0/backbone/computation_graph.py": "6d65aa5a585fa021bad5886c590ca2147f514286ad79e0ff4f867e8b17068cd9",
+    "/workspace/LeanScale/artifacts/EXP-0020/20261026_125756_official_4k/candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/2z/c2z22xv3c7kztx65a2nihpha3vr7ra7gha5aphwbsacm5c53tkvw.py": "feaa3bf64672cb789a89946d63b026e3f063bfe80c1b1b4366be672aa543fe9c",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/production_silu_source.json": "d3fc318c2a4b107f91154a19d961e70582ade220391eda8f35206ed86e06ad93",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/README.md": "c9a9c05fb576315a48eb8797988c34666afcd931ca6ea1c73da2f4d4d7651a56",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/route_evidence.json": "9b872f5796e5056ada67933baf1fe1bdd1c65e791d7ddc66f03bcda67c9b3f20",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/daily_window.json": "cec05a470eac90d835f6b2e79447eed4f2f3bbe08ba00b552aa8fc95d5fa622c"
+  },
+  "script_hashes": {
+    "record_plan.py": "119627f03104d0855f121e4b515e77058229346787cfd0ac94b139f74797dff6",
+    "trial.py": "4a79461eaba0362f763344517fbdc52b714084e6248a5ea775c7306b9c3cea65",
+    "run_screen.py": "18119fafa8d7cb8f7fcae296afcb0d83a3d6617367dd57d1d1c6768059e19952",
+    "prepare_and_start.py": "a95321452df566ead1be8a71af766464ac9b09483094aad82fdbc8f98db4cac1"
+  },
+  "expected_checks": 117,
+  "timing_points": 180,
+  "production_kernel_source_sha256": "2077eeed3cb635af436273a4ca3c69e6fb2d32e303bbf50b739950086df2cb6a",
+  "candidate_gate": "all3seeds M8/16 in both modes<=-5percent; other points<=+3percent; abs drift<=3percent; no automatic integration"
+}
