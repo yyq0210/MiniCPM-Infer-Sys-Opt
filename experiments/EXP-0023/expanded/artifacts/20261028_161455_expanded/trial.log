@@ -1,0 +1,30 @@
+INFO 10-28 16:15:04 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 16:15:04 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-28 16:15:04 [__init__.py:58] Loading plugin fl
+/workspace/LeanScale/worktrees/EXP-0020/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0020/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-28 16:15:10 [__init__.py:237] Platform plugin fl is activated
+WARNING 10-28 16:15:11 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/trial.py", line 99, in main
+    build_kernel(torch.bfloat16);build_kernel(torch.float16)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/trial.py", line 52, in build_kernel
+    warmup_M=2048,best_config=str(getattr(kernel,'best_config',None)),configs=[str(v) for v in getattr(kernel,'configs',[])])
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/trial.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/trial.py", line 99, in main
+    build_kernel(torch.bfloat16);build_kernel(torch.float16)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/trial.py", line 52, in build_kernel
+    warmup_M=2048,best_config=str(getattr(kernel,'best_config',None)),configs=[str(v) for v in getattr(kernel,'configs',[])])
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

@@ -1,0 +1,14 @@
+{
+  "pid": 1880,
+  "process_start_ticks": "352286539",
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0023/expanded/20261028_161455_expanded",
+  "started_at": "2026-10-28T16:14:55.326801+08:00",
+  "compute_stop_at": "2026-10-28T16:54:55.259012+08:00",
+  "selected_for_serving": false,
+  "stage": "failed",
+  "updated_at": "2026-10-28T16:15:25.946137+08:00",
+  "child_pid": 1896,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0023/expanded/run_screen.py\", line 58, in main\n    assert code==0,code;verify();d=read(run/'result.json')\n           ^^^^^^^\nAssertionError: 1\n",
+  "owned_children_reaped": true,
+  "safe_to_resume_gpu": true
+}

@@ -1,0 +1,41 @@
+{
+  "status": "failed",
+  "kind": "complete_MLP_operator_diagnostic_not_official_e2e",
+  "started_at": "2026-10-28T16:15:14+0800",
+  "Ms": [
+    1,
+    4,
+    8,
+    16,
+    30,
+    32,
+    64,
+    128,
+    512,
+    2048
+  ],
+  "seeds": [
+    202610261,
+    202610262,
+    202610263
+  ],
+  "variants": [
+    "gate_up",
+    "down",
+    "both"
+  ],
+  "tolerance": {
+    "atol": 0.03,
+    "rtol": 0.03
+  },
+  "checks": [],
+  "timings": [],
+  "activation_sources": {},
+  "native_linear": {
+    "callable": "vllm.model_executor.layers.utils.default_unquantized_gemm",
+    "source_sha256": "046576d5cfcb9a40e87ba0060ea26054e97e2d16f3bcb1b09429156d828d9a4a"
+  },
+  "caveat": "Random tensors; same production-generated activation source compiled in separate cache, with fresh autotuning; not full model request replay; original weight layout inferred from production graph",
+  "error": "TypeError(\"'NoneType' object is not iterable\")",
+  "finished_at": "2026-10-28T16:15:15+0800"
+}
