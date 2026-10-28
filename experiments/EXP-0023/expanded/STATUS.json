@@ -1,4 +1,12 @@
 {
-  "stage": "prepared",
-  "GPU_started": false
+  "stage": "failed_before_measurement",
+  "checks": 0,
+  "timings": 0,
+  "reason": "Optional compiler configs metadata was None",
+  "publication": {
+    "status": "pushed",
+    "commit": "353d3feb4c5070f735f77538f17d08610c32e5cf",
+    "remote_verified": true
+  },
+  "next": "isolated expanded-r1 compatibility fix"
 }

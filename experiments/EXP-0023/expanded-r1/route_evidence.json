@@ -1,0 +1,16 @@
+{
+  "graph_path": "/workspace/LeanScale/artifacts/EXP-0020/20261026_125756_official_4k/candidate_cache/torch_compile_cache/631f219398/rank_0_0/backbone/computation_graph.py",
+  "graph_sha256": "6d65aa5a585fa021bad5886c590ca2147f514286ad79e0ff4f867e8b17068cd9",
+  "native_silu_count": 42,
+  "kernel_name": "triton_poi_fused_mul_silu_slice_1",
+  "kernel_source_sha256": "2077eeed3cb635af436273a4ca3c69e6fb2d32e303bbf50b739950086df2cb6a",
+  "module_path": "/workspace/LeanScale/artifacts/EXP-0020/20261026_125756_official_4k/candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/2z/c2z22xv3c7kztx65a2nihpha3vr7ra7gha5aphwbsacm5c53tkvw.py",
+  "module_sha256": "feaa3bf64672cb789a89946d63b026e3f063bfe80c1b1b4366be672aa543fe9c",
+  "source_kind": "curated single production-generated kernel source, not full cache",
+  "initial_preflight": {
+    "status": "failed",
+    "reason": "No silu_and_mul default.flagos first-use log; actual computation graph uses forward_native",
+    "GPU_started": false
+  },
+  "status": "actual graph and generated kernel verified; runtime execution pending"
+}
