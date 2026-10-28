@@ -1,0 +1,10 @@
+{
+  "parent_runner_sha256": "4254f8e6a90795660a79f997f2f271367ea46450b0e96967afdebfab4dbf2cb8",
+  "runner_sha256": "60297493d8d2a2fc97b5efb9e66b26f73f0fbb16f1a1a9539eb462b76cfbffdc",
+  "change": "partition-aware route evidence and isolated paths only",
+  "candidate_commits": {
+    "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "parent_failed_status_sha256": "b7266640892d9c116bf9cbf02c8c4ef31ec579d5b7eb2098deffb687e32c84bb"
+}
