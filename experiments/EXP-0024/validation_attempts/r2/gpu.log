@@ -1,0 +1,115 @@
+INFO 10-28 19:03:22 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-28 19:03:23 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-28 19:03:23 [__init__.py:58] Loading plugin fl
+WARNING 10-28 19:03:30 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-28 19:03:30 [interface.py:1006] Current platform  does not have 'vendor_name' attribute.
+FWARNING 10-28 19:03:31 [interface.py:1006] Current platform  does not have 'vendor_name' attribute.
+F
+=================================== FAILURES ===================================
+__________ test_real_gpu_layer_layout_memory_and_graph[gate_up_proj] ___________
+
+projection = 'gate_up_proj'
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7db72f048860>
+
+    @pytest.mark.skipif(os.environ.get("LEANSCALE_TEST_GPU") != "1", reason="GPU opt-in")
+    @pytest.mark.parametrize("projection", ["gate_up_proj", "down_proj"])
+    def test_real_gpu_layer_layout_memory_and_graph(projection, monkeypatch):
+        from vllm.model_executor.layers.linear import (
+            MergedColumnParallelLinear, RowParallelLinear,
+        )
+        torch.manual_seed(202610281)
+        prefix = "model.layers.0.mlp." + projection
+        kwargs = dict(bias=False, params_dtype=torch.bfloat16,
+                      prefix=prefix, disable_tp=True)
+        with torch.device("cuda"):
+            layer = (MergedColumnParallelLinear(2048, [6144, 6144], **kwargs)
+                     if projection == "gate_up_proj"
+                     else RowParallelLinear(6144, 2048, **kwargs))
+        with torch.no_grad():
+            layer.weight.normal_(std=.02)
+        old_cpu = layer.weight.detach().cpu()
+        weight = layer.weight
+        metadata = copy.copy(weight.__dict__)
+        old_pointer = weight.data_ptr()
+        torch.cuda.synchronize()
+        allocated = torch.cuda.memory_allocated()
+        monkeypatch.setenv(layout.ENV_NAME, "1")
+        layout.install_mlp_weight_layout()
+        with patch("vllm.config.get_current_vllm_config_or_none", return_value=config()):
+            assert layout._target_projection(layer) == projection
+            layer.quant_method.process_weights_after_loading(layer)
+            torch.cuda.synchronize()
+            assert layer.weight is weight and weight.__dict__ == metadata
+            assert torch.equal(weight.cpu(), old_cpu)
+>           assert weight.stride() == (1, weight.shape[0])
+E           assert (2048, 1) == (1, 12288)
+E
+E             At index 0 diff: 2048 != 1
+E             Use -v to get more diff
+
+source/tests/test_mlp_weight_layout.py:175: AssertionError
+------------------------------ Captured log call -------------------------------
+WARNING  vllm.platforms.interface:interface.py:358 Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING  vllm.platforms.interface:interface.py:1006 Current platform  does not have 'vendor_name' attribute.
+____________ test_real_gpu_layer_layout_memory_and_graph[down_proj] ____________
+
+projection = 'down_proj'
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7db67c980920>
+
+    @pytest.mark.skipif(os.environ.get("LEANSCALE_TEST_GPU") != "1", reason="GPU opt-in")
+    @pytest.mark.parametrize("projection", ["gate_up_proj", "down_proj"])
+    def test_real_gpu_layer_layout_memory_and_graph(projection, monkeypatch):
+        from vllm.model_executor.layers.linear import (
+            MergedColumnParallelLinear, RowParallelLinear,
+        )
+        torch.manual_seed(202610281)
+        prefix = "model.layers.0.mlp." + projection
+        kwargs = dict(bias=False, params_dtype=torch.bfloat16,
+                      prefix=prefix, disable_tp=True)
+        with torch.device("cuda"):
+            layer = (MergedColumnParallelLinear(2048, [6144, 6144], **kwargs)
+                     if projection == "gate_up_proj"
+                     else RowParallelLinear(6144, 2048, **kwargs))
+        with torch.no_grad():
+            layer.weight.normal_(std=.02)
+        old_cpu = layer.weight.detach().cpu()
+        weight = layer.weight
+        metadata = copy.copy(weight.__dict__)
+        old_pointer = weight.data_ptr()
+        torch.cuda.synchronize()
+        allocated = torch.cuda.memory_allocated()
+        monkeypatch.setenv(layout.ENV_NAME, "1")
+        layout.install_mlp_weight_layout()
+        with patch("vllm.config.get_current_vllm_config_or_none", return_value=config()):
+            assert layout._target_projection(layer) == projection
+            layer.quant_method.process_weights_after_loading(layer)
+            torch.cuda.synchronize()
+            assert layer.weight is weight and weight.__dict__ == metadata
+            assert torch.equal(weight.cpu(), old_cpu)
+>           assert weight.stride() == (1, weight.shape[0])
+E           assert (6144, 1) == (1, 2048)
+E
+E             At index 0 diff: 6144 != 1
+E             Use -v to get more diff
+
+source/tests/test_mlp_weight_layout.py:175: AssertionError
+------------------------------ Captured log call -------------------------------
+WARNING  vllm.platforms.interface:interface.py:1006 Current platform  does not have 'vendor_name' attribute.
+=============================== warnings summary ===============================
+../../../worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:728
+  /workspace/LeanScale/worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+    super().__init__(*args, **kwargs)
+
+../../../worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:411
+  /workspace/LeanScale/worktrees/EXP-0024/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+    resolved_benchmark = resolve_benchmarker(
+
+source/tests/test_mlp_weight_layout.py: 14 warnings
+  /usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED source/tests/test_mlp_weight_layout.py::test_real_gpu_layer_layout_memory_and_graph[gate_up_proj]
+FAILED source/tests/test_mlp_weight_layout.py::test_real_gpu_layer_layout_memory_and_graph[down_proj]
+2 failed, 24 deselected, 16 warnings in 13.43s
