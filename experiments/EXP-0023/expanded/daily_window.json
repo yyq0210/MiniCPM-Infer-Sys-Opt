@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-28",
+  "machine_shutdown_at": "2026-10-29T00:00:00+08:00",
+  "compute_stop_at": "2026-10-28T23:35:00+08:00",
+  "archive_target_at": "2026-10-28T23:50:00+08:00",
+  "user_confirmed_shutdown": true
+}
