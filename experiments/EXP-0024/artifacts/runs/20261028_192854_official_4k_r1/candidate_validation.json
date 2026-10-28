@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "plan": {
+    "experiment": "EXP-0024",
+    "candidate_commits": {
+      "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+      "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+    },
+    "selected_baseline": "EXP-0020",
+    "script_hashes": {
+      "run_e2e.py": "60297493d8d2a2fc97b5efb9e66b26f73f0fbb16f1a1a9539eb462b76cfbffdc",
+      "prepare_route_retry.py": "c54c027942fa376576aa7da20a7ec4c1a41280b81377f601ad51eef06767766a"
+    },
+    "validation_attempt": "r3",
+    "validation_status_sha256": "eef050b35d5bfcdd4d1e14d5c690aaa97fe353962393fe2bc3af5eef5d11112c",
+    "protocol": "official4K four rounds discard first; historical EXP20 comparator; actual route gates before timing",
+    "model_accuracy": "deferred_by_user",
+    "kv_capacity_startup_min_ratio": 0.99,
+    "retry_reason": "Actual MLP code split across42 blocks; same 84 logical weights and strict strides",
+    "parent_script_hashes": {
+      "run_e2e.py": "4254f8e6a90795660a79f997f2f271367ea46450b0e96967afdebfab4dbf2cb8",
+      "prepare_e2e.py": "735b2939a412ef0fa37fb6d3cf528ee4399f4da0df59eb0b27b93d4b4753a174"
+    }
+  },
+  "diagnostic_status_sha256": "eef050b35d5bfcdd4d1e14d5c690aaa97fe353962393fe2bc3af5eef5d11112c",
+  "source_hashes": {
+    "vllm_fl/__init__.py": "4f75986615eafad53934076814c3f7173d11eb34b2f0b00a837a504497df2a00",
+    "vllm_fl/patches/mlp_weight_layout.py": "78b31b09bcb9a6561430816e5da4baddd11ed1529ff97235ec7cfab0d1c7b201",
+    "tests/test_mlp_weight_layout.py": "33790e3319031e15522b4507dcc8d802feec1a2da549f3aa11f2e62443ca6ad9"
+  }
+}

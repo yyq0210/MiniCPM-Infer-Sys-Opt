@@ -1,7 +1,7 @@
 {
-  "pid": 4288,
-  "process_start_ticks": "353368611",
-  "started_at": "2026-10-28T19:15:16.100619+08:00",
+  "pid": 9164,
+  "process_start_ticks": "353450428",
+  "started_at": "2026-10-28T19:28:54.275006+08:00",
   "selected_cases": [
     [
       4096,
@@ -14,12 +14,66 @@
     "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
     "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
   },
-  "planned_finish_before": "2026-10-28T21:05:15.980867+08:00",
+  "planned_finish_before": "2026-10-28T21:18:54.150975+08:00",
   "accuracy_status": "full-model task accuracy deferred by user",
-  "stage": "failed",
-  "updated_at": "2026-10-28T19:20:33+08:00",
-  "server_pid": 4304,
-  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0024/run_e2e.py\", line 202, in main\n    core.verify_route(folder);layout_route(run,folder,reference)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0024/run_e2e.py\", line 99, in layout_route\n    assert any(m['direct_weight_mm_counts']=={'gate_up_proj':42,'down_proj':42} for m in modules), 'No complete 42-layer generated MLP layout proof'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: No complete 42-layer generated MLP layout proof\n",
+  "stage": "performance_case_complete",
+  "updated_at": "2026-10-28T20:05:12+08:00",
+  "server_pid": 9180,
+  "comparison_exp20": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 3579.12,
+      "candidate_total_tokens_s": 3540.86,
+      "throughput_change_percent": -1.0689778493037316,
+      "baseline_ttft_ms": 5102.66,
+      "candidate_ttft_ms": 5143.3,
+      "ttft_change_percent": 0.7964473431504526,
+      "baseline_retained_runs": [
+        3453.86,
+        3597.9,
+        3685.59
+      ],
+      "baseline_cv_percent": 3.2689998393572957,
+      "candidate_retained_runs": [
+        3322.74,
+        3624.82,
+        3675.02
+      ],
+      "candidate_cv_percent": 5.381680223770875
+    }
+  ],
+  "scheduler_accounting": {
+    "reference": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7454.709983425681
+      },
+      "mean_queue_seconds_all_four_rounds": 7.279990218189141,
+      "server_log_samples": 178,
+      "peak_running_sampled": 64,
+      "peak_waiting_sampled": 59,
+      "peak_cache_usage_percent_sampled": 62.0,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "candidate": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7447.324888651259
+      },
+      "mean_queue_seconds_all_four_rounds": 7.272778211573495,
+      "server_log_samples": 180,
+      "peak_running_sampled": 64,
+      "peak_waiting_sampled": 60,
+      "peak_cache_usage_percent_sampled": 62.0,
+      "admission_last_snapshot": null,
+      "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+    },
+    "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+    "scheduler_policy": "original; admission telemetry must be absent"
+  },
   "owned_children_reaped": true,
-  "finished_at": "2026-10-28T19:20:33.095594+08:00"
+  "finished_at": "2026-10-28T20:05:12.636279+08:00"
 }
