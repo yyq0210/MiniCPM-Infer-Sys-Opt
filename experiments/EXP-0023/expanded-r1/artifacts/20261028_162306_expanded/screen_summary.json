@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "candidates": [
+    "down",
+    "both"
+  ],
+  "primary_mean_changes": {
+    "down": -7.844142938433383,
+    "both": -12.632612628372561
+  },
+  "selected_for_refinement": "both",
+  "selection_rule": "all3seeds: M8/16 <=-5percent in both modes; others<=+3percent; all drift<=3percent; within1percentagepoint prefer fewer repacked weights; independent audit required"
+}
