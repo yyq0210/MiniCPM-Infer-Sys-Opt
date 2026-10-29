@@ -1,0 +1,58 @@
+{
+  "idle.json": {
+    "raw_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc",
+    "archived_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc"
+  },
+  "environment_check.json": {
+    "raw_sha256": "e447f2f1ddde3860418914a8ad1a5cd5b9774e5ed93151d7265d74a9c195311b",
+    "archived_sha256": "e447f2f1ddde3860418914a8ad1a5cd5b9774e5ed93151d7265d74a9c195311b"
+  },
+  "explicit_environment.json": {
+    "raw_sha256": "2a6e9e49accec26f46c1f161720d484c149d9afb7034094e6ffb1127f8e2ed92",
+    "archived_sha256": "2a6e9e49accec26f46c1f161720d484c149d9afb7034094e6ffb1127f8e2ed92"
+  },
+  "status.json": {
+    "raw_sha256": "a763650cab0372e091a3ca69e80343c8fb4f1b31a2c102971af09746a1c9b0a0",
+    "archived_sha256": "aae27792106d07a2a513672cdc57b08b9e44bf2cae1b7d8995db7a7417f8638e"
+  },
+  "stage_history.jsonl": {
+    "raw_sha256": "baae646334800edce3640c23ed1b7909a3d749bb0f8aa10e69b7b7e3e59bd6f4",
+    "archived_sha256": "baae646334800edce3640c23ed1b7909a3d749bb0f8aa10e69b7b7e3e59bd6f4"
+  },
+  "workload_start.json": {
+    "raw_sha256": "7dd301225c6ad3ac49c2da79df1c91bcbe972ed844e1852426f802cf86463134",
+    "archived_sha256": "7dd301225c6ad3ac49c2da79df1c91bcbe972ed844e1852426f802cf86463134"
+  },
+  "candidate_benchmark/server.command.json": {
+    "raw_sha256": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+    "archived_sha256": "f8122ce07a5594d9474e026e93a27439ba19e0a14f7f11fe67a87f55c56c1131"
+  },
+  "candidate_benchmark/server.log": {
+    "raw_sha256": "497a92a34eddf48719601a55ae00b3c5dd34de442c52dca9a7c571e574198cfe",
+    "archived_sha256": "b9925ceb33335691e09c2e9d682c270438915887c01d0f3ed27b52543fd9b169"
+  },
+  "candidate_benchmark/smoke.json": {
+    "raw_sha256": "1cb37b264f6f987581ad2fa90e31c67daf536c84351b8a97e6601718a961abf9",
+    "archived_sha256": "4ba0c7b806c70c6eb75d2edfe3ce275eabc536c4e5e04778ff041387f4889783"
+  },
+  "candidate_benchmark/route_evidence.json": {
+    "raw_sha256": "f1c09770ae541a9f9c1fc59ca748d68390e5935cec045746cedf191ba6585f9b",
+    "archived_sha256": "f1c09770ae541a9f9c1fc59ca748d68390e5935cec045746cedf191ba6585f9b"
+  },
+  "candidate_benchmark/layout_route_evidence.json": {
+    "raw_sha256": "7596dd09d743892be34d9d5800838e0dd1d81a54a3f9c593225aaf8186b7ddea",
+    "archived_sha256": "7596dd09d743892be34d9d5800838e0dd1d81a54a3f9c593225aaf8186b7ddea"
+  },
+  "candidate_benchmark/metrics_before.prom": {
+    "raw_sha256": "09131cc7ca6e329e99a54975b882f94a8829002232d1aee8d658e8a67bee7288",
+    "archived_sha256": "09131cc7ca6e329e99a54975b882f94a8829002232d1aee8d658e8a67bee7288"
+  },
+  "candidate_benchmark/diagnostic.command.json": {
+    "raw_sha256": "5f57bb754f50d54962e67a04ffdccf8696fd1f4ef1a06c0f4f7151aa028ac547",
+    "archived_sha256": "37a10663398e3e7b8f7c606cbd3e25ad8c0857b9f686554b67481e3280dd3da4"
+  },
+  "candidate_benchmark/diagnostic.log": {
+    "raw_sha256": "f152d081a7620882bc7613f5828d46c3deab349d971cfbcdc739ea4bb8e98d9f",
+    "archived_sha256": "4b821d91e034b05670fd3c974594eeba24ebb2f9f50f3cd1e774f1990eab947d"
+  }
+}

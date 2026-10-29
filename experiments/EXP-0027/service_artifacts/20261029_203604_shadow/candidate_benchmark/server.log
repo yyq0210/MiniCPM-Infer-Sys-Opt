@@ -1,0 +1,877 @@
+INFO 10-29 20:36:13 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-29 20:36:13 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-29 20:36:13 [__init__.py:58] Loading plugin fl
+/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-29 20:36:20 [__init__.py:237] Platform plugin fl is activated
+WARNING 10-29 20:36:26 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING 10-29 20:36:26 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-29 20:36:26 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-29 20:36:26 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+INFO 10-29 20:36:26 [topp_row_parallel.py:122] LeanScale top-p grid hook installed: max_programs=64 B=17..64 V=130560 top_p_only=True shadow=True
+[2026-10-29 20:36:26] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped topk_topp_sampler.compiled_random_sample
+[2026-10-29 20:36:26] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped logprobs.batched_count_greater_than
+[2026-10-29 20:36:26] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+(APIServer pid=50185) INFO 10-29 20:36:26 [api_utils.py:339]
+(APIServer pid=50185) INFO 10-29 20:36:26 [api_utils.py:339]        █     █     █▄   ▄█
+(APIServer pid=50185) INFO 10-29 20:36:26 [api_utils.py:339]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.24.0
+(APIServer pid=50185) INFO 10-29 20:36:26 [api_utils.py:339]   █▄█▀ █     █     █     █  model   /workspace/MiniCPM5-2B
+(APIServer pid=50185) INFO 10-29 20:36:26 [api_utils.py:339]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=50185) INFO 10-29 20:36:26 [api_utils.py:339]
+(APIServer pid=50185) INFO 10-29 20:36:26 [api_utils.py:273] non-default args: {'model_tag': '/workspace/MiniCPM5-2B', 'port': 9031, 'model': '/workspace/MiniCPM5-2B', 'max_model_len': 131072, 'served_model_name': ['minicpm'], 'gpu_memory_utilization': 0.85, 'compilation_config': {'mode': None, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_DECODE_ONLY: (2, 0)>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': None, 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}}
+(APIServer pid=50185) WARNING 10-29 20:36:26 [envs.py:2004] Unknown vLLM environment variable detected: VLLM_FL_MLP_WEIGHT_LAYOUT
+(APIServer pid=50185) INFO 10-29 20:36:45 [model.py:598] Resolved architecture: LlamaForCausalLM
+(APIServer pid=50185) INFO 10-29 20:36:45 [model.py:1725] Using max model len 131072
+(APIServer pid=50185) INFO 10-29 20:36:45 [vllm.py:1006] Asynchronous scheduling is enabled.
+(APIServer pid=50185) INFO 10-29 20:36:45 [kernel.py:276] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+INFO 10-29 20:36:49 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-29 20:36:49 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-29 20:36:49 [__init__.py:58] Loading plugin fl
+/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-29 20:36:56 [__init__.py:237] Platform plugin fl is activated
+(EngineCore pid=50466) WARNING 10-29 20:37:01 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=50466) /usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+(EngineCore pid=50466)   warnings.warn(
+(EngineCore pid=50466) WARNING 10-29 20:37:01 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=50466) WARNING 10-29 20:37:01 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=50466) WARNING 10-29 20:37:01 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+(EngineCore pid=50466) INFO 10-29 20:37:01 [topp_row_parallel.py:122] LeanScale top-p grid hook installed: max_programs=64 B=17..64 V=130560 top_p_only=True shadow=True
+(EngineCore pid=50466) INFO 10-29 20:37:01 [core.py:114] Initializing a V1 LLM engine (v0.24.0) with config: model='/workspace/MiniCPM5-2B', speculative_config=None, tokenizer='/workspace/MiniCPM5-2B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=131072, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_verbose=False), seed=0, served_model_name=minicpm, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [2048], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_DECODE_ONLY: (2, 0)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, moe_backend='auto', linear_backend='auto')
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/config.py:171: UserWarning: resolve_user_setting: no exclude ops found; returning empty list
+(EngineCore pid=50466)   warnings.warn(
+(EngineCore pid=50466) /usr/local/lib/python3.12/site-packages/torch/library.py:357: UserWarning: Warning only once for all operators,  other operators may also be overridden.
+(EngineCore pid=50466)   Overriding a previously registered kernel for the same operator and the same dispatch key
+(EngineCore pid=50466)   operator: aten::__ilshift__.Tensor(Tensor(a!) self, Tensor other) -> Tensor(a!)
+(EngineCore pid=50466)     registered at /home/corex/sw_home/apps/pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+(EngineCore pid=50466)   dispatch key: CUDA
+(EngineCore pid=50466)   previous kernel: registered at /home/corex/sw_home/apps/pytorch/build/aten/src/ATen/RegisterCPU_3.cpp:7148
+(EngineCore pid=50466)        new kernel: registered at /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/__init__.py:62 (Triggered internally at /home/corex/sw_home/apps/pytorch/aten/src/ATen/core/dispatch/OperatorEntry.cpp:208.)
+(EngineCore pid=50466)   self.m.impl(
+(EngineCore pid=50466) WARNING:root:Skipped registering operator: This is not allowed since there's already a kernel registered from python overriding ne_.Scalar's behavior for CUDA dispatch key and aten namespace.
+(EngineCore pid=50466) WARNING:root:Skipped registering operator: This is not allowed since there's already a kernel registered from python overriding ne_.Tensor's behavior for CUDA dispatch key and aten namespace.
+(EngineCore pid=50466) [2026-10-29 20:37:02] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped topk_topp_sampler.compiled_random_sample
+(EngineCore pid=50466) [2026-10-29 20:37:02] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped logprobs.batched_count_greater_than
+(EngineCore pid=50466) [2026-10-29 20:37:02] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+(EngineCore pid=50466) [2026-10-29 20:37:02] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+(EngineCore pid=50466) INFO 10-29 20:37:02 [parallel_state.py:1588] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://[IP_REDACTED]:56031 backend=nccl
+(EngineCore pid=50466) INFO 10-29 20:37:02 [parallel_state.py:1923] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=50466) [2026-10-29 20:37:11] [INFO] [vllm_fl.dispatch.policy] Using custom config from '/workspace/LeanScale/worktrees/EXP-0027/vllm-plugin-FL/vllm_fl/dispatch/config/iluvatar.yaml'
+(EngineCore pid=50466) [2026-10-29 20:37:11] [INFO] [vllm_fl.dispatch] Registering vendor backends for current platform: iluvatar
+(EngineCore pid=50466) [2026-10-29 20:37:11] [INFO] [vllm_fl.dispatch.manager] OpManager initialized: 11 ops with 23 implementations
+(EngineCore pid=50466) [2026-10-29 20:37:11] [INFO] [vllm_fl.dispatch.manager] Op 'attention_backend' using 'default.flagos' (kind=flagos, vendor=None)
+(EngineCore pid=50466) INFO 10-29 20:37:12 [weight_utils.py:849] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 4.69 GiB. Available RAM: 453.71 GiB.
+(EngineCore pid=50466) INFO 10-29 20:37:12 [weight_utils.py:872] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=50466)
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=50466)
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.29s/it]
+(EngineCore pid=50466)
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.29s/it]
+(EngineCore pid=50466)
+(EngineCore pid=50466) INFO 10-29 20:37:14 [default_loader.py:430] Loading weights took 1.46 seconds
+(EngineCore pid=50466) INFO 10-29 20:37:22 [rope_kv_fusion.py:117] LeanScale RoPE+KV graph fusion: replaced=42
+(EngineCore pid=50466) INFO 10-29 20:37:22 [backends.py:1089] Using cache directory: /workspace/LeanScale/artifacts/EXP-0027/service/20261029_203604_shadow/candidate_cache/torch_compile_cache/cd2c3b981d/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=50466) INFO 10-29 20:37:22 [backends.py:1148] Dynamo bytecode transform time: 6.54 s
+(EngineCore pid=50466) INFO 10-29 20:37:25 [backends.py:378] Cache the graph of compile range (1, 2048) for later use
+(EngineCore pid=50466) INFO 10-29 20:38:04 [backends.py:393] Compiling a graph for compile range (1, 2048) takes 42.00 s
+(EngineCore pid=50466) INFO 10-29 20:38:06 [decorators.py:708] saved AOT compiled function to /workspace/LeanScale/artifacts/EXP-0027/service/20261029_203604_shadow/candidate_cache/torch_compile_cache/torch_aot_compile/4d410f573d96301865e5afd2e3d7a07317d9122d0ddcfc7a16b6c8c9eb02152e/rank_0_0/model
+(EngineCore pid=50466) INFO 10-29 20:38:06 [monitor.py:53] torch.compile took 50.96 s in total
+(EngineCore pid=50466) [2026-10-29 20:38:10] [INFO] [vllm_fl.dispatch.manager] Op 'rotary_embedding' using 'default.flagos' (kind=flagos, vendor=None)
+(EngineCore pid=50466) INFO 10-29 20:38:11 [monitor.py:81] Initial profiling/warmup run took 5.07 s
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) INFO 10-29 20:38:41 [kv_cache_utils.py:2146] GPU KV cache size: 522,352 tokens
+(EngineCore pid=50466) INFO 10-29 20:38:41 [kv_cache_utils.py:2147] Maximum concurrency for 131,072 tokens per request: 3.99x
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):   0%|          | 0/35 [00:00<?, ?it/s](EngineCore pid=50466) INFO 10-29 20:38:43 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.0.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.1.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.2.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.3.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.4.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.5.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.6.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.7.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.8.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.9.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.10.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.11.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.12.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.13.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.14.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.15.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.16.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.17.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.18.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.19.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.20.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.21.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.22.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.23.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.24.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.25.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.26.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.27.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.28.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.29.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.30.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.31.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.32.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.33.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.34.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.35.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.36.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.37.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.38.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.39.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.40.self_attn.attn
+(EngineCore pid=50466) INFO 10-29 20:38:45 [rope_kv_dispatch.py:60] LeanScale fused RoPE+KV active: layer=model.layers.41.self_attn.attn
+/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):   3%|▎         | 1/35 [00:06<03:31,  6.22s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):   6%|▌         | 2/35 [00:10<02:37,  4.79s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):   9%|▊         | 3/35 [00:13<02:21,  4.41s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  11%|█▏        | 4/35 [00:17<02:05,  4.03s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  14%|█▍        | 5/35 [00:21<01:59,  3.99s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  17%|█▋        | 6/35 [00:24<01:49,  3.79s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  20%|██        | 7/35 [00:28<01:44,  3.72s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  23%|██▎       | 8/35 [00:31<01:32,  3.44s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  26%|██▌       | 9/35 [00:35<01:32,  3.57s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  29%|██▊       | 10/35 [00:37<01:23,  3.35s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  31%|███▏      | 11/35 [00:41<01:25,  3.56s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  34%|███▍      | 12/35 [00:44<01:16,  3.33s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  37%|███▋      | 13/35 [00:48<01:18,  3.59s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  40%|████      | 14/35 [00:51<01:10,  3.37s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  43%|████▎     | 15/35 [00:55<01:07,  3.36s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  46%|████▌     | 16/35 [00:59<01:11,  3.77s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  49%|████▊     | 17/35 [01:03<01:06,  3.69s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  51%|█████▏    | 18/35 [01:06<01:02,  3.65s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  54%|█████▍    | 19/35 [01:09<00:54,  3.41s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  57%|█████▋    | 20/35 [01:14<00:59,  3.95s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  60%|██████    | 21/35 [01:18<00:51,  3.68s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  63%|██████▎   | 22/35 [01:20<00:44,  3.44s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  66%|██████▌   | 23/35 [01:23<00:39,  3.26s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  69%|██████▊   | 24/35 [01:29<00:43,  3.93s/it][2026-10-29 20:40:12] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.0.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.1.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.2.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.3.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.4.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.5.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.6.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.7.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.8.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.9.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.10.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.11.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.12.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.13.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.14.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.15.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.16.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.17.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.18.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.19.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.20.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.21.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.22.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.23.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.24.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.25.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.26.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.27.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.28.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.29.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.30.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.31.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.32.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.33.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.34.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.35.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.36.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.37.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.38.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.39.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.40.self_attn.attn
+(EngineCore pid=50466) [2026-10-29 20:40:14] [INFO] [vllm_fl.dispatch.backends.flaggems.impl.iluvatar_gqa] LeanScale GQA active: Q16/KV2/D128, segmented decode and mixed batch; decode_warps=4 decode_stages=1 segments=16 decode_layout=1 decode_rows=8 prefill_rows=64 prefill_warps=4 prefill_stages=1 prefill_tile=32 prefill_layout=1; layer=model.layers.41.self_attn.attn
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  71%|███████▏  | 25/35 [01:34<00:42,  4.23s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  74%|███████▍  | 26/35 [01:37<00:36,  4.04s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  77%|███████▋  | 27/35 [01:41<00:31,  3.88s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  80%|████████  | 28/35 [01:44<00:26,  3.76s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  83%|████████▎ | 29/35 [01:48<00:23,  3.91s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  86%|████████▌ | 30/35 [01:55<00:24,  4.84s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  89%|████████▊ | 31/35 [02:00<00:18,  4.66s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  91%|█████████▏| 32/35 [02:04<00:13,  4.67s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  94%|█████████▍| 33/35 [02:06<00:07,  3.76s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL):  97%|█████████▋| 34/35 [02:08<00:03,  3.20s/it]/workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466)
+Capturing CUDA graphs (decode, FULL): 100%|██████████| 35/35 [02:10<00:00,  2.95s/it]
+Capturing CUDA graphs (decode, FULL): 100%|██████████| 35/35 [02:10<00:00,  3.74s/it]
+(EngineCore pid=50466) INFO 10-29 20:40:59 [core.py:337] init engine (profile, create kv cache, warmup model) took 223.85 s (compilation: 50.96 s)
+(EngineCore pid=50466) INFO 10-29 20:41:05 [vllm.py:1006] Asynchronous scheduling is enabled.
+(EngineCore pid=50466) INFO 10-29 20:41:05 [kernel.py:276] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=50466) /usr/local/lib/python3.12/contextlib.py:144: ResourceWarning: Unclosed context <zmq.Context() at 0x7de9da1e46b0>
+(EngineCore pid=50466)   next(self.gen)
+(EngineCore pid=50466) ResourceWarning: Enable tracemalloc to get the object allocation traceback
+(APIServer pid=50185) INFO 10-29 20:41:05 [api_server.py:577] Supported tasks: ['generate']
+(APIServer pid=50185) WARNING 10-29 20:41:06 [model.py:1477] Default vLLM sampling parameters have been overridden by the model's `generation_config.json`: `{'temperature': 1.0, 'top_p': 0.95}`. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+(APIServer pid=50185) INFO 10-29 20:41:07 [hf.py:548] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(APIServer pid=50185) INFO 10-29 20:41:07 [api_server.py:581] Starting vLLM server on http://[IP_REDACTED]:9031
+(APIServer pid=50185) INFO 10-29 20:41:07 [launcher.py:37] Available routes are:
+(APIServer pid=50185) INFO 10-29 20:41:07 [launcher.py:46] Route: /openapi.json, Methods: HEAD, GET
+(APIServer pid=50185) INFO 10-29 20:41:07 [launcher.py:46] Route: /docs, Methods: HEAD, GET
+(APIServer pid=50185) INFO 10-29 20:41:07 [launcher.py:46] Route: /docs/oauth2-redirect, Methods: HEAD, GET
+(APIServer pid=50185) INFO 10-29 20:41:07 [launcher.py:46] Route: /redoc, Methods: HEAD, GET
+(APIServer pid=50185) INFO 10-29 20:41:07 [launcher.py:46] Route: /metrics, Methods: GET
+(APIServer pid=50185) INFO:     Started server process [50185]
+(APIServer pid=50185) INFO:     Waiting for application startup.
+(APIServer pid=50185) INFO:     Application startup complete.
+(APIServer pid=50185) INFO:     [IP_REDACTED]:36896 - "GET /health HTTP/1.1" 200 OK
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO:     [IP_REDACTED]:36910 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:45314 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:41:27 [loggers.py:273] Engine 000: Avg prompt throughput: 0.6 tokens/s, Avg generation throughput: 3.2 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:41:37 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57028 - "POST /tokenize HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57032 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57032 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57032 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57040 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57044 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57054 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57064 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57078 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57086 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57088 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57090 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57106 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57118 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57130 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57134 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57136 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57148 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57160 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57172 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57180 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57182 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57184 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57192 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57194 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57210 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57216 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57224 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57236 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57246 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57254 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57260 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57264 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57268 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57284 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57288 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57300 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57310 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57312 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57322 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57338 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57348 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57352 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57358 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57370 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57374 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57388 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57398 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57408 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57422 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57428 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57444 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57452 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57454 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57466 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57470 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57474 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57486 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57488 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57496 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57498 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57504 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57518 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57530 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57546 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57548 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57550 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:42:07 [loggers.py:273] Engine 000: Avg prompt throughput: 819.1 tokens/s, Avg generation throughput: 0.5 tokens/s, Running: 3 reqs, Waiting: 61 reqs, GPU KV cache usage: 2.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:42:17 [loggers.py:273] Engine 000: Avg prompt throughput: 1638.2 tokens/s, Avg generation throughput: 3.2 tokens/s, Running: 7 reqs, Waiting: 57 reqs, GPU KV cache usage: 5.5%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:42:27 [loggers.py:273] Engine 000: Avg prompt throughput: 819.1 tokens/s, Avg generation throughput: 2.8 tokens/s, Running: 9 reqs, Waiting: 55 reqs, GPU KV cache usage: 7.1%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:42:37 [loggers.py:273] Engine 000: Avg prompt throughput: 2048.0 tokens/s, Avg generation throughput: 10.5 tokens/s, Running: 14 reqs, Waiting: 50 reqs, GPU KV cache usage: 11.0%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:42:41 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=17 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=1
+(EngineCore pid=50466) INFO 10-29 20:42:41 [topp_row_parallel.py:113] LeanScale top-p grid active: B=17 V=130560 programs=17 scratch_rows=64 scratch_bytes=33423360 k=None calls=1 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:42 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=17 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=2
+(EngineCore pid=50466) INFO 10-29 20:42:44 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=18 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=3
+(EngineCore pid=50466) INFO 10-29 20:42:44 [topp_row_parallel.py:113] LeanScale top-p grid active: B=18 V=130560 programs=18 scratch_rows=64 scratch_bytes=33423360 k=None calls=3 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:44 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=18 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=4
+(EngineCore pid=50466) INFO 10-29 20:42:46 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=19 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=5
+(EngineCore pid=50466) INFO 10-29 20:42:46 [topp_row_parallel.py:113] LeanScale top-p grid active: B=19 V=130560 programs=19 scratch_rows=64 scratch_bytes=33423360 k=None calls=5 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:46 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=19 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=6
+(APIServer pid=50185) INFO 10-29 20:42:47 [loggers.py:273] Engine 000: Avg prompt throughput: 2047.9 tokens/s, Avg generation throughput: 15.5 tokens/s, Running: 19 reqs, Waiting: 45 reqs, GPU KV cache usage: 14.9%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:42:48 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=20 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=7
+(EngineCore pid=50466) INFO 10-29 20:42:48 [topp_row_parallel.py:113] LeanScale top-p grid active: B=20 V=130560 programs=20 scratch_rows=64 scratch_bytes=33423360 k=None calls=7 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:48 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=20 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=8
+(EngineCore pid=50466) INFO 10-29 20:42:50 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=21 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=9
+(EngineCore pid=50466) INFO 10-29 20:42:50 [topp_row_parallel.py:113] LeanScale top-p grid active: B=21 V=130560 programs=21 scratch_rows=64 scratch_bytes=33423360 k=None calls=9 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:50 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=21 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=10
+(EngineCore pid=50466) INFO 10-29 20:42:52 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=22 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=11
+(EngineCore pid=50466) INFO 10-29 20:42:52 [topp_row_parallel.py:113] LeanScale top-p grid active: B=22 V=130560 programs=22 scratch_rows=64 scratch_bytes=33423360 k=None calls=11 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:53 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=22 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=12
+(EngineCore pid=50466) INFO 10-29 20:42:54 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=23 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=13
+(EngineCore pid=50466) INFO 10-29 20:42:54 [topp_row_parallel.py:113] LeanScale top-p grid active: B=23 V=130560 programs=23 scratch_rows=64 scratch_bytes=33423360 k=None calls=13 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:55 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=23 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=14
+(EngineCore pid=50466) INFO 10-29 20:42:56 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=24 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=15
+(EngineCore pid=50466) INFO 10-29 20:42:56 [topp_row_parallel.py:113] LeanScale top-p grid active: B=24 V=130560 programs=24 scratch_rows=64 scratch_bytes=33423360 k=None calls=15 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:56 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=24 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=16
+(APIServer pid=50185) INFO 10-29 20:42:57 [loggers.py:273] Engine 000: Avg prompt throughput: 2047.9 tokens/s, Avg generation throughput: 20.5 tokens/s, Running: 24 reqs, Waiting: 40 reqs, GPU KV cache usage: 18.9%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:42:58 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=25 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=17
+(EngineCore pid=50466) INFO 10-29 20:42:58 [topp_row_parallel.py:113] LeanScale top-p grid active: B=25 V=130560 programs=25 scratch_rows=64 scratch_bytes=33423360 k=None calls=17 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:42:58 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=25 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=18
+(EngineCore pid=50466) INFO 10-29 20:43:00 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=26 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=19
+(EngineCore pid=50466) INFO 10-29 20:43:00 [topp_row_parallel.py:113] LeanScale top-p grid active: B=26 V=130560 programs=26 scratch_rows=64 scratch_bytes=33423360 k=None calls=19 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:00 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=26 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=20
+(EngineCore pid=50466) INFO 10-29 20:43:02 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=27 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=21
+(EngineCore pid=50466) INFO 10-29 20:43:02 [topp_row_parallel.py:113] LeanScale top-p grid active: B=27 V=130560 programs=27 scratch_rows=64 scratch_bytes=33423360 k=None calls=21 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:02 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=27 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=22
+(EngineCore pid=50466) INFO 10-29 20:43:04 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=28 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=23
+(EngineCore pid=50466) INFO 10-29 20:43:04 [topp_row_parallel.py:113] LeanScale top-p grid active: B=28 V=130560 programs=28 scratch_rows=64 scratch_bytes=33423360 k=None calls=23 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:04 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=28 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=24
+(EngineCore pid=50466) INFO 10-29 20:43:06 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=29 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=25
+(EngineCore pid=50466) INFO 10-29 20:43:06 [topp_row_parallel.py:113] LeanScale top-p grid active: B=29 V=130560 programs=29 scratch_rows=64 scratch_bytes=33423360 k=None calls=25 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:06 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=29 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=26
+(APIServer pid=50185) INFO 10-29 20:43:07 [loggers.py:273] Engine 000: Avg prompt throughput: 2047.8 tokens/s, Avg generation throughput: 25.5 tokens/s, Running: 29 reqs, Waiting: 35 reqs, GPU KV cache usage: 22.8%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:43:08 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=30 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=27
+(EngineCore pid=50466) INFO 10-29 20:43:08 [topp_row_parallel.py:113] LeanScale top-p grid active: B=30 V=130560 programs=30 scratch_rows=64 scratch_bytes=33423360 k=None calls=27 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:09 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=30 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=28
+(EngineCore pid=50466) INFO 10-29 20:43:10 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=31 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=29
+(EngineCore pid=50466) INFO 10-29 20:43:10 [topp_row_parallel.py:113] LeanScale top-p grid active: B=31 V=130560 programs=31 scratch_rows=64 scratch_bytes=33423360 k=None calls=29 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:11 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=31 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=30
+(EngineCore pid=50466) INFO 10-29 20:43:12 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=32 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=31
+(EngineCore pid=50466) INFO 10-29 20:43:12 [topp_row_parallel.py:113] LeanScale top-p grid active: B=32 V=130560 programs=32 scratch_rows=64 scratch_bytes=33423360 k=None calls=31 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:12 [topp_row_parallel.py:109] LeanScale top-p shadow passed: B=32 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=32
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) INFO 10-29 20:43:14 [topp_row_parallel.py:113] LeanScale top-p grid active: B=33 V=130560 programs=33 scratch_rows=64 scratch_bytes=33423360 k=None calls=33 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:16 [topp_row_parallel.py:113] LeanScale top-p grid active: B=34 V=130560 programs=34 scratch_rows=64 scratch_bytes=33423360 k=None calls=35 shadow=True
+(APIServer pid=50185) INFO 10-29 20:43:17 [loggers.py:273] Engine 000: Avg prompt throughput: 2047.9 tokens/s, Avg generation throughput: 30.5 tokens/s, Running: 34 reqs, Waiting: 30 reqs, GPU KV cache usage: 26.7%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:43:18 [topp_row_parallel.py:113] LeanScale top-p grid active: B=35 V=130560 programs=35 scratch_rows=64 scratch_bytes=33423360 k=None calls=37 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:21 [topp_row_parallel.py:113] LeanScale top-p grid active: B=36 V=130560 programs=36 scratch_rows=64 scratch_bytes=33423360 k=None calls=39 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:22 [topp_row_parallel.py:113] LeanScale top-p grid active: B=37 V=130560 programs=37 scratch_rows=64 scratch_bytes=33423360 k=None calls=41 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:24 [topp_row_parallel.py:113] LeanScale top-p grid active: B=38 V=130560 programs=38 scratch_rows=64 scratch_bytes=33423360 k=None calls=43 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:26 [topp_row_parallel.py:113] LeanScale top-p grid active: B=39 V=130560 programs=39 scratch_rows=64 scratch_bytes=33423360 k=None calls=45 shadow=True
+(APIServer pid=50185) INFO 10-29 20:43:27 [loggers.py:273] Engine 000: Avg prompt throughput: 2048.0 tokens/s, Avg generation throughput: 35.5 tokens/s, Running: 39 reqs, Waiting: 25 reqs, GPU KV cache usage: 30.6%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:43:28 [topp_row_parallel.py:113] LeanScale top-p grid active: B=40 V=130560 programs=40 scratch_rows=64 scratch_bytes=33423360 k=None calls=47 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:30 [topp_row_parallel.py:113] LeanScale top-p grid active: B=41 V=130560 programs=41 scratch_rows=64 scratch_bytes=33423360 k=None calls=49 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:32 [topp_row_parallel.py:113] LeanScale top-p grid active: B=42 V=130560 programs=42 scratch_rows=64 scratch_bytes=33423360 k=None calls=51 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:34 [topp_row_parallel.py:113] LeanScale top-p grid active: B=43 V=130560 programs=43 scratch_rows=64 scratch_bytes=33423360 k=None calls=53 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:36 [topp_row_parallel.py:113] LeanScale top-p grid active: B=44 V=130560 programs=44 scratch_rows=64 scratch_bytes=33423360 k=None calls=55 shadow=True
+(APIServer pid=50185) INFO 10-29 20:43:37 [loggers.py:273] Engine 000: Avg prompt throughput: 2047.7 tokens/s, Avg generation throughput: 40.5 tokens/s, Running: 44 reqs, Waiting: 20 reqs, GPU KV cache usage: 34.6%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:43:37 [topp_row_parallel.py:113] LeanScale top-p grid active: B=45 V=130560 programs=45 scratch_rows=64 scratch_bytes=33423360 k=None calls=57 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:39 [topp_row_parallel.py:113] LeanScale top-p grid active: B=46 V=130560 programs=46 scratch_rows=64 scratch_bytes=33423360 k=None calls=59 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:42 [topp_row_parallel.py:113] LeanScale top-p grid active: B=47 V=130560 programs=47 scratch_rows=64 scratch_bytes=33423360 k=None calls=62 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:43 [topp_row_parallel.py:113] LeanScale top-p grid active: B=48 V=130560 programs=48 scratch_rows=64 scratch_bytes=33423360 k=None calls=64 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:45 [topp_row_parallel.py:113] LeanScale top-p grid active: B=49 V=130560 programs=49 scratch_rows=64 scratch_bytes=33423360 k=None calls=66 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:47 [topp_row_parallel.py:113] LeanScale top-p grid active: B=50 V=130560 programs=50 scratch_rows=64 scratch_bytes=33423360 k=None calls=68 shadow=True
+(APIServer pid=50185) INFO 10-29 20:43:47 [loggers.py:273] Engine 000: Avg prompt throughput: 2457.5 tokens/s, Avg generation throughput: 59.7 tokens/s, Running: 50 reqs, Waiting: 14 reqs, GPU KV cache usage: 39.7%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:43:48 [topp_row_parallel.py:113] LeanScale top-p grid active: B=51 V=130560 programs=51 scratch_rows=64 scratch_bytes=33423360 k=None calls=70 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:50 [topp_row_parallel.py:113] LeanScale top-p grid active: B=52 V=130560 programs=52 scratch_rows=64 scratch_bytes=33423360 k=None calls=72 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:52 [topp_row_parallel.py:113] LeanScale top-p grid active: B=53 V=130560 programs=53 scratch_rows=64 scratch_bytes=33423360 k=None calls=74 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:54 [topp_row_parallel.py:113] LeanScale top-p grid active: B=54 V=130560 programs=54 scratch_rows=64 scratch_bytes=33423360 k=None calls=76 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:43:56 [topp_row_parallel.py:113] LeanScale top-p grid active: B=55 V=130560 programs=55 scratch_rows=64 scratch_bytes=33423360 k=None calls=78 shadow=True
+(APIServer pid=50185) INFO 10-29 20:43:57 [loggers.py:273] Engine 000: Avg prompt throughput: 2048.0 tokens/s, Avg generation throughput: 51.5 tokens/s, Running: 55 reqs, Waiting: 9 reqs, GPU KV cache usage: 43.6%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:43:58 [topp_row_parallel.py:113] LeanScale top-p grid active: B=56 V=130560 programs=56 scratch_rows=64 scratch_bytes=33423360 k=None calls=80 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:44:00 [topp_row_parallel.py:113] LeanScale top-p grid active: B=57 V=130560 programs=57 scratch_rows=64 scratch_bytes=33423360 k=None calls=82 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:44:02 [topp_row_parallel.py:113] LeanScale top-p grid active: B=58 V=130560 programs=58 scratch_rows=64 scratch_bytes=33423360 k=None calls=84 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:44:04 [topp_row_parallel.py:113] LeanScale top-p grid active: B=59 V=130560 programs=59 scratch_rows=64 scratch_bytes=33423360 k=None calls=86 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:44:06 [topp_row_parallel.py:113] LeanScale top-p grid active: B=60 V=130560 programs=60 scratch_rows=64 scratch_bytes=33423360 k=None calls=88 shadow=True
+(APIServer pid=50185) INFO 10-29 20:44:07 [loggers.py:273] Engine 000: Avg prompt throughput: 2047.9 tokens/s, Avg generation throughput: 56.5 tokens/s, Running: 60 reqs, Waiting: 4 reqs, GPU KV cache usage: 47.5%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:44:08 [topp_row_parallel.py:113] LeanScale top-p grid active: B=61 V=130560 programs=61 scratch_rows=64 scratch_bytes=33423360 k=None calls=90 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:44:10 [topp_row_parallel.py:113] LeanScale top-p grid active: B=62 V=130560 programs=62 scratch_rows=64 scratch_bytes=33423360 k=None calls=92 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:44:12 [topp_row_parallel.py:113] LeanScale top-p grid active: B=63 V=130560 programs=63 scratch_rows=64 scratch_bytes=33423360 k=None calls=94 shadow=True
+(EngineCore pid=50466) INFO 10-29 20:44:13 [topp_row_parallel.py:113] LeanScale top-p grid active: B=64 V=130560 programs=64 scratch_rows=64 scratch_bytes=33423360 k=None calls=96 shadow=True
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:44:17 [loggers.py:273] Engine 000: Avg prompt throughput: 1638.4 tokens/s, Avg generation throughput: 48.8 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 50.7%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:44:27 [loggers.py:273] Engine 000: Avg prompt throughput: 409.4 tokens/s, Avg generation throughput: 863.5 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 52.7%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:44:37 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1176.6 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 55.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:44:47 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1132.7 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 57.1%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:44:57 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1106.7 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 59.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:45:07 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1080.7 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 61.3%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57032 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57040 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:45:17 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.7 tokens/s, Running: 63 reqs, Waiting: 0 reqs, GPU KV cache usage: 60.5%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57044 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57054 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57064 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57078 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57086 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57088 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57090 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57106 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57118 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57130 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57134 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57136 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57148 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) INFO 10-29 20:45:26 [topp_row_parallel.py:113] LeanScale top-p grid active: B=63 V=130560 programs=63 scratch_rows=64 scratch_bytes=33423360 k=None calls=1024 shadow=True
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57160 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57172 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:45:27 [loggers.py:273] Engine 000: Avg prompt throughput: 5733.9 tokens/s, Avg generation throughput: 178.4 tokens/s, Running: 62 reqs, Waiting: 1 reqs, GPU KV cache usage: 57.2%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57180 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57182 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57184 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57192 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57194 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57210 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57216 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57224 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57236 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57246 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57254 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57260 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57264 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57268 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57284 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57288 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57300 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57310 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57312 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:45:37 [loggers.py:273] Engine 000: Avg prompt throughput: 7372.6 tokens/s, Avg generation throughput: 232.0 tokens/s, Running: 61 reqs, Waiting: 2 reqs, GPU KV cache usage: 53.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57322 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57338 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57348 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57352 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57358 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57370 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57374 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57388 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57398 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57408 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57422 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57428 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57444 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57452 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57454 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:45:47 [loggers.py:273] Engine 000: Avg prompt throughput: 6144.0 tokens/s, Avg generation throughput: 188.1 tokens/s, Running: 62 reqs, Waiting: 1 reqs, GPU KV cache usage: 50.9%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57466 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57470 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57474 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57486 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57488 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57496 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57498 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57504 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57518 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57530 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57546 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57548 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57550 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:45:57 [loggers.py:273] Engine 000: Avg prompt throughput: 6553.3 tokens/s, Avg generation throughput: 194.4 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 50.7%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:46:07 [loggers.py:273] Engine 000: Avg prompt throughput: 409.3 tokens/s, Avg generation throughput: 1067.9 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 53.1%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:46:17 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1157.5 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 55.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:46:27 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1119.1 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 57.5%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:46:37 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1093.5 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 59.6%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:46:47 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1068.7 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 61.6%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57032 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57040 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57044 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57054 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57064 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57078 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57086 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57088 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57090 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57106 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57118 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57130 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) INFO 10-29 20:46:55 [topp_row_parallel.py:113] LeanScale top-p grid active: B=62 V=130560 programs=62 scratch_rows=64 scratch_bytes=33423360 k=None calls=2048 shadow=True
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57134 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57136 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57148 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57160 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:46:57 [loggers.py:273] Engine 000: Avg prompt throughput: 5733.9 tokens/s, Avg generation throughput: 421.2 tokens/s, Running: 63 reqs, Waiting: 1 reqs, GPU KV cache usage: 58.1%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57172 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57180 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57182 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57184 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57192 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57194 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57210 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57216 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57224 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57236 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57246 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57254 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57260 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57264 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57268 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57284 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57288 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57300 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57310 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:47:07 [loggers.py:273] Engine 000: Avg prompt throughput: 7372.1 tokens/s, Avg generation throughput: 234.2 tokens/s, Running: 62 reqs, Waiting: 1 reqs, GPU KV cache usage: 54.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57312 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57322 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57338 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57348 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57352 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57358 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57370 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57374 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57388 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57398 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57408 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57422 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57428 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57444 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57452 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57454 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57466 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57470 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:47:17 [loggers.py:273] Engine 000: Avg prompt throughput: 7371.9 tokens/s, Avg generation throughput: 227.7 tokens/s, Running: 62 reqs, Waiting: 1 reqs, GPU KV cache usage: 51.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57474 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57486 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57488 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57496 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57498 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57504 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57518 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57530 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57546 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57548 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57550 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:47:27 [loggers.py:273] Engine 000: Avg prompt throughput: 5324.5 tokens/s, Avg generation throughput: 160.1 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 50.7%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:47:37 [loggers.py:273] Engine 000: Avg prompt throughput: 409.3 tokens/s, Avg generation throughput: 1087.2 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 53.1%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:47:47 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1157.4 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 55.4%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:47:57 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1119.1 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 57.5%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:48:07 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1094.2 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 59.6%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:48:17 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1068.2 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 61.6%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57032 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57040 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57044 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57054 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57064 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57078 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57086 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57088 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57090 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57106 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) INFO 10-29 20:48:23 [topp_row_parallel.py:113] LeanScale top-p grid active: B=63 V=130560 programs=63 scratch_rows=64 scratch_bytes=33423360 k=None calls=3072 shadow=True
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57118 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57130 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57134 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57136 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57148 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57160 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:48:27 [loggers.py:273] Engine 000: Avg prompt throughput: 5733.8 tokens/s, Avg generation throughput: 408.2 tokens/s, Running: 63 reqs, Waiting: 0 reqs, GPU KV cache usage: 57.6%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57172 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57180 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57182 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57184 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57192 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57194 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57210 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57216 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57224 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57236 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57246 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57254 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57260 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57264 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57268 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57284 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57288 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57300 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57310 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:48:37 [loggers.py:273] Engine 000: Avg prompt throughput: 7372.6 tokens/s, Avg generation throughput: 234.1 tokens/s, Running: 63 reqs, Waiting: 0 reqs, GPU KV cache usage: 54.8%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57312 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57322 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57338 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57348 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57352 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57358 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57370 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57374 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57388 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57398 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57408 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57422 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57428 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57444 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57452 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57454 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57466 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57470 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57474 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO 10-29 20:48:47 [loggers.py:273] Engine 000: Avg prompt throughput: 7777.9 tokens/s, Avg generation throughput: 240.0 tokens/s, Running: 63 reqs, Waiting: 0 reqs, GPU KV cache usage: 51.5%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57486 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57488 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57496 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57498 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57504 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57518 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57530 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57546 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57548 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57550 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:48:57 [loggers.py:273] Engine 000: Avg prompt throughput: 5320.5 tokens/s, Avg generation throughput: 288.6 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 51.3%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:49:07 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1189.5 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 53.6%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:49:17 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1151.0 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 55.8%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:49:27 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1113.4 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 58.0%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:49:37 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1093.8 tokens/s, Running: 64 reqs, Waiting: 0 reqs, GPU KV cache usage: 60.1%, Prefix cache hit rate: 0.0%
+(APIServer pid=50185) INFO 10-29 20:49:47 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 1061.7 tokens/s, Running: 61 reqs, Waiting: 0 reqs, GPU KV cache usage: 59.1%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:49:57 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 53.3 tokens/s, Running: 57 reqs, Waiting: 0 reqs, GPU KV cache usage: 55.3%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) INFO 10-29 20:50:02 [topp_row_parallel.py:113] LeanScale top-p grid active: B=56 V=130560 programs=56 scratch_rows=64 scratch_bytes=33423360 k=None calls=4096 shadow=True
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:50:07 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 33.3 tokens/s, Running: 54 reqs, Waiting: 0 reqs, GPU KV cache usage: 52.4%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:50:17 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 31.5 tokens/s, Running: 51 reqs, Waiting: 0 reqs, GPU KV cache usage: 49.5%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:50:27 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 34.5 tokens/s, Running: 48 reqs, Waiting: 0 reqs, GPU KV cache usage: 46.7%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:50:37 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 18.8 tokens/s, Running: 46 reqs, Waiting: 0 reqs, GPU KV cache usage: 44.7%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:50:47 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 35.2 tokens/s, Running: 42 reqs, Waiting: 0 reqs, GPU KV cache usage: 40.9%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:50:57 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 24.3 tokens/s, Running: 39 reqs, Waiting: 0 reqs, GPU KV cache usage: 38.0%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:51:07 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 36.5 tokens/s, Running: 34 reqs, Waiting: 0 reqs, GPU KV cache usage: 33.1%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:51:17 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 22.7 tokens/s, Running: 31 reqs, Waiting: 0 reqs, GPU KV cache usage: 30.2%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:51:27 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 20.5 tokens/s, Running: 27 reqs, Waiting: 0 reqs, GPU KV cache usage: 26.4%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:51:37 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 27.2 tokens/s, Running: 22 reqs, Waiting: 0 reqs, GPU KV cache usage: 21.5%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:51:47 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 8.4 tokens/s, Running: 20 reqs, Waiting: 0 reqs, GPU KV cache usage: 19.5%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:51:57 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 22.0 tokens/s, Running: 14 reqs, Waiting: 0 reqs, GPU KV cache usage: 13.7%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO 10-29 20:52:07 [loggers.py:273] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 17.1 tokens/s, Running: 5 reqs, Waiting: 0 reqs, GPU KV cache usage: 4.9%, Prefix cache hit rate: 0.0%
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(EngineCore pid=50466) /workspace/LeanScale/worktrees/EXP-0027/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+(EngineCore pid=50466)   resolved_benchmark = resolve_benchmarker(
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57470 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=50185) INFO:     [IP_REDACTED]:57474 - "GET /metrics HTTP/1.1" 200 OK
+(EngineCore pid=50466) INFO 10-29 20:52:12 [core.py:1214] [shutdown] EngineCore: trigger received signal=SIGTERM
+(APIServer pid=50185) INFO 10-29 20:52:12 [launcher.py:100] [shutdown] API server: shutdown triggered
+(APIServer pid=50185) INFO 10-29 20:52:12 [launcher.py:116] [shutdown] API server: stopping engine client mode=abort timeout=0s
+(EngineCore pid=50466) INFO 10-29 20:52:12 [core.py:1333] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=50466) INFO 10-29 20:52:12 [core.py:1364] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=50466) INFO 10-29 20:52:12 [core.py:1227] [shutdown] EngineCore: exiting busy loop
+(APIServer pid=50185) INFO 10-29 20:52:12 [core_client.py:655] [shutdown] MPClient: start timeout=0s
+(APIServer pid=50185) INFO 10-29 20:52:12 [core_client.py:657] [shutdown] MPClient: stopping engine manager
+(APIServer pid=50185) (APIServer pid=50185) WARNING 10-29 20:52:12 [utils.py:620] [shutdown] Process manager: force killing remaining processes count=1
+INFO:     Shutting down
+(APIServer pid=50185) INFO 10-29 20:52:12 [core_client.py:659] [shutdown] MPClient: engine manager stopped
+(APIServer pid=50185) INFO 10-29 20:52:12 [core_client.py:660] [shutdown] MPClient: cleaning up background resources
+(APIServer pid=50185) INFO 10-29 20:52:12 [core_client.py:662] [shutdown] MPClient: complete
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704] AsyncLLM output_handler failed.
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704] Traceback (most recent call last):
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704]   File "/usr/local/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 660, in output_handler
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704]     outputs = await engine_core.get_output_async()
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704]   File "/usr/local/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 1061, in get_output_async
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704]     raise self._format_exception(outputs) from None
+(APIServer pid=50185) ERROR 10-29 20:52:12 [async_llm.py:704] vllm.v1.engine.exceptions.EngineDeadError: EngineCore encountered an issue. See stack trace (above) for the root cause.
+(APIServer pid=50185) INFO 10-29 20:52:12 [launcher.py:125] [shutdown] API server: engine client stopped
+(APIServer pid=50185) INFO 10-29 20:52:12 [launcher.py:128] [shutdown] API server: signalling HTTP server shutdown
+(APIServer pid=50185) INFO 10-29 20:52:12 [launcher.py:149] [shutdown] API server: shutting down FastAPI HTTP server
+(APIServer pid=50185) INFO:     Shutting down
+(APIServer pid=50185) INFO:     Waiting for application shutdown.
+(APIServer pid=50185) INFO:     Application shutdown complete.
+(APIServer pid=50185) /usr/local/lib/python3.12/asyncio/runners.py:118: ResourceWarning: Unclosed context <zmq.Context() at 0x7d7ee6bac950>
+(APIServer pid=50185)   return self._loop.run_until_complete(task)
+(APIServer pid=50185) ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/local/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 128 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
