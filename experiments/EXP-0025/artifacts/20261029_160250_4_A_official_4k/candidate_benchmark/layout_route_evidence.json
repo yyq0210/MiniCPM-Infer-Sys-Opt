@@ -1,0 +1,360 @@
+{
+  "status": "passed",
+  "arm": "A",
+  "converted_gate_up": 0,
+  "converted_down": 0,
+  "exact_weight_values": true,
+  "parameter_objects_preserved": true,
+  "one_time_conversions": 0,
+  "compiled_modules": [
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/nb/cnb5kvgpovi5umveozflcga3l2ha6l6jurov23przun5gdz7bxu4.py",
+      "sha256": "ba87aa8f55ac1fa4215e927453bf5d903d141b3fce4e52ea5149e593110e4b28",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/jc/cjcpu7a3tf3qn3aih2smzgpsu4fv6lwz7dlkasdasg6st727uvxi.py",
+      "sha256": "a5e7cb4234bd63649ad0e3efba44060540f3852a1406f110886680ef1a40be0f",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ow/cow7d4of6zed63eo2utc3uyaknznn2u7f7pknpzvfvztmcz5xzhb.py",
+      "sha256": "4a5941a3275abe8d037a701b24ddbb7d7cfc1f2d5928160a3a720319f5f21569",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ue/cue2xwtaqxbnxoet4ngcgcysbija454iz6haaobgwhrj734goika.py",
+      "sha256": "73b8f01265556d6b9814318502bc29b6b1ad38a1a907ae17947fd253b441a857",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/rj/crjftk4uysyv333bwhcvecvmw5zy6qslj3tjbapsrhvukb47orox.py",
+      "sha256": "2b0f4d001a7e764551a102287a6c30e683d589c238247552fd9d48a79da5a40a",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/q5/cq5nr2ibdsc5tbvcpapfq773rprxxx4t7bsguzvqghqql2vb4tu7.py",
+      "sha256": "7d419a0a1981677c8ebf77bffdf00d9056afeb0fb92e702fadf2d7a7d137d413",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/3d/c3d7go65jpksdvhrvk3mu3cwpppv5hufkhqf6em3zwo57rwrrp5r.py",
+      "sha256": "28a79cb09c1d5ecd383f8dd0cab5ef6a4a77f36da69d8625c8610925947b2363",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ka/ckayxo2uvoi5vu34elr72manydd7lgbiyvfy4awxhn4fduruzcog.py",
+      "sha256": "5304fc0a1b29a97eff1a5f8226984f026fd999dcc6fb5826cdb0392bce15fb07",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/fm/cfmlo5v5zsxs66mpfsv6rndmdjdn5o5sqcs2cvb4u4lk5ypvob5f.py",
+      "sha256": "eb0f161c8b9b3eb556d799a360f030c791c64e3cd11bc6081a36066c5e82b919",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/uo/cuopgexdnqquikfb4bgd2iq7uwy7yyd6xxxymfen6eywzz6s5tqk.py",
+      "sha256": "c916d15f192ce14f8a95029dd93f9dcbf4a4a39016b9c4fd0ce56222bd2d7024",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/fq/cfq47qv5cfip2hetj2adzxx5yjirerkfcodff7w2h756cqfh5a65.py",
+      "sha256": "fa9165758efb9e3d4e1262203a79004d1d8f2b1bfa724f4d4b35d3af8384397c",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ke/cketdg2f6kcr4jptazyaxqky73hgvj26gs2vnrzlulhhhswzrro5.py",
+      "sha256": "31aa55020d7a79a287d24beb375eaf89774ba80db6c6ad31b77caae800d7feb6",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/s6/cs6wzuuk4tyheosb6ni4frg7pumxcdrns7qc6yhxgkla67mrd3zb.py",
+      "sha256": "c0ffcc38bfb2ed30706a6953c4a68789c245ec4ebda73ca8b34e7f3ee1bb9515",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/2g/c2g3fyvcm23r724ljjevk5nw5ehgqu6b7o7tct2thdbs5z4ll7vq.py",
+      "sha256": "b731a99431be3b1d06c77a003f60338a610cabba032d85ba2c35f6e2c6bc6917",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/wx/cwxc7fei74o3ppqdhxruoekfuof5sv2q5wfgpzxjrwxiz7f5ct6c.py",
+      "sha256": "aa93d0b411781dbf0c7c93bb63c98225e150af6cad0241ded1b9d42af1b3e31b",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/gy/cgy5lknbcevcjwnzqzwh3bitvevq6jwas6qlyzgyxjkveaaohi57.py",
+      "sha256": "c86dcb219a768b5c7c2774196a053619b0b45feda4bbdcc53f713134000684ee",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ht/chtls5bto3mihjkhc56croet4dhvrcwbjpprlckqw7suntap7hwl.py",
+      "sha256": "a89cb3a2e5a9f1dfcbd5ebc9ab860e301d541564847fcab2dcbb76a6c75f5e02",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/yx/cyxemczhxpm7yhk3fr54vy5xrtqmr4mmrb7eufyghwinqjzhheev.py",
+      "sha256": "68f23db90e7d98da288b09cb6970449c997121a964e100c791f8e40d93605267",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ew/cew2viokvgqevhorjphuw3nlp2j7u4q6dr7xaten45z4by7h7lbm.py",
+      "sha256": "2ffa89fe1b596152f25b8a92ab5f0a98defc346738bdaa7670772c9a44c0d4d0",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/g6/cg6zwg4hszxczgmlurhro2kuzy4urscpqqqp2hsy7aowkcsser6z.py",
+      "sha256": "85341195c2684dd7650f59bdf9150431ac5d501446ff55e918552cc22ba2dd63",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/oe/coen6qtjs4bvbsmgkvlvboe2ti26roldx4hbsbbn7omxe74nkvxx.py",
+      "sha256": "5f908272d3ec64adbc7f54f228d23adc8d9598e2a54d45f5bfaafba69c4aa2c7",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/6w/c6wvn4bpdl53mipkdbjop6vr4z3h2tefjk42wszp5p6a7ucuagxi.py",
+      "sha256": "44de6940019b544abc425ec181544d2ed004ac04b8f7315c4bd25d1ad838b5c0",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/r6/cr6rhmvexeyyxbsbtjtlzg7r32jmsmlmrei7jjr43hmfcuicf4lz.py",
+      "sha256": "6f2edbdf8cb64790f90611260b89635c13bc1541ae658f644597252c25ca8e42",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/qa/cqaur7empjltpaif65zqsofbr7wwhjojkithmpz5ax2davhvzoe4.py",
+      "sha256": "c47ff6d4d7d61496c9a6715d61df12238cf730f91cf0b3c2faec67994e0f77b1",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/hj/chjo5aeflvo5yyemjpszml2yv4jo4jcswb5dcwbraal6as7an53i.py",
+      "sha256": "31604a26804ec57bdbf1a37d61463feea340ac22a0a9203627db51462723b81f",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/4k/c4kxpc34h2qigbno4hdms42ntszsa5z2doqdzqov3h3bgkeptnn2.py",
+      "sha256": "382c283cc35a014d469c59a22c9096ce4fb98e247cd213ed78236a4b22ff7d28",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ua/cuav2lxyzspzl7vxia4zq557dqftzlealuq744o3pqhpk3xnnhm3.py",
+      "sha256": "2c21110d644a955a132f97792c728851f49fcb691f5cc69f50bd19098a894e1f",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/gr/cgrt3qvdttvkrrej3nwfnwvmtp5qo5lg5e3jn64hwuw3rs4bar6h.py",
+      "sha256": "93c5928a794c88cb64886419be608858365d022796dd8523368d877ad930d905",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ft/cft2lcl34ie5rdyqhnnow5rf4b2l5wiez5cgjlen3q2k3jhtb6g3.py",
+      "sha256": "442e489e095dcb9c88b87941c8e679559a6245d9a9fca34af414b4a33fbe93a3",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ft/cftht7zkqokodvb2auhedmoh2dzzseab7wrjive6y5gl6qrysl2w.py",
+      "sha256": "f35327047870181ff42eec7c94f228f44ba7128378f86a9837e3d4bd1bb3b862",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/jy/cjyl4w7ecaz7ool46yvagydp2lv6relw7diuuwt2ztrcmjg5ih7k.py",
+      "sha256": "67a651231f8d1c4df24d1820fcc9ec50707db57445669d9b7f022047749ab4e4",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/qq/cqqdmvrm2vaph3g3nq5dgg646jrxj4sbnwdl7ayu3hqi6rrc6knp.py",
+      "sha256": "cab3c635ea2c0047be6068c8391311c916d735c9c217bc287a56b553926d98db",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/s5/cs5hlydtjriag2c224d7pyuyzyxz3siyqdzqoxm3s3f4dpqhwnmw.py",
+      "sha256": "70b78ef16d6529300e4446da6cd3bd14aaa8880c024f00299cd19d0bc79170be",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/rw/crwa2ywae6bqhvtixgatnkohie7ccbax754m2x7oi3jxw4m44lo7.py",
+      "sha256": "24252d803aa61676df29de5b63835cf778ea2000422b5f289ab3326679d5c1dc",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/2d/c2dhkvawxthu6kjmsj5d74pwjw2qimbdzvop6lkyqtq2bwf4kucr.py",
+      "sha256": "8517afbe3f6fcd63f5cc8476332cf2c9e04a3673e768e87734171b03c62f485f",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/ef/ceff4ztoxtecruie4qeuw2xihvty2xqtgv56ch6ibve772n7bdsr.py",
+      "sha256": "3c5ec0d229971035db209c4d438fc40095b9806a130914eeea7c45324bb5ae10",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/2r/c2rqe3qfa3wqzhsshyyxe3f2aaacfgymuld6irh4zghqk567lznl.py",
+      "sha256": "2f5b0cd452e0fd531ae31f597cf16cc90628e29f5161412b76c4239dd85c254a",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/js/cjsmzaauxir6tfb23bghy5y7e6fzj766ahka2rm2xozspq5pla7z.py",
+      "sha256": "0c40b6b236f45f2b83a0c5587aff4ab44f7e2c40aa2d0e04b3868a79238299f1",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/cj/ccjlsh5f5bwybpt4eem47clnbp2mj6dudlvlxsu3qlfzzvudulza.py",
+      "sha256": "1a94cf51032c45300ce02f83a5a3e6d7faab75300e4b182d33fae51812866143",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/kd/ckdlyiya6emakp6ueifrv4w7esnxfp63u4dbvhz7ps4ntgrmvdym.py",
+      "sha256": "a2ec8315b52a878116477e57367cd98e98f060c63061dc8625e12f924ea33ca4",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/6p/c6px6sv34hchhroxmgpim2j6ojiivp6hgg25lqffgc4dg2w72ynh.py",
+      "sha256": "34d4a178d2d883fc2d7327f22fcf84cae302182b25cf8d88a665041e4cecb93b",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    },
+    {
+      "path": "candidate_cache/torch_compile_cache/torch_aot_compile/7a51652d906b8f2b40c1383c44ed1e7ec5bcf3edb04e587893a264ad56603d1c/inductor_cache/rt/crtj6jrgyvvt25dm2wvzpwrchjvwyntqcgfy6xong4ahhbpgi4el.py",
+      "sha256": "f7798a74b0778e4e3db8945698654f78bc047670033bb0c3e7edd08e7c8ebd94",
+      "direct_weight_mm_counts": {
+        "gate_up_proj": 1,
+        "down_proj": 1
+      }
+    }
+  ],
+  "fx_coverage": [
+    {
+      "path": "candidate_cache/torch_compile_cache/3716c6e469/rank_0_0/backbone/computation_graph.py",
+      "sha256": "efbb68e66f1a415a30fcd551cbb553ec3d4ed297c7800a74674e7fa0f541c8bf",
+      "logical_layers": 42,
+      "gate_up_nodes": 42,
+      "down_nodes": 42
+    }
+  ],
+  "compiled_mlp_blocks": 42,
+  "reference_kv_tokens": 522352,
+  "candidate_kv_tokens": 522352,
+  "kv_capacity_change_percent": 0.0
+}

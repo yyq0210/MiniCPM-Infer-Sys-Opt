@@ -1,0 +1,41 @@
+{
+  "index": 4,
+  "arm": "A",
+  "run_name": "20261029_160250_4_A_official_4k",
+  "commits": {
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "summary": {
+    "Prefill": "4096",
+    "Decode": "1024",
+    "Conc": "64",
+    "Num Prompts": "256",
+    "Benchmark Duration (s)": "367.11",
+    "Total Input Tokens": "1048576.0",
+    "Total Output Tokens": "262144.0",
+    "Req/s": "0.7",
+    "Output tok/s": "714.61",
+    "Peak Output tok/s": "1152.0",
+    "Total tok/s": "3573.06",
+    "Mean TTFT (ms)": "5099.39",
+    "Median TTFT (ms)": "1602.81",
+    "P99 TTFT (ms)": "29925.13",
+    "Mean TPOT (ms)": "83.28",
+    "Median TPOT (ms)": "85.89",
+    "P99 TPOT (ms)": "88.67",
+    "Mean ITL (ms)": "83.28",
+    "Median ITL (ms)": "60.77",
+    "P99 ITL (ms)": "333.19"
+  },
+  "retained_total_tokens_s": [
+    3445.17,
+    3592.91,
+    3681.09
+  ],
+  "cv_percent": 3.336259711783763,
+  "kv_tokens": 522352,
+  "status": "complete_case_validated",
+  "full_task_accuracy": "deferred_by_user",
+  "partial_runs_combined": false
+}
