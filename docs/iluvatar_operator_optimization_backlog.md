@@ -291,3 +291,8 @@ NONE/late 的 16 个纯 decode 迭代已逐步核验：每步42次主 attention 
 EXP18两组各256请求全部成功，8个窗口各16步，原始trace/metadata/实际编译缓存已独立复核。FULL配置mixed（实际NONE执行）中prefill45.20%、gate/up23.61%、down12.23%；NONE/B64 decode主核65.78%、采样12.70%；NONE尾部B8–16的四类层内投影约44.54%。这些是各窗口可见kernel总工作量占比，不能合为整程占比。FULL decode Graph内部不可见，不能用外围采样占比给整模排名。
 
 OP05优先开展EXP19的prefill页号广播与K加载布局，固定已选参数；OP03/08/09/11后续针对小M及生产Graph padding研究真实GEMM路径。先前GEMM融合慢原型不直接恢复。当前选择仍EXP16；官方4K/16K、EXP17 ABBA均完成，调度EXP10已由用户拒绝并回退，KV压缩精度工作保持独立。详见[最新报告](operator_profile_4k_20261023.md)与[EXP19假设](../experiments/EXP-0019/README.md)。
+
+
+## 2026-10-29：EXP25 同日 4K ABBA 已审核
+
+A 均值 3564.105、B 3546.580 tok/s（-0.492%），两相邻配对均未改善（-0.457%/-0.526%）；16 轮、4096 请求全部成功。保持 EXP20，停止推广全局 MLP 权重布局，不把微基准收益当作整模收益。下一步先核实实际采样路径。详见[完整分析](mlp_weight_layout_abba_20261029.md)。

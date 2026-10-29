@@ -1,0 +1,11 @@
+{
+  "selected_experiment": "EXP-0020",
+  "selected_commits": {
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "candidate_experiment": "EXP-0024",
+  "decision": "not_selected_no_demonstrated_e2e_gain",
+  "reason": "No demonstrated 4K gain: paired throughput -0.457%/-0.526%, mean -0.492%. Retain EXP20; do not claim statistically significant regression with two sessions per arm.",
+  "next": "Inspect actual production sampling path and 4K stage evidence; register a separate bounded experiment"
+}
