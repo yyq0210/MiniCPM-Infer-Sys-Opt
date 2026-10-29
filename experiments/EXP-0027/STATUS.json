@@ -1,0 +1,7 @@
+{
+  "stage": "hypothesis_registered_not_implemented",
+  "GPU_started": false,
+  "parent_experiment": "EXP-0020",
+  "source_diagnostic": "EXP-0026",
+  "next": "Implement bounded launcher and validate exact path before benchmark"
+}
