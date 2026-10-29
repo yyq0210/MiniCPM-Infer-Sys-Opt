@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": 30,
+  "checked_at": "2026-10-29T20:35:45.768019+08:00",
+  "checks_sha256": "e4975ef91062529b4be06e6c19ffb135a97faba664957052d06609eef8ef19dd",
+  "candidate_commits": {
+    "vllm-plugin-FL": "2a4cf99f5a765dc7de3a3337303e91183bc9decd",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "code_publication": {
+    "commits": {
+      "vllm-plugin-FL": "2a4cf99f5a765dc7de3a3337303e91183bc9decd",
+      "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+    },
+    "remote_verified": true,
+    "branch": "leanscale/iluvatar-topp-row-parallel"
+  },
+  "test_publication": {
+    "status": "pushed",
+    "commit": "e0eeb39685813ac8e54b5c622029649487000778",
+    "remote_verified": true
+  }
+}
