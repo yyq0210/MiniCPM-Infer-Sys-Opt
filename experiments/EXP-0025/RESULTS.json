@@ -1,0 +1,291 @@
+{
+  "status": "complete_ABBA",
+  "order": [
+    "A",
+    "B",
+    "B",
+    "A"
+  ],
+  "metrics": {
+    "Total tok/s": {
+      "A": 3564.105,
+      "B": 3546.58,
+      "change_percent": -0.4917082970338993,
+      "pair1_change_percent": -0.45708338607372,
+      "pair2_change_percent": -0.5261596502717514,
+      "A_endpoint_change_percent": 0.5037762119741718,
+      "B_repeat_change_percent": 0.4340331741501613
+    },
+    "Output tok/s": {
+      "A": 712.8199999999999,
+      "B": 709.315,
+      "change_percent": -0.4917089868409774,
+      "pair1_change_percent": -0.45708338607372,
+      "pair2_change_percent": -0.5261611228502217,
+      "A_endpoint_change_percent": 0.5034949298904356,
+      "B_repeat_change_percent": 0.433750600469085
+    },
+    "Mean TTFT (ms)": {
+      "A": 5117.125,
+      "B": 5125.889999999999,
+      "change_percent": 0.17128758824533907,
+      "pair1_change_percent": 0.126975224251491,
+      "pair2_change_percent": 0.21590817725256617,
+      "A_endpoint_change_percent": -0.690768589601265,
+      "B_repeat_change_percent": -0.602561958073522
+    },
+    "Mean TPOT (ms)": {
+      "A": 83.67,
+      "B": 84.03999999999999,
+      "change_percent": 0.4422134576311576,
+      "pair1_change_percent": 0.49964311206280865,
+      "pair2_change_percent": 0.3842459173871271,
+      "A_endpoint_change_percent": -0.9279086366880795,
+      "B_repeat_change_percent": -1.041666666666674
+    },
+    "Mean ITL (ms)": {
+      "A": 83.67,
+      "B": 84.03999999999999,
+      "change_percent": 0.4422134576311576,
+      "pair1_change_percent": 0.49964311206280865,
+      "pair2_change_percent": 0.3842459173871271,
+      "A_endpoint_change_percent": -0.9279086366880795,
+      "B_repeat_change_percent": -1.041666666666674
+    }
+  },
+  "sessions": [
+    {
+      "index": 1,
+      "arm": "A",
+      "run_name": "20261029_141349_1_A_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+        "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "369.38",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.69",
+        "Output tok/s": "711.03",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3555.15",
+        "Mean TTFT (ms)": "5134.86",
+        "Median TTFT (ms)": "1609.61",
+        "P99 TTFT (ms)": "29910.97",
+        "Mean TPOT (ms)": "84.06",
+        "Median TPOT (ms)": "85.58",
+        "P99 TPOT (ms)": "91.51",
+        "Mean ITL (ms)": "84.06",
+        "Median ITL (ms)": "60.41",
+        "P99 ITL (ms)": "329.7"
+      },
+      "retained_total_tokens_s": [
+        3341.0,
+        3638.37,
+        3686.09
+      ],
+      "cv_percent": 5.2597095962961795,
+      "kv_tokens": 522256,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    },
+    {
+      "index": 2,
+      "arm": "B",
+      "run_name": "20261029_145010_2_B_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+        "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "371.11",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.69",
+        "Output tok/s": "707.78",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3538.9",
+        "Mean TTFT (ms)": "5141.38",
+        "Median TTFT (ms)": "1609.34",
+        "P99 TTFT (ms)": "29952.9",
+        "Mean TPOT (ms)": "84.48",
+        "Median TPOT (ms)": "85.95",
+        "P99 TPOT (ms)": "91.97",
+        "Mean ITL (ms)": "84.48",
+        "Median ITL (ms)": "60.81",
+        "P99 ITL (ms)": "333.59"
+      },
+      "retained_total_tokens_s": [
+        3321.38,
+        3623.93,
+        3671.38
+      ],
+      "cv_percent": 5.365036864845539,
+      "kv_tokens": 522352,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    },
+    {
+      "index": 3,
+      "arm": "B",
+      "run_name": "20261029_152635_3_B_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+        "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "369.14",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.7",
+        "Output tok/s": "710.85",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3554.26",
+        "Mean TTFT (ms)": "5110.4",
+        "Median TTFT (ms)": "1607.92",
+        "P99 TTFT (ms)": "29992.97",
+        "Mean TPOT (ms)": "83.6",
+        "Median TPOT (ms)": "86.11",
+        "P99 TPOT (ms)": "89.07",
+        "Mean ITL (ms)": "83.6",
+        "Median ITL (ms)": "60.93",
+        "P99 ITL (ms)": "336.07"
+      },
+      "retained_total_tokens_s": [
+        3405.11,
+        3588.15,
+        3669.53
+      ],
+      "cv_percent": 3.810294245731183,
+      "kv_tokens": 522352,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    },
+    {
+      "index": 4,
+      "arm": "A",
+      "run_name": "20261029_160250_4_A_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+        "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "367.11",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.7",
+        "Output tok/s": "714.61",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3573.06",
+        "Mean TTFT (ms)": "5099.39",
+        "Median TTFT (ms)": "1602.81",
+        "P99 TTFT (ms)": "29925.13",
+        "Mean TPOT (ms)": "83.28",
+        "Median TPOT (ms)": "85.89",
+        "P99 TPOT (ms)": "88.67",
+        "Mean ITL (ms)": "83.28",
+        "Median ITL (ms)": "60.77",
+        "P99 ITL (ms)": "333.19"
+      },
+      "retained_total_tokens_s": [
+        3445.17,
+        3592.91,
+        3681.09
+      ],
+      "cv_percent": 3.336259711783763,
+      "kv_tokens": 522352,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
+    }
+  ],
+  "scheduler": {
+    "pair1": {
+      "reference": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7465.873087951448
+        },
+        "mean_queue_seconds_all_four_rounds": 7.290891687452586,
+        "server_log_samples": 180,
+        "peak_running_sampled": 64,
+        "peak_waiting_sampled": 61,
+        "peak_cache_usage_percent_sampled": 61.9,
+        "admission_last_snapshot": null,
+        "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+      },
+      "candidate": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7448.5119808544405
+        },
+        "mean_queue_seconds_all_four_rounds": 7.2739374813031645,
+        "server_log_samples": 180,
+        "peak_running_sampled": 64,
+        "peak_waiting_sampled": 60,
+        "peak_cache_usage_percent_sampled": 62.0,
+        "admission_last_snapshot": null,
+        "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+      },
+      "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+      "scheduler_policy": "original; admission telemetry must be absent"
+    },
+    "pair2": {
+      "reference": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7536.606863109395
+        },
+        "mean_queue_seconds_all_four_rounds": 7.3599676397552685,
+        "server_log_samples": 179,
+        "peak_running_sampled": 64,
+        "peak_waiting_sampled": 60,
+        "peak_cache_usage_percent_sampled": 62.0,
+        "admission_last_snapshot": null,
+        "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+      },
+      "candidate": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7464.583069531713
+        },
+        "mean_queue_seconds_all_four_rounds": 7.289631903839563,
+        "server_log_samples": 180,
+        "peak_running_sampled": 64,
+        "peak_waiting_sampled": 62,
+        "peak_cache_usage_percent_sampled": 62.0,
+        "admission_last_snapshot": null,
+        "scope": "Metric deltas cover all four official rounds, including discarded warmup. Server concurrency/cache peaks are sampled, not exact maxima. Admission counters are cumulative from service start and logged at most once/minute."
+      },
+      "limitations": "Historical service sessions, not interleaved A/B. Lower preemption alone does not establish an optimization; assess throughput and latency together.",
+      "scheduler_policy": "original; admission telemetry must be absent"
+    }
+  },
+  "selected_experiment": "EXP-0020",
+  "selection_changed": false,
+  "interpretation": "Two sessions per arm; official four rounds, discard first separately. ABBA balances approximately linear drift only. Rounds are correlated; no statistical significance claim. Historical results excluded. Independent review required before selection."
+}

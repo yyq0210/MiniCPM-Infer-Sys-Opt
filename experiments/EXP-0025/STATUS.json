@@ -131,18 +131,106 @@
       "status": "complete_case_validated",
       "full_task_accuracy": "deferred_by_user",
       "partial_runs_combined": false
+    },
+    {
+      "index": 4,
+      "arm": "A",
+      "run_name": "20261029_160250_4_A_official_4k",
+      "commits": {
+        "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+        "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+      },
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "367.11",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.7",
+        "Output tok/s": "714.61",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3573.06",
+        "Mean TTFT (ms)": "5099.39",
+        "Median TTFT (ms)": "1602.81",
+        "P99 TTFT (ms)": "29925.13",
+        "Mean TPOT (ms)": "83.28",
+        "Median TPOT (ms)": "85.89",
+        "P99 TPOT (ms)": "88.67",
+        "Mean ITL (ms)": "83.28",
+        "Median ITL (ms)": "60.77",
+        "P99 ITL (ms)": "333.19"
+      },
+      "retained_total_tokens_s": [
+        3445.17,
+        3592.91,
+        3681.09
+      ],
+      "cv_percent": 3.336259711783763,
+      "kv_tokens": 522352,
+      "status": "complete_case_validated",
+      "full_task_accuracy": "deferred_by_user",
+      "partial_runs_combined": false
     }
   ],
   "deadline": "2026-10-29T18:08:40.891544+08:00",
-  "stage": "candidate_throughput",
-  "updated_at": "2026-10-29T16:07:59.545949+08:00",
+  "stage": "complete",
+  "updated_at": "2026-10-29T16:39:02.843943+08:00",
   "session_index": 4,
   "arm": "A",
   "run_directory": "/workspace/LeanScale/artifacts/EXP-0025/20261029_160250_4_A_official_4k",
   "server_pid": 37200,
   "publication": {
     "status": "pushed",
-    "commit": "c8a74361ebf2cbac120adbf1ab30968bc0fe10b0",
+    "commit": "b0a019e0bf2134ac7380a87b344fcb3dd032feec",
     "remote_verified": true
+  },
+  "metrics": {
+    "Total tok/s": {
+      "A": 3564.105,
+      "B": 3546.58,
+      "change_percent": -0.4917082970338993,
+      "pair1_change_percent": -0.45708338607372,
+      "pair2_change_percent": -0.5261596502717514,
+      "A_endpoint_change_percent": 0.5037762119741718,
+      "B_repeat_change_percent": 0.4340331741501613
+    },
+    "Output tok/s": {
+      "A": 712.8199999999999,
+      "B": 709.315,
+      "change_percent": -0.4917089868409774,
+      "pair1_change_percent": -0.45708338607372,
+      "pair2_change_percent": -0.5261611228502217,
+      "A_endpoint_change_percent": 0.5034949298904356,
+      "B_repeat_change_percent": 0.433750600469085
+    },
+    "Mean TTFT (ms)": {
+      "A": 5117.125,
+      "B": 5125.889999999999,
+      "change_percent": 0.17128758824533907,
+      "pair1_change_percent": 0.126975224251491,
+      "pair2_change_percent": 0.21590817725256617,
+      "A_endpoint_change_percent": -0.690768589601265,
+      "B_repeat_change_percent": -0.602561958073522
+    },
+    "Mean TPOT (ms)": {
+      "A": 83.67,
+      "B": 84.03999999999999,
+      "change_percent": 0.4422134576311576,
+      "pair1_change_percent": 0.49964311206280865,
+      "pair2_change_percent": 0.3842459173871271,
+      "A_endpoint_change_percent": -0.9279086366880795,
+      "B_repeat_change_percent": -1.041666666666674
+    },
+    "Mean ITL (ms)": {
+      "A": 83.67,
+      "B": 84.03999999999999,
+      "change_percent": 0.4422134576311576,
+      "pair1_change_percent": 0.49964311206280865,
+      "pair2_change_percent": 0.3842459173871271,
+      "A_endpoint_change_percent": -0.9279086366880795,
+      "B_repeat_change_percent": -1.041666666666674
+    }
   }
 }
