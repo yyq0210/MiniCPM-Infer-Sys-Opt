@@ -1,0 +1,58 @@
+{
+  "pid": 362,
+  "process_start_ticks": "360199920",
+  "commits": {
+    "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "planned_finish_before": "2026-10-29T15:45:10.374633+08:00",
+  "arm": "B",
+  "session_index": 2,
+  "started_at": "2026-10-29T14:50:10.374700+08:00",
+  "stage": "performance_case_complete",
+  "updated_at": "2026-10-29T15:26:25+08:00",
+  "server_pid": 12517,
+  "result": {
+    "index": 2,
+    "arm": "B",
+    "run_name": "20261029_145010_2_B_official_4k",
+    "commits": {
+      "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+      "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+    },
+    "summary": {
+      "Prefill": "4096",
+      "Decode": "1024",
+      "Conc": "64",
+      "Num Prompts": "256",
+      "Benchmark Duration (s)": "371.11",
+      "Total Input Tokens": "1048576.0",
+      "Total Output Tokens": "262144.0",
+      "Req/s": "0.69",
+      "Output tok/s": "707.78",
+      "Peak Output tok/s": "1152.0",
+      "Total tok/s": "3538.9",
+      "Mean TTFT (ms)": "5141.38",
+      "Median TTFT (ms)": "1609.34",
+      "P99 TTFT (ms)": "29952.9",
+      "Mean TPOT (ms)": "84.48",
+      "Median TPOT (ms)": "85.95",
+      "P99 TPOT (ms)": "91.97",
+      "Mean ITL (ms)": "84.48",
+      "Median ITL (ms)": "60.81",
+      "P99 ITL (ms)": "333.59"
+    },
+    "retained_total_tokens_s": [
+      3321.38,
+      3623.93,
+      3671.38
+    ],
+    "cv_percent": 5.365036864845539,
+    "kv_tokens": 522352,
+    "status": "complete_case_validated",
+    "full_task_accuracy": "deferred_by_user",
+    "partial_runs_combined": false
+  },
+  "owned_children_reaped": true,
+  "finished_at": "2026-10-29T15:26:25.795377+08:00"
+}
