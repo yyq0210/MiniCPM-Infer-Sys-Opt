@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-29T13:48:34.710958+08:00",
+  "run_name": "20261028_192854_official_4k_r1",
+  "run_finished_at": "2026-10-28T20:05:12.636279+08:00",
+  "candidate_commits": {
+    "vllm-plugin-FL": "41fd7a47e3f39badb9e455fb04b2fe7c888d3db1",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "metrics": {
+    "Total tok/s": {
+      "exp20": 3579.12,
+      "exp24": 3540.86,
+      "change_percent": -1.0689778493037316
+    },
+    "Output tok/s": {
+      "exp20": 715.82,
+      "exp24": 708.17,
+      "change_percent": -1.0687044228996245
+    },
+    "Mean TTFT (ms)": {
+      "exp20": 5102.66,
+      "exp24": 5143.3,
+      "change_percent": 0.7964473431504526
+    },
+    "Mean TPOT (ms)": {
+      "exp20": 83.12,
+      "exp24": 84.43,
+      "change_percent": 1.576034648700686
+    },
+    "Mean ITL (ms)": {
+      "exp20": 83.12,
+      "exp24": 84.43,
+      "change_percent": 1.576034648700686
+    }
+  },
+  "all_four_successful_requests": 1024,
+  "all_four_failures": 0,
+  "discarded_warmup_total_tokens_s": 2083.27,
+  "retained_total_tokens_s": [
+    3322.74,
+    3624.82,
+    3675.02
+  ],
+  "retained_cv_percent": 5.381680223770875,
+  "raw_sha256": "aa39ba6fcff2453d0db1e1a22b9545090a3dd0d9fc119d51cc9b93c828ef162d",
+  "summary_sha256": "d4d65007089d69c00eb65d8388b4cace7ddfd693f135b42a56265dcc7a0afcef",
+  "layout_route_sha256": "75250cb57fa1182f1186ffc45c2c4e975655f98851bb3d1cc3d69044bf682ba3",
+  "gqa_route_sha256": "b01a125a9b168aeec9db6d9d88f981a5fc37dfc8d94cc9b657d905775901dc90",
+  "compiled_mlp_blocks": 42,
+  "logical_weight_arguments": 84,
+  "gqa_kernels": {
+    "decode": 64,
+    "prefill": 64
+  },
+  "kv_reference_tokens": 522352,
+  "kv_candidate_tokens": 522256,
+  "kv_change_tokens": -96,
+  "kv_capacity_change_percent": -0.018378411492636637,
+  "archive_files_checked": 19,
+  "archive_commit": "dab7c4a70699d87b210cd3b41770381efe316b5f",
+  "conclusion": "No demonstrated 4K end-to-end gain; historical-session difference -1.07% versus retained CV5.38%; keep EXP20 selected, no causal-regression claim",
+  "full_model_task_accuracy": "deferred_by_user"
+}

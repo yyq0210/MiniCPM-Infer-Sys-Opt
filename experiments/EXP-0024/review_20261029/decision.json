@@ -1,0 +1,7 @@
+{
+  "selected_experiment": "EXP-0020",
+  "candidate": "EXP-0024",
+  "decision": "retain_opt_in_experiment_not_selected",
+  "reason": "No demonstrated 4K end-to-end gain; historical-session difference -1.07% versus retained CV5.38%; keep EXP20 selected, no causal-regression claim",
+  "next": "preregistered same-day 4K paired comparison after a fresh run window"
+}
