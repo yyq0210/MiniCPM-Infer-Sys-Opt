@@ -1,0 +1,8 @@
+{
+  "VLLM_PLUGINS": "fl",
+  "PYTHONPATH": "/workspace/LeanScale/worktrees/EXP-0025/B/vllm-plugin-FL:/workspace/LeanScale/worktrees/EXP-0025/B/FlagGems/src",
+  "VLLM_CACHE_ROOT": "/workspace/LeanScale/artifacts/EXP-0025/20261029_152635_3_B_official_4k/candidate_cache",
+  "TRITON_CACHE_DIR": "/workspace/LeanScale/artifacts/EXP-0025/20261029_152635_3_B_official_4k/triton_cache",
+  "TORCHINDUCTOR_CACHE_DIR": "/workspace/LeanScale/artifacts/EXP-0025/20261029_152635_3_B_official_4k/inductor_cache",
+  "VLLM_FL_MLP_WEIGHT_LAYOUT": "1"
+}
