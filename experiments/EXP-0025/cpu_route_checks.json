@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "A_actual128_GQA_and42_MLP_blocks",
+      "passed": true,
+      "gqa_sha256": "5038a1a69faf860701c498de9818ecc0c3b99ecc062e07cc944bbf1c86103b95",
+      "layout_sha256": "fe8c31775edc30fa9049586b19e77c7aa917298277d317483460e7b6fe45b0b6"
+    },
+    {
+      "name": "A_reject_opposite_layout",
+      "passed": true
+    },
+    {
+      "name": "B_actual128_GQA_and42_MLP_blocks",
+      "passed": true,
+      "gqa_sha256": "b01a125a9b168aeec9db6d9d88f981a5fc37dfc8d94cc9b657d905775901dc90",
+      "layout_sha256": "98edf6fbb7f36014104b06468e8745567a8857624df88bfa8969b2a3f1a741f7"
+    },
+    {
+      "name": "B_reject_opposite_layout",
+      "passed": true
+    }
+  ]
+}

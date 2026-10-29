@@ -1,0 +1,48 @@
+from pathlib import Path
+import datetime
+import fcntl
+import hashlib
+import json
+import re
+import subprocess
+
+ROOT = Path('/workspace/LeanScale')
+REPO = ROOT/'MiniCPM-Infer-Sys-Opt'
+EXP = REPO/'experiments/EXP-0025'
+WT = ROOT/'worktrees/EXP-0025'
+ART = ROOT/'artifacts/EXP-0025'
+COMMITS = {'A': {'vllm-plugin-FL': 'ce19f93eee4c73f5a26911554700457e879f891d', 'FlagGems': 'de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe'}, 'B': {'vllm-plugin-FL': '41fd7a47e3f39badb9e455fb04b2fe7c888d3db1', 'FlagGems': 'de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe'}}
+ORDER = ['A','B','B','A']
+def now(): return datetime.datetime.now().astimezone()
+def read(p): return json.loads(p.read_text())
+def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def write(p, obj):
+    p.parent.mkdir(parents=True, exist_ok=True)
+    t=p.with_name(p.name+'.tmp');t.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n');t.replace(p)
+def git(p,*a): return subprocess.check_output(['git','-C',str(p),*a],text=True,stderr=subprocess.STDOUT,timeout=120).strip()
+def step(action,**kw):
+    with (EXP/'steps.jsonl').open('a') as f: f.write(json.dumps(dict(time=now().isoformat(),action=action,**kw),ensure_ascii=False)+'\n')
+def verify_sources(arm):
+    for name, commit in COMMITS[arm].items():
+        assert git(WT/arm/name,'rev-parse','HEAD')==commit
+        assert not git(WT/arm/name,'status','--porcelain')
+    for name,digest in read(EXP/'script_hashes.json').items(): assert sha(EXP/name)==digest,name
+def publish(paths, message):
+    # Exact paths only; raw files remain in artifacts even if publication fails.
+    with (ROOT/'artifacts/docs-publish.lock').open('a') as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX)
+        assert git(REPO,'branch','--show-current')=='main'
+        assert not git(REPO,'diff','--cached','--name-only')
+        bad=re.compile(rb'-----BEGIN (?:OPENSSH |RSA |EC )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|lab_inst_[A-Za-z0-9]+|ssh[.]flagos[.]io')
+        for rel in paths:
+            p=REPO/rel
+            for f in p.rglob('*') if p.is_dir() else [p]:
+                if f.is_file() and f.suffix!='.pyc': assert not bad.search(f.read_bytes()),str(f)
+        git(REPO,'add','--',*paths);git(REPO,'diff','--cached','--check')
+        if git(REPO,'diff','--cached','--name-only'): git(REPO,'commit','--only','-m',message,'--',*paths)
+        head=git(REPO,'rev-parse','HEAD');git(REPO,'push','origin','main')
+        assert git(REPO,'ls-remote',git(REPO,'remote','get-url','--push','origin'),'refs/heads/main').split()[0]==head
+        return dict(status='pushed',commit=head,remote_verified=True)
+
+REFS = {'A': '/workspace/LeanScale/artifacts/EXP-0020/20261026_125756_official_4k', 'B': '/workspace/LeanScale/artifacts/EXP-0024/e2e-r1/20261028_192854_official_4k_r1'}
+REFS = {k:Path(v) for k,v in REFS.items()}
