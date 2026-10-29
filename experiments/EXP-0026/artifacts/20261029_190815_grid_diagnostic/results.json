@@ -1,0 +1,33 @@
+{
+  "status": "complete_diagnostic",
+  "candidates": [
+    {
+      "B64_grid": 32,
+      "passed": true,
+      "mean_change_percent": -45.71778091672177,
+      "range_change_percent": [
+        -46.75087092687177,
+        -43.80405899923158
+      ],
+      "max_abs_drift_percent": 0.8228015792214993,
+      "additional_scratch_bytes": 8355840
+    },
+    {
+      "B64_grid": 64,
+      "passed": true,
+      "mean_change_percent": -66.73159195025052,
+      "range_change_percent": [
+        -69.87814273087731,
+        -65.30453572419874
+      ],
+      "max_abs_drift_percent": 0.9857736181396071,
+      "additional_scratch_bytes": 25067520
+    }
+  ],
+  "timing_points": 27,
+  "checks": 140,
+  "all_exact_checks_passed": true,
+  "selected_serving_experiment": "EXP-0020",
+  "end_to_end_gain": "not_measured",
+  "next": "Independent audit; no automatic serving integration"
+}

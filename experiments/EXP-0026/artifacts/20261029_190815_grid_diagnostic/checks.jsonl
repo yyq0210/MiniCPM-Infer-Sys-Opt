@@ -1,0 +1,140 @@
+{"label": "seed202610291_scale0.5", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 131776, "candidate_masked": 131776}
+{"label": "seed202610291_scale1.0", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 270732, "candidate_masked": 270732}
+{"label": "seed202610291_scale3.0", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 949810, "candidate_masked": 949810}
+{"label": "seed202610291_scale0.5", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 263550, "candidate_masked": 263550}
+{"label": "seed202610291_scale1.0", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 542362, "candidate_masked": 542362}
+{"label": "seed202610291_scale3.0", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1910197, "candidate_masked": 1910197}
+{"label": "seed202610291_scale0.5", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 526670, "candidate_masked": 526670}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 32, "scale": 0.5, "grid": 32, "exact": true}
+{"label": "seed202610291_scale1.0", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1084487, "candidate_masked": 1084487}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 32, "scale": 1.0, "grid": 32, "exact": true}
+{"label": "seed202610291_scale3.0", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 3812732, "candidate_masked": 3812732}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 32, "scale": 3.0, "grid": 32, "exact": true}
+{"label": "seed202610291_scale0.5", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1053781, "candidate_masked": 1053781}
+{"label": "seed202610291_scale0.5", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1053781, "candidate_masked": 1053781}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 64, "scale": 0.5, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 64, "scale": 0.5, "grid": 64, "exact": true}
+{"label": "seed202610291_scale1.0", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2169040, "candidate_masked": 2169040}
+{"label": "seed202610291_scale1.0_rng", "B": 64, "grid": 32, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "seed202610291_scale1.0_rng", "B": 64, "grid": 32, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "seed202610291_scale1.0", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2169040, "candidate_masked": 2169040}
+{"label": "seed202610291_scale1.0_rng", "B": 64, "grid": 64, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "seed202610291_scale1.0_rng", "B": 64, "grid": 64, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 64, "scale": 1.0, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 64, "scale": 1.0, "grid": 64, "exact": true}
+{"label": "seed202610291_scale3.0", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7602355, "candidate_masked": 7602355}
+{"label": "seed202610291_scale3.0", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7602355, "candidate_masked": 7602355}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 64, "scale": 3.0, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610291, "B": 64, "scale": 3.0, "grid": 64, "exact": true}
+{"label": "seed202610292_scale0.5", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 131771, "candidate_masked": 131771}
+{"label": "seed202610292_scale1.0", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 270953, "candidate_masked": 270953}
+{"label": "seed202610292_scale3.0", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 951637, "candidate_masked": 951637}
+{"label": "seed202610292_scale0.5", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 263260, "candidate_masked": 263260}
+{"label": "seed202610292_scale1.0", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 542059, "candidate_masked": 542059}
+{"label": "seed202610292_scale3.0", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1910521, "candidate_masked": 1910521}
+{"label": "seed202610292_scale0.5", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 526746, "candidate_masked": 526746}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 32, "scale": 0.5, "grid": 32, "exact": true}
+{"label": "seed202610292_scale1.0", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1084893, "candidate_masked": 1084893}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 32, "scale": 1.0, "grid": 32, "exact": true}
+{"label": "seed202610292_scale3.0", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 3801310, "candidate_masked": 3801310}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 32, "scale": 3.0, "grid": 32, "exact": true}
+{"label": "seed202610292_scale0.5", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1053420, "candidate_masked": 1053420}
+{"label": "seed202610292_scale0.5", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1053420, "candidate_masked": 1053420}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 64, "scale": 0.5, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 64, "scale": 0.5, "grid": 64, "exact": true}
+{"label": "seed202610292_scale1.0", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2168262, "candidate_masked": 2168262}
+{"label": "seed202610292_scale1.0_rng", "B": 64, "grid": 32, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "seed202610292_scale1.0_rng", "B": 64, "grid": 32, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "seed202610292_scale1.0", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2168262, "candidate_masked": 2168262}
+{"label": "seed202610292_scale1.0_rng", "B": 64, "grid": 64, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "seed202610292_scale1.0_rng", "B": 64, "grid": 64, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 64, "scale": 1.0, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 64, "scale": 1.0, "grid": 64, "exact": true}
+{"label": "seed202610292_scale3.0", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7622179, "candidate_masked": 7622179}
+{"label": "seed202610292_scale3.0", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7622179, "candidate_masked": 7622179}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 64, "scale": 3.0, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610292, "B": 64, "scale": 3.0, "grid": 64, "exact": true}
+{"label": "seed202610293_scale0.5", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 131618, "candidate_masked": 131618}
+{"label": "seed202610293_scale1.0", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 270941, "candidate_masked": 270941}
+{"label": "seed202610293_scale3.0", "B": 8, "grid": 8, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 948713, "candidate_masked": 948713}
+{"label": "seed202610293_scale0.5", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 263570, "candidate_masked": 263570}
+{"label": "seed202610293_scale1.0", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 541679, "candidate_masked": 541679}
+{"label": "seed202610293_scale3.0", "B": 16, "grid": 16, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1892032, "candidate_masked": 1892032}
+{"label": "seed202610293_scale0.5", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 526538, "candidate_masked": 526538}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 32, "scale": 0.5, "grid": 32, "exact": true}
+{"label": "seed202610293_scale1.0", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1084032, "candidate_masked": 1084032}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 32, "scale": 1.0, "grid": 32, "exact": true}
+{"label": "seed202610293_scale3.0", "B": 32, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 3801617, "candidate_masked": 3801617}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 32, "scale": 3.0, "grid": 32, "exact": true}
+{"label": "seed202610293_scale0.5", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1053712, "candidate_masked": 1053712}
+{"label": "seed202610293_scale0.5", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 1053712, "candidate_masked": 1053712}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 64, "scale": 0.5, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 64, "scale": 0.5, "grid": 64, "exact": true}
+{"label": "seed202610293_scale1.0", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2168856, "candidate_masked": 2168856}
+{"label": "seed202610293_scale1.0_rng", "B": 64, "grid": 32, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "seed202610293_scale1.0_rng", "B": 64, "grid": 32, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "seed202610293_scale1.0", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2168856, "candidate_masked": 2168856}
+{"label": "seed202610293_scale1.0_rng", "B": 64, "grid": 64, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "seed202610293_scale1.0_rng", "B": 64, "grid": 64, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 64, "scale": 1.0, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 64, "scale": 1.0, "grid": 64, "exact": true}
+{"label": "seed202610293_scale3.0", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7596551, "candidate_masked": 7596551}
+{"label": "seed202610293_scale3.0", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7596551, "candidate_masked": 7596551}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 64, "scale": 3.0, "grid": 32, "exact": true}
+{"label": "graph_input_and_p_update", "seed": 202610293, "B": 64, "scale": 3.0, "grid": 64, "exact": true}
+{"label": "uniform_p_small", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_p_small", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_p_half", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_p_half", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_p_full", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_p_full", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_k_only", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_k_only", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_kp", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "uniform_kp", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "tied_bf16_p_small", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "tied_bf16_p_small", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "tied_bf16_p_half", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7031384, "candidate_masked": 7031384}
+{"label": "tied_bf16_p_half", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7031384, "candidate_masked": 7031384}
+{"label": "tied_bf16_p_full", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "tied_bf16_p_full", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "tied_bf16_k_only", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "tied_bf16_k_only", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "tied_bf16_kp", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352832, "candidate_masked": 8352832}
+{"label": "tied_bf16_kp_rng", "B": 64, "grid": 32, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "tied_bf16_kp_rng", "B": 64, "grid": 32, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "tied_bf16_kp", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352832, "candidate_masked": 8352832}
+{"label": "tied_bf16_kp_rng", "B": 64, "grid": 64, "per_request_generator": false, "exact_tokens_and_rng": true}
+{"label": "tied_bf16_kp_rng", "B": 64, "grid": 64, "per_request_generator": true, "exact_tokens_and_rng": true}
+{"label": "sparse_neginf_p_small", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "sparse_neginf_p_small", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "sparse_neginf_p_half", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7471376, "candidate_masked": 7471376}
+{"label": "sparse_neginf_p_half", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7471376, "candidate_masked": 7471376}
+{"label": "sparse_neginf_p_full", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2785280, "candidate_masked": 2785280}
+{"label": "sparse_neginf_p_full", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 2785280, "candidate_masked": 2785280}
+{"label": "sparse_neginf_k_only", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "sparse_neginf_k_only", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "sparse_neginf_kp", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352832, "candidate_masked": 8352832}
+{"label": "sparse_neginf_kp", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352832, "candidate_masked": 8352832}
+{"label": "peaked_p_small", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "peaked_p_small", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "peaked_p_half", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "peaked_p_half", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "peaked_p_full", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "peaked_p_full", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "peaked_k_only", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "peaked_k_only", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "peaked_kp", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "peaked_kp", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "row_stride_p_small", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "row_stride_p_small", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8355776, "candidate_masked": 8355776}
+{"label": "row_stride_p_half", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7029160, "candidate_masked": 7029160}
+{"label": "row_stride_p_half", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 7029160, "candidate_masked": 7029160}
+{"label": "row_stride_p_full", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "row_stride_p_full", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 0, "candidate_masked": 0}
+{"label": "row_stride_k_only", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "row_stride_k_only", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352640, "candidate_masked": 8352640}
+{"label": "row_stride_kp", "B": 64, "grid": 32, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352831, "candidate_masked": 8352831}
+{"label": "row_stride_kp", "B": 64, "grid": 64, "exact_masked_logits": true, "masking_rng_unchanged": true, "baseline_masked": 8352831, "candidate_masked": 8352831}
+{"label": "actual_padded_row_stride", "stride": [130592, 1], "exact": true}
+{"label": "graph_k_p_input_update", "exact": true}
