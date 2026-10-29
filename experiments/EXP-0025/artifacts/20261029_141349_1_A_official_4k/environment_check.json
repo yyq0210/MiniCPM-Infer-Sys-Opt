@@ -1,0 +1,45 @@
+{
+  "versions": {
+    "torch": "2.10.0+corex.4.5.0",
+    "vllm": "0.24.0+empty",
+    "triton": "3.6.0"
+  },
+  "installed_source_hashes": {
+    "vllm/entrypoints/openai/api_server.py": "61122e2483b73ab9c25707604bbe565516ef4e7caa61c0f7dc785d65083cc322",
+    "vllm/entrypoints/openai/completion/serving.py": "582b866dacfc74615428b89169a8fa948a4aa7326bec5a2a79455da6f50b2a90",
+    "vllm/entrypoints/openai/completion/api_router.py": "9347872bbdd3f2488b35a9db59bdb85e4dd990a6559a2615145e8a1e5dd3239a",
+    "vllm/model_executor/layers/logits_processor.py": "d6dfec7287020d587f4a4d475ce113c383b2eb55afe5ae9b0e037df2e2d13310",
+    "vllm/model_executor/layers/layernorm.py": "696615d858292fea7a2942480803cd4c7d2d1e88d818bfe5cd9d695ac464f37c",
+    "vllm/model_executor/layers/linear.py": "0bd60103d85d7183791077c46e0770d0a2adc8e8811b162b9084c3cbe92ba662",
+    "vllm/model_executor/models/llama.py": "1e1003454985bf86d3868a7755bcf5324676881548b3895809edf0b76698d384",
+    "vllm/model_executor/layers/rotary_embedding/base.py": "c81804498f08f072356a26b41967f211475df2694dabf5da9f488c074d1fdef5",
+    "vllm/v1/core/kv_cache_manager.py": "2e91e77f84dfd9d4bed79f50392be72559207f54e845a3d3402baf88dc529320",
+    "vllm/v1/sample/sampler.py": "1a2f18ddc91c89f3744ab5a93624be056bf20b7a8b2e6e13d0236182718a2253",
+    "vllm/v1/engine/async_llm.py": "2128cf018fe136b698c5e89dc7325bc6dced9d516cc9d772695f044716970b64",
+    "vllm/v1/engine/output_processor.py": "464c3cda347512cf1090f8e6471d0d3f0f65e286eb9a7b97be52efbc1ffd572a",
+    "vllm/v1/engine/core.py": "27b23827a86fd488f1f7cc9a2722fe76d284087ca7cfefef5a30c5e74f21bc71",
+    "vllm/v1/engine/input_processor.py": "c5673988c0f7cfec268220e3f044e718702c015a4f236c020937cfd40a793f15",
+    "vllm/v1/core/sched/scheduler.py": "df78076164fe02a63876d7690cefac810f1ba4d8fb58afc15e786c1608064090",
+    "vllm/v1/attention/backends/triton_attn.py": "1219c4d1820b56e99ef6686de8a49c8c5aa57707794bcabf3322023799a03605",
+    "vllm/v1/attention/ops/triton_unified_attention.py": "bab2c0b9f9a7793ca411796b48ebb4734433160e7e99eabf46ddb7f1c30cb6e0",
+    "vllm/config/scheduler.py": "4102ccd3d73188200b25f47a0cba837853662647850f283012d8cc1f9e8c47c2",
+    "vllm/compilation/passes/fusion/rope_kvcache_fusion.py": "faed3153db71f91bddcccf99cfab47dca7881933769d262dec52e22b5bfad163",
+    "vllm/model_executor/layers/activation.py": "757209cef4b5cc091d29d95b4a6b29f2511984110c9b66810c760d4499cb156c",
+    "vllm/model_executor/layers/utils.py": "061adffc6af55ef3b001557c0fad738e474c5e4134fa3dc35cb967bdbc90a121",
+    "vllm/model_executor/layers/attention/attention.py": "3414faca4cc04c699dbb880ba1761230e1ed97035f2934604cad9a5490f4dba1",
+    "vllm/ir/ops/layernorm.py": "d8e4380ca97d2c719836a7e15fb410a73d354b15d79fc54275b573bbb1c06910",
+    "vllm/v1/core/kv_cache_coordinator.py": "9dd0a647f671b859e3743fbf5ec84cd892fd5754022eef58c5b8c989a4cda97b",
+    "vllm/v1/core/single_type_kv_cache_manager.py": "22e3677acf0e769461bdbf278df031d6e362c97aa1ba7b862c071b76d47d8914",
+    "vllm/v1/core/block_pool.py": "3fc5dfe0ab7ccc6206f6eb7886b2aad15384f92708e6b9f7e5ec7838b7379abe",
+    "vllm/v1/core/sched/async_scheduler.py": "da6343d7e7c394a1738cf72905cbecc208003ffa461ccb441268333a3eb9f884",
+    "vllm/v1/attention/ops/triton_attention_helpers.py": "59d9d34bbda988436593cfd9bcb05015d17db8ee85c50f6697e45f987acbf0b1",
+    "vllm/v1/attention/ops/triton_reshape_and_cache_flash.py": "f18224e51162e37c14a2e2b3045bca55baf0b207b1d203ad6ee7d8ed417139eb"
+  },
+  "triton_module": "/usr/local/lib/python3.12/site-packages/triton/__init__.py",
+  "triton_init_sha256": "df3092178f70be89b50d22905cedae5bac414cc38677053616fc56802c91af30",
+  "candidate_commits": {
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565"
+}

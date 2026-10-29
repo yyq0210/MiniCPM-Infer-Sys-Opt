@@ -1,0 +1,78 @@
+{
+  "idle_evidence.json": {
+    "raw_sha256": "574e5c9a0b7dc53d8f7772c44e632f0acac88704e578275da40cf0faefe9c060",
+    "archived_sha256": "574e5c9a0b7dc53d8f7772c44e632f0acac88704e578275da40cf0faefe9c060"
+  },
+  "explicit_environment.json": {
+    "raw_sha256": "08ddb0ec9354f1f4b68a2290e0ab99e395a73ab2733c439fd32b552c29096818",
+    "archived_sha256": "08ddb0ec9354f1f4b68a2290e0ab99e395a73ab2733c439fd32b552c29096818"
+  },
+  "environment_check.json": {
+    "raw_sha256": "fabed9adec0936e51a90a3c63e703fa57304dcd43ea7db6b8130d95d45f2f8b9",
+    "archived_sha256": "fabed9adec0936e51a90a3c63e703fa57304dcd43ea7db6b8130d95d45f2f8b9"
+  },
+  "status.json": {
+    "raw_sha256": "4829d0b5db836d900adffeb932ebaa7bdfa07832ac9a87ad1f69b75fdd9666af",
+    "archived_sha256": "d3fd6e96d189a3022d54f875c67b51f484760e323a9dfcefc052c24f015bdd76"
+  },
+  "stage_history.jsonl": {
+    "raw_sha256": "9908049cca15ea74a3873e54c734bbd6de1dfaf5db245bbef44c923bdbde995d",
+    "archived_sha256": "9908049cca15ea74a3873e54c734bbd6de1dfaf5db245bbef44c923bdbde995d"
+  },
+  "result.json": {
+    "raw_sha256": "5c1f23d29ede43225825ae829b893de634a40ae12294b98b43751ff02b512653",
+    "archived_sha256": "5c1f23d29ede43225825ae829b893de634a40ae12294b98b43751ff02b512653"
+  },
+  "candidate_benchmark/server.log": {
+    "raw_sha256": "d7f246c9ae5e8e28894cd1cc18f2f8897386b6e612cefb1a05687de963100b56",
+    "archived_sha256": "3eee802ab45e6e11d1fee98dda4470099fbb0c8e8dfe9cb42a050243b25ab011"
+  },
+  "candidate_benchmark/server.command.json": {
+    "raw_sha256": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+    "archived_sha256": "f8122ce07a5594d9474e026e93a27439ba19e0a14f7f11fe67a87f55c56c1131"
+  },
+  "candidate_benchmark/benchmark.log": {
+    "raw_sha256": "c7b6ae634d1b76f33f435271fe44390c9abeca0c7ca34891f94fe5b10447b228",
+    "archived_sha256": "ec290fc9dce84c81223369932ccf701b8dbc14d73a73a269a6c421b36a17d038"
+  },
+  "candidate_benchmark/benchmark.command.json": {
+    "raw_sha256": "7ee0690c42460bb245c043ff8cfed3868cf2c0154f125f185084f5117befd68c",
+    "archived_sha256": "a61318a421ba90786d369aa59c198609fe63f6a79d0785218e1321bf4f21533b"
+  },
+  "candidate_benchmark/smoke.json": {
+    "raw_sha256": "aa940ac9b81d3bab8fe4f34284d2728c1210c6b1d8099ee0fcf988b503d305bb",
+    "archived_sha256": "49002b4d51e2b90392a53ccb31c41b2e1c8aaaf32746affa1ae25cbca03727f3"
+  },
+  "candidate_benchmark/route_evidence.json": {
+    "raw_sha256": "02f72df7c399f2997bb220038fd30286c3a4815086201455e49fcb777f7eab2e",
+    "archived_sha256": "02f72df7c399f2997bb220038fd30286c3a4815086201455e49fcb777f7eab2e"
+  },
+  "candidate_benchmark/startup_route_evidence.json": {
+    "raw_sha256": "8b1fe42138adcffa78a2181c44710ebc3b78fe00a2aba1dd37bc6a28f1bf8f39",
+    "archived_sha256": "8b1fe42138adcffa78a2181c44710ebc3b78fe00a2aba1dd37bc6a28f1bf8f39"
+  },
+  "candidate_benchmark/layout_route_evidence.json": {
+    "raw_sha256": "420d86845b4218ad3cbeed34937918ea3348530da0ebc44f46072f958e3678df",
+    "archived_sha256": "420d86845b4218ad3cbeed34937918ea3348530da0ebc44f46072f958e3678df"
+  },
+  "candidate_benchmark/startup_layout_route_evidence.json": {
+    "raw_sha256": "420d86845b4218ad3cbeed34937918ea3348530da0ebc44f46072f958e3678df",
+    "archived_sha256": "420d86845b4218ad3cbeed34937918ea3348530da0ebc44f46072f958e3678df"
+  },
+  "candidate_benchmark/metrics_before.prom": {
+    "raw_sha256": "8b21cceb02a2acd6d11ffa09d027fb51ac458cc06a10ae920bec3b2f1d54e2ba",
+    "archived_sha256": "8b21cceb02a2acd6d11ffa09d027fb51ac458cc06a10ae920bec3b2f1d54e2ba"
+  },
+  "candidate_benchmark/metrics_after.prom": {
+    "raw_sha256": "bea8348610e04b0398e95cd47bdcf7c53f2fa1f0e86bef20758d3ace6014d893",
+    "archived_sha256": "bea8348610e04b0398e95cd47bdcf7c53f2fa1f0e86bef20758d3ace6014d893"
+  },
+  "candidate_benchmark/benchmark_results/raw_runs_20261029_141903.csv": {
+    "raw_sha256": "4d2f01c0e9a6b7f8f0a1eb09b822f9fcdb86a99777f0ece9de6086a189f1ea02",
+    "archived_sha256": "53752bdeae8a0d9799e62da62c5a9804a02e1470b06f8680980cb5520fcfeea9"
+  },
+  "candidate_benchmark/benchmark_results/summary_20261029_141903.csv": {
+    "raw_sha256": "2a95921c3768f7a227268af93c958f8ae6b44c3c8a6b505be12f69a431771ed6",
+    "archived_sha256": "7726e5a39df6238e3171376d14bc4e6e9565f0520d6b2e3b0dcccde987193432"
+  }
+}

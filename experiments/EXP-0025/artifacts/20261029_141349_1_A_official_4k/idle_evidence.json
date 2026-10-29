@@ -1,0 +1,28 @@
+[
+  {
+    "memory_mib": 68,
+    "util_percent": 0,
+    "clocks_mhz": [
+      1500,
+      1600
+    ],
+    "temperature_power": [
+      34,
+      96,
+      350
+    ]
+  },
+  {
+    "memory_mib": 68,
+    "util_percent": 0,
+    "clocks_mhz": [
+      1500,
+      1600
+    ],
+    "temperature_power": [
+      34,
+      96,
+      350
+    ]
+  }
+]
