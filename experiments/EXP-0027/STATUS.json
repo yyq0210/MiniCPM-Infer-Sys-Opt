@@ -1,4 +1,12 @@
 {
-  "stage": "implemented_not_validated",
-  "selected_experiment": "EXP-0020"
+  "stage": "passed",
+  "started_at": "2026-10-29T20:26:16.597493+08:00",
+  "deadline": "2026-10-29T20:46:16.518186+08:00",
+  "checks": 30,
+  "candidate_commits": {
+    "vllm-plugin-FL": "2a4cf99f5a765dc7de3a3337303e91183bc9decd",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "finished_at": "2026-10-29T20:27:15.528830+08:00",
+  "owned_children_reaped": true
 }
