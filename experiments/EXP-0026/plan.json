@@ -1,0 +1,34 @@
+{
+  "experiment": "EXP-0026",
+  "baseline_commits": {
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "script_sha256": "beb91b00d66dfc7735f70403b7986c7d2b2d270dbd1e74855dd773e598214216",
+  "seeds": [
+    202610291,
+    202610292,
+    202610293
+  ],
+  "batches": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "vocab_size": 130560,
+  "scales": [
+    0.5,
+    1.0,
+    3.0
+  ],
+  "program_multipliers": [
+    2,
+    4
+  ],
+  "samples": 7,
+  "graph_repeats": 4,
+  "compute_minutes": 45,
+  "daily_compute_stop": "2026-10-29T23:35:00+08:00",
+  "daily_save": "2026-10-29T23:50:00+08:00"
+}

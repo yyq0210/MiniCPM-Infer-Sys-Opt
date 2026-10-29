@@ -1,0 +1,1 @@
+{"time": "2026-10-29T19:08:03.061207+08:00", "action": "Register top-p grid-only hypothesis before candidate execution", "baseline": {"vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d", "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"}, "GPU_started": false}
