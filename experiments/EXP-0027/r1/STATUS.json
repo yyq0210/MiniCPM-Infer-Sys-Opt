@@ -1,15 +1,38 @@
 {
   "pid": 6076,
-  "started_at": "2026-10-30T14:16:59.168845+08:00",
-  "phase": "shadow",
+  "started_at": "2026-10-30T14:33:16.296348+08:00",
+  "phase": "official4k",
   "commits": {
     "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
     "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
   },
-  "planned_finish_before": "2026-10-30T14:51:59.168822+08:00",
-  "stage": "complete_shadow",
-  "updated_at": "2026-10-30T14:33:06+08:00",
-  "server_pid": 6092,
+  "planned_finish_before": "2026-10-30T15:43:16.296261+08:00",
+  "stage": "complete_official4k",
+  "updated_at": "2026-10-30T15:08:29+08:00",
+  "server_pid": 17260,
+  "comparison": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 3573.06,
+      "candidate_total_tokens_s": 3688.33,
+      "throughput_change_percent": 3.2260863237673076,
+      "baseline_ttft_ms": 5099.39,
+      "candidate_ttft_ms": 5098.34,
+      "ttft_change_percent": -0.020590698103106764,
+      "baseline_retained_runs": [
+        3445.17,
+        3592.91,
+        3681.09
+      ],
+      "baseline_cv_percent": 3.336259711783763,
+      "candidate_retained_runs": [
+        3460.5,
+        3771.46,
+        3833.03
+      ],
+      "candidate_cv_percent": 5.414205352913239
+    }
+  ],
   "owned_children_reaped": true,
-  "finished_at": "2026-10-30T14:33:06.380796+08:00"
+  "finished_at": "2026-10-30T15:08:29.570097+08:00"
 }
