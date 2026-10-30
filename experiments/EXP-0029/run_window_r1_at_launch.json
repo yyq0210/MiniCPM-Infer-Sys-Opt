@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-10-30T18:48:13.526310+08:00",
+  "compute_stop_at": "2026-10-30T23:35:00+08:00",
+  "save_target_at": "2026-10-30T23:50:00+08:00",
+  "minimum_complete_flow_minutes": 270,
+  "scope": "Continuation authorized; recent recurring midnight schedule, daily change question pending"
+}
