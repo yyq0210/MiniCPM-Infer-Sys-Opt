@@ -71,3 +71,15 @@ do_shadow = shadow and _stats['shadow_checks'] < 32
 - [有效测评计划](../experiments/EXP-0027/r1/service_plan_r3.json)
 - [有效时间窗口](../experiments/EXP-0027/r1/service_window_r3_at_launch.json)
 - [控制器预检失败记录](../experiments/EXP-0027/r1/controller_failures/r2/)
+
+## 10月30日14:17 客户端诊断环境修复
+
+r3服务完成编译、预热和路由检查，13:57:13启用arm时预热检查数为零；随后测评CLI继承服务端shadow=1，在插件初始化时遇到已存在的arm文件而退出，未发出诊断工作负载。服务日志没有数值错误。失败已清理并推送a41d7da9c9e5d4825379fedc5346a6e767ce8453。
+
+新控制脚本只为benchmark客户端关闭shadow、清空arm路径，在finally恢复controller环境函数；已启动服务继续shadow=1。不修改HTTP请求参数、官方脚本或数值kernel。3项CPU角色隔离回归及实际CLI预检通过：已存在marker时，客户端成功初始化且hook报告shadow=False，服务端配置保留。r4预检中额外的help文本断言误将默认分组帮助当完整参数列表，原成功输出和失败记录均保存；r5按该版本实际usage及hook状态验证。
+
+当前有效流程为service_r5，14:16:59启动，计算截止16:11:50、保存目标16:21:50；此前r3及其15:46窗口已停止。39项设备检查和c50b5f0推理代码保持，未重复GPU单算子检查。真实B64/.95精确检查仍必须通过，之后才自动跑全新shadow=0服务的官方四轮。selected保持EXP20，尚无本次正式性能结论。
+
+- [客户端实际预检](../experiments/EXP-0027/r1/client_preflight_r5.json)
+- [当前计划](../experiments/EXP-0027/r1/service_plan_r5.json)
+- [当前窗口](../experiments/EXP-0027/r1/service_window_r5_at_launch.json)
