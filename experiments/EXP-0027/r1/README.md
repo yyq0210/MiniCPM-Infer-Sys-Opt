@@ -15,3 +15,8 @@
 11项CPU回归通过，源码SHA-256为 `897b3981551c2ac5ec5b5b865fd3167f4851734bec2e9526079a4d3a08c4486b`。`diagnostic_coverage.patch`相对于个人插件fork的r0固定提交；在独立插件工作区应用后，可运行 `python3 test_shadow_budget.py --source /绝对路径/vllm_fl/patches/topp_row_parallel.py`。CPU脚本只提取诊断预算类测试，不导入GPU库，因此不能替代接入或数值验证。尚未部署、尚未推生产代码分支；controller arm接线和全部GPU步骤待完成。
 
 补丁采用零上下文格式以通过仓库空白检查；只在已核验r0提交的独立工作区中使用 git apply --unidiff-zero。首次文档发布被diff --cached --check拦截（patch上下文空行含空格），未生成提交；转换补丁格式后重试。
+
+
+## 实际服务流程
+
+39项独立引擎入口检查与归档hash已复核，r1候选提交由candidate_commits.json固定，已推个人fork。先shadow=1运行官方benchmark展开后的单轮4K/1024/64/256命令（只作诊断），要求计时区间真实B64/p=.95至少一次exact-mask和RNG检查。接线通过后停止服务、归档；再shadow=0独立新服务/缓存运行原官方脚本四轮弃首。诊断数据不合并进性能。原42MLP布局/GQA/RoPEKV/FULL捕获与实际top-p grid/counter/TTIR均检查。对照为历史EXP25 A2（3573.06 tok/s），并单列EXP20历史和ABBA均值。独立审核前不自动升级。
