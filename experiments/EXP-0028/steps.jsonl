@@ -3,3 +3,6 @@
 {"time": "2026-10-30T15:54:50.649752+08:00", "action": "Prepare full same-day off control after registered protocol", "commits": {"vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378", "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"}}
 {"time": "2026-10-30T15:55:29.175996+08:00", "action": "Start original top-p off control", "run_name": "20261030_155458_official4k_off"}
 {"time": "2026-10-30T16:31:27.072253+08:00", "action": "Complete same-day off control; independent audit pending", "run_name": "20261030_155458_official4k_off"}
+{"time": "2026-10-30T16:59:07.105511+08:00", "action": "Start CPU-only independent same-day control audit", "script_sha256": "84827a1bfe1d11535688332f3c6098c2afd92cd15e02c1695a05418080133498"}
+{"time": "2026-10-30T17:05:43.788724+08:00", "action": "Complete independent same-day off-control audit and report", "observed_gain_percent": 3.815029877926923, "selection_changed": false}
+{"time": "2026-10-30T17:10:34.130940+08:00", "action": "Preserve executed audit; remove terminal blank line for publication; AST unchanged", "executed_sha256": "84827a1bfe1d11535688332f3c6098c2afd92cd15e02c1695a05418080133498", "published_sha256": "b82c526ce398875c7e715340bac2574f74572c814c650de610e8c0857c1a0ea0"}

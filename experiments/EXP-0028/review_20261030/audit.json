@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-30T16:59:07.702400+08:00",
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "route_verifier_sha256": "001bd5e695817fa1d545e6af507e27efa758462e14f60e1f93b1451739260d3c",
+  "A_off": {
+    "raw_sha256": "6831ccbff5af2d7586dfd1cdc5911d42647c1340b77f1a0aea77ed43308d61c3",
+    "summary_sha256": "0d54d6c1e0ed782700e623a1bd7e1ecb3da1daba81902959d586d664d0119530",
+    "summary": {
+      "Prefill": "4096",
+      "Decode": "1024",
+      "Conc": "64",
+      "Num Prompts": "256",
+      "Benchmark Duration (s)": "369.64",
+      "Total Input Tokens": "1048576.0",
+      "Total Output Tokens": "262144.0",
+      "Req/s": "0.69",
+      "Output tok/s": "710.56",
+      "Peak Output tok/s": "1156.0",
+      "Total tok/s": "3552.79",
+      "Mean TTFT (ms)": "5135.15",
+      "Median TTFT (ms)": "1607.23",
+      "P99 TTFT (ms)": "29936.03",
+      "Mean TPOT (ms)": "84.12",
+      "Median TPOT (ms)": "85.61",
+      "P99 TPOT (ms)": "91.6",
+      "Mean ITL (ms)": "84.12",
+      "Median ITL (ms)": "60.45",
+      "P99 ITL (ms)": "332.48"
+    },
+    "all_four_total_tokens_s": [
+      2082.2,
+      3337.08,
+      3636.45,
+      3684.84
+    ],
+    "retained_total_tokens_s": [
+      3337.08,
+      3636.45,
+      3684.84
+    ],
+    "retained_cv_percent": 5.30204847996285,
+    "retained_first_to_last_change_percent": 10.421086698550841,
+    "successful_requests": 1024,
+    "failed_requests": 0,
+    "schedule": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7489.709329498
+      },
+      "mean_queue_seconds_all_four_rounds": 7.314169267087891,
+      "sampled_peak_kv_percent": 62.0
+    },
+    "run_name": "20261030_155458_official4k_off",
+    "started_at": "2026-10-30T15:55:06.456793+08:00",
+    "finished_at": "2026-10-30T16:31:30.693036+08:00",
+    "archive_files_checked": 22,
+    "publication": {
+      "status": "pushed",
+      "commit": "d87a52bdca0454a1187952c0f86c302a061436e0",
+      "remote_verified": true
+    },
+    "route": {
+      "kv_tokens": 522256,
+      "gqa_kernels": {
+        "decode": 64,
+        "prefill": 64
+      },
+      "compiled_mlp_blocks": 42,
+      "logical_weight_nodes": 84,
+      "gqa_route_sha256": "c179cd9ddc861a777a88f8cb2e29f0310732908408aeb983e8472b84f02aeb7c",
+      "layout_route_sha256": "05dfe19109cb9cd1406d0196a77db5b21b5233c3a0d54e5c5f80720fef4d1cb3"
+    },
+    "top_p_variants": 3,
+    "candidate_hook": false,
+    "shadow_checks": 0
+  },
+  "B_on": {
+    "raw_sha256": "4caa9cd8688cb626f762148125e4fed176ca29b69a7d188469858d3640f5eafb",
+    "summary_sha256": "0d30e867cfe29641b4a7413971ce9c164cd4fd2304220df04a205229402e93c1",
+    "summary": {
+      "Prefill": "4096",
+      "Decode": "1024",
+      "Conc": "64",
+      "Num Prompts": "256",
+      "Benchmark Duration (s)": "356.09",
+      "Total Input Tokens": "1048576.0",
+      "Total Output Tokens": "262144.0",
+      "Req/s": "0.72",
+      "Output tok/s": "737.67",
+      "Peak Output tok/s": "1216.0",
+      "Total tok/s": "3688.33",
+      "Mean TTFT (ms)": "5098.34",
+      "Median TTFT (ms)": "1589.16",
+      "P99 TTFT (ms)": "29670.83",
+      "Mean TPOT (ms)": "80.86",
+      "Median TPOT (ms)": "82.54",
+      "P99 TPOT (ms)": "88.1",
+      "Mean ITL (ms)": "80.86",
+      "Median ITL (ms)": "57.59",
+      "P99 ITL (ms)": "326.19"
+    },
+    "all_four_total_tokens_s": [
+      2131.14,
+      3460.5,
+      3771.46,
+      3833.03
+    ],
+    "retained_total_tokens_s": [
+      3460.5,
+      3771.46,
+      3833.03
+    ],
+    "retained_cv_percent": 5.414205352913239,
+    "retained_first_to_last_change_percent": 10.765207339979789,
+    "successful_requests": 1024,
+    "failed_requests": 0,
+    "schedule": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7421.505585424602
+      },
+      "mean_queue_seconds_all_four_rounds": 7.247564048266213,
+      "sampled_peak_kv_percent": 61.9
+    },
+    "run_name": "20261030_143316_official4k",
+    "started_at": "2026-10-30T14:33:16.296348+08:00",
+    "finished_at": "2026-10-30T15:08:29.570097+08:00",
+    "prior_audit_sha256": "eed4ae6d2ea03f082e95819051b1d0b66708d5944e2250168b121b2fefd32c70",
+    "kv_tokens": 522256
+  },
+  "metrics": {
+    "Total tok/s": {
+      "A_off": 3552.79,
+      "B_on": 3688.33,
+      "B_on_vs_A_off_percent": 3.815029877926923
+    },
+    "Output tok/s": {
+      "A_off": 710.56,
+      "B_on": 737.67,
+      "B_on_vs_A_off_percent": 3.8153006079711727
+    },
+    "Mean TTFT (ms)": {
+      "A_off": 5135.15,
+      "B_on": 5098.34,
+      "B_on_vs_A_off_percent": -0.7168242407719294
+    },
+    "Mean TPOT (ms)": {
+      "A_off": 84.12,
+      "B_on": 80.86,
+      "B_on_vs_A_off_percent": -3.8754160722777042
+    },
+    "Mean ITL (ms)": {
+      "A_off": 84.12,
+      "B_on": 80.86,
+      "B_on_vs_A_off_percent": -3.8754160722777042
+    }
+  },
+  "retained_round_position_comparisons_percent": [
+    3.69844295012407,
+    3.7126868236879496,
+    4.021612878713876
+  ],
+  "order": "B then A, post hoc same-day consistency check; one session per arm; not randomized or ABBA",
+  "selection_changed": false,
+  "selected_experiment": "EXP-0020",
+  "full_model_task_accuracy": "deferred_by_user",
+  "interpretation": "Positive same-day directional evidence; stable causal gain remains unconfirmed."
+}

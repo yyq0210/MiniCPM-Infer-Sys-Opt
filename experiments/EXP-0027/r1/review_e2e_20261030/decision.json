@@ -6,5 +6,12 @@
     "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
   },
   "decision": "positive_historical_comparison_pending_same_day_control",
-  "reason": "Official4K 3688.33, +3.051% vs historical EXP20; retained CV5.414%, single cross-day session; no automatic selection"
+  "reason": "Official4K 3688.33, +3.051% vs historical EXP20; retained CV5.414%, single cross-day session; no automatic selection",
+  "same_day_followup": {
+    "experiment": "EXP-0028",
+    "observed_gain_percent": 3.815029877926923,
+    "selection_changed": false,
+    "report": "docs/topp_row_parallel_same_day_20261030.md",
+    "status": "audited; interleaved repeat pending"
+  }
 }

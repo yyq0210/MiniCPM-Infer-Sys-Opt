@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-30T16:59:07.105265+08:00",
+  "notes": [
+    "Initial SSH disconnected before execution, confirmed files absent on reconnect.",
+    "Second preparation stopped before audit execution because local apply_patch added an extra terminal newline. Compared both SHA256 values and normalized the not-yet-run remote file to the exact local artifact."
+  ],
+  "script_sha256": "84827a1bfe1d11535688332f3c6098c2afd92cd15e02c1695a05418080133498",
+  "publication_formatting": {
+    "time": "2026-10-30T17:10:34.130670+08:00",
+    "failure": "git diff --cached --check rejected one blank line at EOF; no commit or push occurred",
+    "executed_script_sha256": "84827a1bfe1d11535688332f3c6098c2afd92cd15e02c1695a05418080133498",
+    "published_script_sha256": "b82c526ce398875c7e715340bac2574f74572c814c650de610e8c0857c1a0ea0",
+    "python_ast_identical": true,
+    "executed_source_preserved_locally": true
+  }
+}

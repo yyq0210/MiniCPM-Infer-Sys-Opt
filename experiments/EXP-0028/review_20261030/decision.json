@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-30T17:05:43.787450+08:00",
+  "selected_experiment": "EXP-0020",
+  "selection_changed": false,
+  "candidate": "EXP-0027 top-p row parallel",
+  "candidate_default_enabled": false,
+  "A_off_total_tokens_s": 3552.79,
+  "B_on_total_tokens_s": 3688.33,
+  "observed_change_percent": 3.815029877926923,
+  "evidence_scope": "Post hoc B then A; one fresh service per arm; not randomized or ABBA",
+  "decision": "Retain promising candidate for preregistered interleaved repeat; do not promote yet",
+  "full_model_task_accuracy": "deferred_by_user",
+  "candidate_16k": "not_measured"
+}
