@@ -1,0 +1,39 @@
+INFO 10-30 13:57:15 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-30 13:57:15 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-30 13:57:15 [__init__.py:58] Loading plugin fl
+/workspace/LeanScale/worktrees/EXP-0027-r1/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0027-r1/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-30 13:57:22 [__init__.py:237] Platform plugin fl is activated
+WARNING 10-30 13:57:28 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+WARNING 10-30 13:57:28 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-30 13:57:28 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+WARNING 10-30 13:57:28 [interface.py:358] Failed to import from vllm._C: ModuleNotFoundError("No module named 'vllm._C'")
+Traceback (most recent call last):
+  File "/usr/local/bin/vllm", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/vllm/entrypoints/cli/main.py", line 88, in main
+    cmd.subparser_init(subparsers).set_defaults(dispatch_function=cmd.cmd)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/vllm/entrypoints/cli/serve.py", line 164, in subparser_init
+    serve_parser = make_arg_parser(serve_parser)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/vllm/entrypoints/openai/cli_args.py", line 382, in make_arg_parser
+    parser = AsyncEngineArgs.add_cli_args(parser)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/vllm/engine/arg_utils.py", line 2673, in add_cli_args
+    load_general_plugins()
+  File "/usr/local/lib/python3.12/site-packages/vllm/plugins/__init__.py", line 82, in load_general_plugins
+    func()
+  File "/workspace/LeanScale/worktrees/EXP-0027-r1/vllm-plugin-FL/vllm_fl/__init__.py", line 183, in register_model
+    install_topp_row_parallel()
+  File "/workspace/LeanScale/worktrees/EXP-0027-r1/vllm-plugin-FL/vllm_fl/patches/topp_row_parallel.py", line 92, in install_topp_row_parallel
+    shadow_budget = _ShadowBudget(os.environ.get(SHADOW_ARM_ENV)) if shadow else None
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/LeanScale/worktrees/EXP-0027-r1/vllm-plugin-FL/vllm_fl/patches/topp_row_parallel.py", line 31, in __init__
+    raise ValueError('Shadow arm file must not exist before service startup')
+ValueError: Shadow arm file must not exist before service startup

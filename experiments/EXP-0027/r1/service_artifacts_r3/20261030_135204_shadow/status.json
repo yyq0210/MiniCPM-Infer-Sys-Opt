@@ -1,0 +1,16 @@
+{
+  "pid": 947,
+  "started_at": "2026-10-30T13:52:04.616210+08:00",
+  "phase": "shadow",
+  "commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "planned_finish_before": "2026-10-30T14:27:04.616187+08:00",
+  "stage": "failed",
+  "updated_at": "2026-10-30T13:57:36+08:00",
+  "server_pid": 963,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0027/r1/service_flow_r3.py\", line 174, in execute\n    core.run_command(command,folder,'diagnostic',timeout=(phase_end-now()).total_seconds())\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0020/run_split_e2e.py\", line 144, in run_command\n    raise subprocess.CalledProcessError(returncode, argv)\nsubprocess.CalledProcessError: Command '['vllm', 'bench', 'serve', '--backend', 'vllm', '--model', 'minicpm', '--tokenizer', '/workspace/MiniCPM5-2B', '--endpoint', '/v1/completions', '--host', 'localhost', '--port', '9031', '--dataset-name', 'random', '--ignore-eos', '--random-input-len', '4096', '--random-output-len', '1024', '--max-concurrency', '64', '--num-prompts', '256']' returned non-zero exit status 1.\n",
+  "owned_children_reaped": true,
+  "finished_at": "2026-10-30T13:57:36.203016+08:00"
+}
