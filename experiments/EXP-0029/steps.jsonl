@@ -6,3 +6,5 @@
 {"time": "2026-10-30T17:41:12.730004+08:00", "action": "Pass real imports and A/B alias/client preflight before ABBA launch"}
 {"time": "2026-10-30T18:48:22.415901+08:00", "action": "Start fresh official ABBA arm", "arm": "A1", "run_name": "20261030_184822_A1"}
 {"time": "2026-10-30T19:24:57.227856+08:00", "action": "Complete all four official rounds", "arm": "A1", "run_name": "20261030_184822_A1"}
+{"time": "2026-10-30T19:25:09.397163+08:00", "action": "Start fresh official ABBA arm", "arm": "B1", "run_name": "20261030_192509_B1"}
+{"time": "2026-10-30T20:00:41.237642+08:00", "action": "Complete all four official rounds", "arm": "B1", "run_name": "20261030_192509_B1"}
