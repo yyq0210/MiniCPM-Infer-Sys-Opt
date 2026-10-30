@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": 39,
+  "suites": {
+    "standard": 30,
+    "shadow": 9
+  }
+}

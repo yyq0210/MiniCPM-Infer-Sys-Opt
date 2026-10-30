@@ -1,0 +1,66 @@
+/workspace/LeanScale/worktrees/EXP-0027-r1/FlagGems/src/flag_gems/utils/libentry.py:728: DeprecationWarning: use_cuda_graph is deprecated; use benchmark_mode='replay' or benchmark_mode='event'
+  super().__init__(*args, **kwargs)
+/workspace/LeanScale/worktrees/EXP-0027-r1/FlagGems/src/flag_gems/utils/libentry.py:411: RuntimeWarning: active Triton backend does not provide a replay benchmarker; falling back to event timing
+  resolved_benchmark = resolve_benchmarker(
+INFO 10-30 13:41:14 [__init__.py:44] Available plugins for group vllm.platform_plugins:
+INFO 10-30 13:41:14 [__init__.py:46] - fl -> vllm_fl:register
+INFO 10-30 13:41:14 [__init__.py:58] Loading plugin fl
+INFO 10-30 13:41:18 [__init__.py:237] Platform plugin fl is activated
+/usr/local/lib/python3.12/site-packages/torch/jit/_script.py:362: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[2026-10-30 13:41:21] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped topk_topp_sampler.compiled_random_sample
+[2026-10-30 13:41:21] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_sampler_compile_for_iluvatar: unwrapped logprobs.batched_count_greater_than
+[2026-10-30 13:41:21] [INFO] [vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar] patch_torch_inductor_for_iluvatar: backend '['iluvatar']' already supports target='cuda', no GPUTarget remap needed.
+INFO 10-30 13:41:21 [topp_row_parallel.py:150] LeanScale top-p grid hook installed: max_programs=64 B=17..64 V=130560 top_p_only=True shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=64 V=130560 programs=64 scratch_rows=64 scratch_bytes=33423360 k=None calls=1 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=17 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=1
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=17 V=130560 programs=17 scratch_rows=64 scratch_bytes=33423360 k=None calls=4 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=17 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=2
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=18 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=3
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=18 V=130560 programs=18 scratch_rows=64 scratch_bytes=33423360 k=None calls=6 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=18 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=4
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=19 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=5
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=19 V=130560 programs=19 scratch_rows=64 scratch_bytes=33423360 k=None calls=8 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=19 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=6
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=20 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=7
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=20 V=130560 programs=20 scratch_rows=64 scratch_bytes=33423360 k=None calls=10 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=20 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=8
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=21 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=9
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=21 V=130560 programs=21 scratch_rows=64 scratch_bytes=33423360 k=None calls=12 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=21 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=10
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=22 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=11
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=22 V=130560 programs=22 scratch_rows=64 scratch_bytes=33423360 k=None calls=14 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=22 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=12
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=23 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=13
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=23 V=130560 programs=23 scratch_rows=64 scratch_bytes=33423360 k=None calls=16 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=23 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=14
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=24 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=15
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=24 V=130560 programs=24 scratch_rows=64 scratch_bytes=33423360 k=None calls=18 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=24 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=16
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=25 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=17
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=25 V=130560 programs=25 scratch_rows=64 scratch_bytes=33423360 k=None calls=20 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=25 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=18
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=26 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=19
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=26 V=130560 programs=26 scratch_rows=64 scratch_bytes=33423360 k=None calls=22 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=26 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=20
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=27 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=21
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=27 V=130560 programs=27 scratch_rows=64 scratch_bytes=33423360 k=None calls=24 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=27 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=22
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=28 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=23
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=28 V=130560 programs=28 scratch_rows=64 scratch_bytes=33423360 k=None calls=26 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=28 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=24
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=29 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=25
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=29 V=130560 programs=29 scratch_rows=64 scratch_bytes=33423360 k=None calls=28 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=29 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=26
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=30 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=27
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=30 V=130560 programs=30 scratch_rows=64 scratch_bytes=33423360 k=None calls=30 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=30 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=28
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=31 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=29
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=31 V=130560 programs=31 scratch_rows=64 scratch_bytes=33423360 k=None calls=32 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=31 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=30
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=32 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=31
+INFO 10-30 13:41:22 [topp_row_parallel.py:141] LeanScale top-p grid active: B=32 V=130560 programs=32 scratch_rows=64 scratch_bytes=33423360 k=None calls=34 shadow=True
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=32 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=32
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=64 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=33
+INFO 10-30 13:41:22 [topp_row_parallel.py:137] LeanScale top-p shadow passed: B=64 V=130560 stride=(130560, 1) p_min=0.949999988079071 p_max=0.949999988079071 exact_mask=True rng_unchanged=True check=34
+{"status": "passed", "checks": 9, "shadow_checks": 34, "model_accuracy": "deferred_by_user"}

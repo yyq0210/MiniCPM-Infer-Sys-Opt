@@ -1,0 +1,46 @@
+{
+  "status.json": {
+    "raw_sha256": "f990454133f79e3c4152425fada03337bcde9407c17316039356f14064723f1a",
+    "archived_sha256": "f990454133f79e3c4152425fada03337bcde9407c17316039356f14064723f1a"
+  },
+  "validation.log": {
+    "raw_sha256": "16e8a1152254c598a81422042899cb5fbfc3345ec6fec57192eb0ba8d489de95",
+    "archived_sha256": "16e8a1152254c598a81422042899cb5fbfc3345ec6fec57192eb0ba8d489de95"
+  },
+  "checks.jsonl": {
+    "raw_sha256": "45daafda39e89e73196d33cc2a2659b3206b310b349cea78a7e7d553886eefeb",
+    "archived_sha256": "45daafda39e89e73196d33cc2a2659b3206b310b349cea78a7e7d553886eefeb"
+  },
+  "result.json": {
+    "raw_sha256": "144d066ad3792e51b9151f189810cc077254bbf0bb9a4d88258edd7ad7503667",
+    "archived_sha256": "144d066ad3792e51b9151f189810cc077254bbf0bb9a4d88258edd7ad7503667"
+  },
+  "code_publication.json": {
+    "raw_sha256": "d46e2eaab1d1ddaed4adae4fb473bde1713902334156b6c61b7dd05b0f8a9f84",
+    "archived_sha256": "d46e2eaab1d1ddaed4adae4fb473bde1713902334156b6c61b7dd05b0f8a9f84"
+  },
+  "standard/validation.log": {
+    "raw_sha256": "d7078ef92848cb4213392da9f0ca5b0d79910e88d9ebbc42eed2598a9e95dc5f",
+    "archived_sha256": "d7078ef92848cb4213392da9f0ca5b0d79910e88d9ebbc42eed2598a9e95dc5f"
+  },
+  "standard/checks.jsonl": {
+    "raw_sha256": "e4975ef91062529b4be06e6c19ffb135a97faba664957052d06609eef8ef19dd",
+    "archived_sha256": "e4975ef91062529b4be06e6c19ffb135a97faba664957052d06609eef8ef19dd"
+  },
+  "standard/result.json": {
+    "raw_sha256": "5feb0f80eadc2b8ffd8b247b034d04a83ae38d7c4fb12714b4f0b42807bd1561",
+    "archived_sha256": "5feb0f80eadc2b8ffd8b247b034d04a83ae38d7c4fb12714b4f0b42807bd1561"
+  },
+  "shadow/validation.log": {
+    "raw_sha256": "51deb4a998648fd58d70dc0b06b8bfac21b0adf9a12b451bc649a1d8d4aee98d",
+    "archived_sha256": "51deb4a998648fd58d70dc0b06b8bfac21b0adf9a12b451bc649a1d8d4aee98d"
+  },
+  "shadow/checks.jsonl": {
+    "raw_sha256": "e812a901823262ab0e29f0dd9754cc04ec5ae2f12b3b702c481b5fb22551f5e3",
+    "archived_sha256": "e812a901823262ab0e29f0dd9754cc04ec5ae2f12b3b702c481b5fb22551f5e3"
+  },
+  "shadow/result.json": {
+    "raw_sha256": "a395046cc33b02c28dcaa462532d556c9deb7a8002ffdecac01c77d0640cef2c",
+    "archived_sha256": "a395046cc33b02c28dcaa462532d556c9deb7a8002ffdecac01c77d0640cef2c"
+  }
+}

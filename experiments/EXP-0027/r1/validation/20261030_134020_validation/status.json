@@ -1,0 +1,12 @@
+{
+  "stage": "passed",
+  "started_at": "2026-10-30T13:40:20.192861+08:00",
+  "deadline": "2026-10-30T13:55:20.115253+08:00",
+  "checks": 39,
+  "candidate_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "finished_at": "2026-10-30T13:41:34.983720+08:00",
+  "owned_children_reaped": true
+}

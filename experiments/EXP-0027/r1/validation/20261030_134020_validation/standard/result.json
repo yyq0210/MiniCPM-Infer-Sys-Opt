@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "checks": 30,
+  "candidate_calls": 15,
+  "persistent_scratch_bytes": 33423360,
+  "full_model_accuracy": "deferred_by_user"
+}
