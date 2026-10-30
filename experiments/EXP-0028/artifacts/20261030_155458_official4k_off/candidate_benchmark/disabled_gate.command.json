@@ -1,0 +1,5 @@
+[
+  "python3",
+  "-c",
+  "import vllm_fl.dispatch.backends.vendor.iluvatar.iluvatar; import vllm.v1.sample.ops.topk_topp_triton as b; import vllm.v1.sample.ops.topk_topp_sampler as s; from vllm_fl.patches import topp_row_parallel as p; original=b.apply_top_k_top_p_triton; assert not p.install_topp_row_parallel(); assert b.apply_top_k_top_p_triton is original and s.apply_top_k_top_p_triton is original; assert not getattr(original, '_leanscale_topp_row_parallel', False); print('ORIGINAL_TOPP_ALIASES_CONFIRMED')"
+]

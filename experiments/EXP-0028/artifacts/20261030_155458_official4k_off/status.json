@@ -1,0 +1,39 @@
+{
+  "started_at": "2026-10-30T15:55:06.456793+08:00",
+  "pid": 29668,
+  "commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "arm": "A_off",
+  "planned_finish_before": "2026-10-30T17:04:58.409143+08:00",
+  "stage": "complete_official4k_off",
+  "updated_at": "2026-10-30T16:31:30+08:00",
+  "server_pid": 29820,
+  "comparison_B_on_vs_A_off": [
+    {
+      "prefill": 4096,
+      "baseline_total_tokens_s": 3552.79,
+      "candidate_total_tokens_s": 3688.33,
+      "throughput_change_percent": 3.815029877926923,
+      "baseline_ttft_ms": 5135.15,
+      "candidate_ttft_ms": 5098.34,
+      "ttft_change_percent": -0.7168242407719294,
+      "baseline_retained_runs": [
+        3337.08,
+        3636.45,
+        3684.84
+      ],
+      "baseline_cv_percent": 5.30204847996285,
+      "candidate_retained_runs": [
+        3460.5,
+        3771.46,
+        3833.03
+      ],
+      "candidate_cv_percent": 5.414205352913239
+    }
+  ],
+  "selection_changed": false,
+  "owned_children_reaped": true,
+  "finished_at": "2026-10-30T16:31:30.693036+08:00"
+}
