@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "arm": "A1",
+  "candidate_enabled": false,
+  "shadow_checks": 0,
+  "aliases_gate_passed": true,
+  "grid_events": [],
+  "kernels": [
+    {
+      "path": "triton_cache/BGFKNA242A2TO5AG5A5RCXZ2UF7VW6DTSU5OZ5PDNCHYRC4LAI7Q/_topk_topp_kernel.json",
+      "sha256": "fb431957a937d61025c9e5d8b1b530ed6e23cebc1cc3beec3f0db673ba05ff6a",
+      "ttir_sha256": "f81df5169af067c339af548704899c67f8ddba41c322f2fedccbe792edab438d",
+      "num_warps": 4,
+      "num_stages": 3,
+      "shared": 512
+    },
+    {
+      "path": "triton_cache/PPAMRVP3SSG2BIER47T45RLODSU6HZXZ4S2QTKS4BBFGPAUQMKDQ/_topk_topp_kernel.json",
+      "sha256": "09ad75baede9b6aa552a41de33db769e112d437398cdf3b032a9a62355d8ead6",
+      "ttir_sha256": "30367d6bbed776934365274e11d76a34c3057a5d866b72c7264044368825a978",
+      "num_warps": 4,
+      "num_stages": 3,
+      "shared": 512
+    },
+    {
+      "path": "triton_cache/TYTZOYH2DHTFML5BLKNMIVDJHIXY2FFCAKBBX5UMPH2CVHHP35JA/_topk_topp_kernel.json",
+      "sha256": "b34d17a52d8c4483deed849f294f01487e843bec60ea1079827edcd6aaa11d19",
+      "ttir_sha256": "b141e70cc5310c20ab5c3fe48775ca028217dbc9878f503fa9e4be4aa9bc387e",
+      "num_warps": 4,
+      "num_stages": 3,
+      "shared": 512
+    }
+  ],
+  "original_launcher_source_sha256": "64c66699cd398c2eafe9eb91f0e189162f83a6f83a209651048e163d7d6fcee8"
+}
