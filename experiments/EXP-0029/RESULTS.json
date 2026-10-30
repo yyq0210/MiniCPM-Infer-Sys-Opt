@@ -1,0 +1,218 @@
+{
+  "status": "complete_pending_independent_audit",
+  "sessions": {
+    "A1": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_184822_A1",
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "369.47",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.69",
+        "Output tok/s": "710.82",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3554.11",
+        "Mean TTFT (ms)": "5140.65",
+        "Median TTFT (ms)": "1616.65",
+        "P99 TTFT (ms)": "29942.14",
+        "Mean TPOT (ms)": "84.07",
+        "Median TPOT (ms)": "85.52",
+        "P99 TPOT (ms)": "91.57",
+        "Mean ITL (ms)": "84.07",
+        "Median ITL (ms)": "60.33",
+        "P99 ITL (ms)": "333.44"
+      },
+      "all_four_total_tokens_s": [
+        2069.34,
+        3343.09,
+        3633.02,
+        3686.22
+      ],
+      "retained_cv_percent": 5.1960805100421705,
+      "kv_tokens": 522256,
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7550.66954273358
+      },
+      "mean_queue_seconds_all_four_rounds": 7.373700725325762
+    },
+    "B1": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_192509_B1",
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "356.04",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.72",
+        "Output tok/s": "737.73",
+        "Peak Output tok/s": "1216.0",
+        "Total tok/s": "3688.63",
+        "Mean TTFT (ms)": "5099.07",
+        "Median TTFT (ms)": "1594.47",
+        "P99 TTFT (ms)": "29674.14",
+        "Mean TPOT (ms)": "80.85",
+        "Median TPOT (ms)": "82.56",
+        "P99 TPOT (ms)": "88.03",
+        "Mean ITL (ms)": "80.85",
+        "Median ITL (ms)": "57.59",
+        "P99 ITL (ms)": "328.5"
+      },
+      "all_four_total_tokens_s": [
+        2122.33,
+        3463.24,
+        3770.33,
+        3832.32
+      ],
+      "retained_cv_percent": 5.358060095217598,
+      "kv_tokens": 522256,
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7495.6057063858025
+      },
+      "mean_queue_seconds_all_four_rounds": 7.319927447642385
+    },
+    "B2": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_200055_B2",
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "356.34",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.72",
+        "Output tok/s": "737.2",
+        "Peak Output tok/s": "1216.0",
+        "Total tok/s": "3686.0",
+        "Mean TTFT (ms)": "5099.75",
+        "Median TTFT (ms)": "1591.48",
+        "P99 TTFT (ms)": "29668.86",
+        "Mean TPOT (ms)": "80.91",
+        "Median TPOT (ms)": "82.56",
+        "P99 TPOT (ms)": "88.27",
+        "Mean ITL (ms)": "80.91",
+        "Median ITL (ms)": "57.61",
+        "P99 ITL (ms)": "329.34"
+      },
+      "all_four_total_tokens_s": [
+        2119.92,
+        3454.43,
+        3770.56,
+        3833.01
+      ],
+      "retained_cv_percent": 5.506289130359109,
+      "kv_tokens": 522256,
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7489.253347521648
+      },
+      "mean_queue_seconds_all_four_rounds": 7.313723972189109
+    },
+    "A2": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_203647_A2",
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "372.39",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.69",
+        "Output tok/s": "704.86",
+        "Peak Output tok/s": "1161.67",
+        "Total tok/s": "3524.29",
+        "Mean TTFT (ms)": "5101.93",
+        "Median TTFT (ms)": "1612.93",
+        "P99 TTFT (ms)": "29920.68",
+        "Mean TPOT (ms)": "84.16",
+        "Median TPOT (ms)": "86.88",
+        "P99 TPOT (ms)": "90.41",
+        "Mean ITL (ms)": "84.16",
+        "Median ITL (ms)": "60.9",
+        "P99 ITL (ms)": "332.33"
+      },
+      "all_four_total_tokens_s": [
+        2119.88,
+        3527.51,
+        3367.6,
+        3677.76
+      ],
+      "retained_cv_percent": 4.401030274807312,
+      "kv_tokens": 522352,
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7518.315275372472
+      },
+      "mean_queue_seconds_all_four_rounds": 7.342104761105929
+    }
+  },
+  "means": {
+    "A": {
+      "Total tok/s": 3539.2,
+      "Output tok/s": 707.84,
+      "Mean TTFT (ms)": 5121.29,
+      "Mean TPOT (ms)": 84.115,
+      "Mean ITL (ms)": 84.115
+    },
+    "B": {
+      "Total tok/s": 3687.315,
+      "Output tok/s": 737.465,
+      "Mean TTFT (ms)": 5099.41,
+      "Mean TPOT (ms)": 80.88,
+      "Mean ITL (ms)": 80.88
+    }
+  },
+  "throughput_change_percent": 4.184985307414113,
+  "paired_comparisons": [
+    {
+      "A": "A1",
+      "B": "B1",
+      "throughput_change_percent": 3.7849138040184416,
+      "ttft_change_percent": -0.8088471302267197,
+      "kv_ratio": 1.0,
+      "preemptions_A": 0.0,
+      "preemptions_B": 0.0
+    },
+    {
+      "A": "A2",
+      "B": "B2",
+      "throughput_change_percent": 4.588441927310183,
+      "ttft_change_percent": -0.04272892807232198,
+      "kv_ratio": 0.9998162158850736,
+      "preemptions_A": 0.0,
+      "preemptions_B": 0.0
+    }
+  ],
+  "within_arm_summary_drift_percent": {
+    "A": -0.8390286175723349,
+    "B": -0.07130018462139232
+  },
+  "registered_gates": {
+    "mean_gain_gt_1_percent": true,
+    "both_pair_gains_positive": true,
+    "pair_ttft_regression_le_5_percent": true,
+    "mean_tpot_not_worse": true,
+    "within_arm_summary_drift_le_2_percent": true,
+    "pair_kv_capacity_at_least_99_percent": true,
+    "no_extra_preemptions": true
+  },
+  "passes_registered_engineering_gates": true,
+  "selection_changed": false,
+  "selected_experiment": "EXP-0020",
+  "successful_requests": 4096,
+  "failed_requests": 0,
+  "full_model_task_accuracy": "deferred_by_user",
+  "interpretation": "Engineering replication gate, not statistical significance; independent audit and 16K still required."
+}

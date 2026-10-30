@@ -1,0 +1,50 @@
+{
+  "stage": "complete_pending_independent_audit",
+  "started_at": "2026-10-30T18:48:22.309941+08:00",
+  "pid": 43399,
+  "completed_arms": [
+    {
+      "arm": "A1",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_184822_A1",
+      "publication": {
+        "status": "pushed",
+        "commit": "fa4e419bfe2c241af45849dd5815518b1757d65d",
+        "remote_verified": true
+      }
+    },
+    {
+      "arm": "B1",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_192509_B1",
+      "publication": {
+        "status": "pushed",
+        "commit": "65f92c9679b636db078198190c7c7c8525bc97b6",
+        "remote_verified": true
+      }
+    },
+    {
+      "arm": "B2",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_200055_B2",
+      "publication": {
+        "status": "pushed",
+        "commit": "279caf4c8068c67ed0239a55b9aa4a84aa9ad531",
+        "remote_verified": true
+      }
+    },
+    {
+      "arm": "A2",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_203647_A2",
+      "publication": {
+        "status": "pushed",
+        "commit": "f8a819a77518907dcafefed3d2ddb9832ea73075",
+        "remote_verified": true
+      }
+    }
+  ],
+  "selection_changed": false,
+  "updated_at": "2026-10-30T21:13:20.800595+08:00",
+  "current_arm": "A2",
+  "current_run": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_203647_A2",
+  "arm_deadline": "2026-10-30T21:36:47.704803+08:00",
+  "selected_experiment": "EXP-0020",
+  "result_path": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0029/RESULTS.json"
+}
