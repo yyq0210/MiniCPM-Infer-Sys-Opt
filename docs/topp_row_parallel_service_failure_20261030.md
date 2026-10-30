@@ -60,3 +60,14 @@ do_shadow = shadow and _stats['shadow_checks'] < 32
 - [r1设备验证归档](../experiments/EXP-0027/r1/validation/20261030_134020_validation/)
 - [真实服务计划](../experiments/EXP-0027/r1/service_plan.json)
 - [本次时间窗口](../experiments/EXP-0027/r1/service_window_at_launch.json)
+
+## 10月30日13:52 控制器修复后重新启动
+
+13:45尝试在模型启动前被环境预检拦截：嵌套r1目录使原helper通过EXP.parent定位EXP4索引时走错路径。随后r2准备预检缺少helper模块目录，未启动GPU服务；失败源码和错误记录均保留。r3只在环境校验期间使用原索引根，并在finally恢复r1状态目录，同时补齐导入路径；真实安装源码/版本预检通过。推理候选c50b5f0和已通过的39项检查保持，不重复设备测试。
+
+有效流程于13:52:04重新启动，目录为artifacts/EXP-0027-r1/service_r3；新计算截止15:46:56，保存目标15:56:56，前一个15:40窗口已作废。真实检查通过后自动开始全新服务的官方四轮；失败停止并归档。当前仍无新的正式性能成绩。
+
+- [修复后的预检](../experiments/EXP-0027/r1/environment_preflight_r3.json)
+- [有效测评计划](../experiments/EXP-0027/r1/service_plan_r3.json)
+- [有效时间窗口](../experiments/EXP-0027/r1/service_window_r3_at_launch.json)
+- [控制器预检失败记录](../experiments/EXP-0027/r1/controller_failures/r2/)
