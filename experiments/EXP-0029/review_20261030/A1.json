@@ -1,0 +1,90 @@
+{
+  "status": "passed_completed_arm_only",
+  "checked_at": "2026-10-30T20:01:08.918855+08:00",
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "helper_sha256": "b82c526ce398875c7e715340bac2574f74572c814c650de610e8c0857c1a0ea0",
+  "session": {
+    "status": "passed",
+    "arm": "A1",
+    "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_184822_A1",
+    "started_at": "2026-10-30T18:48:22.415564+08:00",
+    "finished_at": "2026-10-30T19:25:00.848505+08:00",
+    "archive_files_checked": 20,
+    "publication": {
+      "status": "pushed",
+      "commit": "fa4e419bfe2c241af45849dd5815518b1757d65d",
+      "remote_verified": true
+    },
+    "original_route": {
+      "kv_tokens": 522256,
+      "gqa_kernels": {
+        "decode": 64,
+        "prefill": 64
+      },
+      "compiled_mlp_blocks": 42,
+      "logical_weight_nodes": 84,
+      "gqa_route_sha256": "c179cd9ddc861a777a88f8cb2e29f0310732908408aeb983e8472b84f02aeb7c",
+      "layout_route_sha256": "32a3361914dcc92fcb7e9ca72308254eadac4a9f9013f9deda2c9dccabd90e96"
+    },
+    "route_verifier_sha256": "001bd5e695817fa1d545e6af507e27efa758462e14f60e1f93b1451739260d3c",
+    "top_p_variants": 3,
+    "top_p_grid_events": 0,
+    "max_logged_candidate_calls": 0,
+    "shadow_checks": 0,
+    "measured": {
+      "raw_sha256": "827a12706e3dc9de00fa88e3d50a767cfb9ecaf2878ed7a9a2043c19b7049e2e",
+      "summary_sha256": "e66207b2119c7b1f0767f4e60ac16b00d3f2ea6958b953cd8602ca410c7a8efd",
+      "summary": {
+        "Prefill": "4096",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "256",
+        "Benchmark Duration (s)": "369.47",
+        "Total Input Tokens": "1048576.0",
+        "Total Output Tokens": "262144.0",
+        "Req/s": "0.69",
+        "Output tok/s": "710.82",
+        "Peak Output tok/s": "1152.0",
+        "Total tok/s": "3554.11",
+        "Mean TTFT (ms)": "5140.65",
+        "Median TTFT (ms)": "1616.65",
+        "P99 TTFT (ms)": "29942.14",
+        "Mean TPOT (ms)": "84.07",
+        "Median TPOT (ms)": "85.52",
+        "P99 TPOT (ms)": "91.57",
+        "Mean ITL (ms)": "84.07",
+        "Median ITL (ms)": "60.33",
+        "P99 ITL (ms)": "333.44"
+      },
+      "all_four_total_tokens_s": [
+        2069.34,
+        3343.09,
+        3633.02,
+        3686.22
+      ],
+      "retained_total_tokens_s": [
+        3343.09,
+        3633.02,
+        3686.22
+      ],
+      "retained_cv_percent": 5.1960805100421705,
+      "retained_first_to_last_change_percent": 10.263857688545608,
+      "successful_requests": 1024,
+      "failed_requests": 0
+    },
+    "scheduling": {
+      "counter_delta": {
+        "num_preemptions_total": 0.0,
+        "request_queue_time_seconds_count": 1024.0,
+        "request_queue_time_seconds_sum": 7550.66954273358
+      },
+      "mean_queue_seconds_all_four_rounds": 7.373700725325762,
+      "sampled_peak_kv_percent": 62.0
+    }
+  },
+  "whole_abba_audited": false,
+  "selection_changed": false
+}
