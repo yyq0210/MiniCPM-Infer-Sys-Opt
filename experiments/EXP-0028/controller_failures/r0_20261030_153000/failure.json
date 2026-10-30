@@ -1,0 +1,7 @@
+{
+  "stage": "failed_before_gpu",
+  "recorded_at": "2026-10-30T15:54:39.550424+08:00",
+  "error": "ModuleNotFoundError: common while importing layout_checks",
+  "gpu_workload_started": false,
+  "original_script_sha256": "2743f1e43ecf065841ccc253da82f3200f2666b0cdf81ddcabf6f8f1e33175c5"
+}
