@@ -1,0 +1,31 @@
+{
+  "order": [
+    "A1",
+    "B1",
+    "B2",
+    "A2"
+  ],
+  "case": [
+    4096,
+    1024,
+    64,
+    256
+  ],
+  "four_rounds_discard_first": true,
+  "commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "thresholds": {
+    "mean_throughput_gain_gt_percent": 1,
+    "pair_gain_gt_percent": 0,
+    "pair_ttft_regression_le_percent": 5,
+    "mean_tpot_regression_le_percent": 0,
+    "within_arm_session_drift_abs_le_percent": 2,
+    "kv_capacity_fraction_ge": 0.99
+  },
+  "automatic_selection": false,
+  "max_minutes_per_arm": 60,
+  "archive_margin_minutes_per_arm": 5,
+  "final_margin_minutes": 10
+}
