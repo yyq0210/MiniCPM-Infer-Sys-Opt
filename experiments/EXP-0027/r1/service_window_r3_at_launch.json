@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-10-30T13:51:56.301673+08:00",
+  "compute_stop_at": "2026-10-30T15:46:56.301673+08:00",
+  "save_target_at": "2026-10-30T15:56:56.301673+08:00",
+  "run_upper_bound": "2026-10-30T17:00:00+08:00",
+  "scope": "Fresh afternoon run; self-imposed 17:00 upper bound, not a shutdown confirmation"
+}
