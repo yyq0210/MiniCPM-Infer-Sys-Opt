@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-30T17:41:12.728834+08:00",
+  "real_dependency_imports": true,
+  "actual_subprocess_aliases_and_cli_both_arms": true,
+  "general_plugin_loader_called": true,
+  "actual_schedule_helper": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0020/analyze_schedule.py",
+  "actual_common_helper": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0025/common.py",
+  "model_loaded": false,
+  "gpu_numerical_retests": false,
+  "source_hashes": {
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0029/run_abba_r1.py": "f9f8a6374b109cc003032c9ceef4289f51dd65a7793df7969f1727662ddb89c8",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0029/protocol.json": "ff403dfe9fe99a1c40dfa10d11386cac55d22ff675b24c4d26cf45f751de44c0",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0020/run_split_e2e.py": "2e599679dfe365de907b5071cee469b08489b66ff371588bf78c0f1782281ab1",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0020/analyze_schedule.py": "574042b1d7d97454691b3608f2fe0073cc760a6c0314a1cd1315bc95a769ea9f",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0025/layout_checks.py": "b8915b5d6575a7ba4c9fa6eaffb5bee10e7d05988b41cbc6fd98baae35ba5e07",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0025/common.py": "bb51ee4f2d240293a0f9fdfb128ccc55f1183f531eedd3dad035c79b67251cb3",
+    "/usr/local/lib/python3.12/site-packages/vllm/plugins/__init__.py": "4be66190ceaee9d0465f62ade801a8e94a907d7ab9fdb0a67fa14ce87448ae9f",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0027/r1/implementation_sources.json": "069f5e0d08646b1a75656814d1df4ff53ee45c2a4eec55cc1fb5e5d42103f1a4",
+    "/workspace/vllm-plugin-FL/benchmarks/benchmark_throughput_serve.py": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565"
+  }
+}
