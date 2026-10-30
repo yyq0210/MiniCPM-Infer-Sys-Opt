@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-30T15:10:11.659001+08:00",
+  "selected_experiment": "EXP-0020",
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "inherited_ast_ttir_verifier_sha256": "001bd5e695817fa1d545e6af507e27efa758462e14f60e1f93b1451739260d3c",
+  "diagnostic": {
+    "run_name": "20261030_141659_shadow",
+    "started_at": "2026-10-30T14:16:59.168845+08:00",
+    "finished_at": "2026-10-30T14:33:06.380796+08:00",
+    "archive_files_checked": 19,
+    "publication": {
+      "status": "pushed",
+      "commit": "cd2c693910b9d8e3cd09815af3e82d281a3744ec",
+      "remote_verified": true
+    },
+    "top_p_variants": 3,
+    "top_p_grid_events": 52,
+    "max_logged_candidate_calls": 4096,
+    "kv_tokens": 522352,
+    "gqa_kernels": {
+      "decode": 64,
+      "prefill": 64
+    },
+    "compiled_mlp_blocks": 42,
+    "logical_weight_nodes": 84,
+    "gqa_route_sha256": "353bf6ffc816cf6f0883ccc00153c398ca7fa3cadde04c8f96352452a44601bc",
+    "layout_route_sha256": "11b3bdffb9e7c7441d6f8fb691df2b670a06c56ee934d3c601f3d9ecdb5bfd2c",
+    "successful_requests": 256,
+    "failed_requests": 0,
+    "exact_mask_rng_checks": 96,
+    "diagnostics_excluded_from_performance": true
+  },
+  "official": {
+    "run_name": "20261030_143316_official4k",
+    "started_at": "2026-10-30T14:33:16.296348+08:00",
+    "finished_at": "2026-10-30T15:08:29.570097+08:00",
+    "archive_files_checked": 22,
+    "publication": {
+      "status": "pushed",
+      "commit": "c6c5f0a97fd830e8e2e73fc1abaf3eb9268862a5",
+      "remote_verified": true
+    },
+    "top_p_variants": 3,
+    "top_p_grid_events": 64,
+    "max_logged_candidate_calls": 16384,
+    "kv_tokens": 522256,
+    "gqa_kernels": {
+      "decode": 64,
+      "prefill": 64
+    },
+    "compiled_mlp_blocks": 42,
+    "logical_weight_nodes": 84,
+    "gqa_route_sha256": "59bec1a0ca61d79dc99732a76e7c334e694b7b45b88a8f44733e8ba948bc1093",
+    "layout_route_sha256": "017650f3d1649be5a42b1f1de39040321b9f38d9626fbd3e29a47ff8a5194f6c",
+    "shadow_checks": 0
+  },
+  "raw_sha256": "4caa9cd8688cb626f762148125e4fed176ca29b69a7d188469858d3640f5eafb",
+  "summary_sha256": "0d30e867cfe29641b4a7413971ce9c164cd4fd2304220df04a205229402e93c1",
+  "all_four_successful_requests": 1024,
+  "all_four_failed_requests": 0,
+  "all_four_total_tokens_s": [
+    2131.14,
+    3460.5,
+    3771.46,
+    3833.03
+  ],
+  "retained_total_tokens_s": [
+    3460.5,
+    3771.46,
+    3833.03
+  ],
+  "retained_cv_percent": 5.414205352913239,
+  "summary": {
+    "Prefill": "4096",
+    "Decode": "1024",
+    "Conc": "64",
+    "Num Prompts": "256",
+    "Benchmark Duration (s)": "356.09",
+    "Total Input Tokens": "1048576.0",
+    "Total Output Tokens": "262144.0",
+    "Req/s": "0.72",
+    "Output tok/s": "737.67",
+    "Peak Output tok/s": "1216.0",
+    "Total tok/s": "3688.33",
+    "Mean TTFT (ms)": "5098.34",
+    "Median TTFT (ms)": "1589.16",
+    "P99 TTFT (ms)": "29670.83",
+    "Mean TPOT (ms)": "80.86",
+    "Median TPOT (ms)": "82.54",
+    "P99 TPOT (ms)": "88.1",
+    "Mean ITL (ms)": "80.86",
+    "Median ITL (ms)": "57.59",
+    "P99 ITL (ms)": "326.19"
+  },
+  "metrics_against_previous_day_A2": {
+    "Total tok/s": {
+      "reference": 3573.06,
+      "candidate": 3688.33,
+      "change_percent": 3.2260863237673076
+    },
+    "Output tok/s": {
+      "reference": 714.61,
+      "candidate": 737.67,
+      "change_percent": 3.22693497152291
+    },
+    "Mean TTFT (ms)": {
+      "reference": 5099.39,
+      "candidate": 5098.34,
+      "change_percent": -0.020590698103106764
+    },
+    "Mean TPOT (ms)": {
+      "reference": 83.28,
+      "candidate": 80.86,
+      "change_percent": -2.9058597502401584
+    },
+    "Mean ITL (ms)": {
+      "reference": 83.28,
+      "candidate": 80.86,
+      "change_percent": -2.9058597502401584
+    }
+  },
+  "reference_scope": "Previous-day EXP25 A2; no fresh same-day baseline in this flow",
+  "change_vs_historical_exp20_percent": 3.05130870158028,
+  "scheduling": {
+    "counter_delta": {
+      "num_preemptions_total": 0.0,
+      "request_queue_time_seconds_count": 1024.0,
+      "request_queue_time_seconds_sum": 7421.505585424602
+    },
+    "mean_queue_seconds_all_four_rounds": 7.247564048266213,
+    "sampled_peak_kv_percent": 61.9
+  },
+  "selection_changed": false,
+  "full_model_task_accuracy": "deferred_by_user"
+}

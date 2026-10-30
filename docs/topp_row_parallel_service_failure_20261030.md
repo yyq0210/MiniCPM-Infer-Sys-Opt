@@ -83,3 +83,8 @@ r3服务完成编译、预热和路由检查，13:57:13启用arm时预热检查�
 - [客户端实际预检](../experiments/EXP-0027/r1/client_preflight_r5.json)
 - [当前计划](../experiments/EXP-0027/r1/service_plan_r5.json)
 - [当前窗口](../experiments/EXP-0027/r1/service_window_r5_at_launch.json)
+
+
+## 2026-10-30：top-p 首组官方4K完成
+
+3688.33 tok/s，相对EXP20历史3579.12为+3.05%；保留3460.50/3771.46/3833.03，CV5.414%，1024请求零失败。真实模型96次mask/RNG检查通过，正式shadow=0。跨日单会话尚不能确认稳定因果收益，保留EXP20，追加同日关闭开关对照。详见[完整结果与前后思路](topp_row_parallel_e2e_20261030.md)。

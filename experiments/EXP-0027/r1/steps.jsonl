@@ -20,3 +20,4 @@
 {"time": "2026-10-30T14:33:02.209776+08:00", "action": "Complete top-p real-service phase", "phase": "shadow", "run_name": "20261030_141659_shadow"}
 {"time": "2026-10-30T14:33:16.297225+08:00", "action": "Start top-p real service phase", "phase": "official4k", "run_name": "20261030_143316_official4k", "deadline": "2026-10-30T15:43:16.296261+08:00"}
 {"time": "2026-10-30T15:08:25.496451+08:00", "action": "Complete top-p real-service phase", "phase": "official4k", "run_name": "20261030_143316_official4k"}
+{"time": "2026-10-30T15:23:14.502214+08:00", "action": "Independent full diagnostic and official4K audit passed; positive historical comparison, keep EXP20; register EXP28 same-day off control"}

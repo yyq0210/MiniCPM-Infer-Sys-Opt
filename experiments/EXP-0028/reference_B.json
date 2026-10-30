@@ -1,0 +1,32 @@
+{
+  "run_directory": "/workspace/LeanScale/artifacts/EXP-0027-r1/service_r5/20261030_143316_official4k",
+  "commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "raw_sha256": "4caa9cd8688cb626f762148125e4fed176ca29b69a7d188469858d3640f5eafb",
+  "summary_sha256": "0d30e867cfe29641b4a7413971ce9c164cd4fd2304220df04a205229402e93c1",
+  "audit_sha256": "eed4ae6d2ea03f082e95819051b1d0b66708d5944e2250168b121b2fefd32c70",
+  "summary": {
+    "Prefill": "4096",
+    "Decode": "1024",
+    "Conc": "64",
+    "Num Prompts": "256",
+    "Benchmark Duration (s)": "356.09",
+    "Total Input Tokens": "1048576.0",
+    "Total Output Tokens": "262144.0",
+    "Req/s": "0.72",
+    "Output tok/s": "737.67",
+    "Peak Output tok/s": "1216.0",
+    "Total tok/s": "3688.33",
+    "Mean TTFT (ms)": "5098.34",
+    "Median TTFT (ms)": "1589.16",
+    "P99 TTFT (ms)": "29670.83",
+    "Mean TPOT (ms)": "80.86",
+    "Median TPOT (ms)": "82.54",
+    "P99 TPOT (ms)": "88.1",
+    "Mean ITL (ms)": "80.86",
+    "Median ITL (ms)": "57.59",
+    "P99 ITL (ms)": "326.19"
+  }
+}

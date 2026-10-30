@@ -1,0 +1,10 @@
+{
+  "selected_experiment": "EXP-0020",
+  "candidate_experiment": "EXP-0027",
+  "candidate_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "decision": "positive_historical_comparison_pending_same_day_control",
+  "reason": "Official4K 3688.33, +3.051% vs historical EXP20; retained CV5.414%, single cross-day session; no automatic selection"
+}
