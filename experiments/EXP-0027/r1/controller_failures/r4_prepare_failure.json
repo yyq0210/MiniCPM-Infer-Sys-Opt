@@ -1,0 +1,4 @@
+{
+  "time": "2026-10-30T14:12:30.844356+08:00",
+  "error": "Traceback (most recent call last):\n  File \"<string>\", line 18, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/workspace/LeanScale/staging/exp27-r1-20261030/service_flow_r4.py\", line 263, in <module>\n    else:prepare()\n         ^^^^^^^^^\n  File \"/workspace/LeanScale/staging/exp27-r1-20261030/service_flow_r4.py\", line 92, in prepare\n    assert marker.exists() and '--num-prompts' in (preflight/'client_help.log').read_text()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

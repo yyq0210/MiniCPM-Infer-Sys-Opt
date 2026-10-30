@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "client_flags_isolated_argv_unchanged",
+    "server_environment_unmodified",
+    "environment_restored_after_client_failure"
+  ],
+  "scope": "CPU role separation only; actual CLI preflight pending"
+}

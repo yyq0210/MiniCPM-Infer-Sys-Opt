@@ -1,0 +1,5 @@
+{
+  "time": "2026-10-30T14:16:22.175764+08:00",
+  "action": "r4 CLI exited successfully with shadow=False and existing marker; help text assertion failed because vLLM default help shows groups, not --num-prompts; r5 checks observed usage signature and installed shadow=False hook",
+  "gpu_workload_started": false
+}

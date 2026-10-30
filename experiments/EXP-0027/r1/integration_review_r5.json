@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": 39,
+  "checked_at": "2026-10-30T14:16:42.731211+08:00",
+  "checks_sha256": "45daafda39e89e73196d33cc2a2659b3206b310b349cea78a7e7d553886eefeb",
+  "candidate_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "code_publication": {
+    "commits": {
+      "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+      "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+    },
+    "remote_verified": true,
+    "branch": "leanscale/iluvatar-topp-shadow-coverage"
+  },
+  "test_publication": {
+    "status": "pushed",
+    "commit": "4b1e0533645eb836e981eb6ec3254304fab84469",
+    "remote_verified": true
+  }
+}

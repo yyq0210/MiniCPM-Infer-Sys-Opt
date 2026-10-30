@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-30T14:16:42.728200+08:00",
+  "existing_server_marker": true,
+  "client_environment": {
+    "VLLM_FL_TOPP_ROW_PARALLEL": "1",
+    "VLLM_FL_TOPP_ROW_PARALLEL_SHADOW": "0",
+    "VLLM_FL_TOPP_ROW_PARALLEL_SHADOW_ARM_FILE": "",
+    "PYTHONPATH": "/workspace/LeanScale/worktrees/EXP-0027-r1/vllm-plugin-FL:/workspace/LeanScale/worktrees/EXP-0027-r1/FlagGems/src",
+    "VLLM_PLUGINS": "fl"
+  },
+  "server_environment_restored": true,
+  "help_log_sha256": "925db2865a332c8207d598856a89bca933e20c359e19ea3440f96c505290c7ec",
+  "sampling_arguments_changed": false
+}

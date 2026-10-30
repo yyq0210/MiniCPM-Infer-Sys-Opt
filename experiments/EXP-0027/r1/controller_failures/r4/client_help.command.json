@@ -1,0 +1,6 @@
+[
+  "vllm",
+  "bench",
+  "serve",
+  "--help"
+]

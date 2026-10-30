@@ -25,3 +25,8 @@
 ## 实际服务流程
 
 39项独立引擎入口检查与归档hash已复核，r1候选提交由candidate_commits.json固定，已推个人fork。先shadow=1运行官方benchmark展开后的单轮4K/1024/64/256命令（只作诊断），要求计时区间真实B64/p=.95至少一次exact-mask和RNG检查。接线通过后停止服务、归档；再shadow=0独立新服务/缓存运行原官方脚本四轮弃首。诊断数据不合并进性能。原42MLP布局/GQA/RoPEKV/FULL捕获与实际top-p grid/counter/TTIR均检查。对照为历史EXP25 A2（3573.06 tok/s），并单列EXP20历史和ABBA均值。独立审核前不自动升级。
+
+
+## 实际服务流程
+
+39项独立引擎入口检查与归档hash已复核，r1候选提交由candidate_commits.json固定，已推个人fork。先shadow=1运行官方benchmark展开后的单轮4K/1024/64/256命令（只作诊断），要求计时区间真实B64/p=.95至少一次exact-mask和RNG检查。接线通过后停止服务、归档；再shadow=0独立新服务/缓存运行原官方脚本四轮弃首。诊断数据不合并进性能。原42MLP布局/GQA/RoPEKV/FULL捕获与实际top-p grid/counter/TTIR均检查。对照为历史EXP25 A2（3573.06 tok/s），并单列EXP20历史和ABBA均值。独立审核前不自动升级。
