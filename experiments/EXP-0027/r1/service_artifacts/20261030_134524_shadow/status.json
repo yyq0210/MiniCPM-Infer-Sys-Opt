@@ -1,0 +1,15 @@
+{
+  "pid": 762,
+  "started_at": "2026-10-30T13:45:24.098033+08:00",
+  "phase": "shadow",
+  "commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "planned_finish_before": "2026-10-30T14:20:24.098010+08:00",
+  "stage": "failed",
+  "updated_at": "2026-10-30T13:45:30+08:00",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0027/r1/service_flow.py\", line 138, in execute\n    write(run/'idle.json',idle);core.verify_installed_environment();assert sha(core.BENCH_FILE)==BENCH_SHA\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0020/run_split_e2e.py\", line 253, in verify_installed_environment\n    sources = json.loads(index.read_text())\n                         ^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0027/EXP-0004/artifacts/analysis_20261020/source_index.json'\n",
+  "owned_children_reaped": true,
+  "finished_at": "2026-10-30T13:45:30.265965+08:00"
+}

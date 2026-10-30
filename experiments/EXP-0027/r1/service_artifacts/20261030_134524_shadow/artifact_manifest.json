@@ -1,0 +1,14 @@
+{
+  "idle.json": {
+    "raw_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc",
+    "archived_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc"
+  },
+  "status.json": {
+    "raw_sha256": "4e920e20723fbf7c03214a7982209b5ac3655ba5e8060b640b8bb6ea21e5dec2",
+    "archived_sha256": "69df956b2aa6f232598034f1d88a9a791ad0a9b2e20f08a6e2f76bdf38f47f0e"
+  },
+  "stage_history.jsonl": {
+    "raw_sha256": "b045d0e368c8648534fa1ff57524963837470c60adf03088402b1aec77979d41",
+    "archived_sha256": "b045d0e368c8648534fa1ff57524963837470c60adf03088402b1aec77979d41"
+  }
+}
