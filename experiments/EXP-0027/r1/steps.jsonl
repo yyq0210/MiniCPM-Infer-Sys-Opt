@@ -1,0 +1,2 @@
+{"time": "2026-10-30T13:40:11.830582+08:00", "action": "Begin r1 separate worktree after archived hypothesis and 11 CPU checks", "baseline": {"vllm-plugin-FL": "2a4cf99f5a765dc7de3a3337303e91183bc9decd", "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"}}
+{"time": "2026-10-30T13:40:12.387946+08:00", "action": "Apply per-batch armed shadow policy; original launcher and numerical algorithm retained", "files": ["vllm_fl/patches/topp_row_parallel.py", "tests/standalone_topp_shadow_budget.py"], "expected_checks": 39}
