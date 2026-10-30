@@ -1,0 +1,38 @@
+--- a/vllm_fl/patches/topp_row_parallel.py
++++ b/vllm_fl/patches/topp_row_parallel.py
+@@ -16,0 +17 @@
++SHADOW_ARM_ENV = 'VLLM_FL_TOPP_ROW_PARALLEL_SHADOW_ARM_FILE'
+@@ -22,0 +24,24 @@
++class _ShadowBudget:
++    """Per-batch diagnostic quota, armed only after service warmup."""
++    def __init__(self, arm_file):
++        if not arm_file or not Path(arm_file).is_absolute():
++            raise ValueError('Shadow diagnostics require an absolute arm file path')
++        self.arm_file = Path(arm_file)
++        if self.arm_file.exists():
++            raise ValueError('Shadow arm file must not exist before service startup')
++        self.armed = False
++        self.passed = {}
++
++    def should_check(self, batch):
++        if not 17 <= batch <= 64:
++            return False
++        if not self.armed:
++            self.armed = self.arm_file.is_file()
++        return self.armed and self.passed.get(batch, 0) < 2
++
++    def record_pass(self, batch):
++        if not self.armed or not 17 <= batch <= 64 or self.passed.get(batch, 0) >= 2:
++            raise RuntimeError('Invalid shadow budget update')
++        self.passed[batch] = self.passed.get(batch, 0) + 1
++
++
+@@ -26,0 +52 @@
++    envs.environment_variables.setdefault(SHADOW_ARM_ENV, lambda: os.environ.get(SHADOW_ARM_ENV, ''))
+@@ -65,0 +92 @@
++    shadow_budget = _ShadowBudget(os.environ.get(SHADOW_ARM_ENV)) if shadow else None
+@@ -91 +118 @@
+-        do_shadow = shadow and _stats['shadow_checks'] < 32
++        do_shadow = shadow_budget is not None and shadow_budget.should_check(batch)
+@@ -106,0 +134 @@
++            shadow_budget.record_pass(batch)

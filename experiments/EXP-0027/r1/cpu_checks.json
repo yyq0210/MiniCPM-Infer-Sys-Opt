@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "scope": "CPU diagnostic budget regression only; GPU checks pending",
+  "checks": [
+    {
+      "name": "invalid_path_rejected",
+      "passed": true
+    },
+    {
+      "name": "warmup_B64_does_not_spend_quota",
+      "passed": true
+    },
+    {
+      "name": "prearm_record_rejected",
+      "passed": true
+    },
+    {
+      "name": "stale_arm_rejected_on_new_service",
+      "passed": true
+    },
+    {
+      "name": "r0_failure_reproduced_r1_B64_reserved",
+      "passed": true
+    },
+    {
+      "name": "repeated_B64_bounded",
+      "passed": true
+    },
+    {
+      "name": "overquota_record_rejected",
+      "passed": true
+    },
+    {
+      "name": "failed_compare_would_not_consume",
+      "passed": true
+    },
+    {
+      "name": "all_48_batches_bounded_to_96",
+      "passed": true
+    },
+    {
+      "name": "unsupported_batches_excluded",
+      "passed": true
+    },
+    {
+      "name": "shadow_off_skips_constructor_and_file",
+      "passed": true
+    }
+  ],
+  "source_sha256": "897b3981551c2ac5ec5b5b865fd3167f4851734bec2e9526079a4d3a08c4486b",
+  "gpu_validation": "not_run",
+  "deployed": false
+}

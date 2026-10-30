@@ -14,3 +14,7 @@
 ## 实际服务流程
 
 30项独立引擎入口检查与归档hash已复核，候选2a4cf99f5a765dc7de3a3337303e91183bc9decd已推个人fork。先shadow=1运行官方benchmark展开后的单轮4K/1024/64/256命令（只作诊断），要求计时区间真实B64/p=.95至少一次exact-mask和RNG检查。接线通过后停止服务、归档；再shadow=0独立新服务/缓存运行原官方脚本四轮弃首。诊断数据不合并进性能。原42MLP布局/GQA/RoPEKV/FULL捕获与实际top-p grid/counter/TTIR均检查。对照为同日EXP25 A2（3573.06 tok/s），并单列EXP20历史和ABBA均值。独立审核前不自动升级。
+
+## 2026-10-30 审核更新
+
+实际服务于10月29日20:52停止：256请求零失败、32次B17..32 mask/RNG检查通过，但全局32次配额提前耗尽，B64缺少精确shadow证据。按预设条件终止，未启动正式四轮。失败日志保留，selected仍为EXP20。[失败复盘](../../docs/topp_row_parallel_service_failure_20261030.md)和[独立归档审核](review_20261030/audit.json)已补齐；[r1诊断补丁](r1/)的11项CPU回归通过，尚未部署，GPU与controller接线待服务器恢复。不得复用过期的10月29日窗口。
