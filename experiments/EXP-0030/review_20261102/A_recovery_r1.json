@@ -1,0 +1,85 @@
+{
+  "status": "passed_completed_arm_only",
+  "checked_at": "2026-11-02T19:54:58.068381+08:00",
+  "session": {
+    "status": "passed",
+    "arm": "A",
+    "run_directory": "/workspace/LeanScale/artifacts/EXP-0030/20261102_165006_A",
+    "started_at": "2026-11-02T16:50:06.780943+08:00",
+    "finished_at": "2026-11-02T17:59:14.013192+08:00",
+    "archive_files_checked": 20,
+    "publication": {
+      "status": "local_committed_pending_push",
+      "commit": "b8c91390a0595fe44df93ab46198d2e641df01a0",
+      "remote_verified": false,
+      "local_commit_verified": true
+    },
+    "original_route": {
+      "kv_tokens": 522256,
+      "gqa_kernels": {
+        "decode": 36,
+        "prefill": 31
+      },
+      "compiled_mlp_blocks": 42,
+      "logical_weight_nodes": 84,
+      "gqa_route_sha256": "36e46fc7b7aaf33bc9433d1e7193f29c523b5f7eaa6d170aaacf4a568e07f38f",
+      "layout_route_sha256": "05bdf35441b4add1c4fc86c41631de5c4bb78a0e00928219ec23b295340d9fd5"
+    },
+    "route_verifier_sha256": "cf65f3ba9600c803c041df3113d4f4e4be4e58b8afa996e117e9c704427402b4",
+    "top_p_variants": 3,
+    "top_p_grid_events": 0,
+    "max_logged_candidate_calls": 0,
+    "shadow_checks": 0,
+    "measured": {
+      "raw_sha256": "1c0f415b9c4b037b825ad046f764d867b3d665f92199e2b25ae71c2348d99282",
+      "summary_sha256": "1ec61f2dec76a79ea0f2239d65dd397aa11fc72d9f7377384450e56652525c58",
+      "summary": {
+        "Prefill": "16384",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "128",
+        "Benchmark Duration (s)": "876.41",
+        "Total Input Tokens": "2097152.0",
+        "Total Output Tokens": "131072.0",
+        "Req/s": "0.15",
+        "Output tok/s": "149.55",
+        "Peak Output tok/s": "372.0",
+        "Total tok/s": "2542.44",
+        "Mean TTFT (ms)": "203174.54",
+        "Median TTFT (ms)": "225133.19",
+        "P99 TTFT (ms)": "408025.46",
+        "Mean TPOT (ms)": "178.05",
+        "Median TPOT (ms)": "191.24",
+        "P99 TPOT (ms)": "228.16",
+        "Mean ITL (ms)": "178.05",
+        "Median ITL (ms)": "88.25",
+        "P99 ITL (ms)": "816.43"
+      },
+      "all_four_total_tokens_s": [
+        2191.34,
+        2543.61,
+        2542.69,
+        2541.03
+      ],
+      "retained_total_tokens_s": [
+        2543.61,
+        2542.69,
+        2541.03
+      ],
+      "retained_cv_percent": 0.05142957167993166,
+      "retained_first_to_last_change_percent": -0.10143064384869893,
+      "successful_requests": 512,
+      "failed_requests": 0
+    },
+    "scheduling": {
+      "counter_delta": {
+        "num_preemptions_total": 16.0,
+        "request_queue_time_seconds_count": 512.0,
+        "request_queue_time_seconds_sum": 104319.11701264884
+      },
+      "mean_queue_seconds_all_four_rounds": 203.74827541532977,
+      "sampled_peak_kv_percent": 100.0
+    }
+  },
+  "whole_pair_audited": false
+}

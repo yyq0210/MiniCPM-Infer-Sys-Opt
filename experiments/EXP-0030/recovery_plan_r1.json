@@ -1,0 +1,8 @@
+{
+  "source_hashes": {
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/resume_B_r1.py": "83aaa26db1b215d533f41d3f16f8663c9c53770c4a04e4b447402a8304cbb6cc",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/recovery_protocol_r1.json": "452e73dcdeb499714d57b29e875d045b8ca434aaf71f5617143539dea1962f50",
+    "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/review_20261102/audit_pair_recovered_r1.py": "cf65f3ba9600c803c041df3113d4f4e4be4e58b8afa996e117e9c704427402b4"
+  },
+  "original_controller_sha256": "6e2097a5d6b1799e7240ea443a1bb345a31d9ed3e9b698ed9d082943ba988034"
+}

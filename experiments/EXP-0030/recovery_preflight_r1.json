@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-02T19:54:58.068777+08:00",
+  "A_independently_audited": true,
+  "no_A_rerun": true,
+  "reused_real_alias_and_cli_preflight": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/preflight.json",
+  "source_changes": false,
+  "remaining_arm": "B"
+}
