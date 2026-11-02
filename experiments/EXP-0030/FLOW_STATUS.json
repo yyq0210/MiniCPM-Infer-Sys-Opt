@@ -1,0 +1,12 @@
+{
+  "stage": "failed",
+  "started_at": "2026-11-02T16:50:06.677541+08:00",
+  "pid": 844,
+  "completed_arms": [],
+  "selection_changed": false,
+  "updated_at": "2026-11-02T18:01:14.282185+08:00",
+  "current_arm": "A",
+  "current_run": "/workspace/LeanScale/artifacts/EXP-0030/20261102_165006_A",
+  "arm_deadline": "2026-11-02T18:35:06.780921+08:00",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/run_pair.py\", line 298, in execute\n    assert core.STATE['owned_children_reaped'] and pub['remote_verified'], 'Stop after cleanup or archive failure'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Stop after cleanup or archive failure\n"
+}
