@@ -1,0 +1,2 @@
+Prefill,Decode,Conc,Num Prompts,Benchmark Duration (s),Total Input Tokens,Total Output Tokens,Req/s,Output tok/s,Peak Output tok/s,Total tok/s,Mean TTFT (ms),Median TTFT (ms),P99 TTFT (ms),Mean TPOT (ms),Median TPOT (ms),P99 TPOT (ms),Mean ITL (ms),Median ITL (ms),P99 ITL (ms)
+16384,1024,64,128,871.14,2097152.0,131072.0,0.15,150.46,372.0,2557.84,202097.05,223571.13,405520.13,176.84,189.86,226.12,176.84,87.12,814.27
