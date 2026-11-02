@@ -1,0 +1,82 @@
+{
+  "idle.json": {
+    "raw_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc",
+    "archived_sha256": "2650445b165248f95d2f7f5bc58240d0116f1978fd320dffd50421f42044f7fc"
+  },
+  "environment_check.json": {
+    "raw_sha256": "ddf17129875390cf8ce3c7cdf11684f5270a013455e239d49352ef344255fa18",
+    "archived_sha256": "ddf17129875390cf8ce3c7cdf11684f5270a013455e239d49352ef344255fa18"
+  },
+  "explicit_environment.json": {
+    "raw_sha256": "1fc84f0f3edc0f7485081af652f53ce5a34df16065fabd7960cb8d63178a9052",
+    "archived_sha256": "1fc84f0f3edc0f7485081af652f53ce5a34df16065fabd7960cb8d63178a9052"
+  },
+  "status.json": {
+    "raw_sha256": "16a47c9484607d405139b83ecf9d8959f6e8f6d281759ff180099492f6ea3d14",
+    "archived_sha256": "8f1a69a38661cd660392bce21ca97a6b37cd992cf942f4fce9a2f1d689fbf18d"
+  },
+  "stage_history.jsonl": {
+    "raw_sha256": "f0c1bf589ba4e5a43911868d44dc9eb97e4a0709e4c24dbfcaa209ea12995778",
+    "archived_sha256": "f0c1bf589ba4e5a43911868d44dc9eb97e4a0709e4c24dbfcaa209ea12995778"
+  },
+  "workload_start.json": {
+    "raw_sha256": "2d8ad551fffce91d0d403f0761552067e649bed8b01533f00f18f5d6a00052dd",
+    "archived_sha256": "2d8ad551fffce91d0d403f0761552067e649bed8b01533f00f18f5d6a00052dd"
+  },
+  "candidate_benchmark/alias_gate.command.json": {
+    "raw_sha256": "8bc4f6e9d2c1ff7a8b44bf34a83b32adeaffc89bc6619ddbbf2c5e7e33ab2b6c",
+    "archived_sha256": "da218b28018c96bab2fd2466221bf1c92e48ea31dc48035cb3af3b7e675e8109"
+  },
+  "candidate_benchmark/alias_gate.log": {
+    "raw_sha256": "1c06f469f9c0b361b4c617efe720e8b3a8b2cac3c0ab68a970b3c3ee82540832",
+    "archived_sha256": "1c06f469f9c0b361b4c617efe720e8b3a8b2cac3c0ab68a970b3c3ee82540832"
+  },
+  "candidate_benchmark/server.command.json": {
+    "raw_sha256": "bff6acfb680765e2937bfddafda3c91af7ef540f183b01ee11257ef2e24ea403",
+    "archived_sha256": "f8122ce07a5594d9474e026e93a27439ba19e0a14f7f11fe67a87f55c56c1131"
+  },
+  "candidate_benchmark/server.log": {
+    "raw_sha256": "40d01a2106a33e7723ea4f6e1768fa8d74f7531c6e3ae38c7a0511b93998ea8f",
+    "archived_sha256": "43ef720d35802423584ad476e86a8f54235c0df614679353838051d037211dc8"
+  },
+  "candidate_benchmark/smoke.json": {
+    "raw_sha256": "51c8c233ec9e84b79303c54bb292fcf00e0889ea9fa46399547641408afee8b4",
+    "archived_sha256": "ba6f07dccbf34a6f1f6877830c03c7dc2348cd8f8f5b1a8d6a3cff07f890689f"
+  },
+  "candidate_benchmark/route_evidence.json": {
+    "raw_sha256": "36e46fc7b7aaf33bc9433d1e7193f29c523b5f7eaa6d170aaacf4a568e07f38f",
+    "archived_sha256": "36e46fc7b7aaf33bc9433d1e7193f29c523b5f7eaa6d170aaacf4a568e07f38f"
+  },
+  "candidate_benchmark/layout_route_evidence.json": {
+    "raw_sha256": "05bdf35441b4add1c4fc86c41631de5c4bb78a0e00928219ec23b295340d9fd5",
+    "archived_sha256": "05bdf35441b4add1c4fc86c41631de5c4bb78a0e00928219ec23b295340d9fd5"
+  },
+  "candidate_benchmark/metrics_before.prom": {
+    "raw_sha256": "537d1db93de4ca2f3b64e893fd01581d5bc498f363506c6b30efd58b852ebee1",
+    "archived_sha256": "537d1db93de4ca2f3b64e893fd01581d5bc498f363506c6b30efd58b852ebee1"
+  },
+  "candidate_benchmark/benchmark.command.json": {
+    "raw_sha256": "65a52fca01e7f7e5b43ffced4e9a27a26ed4e3cb0cd2d1c450465568271223c1",
+    "archived_sha256": "cdb65c786e9c7c4995092236365f58553b81eff663f19a3173963d5a7e7721ec"
+  },
+  "candidate_benchmark/benchmark.log": {
+    "raw_sha256": "9abf4b60f10d3c8437b914fb9dbd482134a7585488e0932ec8cd88441f719164",
+    "archived_sha256": "8dfafc53bd985958e3b636601f2313db69cd071bc0fad526698782bdcac336e5"
+  },
+  "candidate_benchmark/metrics_after.prom": {
+    "raw_sha256": "dfbbf996b5c6e987b35057fccb5a919cae3ec02ce8c446656e414c4c004a41dd",
+    "archived_sha256": "dfbbf996b5c6e987b35057fccb5a919cae3ec02ce8c446656e414c4c004a41dd"
+  },
+  "candidate_benchmark/topp_route_evidence.json": {
+    "raw_sha256": "2f16b35ee66a5f37db7a807d25641e2c76401aaf22e5f254e861c2936928492c",
+    "archived_sha256": "2f16b35ee66a5f37db7a807d25641e2c76401aaf22e5f254e861c2936928492c"
+  },
+  "candidate_benchmark/benchmark_results/raw_runs_20261102_165539.csv": {
+    "raw_sha256": "1c0f415b9c4b037b825ad046f764d867b3d665f92199e2b25ae71c2348d99282",
+    "archived_sha256": "e7d433c35e6a79aa89ed83e5ed6753f804ca61b0f7b5695b1c6dadc59959df07"
+  },
+  "candidate_benchmark/benchmark_results/summary_20261102_165539.csv": {
+    "raw_sha256": "1ec61f2dec76a79ea0f2239d65dd397aa11fc72d9f7377384450e56652525c58",
+    "archived_sha256": "11f624149d07921407b82c30149ed6c546815f838d61f42798553246259e419c"
+  }
+}
