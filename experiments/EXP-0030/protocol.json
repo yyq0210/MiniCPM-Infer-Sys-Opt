@@ -1,0 +1,44 @@
+{
+  "experiment": "EXP-0030",
+  "registered_date": "2026-11-02",
+  "hypothesis": "EXP29 top-p row parallel retains 16K throughput and latency under memory pressure without additional KV loss/preemption; eligible for selection review only after independent audit.",
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "order": [
+    "A",
+    "B"
+  ],
+  "case": [
+    16384,
+    1024,
+    64,
+    128
+  ],
+  "rounds": 4,
+  "discard_first_only": true,
+  "same_frozen_worktree": true,
+  "new_server_and_caches_per_arm": true,
+  "official_benchmark_sha256": "0813eba574e9d1eb50c297c515baa426da1bcb61ce8c78a398b482f246005565",
+  "max_minutes_per_arm": 105,
+  "archive_margin_minutes_per_arm": 5,
+  "final_margin_minutes": 10,
+  "minimum_complete_flow_minutes": 230,
+  "compute_stop_at": "2026-11-02T23:35:00+08:00",
+  "save_target_at": "2026-11-02T23:50:00+08:00",
+  "daily_window": "Explicitly confirmed by user on 2026-11-02",
+  "gates": {
+    "throughput_regression_le_percent": 1,
+    "ttft_regression_le_percent": 5,
+    "tpot_regression_le_percent": 2,
+    "kv_capacity_ratio_at_least": 0.99,
+    "no_extra_preemptions": true,
+    "zero_failed_requests": true,
+    "unchanged_official_tokens_source_and_route": true,
+    "candidate_observed_in_actual_B17_to_64": true
+  },
+  "selection_changed_automatically": false,
+  "full_model_task_accuracy": "deferred_by_user",
+  "scope": "One preregistered sequential A/B pair: 16K nonregression screening; no claim of randomized replication or 16K causal gain."
+}

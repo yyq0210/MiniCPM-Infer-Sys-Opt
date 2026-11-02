@@ -1,0 +1,391 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-02T16:16:46.981585+08:00",
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "helper_sha256": "b82c526ce398875c7e715340bac2574f74572c814c650de610e8c0857c1a0ea0",
+  "sessions": {
+    "A1": {
+      "status": "passed",
+      "arm": "A1",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_184822_A1",
+      "started_at": "2026-10-30T18:48:22.415564+08:00",
+      "finished_at": "2026-10-30T19:25:00.848505+08:00",
+      "archive_files_checked": 20,
+      "publication": {
+        "status": "pushed",
+        "commit": "fa4e419bfe2c241af45849dd5815518b1757d65d",
+        "remote_verified": true
+      },
+      "original_route": {
+        "kv_tokens": 522256,
+        "gqa_kernels": {
+          "decode": 64,
+          "prefill": 64
+        },
+        "compiled_mlp_blocks": 42,
+        "logical_weight_nodes": 84,
+        "gqa_route_sha256": "c179cd9ddc861a777a88f8cb2e29f0310732908408aeb983e8472b84f02aeb7c",
+        "layout_route_sha256": "32a3361914dcc92fcb7e9ca72308254eadac4a9f9013f9deda2c9dccabd90e96"
+      },
+      "route_verifier_sha256": "001bd5e695817fa1d545e6af507e27efa758462e14f60e1f93b1451739260d3c",
+      "top_p_variants": 3,
+      "top_p_grid_events": 0,
+      "max_logged_candidate_calls": 0,
+      "shadow_checks": 0,
+      "measured": {
+        "raw_sha256": "827a12706e3dc9de00fa88e3d50a767cfb9ecaf2878ed7a9a2043c19b7049e2e",
+        "summary_sha256": "e66207b2119c7b1f0767f4e60ac16b00d3f2ea6958b953cd8602ca410c7a8efd",
+        "summary": {
+          "Prefill": "4096",
+          "Decode": "1024",
+          "Conc": "64",
+          "Num Prompts": "256",
+          "Benchmark Duration (s)": "369.47",
+          "Total Input Tokens": "1048576.0",
+          "Total Output Tokens": "262144.0",
+          "Req/s": "0.69",
+          "Output tok/s": "710.82",
+          "Peak Output tok/s": "1152.0",
+          "Total tok/s": "3554.11",
+          "Mean TTFT (ms)": "5140.65",
+          "Median TTFT (ms)": "1616.65",
+          "P99 TTFT (ms)": "29942.14",
+          "Mean TPOT (ms)": "84.07",
+          "Median TPOT (ms)": "85.52",
+          "P99 TPOT (ms)": "91.57",
+          "Mean ITL (ms)": "84.07",
+          "Median ITL (ms)": "60.33",
+          "P99 ITL (ms)": "333.44"
+        },
+        "all_four_total_tokens_s": [
+          2069.34,
+          3343.09,
+          3633.02,
+          3686.22
+        ],
+        "retained_total_tokens_s": [
+          3343.09,
+          3633.02,
+          3686.22
+        ],
+        "retained_cv_percent": 5.1960805100421705,
+        "retained_first_to_last_change_percent": 10.263857688545608,
+        "successful_requests": 1024,
+        "failed_requests": 0
+      },
+      "scheduling": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7550.66954273358
+        },
+        "mean_queue_seconds_all_four_rounds": 7.373700725325762,
+        "sampled_peak_kv_percent": 62.0
+      }
+    },
+    "B1": {
+      "status": "passed",
+      "arm": "B1",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_192509_B1",
+      "started_at": "2026-10-30T19:25:09.396172+08:00",
+      "finished_at": "2026-10-30T20:00:45.307473+08:00",
+      "archive_files_checked": 20,
+      "publication": {
+        "status": "pushed",
+        "commit": "65f92c9679b636db078198190c7c7c8525bc97b6",
+        "remote_verified": true
+      },
+      "original_route": {
+        "kv_tokens": 522256,
+        "gqa_kernels": {
+          "decode": 64,
+          "prefill": 64
+        },
+        "compiled_mlp_blocks": 42,
+        "logical_weight_nodes": 84,
+        "gqa_route_sha256": "59bec1a0ca61d79dc99732a76e7c334e694b7b45b88a8f44733e8ba948bc1093",
+        "layout_route_sha256": "8565ae7ebe56cff3e5e505c09a2ffbb6cc696ed57099c6098630708101a4de7d"
+      },
+      "route_verifier_sha256": "001bd5e695817fa1d545e6af507e27efa758462e14f60e1f93b1451739260d3c",
+      "top_p_variants": 3,
+      "top_p_grid_events": 64,
+      "max_logged_candidate_calls": 16384,
+      "shadow_checks": 0,
+      "measured": {
+        "raw_sha256": "37f66994ca87834f6742fdee24b7c3ed827615207afd613214b4e779f26d30f8",
+        "summary_sha256": "2b1db079b2a4dc9f6ca7338d7f3f2bf736cf324f60066b4dc51d321370a388e3",
+        "summary": {
+          "Prefill": "4096",
+          "Decode": "1024",
+          "Conc": "64",
+          "Num Prompts": "256",
+          "Benchmark Duration (s)": "356.04",
+          "Total Input Tokens": "1048576.0",
+          "Total Output Tokens": "262144.0",
+          "Req/s": "0.72",
+          "Output tok/s": "737.73",
+          "Peak Output tok/s": "1216.0",
+          "Total tok/s": "3688.63",
+          "Mean TTFT (ms)": "5099.07",
+          "Median TTFT (ms)": "1594.47",
+          "P99 TTFT (ms)": "29674.14",
+          "Mean TPOT (ms)": "80.85",
+          "Median TPOT (ms)": "82.56",
+          "P99 TPOT (ms)": "88.03",
+          "Mean ITL (ms)": "80.85",
+          "Median ITL (ms)": "57.59",
+          "P99 ITL (ms)": "328.5"
+        },
+        "all_four_total_tokens_s": [
+          2122.33,
+          3463.24,
+          3770.33,
+          3832.32
+        ],
+        "retained_total_tokens_s": [
+          3463.24,
+          3770.33,
+          3832.32
+        ],
+        "retained_cv_percent": 5.358060095217598,
+        "retained_first_to_last_change_percent": 10.657072567884418,
+        "successful_requests": 1024,
+        "failed_requests": 0
+      },
+      "scheduling": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7495.6057063858025
+        },
+        "mean_queue_seconds_all_four_rounds": 7.319927447642385,
+        "sampled_peak_kv_percent": 62.0
+      }
+    },
+    "B2": {
+      "status": "passed",
+      "arm": "B2",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_200055_B2",
+      "started_at": "2026-10-30T20:00:55.449441+08:00",
+      "finished_at": "2026-10-30T20:36:37.392094+08:00",
+      "archive_files_checked": 20,
+      "publication": {
+        "status": "pushed",
+        "commit": "279caf4c8068c67ed0239a55b9aa4a84aa9ad531",
+        "remote_verified": true
+      },
+      "original_route": {
+        "kv_tokens": 522256,
+        "gqa_kernels": {
+          "decode": 64,
+          "prefill": 64
+        },
+        "compiled_mlp_blocks": 42,
+        "logical_weight_nodes": 84,
+        "gqa_route_sha256": "59bec1a0ca61d79dc99732a76e7c334e694b7b45b88a8f44733e8ba948bc1093",
+        "layout_route_sha256": "394b09742e322ad7edfa75346cdd23a423a5445d1e2a36673305a136ec69fecd"
+      },
+      "route_verifier_sha256": "001bd5e695817fa1d545e6af507e27efa758462e14f60e1f93b1451739260d3c",
+      "top_p_variants": 3,
+      "top_p_grid_events": 64,
+      "max_logged_candidate_calls": 16384,
+      "shadow_checks": 0,
+      "measured": {
+        "raw_sha256": "e8c1ab4a139b6b8e7765161d94664e9f6b28b6e5fc477ba04940ea2b5c29574d",
+        "summary_sha256": "a250f1afc5b8b790b1968412f11480c06247e10c07b56919a9bcd70e18f60bb5",
+        "summary": {
+          "Prefill": "4096",
+          "Decode": "1024",
+          "Conc": "64",
+          "Num Prompts": "256",
+          "Benchmark Duration (s)": "356.34",
+          "Total Input Tokens": "1048576.0",
+          "Total Output Tokens": "262144.0",
+          "Req/s": "0.72",
+          "Output tok/s": "737.2",
+          "Peak Output tok/s": "1216.0",
+          "Total tok/s": "3686.0",
+          "Mean TTFT (ms)": "5099.75",
+          "Median TTFT (ms)": "1591.48",
+          "P99 TTFT (ms)": "29668.86",
+          "Mean TPOT (ms)": "80.91",
+          "Median TPOT (ms)": "82.56",
+          "P99 TPOT (ms)": "88.27",
+          "Mean ITL (ms)": "80.91",
+          "Median ITL (ms)": "57.61",
+          "P99 ITL (ms)": "329.34"
+        },
+        "all_four_total_tokens_s": [
+          2119.92,
+          3454.43,
+          3770.56,
+          3833.01
+        ],
+        "retained_total_tokens_s": [
+          3454.43,
+          3770.56,
+          3833.01
+        ],
+        "retained_cv_percent": 5.506289130359109,
+        "retained_first_to_last_change_percent": 10.959261006881027,
+        "successful_requests": 1024,
+        "failed_requests": 0
+      },
+      "scheduling": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7489.253347521648
+        },
+        "mean_queue_seconds_all_four_rounds": 7.313723972189109,
+        "sampled_peak_kv_percent": 62.0
+      }
+    },
+    "A2": {
+      "status": "passed",
+      "arm": "A2",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0029/r1/20261030_203647_A2",
+      "started_at": "2026-10-30T20:36:47.704863+08:00",
+      "finished_at": "2026-10-30T21:13:10.182715+08:00",
+      "archive_files_checked": 20,
+      "publication": {
+        "status": "pushed",
+        "commit": "f8a819a77518907dcafefed3d2ddb9832ea73075",
+        "remote_verified": true
+      },
+      "original_route": {
+        "kv_tokens": 522352,
+        "gqa_kernels": {
+          "decode": 64,
+          "prefill": 64
+        },
+        "compiled_mlp_blocks": 42,
+        "logical_weight_nodes": 84,
+        "gqa_route_sha256": "c179cd9ddc861a777a88f8cb2e29f0310732908408aeb983e8472b84f02aeb7c",
+        "layout_route_sha256": "d1a7159ae9bf098e976d1b232a333ded955b0d2636540321535fc2bbacf3f776"
+      },
+      "route_verifier_sha256": "001bd5e695817fa1d545e6af507e27efa758462e14f60e1f93b1451739260d3c",
+      "top_p_variants": 3,
+      "top_p_grid_events": 0,
+      "max_logged_candidate_calls": 0,
+      "shadow_checks": 0,
+      "measured": {
+        "raw_sha256": "945c864e42627dc96e129810c0a32b1c0b48a965093603c44e7afc2bf884391b",
+        "summary_sha256": "edb73624a7e310118a84f44f1915cf6b02bfb881f88c299e8e85eb80d755d0b6",
+        "summary": {
+          "Prefill": "4096",
+          "Decode": "1024",
+          "Conc": "64",
+          "Num Prompts": "256",
+          "Benchmark Duration (s)": "372.39",
+          "Total Input Tokens": "1048576.0",
+          "Total Output Tokens": "262144.0",
+          "Req/s": "0.69",
+          "Output tok/s": "704.86",
+          "Peak Output tok/s": "1161.67",
+          "Total tok/s": "3524.29",
+          "Mean TTFT (ms)": "5101.93",
+          "Median TTFT (ms)": "1612.93",
+          "P99 TTFT (ms)": "29920.68",
+          "Mean TPOT (ms)": "84.16",
+          "Median TPOT (ms)": "86.88",
+          "P99 TPOT (ms)": "90.41",
+          "Mean ITL (ms)": "84.16",
+          "Median ITL (ms)": "60.9",
+          "P99 ITL (ms)": "332.33"
+        },
+        "all_four_total_tokens_s": [
+          2119.88,
+          3527.51,
+          3367.6,
+          3677.76
+        ],
+        "retained_total_tokens_s": [
+          3527.51,
+          3367.6,
+          3677.76
+        ],
+        "retained_cv_percent": 4.401030274807312,
+        "retained_first_to_last_change_percent": 4.2593784284098435,
+        "successful_requests": 1024,
+        "failed_requests": 0
+      },
+      "scheduling": {
+        "counter_delta": {
+          "num_preemptions_total": 0.0,
+          "request_queue_time_seconds_count": 1024.0,
+          "request_queue_time_seconds_sum": 7518.315275372472
+        },
+        "mean_queue_seconds_all_four_rounds": 7.342104761105929,
+        "sampled_peak_kv_percent": 61.8
+      }
+    }
+  },
+  "means": {
+    "A": {
+      "Total tok/s": 3539.2,
+      "Output tok/s": 707.84,
+      "Mean TTFT (ms)": 5121.29,
+      "Mean TPOT (ms)": 84.115,
+      "Mean ITL (ms)": 84.115
+    },
+    "B": {
+      "Total tok/s": 3687.315,
+      "Output tok/s": 737.465,
+      "Mean TTFT (ms)": 5099.41,
+      "Mean TPOT (ms)": 80.88,
+      "Mean ITL (ms)": 80.88
+    }
+  },
+  "B_on_vs_A_off_percent": {
+    "Total tok/s": 4.184985307414113,
+    "Output tok/s": 4.18526785714286,
+    "Mean TTFT (ms)": -0.4272361065278507,
+    "Mean TPOT (ms)": -3.845925221423052,
+    "Mean ITL (ms)": -3.845925221423052
+  },
+  "paired_comparisons": [
+    {
+      "A": "A1",
+      "B": "B1",
+      "throughput_change_percent": 3.7849138040184416,
+      "ttft_change_percent": -0.8088471302267197,
+      "kv_ratio": 1.0,
+      "preemptions_A": 0.0,
+      "preemptions_B": 0.0
+    },
+    {
+      "A": "A2",
+      "B": "B2",
+      "throughput_change_percent": 4.588441927310183,
+      "ttft_change_percent": -0.04272892807232198,
+      "kv_ratio": 0.9998162158850736,
+      "preemptions_A": 0.0,
+      "preemptions_B": 0.0
+    }
+  ],
+  "within_arm_summary_drift_percent": {
+    "A": -0.8390286175723349,
+    "B": -0.07130018462139232
+  },
+  "registered_engineering_gates": {
+    "mean_gain_gt_1_percent": true,
+    "both_pair_gains_positive": true,
+    "pair_ttft_regression_le_5_percent": true,
+    "mean_tpot_not_worse": true,
+    "within_arm_summary_drift_le_2_percent": true,
+    "pair_kv_capacity_at_least_99_percent": true,
+    "no_extra_preemptions": true
+  },
+  "passes_registered_engineering_gates": true,
+  "successful_requests": 4096,
+  "failed_requests": 0,
+  "selection_changed": false,
+  "selected_experiment": "EXP-0020",
+  "full_model_task_accuracy": "deferred_by_user",
+  "candidate_16k": "not_measured",
+  "scope": "One preregistered ABBA block, two sessions per arm; engineering replication, not statistical significance."
+}
