@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-02T18:38:16.397519+08:00",
+  "audit_sha256": "239ad6f3f8bba771173b7ad69394edfd2ecae34a3d634072de3da69dea873439",
+  "historical_16k_reader_check": true,
+  "wrong_4k_case_rejected": true,
+  "source_hashes_checked": true,
+  "candidate_16k_audited": false,
+  "gpu_work_started_by_review": false,
+  "scope": "CPU review tool checks using existing EXP20 fixture; not a new candidate result"
+}
