@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-11-02T19:54:59.357002+08:00",
+  "compute_stop_at": "2026-11-02T23:35:00+08:00",
+  "save_target_at": "2026-11-02T23:50:00+08:00",
+  "minimum_remaining_flow_minutes": 120,
+  "scope": "Nov2 user-confirmed cutoff; completed A retained, only B unstarted"
+}
