@@ -1,0 +1,30 @@
+{
+  "experiment": "EXP-0030",
+  "recorded_date": "2026-11-02",
+  "type": "Manual continuation after publication-only failure",
+  "order": [
+    "A",
+    "B"
+  ],
+  "retain_A": "20261102_165006_A",
+  "A_completed_at": "2026-11-02T17:59:14+08:00",
+  "A_summary_total_tokens_s": 2542.44,
+  "B_previously_started": false,
+  "no_A_rerun": true,
+  "no_kernel_or_inference_parameter_change": true,
+  "official_case": [
+    16384,
+    1024,
+    64,
+    128
+  ],
+  "original_gates_unchanged": true,
+  "publication_policy": "User explicitly permits local saving. On push failure, continue only after all exact paths are locally committed; compare artifact blobs to local commit and raw hash manifests. Preserve failure receipts; mark remote unverified until retry.",
+  "min_remaining_flow_minutes": 120,
+  "compute_minutes_B": 105,
+  "archive_minutes": 5,
+  "final_margin_minutes": 10,
+  "compute_stop_at": "2026-11-02T23:35:00+08:00",
+  "save_target_at": "2026-11-02T23:50:00+08:00",
+  "limitation": "Network interruption adds time gap between A and B; report actual timestamps. Single sequential pair, not statistical significance."
+}
