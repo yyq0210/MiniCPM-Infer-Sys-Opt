@@ -1,0 +1,122 @@
+{
+  "status": "complete_pending_independent_audit",
+  "sessions": {
+    "A": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0030/20261102_165006_A",
+      "summary": {
+        "Prefill": "16384",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "128",
+        "Benchmark Duration (s)": "876.41",
+        "Total Input Tokens": "2097152.0",
+        "Total Output Tokens": "131072.0",
+        "Req/s": "0.15",
+        "Output tok/s": "149.55",
+        "Peak Output tok/s": "372.0",
+        "Total tok/s": "2542.44",
+        "Mean TTFT (ms)": "203174.54",
+        "Median TTFT (ms)": "225133.19",
+        "P99 TTFT (ms)": "408025.46",
+        "Mean TPOT (ms)": "178.05",
+        "Median TPOT (ms)": "191.24",
+        "P99 TPOT (ms)": "228.16",
+        "Mean ITL (ms)": "178.05",
+        "Median ITL (ms)": "88.25",
+        "P99 ITL (ms)": "816.43"
+      },
+      "all_four_total_tokens_s": [
+        2191.34,
+        2543.61,
+        2542.69,
+        2541.03
+      ],
+      "retained_cv_percent": 0.05142957167993166,
+      "kv_tokens": 522256,
+      "counter_delta": {
+        "num_preemptions_total": 16.0,
+        "request_queue_time_seconds_count": 512.0,
+        "request_queue_time_seconds_sum": 104319.11701264884
+      },
+      "mean_queue_seconds_all_four_rounds": 203.74827541532977
+    },
+    "B": {
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0030/20261102_195500_B",
+      "summary": {
+        "Prefill": "16384",
+        "Decode": "1024",
+        "Conc": "64",
+        "Num Prompts": "128",
+        "Benchmark Duration (s)": "871.14",
+        "Total Input Tokens": "2097152.0",
+        "Total Output Tokens": "131072.0",
+        "Req/s": "0.15",
+        "Output tok/s": "150.46",
+        "Peak Output tok/s": "372.0",
+        "Total tok/s": "2557.84",
+        "Mean TTFT (ms)": "202097.05",
+        "Median TTFT (ms)": "223571.13",
+        "P99 TTFT (ms)": "405520.13",
+        "Mean TPOT (ms)": "176.84",
+        "Median TPOT (ms)": "189.86",
+        "P99 TPOT (ms)": "226.12",
+        "Mean ITL (ms)": "176.84",
+        "Median ITL (ms)": "87.12",
+        "P99 ITL (ms)": "814.27"
+      },
+      "all_four_total_tokens_s": [
+        2201.76,
+        2558.03,
+        2557.97,
+        2557.51
+      ],
+      "retained_cv_percent": 0.011122205245497329,
+      "kv_tokens": 522352,
+      "counter_delta": {
+        "num_preemptions_total": 16.0,
+        "request_queue_time_seconds_count": 512.0,
+        "request_queue_time_seconds_sum": 103780.36468497664
+      },
+      "mean_queue_seconds_all_four_rounds": 202.696024775345
+    }
+  },
+  "means": {
+    "A": {
+      "Total tok/s": 2542.44,
+      "Output tok/s": 149.55,
+      "Mean TTFT (ms)": 203174.54,
+      "Mean TPOT (ms)": 178.05,
+      "Mean ITL (ms)": 178.05
+    },
+    "B": {
+      "Total tok/s": 2557.84,
+      "Output tok/s": 150.46,
+      "Mean TTFT (ms)": 202097.05,
+      "Mean TPOT (ms)": 176.84,
+      "Mean ITL (ms)": 176.84
+    }
+  },
+  "B_on_vs_A_off_percent": {
+    "Total tok/s": 0.6057173423954954,
+    "Output tok/s": 0.6084921430959511,
+    "Mean TTFT (ms)": -0.5303272742736453,
+    "Mean TPOT (ms)": -0.6795843864083162,
+    "Mean ITL (ms)": -0.6795843864083162
+  },
+  "throughput_change_percent": 0.6057173423954954,
+  "kv_ratio": 1.000183817897736,
+  "registered_gates": {
+    "throughput_regression_le_1_percent": true,
+    "ttft_regression_le_5_percent": true,
+    "tpot_regression_le_2_percent": true,
+    "kv_capacity_at_least_99_percent": true,
+    "no_extra_preemptions": true
+  },
+  "passes_registered_engineering_gates": true,
+  "selection_changed": false,
+  "selected_experiment": "EXP-0020",
+  "successful_requests": 1024,
+  "failed_requests": 0,
+  "full_model_task_accuracy": "deferred_by_user",
+  "interpretation": "One sequential 16K A/B nonregression screen; independent audit required; no significance claim."
+}

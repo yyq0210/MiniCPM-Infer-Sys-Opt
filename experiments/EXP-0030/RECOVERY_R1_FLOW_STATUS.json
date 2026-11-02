@@ -1,0 +1,36 @@
+{
+  "stage": "complete_pending_independent_audit",
+  "started_at": "2026-11-02T19:55:00.727266+08:00",
+  "pid": 11236,
+  "completed_arms": [
+    {
+      "arm": "A",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0030/20261102_165006_A",
+      "publication": {
+        "status": "local_committed_pending_push",
+        "commit": "b8c91390a0595fe44df93ab46198d2e641df01a0",
+        "remote_verified": false,
+        "local_commit_verified": true
+      }
+    },
+    {
+      "arm": "B",
+      "run_directory": "/workspace/LeanScale/artifacts/EXP-0030/20261102_195500_B",
+      "publication": {
+        "status": "local_committed_pending_push",
+        "commit": "6cd1011745d41768d3ac896e2230fbad038745d4",
+        "remote_verified": false,
+        "local_commit_verified": true,
+        "error": "Traceback (most recent call last):\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/resume_B_r1.py\", line 33, in safe_publish\n    try:return _original_publish(paths,message)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/run_pair.py\", line 36, in publish\n    return fn(paths,message)\n           ^^^^^^^^^^^^^^^^^\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0025/common.py\", line 43, in publish\n    head=git(REPO,'rev-parse','HEAD');git(REPO,'push','origin','main')\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0025/common.py\", line 22, in git\n    def git(p,*a): return subprocess.check_output(['git','-C',str(p),*a],text=True,stderr=subprocess.STDOUT,timeout=120).strip()\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['git', '-C', '/workspace/LeanScale/MiniCPM-Infer-Sys-Opt', 'push', 'origin', 'main']' returned non-zero exit status 128.\n"
+      }
+    }
+  ],
+  "selection_changed": false,
+  "recovery_reason": "A fully completed; remote archive timeout before B launch; user-authorized verified local-save fallback",
+  "updated_at": "2026-11-02T21:03:55.004712+08:00",
+  "current_arm": "B",
+  "current_run": "/workspace/LeanScale/artifacts/EXP-0030/20261102_195500_B",
+  "arm_deadline": "2026-11-02T21:40:00.783160+08:00",
+  "result_path": "/workspace/LeanScale/MiniCPM-Infer-Sys-Opt/experiments/EXP-0030/RESULTS.json",
+  "selected_experiment": "EXP-0020"
+}

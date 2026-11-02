@@ -10,3 +10,4 @@
 {"time": "2026-11-02T19:54:58.069014+08:00", "action": "Independent A audit passed after publication recovery; freeze manual B-only continuation", "A_total_tokens_s": "2542.44"}
 {"time": "2026-11-02T19:55:00.783631+08:00", "action": "Start only unstarted B with original official16K parameters", "run_name": "20261102_195500_B"}
 {"time": "2026-11-02T21:03:49.788362+08:00", "action": "Complete B four official rounds", "run_name": "20261102_195500_B"}
+{"time": "2026-11-02T21:03:55.006340+08:00", "action": "Both original arms complete; independent audit pending", "throughput_change_percent": 0.6057173423954954, "selection_changed": false}
