@@ -1,0 +1,92 @@
+{
+  "status": "finalized_performance_validated_task_accuracy_deferred",
+  "recorded_at": "2026-11-03T13:33:22.092636+08:00",
+  "decision": "Select existing measured RoPEKV/GQA/top-p combination after 4K ABBA and16K nonregression audit; stop experiments per user",
+  "selected_experiment": "EXP-0030",
+  "performance_evidence": {
+    "4k": "EXP-0029 B1/B2 equal-session mean",
+    "16k": "EXP-0030 B"
+  },
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "source_branches": {
+    "vllm-plugin-FL": "leanscale/iluvatar-topp-shadow-coverage",
+    "FlagGems": "leanscale/iluvatar-gqa-prefill-memory"
+  },
+  "source_worktree": "/workspace/LeanScale/worktrees/EXP-0027-r1",
+  "runtime_environment": {
+    "VLLM_PLUGINS": "fl",
+    "VLLM_FL_TOPP_ROW_PARALLEL": "1",
+    "VLLM_FL_TOPP_ROW_PARALLEL_SHADOW": "0",
+    "VLLM_FL_TOPP_ROW_PARALLEL_SHADOW_ARM_FILE": "",
+    "VLLM_FL_MLP_WEIGHT_LAYOUT": "0"
+  },
+  "server_command": [
+    "vllm",
+    "serve",
+    "/workspace/MiniCPM5-2B",
+    "--port",
+    "9031",
+    "--compilation-config",
+    "{\"cudagraph_mode\":\"FULL_DECODE_ONLY\"}",
+    "--served-model-name",
+    "minicpm",
+    "--gpu-memory-utilization",
+    "0.85",
+    "--max-model-len",
+    "131072"
+  ],
+  "official_cases": [
+    [
+      4096,
+      1024,
+      64,
+      256
+    ],
+    [
+      16384,
+      1024,
+      64,
+      128
+    ]
+  ],
+  "four_rounds_discard_first_only": true,
+  "final_total_tokens_s": {
+    "4k": 3687.315,
+    "16k": 2557.84
+  },
+  "contemporaneous_topp_gain_percent": {
+    "4k": 4.184985307414113,
+    "16k": 0.6057173423954954
+  },
+  "historical_baseline_total_tokens_s": {
+    "4k": 2008.97,
+    "16k": 917.27
+  },
+  "cumulative_vs_historical_percent": {
+    "4k": 83.54256161117388,
+    "16k": 178.85355456953792
+  },
+  "accuracy": {
+    "operator_and_sampling_checks": "passed as recorded;39device and96real-model mask/RNG checks for top-p",
+    "full_model_task_accuracy": "deferred_by_user",
+    "kv_compression": "not_implemented_or_selected"
+  },
+  "rollback": {
+    "prior_selected_experiment": "EXP-0020",
+    "vllm-plugin-FL": "ce19f93eee4c73f5a26911554700457e879f891d",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe",
+    "same_commit_topp_disable": "VLLM_FL_TOPP_ROW_PARALLEL=0"
+  },
+  "no_further_gpu_experiments": true,
+  "report": "docs/final_optimization_report_20261103.md",
+  "evidence_limitations": [
+    "Historical cumulative comparison is cross-date",
+    "4K is one ABBA block, two sessions per arm",
+    "16K is one sequential A/B pair with interruption gap",
+    "Full model accuracy deferred",
+    "16K capacity pressure remains"
+  ]
+}

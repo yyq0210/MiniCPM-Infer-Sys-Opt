@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-03T13:33:22.092636+08:00",
+  "status": "final_review_passed",
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "audited4k": "experiments/EXP-0029/review_20261030/audit.json",
+  "audited16k": "experiments/EXP-0030/review_20261102/audit_final.json",
+  "report_sha256": "8dcad2702c0d40e3a868bbffcd31ee681a2b9185c78e61bf4a6a0b183dda93cf",
+  "final_configuration_sha256": "3f81f2ec47053c40fcc0da15ed792bbcb22ec72ef3b152eba6dd6527c2f15004",
+  "benchmark_scripts_unchanged": true,
+  "no_new_gpu_tests": true,
+  "publication_before_report": {
+    "status": "pushed",
+    "commit": "c44b9798eb37969f97eee9b682c5de4f099719a8",
+    "remote_verified": true,
+    "route": "original_configured_ssh"
+  }
+}

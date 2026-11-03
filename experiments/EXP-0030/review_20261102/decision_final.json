@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-11-03T13:33:22.092636+08:00",
+  "selected_experiment": "EXP-0030",
+  "previous_selected_experiment": "EXP-0020",
+  "source_commits": {
+    "vllm-plugin-FL": "c50b5f0526e8112c72f1de918487300cf7376378",
+    "FlagGems": "de958ddfc4deeb43d6c94bb8652a3d4d3bc905fe"
+  },
+  "runtime_environment": {
+    "VLLM_PLUGINS": "fl",
+    "VLLM_FL_TOPP_ROW_PARALLEL": "1",
+    "VLLM_FL_TOPP_ROW_PARALLEL_SHADOW": "0",
+    "VLLM_FL_TOPP_ROW_PARALLEL_SHADOW_ARM_FILE": "",
+    "VLLM_FL_MLP_WEIGHT_LAYOUT": "0"
+  },
+  "reason": "4K preregistered replication and16K nonregression gates passed; user requests finalization",
+  "selection_changed": true,
+  "automatic_selection": false,
+  "full_model_task_accuracy": "deferred_by_user",
+  "no_further_gpu_experiments": true,
+  "original_measurement_and_audit_selection_snapshots_preserved": true
+}
